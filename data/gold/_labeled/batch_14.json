@@ -1,0 +1,471 @@
+[
+  {
+    "call_id": "f93c02d0",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "customer",
+        "base_intent": "greeting",
+        "keywords": ["Hello"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "agent",
+        "base_intent": "greeting",
+        "keywords": ["नमस्ते", "मैं प्रिया बोल रही हूँ", "आदित्य बिरला कैपिटल से"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "customer",
+        "base_intent": "greeting",
+        "keywords": ["Hello", "Yes"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 3,
+        "speaker": "agent",
+        "base_intent": "greeting",
+        "keywords": ["नमस्ते", "मैं प्रिया बोल रही हूँ", "आदित्य बिरला कैपिटल से"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "base_intent": "send_sms_link",
+        "keywords": ["sending you an SMS", "link", "complete your application"],
+        "sentiment": null,
+        "tool": "send_sms"
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "base_intent": "open_link",
+        "keywords": ["click the link", "SMS you received"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "base_intent": "click_apply",
+        "keywords": ["Apply Now", "button", "please click on it"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 7,
+        "speaker": "agent",
+        "base_intent": "mobile_otp",
+        "keywords": ["enter your mobile number", "Terms and Conditions checkbox", "Get OTP"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "base_intent": "wait_hold",
+        "keywords": ["are you still there on the call"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 9,
+        "speaker": "agent",
+        "base_intent": "mobile_otp",
+        "keywords": ["enter your mobile number", "Terms and Conditions checkbox", "Get OTP"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "base_intent": "mobile_otp",
+        "keywords": ["sent an OTP", "enter the OTP", "Verify"],
+        "sentiment": null,
+        "tool": "send_otp"
+      },
+      {
+        "index": 11,
+        "speaker": "agent",
+        "base_intent": "mobile_otp",
+        "keywords": ["receive the OTP", "enter it", "Verify"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "base_intent": "mobile_otp",
+        "keywords": ["verified the OTP", "let me know"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 13,
+        "speaker": "customer",
+        "base_intent": "report_done",
+        "keywords": ["Yes", "Finish it"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 14,
+        "speaker": "agent",
+        "base_intent": "enter_pan",
+        "keywords": ["basic details page", "PAN number", "let me know when done"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 15,
+        "speaker": "customer",
+        "base_intent": "enter_pan",
+        "keywords": ["PAN number"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 16,
+        "speaker": "agent",
+        "base_intent": "enter_pan",
+        "keywords": ["PAN number", "10-character alphanumeric", "capital letters"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 17,
+        "speaker": "agent",
+        "base_intent": "wait_hold",
+        "keywords": ["are you still on the call"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 18,
+        "speaker": "customer",
+        "base_intent": "acknowledge",
+        "keywords": ["Ok", "Yes yes yes"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 19,
+        "speaker": "agent",
+        "base_intent": "enter_pan",
+        "keywords": ["enter your PAN number", "capital letters"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 20,
+        "speaker": "agent",
+        "base_intent": "personal_details",
+        "keywords": ["full name", "PAN card", "gender", "date of birth", "marital status"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 21,
+        "speaker": "customer",
+        "base_intent": "wait_hold",
+        "keywords": ["Just a minute"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 22,
+        "speaker": "agent",
+        "base_intent": "wait_hold",
+        "keywords": ["Sure"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 23,
+        "speaker": "agent",
+        "base_intent": "wait_hold",
+        "keywords": ["Are you still there"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 24,
+        "speaker": "agent",
+        "base_intent": "personal_details",
+        "keywords": ["full name", "PAN card", "gender", "date of birth", "marital status"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 25,
+        "speaker": "agent",
+        "base_intent": "wait_hold",
+        "keywords": ["are you still there on the call"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 26,
+        "speaker": "agent",
+        "base_intent": "enter_email",
+        "keywords": ["personal email address", "let me know when done"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 27,
+        "speaker": "agent",
+        "base_intent": "wait_hold",
+        "keywords": ["are you still on the call"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 28,
+        "speaker": "customer",
+        "base_intent": "acknowledge",
+        "keywords": ["Ok", "Yes", "Finish"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 29,
+        "speaker": "agent",
+        "base_intent": "enter_email",
+        "keywords": ["personal email address", "let me know when done"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 30,
+        "speaker": "customer",
+        "base_intent": "report_done",
+        "keywords": ["Done"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 31,
+        "speaker": "agent",
+        "base_intent": "enter_address",
+        "keywords": ["flat or house number", "building name", "street", "locality name", "pincode"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 32,
+        "speaker": "customer",
+        "base_intent": "report_done",
+        "keywords": ["Done"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 33,
+        "speaker": "agent",
+        "base_intent": "accept_terms",
+        "keywords": ["Terms and Conditions checkboxes", "mandatory", "Proceed"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 34,
+        "speaker": "customer",
+        "base_intent": "report_done",
+        "keywords": ["Done"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 35,
+        "speaker": "agent",
+        "base_intent": "employment_type",
+        "keywords": ["Professional and Employment details page", "employment type", "Salaried or Self-Employed"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 36,
+        "speaker": "customer",
+        "base_intent": "employment_type",
+        "keywords": ["Salary"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 37,
+        "speaker": "agent",
+        "base_intent": "employment_type",
+        "keywords": ["Salaried", "Self-Employed", "employment type"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 38,
+        "speaker": "agent",
+        "base_intent": "wait_hold",
+        "keywords": ["are you still on the call"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 39,
+        "speaker": "agent",
+        "base_intent": "employment_type",
+        "keywords": ["Salaried", "Self-Employed", "confirm your employment type"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 40,
+        "speaker": "customer",
+        "base_intent": "report_done",
+        "keywords": ["Done"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 41,
+        "speaker": "agent",
+        "base_intent": "enter_income",
+        "keywords": ["monthly net take-home salary", "excluding tax, bonus, and benefits"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 42,
+        "speaker": "customer",
+        "base_intent": "report_done",
+        "keywords": ["Done"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 43,
+        "speaker": "agent",
+        "base_intent": "organization_name",
+        "keywords": ["name of your organization", "let me know when done"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 44,
+        "speaker": "customer",
+        "base_intent": "report_done",
+        "keywords": ["Done"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 45,
+        "speaker": "agent",
+        "base_intent": "enter_email",
+        "keywords": ["official email ID", "let me know once you have done so"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 46,
+        "speaker": "customer",
+        "base_intent": "report_done",
+        "keywords": ["Done"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 47,
+        "speaker": "agent",
+        "base_intent": "enter_address",
+        "keywords": ["organization's address", "office pincode", "6 digits"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 48,
+        "speaker": "agent",
+        "base_intent": "wait_hold",
+        "keywords": ["are you still there on the call"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 49,
+        "speaker": "agent",
+        "base_intent": "agree",
+        "keywords": ["click the 'Proceed' button"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 50,
+        "speaker": "agent",
+        "base_intent": "mobile_otp",
+        "keywords": ["OTP on your registered email", "verify it"],
+        "sentiment": null,
+        "tool": "send_otp"
+      },
+      {
+        "index": 51,
+        "speaker": "agent",
+        "base_intent": "wait_hold",
+        "keywords": ["are you still there on the call"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 52,
+        "speaker": "agent",
+        "base_intent": "mobile_otp",
+        "keywords": ["verify the OTP", "registered email", "let me know when done"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 53,
+        "speaker": "agent",
+        "base_intent": "wait_hold",
+        "keywords": ["are you still on the call"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 54,
+        "speaker": "agent",
+        "base_intent": "mobile_otp",
+        "keywords": ["verify the OTP", "registered email", "let me know when done"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 55,
+        "speaker": "customer",
+        "base_intent": "report_done",
+        "keywords": ["Done"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 56,
+        "speaker": "agent",
+        "base_intent": "final_offer",
+        "keywords": ["final page", "loan amount", "final offer"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 57,
+        "speaker": "agent",
+        "base_intent": "transfer_to_rm",
+        "keywords": ["connect you to a Relationship Manager", "KYC process", "Please wait"],
+        "sentiment": null,
+        "tool": "transfer_to_rm"
+      }
+    ]
+  }
+]

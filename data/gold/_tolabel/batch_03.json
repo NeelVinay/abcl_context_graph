@@ -1,0 +1,2372 @@
+[
+  {
+    "call_id": "30f7f2d2",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "customer",
+        "text": "Hello."
+      },
+      {
+        "index": 1,
+        "speaker": "agent",
+        "text": "हाँ जी, मैं इंतज़ार कर रही हूँ..."
+      },
+      {
+        "index": 2,
+        "speaker": "customer",
+        "text": "Hello?"
+      },
+      {
+        "index": 3,
+        "speaker": "agent",
+        "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं प्रवेंद्र सिंह जी से बात कर रही हूँ?"
+      },
+      {
+        "index": 4,
+        "speaker": "customer",
+        "text": "जी बोलिए ma'am."
+      },
+      {
+        "index": 5,
+        "speaker": "customer",
+        "text": "आप मुझे पहले कोई दूसरा number दे ma'am जिससे मैं बात हो पाए."
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "text": "यह Aditya Birla Capital की तरफ से आपका pre-approved offer है और मैं इसी नंबर पर आपकी मदद के लिए हूँ। क्या हम अभी शुरू करें?"
+      },
+      {
+        "index": 7,
+        "speaker": "customer",
+        "text": "अभी शुरू करने के लिए मुझे क्या क्या documents चाहिए, क्या चाहिए मुझे यह तो बता दीजिए मेरे पास है कि नहीं है अभी"
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "text": "Interest rate ten point nine nine percent से शुरू होती है और आपके final offer पर depend करती है। अब मैं आपको application के लिए guide करती हूँ — सबसे पहले मैं आपको एक SMS भेजती हूँ जिसमें link होगा, उसे click करके आगे बढ़ें। क्या आप तैयार हैं?"
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "text": "नहीं ma'am मैं पहले process समझूंगा तब उसके बाद हूं ऐसे"
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "text": "जी, मैं समझ सकती हूँ। मैं आपको step by step बताती हूँ — सबसे पहले मैं आपको एक SMS भेजती हूँ जिसमें application का link होगा, आप उसे click करके अपना process शुरू कर सकते हैं। क्या मैं SMS भेजूँ?"
+      },
+      {
+        "index": 11,
+        "speaker": "customer",
+        "text": "नहीं फिर उसके बाद और क्या करना पड़ेगा ma'am?"
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "text": "SMS भेजने के बाद आप link"
+      },
+      {
+        "index": 13,
+        "speaker": "customer",
+        "text": "Next step"
+      },
+      {
+        "index": 14,
+        "speaker": "agent",
+        "text": "SMS में जो link है उसे click करें।"
+      },
+      {
+        "index": 15,
+        "speaker": "customer",
+        "text": "जी. फिर उसके बाद"
+      },
+      {
+        "index": 16,
+        "speaker": "agent",
+        "text": "आप home screen पर आ जाएंगे। वहाँ नीचे 'Apply Now' button दिखेगा, उस पर click करें।"
+      },
+      {
+        "index": 17,
+        "speaker": "customer",
+        "text": "फिर उसके बाद"
+      },
+      {
+        "index": 18,
+        "speaker": "agent",
+        "text": "अपना mobile number enter करें। फिर Terms and Conditions checkbox को check करें और 'Get OTP' पर click करें।"
+      },
+      {
+        "index": 19,
+        "speaker": "customer",
+        "text": "अच्छा ma'am. यह भी है. फिर उसके बाद ma'am OTP के बाद?"
+      },
+      {
+        "index": 20,
+        "speaker": "agent",
+        "text": "आपको एक confirmation आएगा 'We have sent an OTP'. अगली screen पर OTP enter करें और 'Verify' पर click करें। OTP verify होते ही, अगला step personal details fill करना होगा।"
+      },
+      {
+        "index": 21,
+        "speaker": "customer",
+        "text": "Personal detail में क्या क्या होता है ma'am?"
+      },
+      {
+        "index": 22,
+        "speaker": "agent",
+        "text": "Personal details में आपको अपना पैन नंबर भरना होगा, फिर अपना full name जैसा पैन पर है, gender, date of birth और marital status select करना होगा।"
+      },
+      {
+        "index": 23,
+        "speaker": "customer",
+        "text": "Ok ma'am फिर Next"
+      },
+      {
+        "index": 24,
+        "speaker": "agent",
+        "text": "अब अपना personal email address enter करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 25,
+        "speaker": "customer",
+        "text": "हो जाएगा ma'am फिर उसके बाद?"
+      },
+      {
+        "index": 26,
+        "speaker": "agent",
+        "text": "अब अपना address fill करें — flat या house number, building name, street, locality का नाम, और pincode। सब fill हो जाए तो बताएं।"
+      },
+      {
+        "index": 27,
+        "speaker": "customer",
+        "text": "उसके बाद ma'am"
+      },
+      {
+        "index": 28,
+        "speaker": "agent",
+        "text": "आपको दो Terms and Conditions checkboxes दिखेंगे — दोनों को check करें, यह data security के लिए ज़रूरी है। फिर 'Proceed' button पर click करें।"
+      },
+      {
+        "index": 29,
+        "speaker": "agent",
+        "text": "यह Professional और Employment details का page है — आपके loan offer को fetch करने के लिए यह details ज़रूरी हैं। पहले अपना employment type select करें — Salaried या Self-Employed।"
+      },
+      {
+        "index": 30,
+        "speaker": "customer",
+        "text": "Hello. जी मैं salaried हूं ma'am."
+      },
+      {
+        "index": 31,
+        "speaker": "agent",
+        "text": "Salaried के लिए Monthly income fill करें — यह आपकी net take-home salary है, tax, bonus और benefits को छोड़कर। हो जाए तो बताएं।"
+      },
+      {
+        "index": 32,
+        "speaker": "customer",
+        "text": "Next"
+      },
+      {
+        "index": 33,
+        "speaker": "agent",
+        "text": "अब अपनी organization का नाम enter करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 34,
+        "speaker": "agent",
+        "text": "अब अपनी official email ID enter करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 35,
+        "speaker": "agent",
+        "text": "अब organization का address fill करें — जैसे fields में दिखाया गया है। फिर office pincode — 6 digits। सब हो जाए तो बताएं।"
+      },
+      {
+        "index": 36,
+        "speaker": "customer",
+        "text": "Ok ma'am, फिर"
+      },
+      {
+        "index": 37,
+        "speaker": "agent",
+        "text": "सब details fill हो गई हैं — अब 'Proceed' button पर click करें।"
+      },
+      {
+        "index": 38,
+        "speaker": "agent",
+        "text": "आपके registered email पर एक OTP आएगा — उसे verify करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 39,
+        "speaker": "agent",
+        "text": "कृपया फिर से कहेंगे? थोड़ा साफ़ नहीं आया।"
+      },
+      {
+        "index": 40,
+        "speaker": "customer",
+        "text": "Ok. थोड़ा सा app नहीं आया."
+      },
+      {
+        "index": 41,
+        "speaker": "agent",
+        "text": "जी, कोई बात नहीं। OTP verify हो जाने के बाद हम आगे बढ़ेंगे। क्या OTP आ गया है?"
+      },
+      {
+        "index": 42,
+        "speaker": "agent",
+        "text": "अब यह final page है"
+      },
+      {
+        "index": 43,
+        "speaker": "customer",
+        "text": "OTP आ गई"
+      },
+      {
+        "index": 44,
+        "speaker": "agent",
+        "text": "यह final page है जहाँ आप अपना loan amount और offer देख सकते हैं। क्या आप अपना loan amount और final offer देख सकते हैं?"
+      },
+      {
+        "index": 45,
+        "speaker": "agent",
+        "text": "अब मैं आपको Relationship Manager से connect कर देती हूँ जो आपका KYC process संभालेंगे। कृपया कुछ समय इंतज़ार करें।"
+      },
+      {
+        "index": 46,
+        "speaker": "agent",
+        "text": "| TOOL CALL: tool.abcl_hitl({lead_name: \"प्रवेंद्र सिंह\", loan_amount: \"140000\"})\n<EOC/>"
+      }
+    ]
+  },
+  {
+    "call_id": "3263832d",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं विजय सुभाष सैंदाने जी से बात कर रही हूँ?"
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "text": "Ok? Ok. Ok है madam."
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "text": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।"
+      },
+      {
+        "index": 3,
+        "speaker": "agent",
+        "text": "अब आप SMS में जो link है उसे click करें।"
+      },
+      {
+        "index": 4,
+        "speaker": "customer",
+        "text": "बोलो. भेज दिया क्या?"
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "text": "जी, मैंने SMS भेज दिया है। अब आप SMS में आए हुए link को click करके अपना process complete कर सकते हैं।"
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "text": "माफ़ कीजिए, क्या आप फिर से कह सकते हैं?"
+      },
+      {
+        "index": 7,
+        "speaker": "customer",
+        "text": "Link share कर दिया है मैंने."
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "text": "आप home screen पर आ गए हैं। आप नीचे एक 'Apply Now' button देख सकते हैं, उस पर click करें।"
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "text": "Madam? Link नहीं आ रहा."
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "text": "Internet connection check करें और link को एक बार फिर से try करें।"
+      },
+      {
+        "index": 11,
+        "speaker": "customer",
+        "text": "Internet connection on madam."
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "text": "Please try opening the link once again."
+      },
+      {
+        "index": 13,
+        "speaker": "customer",
+        "text": "एक minute"
+      },
+      {
+        "index": 14,
+        "speaker": "agent",
+        "text": "Okay. <CHD/>"
+      },
+      {
+        "index": 15,
+        "speaker": "customer",
+        "text": "एक minute हां ma'am."
+      },
+      {
+        "index": 16,
+        "speaker": "agent",
+        "text": "Sure. <CHD/>"
+      },
+      {
+        "index": 17,
+        "speaker": "customer",
+        "text": "Madam link अभी तक share नहीं किया."
+      },
+      {
+        "index": 18,
+        "speaker": "agent",
+        "text": "जी, मैंने SMS भेज दिया है। कृपया अपने phone में SMS check करें और उसमें आए link को click करें।"
+      },
+      {
+        "index": 19,
+        "speaker": "customer",
+        "text": "मेरा on call में link share नहीं हुआ होगा. एक call cut करके भी Hello madam? कौन से नाम से link आएगा?"
+      },
+      {
+        "index": 20,
+        "speaker": "agent",
+        "text": "Main Priya hoon, Aditya Birla Capital ki taraf se bol rahi hoon."
+      },
+      {
+        "index": 21,
+        "speaker": "customer",
+        "text": "Link कौन से नाम से आएगा?"
+      },
+      {
+        "index": 22,
+        "speaker": "agent",
+        "text": "SMS आपके registered मोबाइल नंबर से आएगा, sender name में Aditya Birla Capital दिखेगा।"
+      },
+      {
+        "index": 23,
+        "speaker": "customer",
+        "text": "बजाज बजाज का mail आएगा क्या बजाज finance का?"
+      },
+      {
+        "index": 24,
+        "speaker": "agent",
+        "text": "जी नहीं, SMS Aditya Birla Capital के नाम से आएगा, बजाज से नहीं।"
+      },
+      {
+        "index": 25,
+        "speaker": "agent",
+        "text": "माफ़ कीजिए, क्या आप फिर से बता सकते हैं?"
+      },
+      {
+        "index": 26,
+        "speaker": "customer",
+        "text": "दीपा? एक minute."
+      },
+      {
+        "index": 27,
+        "speaker": "customer",
+        "text": "अब इनका house कैसा है आपको आया है भाई को बताओ. Hello भाई क्या मैंने आपका आया Hello."
+      },
+      {
+        "index": 28,
+        "speaker": "agent",
+        "text": "हाँ जी, मैं इंतज़ार कर रही हूँ..."
+      },
+      {
+        "index": 29,
+        "speaker": "customer",
+        "text": "Hello आ गया madam आपको?"
+      },
+      {
+        "index": 30,
+        "speaker": "agent",
+        "text": "जी, मैं अभी आपके साथ हूँ। क्या हम आगे बढ़ें?"
+      },
+      {
+        "index": 31,
+        "speaker": "customer",
+        "text": "हां बढ़िया अभी तो दस लाख का तो भेजा है बजाज करके नाम का उसको ऊपर click."
+      },
+      {
+        "index": 32,
+        "speaker": "agent",
+        "text": "जी, आपको आदित्य बिरला कैपिटल की तरफ से 10 लाख रुपये तक का pre-approved loan offer मिला है। आप SMS में आए link पर click करके आगे बढ़ सकते हैं।"
+      },
+      {
+        "index": 33,
+        "speaker": "agent",
+        "text": "माफ़ करें, आप फिर से कहेंगे?"
+      },
+      {
+        "index": 34,
+        "speaker": "customer",
+        "text": "On call"
+      },
+      {
+        "index": 35,
+        "speaker": "agent",
+        "text": "जी, आप call पर ही हैं।"
+      },
+      {
+        "index": 36,
+        "speaker": "customer",
+        "text": "हां process कर रहा हूं."
+      },
+      {
+        "index": 37,
+        "speaker": "agent",
+        "text": "बहुत बढ़िया, कृपया SMS में आए link को click करके अपना application process complete करें।"
+      },
+      {
+        "index": 38,
+        "speaker": "customer",
+        "text": "तो call पर number डाला है."
+      },
+      {
+        "index": 39,
+        "speaker": "agent",
+        "text": "अब अपना mobile number enter करें। फिर Terms and Conditions checkbox को check करें और 'Get OTP' पर click करें।"
+      },
+      {
+        "index": 40,
+        "speaker": "customer",
+        "text": "आगे क्यों नहीं बोल रहा madam"
+      },
+      {
+        "index": 41,
+        "speaker": "agent",
+        "text": "आपको अपना mobile number enter करके Terms and Conditions के दोनों checkboxes को check करना होगा, फिर 'Get OTP' पर click करना होगा। OTP आने के बाद अगली screen पर OTP enter करें और 'Verify' पर click करें।"
+      },
+      {
+        "index": 42,
+        "speaker": "customer",
+        "text": "हां madam OTP डाल रहा है एक minute. OTP share कर दिया madam. Waiting period दिखा रहा है."
+      },
+      {
+        "index": 43,
+        "speaker": "agent",
+        "text": "हम आपके लिए सबसे अच्छा"
+      },
+      {
+        "index": 44,
+        "speaker": "customer",
+        "text": "अभी page मेरा यह खुला है."
+      },
+      {
+        "index": 45,
+        "speaker": "agent",
+        "text": "हम आपके लिए सबसे अच्छा loan"
+      },
+      {
+        "index": 46,
+        "speaker": "customer",
+        "text": "अभी पूरा detail हां बोलो."
+      },
+      {
+        "index": 47,
+        "speaker": "agent",
+        "text": "हम आपके लिए सबसे अच्छा loan offer अभी fetch कर रहे हैं, कृपया कुछ seconds इंतज़ार करें।"
+      },
+      {
+        "index": 48,
+        "speaker": "customer",
+        "text": "Hello? Ok, अभी company name?"
+      },
+      {
+        "index": 49,
+        "speaker": "agent",
+        "text": "मैं प्रिया हूँ, आदित्य बिरला कैपिटल की तरफ से बोल रही हूँ।"
+      },
+      {
+        "index": 50,
+        "speaker": "customer",
+        "text": "Company नाम दर्ज कर रहा हूं."
+      },
+      {
+        "index": 51,
+        "speaker": "agent",
+        "text": "अब अपनी organization का नाम enter करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 52,
+        "speaker": "customer",
+        "text": "Ek minute maan, kal ko."
+      },
+      {
+        "index": 53,
+        "speaker": "agent",
+        "text": "हाँ जी, मैं इंतज़ार कर रही हूँ..."
+      },
+      {
+        "index": 54,
+        "speaker": "customer",
+        "text": "Call to madam मैं company का नाम दर्ज कर रहा"
+      },
+      {
+        "index": 55,
+        "speaker": "agent",
+        "text": "ठीक है जी, कृपया अपना company नाम enter करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 56,
+        "speaker": "customer",
+        "text": "हूं. Ok madam."
+      },
+      {
+        "index": 57,
+        "speaker": "agent",
+        "text": "अब अपनी official email ID enter करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 58,
+        "speaker": "agent",
+        "text": "माफ़ कीजिए, क्या आप फिर से कहेंगे?"
+      },
+      {
+        "index": 59,
+        "speaker": "customer",
+        "text": "What do"
+      },
+      {
+        "index": 60,
+        "speaker": "agent",
+        "text": "अब अपनी official email ID enter करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 61,
+        "speaker": "customer",
+        "text": "मासिक origin मतलब madam मासिक महीने का income ना?"
+      },
+      {
+        "index": 62,
+        "speaker": "agent",
+        "text": "जी, मासिक income मतलब आपकी महीने की net salary होती है, जो आपके account में आती है।"
+      },
+      {
+        "index": 63,
+        "speaker": "agent",
+        "text": "अब अपनी organization का नाम enter करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 64,
+        "speaker": "customer",
+        "text": "एक minute हां."
+      },
+      {
+        "index": 65,
+        "speaker": "agent",
+        "text": "हाँ जी, मैं इंतज़ार कर रही हूँ..."
+      },
+      {
+        "index": 66,
+        "speaker": "customer",
+        "text": "Madam इसका interface वगैरह कितना बताया नहीं हम?"
+      },
+      {
+        "index": 67,
+        "speaker": "agent",
+        "text": "यह interface बहुत simple है — आपको बस fields में दिखाए अनुसार details fill करनी हैं और आगे बढ़ना है। मैं हर step पर आपकी मदद कर रही हूँ।"
+      },
+      {
+        "index": 68,
+        "speaker": "customer",
+        "text": "Processing में है madam, processing में है."
+      },
+      {
+        "index": 69,
+        "speaker": "agent",
+        "text": "बहुत बढ़िया, कृपया processing पूरा होने दें। मैं यहाँ हूँ अगर किसी मदद की ज़रूरत हो तो बताइएगा।"
+      },
+      {
+        "index": 70,
+        "speaker": "customer",
+        "text": "Ok. अभी मेरे पास madam homepage पूरा खुल गया है ना उधर amount दिख रहा है. EMI दिख रहा है, processing fee कितना cut जाएगा वह पूरा page open हुआ है."
+      },
+      {
+        "index": 71,
+        "speaker": "agent",
+        "text": "आपका loan amount, EMI और processing fee का पूरा विवरण homepage पर दिख रहा होगा। क्या आप अपना final offer देख पा रहे हैं?"
+      },
+      {
+        "index": 72,
+        "speaker": "customer",
+        "text": "Ok हां देख पा रहे हैं."
+      },
+      {
+        "index": 73,
+        "speaker": "agent",
+        "text": "यह final page है जहाँ आप अपना loan amount और offer देख सकते हैं। क्या आप अपना loan amount और final offer देख सकते हैं?"
+      },
+      {
+        "index": 74,
+        "speaker": "customer",
+        "text": "Madam Madam एक minute madam वह दस लाख रुपए और चौबीस महीने के लिए है क्या?"
+      },
+      {
+        "index": 75,
+        "speaker": "agent",
+        "text": "जी हाँ, यह दस लाख रुपए का loan offer है जो चौबीस महीनों के लिए है। क्या आप आगे बढ़ना चाहेंगे?"
+      },
+      {
+        "index": 76,
+        "speaker": "customer",
+        "text": "तो interest कितना जा रहा है उसको? बारह तक का?"
+      },
+      {
+        "index": 77,
+        "speaker": "agent",
+        "text": "Interest rate ten point nine nine percent"
+      },
+      {
+        "index": 78,
+        "speaker": "customer",
+        "text": "यह चार हज़ार"
+      },
+      {
+        "index": 79,
+        "speaker": "agent",
+        "text": "Interest rate ten point nine"
+      },
+      {
+        "index": 80,
+        "speaker": "customer",
+        "text": "यह चार हज़ार सात सौ"
+      },
+      {
+        "index": 81,
+        "speaker": "agent",
+        "text": "Interest rate ten point nine nine percent से शुरू होती है और आपके final offer पर depend करती है।"
+      },
+      {
+        "index": 82,
+        "speaker": "customer",
+        "text": "hello. Ok अभी madam इधर चार हज़ार पांच चार हज़ार सात सौ सात रुपया."
+      },
+      {
+        "index": 83,
+        "speaker": "agent",
+        "text": "क्या आप अपना loan amount और"
+      },
+      {
+        "index": 84,
+        "speaker": "customer",
+        "text": "एक दस लाख loan"
+      },
+      {
+        "index": 85,
+        "speaker": "agent",
+        "text": "क्या आप अपना loan amount और final offer देख पा रहे हैं?"
+      },
+      {
+        "index": 86,
+        "speaker": "customer",
+        "text": "हां देख पा रहा हूं मेरे सामने ही खुला हुआ है."
+      },
+      {
+        "index": 87,
+        "speaker": "agent",
+        "text": "यह final page है जहाँ आप अपना loan amount और final offer देख सकते हैं। क्या आप अपना loan amount और final offer देख पा रहे हैं?"
+      },
+      {
+        "index": 88,
+        "speaker": "agent",
+        "text": "अब मैं आपको Relationship Manager से connect कर देती हूँ जो आपका KYC process संभालेंगे। कृपया कुछ समय इंतज़ार करें।"
+      }
+    ]
+  },
+  {
+    "call_id": "354b7cd9",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "customer",
+        "text": "Hello."
+      },
+      {
+        "index": 1,
+        "speaker": "agent",
+        "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं भरत  एन जी से बात कर रही हूँ?"
+      },
+      {
+        "index": 2,
+        "speaker": "customer",
+        "text": "English."
+      },
+      {
+        "index": 3,
+        "speaker": "agent",
+        "text": "I am Priya from Aditya Birla Capital. May I please speak with Bharath N?"
+      },
+      {
+        "index": 4,
+        "speaker": "customer",
+        "text": "Yes, am I speaking?"
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "text": "Hello, Bharath N. I am Priya from Aditya Birla Capital. You have an exciting pre-approved loan offer of four lakh ninety-three thousand rupees. I can help you apply for this loan now. Shall we begin?"
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "text": "I will send you an SMS with a link to your application. Please keep your phone on speaker and check the SMS."
+      },
+      {
+        "index": 7,
+        "speaker": "agent",
+        "text": "Now, please click the link in the SMS."
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "text": "Sorry, are you still there on the call?"
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "text": "Yes. One second."
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "text": "Sure. <CHD/>"
+      },
+      {
+        "index": 11,
+        "speaker": "customer",
+        "text": "Yes, I opened the link."
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "text": "You have reached the home screen. You can see an 'Apply Now' button below; please click"
+      },
+      {
+        "index": 13,
+        "speaker": "agent",
+        "text": "Now, please enter your mobile number, check the Terms and Conditions checkbox, and click on 'Get OTP'."
+      },
+      {
+        "index": 14,
+        "speaker": "agent",
+        "text": "Sorry, are you still on the call?"
+      },
+      {
+        "index": 15,
+        "speaker": "customer",
+        "text": "One second."
+      },
+      {
+        "index": 16,
+        "speaker": "agent",
+        "text": "Sure. <CHD/>"
+      },
+      {
+        "index": 17,
+        "speaker": "agent",
+        "text": "You will receive a confirmation message saying 'We have sent an OTP'. Please enter the OTP on the next screen and click 'Verify'."
+      },
+      {
+        "index": 18,
+        "speaker": "customer",
+        "text": "Done done."
+      },
+      {
+        "index": 19,
+        "speaker": "agent",
+        "text": "Great! Now you will be taken to the basic details page where you need to fill in some information. First, please enter your PAN number exactly as printed on your PAN card and let me know once done."
+      },
+      {
+        "index": 20,
+        "speaker": "customer",
+        "text": "Done done."
+      },
+      {
+        "index": 21,
+        "speaker": "agent",
+        "text": "Now, please enter your full name as it appears on your PAN card, then select your gender, date of birth, and marital status. Let me know once done."
+      },
+      {
+        "index": 22,
+        "speaker": "agent",
+        "text": "Sorry, are you still on the call?"
+      },
+      {
+        "index": 23,
+        "speaker": "customer",
+        "text": "Typing typing the address."
+      },
+      {
+        "index": 24,
+        "speaker": "agent",
+        "text": "Now, please enter your personal email address and let me know once done."
+      },
+      {
+        "index": 25,
+        "speaker": "agent",
+        "text": "Sorry, I didn't catch that. Could you please repeat?"
+      },
+      {
+        "index": 26,
+        "speaker": "customer",
+        "text": "Done done."
+      },
+      {
+        "index": 27,
+        "speaker": "agent",
+        "text": "Now, please fill in your address including flat or house number, building name, street, locality, and pincode. Let me know when you have completed this."
+      },
+      {
+        "index": 28,
+        "speaker": "agent",
+        "text": "Please check the two Terms and Conditions checkboxes for data security, then click the 'Proceed' button."
+      },
+      {
+        "index": 29,
+        "speaker": "customer",
+        "text": "अच्छा."
+      },
+      {
+        "index": 30,
+        "speaker": "agent",
+        "text": "This is the Professional and Employment details page—please select your employment type first: Salaried or Self-Employed."
+      },
+      {
+        "index": 31,
+        "speaker": "agent",
+        "text": "Salaried means a job with regular monthly salary credited to your account; Self-Employed means owning a business, freelance work, or your own practice. Which one would you like to select?"
+      },
+      {
+        "index": 32,
+        "speaker": "agent",
+        "text": "Sorry, are you still there on the call?"
+      },
+      {
+        "index": 33,
+        "speaker": "customer",
+        "text": "Done, it's done."
+      },
+      {
+        "index": 34,
+        "speaker": "agent",
+        "text": "Please provide your monthly net take-home salary, excluding tax, bonus, and benefits. Let me know once done."
+      },
+      {
+        "index": 35,
+        "speaker": "agent",
+        "text": "Sorry, are you still on the call?"
+      },
+      {
+        "index": 36,
+        "speaker": "customer",
+        "text": "One second, it's loading."
+      },
+      {
+        "index": 37,
+        "speaker": "agent",
+        "text": "Please enter your monthly net take-home salary, excluding tax, bonus, and benefits. Let me know when you have done so."
+      },
+      {
+        "index": 38,
+        "speaker": "customer",
+        "text": "Are you a or are you a, person, real person?"
+      },
+      {
+        "index": 39,
+        "speaker": "agent",
+        "text": "I am Priya from Aditya Birla Capital. How can I assist you with your loan application today?"
+      },
+      {
+        "index": 40,
+        "speaker": "agent",
+        "text": "Sorry, are you still on call?"
+      },
+      {
+        "index": 41,
+        "speaker": "customer",
+        "text": "Yes, I'm still on call, wait."
+      },
+      {
+        "index": 42,
+        "speaker": "agent",
+        "text": "Sure. <CHD/>"
+      },
+      {
+        "index": 43,
+        "speaker": "agent",
+        "text": "Are you still there?"
+      },
+      {
+        "index": 44,
+        "speaker": "customer",
+        "text": "Yes, verifying Digilocker."
+      },
+      {
+        "index": 45,
+        "speaker": "agent",
+        "text": "Please enter your organization’s name now and let me know once done."
+      },
+      {
+        "index": 46,
+        "speaker": "agent",
+        "text": "Sorry, are you still there on the call?"
+      },
+      {
+        "index": 47,
+        "speaker": "agent",
+        "text": "Now, please enter your official email ID and let me know once done."
+      },
+      {
+        "index": 48,
+        "speaker": "customer",
+        "text": "Done."
+      },
+      {
+        "index": 49,
+        "speaker": "agent",
+        "text": "Now, please fill in your organization’s address and office pincode (6 digits). Let me know once completed."
+      },
+      {
+        "index": 50,
+        "speaker": "agent",
+        "text": "Please fill in your organization’s address and enter the 6-digit office pincode. Let me know once done."
+      },
+      {
+        "index": 51,
+        "speaker": "customer",
+        "text": "Done."
+      },
+      {
+        "index": 52,
+        "speaker": "agent",
+        "text": "Now that all details are filled, please click the 'Proceed' button."
+      },
+      {
+        "index": 53,
+        "speaker": "agent",
+        "text": "Hello, are you still there on the call?"
+      },
+      {
+        "index": 54,
+        "speaker": "agent",
+        "text": "You have completed all details. Now, please click the 'Proceed' button to continue."
+      },
+      {
+        "index": 55,
+        "speaker": "agent",
+        "text": "You will receive an OTP on your registered email. Please verify it and let me know once done."
+      },
+      {
+        "index": 56,
+        "speaker": "agent",
+        "text": "If you do not receive the OTP, please wait for a few seconds; it will arrive shortly. Let me know once you get it."
+      },
+      {
+        "index": 57,
+        "speaker": "customer",
+        "text": "Done."
+      },
+      {
+        "index": 58,
+        "speaker": "agent",
+        "text": "Great! Now you will see the final page where your loan amount and offer are displayed. Can you see your loan amount and final offer?"
+      },
+      {
+        "index": 59,
+        "speaker": "agent",
+        "text": "Now I will connect you to the Relationship Manager who will assist with your KYC process. Please wait for a moment."
+      }
+    ]
+  },
+  {
+    "call_id": "3b10addb",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "customer",
+        "text": "Hello."
+      },
+      {
+        "index": 1,
+        "speaker": "agent",
+        "text": "हाँ जी, मैं इंतज़ार कर रही हूँ... <CHD/>"
+      },
+      {
+        "index": 2,
+        "speaker": "customer",
+        "text": "Hello."
+      },
+      {
+        "index": 3,
+        "speaker": "agent",
+        "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं bijender  जी से बात कर रही हूँ?"
+      },
+      {
+        "index": 4,
+        "speaker": "customer",
+        "text": "कितने का?"
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "text": "जी, आपका pre-approved loan amount पचप्पन हजार"
+      },
+      {
+        "index": 6,
+        "speaker": "customer",
+        "text": "कितना ma'am?"
+      },
+      {
+        "index": 7,
+        "speaker": "agent",
+        "text": "जी, आपका pre-approved loan"
+      },
+      {
+        "index": 8,
+        "speaker": "customer",
+        "text": "कितना है जी?"
+      },
+      {
+        "index": 9,
+        "speaker": "agent",
+        "text": "जी, आपका pre-approved loan amount पचप्पन हजार रुपये है। क्या हम शुरू करें?"
+      },
+      {
+        "index": 10,
+        "speaker": "customer",
+        "text": "क्या interest है कितना percent है?"
+      },
+      {
+        "index": 11,
+        "speaker": "agent",
+        "text": "जी, interest rate आपकी profile और documents के आधार पर decide होता है — मैं अभी आपको application में guide कर सकती हूँ। क्या हम शुरू करें?"
+      },
+      {
+        "index": 12,
+        "speaker": "customer",
+        "text": "Hello."
+      },
+      {
+        "index": 13,
+        "speaker": "agent",
+        "text": "जी, आप SMS में जो link है उसे click करें।"
+      },
+      {
+        "index": 14,
+        "speaker": "agent",
+        "text": "माफ़ कीजिए, आप फिर से कहेंगे?"
+      },
+      {
+        "index": 15,
+        "speaker": "customer",
+        "text": "करो शुरू करो."
+      },
+      {
+        "index": 16,
+        "speaker": "agent",
+        "text": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।"
+      },
+      {
+        "index": 17,
+        "speaker": "agent",
+        "text": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।"
+      },
+      {
+        "index": 18,
+        "speaker": "agent",
+        "text": "अब आप SMS में जो link है उसे click करें।"
+      },
+      {
+        "index": 19,
+        "speaker": "agent",
+        "text": "माफ़ कीजिए, आप की बात फिर से कहेंगे?"
+      },
+      {
+        "index": 20,
+        "speaker": "customer",
+        "text": "हो गया हो गया जी."
+      },
+      {
+        "index": 21,
+        "speaker": "agent",
+        "text": "आप home screen पर आ गए हैं। आप नीचे एक 'Apply Now' button देख सकते हैं, उस पर click करें।"
+      },
+      {
+        "index": 22,
+        "speaker": "customer",
+        "text": "Apply?"
+      },
+      {
+        "index": 23,
+        "speaker": "agent",
+        "text": "जी, नीचे 'Apply Now' button दिखेगा, उस पर click करें।"
+      },
+      {
+        "index": 24,
+        "speaker": "customer",
+        "text": "कर दिया."
+      },
+      {
+        "index": 25,
+        "speaker": "agent",
+        "text": "अब आपको अपना mobile number enter करना है, फिर Terms and Conditions checkbox को check करें और 'Get OTP' पर click करें।"
+      },
+      {
+        "index": 26,
+        "speaker": "agent",
+        "text": "माफ़ कीजिए, आप क्या कह रहे थे?"
+      },
+      {
+        "index": 27,
+        "speaker": "customer",
+        "text": "सत्तर सौ सत्तर zero"
+      },
+      {
+        "index": 28,
+        "speaker": "agent",
+        "text": "अपना mobile number enter करें, फिर Terms and Conditions checkbox को check करें और 'Get OTP' पर click करें।"
+      },
+      {
+        "index": 29,
+        "speaker": "customer",
+        "text": "होता कर दिया."
+      },
+      {
+        "index": 30,
+        "speaker": "agent",
+        "text": "आपको एक confirmation आएगा 'We have sent an OTP'. अगली screen पर OTP enter करें और 'Verify' पर click करें।"
+      },
+      {
+        "index": 31,
+        "speaker": "customer",
+        "text": "हो गया one हज़ार."
+      },
+      {
+        "index": 32,
+        "speaker": "agent",
+        "text": "OTP enter करें और 'Verify' पर click करें। हो जाए तो बताएं।"
+      },
+      {
+        "index": 33,
+        "speaker": "customer",
+        "text": "कर दिया sir कर दिया."
+      },
+      {
+        "index": 34,
+        "speaker": "agent",
+        "text": "अब यह final page है जहाँ आप अपना loan amount और offer देख सकते हैं। क्या आप अपना loan amount और final offer देख सकते हैं?"
+      },
+      {
+        "index": 35,
+        "speaker": "agent",
+        "text": "अब मैं आपको Relationship Manager से connect कर देती हूँ जो आपका KYC process संभालेंगे। कृपया कुछ समय इंतज़ार करें।"
+      },
+      {
+        "index": 36,
+        "speaker": "agent",
+        "text": "अब मैं आपको Relationship Manager से connect कर देती हूँ जो आपका KYC process संभालेंगे। कृपया कुछ समय इंतज़ार करें।"
+      }
+    ]
+  },
+  {
+    "call_id": "3bda83f6",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "customer",
+        "text": "Hello."
+      },
+      {
+        "index": 1,
+        "speaker": "agent",
+        "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं राजबीर सिंह जी से बात कर रही हूँ?"
+      },
+      {
+        "index": 2,
+        "speaker": "customer",
+        "text": "Hello. हां जी. Hello?"
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "text": "Hello? जी शुरू कर रहा हूं."
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "text": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।"
+      },
+      {
+        "index": 5,
+        "speaker": "customer",
+        "text": "ठीक है जी."
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "text": "अब आप SMS में जो link है उसे click करें।"
+      },
+      {
+        "index": 7,
+        "speaker": "customer",
+        "text": "ठीक है जी."
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "text": "आप home screen पर आ"
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "text": "कर दिया. कर दिया."
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "text": "आप home screen पर आ गए हैं। आप नीचे एक 'Apply Now' button देख सकते हैं, उस पर click करें।"
+      },
+      {
+        "index": 11,
+        "speaker": "customer",
+        "text": "कर दिया."
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "text": "अब अपना mobile number enter करें। फिर Terms and Conditions checkbox को check करें और 'Get OTP' पर click करें।"
+      },
+      {
+        "index": 13,
+        "speaker": "customer",
+        "text": "ठीक है. कर दिया."
+      },
+      {
+        "index": 14,
+        "speaker": "agent",
+        "text": "आपको एक confirmation आएगा 'We have sent an OTP'. अगली screen पर OTP enter करें और 'Verify' पर click करें।"
+      },
+      {
+        "index": 15,
+        "speaker": "customer",
+        "text": "है verify. कर दिया verify कर दिया."
+      },
+      {
+        "index": 16,
+        "speaker": "agent",
+        "text": "OTP verify हो गया है तो अब personal details fill करने की प्रक्रिया शुरू करते हैं। यह basic details का page है। आपको कुछ details type करनी होंगी। सबसे पहले अपना पैन number fill करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 17,
+        "speaker": "customer",
+        "text": "कर दिया."
+      },
+      {
+        "index": 18,
+        "speaker": "agent",
+        "text": "अब अपना full name जैसा पैन पर है वो enter करें, फिर gender, date of birth और marital status select करें। हो जाए तो बताएं।"
+      },
+      {
+        "index": 19,
+        "speaker": "customer",
+        "text": "हो गया."
+      },
+      {
+        "index": 20,
+        "speaker": "agent",
+        "text": "अब अपना personal email address enter करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 21,
+        "speaker": "customer",
+        "text": "हो गया यह भी."
+      },
+      {
+        "index": 22,
+        "speaker": "agent",
+        "text": "अब अपना address fill करें — flat या house number, building name, street, locality का नाम, और pincode। सब fill हो जाए तो बताएं।"
+      },
+      {
+        "index": 23,
+        "speaker": "customer",
+        "text": "हो गया."
+      },
+      {
+        "index": 24,
+        "speaker": "agent",
+        "text": "आपको दो Terms and Conditions checkboxes दिखेंगे — दोनों को check करें, यह data security के लिए ज़रूरी है। फिर 'Proceed' button पर click करें।"
+      },
+      {
+        "index": 25,
+        "speaker": "customer",
+        "text": "ठीक है, proceed कर दिया."
+      },
+      {
+        "index": 26,
+        "speaker": "agent",
+        "text": "अब यह Professional और Employment details का page है — आपके loan offer को fetch करने के लिए यह details ज़रूरी हैं। पहले अपना employment type select करें — Salaried या Self-Employed।"
+      },
+      {
+        "index": 27,
+        "speaker": "customer",
+        "text": "Salaried,"
+      },
+      {
+        "index": 28,
+        "speaker": "agent",
+        "text": "Salaried के लिए Monthly income fill करें — यह आपकी net take-home salary है, tax, bonus और benefits को छोड़कर। हो जाए तो बताएं।"
+      },
+      {
+        "index": 29,
+        "speaker": "customer",
+        "text": "ठीक है हो गया."
+      },
+      {
+        "index": 30,
+        "speaker": "agent",
+        "text": "अब अपनी organization का नाम enter करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 31,
+        "speaker": "customer",
+        "text": "यह भी हो गया."
+      },
+      {
+        "index": 32,
+        "speaker": "agent",
+        "text": "अब अपनी official email ID enter करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 33,
+        "speaker": "customer",
+        "text": "ठीक है."
+      },
+      {
+        "index": 34,
+        "speaker": "agent",
+        "text": "अब"
+      },
+      {
+        "index": 35,
+        "speaker": "customer",
+        "text": "कर दिया."
+      },
+      {
+        "index": 36,
+        "speaker": "agent",
+        "text": "अब organization का address fill करें — जैसे fields में दिखाया गया है। फिर office pincode — 6 digits। सब हो जाए तो बताएं।"
+      },
+      {
+        "index": 37,
+        "speaker": "customer",
+        "text": "है कर दिया."
+      },
+      {
+        "index": 38,
+        "speaker": "agent",
+        "text": "अब 'Proceed' button पर click करें।"
+      },
+      {
+        "index": 39,
+        "speaker": "customer",
+        "text": "ठीक है proceed कर दिया."
+      },
+      {
+        "index": 40,
+        "speaker": "agent",
+        "text": "आपके registered email पर एक OTP आएगा — उसे verify करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 41,
+        "speaker": "customer",
+        "text": "ठीक है. Verify कर दिया."
+      },
+      {
+        "index": 42,
+        "speaker": "agent",
+        "text": "यह final page है जहाँ आप अपना loan amount और offer देख सकते हैं। क्या आप अपना loan amount और final offer देख सकते हैं?"
+      },
+      {
+        "index": 43,
+        "speaker": "agent",
+        "text": "अब मैं आपको Relationship Manager से connect कर देती हूँ जो आपका KYC process संभालेंगे। कृपया कुछ समय इंतज़ार करें।"
+      }
+    ]
+  },
+  {
+    "call_id": "3f381582",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "customer",
+        "text": "Hello."
+      },
+      {
+        "index": 1,
+        "speaker": "agent",
+        "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं शक्ति घलोथ जी से बात कर रही हूँ?"
+      },
+      {
+        "index": 2,
+        "speaker": "customer",
+        "text": "Hello. हां जी."
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "text": "क्या r o I ma'am"
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "text": "Interest rate ten point nine nine percent से शुरू होती है और आपके final offer पर depend करती है। जी, क्या हम शुरू करें?"
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "text": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।"
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "text": "अब आप SMS में जो link है उसे click करें।"
+      },
+      {
+        "index": 7,
+        "speaker": "agent",
+        "text": "आप home screen पर आ गए हैं। आप नीचे एक 'Apply Now' button देख सकते हैं, उस पर click करें।"
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "text": "चूंकि आप उत्तर नहीं दे रहे"
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "text": "Mobile number है."
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "text": "आप अपना mobile number"
+      },
+      {
+        "index": 11,
+        "speaker": "customer",
+        "text": "Mobile number डाल."
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "text": "आप अपना mobile number enter करें। फिर Terms and Conditions checkbox को check करें और 'Get OTP' पर click करें।"
+      },
+      {
+        "index": 13,
+        "speaker": "agent",
+        "text": "आपको एक confirmation आएगा 'We have sent an OTP'. अगली screen पर OTP enter करें और 'Verify' पर click करें।"
+      },
+      {
+        "index": 14,
+        "speaker": "customer",
+        "text": "PAN number मांग"
+      },
+      {
+        "index": 15,
+        "speaker": "agent",
+        "text": "यह पैन number एक 10-character alphanumeric identifier होता है जो आपके पैन card पर printed होता है — इसे ठीक वैसे ही capital letters में enter करें।"
+      },
+      {
+        "index": 16,
+        "speaker": "agent",
+        "text": "अब अपना पैन number fill करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 17,
+        "speaker": "agent",
+        "text": "अब अपना full name जैसा पैन पर है वो enter करें, फिर gender, date of birth और marital status select करें। हो जाए तो बताएं।"
+      },
+      {
+        "index": 18,
+        "speaker": "agent",
+        "text": "अब अपना personal email address enter करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 19,
+        "speaker": "agent",
+        "text": "अब अपना address fill करें — flat या house number, building name, street, locality का नाम, और pincode। सब fill हो जाए तो बताएं।"
+      },
+      {
+        "index": 20,
+        "speaker": "agent",
+        "text": "आपको दो Terms and Conditions checkboxes दिखेंगे — दोनों को check करें, यह data security के लिए ज़रूरी है। फिर 'Proceed' button पर click करें।"
+      },
+      {
+        "index": 21,
+        "speaker": "customer",
+        "text": "Wait ma'am wait."
+      },
+      {
+        "index": 22,
+        "speaker": "agent",
+        "text": "हाँ जी, मैं इंतज़ार कर रही हूँ..."
+      },
+      {
+        "index": 23,
+        "speaker": "agent",
+        "text": "यह Professional और Employment details का page है — आपके loan offer को fetch करने के लिए यह details ज़रूरी हैं। पहले अपना employment type select करें — Salaried या Self-Employed।"
+      },
+      {
+        "index": 24,
+        "speaker": "agent",
+        "text": "Salaried मतलब जहाँ monthly salary account में आती है। Self-Employed मतलब खुद का business, freelance, या अपनी practice। आप कौन सा select करें?"
+      },
+      {
+        "index": 25,
+        "speaker": "agent",
+        "text": "Salaried के लिए Monthly"
+      },
+      {
+        "index": 26,
+        "speaker": "customer",
+        "text": "I'm filling ma'am self employed ma'am."
+      },
+      {
+        "index": 27,
+        "speaker": "agent",
+        "text": "For self-employed, please fill your net monthly income — your approximate monthly business earnings. Let me know when done."
+      },
+      {
+        "index": 28,
+        "speaker": "agent",
+        "text": "Self-employed के लिए Net monthly income fill करें — अपनी approximate monthly business earnings। हो जाए तो बताएं।"
+      },
+      {
+        "index": 29,
+        "speaker": "customer",
+        "text": "जी हो गए."
+      },
+      {
+        "index": 30,
+        "speaker": "agent",
+        "text": "अब business या company का registered नाम enter करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 31,
+        "speaker": "agent",
+        "text": "अब business का address fill करें और business pincode enter करें — 6 digits। सब हो जाए तो बताएं।"
+      },
+      {
+        "index": 32,
+        "speaker": "customer",
+        "text": "आ गए ma'am."
+      },
+      {
+        "index": 33,
+        "speaker": "agent",
+        "text": "'Proceed' करने के बाद Udyam Verification page आएगा। अगर आपके पास Udyam number है तो वो और registered mobile number enter करके Submit करें।"
+      },
+      {
+        "index": 34,
+        "speaker": "customer",
+        "text": "करना है."
+      },
+      {
+        "index": 35,
+        "speaker": "agent",
+        "text": "अब OTP verify करें जो आपके registered mobile number पर आएगा। Verify हो जाए तो बताएं।"
+      },
+      {
+        "index": 36,
+        "speaker": "customer",
+        "text": "Ma'am Excuse me जो उद्यम है वह skip करना है."
+      },
+      {
+        "index": 37,
+        "speaker": "agent",
+        "text": "अगर आपके पास Udyam number नहीं है तो आप \"Skip\" option पर click कर सकते हैं।"
+      },
+      {
+        "index": 38,
+        "speaker": "customer",
+        "text": "हां जी उद्यम ने skip कर दिया तो अब hold on आ रहा है."
+      },
+      {
+        "index": 39,
+        "speaker": "agent",
+        "text": "हम आपके profile के लिए best loan offer fetch कर रहे हैं, कृपया कुछ seconds इंतज़ार करें।"
+      },
+      {
+        "index": 40,
+        "speaker": "customer",
+        "text": "Please note that loan amount and tenure sorry final can not be changed later."
+      },
+      {
+        "index": 41,
+        "speaker": "agent",
+        "text": "The loan amount and tenure cannot be changed later. Please review your final offer carefully."
+      },
+      {
+        "index": 42,
+        "speaker": "agent",
+        "text": "माफ़ कीजिए, आप फिर से कह सकते हैं?"
+      },
+      {
+        "index": 43,
+        "speaker": "customer",
+        "text": "एक minute ma'am मैं calculate कर रहा हूं ma'am."
+      },
+      {
+        "index": 44,
+        "speaker": "agent",
+        "text": "हाँ जी, मैं इंतज़ार कर रही हूँ..."
+      },
+      {
+        "index": 45,
+        "speaker": "customer",
+        "text": "इसका loan tenure कम करना है मुझे."
+      },
+      {
+        "index": 46,
+        "speaker": "agent",
+        "text": "मैं समझती हूँ, लेकिन loan tenure final offer के बाद change नहीं किया जा सकता। क्या मैं आपकी मदद के लिए आगे बढ़ूं?"
+      },
+      {
+        "index": 47,
+        "speaker": "customer",
+        "text": "नहीं उसको कम करना है ma'am tenure."
+      },
+      {
+        "index": 48,
+        "speaker": "agent",
+        "text": "जी, मैं समझ सकती हूँ कि आप loan tenure कम करना चाहते हैं, लेकिन final approval के बाद tenure change नहीं हो सकता। क्या मैं आगे process में आपकी मदद करूँ?"
+      },
+      {
+        "index": 49,
+        "speaker": "customer",
+        "text": "नहीं ma'am तीन साल के लिए नहीं चाहिए"
+      },
+      {
+        "index": 50,
+        "speaker": "agent",
+        "text": "मैं आपकी बात समझती हूँ, लेकिन loan tenure final approval के बाद change नहीं किया जा सकता। क्या मैं आपको Relationship Manager से connect कर दूँ जो इस बारे में और help कर सकें?"
+      },
+      {
+        "index": 51,
+        "speaker": "customer",
+        "text": "हां जी, हां जी."
+      },
+      {
+        "index": 52,
+        "speaker": "agent",
+        "text": "अब मैं आपको Relationship Manager से connect कर देती हूँ जो आपकी मदद करेंगे। कृपया कुछ समय इंतज़ार करें।"
+      }
+    ]
+  },
+  {
+    "call_id": "42e13796",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "customer",
+        "text": "Hello. Hello."
+      },
+      {
+        "index": 1,
+        "speaker": "agent",
+        "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं शैख़ अज़म शैख़ हशम जी से बात कर रही हूँ?"
+      },
+      {
+        "index": 2,
+        "speaker": "customer",
+        "text": "हां, बोलिए ना."
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "text": "जी हां करिए."
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "text": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।"
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "text": "अब आप SMS में जो link है उसे click करें।"
+      },
+      {
+        "index": 6,
+        "speaker": "customer",
+        "text": "Ok. क्या नाम saying ma'am"
+      },
+      {
+        "index": 7,
+        "speaker": "agent",
+        "text": "मैं प्रिया हूँ, आदित्य बिरला कैपिटल की तरफ से बोल रही हूँ।"
+      },
+      {
+        "index": 8,
+        "speaker": "customer",
+        "text": "जी हां ma'am बोलिए."
+      },
+      {
+        "index": 9,
+        "speaker": "agent",
+        "text": "आप SMS में जो link है उसे click करें।"
+      },
+      {
+        "index": 10,
+        "speaker": "customer",
+        "text": "Open. Open करना"
+      },
+      {
+        "index": 11,
+        "speaker": "agent",
+        "text": "आप home screen पर आ गए हैं। आप नीचे एक 'Apply Now' button देख सकते हैं, उस पर click करें।"
+      },
+      {
+        "index": 12,
+        "speaker": "customer",
+        "text": "कर दिया."
+      },
+      {
+        "index": 13,
+        "speaker": "agent",
+        "text": "अपना mobile number enter"
+      },
+      {
+        "index": 14,
+        "speaker": "customer",
+        "text": "Mobile number डालने को बोला मैं"
+      },
+      {
+        "index": 15,
+        "speaker": "agent",
+        "text": "अपना mobile number enter करें। फिर Terms and Conditions checkbox को check करें और 'Get OTP' पर click करें।"
+      },
+      {
+        "index": 16,
+        "speaker": "customer",
+        "text": "होगा ma'am. OTP."
+      },
+      {
+        "index": 17,
+        "speaker": "agent",
+        "text": "आपको एक confirmation आएगा 'We have sent an OTP'. अगली screen पर OTP enter करें और 'Verify' पर click करें।"
+      },
+      {
+        "index": 18,
+        "speaker": "agent",
+        "text": "माफ़ कीजिए, क्या आप फिर से कह सकते हैं?"
+      },
+      {
+        "index": 19,
+        "speaker": "customer",
+        "text": "कर दिया ma'am"
+      },
+      {
+        "index": 20,
+        "speaker": "customer",
+        "text": "उस पर लिखा आ रहा है congratulation your eligibility for the install on up to up one lakh down बावन हज़ार रुपए?"
+      },
+      {
+        "index": 21,
+        "speaker": "agent",
+        "text": "Interest rate ten point nine nine percent से शुरू होती है और आपके final offer पर depend करती है। मैं आपका application process आगे बढ़ाती हूँ।  \nअब अपना पैन number fill करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 22,
+        "speaker": "customer",
+        "text": "Ma'am इसका बताओ अपनी कर रहे हो उसका per month कितना आएगा कितने साल के लिए रहेगा?"
+      },
+      {
+        "index": 23,
+        "speaker": "agent",
+        "text": "EMI amount और tenure आपके final loan offer पर depend करता है, जो application पूरा होने के बाद दिखेगा। अभी application process शुरू करते हैं।  \nसबसे पहले अपना पैन number fill करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 24,
+        "speaker": "agent",
+        "text": "सबसे पहले अपना पैन number fill करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 25,
+        "speaker": "agent",
+        "text": "सबसे पहले अपना पैन number fill करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 26,
+        "speaker": "customer",
+        "text": "कर दिया."
+      },
+      {
+        "index": 27,
+        "speaker": "agent",
+        "text": "अब अपना full name जैसा पैन पर है वो enter करें, फिर gender, date of birth और marital status select करें। हो जाए तो बताएं।"
+      },
+      {
+        "index": 28,
+        "speaker": "customer",
+        "text": "हो गया."
+      },
+      {
+        "index": 29,
+        "speaker": "agent",
+        "text": "अब अपना personal email address enter करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 30,
+        "speaker": "agent",
+        "text": "माफ़ कीजिए, क्या आप"
+      },
+      {
+        "index": 31,
+        "speaker": "customer",
+        "text": "कर दिया. Email डाल दिया ma'am."
+      },
+      {
+        "index": 32,
+        "speaker": "agent",
+        "text": "अब अपना address fill करें — flat या house number, building name, street, locality का नाम, और pincode। सब fill हो जाए तो बताएं।"
+      },
+      {
+        "index": 33,
+        "speaker": "customer",
+        "text": "Building name तो नहीं है, area का नाम चालू है ma'am."
+      },
+      {
+        "index": 34,
+        "speaker": "agent",
+        "text": "अगर building name नहीं है तो area का नाम ठीक है। बस address पूरा भरें और pincode डालें। हो जाए तो बताएं।"
+      },
+      {
+        "index": 35,
+        "speaker": "customer",
+        "text": "Hello. Call पर"
+      },
+      {
+        "index": 36,
+        "speaker": "agent",
+        "text": "अब आप अपना address fill करें — flat या house number, building name, street, locality का नाम, और pincode। सब fill हो जाए तो बताएं।"
+      },
+      {
+        "index": 37,
+        "speaker": "agent",
+        "text": "अब आप दो Terms and Conditions checkboxes देखें। दोनों को check करें, यह data security के लिए ज़रूरी है। फिर 'Proceed' button पर click करें।"
+      },
+      {
+        "index": 38,
+        "speaker": "customer",
+        "text": "यह"
+      },
+      {
+        "index": 39,
+        "speaker": "agent",
+        "text": "Terms and Conditions दोनों check कर लें और फिर 'Proceed' button पर click करें।"
+      },
+      {
+        "index": 40,
+        "speaker": "customer",
+        "text": "यह area के नाम में वह हो रहा है sir ma'am उसका."
+      },
+      {
+        "index": 41,
+        "speaker": "agent",
+        "text": "जी, area के नाम में जो दिख रहा है वही fill करें। अगर सही लग रहा है तो proceed करें।"
+      },
+      {
+        "index": 42,
+        "speaker": "customer",
+        "text": "कर दिया."
+      },
+      {
+        "index": 43,
+        "speaker": "agent",
+        "text": "यह Professional और Employment details का page है — आपके loan offer को fetch करने के लिए यह details ज़रूरी हैं। पहले अपना employment type select करें — Salaried या Self-Employed।"
+      },
+      {
+        "index": 44,
+        "speaker": "agent",
+        "text": "माफ़ कीजिए, क्या आप अभी"
+      },
+      {
+        "index": 45,
+        "speaker": "customer",
+        "text": "The name of the business company."
+      },
+      {
+        "index": 46,
+        "speaker": "agent",
+        "text": "Please enter the full registered name of your business or company exactly as it appears in your business records."
+      },
+      {
+        "index": 47,
+        "speaker": "agent",
+        "text": "माफ़ कीजिए, क्या आप"
+      },
+      {
+        "index": 48,
+        "speaker": "customer",
+        "text": "हां यह business team"
+      },
+      {
+        "index": 49,
+        "speaker": "agent",
+        "text": "Please enter the full registered name of your business or company as per your business records."
+      },
+      {
+        "index": 50,
+        "speaker": "customer",
+        "text": "Hello? Business PIN code number बोलो तो ma'am?"
+      },
+      {
+        "index": 51,
+        "speaker": "agent",
+        "text": "Please enter the business PIN code number exactly as it appears on your business address documents."
+      },
+      {
+        "index": 52,
+        "speaker": "customer",
+        "text": "तो मैंने business address डाल दिया और नीचे PIN code business PIN code डाला"
+      },
+      {
+        "index": 53,
+        "speaker": "agent",
+        "text": "अब सब details भरने के बाद, कृपया confirm करें कि city और state सही दिख रहे हैं। अगर गलत हैं तो पिनकोड दोबारा ध्यान से enter करें।"
+      },
+      {
+        "index": 54,
+        "speaker": "customer",
+        "text": "होगा."
+      },
+      {
+        "index": 55,
+        "speaker": "agent",
+        "text": "अब 'Proceed' button पर click करें।"
+      },
+      {
+        "index": 56,
+        "speaker": "customer",
+        "text": "ऊपर."
+      },
+      {
+        "index": 57,
+        "speaker": "agent",
+        "text": "सब details fill हो गई हैं — अब 'Proceed' button पर click करें।"
+      },
+      {
+        "index": 58,
+        "speaker": "agent",
+        "text": "माफ़ कीजिए, क्या आप फिर"
+      },
+      {
+        "index": 59,
+        "speaker": "customer",
+        "text": "Skip कर दूं क्या उसको?"
+      },
+      {
+        "index": 60,
+        "speaker": "customer",
+        "text": "तू जो उद्यम का दे रहा उसको skip करो क्या?"
+      },
+      {
+        "index": 61,
+        "speaker": "agent",
+        "text": "अगर आपके पास Udyam number नहीं है तो आप \"Skip\" कर सकते हैं। इसके बाद manual review होगा। क्या आप आगे बढ़ना चाहेंगे?"
+      },
+      {
+        "index": 62,
+        "speaker": "customer",
+        "text": "वह भी इसकी तो nuvan cancel बता रहा उस पर."
+      },
+      {
+        "index": 63,
+        "speaker": "agent",
+        "text": "अगर Udyam नंबर नहीं है तो आप \"Skip\" कर सकते हैं। इसके बाद एक स्क्रीन आएगी जहाँ manual review होगा। क्या आप आगे बढ़ना चाहेंगे?"
+      },
+      {
+        "index": 64,
+        "speaker": "customer",
+        "text": "यह बढ़ेगा मैं आगे?"
+      },
+      {
+        "index": 65,
+        "speaker": "agent",
+        "text": "अगर आप आगे बढ़ना चाहते हैं तो \"Skip\" पर क्लिक करें। उसके बाद application manual review के लिए जाएगा। क्या आप आगे बढ़ना चाहेंगे?"
+      },
+      {
+        "index": 66,
+        "speaker": "customer",
+        "text": "जी हां बोलिए."
+      },
+      {
+        "index": 67,
+        "speaker": "agent",
+        "text": "अब OTP verify करें जो आपके registered mobile number पर आएगा। Verify हो जाए तो बताएं।"
+      },
+      {
+        "index": 68,
+        "speaker": "customer",
+        "text": "We are sorry. Unable process your loan application process. यह वापस आ गए ma'am"
+      },
+      {
+        "index": 69,
+        "speaker": "agent",
+        "text": "मुझे खेद है, आपकी loan application process में कुछ समस्या आ गई है। हमारी team आपसे जल्दी connect करेगी। धन्यवाद।"
+      },
+      {
+        "index": 70,
+        "speaker": "agent",
+        "text": "यह final page है जहाँ आप"
+      },
+      {
+        "index": 71,
+        "speaker": "customer",
+        "text": "Call पर"
+      },
+      {
+        "index": 72,
+        "speaker": "agent",
+        "text": "यह final page है जहाँ आप अपना loan amount और offer देख सकते हैं। क्या आप अपना loan amount और final offer देख सकते हैं?"
+      },
+      {
+        "index": 73,
+        "speaker": "agent",
+        "text": "माफ़ कीजिए, क्या आप अभी कॉल पर हैं?"
+      },
+      {
+        "index": 74,
+        "speaker": "agent",
+        "text": "यह final page है जहाँ आप अपना loan amount और offer देख सकते हैं। क्या आप अपना loan amount और final offer देख सकते हैं?"
+      },
+      {
+        "index": 75,
+        "speaker": "customer",
+        "text": "एक लाख बावन हज़ार का बता रहा है ma'am वह."
+      },
+      {
+        "index": 76,
+        "speaker": "agent",
+        "text": "अब मैं आपको Relationship Manager से connect कर देती हूँ जो आपका KYC process संभालेंगे। कृपया कुछ समय इंतज़ार करें।"
+      },
+      {
+        "index": 77,
+        "speaker": "agent",
+        "text": "अब मैं आपको Relationship Manager से connect कर देती हूँ जो आपका KYC process संभालेंगे। कृपया कुछ समय इंतज़ार करें।"
+      }
+    ]
+  },
+  {
+    "call_id": "465ce42d",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "customer",
+        "text": "Hello."
+      },
+      {
+        "index": 1,
+        "speaker": "agent",
+        "text": "हाँ जी, मैं इंतज़ार कर रही हूँ... <CHD/>"
+      },
+      {
+        "index": 2,
+        "speaker": "customer",
+        "text": "Hello."
+      },
+      {
+        "index": 3,
+        "speaker": "agent",
+        "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं बंडू शंकर चौधरी जी से बात कर रही हूँ?"
+      },
+      {
+        "index": 4,
+        "speaker": "customer",
+        "text": "हां बोल रहा हूं ma'am बोलिए."
+      },
+      {
+        "index": 5,
+        "speaker": "customer",
+        "text": "Hello. हां बोलिए."
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "text": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।"
+      },
+      {
+        "index": 7,
+        "speaker": "agent",
+        "text": "अब आप SMS में जो link है उसे click करें।"
+      },
+      {
+        "index": 8,
+        "speaker": "customer",
+        "text": "Ma'am message नहीं आया अभी."
+      },
+      {
+        "index": 9,
+        "speaker": "agent",
+        "text": "कृपया थोड़ी देर और इंतज़ार करें। SMS जल्दी आ जाएगा। आप SMS आने के बाद link को click करें।"
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "text": "क्या आपने SMS में link पर click किया?"
+      },
+      {
+        "index": 11,
+        "speaker": "customer",
+        "text": "हां hi ma'am है अभी. देख रहा हूं."
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "text": "आप home screen पर आ गए हैं। आप नीचे एक 'Apply Now' button देख सकते हैं, उस पर click करें।"
+      },
+      {
+        "index": 13,
+        "speaker": "customer",
+        "text": "फिर वहां कर दिया apply लाओ."
+      },
+      {
+        "index": 14,
+        "speaker": "agent",
+        "text": "अपना mobile number enter करें। फिर Terms and Conditions checkbox को check करें और 'Get OTP' पर click करें।"
+      },
+      {
+        "index": 15,
+        "speaker": "customer",
+        "text": "कितना interest लगेगा इसमें कुछ जानकारी आओ आगे?"
+      },
+      {
+        "index": 16,
+        "speaker": "agent",
+        "text": "Loan amount aapki eligibility aur documents ke basis par decide hota hai — main abhi aapko application mein guide kar sakti hoon। क्या आप अपना mobile number enter कर चुके हैं?"
+      },
+      {
+        "index": 17,
+        "speaker": "customer",
+        "text": "हां कर दिया ma'am."
+      },
+      {
+        "index": 18,
+        "speaker": "agent",
+        "text": "आपको एक confirmation आएगा 'We have sent an OTP'. अगली screen पर OTP enter करें और 'Verify' पर click करें।"
+      },
+      {
+        "index": 19,
+        "speaker": "customer",
+        "text": "हां, एक लाख चौंतीस हज़ार का है ma'am."
+      },
+      {
+        "index": 20,
+        "speaker": "agent",
+        "text": "यह basic details का page है। आपको कुछ details type करनी होंगी। सबसे पहले अपना पैन number fill करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 21,
+        "speaker": "agent",
+        "text": "अब अपना full name जैसा पैन पर है वो enter करें, फिर gender, date of birth और marital status select करें। हो जाए तो बताएं।"
+      },
+      {
+        "index": 22,
+        "speaker": "agent",
+        "text": "अब अपना personal email address enter करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 23,
+        "speaker": "customer",
+        "text": "हां ma'am है."
+      },
+      {
+        "index": 24,
+        "speaker": "agent",
+        "text": "अब अपना address fill करें — flat या house number, building name, street, locality का नाम, और pincode। सब fill हो जाए तो बताएं।"
+      },
+      {
+        "index": 25,
+        "speaker": "customer",
+        "text": "Sir है ma'am call पर है."
+      },
+      {
+        "index": 26,
+        "speaker": "agent",
+        "text": "अब आपको दो Terms and Conditions checkboxes दिखेंगे — दोनों को check करें, यह data security के लिए ज़रूरी है। फिर 'Proceed' button पर click करें।"
+      },
+      {
+        "index": 27,
+        "speaker": "customer",
+        "text": "Address save कर रहा हूं."
+      },
+      {
+        "index": 28,
+        "speaker": "agent",
+        "text": "यह Professional और Employment details का page है — आपके loan offer को fetch करने के लिए यह details ज़रूरी हैं। पहले अपना employment type select करें — Salaried या Self-Employed।"
+      },
+      {
+        "index": 29,
+        "speaker": "customer",
+        "text": "Ok, ma'am दो minute दीजिए."
+      },
+      {
+        "index": 30,
+        "speaker": "agent",
+        "text": "हाँ जी, मैं इंतज़ार कर रही हूँ..."
+      },
+      {
+        "index": 31,
+        "speaker": "customer",
+        "text": "हां ma'am है."
+      },
+      {
+        "index": 32,
+        "speaker": "agent",
+        "text": "Salaried मतलब जहाँ monthly salary account में आती है। Self-Employed मतलब खुद का business, freelance, या अपनी practice। आप किसे select करेंगे?"
+      },
+      {
+        "index": 33,
+        "speaker": "customer",
+        "text": "Communication code डाल दिया, लेकिन फिर भी यह process आगे का नहीं हो रहा है."
+      },
+      {
+        "index": 34,
+        "speaker": "agent",
+        "text": "Salaried के लिए Monthly income fill करें — यह आपकी net take-home salary है, tax, bonus और benefits को छोड़कर। हो जाए तो बताएं।"
+      },
+      {
+        "index": 35,
+        "speaker": "customer",
+        "text": "तो first page का अभी open नहीं हुआ तो."
+      },
+      {
+        "index": 36,
+        "speaker": "agent",
+        "text": "अब अपनी organization का नाम enter करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 37,
+        "speaker": "customer",
+        "text": "है ma'am लेकिन आगे का page open नहीं हो रहा है."
+      },
+      {
+        "index": 38,
+        "speaker": "agent",
+        "text": "Browser tab को पूरी तरह close करें और SMS में जो link है उसे फिर से open करें।"
+      },
+      {
+        "index": 39,
+        "speaker": "customer",
+        "text": "Call पर है."
+      },
+      {
+        "index": 40,
+        "speaker": "agent",
+        "text": "क्या आप एक बार browser tab को पूरी तरह बंद करके, SMS में मिला link फिर से खोल सकते हैं? इससे technical issue सुधार सकता है।"
+      },
+      {
+        "index": 41,
+        "speaker": "customer",
+        "text": "है मेरे पास call पर है."
+      },
+      {
+        "index": 42,
+        "speaker": "agent",
+        "text": "क्या आप एक बार browser tab को पूरी तरह बंद करके, SMS में मिला link फिर से खोल सकते हैं? इससे technical issue ठीक हो सकता है।"
+      },
+      {
+        "index": 43,
+        "speaker": "customer",
+        "text": "Ok ma'am, खोल रहा हूं."
+      },
+      {
+        "index": 44,
+        "speaker": "agent",
+        "text": "आप organization का address fill करें और office pincode भी enter करें। सब हो जाए तो बताएं।"
+      },
+      {
+        "index": 45,
+        "speaker": "agent",
+        "text": "माफ़ कीजिए, क्या आप दोबारा कह सकते हैं?"
+      },
+      {
+        "index": 46,
+        "speaker": "customer",
+        "text": "हां ma'am दुबारा अभी fill कर रहा हूं आपको first page."
+      },
+      {
+        "index": 47,
+        "speaker": "agent",
+        "text": "Terms and Conditions के दो checkboxes को check करें, फिर 'Proceed' button पर click करें।"
+      },
+      {
+        "index": 48,
+        "speaker": "customer",
+        "text": "है ma'am."
+      },
+      {
+        "index": 49,
+        "speaker": "agent",
+        "text": "आपके registered email पर एक OTP आएगा — उसे verify करें और हो जाए तो बताएं।"
+      },
+      {
+        "index": 50,
+        "speaker": "customer",
+        "text": "Ok, बताएं."
+      },
+      {
+        "index": 51,
+        "speaker": "agent",
+        "text": "कृपया अपने registered email पर आया OTP enter करें और verify करें। हो जाए तो बताएं।"
+      },
+      {
+        "index": 52,
+        "speaker": "customer",
+        "text": "Ok sir."
+      },
+      {
+        "index": 53,
+        "speaker": "agent",
+        "text": "क्या आपने OTP verify कर लिया है?"
+      },
+      {
+        "index": 54,
+        "speaker": "customer",
+        "text": "हां call पर है."
+      },
+      {
+        "index": 55,
+        "speaker": "agent",
+        "text": "अब यह final page है जहाँ आप अपना loan amount और offer देख सकते हैं। क्या आप अपना loan amount और final offer देख सकते हैं?"
+      },
+      {
+        "index": 56,
+        "speaker": "customer",
+        "text": "हां ma'am देख लिया."
+      },
+      {
+        "index": 57,
+        "speaker": "agent",
+        "text": "अब मैं आपको Relationship Manager से connect कर देती हूँ जो आपका KYC process संभालेंगे। कृपया कुछ समय इंतज़ार करें।"
+      }
+    ]
+  }
+]

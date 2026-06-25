@@ -1,0 +1,205 @@
+[
+  {
+    "timestamp": "2026-04-02T08:34:31",
+    "speaker": "user",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:34:31",
+    "speaker": "assistant",
+    "content": "नमस्ते… क्या मैं PRABHU DAYAL जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:34:42",
+    "speaker": "user",
+    "content": "हां madam.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:34:42",
+    "speaker": "assistant",
+    "content": "बिल्कुल, PRABHU DAYAL जी, मैं प्रिया बोल रही हूँ Aditya Birla Capital से। क्या मैं आपसे अभी कुछ देर बात कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:34:52",
+    "speaker": "user",
+    "content": "जी?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:34:52",
+    "speaker": "assistant",
+    "content": "जी, सबसे पहले मैं बता दूँ कि ये call training और quality purpose के लिए record की जा रही है। तो मुझे आपको ये बताना था कि Aditya Birla Capital की तरफ से आपके लिए ₹एक लाख सैंतालीस हज़ार रुपये का pre approved personal loan offer है। अगर आप चाहें तो मैं अभी इसी call पर आपको apply करने में मदद कर सकती हूँ, ज़्यादा समय नहीं लगेगा। तो क्या हम शुरू कर सकते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:35:15",
+    "speaker": "user",
+    "content": "जी madam.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:35:15",
+    "speaker": "assistant",
+    "content": "अच्छा जी, मैं अभी आपको एक SMS भेजती हूँ जिसमें एक लिंक होगा, उस लिंक पर क्लिक करके आप जहाँ से application छोड़ी थी वहीं से process जारी रख पाएंगे। कृपया अपना फोन स्पीकर पर रखें और SMS आने का इंतजार करें। ",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:35:38",
+    "speaker": "user",
+    "content": "जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:35:39",
+    "speaker": "assistant",
+    "content": "ठीक है, कृपया अपना फोन स्पीकर पर रखें और देखिए क्या आपको SMS मिल गया है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:35:53",
+    "speaker": "user",
+    "content": "जी ma'am सब मिल गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:35:53",
+    "speaker": "assistant",
+    "content": "बहुत बढ़िया, अब कृपया उस SMS में दिए गए लिंक पर क्लिक करें और बताएं कि लिंक खुल गया है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:36:07",
+    "speaker": "assistant",
+    "content": "क्या आप अभी भी कॉल पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:36:12",
+    "speaker": "user",
+    "content": "हां madam.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:36:12",
+    "speaker": "assistant",
+    "content": "शुक्रिया, अच्छा जी, लिंक खुल गया?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:36:18",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिए, क्या आप फिर से कह सकते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:36:24",
+    "speaker": "user",
+    "content": "यह madam खुल गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:36:24",
+    "speaker": "assistant",
+    "content": "बहुत बढ़िया, अब आप जिस पेज पर हैं वहाँ नीचे \"Apply Now\" का बटन दिख रहा होगा, कृपया उस पर क्लिक करें। बताएं जब आप कर लें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:36:35",
+    "speaker": "user",
+    "content": "Applied है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:36:35",
+    "speaker": "assistant",
+    "content": "बहुत अच्छा, अब जो पेज खुला है वह Login या Sign-in पेज होगा। कृपया अपने मोबाइल नंबर को टाइप करें ताकि आप आगे बढ़ सकें। अगर आपको कोई दिक्कत हो तो बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:36:54",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिए, क्या आप अभी भी कॉल पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:36:59",
+    "speaker": "user",
+    "content": "जी madam.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:36:59",
+    "speaker": "assistant",
+    "content": "शुक्रिया, कृपया उस पेज पर अपना मोबाइल नंबर टाइप करें जिसे आपने पहले यूज़ किया था, और नीचे दिए गए Terms and Conditions वाले बॉक्स को चेक करें। फिर \"Get OTP\" पर क्लिक करें। OTP आने के बाद उसे डालकर verify कर लें। बताएं जब ये सब हो जाए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:37:20",
+    "speaker": "user",
+    "content": "जी madam कर दिया OTP हो गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:37:20",
+    "speaker": "assistant",
+    "content": "बहुत बढ़िया, अब आप अगले पेज पर आ गए होंगे। मैं आपकी मदद के लिए यहाँ हूँ, कृपया बताएं कि आगे क्या दिख रहा है या कोई दिक्कत हो रही है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:37:35",
+    "speaker": "user",
+    "content": "कढ़ाई कढ़ाई लिखा हुआ आ रहा हैं इसमें, खड़ा हुआ हैं madam.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:37:35",
+    "speaker": "assistant",
+    "content": "अच्छा जी, मैं समझती हूँ कि पेज लोड होने में थोड़ा समय लग रहा होगा। कृपया कुछ और सेकंड इंतजार करें, हम आपके लिए सबसे अच्छा loan offer ला रहे हैं। अगर आप चाहें तो मैं इंतजार करती हूँ, या कोई सवाल हो तो पूछ सकते हैं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:37:54",
+    "speaker": "user",
+    "content": "Madam इसमें offer आ गया है कढ़ाई कढ़ाई में क्या डालना है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-02T08:37:54",
+    "speaker": "assistant",
+    "content": "जी, यह बहुत बढ़िया है कि आपको offer दिख रहा है। यह final offer पेज है जहाँ आप अपने pre approved loan की राशि देख सकते हैं। अब मैं आपको हमारे Relationship Manager से जोड़ रही हूँ जो आपके KYC और अगली प्रक्रिया में मदद करेंगे। कृपया थोड़ा इंतजार करें।",
+    "feedback": null,
+    "agent_id": null
+  }
+]

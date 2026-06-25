@@ -1,0 +1,702 @@
+{
+  "call_id": "d99d6949",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते… क्या मैं विकास सैनी जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "विकास सैनी जी, मैं प्रिया बोल रही हूँ Aditya Birla Capital से। क्या मैं आपसे अभी कुछ देर बात कर सकती हूँ?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_disclose_recording",
+      "base_intent": "recording_disclosure",
+      "keywords": [
+        "record",
+        "training",
+        "quality"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बिल्कुल, विकास सैनी जी। जी, सबसे पहले मैं बता दूँ कि ये call training और quality purpose के लिए record की जा रही है। तो मुझे आपको ये बताना था कि Aditya Birla",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms"
+      ],
+      "sentiment": null,
+      "tool": "send_sms",
+      "text": "ठीक है, विकास सैनी जी। मैं अभी आपको एक SMS भेजती हूँ, जिसमें एक लिंक होगा। उस लिंक पर क्लिक करके आप अपनी loan application वहीं से continue कर पाएंगे जहाँ आपने छोड़ा था। कृपया अपना फोन speaker पर रखें और SMS आने का इंतजार करें।",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है, विकास सैनी जी। कृपया अपना फोन speaker पर रखें और बताएं क्या आपको SMS मिल गया है?",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां जी call free है.",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "धन्यवाद, विकास सैनी जी। क्या आपको SMS मिल गया है जिसमें लिंक है?",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_sms_received",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां SMS मिल गया.",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "वेबसाइट",
+        "खुल गई",
+        "लिंक पर क्लिक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत बढ़िया, विकास सैनी जी। कृपया SMS में दिए गए लिंक पर क्लिक करें और बताएं क्या वेबसाइट खुल गई है?",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_link_opened",
+      "base_intent": "open_link",
+      "keywords": [
+        "खुल गई"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "खुल गई.",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_apply",
+      "base_intent": "click_apply",
+      "keywords": [
+        "apply now"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है, विकास सैनी जी। अब आप उस पेज पर हैं जहाँ नीचे \"Apply Now\" का बटन दिख रहा होगा। कृपया उस पर क्लिक करें और मुझे बताएं जब आप आगे बढ़ जाएं।",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां दबा दिया.",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp"
+      ],
+      "sentiment": null,
+      "tool": "send_otp",
+      "text": "बहुत बढ़िया, विकास सैनी जी। अब आपके सामने login screen आ गया होगा जहाँ आपको अपना मोबाइल नंबर टाइप करना है। कृपया वही नंबर टाइप करें जो आपने पहले उपयोग किया था। इसके बाद नीचे terms and conditions का बॉक्स होगा, कृपया उसे जरूर चेक करें और फिर \"Get OTP\" पर क्लिक करें। OTP मिलने के बाद उसे भरकर verify करें। अगर कोई दिक्कत हो तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_unclear",
+      "base_intent": "clarify_repeat",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "बीस.",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, विकास सैनी जी, कृपया पूरा मोबाइल नंबर टाइप करें ताकि आगे बढ़ सकें।",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "कर दिया"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां. कर दिया.",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp"
+      ],
+      "sentiment": null,
+      "tool": "send_otp",
+      "text": "ठीक है, विकास सैनी जी। अब कृपया नीचे terms and conditions वाला बॉक्स चेक करें और फिर \"Get OTP\" पर क्लिक करें। OTP आने पर उसे भरकर verify करें। कृपया बताएं जब ये पूरा हो जाए।",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_income",
+      "base_intent": "enter_income",
+      "keywords": [
+        "income"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "What मैं में monthly income online.",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_income",
+      "base_intent": "enter_income",
+      "keywords": [
+        "income"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अच्छा सवाल है, विकास सैनी जी। कृपया अपनी net monthly income टाइप करें, जो आपके take-home salary के बराबर हो। इसे आप अपने latest salary slip या salary credit देखकर भर सकते हैं। अगर आप self-employed हैं तो अपने business की approximate monthly income डालें। कृपया ये जानकारी भरकर बताएं ताकि हम आगे बढ़ सकें।",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_business_details",
+      "base_intent": "business_details",
+      "keywords": [
+        "business"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Business ma'am company का है क्या करूं?",
+      "entities": []
+    },
+    {
+      "index": 22,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_org_name",
+      "base_intent": "organization_name",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "समझ गई, विकास सैनी जी। अगर आपका business registered company के तहत आता है तो कृपया उस company का registered नाम टाइप करें। अगर कोई confusion हो तो आप अपने business के official documents या बैंक statements देखकर नाम डाल सकते हैं। कृपया ये जानकारी भरकर बताएं ताकि हम आगे बढ़ सकें।",
+      "entities": []
+    },
+    {
+      "index": 23,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "माफ़ कीजिए, कृपया दोबारा कहेंगे?",
+      "entities": []
+    },
+    {
+      "index": 24,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "कर दिया"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कर दिया है मैंने लिख के आराम.",
+      "entities": []
+    },
+    {
+      "index": 25,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_address",
+      "base_intent": "enter_address",
+      "keywords": [
+        "address"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत बढ़िया, विकास सैनी जी। अब कृपया business address और उसका पिनकोड सही से भरें, फिर \"Proceed\" पर क्लिक करें। अगर कोई सवाल हो तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 26,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "माफ़ करें, कृपया फिर से दोहरा सकते हैं?",
+      "entities": []
+    },
+    {
+      "index": 27,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "लगा रहा हूं",
+      "entities": []
+    },
+    {
+      "index": 28,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_business_details",
+      "base_intent": "business_details",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है, विकास सैनी जी। कृपया ध्यान से सभी details भरें और जैसे ही आप \"Proceed\" पर क्लिक कर लेंगे, मुझे बताएं ताकि मैं आगे आपकी मदद कर सकूँ।",
+      "entities": []
+    },
+    {
+      "index": 29,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "record. इसमें आगे की जानकारी फिर बाद मिलेगी क्या interest वगैरह की?",
+      "entities": []
+    },
+    {
+      "index": 30,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, विकास सैनी जी, जैसे ही आप \"Proceed\" पर क्लिक करेंगे और आगे बढ़ेंगे, आपको interest rate और final loan offer की जानकारी आखिरी पेज पर दिखाई देगी। अगर आप चाहें तो मैं उसी समय आपकी मदद कर सकती हूँ। क्या आप आगे बढ़ना चाहेंगे?",
+      "entities": []
+    },
+    {
+      "index": 31,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_final_offer",
+      "base_intent": "final_offer",
+      "keywords": [
+        "final offer"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत बढ़िया, विकास सैनी जी। कृपया आगे बढ़ें और जैसे ही final offer पेज दिखे, मुझे बताएं ताकि मैं आपकी मदद कर सकूँ।",
+      "entities": []
+    },
+    {
+      "index": 32,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 33,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_final_offer",
+      "base_intent": "final_offer",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, विकास सैनी जी, मैं प्रिया बोल रही हूँ Aditya Birla Capital से। कृपया बताएं, क्या आपने final loan offer पेज देख लिया है?",
+      "entities": []
+    },
+    {
+      "index": 34,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_address",
+      "base_intent": "enter_address",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं finally भी नहीं आया वह मैं apply कर रहा हूं PIN code लगा रहा हूं",
+      "entities": []
+    },
+    {
+      "index": 35,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_help_address_error",
+      "base_intent": "address_error",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "समझ गई, विकास सैनी जी। कृपया ध्यान से अपना पिनकोड सही से डालें। अगर पिनकोड डालने में कोई दिक्कत हो रही हो तो बताएं, मैं मदद करती हूँ।",
+      "entities": []
+    },
+    {
+      "index": 36,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "भर दिया",
+        "नहीं हो रहा",
+        "नहीं हो"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "अच्छा. इसमें आगे pro नहीं हो रहा क्या मतलब? सब कुछ भर दिया जी.",
+      "entities": []
+    },
+    {
+      "index": 37,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है, विकास सैनी जी।",
+      "entities": []
+    },
+    {
+      "index": 38,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_business_details",
+      "base_intent": "business_details",
+      "keywords": [
+        "business"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Business order",
+      "entities": []
+    },
+    {
+      "index": 39,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_business_details",
+      "base_intent": "business_details",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "समझ गई, विकास सैनी जी। अगर आपने सभी details भर दी हैं और \"Proceed\" button दबा दिया है, तो अब अगला step loading का होगा जिसमें आपका loan offer तैयार होगा। कृपया थोड़ा इंतजार करें, यह प्रक्रिया कुछ समय ले सकती है। अगर कोई issue आए तो मुझे जरूर बताएं।",
+      "entities": []
+    },
+    {
+      "index": 40,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_respond_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "उद्यम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इसमें क्या है उद्यम उद्यम में क्या लगवाए?",
+      "entities": []
+    },
+    {
+      "index": 41,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "udyam",
+        "उद्यम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, विकास सैनी जी, उद्यम नंबर वो होता है जो आपके business का Udyam registration number होता है। अगर आपके पास यह नंबर है तो कृपया वह भरें। अगर नहीं है या आप इसे भरना नहीं चाहते तो आप \"Skip\" भी कर सकते हैं। लेकिन ध्यान रखें कि Skip करने पर आपकी application manual review के लिए जाएगी। क्या आप उद्यम नंबर भरना चाहेंगे या Skip करना पसंद करेंगे?",
+      "entities": []
+    },
+    {
+      "index": 42,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "फिर से कह"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "माफ़ कीजिए, कृपया फिर से कहेंगे?",
+      "entities": []
+    },
+    {
+      "index": 43,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [
+        "skip"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Skip करना",
+      "entities": []
+    },
+    {
+      "index": 44,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_offer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [
+        "skip"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है, विकास सैनी जी। आप \"Skip\" पर क्लिक कर सकते हैं। इसके बाद आपको एक पेज दिखाई देगा जहाँ आपको \"Skip anyway\" या \"Cancel\" का विकल्प मिलेगा। अगर आप manual review के लिए जाना चाहते हैं तो \"Skip anyway\" पर क्लिक करें। कृपया बताएं जब आप यह कर लें।",
+      "entities": []
+    },
+    {
+      "index": 45,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_unclear",
+      "base_intent": "clarify_repeat",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "सात सौ तिरासी.",
+      "entities": []
+    },
+    {
+      "index": 46,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_offer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [
+        "skip"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, विकास सैनी जी, कृपया ध्यान से \"Skip anyway\" विकल्प पर क्लिक करें ताकि आपकी application manual review के लिए आगे बढ़ सके। इसके बाद प्रक्रिया आगे बढ़ेगी। कृपया बताएं जब यह हो जाए।",
+      "entities": []
+    },
+    {
+      "index": 47,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "यह तो ठीक है हम इसके लिए month अठारह month कम ज़्यादा करना हो तो.",
+      "entities": []
+    },
+    {
+      "index": 48,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "समझ गई, विकास सैनी जी। जो loan term होता है, जैसे अठारह महीने या उससे कम ज़्यादा, वो final offer पेज पर ही दिखेगा और वहीं से आप इसे customize कर पाएंगे। फिलहाल आप आवेदन पूरा करें,",
+      "entities": []
+    },
+    {
+      "index": 49,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_final_offer",
+      "base_intent": "final_offer",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "दिखा रहा है",
+      "entities": []
+    },
+    {
+      "index": 50,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_final_offer",
+      "base_intent": "final_offer",
+      "keywords": [
+        "final offer"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत अच्छा, विकास सैनी जी। क्या आप final offer और loan amount देख पा रहे हैं?",
+      "entities": []
+    },
+    {
+      "index": 51,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_transfer_to_rm",
+      "base_intent": "transfer_to_rm",
+      "keywords": [
+        "relationship manager"
+      ],
+      "sentiment": null,
+      "tool": "transfer_to_rm",
+      "text": "बहुत बढ़िया, विकास सैनी जी। अब मैं आपको हमारे Relationship Manager से connect कर रही हूँ ताकि वे आपकी KYC process में मदद कर सकें। कृपया कुछ देर इंतजार करें।",
+      "entities": []
+    }
+  ]
+}

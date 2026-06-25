@@ -1,0 +1,303 @@
+[
+  {
+    "timestamp": "2026-03-27T11:48:43",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:48:43",
+    "speaker": "assistant",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:48:46",
+    "speaker": "user",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:48:48",
+    "speaker": "user",
+    "content": "जी हां जी कहिए",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:48:48",
+    "speaker": "assistant",
+    "content": "नमस्ते… क्या मैं INDER LAL जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:48:55",
+    "speaker": "user",
+    "content": "Hello. INR?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:48:55",
+    "speaker": "assistant",
+    "content": "हाँ जी, मैं प्रिया बोल रही हूँ Aditya",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:48:59",
+    "speaker": "user",
+    "content": "क्या नाम लिया आपने?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:48:59",
+    "speaker": "assistant",
+    "content": "जी, मैंने INDER LAL नाम",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:49:02",
+    "speaker": "user",
+    "content": "हां जी प्रिया राय जी सही है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:49:02",
+    "speaker": "assistant",
+    "content": "INDER LAL जी, मैं प्रिया बोल रही हूँ Aditya Birla",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:49:07",
+    "speaker": "user",
+    "content": "Hello. हां जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:49:07",
+    "speaker": "assistant",
+    "content": "बिल्कुल, INDER LAL जी। मैं प्रिया बोल रही हूँ Aditya Birla",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:49:12",
+    "speaker": "user",
+    "content": "हां. हां जी, हां जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:49:15",
+    "speaker": "user",
+    "content": "हां जी, हां जी, हां जी, सही है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:49:15",
+    "speaker": "assistant",
+    "content": "बिल्कुल, तो मैं आपको बताना चाहती हूँ कि Aditya Birla Capital की तरफ से आपके लिए पचास हज़ार रुपये का pre approved personal loan offer है। अगर आप चाहें तो मैं अभी इसी call पर आपकी मदद कर सकती हूँ apply करने में, ज़्यादा समय नहीं लगेगा। तो क्या हम शुरू कर सकते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:49:36",
+    "speaker": "user",
+    "content": "वह Paytm वाला?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:49:36",
+    "speaker": "assistant",
+    "content": "अच्छा सवाल है... नहीं जी, ये Aditya Birla Capital का personal loan offer है, जो सीधे हमारी official वेबसाइट से लिंक होता है। इसमें आप बिना किसी पेमेंट ऐप के",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:49:48",
+    "speaker": "user",
+    "content": "अच्छा क्या interest है इसका?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:49:50",
+    "speaker": "user",
+    "content": "पचास हज़ार रुपए का.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:49:50",
+    "speaker": "assistant",
+    "content": "जी, interest rate final approval पर depend करेगा और ये आपको last offer page पर दिखेगा, जहां आपका exact loan amount और interest rate confirm होगा। फिलहाल मैं आपको SMS से application लिंक भेजती हूँ जिससे आप process continue कर सकें। मैं SMS भेज रही हूँ, कृपया अपना फोन स्पीकर पर रखें और देखिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:50:10",
+    "speaker": "assistant",
+    "content": "जी, मैंने आपके नंबर पर SMS भेज दिया है जिसमें एक लिंक होगा। कृपया अपना फोन स्पीकर पर रखें और देखिए कि आपको SMS मिला है या नहीं। क्या आपको SMS मिल गया है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:50:30",
+    "speaker": "assistant",
+    "content": "क्या आप अभी भी कॉल पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:50:35",
+    "speaker": "assistant",
+    "content": "चूंकि आप प्रतिक्रिया नहीं दे रहे हैं, मैं अब कॉल समाप्त कर रही हूँ। धन्यवाद!",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:50:42",
+    "speaker": "user",
+    "content": "Hello हां जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:50:42",
+    "speaker": "assistant",
+    "content": "जी, धन्यवाद बताने के लिए। क्या आपने SMS में लिंक देख लिया है? आप क्लिक करके अपना loan application process continue कर सकते हैं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:50:53",
+    "speaker": "user",
+    "content": "ठीक है जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:50:53",
+    "speaker": "assistant",
+    "content": "ठीक है, कृपया SMS में मिले लिंक पर क्लिक करें और जो पेज खुलेगा, वहाँ नीचे \"Apply Now\" का बटन दिखेगा, उसे दबाएं। क्या आप लिंक खोल पाए हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:51:07",
+    "speaker": "user",
+    "content": "जी हां जी खोल दिया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:51:07",
+    "speaker": "assistant",
+    "content": "बहुत बढ़िया, अब आप नीचे \"Apply Now\" बटन पर क्लिक करें। इसके बाद आप login स्क्रीन पर पहुँच जाएंगे। कृपया ऐसा करें और बताएं जब आप वहाँ पहुंच जाएं ताकि मैं आपकी आगे मदद कर सकूं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:51:28",
+    "speaker": "assistant",
+    "content": "क्या आप अभी भी कॉल पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:51:33",
+    "speaker": "user",
+    "content": "हां जी, हां जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:51:33",
+    "speaker": "assistant",
+    "content": "शुक्रिया, अब आप \"Apply Now\" बटन पर क्लिक कर दीजिए। इसके बाद आप login पेज पर आ जाएंगे, जहाँ आपको अपना मोबाइल नंबर टाइप करना है और टर्म्स एंड कंडीशंस को चेक करना है। फिर \"Get OTP\" पर क्लिक करें। कृपया यह करें और बताएं जब OTP प्राप्त हो जाए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:51:55",
+    "speaker": "user",
+    "content": "OTP आ गया जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:51:55",
+    "speaker": "assistant",
+    "content": "बहुत बढ़िया, कृपया OTP डालिए और \"Verify\" पर क्लिक करें। इसके बाद अगला पेज खुल जाएगा। जब आप अगला पेज खोल लें तो मुझे बताएं ताकि मैं आपकी आगे मदद कर सकूं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:52:15",
+    "speaker": "assistant",
+    "content": "क्या आप अभी भी कॉल पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:52:20",
+    "speaker": "user",
+    "content": "हां जी, हां जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:52:20",
+    "speaker": "assistant",
+    "content": "शुक्रिया, अब कृपया OTP डालकर verify कर लें और बताएं जब verify हो जाए ताकि मैं आपको आगे guide कर सकूं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:52:33",
+    "speaker": "user",
+    "content": "OTP डाल दिया जी congratulation you are eligible",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:52:38",
+    "speaker": "user",
+    "content": "eligible for an intense loan up to fifties.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:52:38",
+    "speaker": "assistant",
+    "content": "बहुत बढ़िया, INDER LAL जी। अब आप final loan offer पेज पर हैं जहाँ आपको आपका exact loan amount और interest rate दिखेगा। क्या आप वहाँ अपना loan offer और amount देख पा रहे हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:52:55",
+    "speaker": "user",
+    "content": "Thousand. Loan offer आ रहा है जी. बस.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-03-27T11:52:58",
+    "speaker": "user",
+    "content": "Loan offer amount. हां जी, हां जी.",
+    "feedback": null,
+    "agent_id": null
+  }
+]

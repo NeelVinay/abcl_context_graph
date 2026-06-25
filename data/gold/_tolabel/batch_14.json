@@ -1,0 +1,297 @@
+[
+  {
+    "call_id": "f93c02d0",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "customer",
+        "text": "Hello."
+      },
+      {
+        "index": 1,
+        "speaker": "agent",
+        "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं उदय प्रकाश जी से बात"
+      },
+      {
+        "index": 2,
+        "speaker": "customer",
+        "text": "Hello. Yes?"
+      },
+      {
+        "index": 3,
+        "speaker": "agent",
+        "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं उदय प्रकाश जी से बात कर रही हूँ?"
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "text": "I am sending you an SMS with a link to complete your application. Please keep your phone on speaker and check the SMS."
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "text": "Now, please click the link in the SMS you received."
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "text": "You have reached the home screen. You can see an 'Apply Now' button below; please click on it."
+      },
+      {
+        "index": 7,
+        "speaker": "agent",
+        "text": "Please enter your mobile number. Then check the Terms and Conditions checkbox and click on 'Get OTP'."
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "text": "Sorry, are you still there on the call?"
+      },
+      {
+        "index": 9,
+        "speaker": "agent",
+        "text": "Please enter your mobile number. Then check the Terms and Conditions checkbox and click on 'Get OTP'."
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "text": "You will receive a confirmation message saying 'We have sent an OTP'. On the next screen, enter the OTP and click on 'Verify'."
+      },
+      {
+        "index": 11,
+        "speaker": "agent",
+        "text": "Now, after you receive the OTP, please enter it and click on 'Verify'."
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "text": "Once you have verified the OTP, please let me know."
+      },
+      {
+        "index": 13,
+        "speaker": "customer",
+        "text": "Yes. Finish it."
+      },
+      {
+        "index": 14,
+        "speaker": "agent",
+        "text": "This is the basic details page. Please fill in your PAN number first and let me know when done."
+      },
+      {
+        "index": 15,
+        "speaker": "customer",
+        "text": "PAN number,"
+      },
+      {
+        "index": 16,
+        "speaker": "agent",
+        "text": "The PAN number is a 10-character alphanumeric identifier printed on your PAN card. Please type it exactly as printed, using all capital letters."
+      },
+      {
+        "index": 17,
+        "speaker": "agent",
+        "text": "Sorry, are you still on the call?"
+      },
+      {
+        "index": 18,
+        "speaker": "customer",
+        "text": "Ok. Yes yes yes."
+      },
+      {
+        "index": 19,
+        "speaker": "agent",
+        "text": "Please enter your PAN number exactly as printed on your PAN card, using all capital letters."
+      },
+      {
+        "index": 20,
+        "speaker": "agent",
+        "text": "Now please enter your full name exactly as it appears on your PAN card, then select your gender, date of birth, and marital status. Let me know when done."
+      },
+      {
+        "index": 21,
+        "speaker": "customer",
+        "text": "Just a minute."
+      },
+      {
+        "index": 22,
+        "speaker": "agent",
+        "text": "Sure. <CHD/>"
+      },
+      {
+        "index": 23,
+        "speaker": "agent",
+        "text": "Are you still there?"
+      },
+      {
+        "index": 24,
+        "speaker": "agent",
+        "text": "Please enter your full name exactly as it appears on your PAN card, then select your gender, date of birth, and marital status. Let me know when done."
+      },
+      {
+        "index": 25,
+        "speaker": "agent",
+        "text": "Sorry, are you still there on the call?"
+      },
+      {
+        "index": 26,
+        "speaker": "agent",
+        "text": "Now please enter your personal email address and let me know when done."
+      },
+      {
+        "index": 27,
+        "speaker": "agent",
+        "text": "Sorry, are you still on the call?"
+      },
+      {
+        "index": 28,
+        "speaker": "customer",
+        "text": "Ok. Yes. Finish."
+      },
+      {
+        "index": 29,
+        "speaker": "agent",
+        "text": "Please enter your personal email address and let me know when done."
+      },
+      {
+        "index": 30,
+        "speaker": "customer",
+        "text": "Done."
+      },
+      {
+        "index": 31,
+        "speaker": "agent",
+        "text": "Now please fill in your address — flat or house number, building name, street, locality name, and pincode. Let me know once completed."
+      },
+      {
+        "index": 32,
+        "speaker": "customer",
+        "text": "Done"
+      },
+      {
+        "index": 33,
+        "speaker": "agent",
+        "text": "Please check the two Terms and Conditions checkboxes; they are mandatory for data security. Then click on the 'Proceed' button."
+      },
+      {
+        "index": 34,
+        "speaker": "customer",
+        "text": "Done."
+      },
+      {
+        "index": 35,
+        "speaker": "agent",
+        "text": "This is the Professional and Employment details page, necessary to fetch your loan offer. First, please select your employment type — Salaried or Self-Employed."
+      },
+      {
+        "index": 36,
+        "speaker": "customer",
+        "text": "Salary"
+      },
+      {
+        "index": 37,
+        "speaker": "agent",
+        "text": "Salaried means a job with regular monthly salary credited to your account. Self-Employed means you have your own business, freelance work, or practice. Please confirm your employment type."
+      },
+      {
+        "index": 38,
+        "speaker": "agent",
+        "text": "Sorry, are you still on the call?"
+      },
+      {
+        "index": 39,
+        "speaker": "agent",
+        "text": "Salaried means a job with a regular monthly salary credited to your account. Self-Employed means you have your own business, freelance work, or practice. Please confirm your employment type."
+      },
+      {
+        "index": 40,
+        "speaker": "customer",
+        "text": "Done."
+      },
+      {
+        "index": 41,
+        "speaker": "agent",
+        "text": "Please provide your monthly net take-home salary, excluding tax, bonus, and benefits. Let me know once done."
+      },
+      {
+        "index": 42,
+        "speaker": "customer",
+        "text": "Done"
+      },
+      {
+        "index": 43,
+        "speaker": "agent",
+        "text": "Please enter the name of your organization and let me know when done."
+      },
+      {
+        "index": 44,
+        "speaker": "customer",
+        "text": "Done."
+      },
+      {
+        "index": 45,
+        "speaker": "agent",
+        "text": "Please enter your official email ID and let me know once you have done so."
+      },
+      {
+        "index": 46,
+        "speaker": "customer",
+        "text": "Done."
+      },
+      {
+        "index": 47,
+        "speaker": "agent",
+        "text": "Please fill in your organization's address as shown in the fields, including the office pincode (6 digits). Let me know when done."
+      },
+      {
+        "index": 48,
+        "speaker": "agent",
+        "text": "Sorry, are you still there on the call?"
+      },
+      {
+        "index": 49,
+        "speaker": "agent",
+        "text": "Now, please click the 'Proceed' button after filling in all the details."
+      },
+      {
+        "index": 50,
+        "speaker": "agent",
+        "text": "You will receive an OTP on your registered email. Please verify it and let me know once done."
+      },
+      {
+        "index": 51,
+        "speaker": "agent",
+        "text": "Sorry, are you still there on the call?"
+      },
+      {
+        "index": 52,
+        "speaker": "agent",
+        "text": "Please verify the OTP sent to your registered email and let me know when done."
+      },
+      {
+        "index": 53,
+        "speaker": "agent",
+        "text": "Sorry, are you still on the call?"
+      },
+      {
+        "index": 54,
+        "speaker": "agent",
+        "text": "Now, please verify the OTP sent to your registered email and let me know when done."
+      },
+      {
+        "index": 55,
+        "speaker": "customer",
+        "text": "Done."
+      },
+      {
+        "index": 56,
+        "speaker": "agent",
+        "text": "This is the final page where you can see your loan amount and offer. Are you able to see your loan amount and final offer?"
+      },
+      {
+        "index": 57,
+        "speaker": "agent",
+        "text": "Now I will connect you to a Relationship Manager who will assist you with the KYC process. Please wait for a moment."
+      }
+    ]
+  }
+]

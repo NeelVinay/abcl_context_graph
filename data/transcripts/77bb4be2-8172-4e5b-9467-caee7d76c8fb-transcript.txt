@@ -1,0 +1,233 @@
+[
+  {
+    "timestamp": "2026-04-01T11:51:02",
+    "speaker": "user",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:51:02",
+    "speaker": "assistant",
+    "content": "नमस्ते… क्या मैं DEEPAK S/O जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:51:10",
+    "speaker": "user",
+    "content": "Hello? हां जी, आप दीपक से बात कर रहे हो?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:51:10",
+    "speaker": "assistant",
+    "content": "बिल्कुल, DEEPAK S/O जी, मैं प्रिया बोल रही हूँ Aditya Birla Capital से। क्या मैं आपसे अभी कुछ देर बात कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:51:21",
+    "speaker": "user",
+    "content": "आप बात कर सकते हैं",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:51:21",
+    "speaker": "assistant",
+    "content": "बहुत धन्यवाद, DEEPAK S/O जी। जी, सबसे पहले मैं बता दूँ कि ये call training और quality purpose के लिए record की जा रही है। तो मुझे आपको ये बताना था कि Aditya Birla Capital की तरफ से आपके लिए ₹पचास हज़ार का pre approved personal loan offer है। अगर आप चाहें तो मैं अभी इसी call पर आपको apply करने में मदद कर सकती हूँ, ज़्यादा समय नहीं लगेगा। तो क्या हम शुरू कर सकते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:51:48",
+    "speaker": "user",
+    "content": "हां बिल्कुल.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:51:53",
+    "speaker": "assistant",
+    "content": "ठीक है, DEEPAK S/O जी, मैं अभी आपको SMS भेज रही हूँ जिसमें एक लिंक होगा। उस लिंक को खोलकर आप वहीं से अपना loan application process continue कर पाएंगे जहाँ आपने छोड़ा था। कृपया अपना फोन स्पीकर पर रखें और बताएं क्या आपको SMS मिल गया है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:52:12",
+    "speaker": "user",
+    "content": "हां, मिल गया है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:52:12",
+    "speaker": "assistant",
+    "content": "शाबाश, अब कृपया SMS में दिए गए लिंक पर क्लिक करें और बताएं कि क्या लिंक खुल गया है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:52:26",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिए, क्या आप अभी भी कॉल पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:52:32",
+    "speaker": "user",
+    "content": "हां मैं call पर हूं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:52:32",
+    "speaker": "assistant",
+    "content": "जी, धन्यवाद। कृपया SMS में भेजा गया लिंक खोलें और बताएं कि क्या आपने होम स्क्रीन देख ली है जहाँ नीचे \"Apply Now\" का बटन दिखता है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:52:45",
+    "speaker": "user",
+    "content": "मैंने",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:52:48",
+    "speaker": "user",
+    "content": "पहले process कर लिया है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:52:48",
+    "speaker": "assistant",
+    "content": "अच्छा, समझ गई। क्या आप लॉगिन स्क्रीन पर पहुँच गए हैं जहाँ आपको अपना मोबाइल नंबर डालना होता है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:53:02",
+    "speaker": "user",
+    "content": "मैंने PhonePe के द्वारा",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:53:03",
+    "speaker": "user",
+    "content": "कर लिया है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:53:07",
+    "speaker": "user",
+    "content": "क्या दुबारा करने की ज़रूरत है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:53:07",
+    "speaker": "assistant",
+    "content": "जी, अगर आपने पूरा loan application process पहले ही पूरा कर लिया है तो दुबारा करने की ज़रूरत नहीं है। क्या आप final offer page देख पा रहे हैं जहाँ आपका loan amount दिख रहा है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:53:23",
+    "speaker": "user",
+    "content": "मैं अभी आपको एक बात बताता हूं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:53:26",
+    "speaker": "user",
+    "content": "क्या आप मेरी आवाज़ sun पा रहे हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:53:26",
+    "speaker": "assistant",
+    "content": "जी हाँ, मैं आपकी आवाज़ सुन पा रही हूँ। कृपया बताएं, मैं आपकी किस तरह मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:53:39",
+    "speaker": "user",
+    "content": "मैं आपको बता दूं मैंने PhonePe के माध्यम से",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:53:44",
+    "speaker": "user",
+    "content": "लिया है loan app application approved complete दिखा रहा है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:53:48",
+    "speaker": "user",
+    "content": "Dispersing loan amount pending है अभी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:53:50",
+    "speaker": "user",
+    "content": "यह कब तक संभव हो पाएगा?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:53:50",
+    "speaker": "assistant",
+    "content": "जी, समझ सकती हूँ आपकी बात। जब आपका KYC process पूरा हो जाएगा और loan approval confirm हो जाएगा, तो loan amount आपके बैंक अकाउंट में आमतौर पर चौबीस से अड़तालीस घंटे के अंदर ट्रांसफर हो जाता है। कृपया थोड़ा धैर्य रखें, अगर कोई और मदद चाहिए तो बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:54:14",
+    "speaker": "user",
+    "content": "Loan application approval complete हो गया है. इसका मतलब",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:54:16",
+    "speaker": "user",
+    "content": "सब कुछ हो गया है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:54:16",
+    "speaker": "assistant",
+    "content": "जी, बिल्कुल सही समझा आपने। इसका मतलब आपका loan application पूरी तरह से approve हो चुका है और अब loan amount जल्द ही आपके बैंक अकाउंट में आ जाएगा। क्या आप final offer page देख पा रहे हैं जहाँ आपका loan amount दिखाई दे रहा है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:54:39",
+    "speaker": "user",
+    "content": "जी, approval loan amount पचास हज़ार, loan आप application approval complete लिखा हुआ है,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-01T11:54:43",
+    "speaker": "user",
+    "content": "loan amount में लिखा हुआ है कि दो दिन के बाद",
+    "feedback": null,
+    "agent_id": null
+  }
+]
