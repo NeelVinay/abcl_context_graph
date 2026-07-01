@@ -1,0 +1,371 @@
+{
+  "call_id": "LCS-XPYP",
+  "language": "hi-en",
+  "outcome": "raised_request",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपकी बात हुई है आज?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "पूरा",
+        "महीने",
+        "साल",
+        "बाती"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आज नहीं इसके बारे में दस बार बात हुआ है पूरा साल घर पूरा दस महीने से बाती कर",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "रहा हूँ मैं सर आपको",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "रिक्वेस्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "राउंगली डाड़ी बता दीजिए मैं यहाँ पर रिक्वेस्ट आ लेती हूँ राउंगली डाड़ी आती है कभी नीज नहीं आत",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "और कल आपको जो आहाथ नाम",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "की लिडाई थी क्या",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "मैडम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आती है? मैडम ये 10",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "अच्छी",
+        "महीने",
+        "महीना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "महीना हो गया और 10 महीना अच्छी जब से सर्वित ने के इस बार 10 महीने से ना एक भी महीना अच्छे में नहीं आई है",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "उसने",
+        "असर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओके कल जो आपको लिडाई थी उसने क्या असर बता",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "इंकॉरी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सकते हो? वो सब चेर वाले लोग और उसके पहले पर तो जो एक मलाड़ से आई न वो भी जड़ जड़ केंद्र। इसकी सब बेहतार इंकॉरी आती है। कोई मतलब से नहीं",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "लीड",
+        "काम",
+        "हूँ।",
+        "ओके।",
+        "इन्हां"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "है। ओके। मैं काम करती हूँ। एक बार इन्हां में रेज करती हूँ कि आपको लीड ज्वांग आ रही है। और लीड कम आ",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "इंक्वारी",
+        "महीने"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रही है। गया महीने से 48 दिन इंक्वारी नहीं आई या 48",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "काम",
+        "प्रॉब्लम",
+        "करवाती"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "दिन मैं एक काम को अधिक्षर करवाती ना कि क्या प्रॉब्लम है यही",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "पैसा",
+        "इंक्वारी",
+        "सिस्टम",
+        "रुपया",
+        "बनता"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तो मैंने तो यह बताओ 48 दिन इंक्वारी नहीं आई थी आपने 2500 रुपया आपने चास को काट लिया तो 48 दिन धीर इस दिन नहीं आई है तो इसका क्या म� सिस्टम में नहीं रहता सिस्टम में यह रहता है कि मैंने आपको पैसा दिया तो आपका फर्ज बनता है कि मैंने इंक्वारी दो आपकी फैल फार्ट करने से मतलब बात नहीं होता है मैं",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "करने सकता है अगर नहीं",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "टाइम",
+        "पैसा",
+        "जैस",
+        "जवाब",
+        "बैंक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जमता है ना आपको भी तो आप भी नया जवाब दे लो और जैस आप भी नया जॉब ढून लो, हमारा पैसा बरदाग मत करो। हमारा पैसा ना सूखी जा नहीं है, ये बहुत नेहनत का पैसा है। हर महिना आप लोग बैंक से पैसा काट जाता है मेरा, और आप लोग फिरिफ टाइम पास",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_org_name",
+      "base_intent": "organization_name",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "जाती हैं आपकी कंपनियों। मैं एक",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "काम",
+        "सर्विस",
+        "बंद",
+        "देने",
+        "बिल्कुल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "काम करती हूँ, कि अब मेरा मन चाहता रहता है जैतार से एक रुक्या में देने का आप इससे सर्विस बिल्कुल हमेशा के लिए बंद कर दे रहेंगे",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "काम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं इस काम करती हूँ रेज कर रही हूँ थोड़ा नी दो",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "पूरा",
+        "साल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "चीजें पूरा साल बार हमने",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "दस बार रेज",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "किया दस बार रेज किया",
+      "entities": []
+    },
+    {
+      "index": 22,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "चीज़े"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हमने यह जो कुछ चीज़े से मैं नहीं जाती हूँ पर मेरी आपके बात भी यह नहीं है लेकिन",
+      "entities": []
+    },
+    {
+      "index": 23,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "टाइम",
+        "फोन",
+        "देखा",
+        "रोज",
+        "रखो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपके देखा है हमेशा रोज नया नया लोग फोन करता है उसके लिए मैं टीस्टो किस्टो कुछ हूँ ठीक है रखो टाइम पास मत करो",
+      "entities": []
+    },
+    {
+      "index": 24,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "चीज़े"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं एक चीज़े के लिए �",
+      "entities": []
+    }
+  ]
+}

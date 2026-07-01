@@ -1,0 +1,384 @@
+{
+  "call_id": "LCS-CLJ2",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "recording_disclosure",
+      "keywords": [
+        "कॉल",
+        "लगा",
+        "हलो",
+        "टेक्स"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हलो आरण टेक्स में कॉल लगा है",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "लगा",
+        "हलो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ लगा रहा है चल लग दिया हलो क्या",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "कस्टमर",
+        "बोलते",
+        "कॉम",
+        "डॉट",
+        "जर्जाल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बोलते मांची बात कर दिये से जर्जाल डॉट कॉम कस्टमर सॉर्विस फील्ट से वेजिपुटीश बोलते हैं कॉन्ट्राक्ट के रिलेटर को चुशुत आपको कॉल्जा करेंश किया था आपने",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "चाली"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तुम्हार में तो आपके तीन मीन हो गया फर्विस चाली करके।",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "ओके।",
+        "हलो।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओके। ओके। हलो।",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_explain_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "लीड",
+        "शेयर",
+        "ओके।",
+        "अलड़ी",
+        "चाली"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तीन मीन हो गया फर्विस चाली करके। और दो लीड आई हैं आपके मेरे पास। और वो भी जो ख्राइंट है न, तो डीड है। ओके। अगर एक आपनी अलड़ी शेयर में डीड कर रहा है हाँ, दोरों का जो ही आई हैं, दोरों",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "चेक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "का नहीं है। चेक कर दीते हैं, जितर चेक कर",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "इतना",
+        "जिसमें",
+        "रखो",
+        "भूल",
+        "वापर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "दीते हैं, कोई इतना भूल पर... मैंने, मैं, हाँ, वो रखो आप, मेरे पास वापर रिकॉर्डिन है उसका, मैंने, जिसमें मैं के लिए पैक्टिज... यहाँ, जो अभी मैंने आपको, जो मै एक",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "मिनट",
+        "चाहते",
+        "इंक्वारी",
+        "गलत",
+        "बोलना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मिनट इंक्वारी गलत आ रही है बोलना चाहते",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "इंक्वारी",
+        "दोनों",
+        "गलत"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "है आप दोनों बार गलत ही आई है दो इंक्वारी आ रही है दोनों गलत",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "चेक",
+        "मिनट",
+        "लेते"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आ रही है चेक कर लेते है डीटल चेक करने के लिए कॉलिज मिनट होल पर रख सकते है",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "बोल",
+        "प्रॉब्लम",
+        "लाइन",
+        "अच्छी",
+        "समझ"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "फिर डोन माइन लो प्रॉब्लम एक इंक्वारी लाइन से ये क� पेट पाला से जाना है। हाँ। कौन चाहिए। ये तो बेट या और कुछ बाकी है। पहले बाइच तक एक जिन पूछे ये चीज़र क्या बोल रहा है। चीज़र क्या बोल रहा है। चीज़र क्या बोल रहा है। चीज़र क्या बोल रहा है। चीज़र क्या बोल रहा है। � पूरी भाई? अलो? अलो? हाँ, समझ रहा है, समझ रहा है। तेरे लोगों को अच्छी हुए? यहाँ पर अगर मैं आपको डिक्टर कर",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "सबसे",
+        "पहली",
+        "कंट्राक्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रही हूँ सबसे पहली चीज तो कंट्राक्ट में आपको डिक्टर",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं है आपको",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "ऐसे",
+        "प्रॉपर",
+        "मना",
+        "इंक्वाइरी",
+        "कंट्राक्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कंट्राक्ट प्रॉपर है ठीक है तो नहीं है कंट्राक्ट मैंने कहा आपका प्रॉपर है जो इंक्वाइरी के रिलीटेज में बात कर रहे है वो यू ऐसे customers को क्या हो रहा है? मना नहीं कर पा रहे कि वो किससे रूमते हैं? Ma'am, I agree to",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "काम",
+        "शेयर",
+        "प्रॉब्लम",
+        "complaint",
+        "दूसरी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "you. I agree to you. When it comes to the numbers, you know, अगर एक मेने के बाद मैं कोई complaint करती हूँ, यह विशेष विशेष विशे नहीं समझता। हमने काम करने अपनी 30 साल की एश्विनेश नहीं मतलब है। 10 साल में कितनी बार नहीं है। इससे पहले दो कंपली थी। मेरी उच्चा भी लिया था मैंने। वेलवर्ड टोडिकेस्ट भी लिया था। मैंने अपनी उच्चा नहीं लिया था। मैंने नहीं लिय नहीं है बद्दू प्रॉब्लम नहीं है एक शेयर दूने दूसरी शेयर दूने को तो भी ढूनेगा क्यों ढूनेगा",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "समझ",
+        "जरूरत"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "उसका क्या जरूरत है? आपने क्या जरूरत समझ",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "इसको"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "गई? बद्दू इसको टाइप के लिए एक",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "बार में मेरी",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "काम",
+        "बोल",
+        "प्रॉब्लम",
+        "inquiry",
+        "आगे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अंत यहाँ पर रेस कर दीती हूँ आपको रिक् मैं कुछ बोल रहा हूँ ना, मैं 30 जिन देखा हूँ आपको तब समझेगा, तब भी समझेगा तो देखेंगे क्या करना है ठीक है, तब समझेगा आएगा तो आगे काम करेंगे ठीक है, पहले जरें, वो प्रॉब्लम मैंको को नहीं है, मैंको false inquiry नहीं की, proper है, ठीक है, नहीं ह",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "प्लीज"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं मेरे एंप्रेस्टी के लिए रीज कर दीती हूँ, थोड़ा प्लीज के लिए",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "देख",
+        "प्रॉपर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "देख लीजिए प्रॉपर रहते हैं मैं कुछ चिकाइत",
+      "entities": []
+    },
+    {
+      "index": 22,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं करना था नहीं, बता रहा हूँ आपको ये",
+      "entities": []
+    },
+    {
+      "index": 23,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "पूरा",
+        "पड़ेगा",
+        "वाल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "पूरा वाल माला पड़ेगा करें",
+      "entities": []
+    }
+  ]
+}

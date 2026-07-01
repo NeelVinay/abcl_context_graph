@@ -1,0 +1,299 @@
+{
+  "call_id": "LCS-8EMS",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_disclose_recording",
+      "base_intent": "recording_disclosure",
+      "keywords": [
+        "कॉल",
+        "सर्विस",
+        "सेट",
+        "डॉट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जातिन सेट अफिर कितान श्रीर डिजिजिटल डॉट कम कश्चवा सर्विस में ले कॉल शेवित तुनान।",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "recording_disclosure",
+      "keywords": [
+        "कॉल",
+        "देखते",
+        "पड़े"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तो पड़े मैनाम। इसलिए कॉल देखते हैं गए",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "बड़ी। मात ले दर्य से पेज़ॉल्व है पेज़ॉल्व",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "टाइमिंग",
+        "सेर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "है पेज़ॉल्व है पेज़ॉल् अर्धन कालेजो सेर टाइमिंग वो 24",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "लाइन",
+        "कॉम",
+        "डॉट",
+        "डाइल",
+        "दान"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "वर्ष में अगर अगर लाइन में उन्हें उन्हें हाइद्राबाद, H-Y-D-E, R-A-B-L-D, हाइद्राबाद, आइद्रेट ओफ जिस्ट डाइल डॉट कॉम, J-U-S-T, D-I-A-L डॉट कॉम, दान के नेइल जायेंगे सर, अब इस तिंकार मात नेइल जायेंगे, में मा कीवल अनेज़ आज चेपेड़ान",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "अन्ते",
+        "दूर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "के उन्तदे सर, अब इस उसका मैं जानी अन्ते इजीज़ी के लिए तो दूर",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_confirm",
+      "base_intent": "agree",
+      "keywords": [
+        "लेते",
+        "अन्ते"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "स्रायड अन्ते यूज़बल का आवाट लेते अन्ते येम होस्तुना है सर मेरे",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "मेरे को? आई केशा है मेरे केशा",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "मेरे केशा",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "लीड़",
+        "पार्ट",
+        "पिक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मेरे केशा मेरे के� इन्दे वरक उक्का लीड़ भी माकी लीड़ पिक पार्ट",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "सेट",
+        "लीड़",
+        "मैंना",
+        "सेर",
+        "अज़े"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "है इसमें बाद है मैंना अज़े सेर मिक सेट लीड़ सोचते ने",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "चेक",
+        "डिटेल्स",
+        "लीड़",
+        "एक्जांपल",
+        "अज़े"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अंतुनार गदा लीड़ भी उकटी डिटेल्स एक्जांपल लिवन ली चेक जाएसतानू अंतुना इक्टुर ना सोचते ना लीड़ सेन अज़े मै ये अम्यदायलों ने लीड़ सकती, माठड़ते ने मामेरों ने वहाँ",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "रहे लेना वहाँ की",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "लीड़"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "संदीपा ने लीड़ एपड़ एपड़",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "वेट",
+        "लोगों",
+        "फिल्टर",
+        "इंक्वायरी",
+        "सिस्टम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "एपड़ एपड़ अब सर्चेस्ट नहीं फिल्टर कर सकते हैं और सिस्टम जनरेटेड होते हैं अब उन्लाइन लोगों के लिए इंक्वायरी करते हैं और फिल्टर करने के लिए सिस्टम जनरेटेड होते हैं तो वेट करेंगे मेटा रेस्पॉंस्ट्रेसिव",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "फॉरवर्ड"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "होता है और फॉरवर्ड होता है और",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_org_name",
+      "base_intent": "organization_name",
+      "keywords": [
+        "कॉल",
+        "call",
+        "नंबर",
+        "शेयर",
+        "customer"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रेटिंग लिंक अनेज़ वाटसप ले शेयर जेसान। आ लिंक को स्लिक्ट जेसे इवर के इतने पंपिछाल अनुकुन्टुनार वाला नेम और नंबर एंटर जेसे सेंड रिक्वेस्ट अनुचार अनुकुन्डी। लिंक वाले के वेली पोतेदे वाले में बिजनेस के रेटिंग इसतारो अटला मेरो रेटिंग्स अनेदी पेंचकोवाँच्छो सर इनको दमाशी स्टाइनिंगर नो इनको टीजार प्रेस्टिगर नो दमाशी स्टाइनिंग्स अपडेट अवाली अन्ते गणक कंपल्सरी मने justdial.com, दान की पंपिक्षन नहीं सर, ओके ना? इनके एवं ना concern उन्हां गुड़ा, जेस्ट आई लाप लो, self-serve, customer care option उन्तों दी, ticket raise जेस्ते, मैंने call जेस्ता हूँ सर, ओके ना? call तरवाद, मिक फीडबैक link शेयर होता दी, मैं इल्ला माटचा रहा हुआ ना दान कोरेंच 6-10 पॉजिटिव रेस्पॉंस 10 नहीं बन दी, सर. ओके न? कॉल की आपको उन्हें. केट देश कॉले,",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "thank"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सर. Thank you",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_transfer_to_rm",
+      "base_intent": "transfer_to_rm",
+      "keywords": [
+        "com",
+        "day",
+        "calling",
+        "great",
+        "using"
+      ],
+      "sentiment": null,
+      "tool": "transfer_to_rm",
+      "text": "for calling jsl.com, using jsl.com. Have a great day, sir.",
+      "entities": []
+    }
+  ]
+}

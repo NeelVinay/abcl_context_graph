@@ -1,0 +1,120 @@
+{
+  "call_id": "LCS-CIX6",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "इल्ला",
+        "लगता",
+        "इन्हां",
+        "अल्लो",
+        "बढ़ता"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अल्लो अल्लो ओके ओके आ बढ़ता नहीं है मड़म डाइली वन नातरा बढ़ता है ओके इन्हां चक्पण नोड़ता है इल्ला बैंगलूर इदी आ इमिन बैंगलूर सिटी सिट्स में पिलता है ये लगता है मड़म",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "अपडेट",
+        "माड़ी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इन्हें आओर अपडेट माड़ी दर",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "category",
+        "लीज",
+        "बढ़ता",
+        "चक्मा",
+        "मड़म"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मड़म ओके लीज बढ़ता इला अंतरा हाँ मैंने category चक्मा रहा हूँ वो category से",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "हूँ।",
+        "ओके।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जुड़ाते रहे भी शुद्धा हूँ। ओके। जुड़ता है?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "लाइक",
+        "रिपोर्ट",
+        "फीडबैक",
+        "कैटेगरी",
+        "लगते"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "शो आपते रहे हैं विश्युरू लगते हैं ना लाइक ना नू कैटेगरी ना कैटेगरी और कार एंटर अंता फीडबैक और लाइक इदू कैटेगरी फीडबैक रिपोर्ट रन",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "चेक",
+        "नोट",
+        "जागा",
+        "माड़"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "माड़नागा चेक माड़ नोट जागा",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "कोई प्रस्टेस्ट कमेंगे यूजर्सों तो दैवी त ठीक है मार्य।",
+      "entities": []
+    }
+  ]
+}

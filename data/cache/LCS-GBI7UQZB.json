@@ -1,0 +1,257 @@
+{
+  "call_id": "LCS-GBI7",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "सब्सक्राइब",
+        "लीज"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कर दो सब्सक्राइब करते हैं आपको आईपीना लीज होती है।",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "लीज"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपको आईपीना लीज होती है। आपको आईपीना लीज",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "लीज"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "होती है। आपको आईपीना लीज होती है।",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "लीज"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपको आईपीना लीज होती है। आपको आईपीना लीज होती है। ओके,",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "चेक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं एक साथ चेक करता हूँ, ओके",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "लाइन",
+        "मिनिट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "वन मिनिट लाइन",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "लाइन",
+        "inquiry",
+        "लास्ट",
+        "check",
+        "contract"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लाइन लाइन contract check जाते हैं sir, contract वे live activities हैं उन्हें इस तरह के लिए स्रवल्पिंग करते हैं उन्हें तीशी नहीं है लेकिन उन्हें इस तरह के लिए wrong inquiry हो जाते हैं इस तरह के लिए डिफरेंट सोल्स में forward हो जाते हैं इस तरह के लिए डिफरेंट हो जाते हैं इस तरह के लिए डिफरेंट सो इप्पड ओ पांट्रेक्ट तो ये दिला। एपड चीज़कुना से लास्ट टूवेल्स डिवेंबल लो अनुकुटा नहीं था? ये नहीं है। एवंने फोटोस नहीं है जो? कि ये पैकेज़ और मूवस के डिलाइट के लिए फोटोस अगर अनुनाया?",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "शेयर",
+        "अन्ता",
+        "लाइफ"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अनुनाया बहुत फ अगर उसे अड़कार अनुकुन अमरा, मैंने अन्ता इन्ही लाइफ, इन्ही स्टार्ली कोटेंश कुनना, शेयर",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "वाले की स्पीट नहीं सोचूतूना।",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_final_offer",
+      "base_intent": "final_offer",
+      "keywords": [
+        "देखिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इन्हें क्यों देखिए देखिए",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "देखिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "देखिए देखिए",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "देखिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "देखिए देखिए देखि�",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "अपडेट",
+        "प्रॉपर",
+        "आउट",
+        "एवरी",
+        "लाग"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओके, अपडेट आउट होते हुँदी सर मेरा प्रॉपर विजबाइंटी अपडेट आउट होते हुँदी, एवरी ओके लाग उन्हें नहीं है। लेकिन एक साथ इसके लिए",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_respond_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "बढ़ता"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैंने एक कंसर बढ़ता हूँ सर, लेकिन",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "इसके लिए मैंने एक कंसर",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "बढ़ता"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बढ़ता हूँ सर, लेकिन मैं",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
+      "keywords": [
+        "जाए",
+        "लाइव",
+        "तीके",
+        "अक्टिव",
+        "इश्य"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओके सर ये का होते रे जाए मैंने वायरेशन के कौन से हैं सर ये तीके रिजियाएंगे जैड़ी अपना मैं कौन से कोशिए प्रॉप्रा प्रॉप्रा लाइव तो इश्य हो रहा है सर अक्टिव वा लाइव जानों दे कौन से रिक्वेरमेंज बैठे ऑटिमेट",
+      "entities": []
+    }
+  ]
+}

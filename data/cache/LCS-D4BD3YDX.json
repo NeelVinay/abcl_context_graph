@@ -1,0 +1,204 @@
+{
+  "call_id": "LCS-D4BD",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "अल्लो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अल्लो अल्लो",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "कॉल",
+        "इन्हां"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इन्हां देबर कॉल मत रहे हैं तो कॉल",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "देखेंगे",
+        "इन्हों"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "पीस मत रहे हैं ना बेजिब पर देखेंगे इन्हों सर",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "देखेंगे",
+        "नोड़ता",
+        "चक्मा",
+        "इले"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नान चक्मा नोड़ता है इले यहाँ तो देखेंगे",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "लेकिन लेकिन अप्रुवाल नहीं",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "नेंगे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सर इस टिंजू नेंगे मुहतियों रिस्पेंड",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "रहा है तो यादवाना पालपाल रही थे अगर",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "इसको",
+        "नोड़ता"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अगर इसको नहीं रही थे तो ना चप्मा नोड़ता है यादवाना पालपाल रहा है तो ना चप्मा नोड़ता है यादवाना पालपाल रहा है तो ना चप्मा नोड़ता है",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "मड़म"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सर मड़म अगर क्यान",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "मड़म"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मड़बेच मड़म अगर क्यान",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "अरेंच"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अगर क्यान मड़बेच मड़बेच एग्जिकेटिव न अरेंच मड़वे करते हैं निम्दी? अधे मड़वे मैं एग्जिकेटिव न नमकरेंदे",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "अपलोड"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "येन अपलोड मेरे",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "कार्चा नहीं है मड़वे वीडियोस पागली, इपोर्टर",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [
+        "शुरू",
+        "अपलोड"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "पागली येन अपलोड मेरे कार्चा नहीं है मड़वे मैं एग्जिकेटिव न कल् शुरू है शुरू",
+      "entities": []
+    }
+  ]
+}

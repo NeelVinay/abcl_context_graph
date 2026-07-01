@@ -1,0 +1,4 @@
+Agent: The person you have called is speaking to someone else. You can wait or call again later. आपने जिस व्यक्ति को कॉल पिया है, वो अन्य कॉल कर जैस थे. The person
+Customer: you are speaking with has
+Agent: put your call on hold. Please stay on the line. आप जिस व्यक्ति से बात कर रहे हैं, उसने आपकी कॉल को hold पर रखा है. कृपया line पर बने रहे. The person you are speaking with has put your call on hold. Please stay on... Hello? RL Tour Central,
+Customer: right? एर्टिक्स उनको लाक्ट होगो ओके आ और कॉल मनागा पादे वाल मनागा ओके शाँ थैंक यू

@@ -1,0 +1,199 @@
+{
+  "call_id": "LCS-03F4",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "कॉल",
+        "चेक",
+        "लीड",
+        "लाइन",
+        "इश्यू"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपके लिए कॉल अरेंज आपको कुछ इश्यू है जर्जजाल के कंट्रेक्ट में? हाँ मैंडम हमको ना इजी नहीं आते प्रोफ़र मैं लीज क्यों नहीं आ रहे हैं मैं चेक कर रहे हूँ चेक करते हैं जो मैं लाइन कर रहे हूँ आपको लीड गलत क्यों आ रही है? आपका नाम जान सकते है? मेरी बात क्यों तो ही है?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello",
+        "बात कर रही",
+        "से बात"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मेरा नाम ध्यांका आ गया हूँ? Hello? मेरा नाम ध्यांका है, आज में चीजिंग से बात कर रही",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_personal_details",
+      "base_intent": "personal_details",
+      "keywords": [
+        "हमको"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हूँ, हमको वह नाम काइडिल और चीजिंग",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_personal_details",
+      "base_intent": "personal_details",
+      "keywords": [
+        "जान",
+        "जिसके"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "के लिए पेटिंग से आ रही है. मेरा नाम जान अगला जिसके",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "लीड",
+        "ऐसे",
+        "ताकि",
+        "गलत",
+        "चेंजेस"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लिए चाहिए एक रिस्टन लीड बताइए मैंको जो गलत आई है मैं इसके लिए चेंजेस करती हूँ आपके लिए जी एक रिस्टन नाम बताइए जो ऐसे लीड आई है ताकि मैं इसके लिए चेंजेस कर सकूँ",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_personal_details",
+      "base_intent": "personal_details",
+      "keywords": [
+        "लीड"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लीड के नाम बताओ आपको",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "लीड",
+        "गलत"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ लीड का नाम � अभी जो रिसाइन की लीड आई है वो गलत है",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "एक मिनट",
+        "मिनट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "एक मिनट में",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "चेक",
+        "लीड",
+        "लास्ट",
+        "गलत",
+        "हमको"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "चेक लास्ट मार्ट में चेक हमको एक की लीड आया है ये दीपक की जो लीड आई है आपको वो गलत थी",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "एक मिनट",
+        "चेक",
+        "मिनट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "एक मिनट में चेक",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "देखिए",
+        "लगा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है क्या लगा madam मैं देखिए आपको लगाती",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "customer",
+        "concern",
+        "support",
+        "option",
+        "application"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "है ओके अब दब दब करियेगा अब कोई information देना चाहूँगी result के application तो customer support option live है कोई भी concern हो कुछ भी",
+      "entities": []
+    }
+  ]
+}

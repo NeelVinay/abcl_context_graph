@@ -1,0 +1,128 @@
+{
+  "call_id": "LCS-6R5O",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_disclose_recording",
+      "base_intent": "recording_disclosure",
+      "keywords": [
+        "लीड",
+        "काम",
+        "बिजनेस",
+        "आउट",
+        "एरिया"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कर दो सर एक बिजनेस चल रहा है आपका जलता है लॉट कॉम्पेस के रिगार्डिंग हमने एक टिकट रेसीव कर रहा है आपका कुछ इशु फेस कर रहे हैं लीड से रिलेटिट कोंटेक्ट में लीड से रिलेटिट कोई इशु फेस कर रहे हैं सर बिजनेस में आपने कोई आउट � नहीं गुड़गाओं को एक पिन कोड लाइव है ठीक है मैं आपको एक करके आपके पिन कोड एरिया बता रहा हूँ अब बताना इसमें काम करते हो नहीं करते हो ठीक है बताओ तो रोहीनी डी एन सी रोहीनी",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "डी एन सी",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_terms_accept",
+      "base_intent": "accept_terms",
+      "keywords": [
+        "डबल",
+        "पिन",
+        "कोड"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रोहीनी इसका पिन कोड है डबल वन ड",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं कहाँ कहाँ सर ये जी एंडी एंसी ये",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_address",
+      "base_intent": "enter_address",
+      "keywords": [
+        "कही",
+        "नगर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रोहिनी कही है सर एंडी एंसी ये रोहिनी भी आता है सर आपका तो ठीक है मंगोलपुरी ओके बुद्धवियार ओके श्रावल नगर ठीक है मुलतान नगर",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है श्रागडी",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "सब्सक्राइब",
+        "चाहते",
+        "एरिया",
+        "दूँगा",
+        "गुड़"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है विश्णो गार्डियन गुड़ पच्चिम विहार, खंजाबला, नागलोई, संजारी बाग, शालिमर बाग, चंजे गादी ट्रास्पोर्ट नगर, पिलक नगर, बवाना, नियो शोक नगर, अगर आप चाहते हैं तो आप मुझे कोई पिन कोड एरिया बता सकते हैं जो इसमें एड कराना हूँ आपको डबल डबल दियो थर्टी द्री नहीं ये एड नहीं था एड कर दिया सर ये सब्सक्राइब करते हैं सर बिलकुल मैं अभी एड कर दूँगा हाँ",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_transfer_to_rm",
+      "base_intent": "transfer_to_rm",
+      "keywords": [
+        "सब्सक्राइब",
+        "नंबर",
+        "शेयर",
+        "लगा",
+        "रिसीव"
+      ],
+      "sentiment": null,
+      "tool": "transfer_to_rm",
+      "text": "दबल दबल सब्सक्राइब कर दीजिए कि मैंने आपके साथ शेयर के टेक्स मैसेज पर रिसीव होगा प्लीज सेट कर दीजिए नंबर नंबर अगर बात करने का तरीका अच्छा लगा हो चाहिए सब्सक्राइब करें",
+      "entities": []
+    }
+  ]
+}

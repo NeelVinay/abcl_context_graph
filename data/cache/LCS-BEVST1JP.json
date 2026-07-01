@@ -1,0 +1,39 @@
+{
+  "call_id": "LCS-BEVS",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "कॉल",
+        "सब्सक्राइब",
+        "अरेंज",
+        "मार्केटिंग",
+        "बैक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सब्सक्राइब करें सब्सक्राइब सब्सक्राइब करने के लिए मार्केटिंग का रिक्वारमेंट होगा तो मार्केटिंग की कॉल बैक अरेंज कराइट कराइट है सब्सक्राइब करें और",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "सब्सक्राइब"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सब्सक्राइब करें",
+      "entities": []
+    }
+  ]
+}

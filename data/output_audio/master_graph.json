@@ -1,0 +1,6136 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "count": 91,
+      "calls": [
+        "LCS-03F4",
+        "LCS-0ING",
+        "LCS-0X5J",
+        "LCS-115Q",
+        "LCS-1FT7",
+        "LCS-2374",
+        "LCS-3W62",
+        "LCS-437E",
+        "LCS-49S5",
+        "LCS-55MJ",
+        "LCS-5OKL",
+        "LCS-6LB4",
+        "LCS-6R5O",
+        "LCS-6W7C",
+        "LCS-70HM",
+        "LCS-79OA",
+        "LCS-88GC",
+        "LCS-89RR",
+        "LCS-93AB",
+        "LCS-9PBQ",
+        "LCS-9V23",
+        "LCS-9XSU",
+        "LCS-A3M2",
+        "LCS-A569",
+        "LCS-AGNV",
+        "LCS-ATFU",
+        "LCS-AZWX",
+        "LCS-B0WF",
+        "LCS-B7AU",
+        "LCS-BFC9",
+        "LCS-BSSY",
+        "LCS-BYAQ",
+        "LCS-C6UL",
+        "LCS-CLJ2",
+        "LCS-CRB6",
+        "LCS-E5K5",
+        "LCS-EOD9",
+        "LCS-FE74",
+        "LCS-FEM8",
+        "LCS-G4GA",
+        "LCS-G7KI",
+        "LCS-GOQS",
+        "LCS-IPR5",
+        "LCS-XPYP",
+        "LCS-Y48Z"
+      ],
+      "keywords": [
+        "कॉल",
+        "चेक",
+        "लीड",
+        "लाइन",
+        "इश्यू",
+        "ऐसे",
+        "ताकि",
+        "गलत",
+        "चेंजेस",
+        "customer",
+        "concern",
+        "support",
+        "option",
+        "application",
+        "call"
+      ],
+      "sentiments": {
+        "confused": 1,
+        "frustrated": 2
+      },
+      "speaker": "customer",
+      "base_intent": "ask_question",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_ask_question"
+    },
+    {
+      "count": 33,
+      "calls": [
+        "LCS-03F4",
+        "LCS-0X5J",
+        "LCS-115Q",
+        "LCS-18CV",
+        "LCS-1KJ9",
+        "LCS-1QJ9",
+        "LCS-2LVC",
+        "LCS-3ENT",
+        "LCS-3OK6",
+        "LCS-4E0N",
+        "LCS-4P6Q",
+        "LCS-55MJ",
+        "LCS-79OA",
+        "LCS-88GC",
+        "LCS-89RR",
+        "LCS-9V23",
+        "LCS-9XSU",
+        "LCS-A5YM",
+        "LCS-ATFU",
+        "LCS-AZWX",
+        "LCS-BNCL",
+        "LCS-CIX6",
+        "LCS-CRB6",
+        "LCS-ECE2",
+        "LCS-EOD9",
+        "LCS-F1GL",
+        "LCS-FE74",
+        "LCS-G7KI",
+        "LCS-HJV5",
+        "LCS-Y48Z"
+      ],
+      "keywords": [
+        "hello",
+        "बात कर रही",
+        "से बात",
+        "आपसे",
+        "हेलो",
+        "बोलो",
+        "हाँ।",
+        "हेलो।",
+        "कॉल",
+        "call",
+        "नंबर",
+        "काम",
+        "request",
+        "issue",
+        "business"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "greeting",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_greet"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-03F4"
+      ],
+      "keywords": [
+        "हमको"
+      ],
+      "sentiments": {},
+      "speaker": "customer",
+      "base_intent": "personal_details",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_provide_personal_details"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-03F4",
+        "LCS-7SJY"
+      ],
+      "keywords": [
+        "जान",
+        "जिसके",
+        "लीड",
+        "बिल्कुल",
+        "पूछ"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "personal_details",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_request_personal_details"
+    },
+    {
+      "count": 34,
+      "calls": [
+        "LCS-03F4",
+        "LCS-0X5J",
+        "LCS-1FT7",
+        "LCS-2374",
+        "LCS-437E",
+        "LCS-55MJ",
+        "LCS-5JXW",
+        "LCS-5OKL",
+        "LCS-5Y7D",
+        "LCS-70HM",
+        "LCS-88GC",
+        "LCS-8AF3",
+        "LCS-A3M2",
+        "LCS-ATFU",
+        "LCS-B0WF",
+        "LCS-DMBH",
+        "LCS-E5K5",
+        "LCS-F1GL",
+        "LCS-FE74",
+        "LCS-FEM8",
+        "LCS-G4GA",
+        "LCS-IPR5",
+        "LCS-RDCG",
+        "LCS-Y48Z"
+      ],
+      "keywords": [
+        "एक मिनट",
+        "मिनट",
+        "चेक",
+        "देखिए",
+        "लगा",
+        "नाइन",
+        "डबल",
+        "फोर",
+        "कॉल",
+        "call",
+        "उसने",
+        "रखा",
+        "person",
+        "काम",
+        "सपोर्ट"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "wait_hold",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_wait"
+    },
+    {
+      "count": 106,
+      "calls": [
+        "LCS-03F4",
+        "LCS-0X5J",
+        "LCS-1FT7",
+        "LCS-1KJ9",
+        "LCS-1V8M",
+        "LCS-2374",
+        "LCS-2LVC",
+        "LCS-2PN8",
+        "LCS-3ENT",
+        "LCS-3W62",
+        "LCS-437E",
+        "LCS-49S5",
+        "LCS-4P6Q",
+        "LCS-55MJ",
+        "LCS-5JXW",
+        "LCS-5OKL",
+        "LCS-5Y7D",
+        "LCS-6W7C",
+        "LCS-79OA",
+        "LCS-7HAV",
+        "LCS-7IM9",
+        "LCS-7SJY",
+        "LCS-88GC",
+        "LCS-89RR",
+        "LCS-8AF3",
+        "LCS-8EMS",
+        "LCS-93AB",
+        "LCS-9MBJ",
+        "LCS-9PBQ",
+        "LCS-9V23",
+        "LCS-A3M2",
+        "LCS-AGNV",
+        "LCS-ATFU",
+        "LCS-B0WF",
+        "LCS-B7AU",
+        "LCS-BFC9",
+        "LCS-BNCL",
+        "LCS-BSSY",
+        "LCS-C6UL",
+        "LCS-CLJ2",
+        "LCS-D4BD",
+        "LCS-DMBH",
+        "LCS-E5K5",
+        "LCS-EE1V",
+        "LCS-FEM8",
+        "LCS-FICV",
+        "LCS-G7KI",
+        "LCS-GBI7",
+        "LCS-GOQS",
+        "LCS-HJV5",
+        "LCS-IPR5",
+        "LCS-NO12",
+        "LCS-XPYP"
+      ],
+      "keywords": [
+        "चेक",
+        "लीड",
+        "लास्ट",
+        "गलत",
+        "हमको",
+        "कैसे",
+        "सब्सक्राइब",
+        "काम",
+        "उनको",
+        "मैडम",
+        "राइट",
+        "रॉंग",
+        "रेजिस्टर",
+        "नीड",
+        "ट्रॉपर"
+      ],
+      "sentiments": {
+        "confused": 1,
+        "frustrated": 1
+      },
+      "speaker": "customer",
+      "base_intent": "other",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_other"
+    },
+    {
+      "count": 108,
+      "calls": [
+        "LCS-03F4",
+        "LCS-0ING",
+        "LCS-0X5J",
+        "LCS-115Q",
+        "LCS-18CV",
+        "LCS-1FT7",
+        "LCS-1KJ9",
+        "LCS-1O0N",
+        "LCS-1QJ9",
+        "LCS-1V8M",
+        "LCS-2374",
+        "LCS-2LVC",
+        "LCS-2PN8",
+        "LCS-2SJT",
+        "LCS-3C5E",
+        "LCS-3ENT",
+        "LCS-3IW7",
+        "LCS-3OK6",
+        "LCS-3W62",
+        "LCS-437E",
+        "LCS-49S5",
+        "LCS-4E0N",
+        "LCS-4GM3",
+        "LCS-4P6Q",
+        "LCS-55MJ",
+        "LCS-5DGE",
+        "LCS-5JXW",
+        "LCS-5OKL",
+        "LCS-5XWH",
+        "LCS-5Y7D",
+        "LCS-6LB4",
+        "LCS-6R5O",
+        "LCS-6W7C",
+        "LCS-70HM",
+        "LCS-76E1",
+        "LCS-79OA",
+        "LCS-7AAC",
+        "LCS-7HAV",
+        "LCS-7IM9",
+        "LCS-7SJY",
+        "LCS-8844",
+        "LCS-88GC",
+        "LCS-89OM",
+        "LCS-89RR",
+        "LCS-8AF3",
+        "LCS-8EMS",
+        "LCS-93AB",
+        "LCS-9EV3",
+        "LCS-9MBJ",
+        "LCS-9PBQ",
+        "LCS-9V23",
+        "LCS-9XSU",
+        "LCS-A3M2",
+        "LCS-A569",
+        "LCS-A5YM",
+        "LCS-AGNV",
+        "LCS-AR0V",
+        "LCS-ATFU",
+        "LCS-AZWX",
+        "LCS-B0WF",
+        "LCS-B7AU",
+        "LCS-BEVS",
+        "LCS-BFC9",
+        "LCS-BG9F",
+        "LCS-BNCL",
+        "LCS-BPXM",
+        "LCS-BSSY",
+        "LCS-BYAQ",
+        "LCS-C6FG",
+        "LCS-C6UL",
+        "LCS-CIX6",
+        "LCS-CLJ2",
+        "LCS-CRB6",
+        "LCS-D3HH",
+        "LCS-D4BD",
+        "LCS-DF7C",
+        "LCS-DMBH",
+        "LCS-E4SV",
+        "LCS-E5K5",
+        "LCS-ECE2",
+        "LCS-EE1V",
+        "LCS-EOD9",
+        "LCS-ERUS",
+        "LCS-F1GL",
+        "LCS-FE74",
+        "LCS-FEM8",
+        "LCS-FICV",
+        "LCS-FPJ7",
+        "LCS-FPO5",
+        "LCS-FWYG",
+        "LCS-G4GA",
+        "LCS-G7KI",
+        "LCS-GBI7",
+        "LCS-GOQS",
+        "LCS-HJV5",
+        "LCS-IM39",
+        "LCS-IPR5",
+        "LCS-NO12",
+        "LCS-O0TD",
+        "LCS-RDCG",
+        "LCS-XPYP",
+        "LCS-Y48Z"
+      ],
+      "keywords": [],
+      "sentiments": {},
+      "speaker": null,
+      "base_intent": null,
+      "tool": null,
+      "tool_count": 0,
+      "id": "__START__"
+    },
+    {
+      "count": 108,
+      "calls": [
+        "LCS-03F4",
+        "LCS-0ING",
+        "LCS-0X5J",
+        "LCS-115Q",
+        "LCS-18CV",
+        "LCS-1FT7",
+        "LCS-1KJ9",
+        "LCS-1O0N",
+        "LCS-1QJ9",
+        "LCS-1V8M",
+        "LCS-2374",
+        "LCS-2LVC",
+        "LCS-2PN8",
+        "LCS-2SJT",
+        "LCS-3C5E",
+        "LCS-3ENT",
+        "LCS-3IW7",
+        "LCS-3OK6",
+        "LCS-3W62",
+        "LCS-437E",
+        "LCS-49S5",
+        "LCS-4E0N",
+        "LCS-4GM3",
+        "LCS-4P6Q",
+        "LCS-55MJ",
+        "LCS-5DGE",
+        "LCS-5JXW",
+        "LCS-5OKL",
+        "LCS-5XWH",
+        "LCS-5Y7D",
+        "LCS-6LB4",
+        "LCS-6R5O",
+        "LCS-6W7C",
+        "LCS-70HM",
+        "LCS-76E1",
+        "LCS-79OA",
+        "LCS-7AAC",
+        "LCS-7HAV",
+        "LCS-7IM9",
+        "LCS-7SJY",
+        "LCS-8844",
+        "LCS-88GC",
+        "LCS-89OM",
+        "LCS-89RR",
+        "LCS-8AF3",
+        "LCS-8EMS",
+        "LCS-93AB",
+        "LCS-9EV3",
+        "LCS-9MBJ",
+        "LCS-9PBQ",
+        "LCS-9V23",
+        "LCS-9XSU",
+        "LCS-A3M2",
+        "LCS-A569",
+        "LCS-A5YM",
+        "LCS-AGNV",
+        "LCS-AR0V",
+        "LCS-ATFU",
+        "LCS-AZWX",
+        "LCS-B0WF",
+        "LCS-B7AU",
+        "LCS-BEVS",
+        "LCS-BFC9",
+        "LCS-BG9F",
+        "LCS-BNCL",
+        "LCS-BPXM",
+        "LCS-BSSY",
+        "LCS-BYAQ",
+        "LCS-C6FG",
+        "LCS-C6UL",
+        "LCS-CIX6",
+        "LCS-CLJ2",
+        "LCS-CRB6",
+        "LCS-D3HH",
+        "LCS-D4BD",
+        "LCS-DF7C",
+        "LCS-DMBH",
+        "LCS-E4SV",
+        "LCS-E5K5",
+        "LCS-ECE2",
+        "LCS-EE1V",
+        "LCS-EOD9",
+        "LCS-ERUS",
+        "LCS-F1GL",
+        "LCS-FE74",
+        "LCS-FEM8",
+        "LCS-FICV",
+        "LCS-FPJ7",
+        "LCS-FPO5",
+        "LCS-FWYG",
+        "LCS-G4GA",
+        "LCS-G7KI",
+        "LCS-GBI7",
+        "LCS-GOQS",
+        "LCS-HJV5",
+        "LCS-IM39",
+        "LCS-IPR5",
+        "LCS-NO12",
+        "LCS-O0TD",
+        "LCS-RDCG",
+        "LCS-XPYP",
+        "LCS-Y48Z"
+      ],
+      "keywords": [],
+      "sentiments": {},
+      "speaker": null,
+      "base_intent": null,
+      "tool": null,
+      "tool_count": 0,
+      "id": "__END__"
+    },
+    {
+      "count": 28,
+      "calls": [
+        "LCS-0ING",
+        "LCS-1O0N",
+        "LCS-2PN8",
+        "LCS-2SJT",
+        "LCS-3C5E",
+        "LCS-5DGE",
+        "LCS-5OKL",
+        "LCS-6R5O",
+        "LCS-6W7C",
+        "LCS-76E1",
+        "LCS-7AAC",
+        "LCS-7HAV",
+        "LCS-8844",
+        "LCS-8AF3",
+        "LCS-8EMS",
+        "LCS-9MBJ",
+        "LCS-A569",
+        "LCS-AZWX",
+        "LCS-B7AU",
+        "LCS-BPXM",
+        "LCS-C6FG",
+        "LCS-D3HH",
+        "LCS-E4SV",
+        "LCS-FPO5",
+        "LCS-FWYG",
+        "LCS-GOQS",
+        "LCS-NO12",
+        "LCS-O0TD"
+      ],
+      "keywords": [
+        "किरा",
+        "चेक",
+        "सब्सक्राइब",
+        "शेयर",
+        "लाइन",
+        "टाइम",
+        "कॉल",
+        "लीड",
+        "अंदर",
+        "com",
+        "देख",
+        "देखिए",
+        "call",
+        "काम",
+        "बोलिये"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "recording_disclosure",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_disclose_recording"
+    },
+    {
+      "count": 225,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-115Q",
+        "LCS-1FT7",
+        "LCS-1KJ9",
+        "LCS-1V8M",
+        "LCS-2374",
+        "LCS-2LVC",
+        "LCS-2PN8",
+        "LCS-3C5E",
+        "LCS-3IW7",
+        "LCS-3W62",
+        "LCS-437E",
+        "LCS-49S5",
+        "LCS-4P6Q",
+        "LCS-55MJ",
+        "LCS-5OKL",
+        "LCS-5Y7D",
+        "LCS-6LB4",
+        "LCS-6W7C",
+        "LCS-70HM",
+        "LCS-79OA",
+        "LCS-7IM9",
+        "LCS-7SJY",
+        "LCS-88GC",
+        "LCS-89OM",
+        "LCS-89RR",
+        "LCS-8EMS",
+        "LCS-93AB",
+        "LCS-9EV3",
+        "LCS-9MBJ",
+        "LCS-9PBQ",
+        "LCS-9V23",
+        "LCS-A3M2",
+        "LCS-A569",
+        "LCS-A5YM",
+        "LCS-AR0V",
+        "LCS-ATFU",
+        "LCS-AZWX",
+        "LCS-B0WF",
+        "LCS-BEVS",
+        "LCS-BFC9",
+        "LCS-BNCL",
+        "LCS-BSSY",
+        "LCS-BYAQ",
+        "LCS-C6UL",
+        "LCS-CIX6",
+        "LCS-CLJ2",
+        "LCS-CRB6",
+        "LCS-D4BD",
+        "LCS-DMBH",
+        "LCS-E5K5",
+        "LCS-EE1V",
+        "LCS-EOD9",
+        "LCS-ERUS",
+        "LCS-FE74",
+        "LCS-FEM8",
+        "LCS-FICV",
+        "LCS-FPJ7",
+        "LCS-FPO5",
+        "LCS-FWYG",
+        "LCS-G4GA",
+        "LCS-G7KI",
+        "LCS-GBI7",
+        "LCS-HJV5",
+        "LCS-IM39",
+        "LCS-IPR5",
+        "LCS-XPYP",
+        "LCS-Y48Z"
+      ],
+      "keywords": [
+        "कहने",
+        "नीड",
+        "जान",
+        "नाइन",
+        "सद्गुरू",
+        "लीड",
+        "देखिए",
+        "लास्ट",
+        "देखो",
+        "काम",
+        "प्रॉब्लम",
+        "ऐसे",
+        "लेके",
+        "कॉल",
+        "call"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "answer_query",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_answer_query"
+    },
+    {
+      "count": 9,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-55MJ",
+        "LCS-7IM9",
+        "LCS-9PBQ",
+        "LCS-BG9F",
+        "LCS-C6UL",
+        "LCS-FE74",
+        "LCS-FWYG"
+      ],
+      "keywords": [
+        "चेक",
+        "नंबर",
+        "सब्सक्राइब",
+        "लाइन",
+        "ऑप्शन",
+        "किस",
+        "करी",
+        "रखा",
+        "पेमेंट",
+        "तारीख",
+        "लिस्टिंग",
+        "दीजिये",
+        "देख",
+        "सपोर्ट",
+        "रिक्वेस्ट"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "enter_pan",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_request_pan"
+    },
+    {
+      "count": 18,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-115Q",
+        "LCS-2374",
+        "LCS-88GC",
+        "LCS-8EMS",
+        "LCS-CIX6",
+        "LCS-DMBH",
+        "LCS-E5K5",
+        "LCS-EE1V",
+        "LCS-FE74",
+        "LCS-FWYG",
+        "LCS-G4GA",
+        "LCS-IM39",
+        "LCS-Y48Z"
+      ],
+      "keywords": [
+        "नाइन",
+        "डबल",
+        "सेवन",
+        "फोर",
+        "काम",
+        "देखो",
+        "पैसा",
+        "कितना",
+        "रुकिये",
+        "ऊपर",
+        "वाशी",
+        "ऐसा",
+        "पता",
+        "लीज़",
+        "दोस्तों"
+      ],
+      "sentiments": {},
+      "speaker": "customer",
+      "base_intent": "processing_fee",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_query_fee"
+    },
+    {
+      "count": 21,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-115Q",
+        "LCS-1KJ9",
+        "LCS-2374",
+        "LCS-2LVC",
+        "LCS-49S5",
+        "LCS-7IM9",
+        "LCS-93AB",
+        "LCS-9MBJ",
+        "LCS-A3M2",
+        "LCS-ATFU",
+        "LCS-B0WF",
+        "LCS-BEVS",
+        "LCS-BNCL",
+        "LCS-FPO5",
+        "LCS-FWYG",
+        "LCS-G4GA",
+        "LCS-HJV5"
+      ],
+      "keywords": [
+        "लीड",
+        "तरीक",
+        "दियो",
+        "वीडियो",
+        "अपडेट",
+        "देखते",
+        "ओके।",
+        "जेडी",
+        "उन्होंने",
+        "आये",
+        "पूरे",
+        "हो गया",
+        "अंदर",
+        "चेंजेस",
+        "लिखा"
+      ],
+      "sentiments": {},
+      "speaker": "customer",
+      "base_intent": "report_done",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_report_done"
+    },
+    {
+      "count": 71,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-115Q",
+        "LCS-1FT7",
+        "LCS-1V8M",
+        "LCS-2374",
+        "LCS-2LVC",
+        "LCS-3W62",
+        "LCS-437E",
+        "LCS-49S5",
+        "LCS-55MJ",
+        "LCS-5OKL",
+        "LCS-79OA",
+        "LCS-7IM9",
+        "LCS-7SJY",
+        "LCS-88GC",
+        "LCS-89RR",
+        "LCS-8EMS",
+        "LCS-9PBQ",
+        "LCS-ATFU",
+        "LCS-BFC9",
+        "LCS-BNCL",
+        "LCS-BYAQ",
+        "LCS-CIX6",
+        "LCS-CLJ2",
+        "LCS-CRB6",
+        "LCS-D4BD",
+        "LCS-DF7C",
+        "LCS-E5K5",
+        "LCS-FE74",
+        "LCS-FEM8",
+        "LCS-FPJ7",
+        "LCS-G4GA",
+        "LCS-G7KI",
+        "LCS-GBI7",
+        "LCS-GOQS",
+        "LCS-IPR5",
+        "LCS-NO12",
+        "LCS-Y48Z"
+      ],
+      "keywords": [
+        "बोलो",
+        "रॉंग",
+        "पढ़ता",
+        "पढ़",
+        "लीड",
+        "काम",
+        "request",
+        "check",
+        "issue",
+        "ऐसा",
+        "लेंगे",
+        "बेस्ट",
+        "इदे",
+        "थैंक",
+        "फॉर"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "acknowledge",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_acknowledge"
+    },
+    {
+      "count": 19,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-1V8M",
+        "LCS-55MJ",
+        "LCS-79OA",
+        "LCS-7HAV",
+        "LCS-89RR",
+        "LCS-8EMS",
+        "LCS-ATFU",
+        "LCS-C6UL",
+        "LCS-DMBH",
+        "LCS-FEM8",
+        "LCS-FPJ7",
+        "LCS-FWYG",
+        "LCS-G4GA",
+        "LCS-GBI7"
+      ],
+      "keywords": [
+        "लेंगे",
+        "याद",
+        "पेर",
+        "कॉल",
+        "मना",
+        "सेंटर",
+        "अटेंड",
+        "टेस्ट",
+        "उसको",
+        "आगे",
+        "raise",
+        "ticket",
+        "पता",
+        "car",
+        "बढ़ता"
+      ],
+      "sentiments": {},
+      "speaker": "customer",
+      "base_intent": "answer_query",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_ask_query"
+    },
+    {
+      "count": 48,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-1KJ9",
+        "LCS-3IW7",
+        "LCS-437E",
+        "LCS-5XWH",
+        "LCS-6R5O",
+        "LCS-7SJY",
+        "LCS-88GC",
+        "LCS-89OM",
+        "LCS-89RR",
+        "LCS-8EMS",
+        "LCS-93AB",
+        "LCS-9V23",
+        "LCS-AR0V",
+        "LCS-ATFU",
+        "LCS-B7AU",
+        "LCS-BFC9",
+        "LCS-CLJ2",
+        "LCS-CRB6",
+        "LCS-D4BD",
+        "LCS-DF7C",
+        "LCS-E5K5",
+        "LCS-EOD9",
+        "LCS-F1GL",
+        "LCS-FEM8",
+        "LCS-FPJ7",
+        "LCS-G7KI",
+        "LCS-GBI7",
+        "LCS-HJV5",
+        "LCS-IPR5",
+        "LCS-XPYP"
+      ],
+      "keywords": [
+        "नहीं हो",
+        "उसको",
+        "बंद",
+        "डाला",
+        "उदर",
+        "प्रॉब्लम",
+        "inquiry",
+        "लाइक",
+        "बाहर",
+        "दिखा",
+        "अगले",
+        "सब्सक्राइब",
+        "call",
+        "customer",
+        "thank"
+      ],
+      "sentiments": {
+        "frustrated": 5
+      },
+      "speaker": "customer",
+      "base_intent": "reassure_trust",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_express_distrust"
+    },
+    {
+      "count": 20,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-115Q",
+        "LCS-1V8M",
+        "LCS-2LVC",
+        "LCS-4P6Q",
+        "LCS-5Y7D",
+        "LCS-6W7C",
+        "LCS-89OM",
+        "LCS-9XSU",
+        "LCS-B7AU",
+        "LCS-BFC9",
+        "LCS-C6UL",
+        "LCS-CRB6",
+        "LCS-DF7C",
+        "LCS-G7KI",
+        "LCS-GOQS"
+      ],
+      "keywords": [
+        "लीड",
+        "करूँगी",
+        "चेंजेस",
+        "दीजे",
+        "आइन",
+        "उन्होंने",
+        "इनके",
+        "कंसन",
+        "पाने",
+        "डाउनलोड",
+        "कॉल",
+        "लीज़",
+        "इल्ला",
+        "फिल्टर",
+        "अन्ते"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "reassure_trust",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_reassure_trust"
+    },
+    {
+      "count": 98,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-115Q",
+        "LCS-1FT7",
+        "LCS-1V8M",
+        "LCS-2374",
+        "LCS-2LVC",
+        "LCS-437E",
+        "LCS-49S5",
+        "LCS-4P6Q",
+        "LCS-55MJ",
+        "LCS-5DGE",
+        "LCS-5OKL",
+        "LCS-6R5O",
+        "LCS-79OA",
+        "LCS-7IM9",
+        "LCS-88GC",
+        "LCS-89RR",
+        "LCS-8AF3",
+        "LCS-8EMS",
+        "LCS-9MBJ",
+        "LCS-9PBQ",
+        "LCS-9XSU",
+        "LCS-A569",
+        "LCS-A5YM",
+        "LCS-ATFU",
+        "LCS-AZWX",
+        "LCS-B0WF",
+        "LCS-BFC9",
+        "LCS-BNCL",
+        "LCS-BSSY",
+        "LCS-BYAQ",
+        "LCS-C6UL",
+        "LCS-CIX6",
+        "LCS-CLJ2",
+        "LCS-CRB6",
+        "LCS-DF7C",
+        "LCS-DMBH",
+        "LCS-E5K5",
+        "LCS-EE1V",
+        "LCS-FEM8",
+        "LCS-FPJ7",
+        "LCS-G4GA",
+        "LCS-G7KI",
+        "LCS-GBI7",
+        "LCS-GOQS",
+        "LCS-HJV5",
+        "LCS-IPR5",
+        "LCS-NO12",
+        "LCS-XPYP",
+        "LCS-Y48Z"
+      ],
+      "keywords": [
+        "कॉल",
+        "उनको",
+        "थैंक",
+        "right",
+        "वाल",
+        "अल्लो",
+        "इन्दा",
+        "जेस्टर",
+        "अलवा",
+        "इदे",
+        "इप्पो",
+        "आगे",
+        "रवी",
+        "लाइन",
+        "लेंगे"
+      ],
+      "sentiments": {
+        "frustrated": 1
+      },
+      "speaker": "customer",
+      "base_intent": "acknowledge",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_acknowledge"
+    },
+    {
+      "count": 5,
+      "calls": [
+        "LCS-115Q",
+        "LCS-2LVC",
+        "LCS-7HAV",
+        "LCS-E5K5",
+        "LCS-G4GA"
+      ],
+      "keywords": [
+        "अंदर",
+        "ऊपर",
+        "कंपनी",
+        "लगता",
+        "जस्ट",
+        "डीटेल्स",
+        "डाइल",
+        "business",
+        "लीड",
+        "शेयर",
+        "lead",
+        "contract",
+        "कस्टमर",
+        "उनको",
+        "आगे"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "business_details",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_request_business_details"
+    },
+    {
+      "count": 15,
+      "calls": [
+        "LCS-115Q",
+        "LCS-2LVC",
+        "LCS-437E",
+        "LCS-7IM9",
+        "LCS-88GC",
+        "LCS-93AB",
+        "LCS-9MBJ",
+        "LCS-9PBQ",
+        "LCS-A3M2",
+        "LCS-CLJ2",
+        "LCS-FE74",
+        "LCS-FPJ7",
+        "LCS-FWYG",
+        "LCS-NO12",
+        "LCS-XPYP"
+      ],
+      "keywords": [
+        "अंदर",
+        "प्रूफ",
+        "डॉक्यूमेंट",
+        "यदि",
+        "इतना",
+        "भाई",
+        "अगे",
+        "अदो",
+        "मिनट",
+        "रिलेटेड",
+        "लेंगे",
+        "टाइम",
+        "कीजिए",
+        "नंबर",
+        "देखिये"
+      ],
+      "sentiments": {},
+      "speaker": "customer",
+      "base_intent": "wait_hold",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_request_wait"
+    },
+    {
+      "count": 23,
+      "calls": [
+        "LCS-115Q",
+        "LCS-2LVC",
+        "LCS-437E",
+        "LCS-49S5",
+        "LCS-5OKL",
+        "LCS-5XWH",
+        "LCS-5Y7D",
+        "LCS-88GC",
+        "LCS-9MBJ",
+        "LCS-9PBQ",
+        "LCS-ATFU",
+        "LCS-C6UL",
+        "LCS-DF7C",
+        "LCS-DMBH",
+        "LCS-E5K5",
+        "LCS-FE74",
+        "LCS-FPJ7",
+        "LCS-G7KI",
+        "LCS-HJV5",
+        "LCS-IPR5",
+        "LCS-XPYP"
+      ],
+      "keywords": [
+        "उन्होंने",
+        "दियो",
+        "लेकर",
+        "चलता",
+        "बोलिये",
+        "यूज़",
+        "दिखा",
+        "बोली",
+        "दीजिये",
+        "लिखे",
+        "रिक्वेस्ट",
+        "तरफ",
+        "सब्सक्राइब",
+        "लीड",
+        "करें।"
+      ],
+      "sentiments": {},
+      "speaker": "customer",
+      "base_intent": "agree",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_agree"
+    },
+    {
+      "count": 25,
+      "calls": [
+        "LCS-115Q",
+        "LCS-1V8M",
+        "LCS-437E",
+        "LCS-6LB4",
+        "LCS-6R5O",
+        "LCS-88GC",
+        "LCS-89RR",
+        "LCS-9PBQ",
+        "LCS-A3M2",
+        "LCS-ATFU",
+        "LCS-BNCL",
+        "LCS-C6UL",
+        "LCS-CLJ2",
+        "LCS-D4BD",
+        "LCS-EOD9",
+        "LCS-FE74",
+        "LCS-FEM8",
+        "LCS-FPJ7",
+        "LCS-HJV5",
+        "LCS-XPYP",
+        "LCS-Y48Z"
+      ],
+      "keywords": [
+        "देख",
+        "पेर",
+        "लीज़",
+        "मत्ते",
+        "रॉम",
+        "कंप्यून",
+        "लाइन",
+        "उनको",
+        "आलो",
+        "सब्सक्राइब",
+        "चाहते",
+        "एरिया",
+        "दूँगा",
+        "गुड़",
+        "दोस्तों"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "clarify_repeat",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_ask_to_repeat"
+    },
+    {
+      "count": 8,
+      "calls": [
+        "LCS-18CV",
+        "LCS-49S5",
+        "LCS-5JXW",
+        "LCS-93AB",
+        "LCS-BYAQ",
+        "LCS-D4BD",
+        "LCS-FICV",
+        "LCS-HJV5"
+      ],
+      "keywords": [
+        "वेलकम",
+        "कॉम",
+        "जजजा",
+        "साम",
+        "कॉलेज",
+        "लॉट",
+        "से बात",
+        "उसने",
+        "व्यक्ति",
+        "customer",
+        "service",
+        "com",
+        "good",
+        "help",
+        "साइड"
+      ],
+      "sentiments": {},
+      "speaker": "customer",
+      "base_intent": "greeting",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_greet"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-1FT7"
+      ],
+      "keywords": [
+        "kyc",
+        "पेंडिंग",
+        "नोड़ता",
+        "चक्मार"
+      ],
+      "sentiments": {},
+      "speaker": "customer",
+      "base_intent": "transfer_to_rm",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_acknowledge_transfer"
+    },
+    {
+      "count": 21,
+      "calls": [
+        "LCS-1KJ9",
+        "LCS-1V8M",
+        "LCS-3IW7",
+        "LCS-9PBQ",
+        "LCS-AR0V",
+        "LCS-ATFU",
+        "LCS-BSSY",
+        "LCS-E5K5",
+        "LCS-EE1V",
+        "LCS-FEM8",
+        "LCS-FPJ7",
+        "LCS-HJV5",
+        "LCS-IPR5",
+        "LCS-NO12",
+        "LCS-XPYP",
+        "LCS-Y48Z"
+      ],
+      "keywords": [
+        "मालो",
+        "शेयर",
+        "अंदर",
+        "टिकेट",
+        "लेने",
+        "out",
+        "कॉल",
+        "लीड",
+        "लास्ट",
+        "मिनट",
+        "टोटल",
+        "मैम",
+        "wrong",
+        "location",
+        "नीड"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "other",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_other"
+    },
+    {
+      "count": 13,
+      "calls": [
+        "LCS-1KJ9",
+        "LCS-1V8M",
+        "LCS-93AB",
+        "LCS-9MBJ",
+        "LCS-9V23",
+        "LCS-AR0V",
+        "LCS-CRB6",
+        "LCS-DMBH",
+        "LCS-E5K5",
+        "LCS-FE74",
+        "LCS-RDCG"
+      ],
+      "keywords": [
+        "नहीं हो",
+        "देने",
+        "होगे",
+        "कोड़े",
+        "leads",
+        "proper",
+        "सॉरी",
+        "कॉल",
+        "पैसा",
+        "लिखे",
+        "प्रॉब्लम",
+        "अकम",
+        "नंबर",
+        "रजिस्टर",
+        "लीड"
+      ],
+      "sentiments": {
+        "frustrated": 2
+      },
+      "speaker": "customer",
+      "base_intent": "address_error",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_report_address_error"
+    },
+    {
+      "count": 6,
+      "calls": [
+        "LCS-1V8M",
+        "LCS-6R5O",
+        "LCS-BYAQ",
+        "LCS-CRB6"
+      ],
+      "keywords": [
+        "लेंगे",
+        "com",
+        "जस्टाइल",
+        "कही",
+        "नगर",
+        "address",
+        "चेक",
+        "issue",
+        "business",
+        "kyc",
+        "नंबर",
+        "रजिस्टर",
+        "मोबाल",
+        "भाई",
+        "ऑफिस"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "enter_address",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_request_address"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-1V8M",
+        "LCS-BNCL"
+      ],
+      "keywords": [
+        "लेंगे",
+        "com",
+        "जस्टाइल",
+        "बिजनेस"
+      ],
+      "sentiments": {},
+      "speaker": "customer",
+      "base_intent": "business_details",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_provide_business_details"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-1V8M",
+        "LCS-5DGE",
+        "LCS-6R5O"
+      ],
+      "keywords": [
+        "रेटिंग",
+        "मिलेगा",
+        "प्लीज",
+        "मिलता",
+        "यदि",
+        "डबल",
+        "पिन",
+        "कोड"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "accept_terms",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_request_terms_accept"
+    },
+    {
+      "count": 11,
+      "calls": [
+        "LCS-1V8M",
+        "LCS-93AB",
+        "LCS-AR0V",
+        "LCS-BNCL",
+        "LCS-CLJ2",
+        "LCS-D4BD",
+        "LCS-FPJ7",
+        "LCS-G7KI",
+        "LCS-HJV5"
+      ],
+      "keywords": [
+        "नहीं हो",
+        "बेस्ट",
+        "प्र",
+        "thank you so much",
+        "चेक",
+        "call",
+        "customer",
+        "thank",
+        "जरूर",
+        "चार",
+        "शुरू",
+        "अपलोड",
+        "इसको",
+        "पैकेज",
+        "नंबर"
+      ],
+      "sentiments": {
+        "frustrated": 1,
+        "happy": 1
+      },
+      "speaker": "customer",
+      "base_intent": "skip_udyam",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_skip_udyam"
+    },
+    {
+      "count": 7,
+      "calls": [
+        "LCS-2374",
+        "LCS-88GC",
+        "LCS-9MBJ",
+        "LCS-CLJ2",
+        "LCS-CRB6",
+        "LCS-NO12",
+        "LCS-Y48Z"
+      ],
+      "keywords": [
+        "सब्सक्राइब",
+        "लीज़",
+        "कॉल",
+        "शेयर",
+        "सर्वेस",
+        "कस्मो",
+        "लीड",
+        "ओके।",
+        "अलड़ी",
+        "चाली",
+        "दोनों",
+        "lead",
+        "category",
+        "feedback",
+        "concern"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "processing_fee",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_explain_fee"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-2374",
+        "LCS-EE1V",
+        "LCS-FPJ7"
+      ],
+      "keywords": [
+        "लीड",
+        "रिगारिंग",
+        "प्रॉब्लम",
+        "सपोर्ट",
+        "ऑप्शन",
+        "मिलता",
+        "जाकर",
+        "951523",
+        "कॉल",
+        "call",
+        "लिंक",
+        "अच्छी"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "address_error",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_help_address_error"
+    },
+    {
+      "count": 9,
+      "calls": [
+        "LCS-2LVC",
+        "LCS-93AB",
+        "LCS-B7AU",
+        "LCS-BSSY",
+        "LCS-CRB6",
+        "LCS-E5K5",
+        "LCS-FEM8",
+        "LCS-GBI7",
+        "LCS-Y48Z"
+      ],
+      "keywords": [
+        "उद्यम",
+        "certificate",
+        "contract",
+        "response",
+        "problem",
+        "पूरा",
+        "complaint",
+        "कंप्लीट",
+        "नीम",
+        "नंबर",
+        "हूँ।",
+        "मेल",
+        "चलो",
+        "business",
+        "help"
+      ],
+      "sentiments": {},
+      "speaker": "customer",
+      "base_intent": "udyam_verification",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_respond_udyam"
+    },
+    {
+      "count": 6,
+      "calls": [
+        "LCS-2LVC",
+        "LCS-5OKL",
+        "LCS-AZWX",
+        "LCS-B0WF",
+        "LCS-DMBH",
+        "LCS-FICV"
+      ],
+      "keywords": [
+        "नंबर",
+        "फोन",
+        "लीड",
+        "नहीं हो",
+        "एक्सटर",
+        "अप्शन",
+        "इश्यू",
+        "इप्पो",
+        "हलो",
+        "इसको",
+        "help"
+      ],
+      "sentiments": {
+        "frustrated": 1
+      },
+      "speaker": "customer",
+      "base_intent": "mobile_otp",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_do_otp"
+    },
+    {
+      "count": 6,
+      "calls": [
+        "LCS-2LVC",
+        "LCS-ATFU",
+        "LCS-AZWX",
+        "LCS-BSSY",
+        "LCS-Y48Z"
+      ],
+      "keywords": [
+        "कॉल",
+        "बिजनेस",
+        "सर्विस",
+        "टिकेट",
+        "कंपनी",
+        "लीड",
+        "जाओ",
+        "सलून",
+        "मिल",
+        "lead",
+        "बोला",
+        "करवा",
+        "sms",
+        "notification",
+        "रॉम"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "end_call",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_end_call"
+    },
+    {
+      "count": 5,
+      "calls": [
+        "LCS-3C5E",
+        "LCS-49S5",
+        "LCS-ATFU",
+        "LCS-BFC9",
+        "LCS-DMBH"
+      ],
+      "keywords": [
+        "नंबर",
+        "पाई",
+        "लिंक भेज",
+        "लिंक",
+        "मिनट",
+        "मैडम",
+        "ओपन",
+        "नहीं हो रहा",
+        "नहीं हो",
+        "मेसेज",
+        "लेड",
+        "रवी"
+      ],
+      "sentiments": {
+        "frustrated": 1
+      },
+      "speaker": "customer",
+      "base_intent": "send_sms_link",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_report_sms_received"
+    },
+    {
+      "count": 19,
+      "calls": [
+        "LCS-3ENT",
+        "LCS-437E",
+        "LCS-4P6Q",
+        "LCS-55MJ",
+        "LCS-5XWH",
+        "LCS-6R5O",
+        "LCS-6W7C",
+        "LCS-7IM9",
+        "LCS-8EMS",
+        "LCS-93AB",
+        "LCS-AZWX",
+        "LCS-B7AU",
+        "LCS-BYAQ",
+        "LCS-DMBH",
+        "LCS-FWYG",
+        "LCS-G7KI",
+        "LCS-HJV5",
+        "LCS-IPR5"
+      ],
+      "keywords": [
+        "com",
+        "day",
+        "calling",
+        "nice",
+        "dot",
+        "कॉल",
+        "सर्विस",
+        "रेटिंग",
+        "लेंगे",
+        "लाइक",
+        "टाइम",
+        "सपोर्ट",
+        "ऑप्शन",
+        "रिक्वेस्ट",
+        "feedback"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "transfer_to_rm",
+      "tool": "transfer_to_rm",
+      "tool_count": 19,
+      "id": "agent_transfer_to_rm"
+    },
+    {
+      "count": 7,
+      "calls": [
+        "LCS-3W62",
+        "LCS-9PBQ",
+        "LCS-ATFU",
+        "LCS-B0WF",
+        "LCS-FEM8"
+      ],
+      "keywords": [
+        "ओपन",
+        "वाटसप",
+        "देखा",
+        "लीड",
+        "आईएगी",
+        "बोल",
+        "लिंक",
+        "देखो",
+        "क्लिक",
+        "उसको",
+        "देखिये",
+        "चेक",
+        "देख",
+        "शेयर",
+        "देखिए"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "open_link",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_guide_open_link"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-3W62"
+      ],
+      "keywords": [
+        "चेक"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "mobile_otp",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_request_otp"
+    },
+    {
+      "count": 8,
+      "calls": [
+        "LCS-437E",
+        "LCS-49S5",
+        "LCS-5XWH",
+        "LCS-6LB4",
+        "LCS-79OA",
+        "LCS-AR0V",
+        "LCS-G7KI",
+        "LCS-NO12"
+      ],
+      "keywords": [
+        "यूज़",
+        "नंबर",
+        "काम",
+        "देखिए",
+        "बिजनेस",
+        "फोन",
+        "लीड",
+        "प्रॉब्लम",
+        "ऐसा",
+        "इश्यू",
+        "इदर",
+        "सर्विस",
+        "इशू",
+        "कॉंट्रेक्ट",
+        "जर्जाल"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "present_offer",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_present_offer"
+    },
+    {
+      "count": 13,
+      "calls": [
+        "LCS-55MJ",
+        "LCS-5OKL",
+        "LCS-9MBJ",
+        "LCS-B0WF",
+        "LCS-B7AU",
+        "LCS-BEVS",
+        "LCS-C6UL",
+        "LCS-FEM8",
+        "LCS-G4GA",
+        "LCS-GBI7",
+        "LCS-HJV5"
+      ],
+      "keywords": [
+        "चेक",
+        "नंबर",
+        "अंदर",
+        "सुन",
+        "सेकंड",
+        "कॉल",
+        "लीड",
+        "प्रॉब्लम",
+        "टीम",
+        "कॉम",
+        "कौन सा",
+        "टाइम",
+        "inquiry",
+        "call",
+        "देखिए"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "ask_question",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_clarify"
+    },
+    {
+      "count": 5,
+      "calls": [
+        "LCS-55MJ",
+        "LCS-6W7C",
+        "LCS-AZWX",
+        "LCS-CRB6",
+        "LCS-G7KI"
+      ],
+      "keywords": [
+        "सब्सक्राइब",
+        "raise",
+        "ticket",
+        "उससे",
+        "करी",
+        "thank",
+        "लीड",
+        "just",
+        "शायद",
+        "रॉंग",
+        "वेलकम"
+      ],
+      "sentiments": {},
+      "speaker": "customer",
+      "base_intent": "present_offer",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_react_to_offer"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-5OKL"
+      ],
+      "keywords": [
+        "चेक",
+        "काम",
+        "लगा",
+        "रखा",
+        "हेल्प"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "employment_type",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_ask_employment_type"
+    },
+    {
+      "count": 7,
+      "calls": [
+        "LCS-7HAV",
+        "LCS-89RR",
+        "LCS-8EMS",
+        "LCS-9MBJ",
+        "LCS-9PBQ",
+        "LCS-A5YM",
+        "LCS-AGNV"
+      ],
+      "keywords": [
+        "कॉल",
+        "शेयर",
+        "लिंक",
+        "रेटिंग",
+        "मिल",
+        "customer",
+        "lead",
+        "concern",
+        "contract",
+        "support",
+        "call",
+        "नंबर",
+        "चेक",
+        "thank",
+        "feedback"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "organization_name",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_request_org_name"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-7IM9",
+        "LCS-9PBQ",
+        "LCS-A3M2"
+      ],
+      "keywords": [
+        "आधार",
+        "कार्ड",
+        "नंबर",
+        "बोर्ड",
+        "address"
+      ],
+      "sentiments": {},
+      "speaker": "customer",
+      "base_intent": "enter_address",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_provide_address"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-7SJY",
+        "LCS-XPYP"
+      ],
+      "keywords": [
+        "कॉल",
+        "टीम",
+        "आगे",
+        "जिसके",
+        "राइट"
+      ],
+      "sentiments": {},
+      "speaker": "customer",
+      "base_intent": "organization_name",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_provide_org_name"
+    },
+    {
+      "count": 6,
+      "calls": [
+        "LCS-88GC",
+        "LCS-9MBJ",
+        "LCS-A3M2",
+        "LCS-B7AU",
+        "LCS-E5K5"
+      ],
+      "keywords": [
+        "बिजनेस",
+        "सर्विस",
+        "इपने",
+        "नंबर",
+        "मैडम",
+        "शेयर",
+        "business",
+        "update",
+        "msme",
+        "address",
+        "उद्यम",
+        "ऑप्शन",
+        "समझ",
+        "लीज",
+        "पॉइंट"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "udyam_verification",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_request_udyam"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-8EMS"
+      ],
+      "keywords": [
+        "लेते",
+        "अन्ते"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "agree",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_confirm"
+    },
+    {
+      "count": 11,
+      "calls": [
+        "LCS-8EMS",
+        "LCS-93AB",
+        "LCS-9V23",
+        "LCS-A3M2",
+        "LCS-AR0V",
+        "LCS-AZWX",
+        "LCS-BFC9",
+        "LCS-C6UL",
+        "LCS-G7KI",
+        "LCS-XPYP",
+        "LCS-Y48Z"
+      ],
+      "keywords": [
+        "फोन",
+        "लीड",
+        "मिल",
+        "रिक्वेस्ट",
+        "रिपोर्ट",
+        "जाल",
+        "जिसके",
+        "इशू",
+        "मिली",
+        "आपे",
+        "call",
+        "देखिए",
+        "lead",
+        "अंदर"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "send_sms_link",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_send_sms_link"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-9XSU",
+        "LCS-CRB6"
+      ],
+      "keywords": [
+        "कॉल",
+        "लीड",
+        "call",
+        "काम",
+        "देख",
+        "प्रॉब्लम",
+        "मैडम",
+        "पैसा",
+        "बिजनस"
+      ],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "final_offer",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_present_final_offer"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-ATFU",
+        "LCS-HJV5"
+      ],
+      "keywords": [
+        "मिनट",
+        "खुल",
+        "ओपन"
+      ],
+      "sentiments": {},
+      "speaker": "customer",
+      "base_intent": "open_link",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_report_link_opened"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-ATFU"
+      ],
+      "keywords": [
+        "मैडम"
+      ],
+      "sentiments": {},
+      "speaker": "customer",
+      "base_intent": "clarify_repeat",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_unclear"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-BFC9",
+        "LCS-CRB6",
+        "LCS-GBI7"
+      ],
+      "keywords": [
+        "देख",
+        "उसमें",
+        "कितना",
+        "मिला",
+        "पैकेज",
+        "हमको",
+        "तुमने",
+        "देखिए"
+      ],
+      "sentiments": {},
+      "speaker": "customer",
+      "base_intent": "final_offer",
+      "tool": null,
+      "tool_count": 0,
+      "id": "customer_react_to_final_offer"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-BNCL"
+      ],
+      "keywords": [],
+      "sentiments": {},
+      "speaker": "agent",
+      "base_intent": "skip_udyam",
+      "tool": null,
+      "tool_count": 0,
+      "id": "agent_offer_skip_udyam"
+    }
+  ],
+  "links": [
+    {
+      "count": 2,
+      "calls": [
+        "LCS-03F4",
+        "LCS-88GC"
+      ],
+      "transition_prob": 0.022,
+      "source": "customer_ask_question",
+      "target": "agent_greet"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-03F4"
+      ],
+      "transition_prob": 0.011,
+      "source": "customer_ask_question",
+      "target": "agent_request_personal_details"
+    },
+    {
+      "count": 7,
+      "calls": [
+        "LCS-03F4",
+        "LCS-1FT7",
+        "LCS-2374",
+        "LCS-70HM",
+        "LCS-B0WF",
+        "LCS-IPR5",
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.077,
+      "source": "customer_ask_question",
+      "target": "agent_wait"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-03F4",
+        "LCS-0ING"
+      ],
+      "transition_prob": 0.022,
+      "source": "customer_ask_question",
+      "target": "__END__"
+    },
+    {
+      "count": 41,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-2374",
+        "LCS-3W62",
+        "LCS-437E",
+        "LCS-49S5",
+        "LCS-55MJ",
+        "LCS-5OKL",
+        "LCS-6LB4",
+        "LCS-6W7C",
+        "LCS-79OA",
+        "LCS-88GC",
+        "LCS-89RR",
+        "LCS-93AB",
+        "LCS-9PBQ",
+        "LCS-9V23",
+        "LCS-A569",
+        "LCS-ATFU",
+        "LCS-AZWX",
+        "LCS-BFC9",
+        "LCS-CLJ2",
+        "LCS-CRB6",
+        "LCS-E5K5",
+        "LCS-FE74",
+        "LCS-FEM8",
+        "LCS-G4GA",
+        "LCS-G7KI",
+        "LCS-IPR5",
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.451,
+      "source": "customer_ask_question",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-115Q"
+      ],
+      "transition_prob": 0.011,
+      "source": "customer_ask_question",
+      "target": "agent_request_business_details"
+    },
+    {
+      "count": 8,
+      "calls": [
+        "LCS-3W62",
+        "LCS-79OA",
+        "LCS-89RR",
+        "LCS-BYAQ",
+        "LCS-CLJ2",
+        "LCS-FEM8",
+        "LCS-G7KI"
+      ],
+      "transition_prob": 0.088,
+      "source": "customer_ask_question",
+      "target": "agent_acknowledge"
+    },
+    {
+      "count": 4,
+      "calls": [
+        "LCS-55MJ",
+        "LCS-5OKL",
+        "LCS-B7AU",
+        "LCS-C6UL"
+      ],
+      "transition_prob": 0.044,
+      "source": "customer_ask_question",
+      "target": "agent_clarify"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-55MJ"
+      ],
+      "transition_prob": 0.011,
+      "source": "customer_ask_question",
+      "target": "agent_transfer_to_rm"
+    },
+    {
+      "count": 7,
+      "calls": [
+        "LCS-6LB4",
+        "LCS-9PBQ",
+        "LCS-A3M2",
+        "LCS-C6UL",
+        "LCS-EOD9",
+        "LCS-FEM8"
+      ],
+      "transition_prob": 0.077,
+      "source": "customer_ask_question",
+      "target": "agent_ask_to_repeat"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-6R5O"
+      ],
+      "transition_prob": 0.011,
+      "source": "customer_ask_question",
+      "target": "agent_request_address"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-9PBQ",
+        "LCS-AGNV"
+      ],
+      "transition_prob": 0.022,
+      "source": "customer_ask_question",
+      "target": "agent_request_org_name"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-9XSU",
+        "LCS-G7KI",
+        "LCS-GOQS"
+      ],
+      "transition_prob": 0.033,
+      "source": "customer_ask_question",
+      "target": "agent_reassure_trust"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-A3M2"
+      ],
+      "transition_prob": 0.011,
+      "source": "customer_ask_question",
+      "target": "agent_request_udyam"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-ATFU"
+      ],
+      "transition_prob": 0.011,
+      "source": "customer_ask_question",
+      "target": "agent_guide_open_link"
+    },
+    {
+      "count": 5,
+      "calls": [
+        "LCS-ATFU",
+        "LCS-BSSY",
+        "LCS-E5K5",
+        "LCS-IPR5",
+        "LCS-XPYP"
+      ],
+      "transition_prob": 0.055,
+      "source": "customer_ask_question",
+      "target": "agent_other"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-ATFU"
+      ],
+      "transition_prob": 0.011,
+      "source": "customer_ask_question",
+      "target": "agent_end_call"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-FE74"
+      ],
+      "transition_prob": 0.011,
+      "source": "customer_ask_question",
+      "target": "agent_request_pan"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-G7KI",
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.022,
+      "source": "customer_ask_question",
+      "target": "agent_send_sms_link"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-03F4"
+      ],
+      "transition_prob": 0.03,
+      "source": "agent_greet",
+      "target": "customer_provide_personal_details"
+    },
+    {
+      "count": 6,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-3ENT",
+        "LCS-4P6Q",
+        "LCS-79OA",
+        "LCS-89RR",
+        "LCS-BNCL"
+      ],
+      "transition_prob": 0.182,
+      "source": "agent_greet",
+      "target": "customer_other"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-115Q",
+        "LCS-88GC",
+        "LCS-CIX6"
+      ],
+      "transition_prob": 0.091,
+      "source": "agent_greet",
+      "target": "customer_query_fee"
+    },
+    {
+      "count": 6,
+      "calls": [
+        "LCS-18CV",
+        "LCS-1QJ9",
+        "LCS-3OK6",
+        "LCS-4E0N",
+        "LCS-AZWX",
+        "LCS-ECE2"
+      ],
+      "transition_prob": 0.182,
+      "source": "agent_greet",
+      "target": "__END__"
+    },
+    {
+      "count": 6,
+      "calls": [
+        "LCS-1KJ9",
+        "LCS-88GC",
+        "LCS-9V23",
+        "LCS-ATFU",
+        "LCS-EOD9",
+        "LCS-F1GL"
+      ],
+      "transition_prob": 0.182,
+      "source": "agent_greet",
+      "target": "customer_express_distrust"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-2LVC"
+      ],
+      "transition_prob": 0.03,
+      "source": "agent_greet",
+      "target": "customer_agree"
+    },
+    {
+      "count": 4,
+      "calls": [
+        "LCS-55MJ",
+        "LCS-88GC",
+        "LCS-A5YM",
+        "LCS-HJV5"
+      ],
+      "transition_prob": 0.121,
+      "source": "agent_greet",
+      "target": "customer_acknowledge"
+    },
+    {
+      "count": 5,
+      "calls": [
+        "LCS-9XSU",
+        "LCS-AZWX",
+        "LCS-FE74",
+        "LCS-G7KI",
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.152,
+      "source": "agent_greet",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-CRB6"
+      ],
+      "transition_prob": 0.03,
+      "source": "agent_greet",
+      "target": "customer_respond_udyam"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-03F4"
+      ],
+      "transition_prob": 1.0,
+      "source": "customer_provide_personal_details",
+      "target": "agent_request_personal_details"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-03F4"
+      ],
+      "transition_prob": 0.667,
+      "source": "agent_request_personal_details",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-7SJY"
+      ],
+      "transition_prob": 0.333,
+      "source": "agent_request_personal_details",
+      "target": "customer_provide_org_name"
+    },
+    {
+      "count": 8,
+      "calls": [
+        "LCS-03F4",
+        "LCS-5JXW",
+        "LCS-88GC",
+        "LCS-B0WF",
+        "LCS-DMBH",
+        "LCS-E5K5",
+        "LCS-IPR5"
+      ],
+      "transition_prob": 0.235,
+      "source": "agent_wait",
+      "target": "customer_other"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-03F4"
+      ],
+      "transition_prob": 0.029,
+      "source": "agent_wait",
+      "target": "agent_wait"
+    },
+    {
+      "count": 4,
+      "calls": [
+        "LCS-03F4",
+        "LCS-A3M2",
+        "LCS-FEM8",
+        "LCS-IPR5"
+      ],
+      "transition_prob": 0.118,
+      "source": "agent_wait",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-0X5J"
+      ],
+      "transition_prob": 0.029,
+      "source": "agent_wait",
+      "target": "customer_query_fee"
+    },
+    {
+      "count": 8,
+      "calls": [
+        "LCS-1FT7",
+        "LCS-55MJ",
+        "LCS-8AF3",
+        "LCS-DMBH",
+        "LCS-IPR5",
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.235,
+      "source": "agent_wait",
+      "target": "customer_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-2374"
+      ],
+      "transition_prob": 0.029,
+      "source": "agent_wait",
+      "target": "customer_report_done"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-437E",
+        "LCS-FE74"
+      ],
+      "transition_prob": 0.059,
+      "source": "agent_wait",
+      "target": "customer_request_wait"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-5OKL",
+        "LCS-B0WF"
+      ],
+      "transition_prob": 0.059,
+      "source": "agent_wait",
+      "target": "customer_do_otp"
+    },
+    {
+      "count": 6,
+      "calls": [
+        "LCS-5Y7D",
+        "LCS-70HM",
+        "LCS-E5K5",
+        "LCS-F1GL",
+        "LCS-G4GA",
+        "LCS-RDCG"
+      ],
+      "transition_prob": 0.176,
+      "source": "agent_wait",
+      "target": "__END__"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-ATFU"
+      ],
+      "transition_prob": 0.029,
+      "source": "agent_wait",
+      "target": "customer_report_sms_received"
+    },
+    {
+      "count": 13,
+      "calls": [
+        "LCS-03F4",
+        "LCS-0X5J",
+        "LCS-437E",
+        "LCS-55MJ",
+        "LCS-5OKL",
+        "LCS-5Y7D",
+        "LCS-88GC",
+        "LCS-8AF3",
+        "LCS-DMBH",
+        "LCS-E5K5",
+        "LCS-FEM8",
+        "LCS-IPR5"
+      ],
+      "transition_prob": 0.123,
+      "source": "customer_other",
+      "target": "agent_wait"
+    },
+    {
+      "count": 50,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-1FT7",
+        "LCS-1KJ9",
+        "LCS-1V8M",
+        "LCS-2LVC",
+        "LCS-2PN8",
+        "LCS-437E",
+        "LCS-49S5",
+        "LCS-55MJ",
+        "LCS-5Y7D",
+        "LCS-7IM9",
+        "LCS-7SJY",
+        "LCS-88GC",
+        "LCS-89RR",
+        "LCS-8EMS",
+        "LCS-93AB",
+        "LCS-9MBJ",
+        "LCS-9V23",
+        "LCS-A3M2",
+        "LCS-ATFU",
+        "LCS-B0WF",
+        "LCS-BFC9",
+        "LCS-BNCL",
+        "LCS-BSSY",
+        "LCS-CLJ2",
+        "LCS-DMBH",
+        "LCS-E5K5",
+        "LCS-G7KI",
+        "LCS-GBI7",
+        "LCS-XPYP"
+      ],
+      "transition_prob": 0.472,
+      "source": "customer_other",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-9PBQ"
+      ],
+      "transition_prob": 0.019,
+      "source": "customer_other",
+      "target": "agent_request_pan"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-1V8M"
+      ],
+      "transition_prob": 0.009,
+      "source": "customer_other",
+      "target": "agent_request_terms_accept"
+    },
+    {
+      "count": 6,
+      "calls": [
+        "LCS-1V8M",
+        "LCS-4P6Q",
+        "LCS-6W7C",
+        "LCS-B7AU",
+        "LCS-C6UL"
+      ],
+      "transition_prob": 0.057,
+      "source": "customer_other",
+      "target": "agent_reassure_trust"
+    },
+    {
+      "count": 12,
+      "calls": [
+        "LCS-1V8M",
+        "LCS-2374",
+        "LCS-2LVC",
+        "LCS-88GC",
+        "LCS-8EMS",
+        "LCS-CLJ2",
+        "LCS-D4BD",
+        "LCS-E5K5",
+        "LCS-G7KI",
+        "LCS-GOQS",
+        "LCS-NO12"
+      ],
+      "transition_prob": 0.113,
+      "source": "customer_other",
+      "target": "agent_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-2374"
+      ],
+      "transition_prob": 0.009,
+      "source": "customer_other",
+      "target": "agent_help_address_error"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-2LVC"
+      ],
+      "transition_prob": 0.009,
+      "source": "customer_other",
+      "target": "agent_end_call"
+    },
+    {
+      "count": 4,
+      "calls": [
+        "LCS-3ENT",
+        "LCS-4P6Q",
+        "LCS-HJV5",
+        "LCS-IPR5"
+      ],
+      "transition_prob": 0.038,
+      "source": "customer_other",
+      "target": "agent_transfer_to_rm"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-3W62"
+      ],
+      "transition_prob": 0.009,
+      "source": "customer_other",
+      "target": "agent_request_otp"
+    },
+    {
+      "count": 5,
+      "calls": [
+        "LCS-437E",
+        "LCS-88GC",
+        "LCS-ATFU",
+        "LCS-D4BD",
+        "LCS-HJV5"
+      ],
+      "transition_prob": 0.047,
+      "source": "customer_other",
+      "target": "agent_ask_to_repeat"
+    },
+    {
+      "count": 4,
+      "calls": [
+        "LCS-5JXW",
+        "LCS-AGNV",
+        "LCS-FEM8",
+        "LCS-FICV"
+      ],
+      "transition_prob": 0.038,
+      "source": "customer_other",
+      "target": "__END__"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-79OA"
+      ],
+      "transition_prob": 0.009,
+      "source": "customer_other",
+      "target": "agent_present_offer"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-7HAV"
+      ],
+      "transition_prob": 0.009,
+      "source": "customer_other",
+      "target": "agent_request_business_details"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-D4BD"
+      ],
+      "transition_prob": 0.009,
+      "source": "customer_other",
+      "target": "customer_express_distrust"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-EE1V",
+        "LCS-IPR5",
+        "LCS-XPYP"
+      ],
+      "transition_prob": 0.028,
+      "source": "customer_other",
+      "target": "agent_other"
+    },
+    {
+      "count": 4,
+      "calls": [
+        "LCS-03F4",
+        "LCS-437E",
+        "LCS-AGNV",
+        "LCS-XPYP"
+      ],
+      "transition_prob": 0.037,
+      "source": "__START__",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 27,
+      "calls": [
+        "LCS-0ING",
+        "LCS-1O0N",
+        "LCS-2PN8",
+        "LCS-2SJT",
+        "LCS-3C5E",
+        "LCS-5DGE",
+        "LCS-5OKL",
+        "LCS-6R5O",
+        "LCS-6W7C",
+        "LCS-76E1",
+        "LCS-7AAC",
+        "LCS-7HAV",
+        "LCS-8844",
+        "LCS-8AF3",
+        "LCS-8EMS",
+        "LCS-A569",
+        "LCS-AZWX",
+        "LCS-B7AU",
+        "LCS-BPXM",
+        "LCS-C6FG",
+        "LCS-D3HH",
+        "LCS-E4SV",
+        "LCS-FPO5",
+        "LCS-FWYG",
+        "LCS-GOQS",
+        "LCS-NO12",
+        "LCS-O0TD"
+      ],
+      "transition_prob": 0.25,
+      "source": "__START__",
+      "target": "agent_disclose_recording"
+    },
+    {
+      "count": 28,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-115Q",
+        "LCS-1KJ9",
+        "LCS-1QJ9",
+        "LCS-2LVC",
+        "LCS-3ENT",
+        "LCS-3OK6",
+        "LCS-4E0N",
+        "LCS-4P6Q",
+        "LCS-55MJ",
+        "LCS-79OA",
+        "LCS-88GC",
+        "LCS-89RR",
+        "LCS-9V23",
+        "LCS-9XSU",
+        "LCS-A5YM",
+        "LCS-ATFU",
+        "LCS-AZWX",
+        "LCS-BNCL",
+        "LCS-CIX6",
+        "LCS-CRB6",
+        "LCS-ECE2",
+        "LCS-EOD9",
+        "LCS-F1GL",
+        "LCS-FE74",
+        "LCS-HJV5",
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.259,
+      "source": "__START__",
+      "target": "agent_greet"
+    },
+    {
+      "count": 6,
+      "calls": [
+        "LCS-18CV",
+        "LCS-49S5",
+        "LCS-5JXW",
+        "LCS-93AB",
+        "LCS-D4BD",
+        "LCS-FICV"
+      ],
+      "transition_prob": 0.056,
+      "source": "__START__",
+      "target": "customer_greet"
+    },
+    {
+      "count": 15,
+      "calls": [
+        "LCS-1FT7",
+        "LCS-3IW7",
+        "LCS-70HM",
+        "LCS-89OM",
+        "LCS-9EV3",
+        "LCS-ATFU",
+        "LCS-BEVS",
+        "LCS-BFC9",
+        "LCS-BYAQ",
+        "LCS-E5K5",
+        "LCS-EE1V",
+        "LCS-ERUS",
+        "LCS-FPJ7",
+        "LCS-GBI7"
+      ],
+      "transition_prob": 0.139,
+      "source": "__START__",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 5,
+      "calls": [
+        "LCS-1FT7",
+        "LCS-7IM9",
+        "LCS-BSSY",
+        "LCS-CLJ2",
+        "LCS-FPJ7"
+      ],
+      "transition_prob": 0.046,
+      "source": "__START__",
+      "target": "customer_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-1V8M"
+      ],
+      "transition_prob": 0.009,
+      "source": "__START__",
+      "target": "agent_request_address"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-2374",
+        "LCS-9MBJ"
+      ],
+      "transition_prob": 0.019,
+      "source": "__START__",
+      "target": "agent_explain_fee"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-3W62",
+        "LCS-9PBQ",
+        "LCS-FEM8"
+      ],
+      "transition_prob": 0.028,
+      "source": "__START__",
+      "target": "agent_guide_open_link"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-4GM3"
+      ],
+      "transition_prob": 0.009,
+      "source": "__START__",
+      "target": "__END__"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-5XWH",
+        "LCS-6LB4",
+        "LCS-AR0V"
+      ],
+      "transition_prob": 0.028,
+      "source": "__START__",
+      "target": "agent_present_offer"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-5Y7D",
+        "LCS-7SJY"
+      ],
+      "transition_prob": 0.019,
+      "source": "__START__",
+      "target": "customer_other"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-A3M2"
+      ],
+      "transition_prob": 0.009,
+      "source": "__START__",
+      "target": "customer_report_done"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-B0WF",
+        "LCS-IPR5"
+      ],
+      "transition_prob": 0.019,
+      "source": "__START__",
+      "target": "agent_wait"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-BG9F"
+      ],
+      "transition_prob": 0.009,
+      "source": "__START__",
+      "target": "agent_request_pan"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-C6UL"
+      ],
+      "transition_prob": 0.009,
+      "source": "__START__",
+      "target": "customer_agree"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-DF7C"
+      ],
+      "transition_prob": 0.009,
+      "source": "__START__",
+      "target": "agent_acknowledge"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-DMBH",
+        "LCS-IM39"
+      ],
+      "transition_prob": 0.019,
+      "source": "__START__",
+      "target": "customer_query_fee"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-G4GA"
+      ],
+      "transition_prob": 0.009,
+      "source": "__START__",
+      "target": "agent_request_business_details"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-G7KI"
+      ],
+      "transition_prob": 0.009,
+      "source": "__START__",
+      "target": "customer_react_to_offer"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-RDCG"
+      ],
+      "transition_prob": 0.009,
+      "source": "__START__",
+      "target": "customer_report_address_error"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-0ING"
+      ],
+      "transition_prob": 0.036,
+      "source": "agent_disclose_recording",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 10,
+      "calls": [
+        "LCS-1O0N",
+        "LCS-2SJT",
+        "LCS-76E1",
+        "LCS-7AAC",
+        "LCS-8844",
+        "LCS-BPXM",
+        "LCS-C6FG",
+        "LCS-D3HH",
+        "LCS-E4SV",
+        "LCS-O0TD"
+      ],
+      "transition_prob": 0.357,
+      "source": "agent_disclose_recording",
+      "target": "__END__"
+    },
+    {
+      "count": 6,
+      "calls": [
+        "LCS-2PN8",
+        "LCS-7HAV",
+        "LCS-8AF3",
+        "LCS-9MBJ",
+        "LCS-GOQS",
+        "LCS-NO12"
+      ],
+      "transition_prob": 0.214,
+      "source": "agent_disclose_recording",
+      "target": "customer_other"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-3C5E"
+      ],
+      "transition_prob": 0.036,
+      "source": "agent_disclose_recording",
+      "target": "customer_report_sms_received"
+    },
+    {
+      "count": 4,
+      "calls": [
+        "LCS-5DGE",
+        "LCS-8EMS",
+        "LCS-A569",
+        "LCS-AZWX"
+      ],
+      "transition_prob": 0.143,
+      "source": "agent_disclose_recording",
+      "target": "customer_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-5OKL"
+      ],
+      "transition_prob": 0.036,
+      "source": "agent_disclose_recording",
+      "target": "customer_agree"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-6R5O",
+        "LCS-B7AU"
+      ],
+      "transition_prob": 0.071,
+      "source": "agent_disclose_recording",
+      "target": "customer_express_distrust"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-6W7C"
+      ],
+      "transition_prob": 0.036,
+      "source": "agent_disclose_recording",
+      "target": "customer_react_to_offer"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-FPO5"
+      ],
+      "transition_prob": 0.036,
+      "source": "agent_disclose_recording",
+      "target": "customer_report_done"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-FWYG"
+      ],
+      "transition_prob": 0.036,
+      "source": "agent_disclose_recording",
+      "target": "customer_query_fee"
+    },
+    {
+      "count": 35,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-1FT7",
+        "LCS-1KJ9",
+        "LCS-1V8M",
+        "LCS-2LVC",
+        "LCS-3W62",
+        "LCS-437E",
+        "LCS-49S5",
+        "LCS-4P6Q",
+        "LCS-55MJ",
+        "LCS-88GC",
+        "LCS-93AB",
+        "LCS-9MBJ",
+        "LCS-9V23",
+        "LCS-BSSY",
+        "LCS-CLJ2",
+        "LCS-DMBH",
+        "LCS-EE1V",
+        "LCS-FICV",
+        "LCS-G7KI",
+        "LCS-HJV5",
+        "LCS-XPYP"
+      ],
+      "transition_prob": 0.156,
+      "source": "agent_answer_query",
+      "target": "customer_other"
+    },
+    {
+      "count": 40,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-115Q",
+        "LCS-1FT7",
+        "LCS-2374",
+        "LCS-3W62",
+        "LCS-49S5",
+        "LCS-55MJ",
+        "LCS-5OKL",
+        "LCS-70HM",
+        "LCS-79OA",
+        "LCS-88GC",
+        "LCS-89RR",
+        "LCS-93AB",
+        "LCS-9PBQ",
+        "LCS-9V23",
+        "LCS-A3M2",
+        "LCS-A569",
+        "LCS-ATFU",
+        "LCS-BFC9",
+        "LCS-BSSY",
+        "LCS-C6UL",
+        "LCS-CLJ2",
+        "LCS-E5K5",
+        "LCS-EOD9",
+        "LCS-FE74",
+        "LCS-FEM8",
+        "LCS-G4GA",
+        "LCS-G7KI",
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.178,
+      "source": "agent_answer_query",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 14,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-115Q",
+        "LCS-1KJ9",
+        "LCS-2LVC",
+        "LCS-49S5",
+        "LCS-7IM9",
+        "LCS-93AB",
+        "LCS-ATFU",
+        "LCS-BEVS",
+        "LCS-BNCL",
+        "LCS-FWYG",
+        "LCS-G4GA"
+      ],
+      "transition_prob": 0.062,
+      "source": "agent_answer_query",
+      "target": "customer_report_done"
+    },
+    {
+      "count": 4,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-2374",
+        "LCS-8EMS",
+        "LCS-EE1V"
+      ],
+      "transition_prob": 0.018,
+      "source": "agent_answer_query",
+      "target": "customer_query_fee"
+    },
+    {
+      "count": 8,
+      "calls": [
+        "LCS-115Q",
+        "LCS-437E",
+        "LCS-49S5",
+        "LCS-5Y7D",
+        "LCS-9PBQ",
+        "LCS-DMBH",
+        "LCS-G7KI"
+      ],
+      "transition_prob": 0.036,
+      "source": "agent_answer_query",
+      "target": "customer_agree"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-1FT7"
+      ],
+      "transition_prob": 0.004,
+      "source": "agent_answer_query",
+      "target": "customer_acknowledge_transfer"
+    },
+    {
+      "count": 5,
+      "calls": [
+        "LCS-1KJ9",
+        "LCS-1V8M",
+        "LCS-93AB",
+        "LCS-9V23",
+        "LCS-DMBH"
+      ],
+      "transition_prob": 0.022,
+      "source": "agent_answer_query",
+      "target": "customer_report_address_error"
+    },
+    {
+      "count": 19,
+      "calls": [
+        "LCS-1KJ9",
+        "LCS-2PN8",
+        "LCS-3C5E",
+        "LCS-6LB4",
+        "LCS-6W7C",
+        "LCS-88GC",
+        "LCS-89RR",
+        "LCS-9EV3",
+        "LCS-9PBQ",
+        "LCS-9V23",
+        "LCS-A3M2",
+        "LCS-A569",
+        "LCS-ATFU",
+        "LCS-AZWX",
+        "LCS-B0WF",
+        "LCS-ERUS",
+        "LCS-FPJ7",
+        "LCS-FPO5",
+        "LCS-IM39"
+      ],
+      "transition_prob": 0.084,
+      "source": "agent_answer_query",
+      "target": "__END__"
+    },
+    {
+      "count": 11,
+      "calls": [
+        "LCS-1V8M",
+        "LCS-55MJ",
+        "LCS-79OA",
+        "LCS-89RR",
+        "LCS-8EMS",
+        "LCS-DMBH",
+        "LCS-FPJ7",
+        "LCS-GBI7"
+      ],
+      "transition_prob": 0.049,
+      "source": "agent_answer_query",
+      "target": "customer_ask_query"
+    },
+    {
+      "count": 7,
+      "calls": [
+        "LCS-1V8M",
+        "LCS-93AB",
+        "LCS-AR0V",
+        "LCS-CLJ2",
+        "LCS-FPJ7",
+        "LCS-G7KI",
+        "LCS-HJV5"
+      ],
+      "transition_prob": 0.031,
+      "source": "agent_answer_query",
+      "target": "customer_skip_udyam"
+    },
+    {
+      "count": 30,
+      "calls": [
+        "LCS-2374",
+        "LCS-2LVC",
+        "LCS-5OKL",
+        "LCS-88GC",
+        "LCS-89RR",
+        "LCS-8EMS",
+        "LCS-9MBJ",
+        "LCS-A5YM",
+        "LCS-AZWX",
+        "LCS-CIX6",
+        "LCS-CLJ2",
+        "LCS-DMBH",
+        "LCS-E5K5",
+        "LCS-FEM8",
+        "LCS-FPJ7",
+        "LCS-G4GA",
+        "LCS-G7KI",
+        "LCS-GBI7",
+        "LCS-HJV5",
+        "LCS-XPYP",
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.133,
+      "source": "agent_answer_query",
+      "target": "customer_acknowledge"
+    },
+    {
+      "count": 8,
+      "calls": [
+        "LCS-2LVC",
+        "LCS-7IM9",
+        "LCS-88GC",
+        "LCS-93AB",
+        "LCS-9MBJ",
+        "LCS-CLJ2",
+        "LCS-FWYG",
+        "LCS-XPYP"
+      ],
+      "transition_prob": 0.036,
+      "source": "agent_answer_query",
+      "target": "customer_request_wait"
+    },
+    {
+      "count": 4,
+      "calls": [
+        "LCS-2LVC",
+        "LCS-93AB",
+        "LCS-FEM8",
+        "LCS-GBI7"
+      ],
+      "transition_prob": 0.018,
+      "source": "agent_answer_query",
+      "target": "customer_respond_udyam"
+    },
+    {
+      "count": 24,
+      "calls": [
+        "LCS-3IW7",
+        "LCS-437E",
+        "LCS-7SJY",
+        "LCS-89OM",
+        "LCS-8EMS",
+        "LCS-93AB",
+        "LCS-ATFU",
+        "LCS-BFC9",
+        "LCS-CRB6",
+        "LCS-D4BD",
+        "LCS-E5K5",
+        "LCS-FPJ7",
+        "LCS-G7KI",
+        "LCS-GBI7",
+        "LCS-HJV5",
+        "LCS-IPR5",
+        "LCS-XPYP"
+      ],
+      "transition_prob": 0.107,
+      "source": "agent_answer_query",
+      "target": "customer_express_distrust"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-49S5",
+        "LCS-BFC9",
+        "LCS-DMBH"
+      ],
+      "transition_prob": 0.013,
+      "source": "agent_answer_query",
+      "target": "customer_report_sms_received"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-55MJ",
+        "LCS-AZWX",
+        "LCS-CRB6"
+      ],
+      "transition_prob": 0.013,
+      "source": "agent_answer_query",
+      "target": "customer_react_to_offer"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-BFC9",
+        "LCS-CRB6",
+        "LCS-GBI7"
+      ],
+      "transition_prob": 0.013,
+      "source": "agent_answer_query",
+      "target": "customer_react_to_final_offer"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-BNCL"
+      ],
+      "transition_prob": 0.004,
+      "source": "agent_answer_query",
+      "target": "customer_provide_business_details"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-BYAQ"
+      ],
+      "transition_prob": 0.004,
+      "source": "agent_answer_query",
+      "target": "customer_greet"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-DMBH",
+        "LCS-FICV"
+      ],
+      "transition_prob": 0.009,
+      "source": "agent_answer_query",
+      "target": "customer_do_otp"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-HJV5"
+      ],
+      "transition_prob": 0.004,
+      "source": "agent_answer_query",
+      "target": "customer_report_link_opened"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-XPYP"
+      ],
+      "transition_prob": 0.004,
+      "source": "agent_answer_query",
+      "target": "customer_provide_org_name"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-55MJ",
+        "LCS-9PBQ"
+      ],
+      "transition_prob": 0.333,
+      "source": "agent_request_pan",
+      "target": "customer_other"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-7IM9"
+      ],
+      "transition_prob": 0.111,
+      "source": "agent_request_pan",
+      "target": "customer_provide_address"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-9PBQ"
+      ],
+      "transition_prob": 0.111,
+      "source": "agent_request_pan",
+      "target": "customer_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-BG9F"
+      ],
+      "transition_prob": 0.111,
+      "source": "agent_request_pan",
+      "target": "__END__"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-C6UL",
+        "LCS-FWYG"
+      ],
+      "transition_prob": 0.222,
+      "source": "agent_request_pan",
+      "target": "customer_ask_query"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-FE74"
+      ],
+      "transition_prob": 0.111,
+      "source": "agent_request_pan",
+      "target": "customer_agree"
+    },
+    {
+      "count": 10,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-115Q",
+        "LCS-2374",
+        "LCS-8EMS",
+        "LCS-CIX6",
+        "LCS-DMBH",
+        "LCS-E5K5",
+        "LCS-EE1V",
+        "LCS-FWYG",
+        "LCS-IM39"
+      ],
+      "transition_prob": 0.556,
+      "source": "customer_query_fee",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-88GC"
+      ],
+      "transition_prob": 0.111,
+      "source": "customer_query_fee",
+      "target": "agent_acknowledge"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-88GC",
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.111,
+      "source": "customer_query_fee",
+      "target": "agent_explain_fee"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-88GC",
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.111,
+      "source": "customer_query_fee",
+      "target": "agent_ask_to_repeat"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-FE74"
+      ],
+      "transition_prob": 0.056,
+      "source": "customer_query_fee",
+      "target": "agent_wait"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-G4GA"
+      ],
+      "transition_prob": 0.056,
+      "source": "customer_query_fee",
+      "target": "agent_clarify"
+    },
+    {
+      "count": 4,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-2374",
+        "LCS-2LVC",
+        "LCS-ATFU"
+      ],
+      "transition_prob": 0.19,
+      "source": "customer_report_done",
+      "target": "agent_acknowledge"
+    },
+    {
+      "count": 5,
+      "calls": [
+        "LCS-115Q",
+        "LCS-1KJ9",
+        "LCS-49S5",
+        "LCS-FPO5",
+        "LCS-G4GA"
+      ],
+      "transition_prob": 0.238,
+      "source": "customer_report_done",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-7IM9"
+      ],
+      "transition_prob": 0.048,
+      "source": "customer_report_done",
+      "target": "agent_request_pan"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-93AB",
+        "LCS-FWYG"
+      ],
+      "transition_prob": 0.095,
+      "source": "customer_report_done",
+      "target": "agent_transfer_to_rm"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-9MBJ"
+      ],
+      "transition_prob": 0.048,
+      "source": "customer_report_done",
+      "target": "agent_request_org_name"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-A3M2"
+      ],
+      "transition_prob": 0.048,
+      "source": "customer_report_done",
+      "target": "agent_send_sms_link"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-A3M2"
+      ],
+      "transition_prob": 0.048,
+      "source": "customer_report_done",
+      "target": "agent_request_udyam"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-B0WF",
+        "LCS-BEVS",
+        "LCS-HJV5"
+      ],
+      "transition_prob": 0.143,
+      "source": "customer_report_done",
+      "target": "agent_clarify"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-BEVS"
+      ],
+      "transition_prob": 0.048,
+      "source": "customer_report_done",
+      "target": "__END__"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-BNCL"
+      ],
+      "transition_prob": 0.048,
+      "source": "customer_report_done",
+      "target": "agent_ask_to_repeat"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-G4GA"
+      ],
+      "transition_prob": 0.048,
+      "source": "customer_report_done",
+      "target": "agent_wait"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-0X5J"
+      ],
+      "transition_prob": 0.014,
+      "source": "agent_acknowledge",
+      "target": "customer_ask_query"
+    },
+    {
+      "count": 10,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-2374",
+        "LCS-55MJ",
+        "LCS-89RR",
+        "LCS-ATFU",
+        "LCS-CRB6",
+        "LCS-FEM8",
+        "LCS-G7KI",
+        "LCS-IPR5"
+      ],
+      "transition_prob": 0.141,
+      "source": "agent_acknowledge",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 6,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-89RR",
+        "LCS-CLJ2",
+        "LCS-DF7C",
+        "LCS-G7KI"
+      ],
+      "transition_prob": 0.085,
+      "source": "agent_acknowledge",
+      "target": "customer_express_distrust"
+    },
+    {
+      "count": 12,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-1V8M",
+        "LCS-2374",
+        "LCS-3W62",
+        "LCS-49S5",
+        "LCS-7SJY",
+        "LCS-BYAQ",
+        "LCS-CIX6",
+        "LCS-CLJ2",
+        "LCS-DF7C",
+        "LCS-G7KI",
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.169,
+      "source": "agent_acknowledge",
+      "target": "__END__"
+    },
+    {
+      "count": 18,
+      "calls": [
+        "LCS-115Q",
+        "LCS-1FT7",
+        "LCS-1V8M",
+        "LCS-2LVC",
+        "LCS-49S5",
+        "LCS-5OKL",
+        "LCS-79OA",
+        "LCS-89RR",
+        "LCS-E5K5",
+        "LCS-FEM8",
+        "LCS-G4GA",
+        "LCS-GBI7",
+        "LCS-GOQS",
+        "LCS-NO12"
+      ],
+      "transition_prob": 0.254,
+      "source": "agent_acknowledge",
+      "target": "customer_acknowledge"
+    },
+    {
+      "count": 14,
+      "calls": [
+        "LCS-2374",
+        "LCS-2LVC",
+        "LCS-437E",
+        "LCS-7IM9",
+        "LCS-88GC",
+        "LCS-8EMS",
+        "LCS-ATFU",
+        "LCS-BFC9",
+        "LCS-CLJ2",
+        "LCS-D4BD",
+        "LCS-E5K5",
+        "LCS-FEM8",
+        "LCS-GBI7"
+      ],
+      "transition_prob": 0.197,
+      "source": "agent_acknowledge",
+      "target": "customer_other"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-88GC",
+        "LCS-DF7C"
+      ],
+      "transition_prob": 0.028,
+      "source": "agent_acknowledge",
+      "target": "customer_agree"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-88GC"
+      ],
+      "transition_prob": 0.014,
+      "source": "agent_acknowledge",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-9PBQ",
+        "LCS-NO12"
+      ],
+      "transition_prob": 0.028,
+      "source": "agent_acknowledge",
+      "target": "customer_request_wait"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-BNCL",
+        "LCS-FPJ7"
+      ],
+      "transition_prob": 0.028,
+      "source": "agent_acknowledge",
+      "target": "customer_skip_udyam"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-E5K5"
+      ],
+      "transition_prob": 0.014,
+      "source": "agent_acknowledge",
+      "target": "customer_respond_udyam"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-FE74"
+      ],
+      "transition_prob": 0.014,
+      "source": "agent_acknowledge",
+      "target": "customer_query_fee"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-FE74"
+      ],
+      "transition_prob": 0.014,
+      "source": "agent_acknowledge",
+      "target": "customer_report_address_error"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-G4GA"
+      ],
+      "transition_prob": 0.105,
+      "source": "customer_ask_query",
+      "target": "agent_acknowledge"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-1V8M",
+        "LCS-89RR"
+      ],
+      "transition_prob": 0.105,
+      "source": "customer_ask_query",
+      "target": "agent_ask_to_repeat"
+    },
+    {
+      "count": 13,
+      "calls": [
+        "LCS-1V8M",
+        "LCS-55MJ",
+        "LCS-79OA",
+        "LCS-89RR",
+        "LCS-ATFU",
+        "LCS-C6UL",
+        "LCS-DMBH",
+        "LCS-FEM8",
+        "LCS-FPJ7",
+        "LCS-FWYG",
+        "LCS-GBI7"
+      ],
+      "transition_prob": 0.684,
+      "source": "customer_ask_query",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-7HAV"
+      ],
+      "transition_prob": 0.053,
+      "source": "customer_ask_query",
+      "target": "agent_request_org_name"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-8EMS"
+      ],
+      "transition_prob": 0.053,
+      "source": "customer_ask_query",
+      "target": "agent_confirm"
+    },
+    {
+      "count": 5,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-89OM",
+        "LCS-BFC9",
+        "LCS-DF7C",
+        "LCS-G7KI"
+      ],
+      "transition_prob": 0.104,
+      "source": "customer_express_distrust",
+      "target": "agent_reassure_trust"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-1KJ9",
+        "LCS-3IW7"
+      ],
+      "transition_prob": 0.042,
+      "source": "customer_express_distrust",
+      "target": "agent_other"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-437E"
+      ],
+      "transition_prob": 0.021,
+      "source": "customer_express_distrust",
+      "target": "agent_present_offer"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-5XWH",
+        "LCS-B7AU",
+        "LCS-G7KI"
+      ],
+      "transition_prob": 0.062,
+      "source": "customer_express_distrust",
+      "target": "agent_transfer_to_rm"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-6R5O"
+      ],
+      "transition_prob": 0.021,
+      "source": "customer_express_distrust",
+      "target": "agent_request_terms_accept"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-7SJY"
+      ],
+      "transition_prob": 0.021,
+      "source": "customer_express_distrust",
+      "target": "agent_request_personal_details"
+    },
+    {
+      "count": 19,
+      "calls": [
+        "LCS-88GC",
+        "LCS-93AB",
+        "LCS-AR0V",
+        "LCS-ATFU",
+        "LCS-CLJ2",
+        "LCS-CRB6",
+        "LCS-D4BD",
+        "LCS-E5K5",
+        "LCS-EOD9",
+        "LCS-FEM8",
+        "LCS-FPJ7",
+        "LCS-G7KI",
+        "LCS-HJV5",
+        "LCS-XPYP"
+      ],
+      "transition_prob": 0.396,
+      "source": "customer_express_distrust",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 7,
+      "calls": [
+        "LCS-89RR",
+        "LCS-ATFU",
+        "LCS-CRB6",
+        "LCS-D4BD",
+        "LCS-E5K5",
+        "LCS-GBI7",
+        "LCS-IPR5"
+      ],
+      "transition_prob": 0.146,
+      "source": "customer_express_distrust",
+      "target": "agent_acknowledge"
+    },
+    {
+      "count": 4,
+      "calls": [
+        "LCS-8EMS",
+        "LCS-9V23",
+        "LCS-AR0V",
+        "LCS-BFC9"
+      ],
+      "transition_prob": 0.083,
+      "source": "customer_express_distrust",
+      "target": "agent_send_sms_link"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-ATFU"
+      ],
+      "transition_prob": 0.021,
+      "source": "customer_express_distrust",
+      "target": "agent_end_call"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-ATFU"
+      ],
+      "transition_prob": 0.021,
+      "source": "customer_express_distrust",
+      "target": "agent_guide_open_link"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-D4BD"
+      ],
+      "transition_prob": 0.021,
+      "source": "customer_express_distrust",
+      "target": "agent_ask_to_repeat"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-E5K5",
+        "LCS-F1GL"
+      ],
+      "transition_prob": 0.042,
+      "source": "customer_express_distrust",
+      "target": "agent_wait"
+    },
+    {
+      "count": 7,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-4P6Q",
+        "LCS-9XSU",
+        "LCS-C6UL",
+        "LCS-CRB6",
+        "LCS-DF7C"
+      ],
+      "transition_prob": 0.35,
+      "source": "agent_reassure_trust",
+      "target": "customer_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-115Q"
+      ],
+      "transition_prob": 0.05,
+      "source": "agent_reassure_trust",
+      "target": "customer_agree"
+    },
+    {
+      "count": 4,
+      "calls": [
+        "LCS-1V8M",
+        "LCS-2LVC",
+        "LCS-5Y7D",
+        "LCS-G7KI"
+      ],
+      "transition_prob": 0.2,
+      "source": "agent_reassure_trust",
+      "target": "customer_other"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-6W7C",
+        "LCS-C6UL",
+        "LCS-GOQS"
+      ],
+      "transition_prob": 0.15,
+      "source": "agent_reassure_trust",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-89OM",
+        "LCS-BFC9",
+        "LCS-GOQS"
+      ],
+      "transition_prob": 0.15,
+      "source": "agent_reassure_trust",
+      "target": "__END__"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-B7AU"
+      ],
+      "transition_prob": 0.05,
+      "source": "agent_reassure_trust",
+      "target": "customer_respond_udyam"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-G7KI"
+      ],
+      "transition_prob": 0.05,
+      "source": "agent_reassure_trust",
+      "target": "customer_express_distrust"
+    },
+    {
+      "count": 20,
+      "calls": [
+        "LCS-0X5J",
+        "LCS-1V8M",
+        "LCS-2374",
+        "LCS-49S5",
+        "LCS-55MJ",
+        "LCS-7IM9",
+        "LCS-88GC",
+        "LCS-89RR",
+        "LCS-9PBQ",
+        "LCS-BNCL",
+        "LCS-CIX6",
+        "LCS-CLJ2",
+        "LCS-DF7C",
+        "LCS-E5K5",
+        "LCS-G7KI",
+        "LCS-GBI7",
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.204,
+      "source": "customer_acknowledge",
+      "target": "agent_acknowledge"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-115Q",
+        "LCS-6R5O",
+        "LCS-XPYP"
+      ],
+      "transition_prob": 0.031,
+      "source": "customer_acknowledge",
+      "target": "agent_ask_to_repeat"
+    },
+    {
+      "count": 9,
+      "calls": [
+        "LCS-1FT7",
+        "LCS-55MJ",
+        "LCS-79OA",
+        "LCS-8AF3",
+        "LCS-A5YM",
+        "LCS-ATFU",
+        "LCS-AZWX",
+        "LCS-DMBH"
+      ],
+      "transition_prob": 0.092,
+      "source": "customer_acknowledge",
+      "target": "__END__"
+    },
+    {
+      "count": 32,
+      "calls": [
+        "LCS-1FT7",
+        "LCS-2374",
+        "LCS-2LVC",
+        "LCS-49S5",
+        "LCS-4P6Q",
+        "LCS-5OKL",
+        "LCS-88GC",
+        "LCS-89RR",
+        "LCS-8EMS",
+        "LCS-9MBJ",
+        "LCS-9PBQ",
+        "LCS-A569",
+        "LCS-A5YM",
+        "LCS-BFC9",
+        "LCS-BSSY",
+        "LCS-CIX6",
+        "LCS-CLJ2",
+        "LCS-DMBH",
+        "LCS-E5K5",
+        "LCS-FPJ7",
+        "LCS-G4GA",
+        "LCS-G7KI",
+        "LCS-GBI7",
+        "LCS-HJV5",
+        "LCS-XPYP",
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.327,
+      "source": "customer_acknowledge",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-2LVC",
+        "LCS-C6UL",
+        "LCS-GOQS"
+      ],
+      "transition_prob": 0.031,
+      "source": "customer_acknowledge",
+      "target": "agent_reassure_trust"
+    },
+    {
+      "count": 4,
+      "calls": [
+        "LCS-437E",
+        "LCS-8EMS",
+        "LCS-AZWX",
+        "LCS-DMBH"
+      ],
+      "transition_prob": 0.041,
+      "source": "customer_acknowledge",
+      "target": "agent_transfer_to_rm"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-5DGE"
+      ],
+      "transition_prob": 0.01,
+      "source": "customer_acknowledge",
+      "target": "agent_request_terms_accept"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-5OKL"
+      ],
+      "transition_prob": 0.01,
+      "source": "customer_acknowledge",
+      "target": "agent_ask_employment_type"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-88GC"
+      ],
+      "transition_prob": 0.01,
+      "source": "customer_acknowledge",
+      "target": "agent_greet"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-89RR",
+        "LCS-8EMS",
+        "LCS-A5YM"
+      ],
+      "transition_prob": 0.031,
+      "source": "customer_acknowledge",
+      "target": "agent_request_org_name"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-9MBJ"
+      ],
+      "transition_prob": 0.01,
+      "source": "customer_acknowledge",
+      "target": "agent_request_udyam"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-9XSU",
+        "LCS-CRB6"
+      ],
+      "transition_prob": 0.02,
+      "source": "customer_acknowledge",
+      "target": "agent_present_final_offer"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-B0WF"
+      ],
+      "transition_prob": 0.01,
+      "source": "customer_acknowledge",
+      "target": "customer_report_done"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-BYAQ"
+      ],
+      "transition_prob": 0.01,
+      "source": "customer_acknowledge",
+      "target": "agent_request_address"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-C6UL"
+      ],
+      "transition_prob": 0.01,
+      "source": "customer_acknowledge",
+      "target": "agent_request_pan"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-C6UL",
+        "LCS-FEM8",
+        "LCS-GBI7"
+      ],
+      "transition_prob": 0.031,
+      "source": "customer_acknowledge",
+      "target": "agent_clarify"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-CLJ2",
+        "LCS-NO12"
+      ],
+      "transition_prob": 0.02,
+      "source": "customer_acknowledge",
+      "target": "agent_explain_fee"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-E5K5"
+      ],
+      "transition_prob": 0.01,
+      "source": "customer_acknowledge",
+      "target": "agent_wait"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-EE1V"
+      ],
+      "transition_prob": 0.01,
+      "source": "customer_acknowledge",
+      "target": "agent_help_address_error"
+    },
+    {
+      "count": 6,
+      "calls": [
+        "LCS-FEM8",
+        "LCS-FPJ7",
+        "LCS-HJV5",
+        "LCS-IPR5",
+        "LCS-NO12",
+        "LCS-XPYP"
+      ],
+      "transition_prob": 0.061,
+      "source": "customer_acknowledge",
+      "target": "agent_other"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-NO12"
+      ],
+      "transition_prob": 0.01,
+      "source": "customer_acknowledge",
+      "target": "agent_present_offer"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.01,
+      "source": "customer_acknowledge",
+      "target": "agent_end_call"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-115Q"
+      ],
+      "transition_prob": 0.2,
+      "source": "agent_request_business_details",
+      "target": "customer_request_wait"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-2LVC"
+      ],
+      "transition_prob": 0.2,
+      "source": "agent_request_business_details",
+      "target": "customer_do_otp"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-7HAV"
+      ],
+      "transition_prob": 0.2,
+      "source": "agent_request_business_details",
+      "target": "customer_ask_query"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-E5K5"
+      ],
+      "transition_prob": 0.2,
+      "source": "agent_request_business_details",
+      "target": "customer_report_address_error"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-G4GA"
+      ],
+      "transition_prob": 0.2,
+      "source": "agent_request_business_details",
+      "target": "customer_query_fee"
+    },
+    {
+      "count": 8,
+      "calls": [
+        "LCS-115Q",
+        "LCS-2LVC",
+        "LCS-7IM9",
+        "LCS-88GC",
+        "LCS-93AB",
+        "LCS-9MBJ",
+        "LCS-A3M2",
+        "LCS-FPJ7"
+      ],
+      "transition_prob": 0.533,
+      "source": "customer_request_wait",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-437E",
+        "LCS-FE74",
+        "LCS-NO12"
+      ],
+      "transition_prob": 0.2,
+      "source": "customer_request_wait",
+      "target": "agent_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-9PBQ"
+      ],
+      "transition_prob": 0.067,
+      "source": "customer_request_wait",
+      "target": "agent_other"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-CLJ2"
+      ],
+      "transition_prob": 0.067,
+      "source": "customer_request_wait",
+      "target": "agent_ask_to_repeat"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-FWYG"
+      ],
+      "transition_prob": 0.067,
+      "source": "customer_request_wait",
+      "target": "agent_request_pan"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-XPYP"
+      ],
+      "transition_prob": 0.067,
+      "source": "customer_request_wait",
+      "target": "__END__"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-115Q",
+        "LCS-5Y7D"
+      ],
+      "transition_prob": 0.087,
+      "source": "customer_agree",
+      "target": "agent_reassure_trust"
+    },
+    {
+      "count": 4,
+      "calls": [
+        "LCS-115Q",
+        "LCS-49S5",
+        "LCS-DF7C",
+        "LCS-FE74"
+      ],
+      "transition_prob": 0.174,
+      "source": "customer_agree",
+      "target": "agent_acknowledge"
+    },
+    {
+      "count": 4,
+      "calls": [
+        "LCS-2LVC",
+        "LCS-437E",
+        "LCS-DMBH",
+        "LCS-HJV5"
+      ],
+      "transition_prob": 0.174,
+      "source": "customer_agree",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-5OKL"
+      ],
+      "transition_prob": 0.043,
+      "source": "customer_agree",
+      "target": "agent_clarify"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-5XWH"
+      ],
+      "transition_prob": 0.043,
+      "source": "customer_agree",
+      "target": "__END__"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-88GC"
+      ],
+      "transition_prob": 0.043,
+      "source": "customer_agree",
+      "target": "agent_request_udyam"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-9MBJ"
+      ],
+      "transition_prob": 0.043,
+      "source": "customer_agree",
+      "target": "agent_disclose_recording"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-9PBQ"
+      ],
+      "transition_prob": 0.043,
+      "source": "customer_agree",
+      "target": "agent_request_pan"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-ATFU"
+      ],
+      "transition_prob": 0.043,
+      "source": "customer_agree",
+      "target": "agent_guide_open_link"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-C6UL",
+        "LCS-XPYP"
+      ],
+      "transition_prob": 0.087,
+      "source": "customer_agree",
+      "target": "agent_send_sms_link"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-E5K5"
+      ],
+      "transition_prob": 0.043,
+      "source": "customer_agree",
+      "target": "agent_request_business_details"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-FPJ7"
+      ],
+      "transition_prob": 0.043,
+      "source": "customer_agree",
+      "target": "agent_ask_to_repeat"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-G7KI"
+      ],
+      "transition_prob": 0.043,
+      "source": "customer_agree",
+      "target": "agent_greet"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-G7KI"
+      ],
+      "transition_prob": 0.043,
+      "source": "customer_agree",
+      "target": "agent_present_offer"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-IPR5"
+      ],
+      "transition_prob": 0.043,
+      "source": "customer_agree",
+      "target": "agent_transfer_to_rm"
+    },
+    {
+      "count": 4,
+      "calls": [
+        "LCS-115Q",
+        "LCS-BNCL",
+        "LCS-EOD9",
+        "LCS-FE74"
+      ],
+      "transition_prob": 0.16,
+      "source": "agent_ask_to_repeat",
+      "target": "__END__"
+    },
+    {
+      "count": 6,
+      "calls": [
+        "LCS-1V8M",
+        "LCS-88GC",
+        "LCS-89RR",
+        "LCS-C6UL",
+        "LCS-CLJ2",
+        "LCS-D4BD"
+      ],
+      "transition_prob": 0.24,
+      "source": "agent_ask_to_repeat",
+      "target": "customer_other"
+    },
+    {
+      "count": 5,
+      "calls": [
+        "LCS-437E",
+        "LCS-9PBQ",
+        "LCS-BNCL",
+        "LCS-C6UL",
+        "LCS-XPYP"
+      ],
+      "transition_prob": 0.2,
+      "source": "agent_ask_to_repeat",
+      "target": "customer_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-6LB4"
+      ],
+      "transition_prob": 0.04,
+      "source": "agent_ask_to_repeat",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-6R5O"
+      ],
+      "transition_prob": 0.04,
+      "source": "agent_ask_to_repeat",
+      "target": "agent_transfer_to_rm"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-88GC",
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.08,
+      "source": "agent_ask_to_repeat",
+      "target": "customer_query_fee"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-A3M2",
+        "LCS-FPJ7"
+      ],
+      "transition_prob": 0.08,
+      "source": "agent_ask_to_repeat",
+      "target": "customer_request_wait"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-ATFU"
+      ],
+      "transition_prob": 0.04,
+      "source": "agent_ask_to_repeat",
+      "target": "customer_ask_query"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-D4BD"
+      ],
+      "transition_prob": 0.04,
+      "source": "agent_ask_to_repeat",
+      "target": "customer_skip_udyam"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-FEM8"
+      ],
+      "transition_prob": 0.04,
+      "source": "agent_ask_to_repeat",
+      "target": "customer_express_distrust"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-HJV5"
+      ],
+      "transition_prob": 0.04,
+      "source": "agent_ask_to_repeat",
+      "target": "customer_report_done"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-18CV"
+      ],
+      "transition_prob": 0.125,
+      "source": "customer_greet",
+      "target": "agent_greet"
+    },
+    {
+      "count": 5,
+      "calls": [
+        "LCS-49S5",
+        "LCS-93AB",
+        "LCS-D4BD",
+        "LCS-FICV",
+        "LCS-HJV5"
+      ],
+      "transition_prob": 0.625,
+      "source": "customer_greet",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-5JXW"
+      ],
+      "transition_prob": 0.125,
+      "source": "customer_greet",
+      "target": "agent_wait"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-BYAQ"
+      ],
+      "transition_prob": 0.125,
+      "source": "customer_greet",
+      "target": "agent_transfer_to_rm"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-1FT7"
+      ],
+      "transition_prob": 1.0,
+      "source": "customer_acknowledge_transfer",
+      "target": "agent_acknowledge"
+    },
+    {
+      "count": 6,
+      "calls": [
+        "LCS-1KJ9",
+        "LCS-1V8M",
+        "LCS-IPR5",
+        "LCS-XPYP"
+      ],
+      "transition_prob": 0.286,
+      "source": "agent_other",
+      "target": "customer_other"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-3IW7",
+        "LCS-AR0V",
+        "LCS-NO12"
+      ],
+      "transition_prob": 0.143,
+      "source": "agent_other",
+      "target": "__END__"
+    },
+    {
+      "count": 4,
+      "calls": [
+        "LCS-9PBQ",
+        "LCS-FEM8",
+        "LCS-IPR5",
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.19,
+      "source": "agent_other",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-AR0V"
+      ],
+      "transition_prob": 0.048,
+      "source": "agent_other",
+      "target": "customer_express_distrust"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-ATFU"
+      ],
+      "transition_prob": 0.048,
+      "source": "agent_other",
+      "target": "customer_unclear"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-BSSY"
+      ],
+      "transition_prob": 0.048,
+      "source": "agent_other",
+      "target": "customer_respond_udyam"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-E5K5"
+      ],
+      "transition_prob": 0.048,
+      "source": "agent_other",
+      "target": "customer_query_fee"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-EE1V"
+      ],
+      "transition_prob": 0.048,
+      "source": "agent_other",
+      "target": "customer_acknowledge"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-FPJ7",
+        "LCS-HJV5",
+        "LCS-XPYP"
+      ],
+      "transition_prob": 0.143,
+      "source": "agent_other",
+      "target": "customer_agree"
+    },
+    {
+      "count": 5,
+      "calls": [
+        "LCS-1KJ9",
+        "LCS-1V8M",
+        "LCS-9V23",
+        "LCS-DMBH",
+        "LCS-E5K5"
+      ],
+      "transition_prob": 0.385,
+      "source": "customer_report_address_error",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-93AB"
+      ],
+      "transition_prob": 0.077,
+      "source": "customer_report_address_error",
+      "target": "agent_send_sms_link"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-9MBJ"
+      ],
+      "transition_prob": 0.077,
+      "source": "customer_report_address_error",
+      "target": "agent_clarify"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-AR0V"
+      ],
+      "transition_prob": 0.077,
+      "source": "customer_report_address_error",
+      "target": "customer_report_address_error"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-AR0V"
+      ],
+      "transition_prob": 0.077,
+      "source": "customer_report_address_error",
+      "target": "agent_other"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-CRB6"
+      ],
+      "transition_prob": 0.154,
+      "source": "customer_report_address_error",
+      "target": "agent_request_address"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-FE74"
+      ],
+      "transition_prob": 0.077,
+      "source": "customer_report_address_error",
+      "target": "agent_ask_to_repeat"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-RDCG"
+      ],
+      "transition_prob": 0.077,
+      "source": "customer_report_address_error",
+      "target": "agent_wait"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-1V8M"
+      ],
+      "transition_prob": 0.167,
+      "source": "agent_request_address",
+      "target": "customer_provide_business_details"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-1V8M"
+      ],
+      "transition_prob": 0.167,
+      "source": "agent_request_address",
+      "target": "customer_ask_query"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-6R5O"
+      ],
+      "transition_prob": 0.167,
+      "source": "agent_request_address",
+      "target": "customer_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-BYAQ"
+      ],
+      "transition_prob": 0.167,
+      "source": "agent_request_address",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-CRB6"
+      ],
+      "transition_prob": 0.167,
+      "source": "agent_request_address",
+      "target": "customer_report_address_error"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-CRB6"
+      ],
+      "transition_prob": 0.167,
+      "source": "agent_request_address",
+      "target": "customer_express_distrust"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-1V8M"
+      ],
+      "transition_prob": 0.5,
+      "source": "customer_provide_business_details",
+      "target": "agent_request_address"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-BNCL"
+      ],
+      "transition_prob": 0.5,
+      "source": "customer_provide_business_details",
+      "target": "agent_ask_to_repeat"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-1V8M"
+      ],
+      "transition_prob": 0.333,
+      "source": "agent_request_terms_accept",
+      "target": "customer_other"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-5DGE"
+      ],
+      "transition_prob": 0.333,
+      "source": "agent_request_terms_accept",
+      "target": "__END__"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-6R5O"
+      ],
+      "transition_prob": 0.333,
+      "source": "agent_request_terms_accept",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-1V8M",
+        "LCS-AR0V"
+      ],
+      "transition_prob": 0.182,
+      "source": "customer_skip_udyam",
+      "target": "agent_other"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-93AB",
+        "LCS-D4BD"
+      ],
+      "transition_prob": 0.182,
+      "source": "customer_skip_udyam",
+      "target": "__END__"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-BNCL"
+      ],
+      "transition_prob": 0.091,
+      "source": "customer_skip_udyam",
+      "target": "agent_offer_skip_udyam"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-BNCL",
+        "LCS-G7KI",
+        "LCS-HJV5"
+      ],
+      "transition_prob": 0.273,
+      "source": "customer_skip_udyam",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-CLJ2",
+        "LCS-FPJ7"
+      ],
+      "transition_prob": 0.182,
+      "source": "customer_skip_udyam",
+      "target": "agent_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-FPJ7"
+      ],
+      "transition_prob": 0.091,
+      "source": "customer_skip_udyam",
+      "target": "agent_help_address_error"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-2374",
+        "LCS-NO12"
+      ],
+      "transition_prob": 0.286,
+      "source": "agent_explain_fee",
+      "target": "customer_other"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-88GC"
+      ],
+      "transition_prob": 0.143,
+      "source": "agent_explain_fee",
+      "target": "customer_query_fee"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-9MBJ"
+      ],
+      "transition_prob": 0.143,
+      "source": "agent_explain_fee",
+      "target": "customer_agree"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-CLJ2"
+      ],
+      "transition_prob": 0.143,
+      "source": "agent_explain_fee",
+      "target": "customer_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-CRB6"
+      ],
+      "transition_prob": 0.143,
+      "source": "agent_explain_fee",
+      "target": "customer_report_address_error"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.143,
+      "source": "agent_explain_fee",
+      "target": "customer_respond_udyam"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-2374"
+      ],
+      "transition_prob": 0.333,
+      "source": "agent_help_address_error",
+      "target": "customer_acknowledge"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-EE1V",
+        "LCS-FPJ7"
+      ],
+      "transition_prob": 0.667,
+      "source": "agent_help_address_error",
+      "target": "__END__"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-2LVC"
+      ],
+      "transition_prob": 0.111,
+      "source": "customer_respond_udyam",
+      "target": "agent_request_business_details"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-93AB",
+        "LCS-CRB6",
+        "LCS-GBI7"
+      ],
+      "transition_prob": 0.333,
+      "source": "customer_respond_udyam",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-B7AU",
+        "LCS-E5K5"
+      ],
+      "transition_prob": 0.222,
+      "source": "customer_respond_udyam",
+      "target": "agent_request_udyam"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-BSSY"
+      ],
+      "transition_prob": 0.111,
+      "source": "customer_respond_udyam",
+      "target": "agent_end_call"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-FEM8"
+      ],
+      "transition_prob": 0.111,
+      "source": "customer_respond_udyam",
+      "target": "agent_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.111,
+      "source": "customer_respond_udyam",
+      "target": "agent_other"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-2LVC",
+        "LCS-FICV"
+      ],
+      "transition_prob": 0.333,
+      "source": "customer_do_otp",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-5OKL"
+      ],
+      "transition_prob": 0.167,
+      "source": "customer_do_otp",
+      "target": "agent_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-AZWX"
+      ],
+      "transition_prob": 0.167,
+      "source": "customer_do_otp",
+      "target": "agent_end_call"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-B0WF"
+      ],
+      "transition_prob": 0.167,
+      "source": "customer_do_otp",
+      "target": "agent_guide_open_link"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-DMBH"
+      ],
+      "transition_prob": 0.167,
+      "source": "customer_do_otp",
+      "target": "agent_wait"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-2LVC",
+        "LCS-BSSY"
+      ],
+      "transition_prob": 0.333,
+      "source": "agent_end_call",
+      "target": "__END__"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-ATFU"
+      ],
+      "transition_prob": 0.167,
+      "source": "agent_end_call",
+      "target": "customer_other"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-ATFU",
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.333,
+      "source": "agent_end_call",
+      "target": "customer_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-AZWX"
+      ],
+      "transition_prob": 0.167,
+      "source": "agent_end_call",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-3C5E",
+        "LCS-ATFU"
+      ],
+      "transition_prob": 0.4,
+      "source": "customer_report_sms_received",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-49S5"
+      ],
+      "transition_prob": 0.2,
+      "source": "customer_report_sms_received",
+      "target": "agent_present_offer"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-BFC9"
+      ],
+      "transition_prob": 0.2,
+      "source": "customer_report_sms_received",
+      "target": "agent_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-DMBH"
+      ],
+      "transition_prob": 0.2,
+      "source": "customer_report_sms_received",
+      "target": "agent_wait"
+    },
+    {
+      "count": 9,
+      "calls": [
+        "LCS-3ENT",
+        "LCS-437E",
+        "LCS-4P6Q",
+        "LCS-6R5O",
+        "LCS-7IM9",
+        "LCS-8EMS",
+        "LCS-FWYG",
+        "LCS-HJV5",
+        "LCS-IPR5"
+      ],
+      "transition_prob": 0.474,
+      "source": "agent_transfer_to_rm",
+      "target": "__END__"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-55MJ",
+        "LCS-BYAQ",
+        "LCS-G7KI"
+      ],
+      "transition_prob": 0.158,
+      "source": "agent_transfer_to_rm",
+      "target": "customer_acknowledge"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-5XWH",
+        "LCS-IPR5"
+      ],
+      "transition_prob": 0.105,
+      "source": "agent_transfer_to_rm",
+      "target": "customer_agree"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-6W7C",
+        "LCS-B7AU",
+        "LCS-DMBH"
+      ],
+      "transition_prob": 0.158,
+      "source": "agent_transfer_to_rm",
+      "target": "customer_other"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-93AB"
+      ],
+      "transition_prob": 0.053,
+      "source": "agent_transfer_to_rm",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-AZWX"
+      ],
+      "transition_prob": 0.053,
+      "source": "agent_transfer_to_rm",
+      "target": "customer_do_otp"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-3W62"
+      ],
+      "transition_prob": 0.143,
+      "source": "agent_guide_open_link",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-9PBQ"
+      ],
+      "transition_prob": 0.143,
+      "source": "agent_guide_open_link",
+      "target": "customer_provide_address"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-ATFU"
+      ],
+      "transition_prob": 0.143,
+      "source": "agent_guide_open_link",
+      "target": "customer_express_distrust"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-ATFU"
+      ],
+      "transition_prob": 0.143,
+      "source": "agent_guide_open_link",
+      "target": "customer_agree"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-ATFU"
+      ],
+      "transition_prob": 0.143,
+      "source": "agent_guide_open_link",
+      "target": "customer_report_link_opened"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-B0WF"
+      ],
+      "transition_prob": 0.143,
+      "source": "agent_guide_open_link",
+      "target": "customer_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-FEM8"
+      ],
+      "transition_prob": 0.143,
+      "source": "agent_guide_open_link",
+      "target": "customer_ask_query"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-3W62"
+      ],
+      "transition_prob": 1.0,
+      "source": "agent_request_otp",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-437E"
+      ],
+      "transition_prob": 0.125,
+      "source": "agent_present_offer",
+      "target": "customer_other"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-49S5",
+        "LCS-NO12"
+      ],
+      "transition_prob": 0.25,
+      "source": "agent_present_offer",
+      "target": "customer_acknowledge"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-5XWH",
+        "LCS-AR0V"
+      ],
+      "transition_prob": 0.25,
+      "source": "agent_present_offer",
+      "target": "customer_express_distrust"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-6LB4",
+        "LCS-79OA",
+        "LCS-G7KI"
+      ],
+      "transition_prob": 0.375,
+      "source": "agent_present_offer",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 4,
+      "calls": [
+        "LCS-55MJ",
+        "LCS-5OKL",
+        "LCS-C6UL",
+        "LCS-FEM8"
+      ],
+      "transition_prob": 0.308,
+      "source": "agent_clarify",
+      "target": "customer_other"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-5OKL",
+        "LCS-B0WF"
+      ],
+      "transition_prob": 0.154,
+      "source": "agent_clarify",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-9MBJ"
+      ],
+      "transition_prob": 0.077,
+      "source": "agent_clarify",
+      "target": "customer_report_done"
+    },
+    {
+      "count": 4,
+      "calls": [
+        "LCS-B7AU",
+        "LCS-BEVS",
+        "LCS-C6UL",
+        "LCS-GBI7"
+      ],
+      "transition_prob": 0.308,
+      "source": "agent_clarify",
+      "target": "__END__"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-G4GA"
+      ],
+      "transition_prob": 0.077,
+      "source": "agent_clarify",
+      "target": "customer_ask_query"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-HJV5"
+      ],
+      "transition_prob": 0.077,
+      "source": "agent_clarify",
+      "target": "customer_greet"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-55MJ"
+      ],
+      "transition_prob": 0.2,
+      "source": "customer_react_to_offer",
+      "target": "agent_request_pan"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-6W7C"
+      ],
+      "transition_prob": 0.2,
+      "source": "customer_react_to_offer",
+      "target": "agent_transfer_to_rm"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-AZWX"
+      ],
+      "transition_prob": 0.2,
+      "source": "customer_react_to_offer",
+      "target": "agent_send_sms_link"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-CRB6"
+      ],
+      "transition_prob": 0.2,
+      "source": "customer_react_to_offer",
+      "target": "agent_explain_fee"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-G7KI"
+      ],
+      "transition_prob": 0.2,
+      "source": "customer_react_to_offer",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-5OKL"
+      ],
+      "transition_prob": 1.0,
+      "source": "agent_ask_employment_type",
+      "target": "__END__"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-7HAV",
+        "LCS-9MBJ"
+      ],
+      "transition_prob": 0.286,
+      "source": "agent_request_org_name",
+      "target": "__END__"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-89RR"
+      ],
+      "transition_prob": 0.143,
+      "source": "agent_request_org_name",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-8EMS",
+        "LCS-A5YM"
+      ],
+      "transition_prob": 0.286,
+      "source": "agent_request_org_name",
+      "target": "customer_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-9PBQ"
+      ],
+      "transition_prob": 0.143,
+      "source": "agent_request_org_name",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-AGNV"
+      ],
+      "transition_prob": 0.143,
+      "source": "agent_request_org_name",
+      "target": "customer_other"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-7IM9"
+      ],
+      "transition_prob": 0.333,
+      "source": "customer_provide_address",
+      "target": "agent_transfer_to_rm"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-9PBQ"
+      ],
+      "transition_prob": 0.333,
+      "source": "customer_provide_address",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-A3M2"
+      ],
+      "transition_prob": 0.333,
+      "source": "customer_provide_address",
+      "target": "agent_wait"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-7SJY"
+      ],
+      "transition_prob": 0.5,
+      "source": "customer_provide_org_name",
+      "target": "agent_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-XPYP"
+      ],
+      "transition_prob": 0.5,
+      "source": "customer_provide_org_name",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-88GC",
+        "LCS-B7AU"
+      ],
+      "transition_prob": 0.333,
+      "source": "agent_request_udyam",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-9MBJ"
+      ],
+      "transition_prob": 0.167,
+      "source": "agent_request_udyam",
+      "target": "customer_report_address_error"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-A3M2"
+      ],
+      "transition_prob": 0.167,
+      "source": "agent_request_udyam",
+      "target": "customer_provide_address"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-A3M2"
+      ],
+      "transition_prob": 0.167,
+      "source": "agent_request_udyam",
+      "target": "customer_other"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-E5K5"
+      ],
+      "transition_prob": 0.167,
+      "source": "agent_request_udyam",
+      "target": "customer_agree"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-8EMS"
+      ],
+      "transition_prob": 1.0,
+      "source": "agent_confirm",
+      "target": "customer_other"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-8EMS"
+      ],
+      "transition_prob": 0.091,
+      "source": "agent_send_sms_link",
+      "target": "customer_other"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-93AB",
+        "LCS-G7KI"
+      ],
+      "transition_prob": 0.182,
+      "source": "agent_send_sms_link",
+      "target": "customer_express_distrust"
+    },
+    {
+      "count": 3,
+      "calls": [
+        "LCS-9V23",
+        "LCS-AZWX",
+        "LCS-C6UL"
+      ],
+      "transition_prob": 0.273,
+      "source": "agent_send_sms_link",
+      "target": "customer_ask_question"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-A3M2"
+      ],
+      "transition_prob": 0.091,
+      "source": "agent_send_sms_link",
+      "target": "customer_report_done"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-AR0V"
+      ],
+      "transition_prob": 0.091,
+      "source": "agent_send_sms_link",
+      "target": "customer_report_address_error"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-BFC9",
+        "LCS-XPYP"
+      ],
+      "transition_prob": 0.182,
+      "source": "agent_send_sms_link",
+      "target": "customer_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-Y48Z"
+      ],
+      "transition_prob": 0.091,
+      "source": "agent_send_sms_link",
+      "target": "customer_query_fee"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-9XSU",
+        "LCS-CRB6"
+      ],
+      "transition_prob": 1.0,
+      "source": "agent_present_final_offer",
+      "target": "__END__"
+    },
+    {
+      "count": 2,
+      "calls": [
+        "LCS-ATFU",
+        "LCS-HJV5"
+      ],
+      "transition_prob": 1.0,
+      "source": "customer_report_link_opened",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-ATFU"
+      ],
+      "transition_prob": 1.0,
+      "source": "customer_unclear",
+      "target": "agent_wait"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-BFC9"
+      ],
+      "transition_prob": 0.333,
+      "source": "customer_react_to_final_offer",
+      "target": "agent_answer_query"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-CRB6"
+      ],
+      "transition_prob": 0.333,
+      "source": "customer_react_to_final_offer",
+      "target": "agent_reassure_trust"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-GBI7"
+      ],
+      "transition_prob": 0.333,
+      "source": "customer_react_to_final_offer",
+      "target": "agent_acknowledge"
+    },
+    {
+      "count": 1,
+      "calls": [
+        "LCS-BNCL"
+      ],
+      "transition_prob": 1.0,
+      "source": "agent_offer_skip_udyam",
+      "target": "customer_skip_udyam"
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "call_id": "LCS-AZWX",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "से बात",
+        "कस्टमर",
+        "रिक्वेस्ट",
+        "मार्केटिंग",
+        "बोलिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लुमिया थाई स्पा यहाँ से बात हो रही है हाँ जज़ेल लोटकम से प्रयाक बात कर रहा हूँ कस्टमर सफर्ट से हाँ बोलिए आपकी रिक्वेस्ट है आपके मार्केटिंग केयन से सर",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "पता",
+        "हमको"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अभी सर नहीं है तो आप सर आएंगे अभी पता नहीं हमको भी नहीं पता",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "call",
+        "request",
+        "available",
+        "मार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तो भी मार मैं exactly कब call करूँ क्योंकि पहले भी call किया तो sir available नहीं था क्योंकि उनकी request आई है इसलिए call किया आपको",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "लीड",
+        "just",
+        "शायद"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "शायद आया था कोई just bell का हो गया है शायद just bell का लीड",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "लीड",
+        "मिल",
+        "रिक्वेस्ट",
+        "रिपोर्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रिपोर्ट के लिए रिक्वेस्ट थी लीड रिपोर्ट मिल गई",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "कॉल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "न आपको जो कॉल आते हैं",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "लीड"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कमपणी के ओर से लीड तो आती",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "है हाँ आती है नहीं नहीं",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_transfer_to_rm",
+      "base_intent": "transfer_to_rm",
+      "keywords": [
+        "लीड",
+        "रिपोर्ट"
+      ],
+      "sentiment": null,
+      "tool": "transfer_to_rm",
+      "text": "उसका रिपोर्ट मंगवाने के लिए जो लीड",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_do_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "नहीं हो",
+        "नंबर",
+        "एक्सटर"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "एक्सटर नहीं हो ठीक है मैं आपका नंबर है न सर को दे दी हूँ� हाँ,",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
+      "keywords": [
+        "कॉल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "3 बजे के बाद कॉल करता हूँ आपको, ओके, क्या नाम है आपका,",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "मैनेजर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं, मेरा नाम यहाँ पे जो मैनेजर है ना, नहीं है यहाँ",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "जानना",
+        "जानते"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "पे, ओके, ठीक है ना, नहीं मैं, confirmation के लिए नाम जानना है हमें, mention करने के लिए, जिन से बात हुई थी, आपका नाम जानते हो, confirmation के लिए",
+      "entities": []
+    }
+  ]
+}

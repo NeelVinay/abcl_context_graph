@@ -1,0 +1,59 @@
+{
+  "call_id": "LCS-5JXW",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "से बात",
+        "उसने",
+        "व्यक्ति"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप जिस व्यक्ति से बात कर रहे हैं, उसने",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "कॉल",
+        "call",
+        "रखा",
+        "person",
+        "hold"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपकी कॉल को hold पर रखा है, कृत्या line पर बने रहें. The person you are speaking with has put your call on hold. Please stay on the line.",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "कस्टमर",
+        "सपोर्ट",
+        "कॉम",
+        "वेलकम",
+        "डॉट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "गुड़ाक्टर में वेलकम की जजजाल डॉट कॉम जिससे रुपिजा कमेंट से कस्टमर सपोर्ट डिपार्टमेंट हाउमेस एसिस्यू",
+      "entities": []
+    }
+  ]
+}

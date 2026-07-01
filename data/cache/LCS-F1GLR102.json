@@ -1,0 +1,61 @@
+{
+  "call_id": "LCS-F1GL",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "से बात",
+        "call",
+        "बोल",
+        "customer",
+        "बिजनेस"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "good afternoon, welcome to justjahil.com, मैं justjahil.com customer service team से बात कर रहा हूँ नीना आपके साथ, am i audible, सुन पा रहे हैं मुझे? हाँ, हाँ, actually मेरा अच्छे बार के अनुसार दो नहीं दाया है, अच्छा, कौन सी location से बात कर रहे हैं, city एक बार चाहना चाहूँगा, कलकता, कलकता city से बात कर रहे है ये जो बिजनेस आपका है ये आपका प्रिंस फाइस कहा के नाम पहे हाँ हाँ महमद नजीरे नामे बिजनेस हो जी काशाते कथा बोल ची आपना नाम पे क्यों बोलें मैम नीधी मैम कथा बोल चेन Thank you for holding. Your call is important to us. Our executive is currently gathering the necessary details to provide you with a resolution.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "call",
+        "customer",
+        "thank",
+        "feedback",
+        "service"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "We encourage you to explore our self-service portal for instant answers to your queries without needing to contact a customer service representative. We value your feedback on this platform. We appreciate your patience. Thank you for holding. Your call is important to us. Our executive is currently gathering the necessary details to provide you... Thank you for",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "थैंक",
+        "जाए",
+        "भाई",
+        "hold",
+        "चीज़ा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "being on hold. चीज़ा चेका चेका ओके, एक टाइज तो मां भाई राजबाई, एनिथिंग एल्स, आर कुछ साथ जो भाई राजबाई, थैंक यू मैं, जस जाए लोट कमेंस में माई राजबाई जाना धून लोगा, तपा दिन मालो गाटू, खावे जाए दे, थैंक यू.",
+      "entities": []
+    }
+  ]
+}

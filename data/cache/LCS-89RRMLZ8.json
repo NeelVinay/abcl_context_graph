@@ -1,0 +1,375 @@
+{
+  "call_id": "LCS-89RR",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "concern",
+        "उससे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओके क्या concern है सर उससे आपको बात कर",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "inquiry",
+        "उनको",
+        "फोन",
+        "issue",
+        "लगा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लिए अरे बात तीन दिन से नहीं फोन लगा रहा है वो फोन नहीं उठा रहा है क्या issue है सर बताइए हम उनको inform करेंगे आओ आओ उसने बात करने आई साइब सब bogus inquiry",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "customer",
+        "lead",
+        "inquiry",
+        "support",
+        "भेजते"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "भेजते हैं सम लोग तुम inquiry के नहीं आ रहे है सर वो lead के लिए आपको customer support",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "नहीं हो",
+        "काम"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "कुछ काम की नहीं हो इंक्वारी। ठीक है मैं",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "चेक",
+        "हूँ।",
+        "लेते",
+        "पैसे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "चेक करता हूँ। पैसे उतना लेते आप",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "चेक",
+        "लेते",
+        "इंक्वारी",
+        "सही",
+        "पैसे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लोग इंक्वारी एक भी चीक से नहीं है। चेक करता हूँ सर, गमा चाहूँगा। इंक्वारी का इंक्वारी मत देओ है, सही इंक्वारी देओ ना, पैसे तो लेते हैं आप।",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "चेक",
+        "बोल",
+        "इंक्वारी",
+        "सही"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सुनिता सर हमें चेक करना होगा, आप बोल रहे हैं एक भी इंक्वारी सही",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "किस",
+        "इंक्वारी",
+        "बताई",
+        "एश्यू"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं है, तो किस तरह की इंक्वारी है आपको, क्या एश्यू, बताई ना. और केट्रिन का होना चाहिए ना, केट्रिन का",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "जगा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं हो, किसी को जगा चाहिए, किसी को, क्या",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "उसको",
+        "बोलते",
+        "दिखा",
+        "बेचने",
+        "खाने"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बोलते हो, धीरे अकम का माल बेचने की और दिखा जाता है उसको पर 200% का खाना चाहिए उसको खाने का नहीं चाहिए उसको जगा चाहिए",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "inquiry",
+        "ऐसी",
+        "भाई",
+        "दीजे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तो वो ऐसी inquiry का भाई थी आपको डेटेल दीजे मुझे काई है",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "नंबर",
+        "लास्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अभी डेटेल नहीं आप भी थोड़ी देर पहले आपका नंबर देता देता मैं लास्ट उनका नंबर ठीक है, इसके",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "देखिए",
+        "lead",
+        "concern",
+        "team",
+        "regarding"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लिए देखिए आपका जो concern है ना, lead के regarding है, मैं आपको lead team की",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "call",
+        "back",
+        "arrange"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओर से call back arrange करता हूँ, इसमें",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "lead",
+        "inquiry",
+        "concern",
+        "सही",
+        "बोर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मार्जिकन को बात करता हूँ, 28 inquiry दा रहा है, एक भी inquiry सही नहीं है, सुनिए ना, मैं आपको वही बोर रहा हूँ, lead का concern है आपका inquiry का, तो इसके लिए",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "team",
+        "अलग",
+        "department"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हमारी team है, अलग department, �",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "बोल",
+        "अरेंज",
+        "टीम्स",
+        "गॉल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तर मैं ये बोल रहा हूँ वो टीम्स की ओर से गॉल बैग अरेंज करता हूँ",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "पूरा",
+        "कंसन",
+        "देगी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "वो आपको पूरा डिटेल देगी इसका क्या कंसन है क्या नहीं है तर ठीक है",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "कॉल",
+        "कीजिए",
+        "रेट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रेट कीजिए तर आपको कॉल आएगा",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "manual_review",
+      "keywords": [
+        "काम",
+        "देखे",
+        "खत्म"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तर इसके तर आपके या मिनाक्षी का मनिश्या क्या नाम है क्या कोई जी मनिश उनका काम खत्म हो गएगा कंडिशन देखे",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_org_name",
+      "base_intent": "organization_name",
+      "keywords": [
+        "customer",
+        "lead",
+        "concern",
+        "contract",
+        "support"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सर सुनी ना मेरी बात सुनी है वो contract आपका सुनी है वो package sign करवाते है उसके बाद में जो भी concern होता है okay customer support handle करती है और lead team handle करती है ठीक है इसके लिए मैं जो concern हो रहा है आपको सुनी है lead का मैं वो team को भेज रहा",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "कॉल",
+        "टीम",
+        "समझ",
+        "बेज",
+        "कीज"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं आपको समझ रहा हूँ सर इसलिए मैं आपको मैं इसलिए बता रहा हूँ सर आपको इसके लिए टीम को बेज रहा हूँ मैं टीम आपको कॉल करेगी सर आप एट कीज आपको कॉल �",
+      "entities": []
+    }
+  ]
+}

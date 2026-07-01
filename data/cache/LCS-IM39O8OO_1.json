@@ -1,0 +1,40 @@
+{
+  "call_id": "LCS-IM39",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "दिये",
+        "रखते"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कि गर्ख नहीं जाती हर में खा जो खा रखते हैं नोरों को फूल दिये जो खंस",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "call",
+        "inquiry",
+        "मिल",
+        "request",
+        "number"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "के भी हाँ फिर वापिस वो डाउन टर्मिंग में चले जाएगा आपका सर. क्या? ये रिपोर्ट आपने अभी कम्प्लेंट किया था ना सर, इरिलिवेंट डाउन ग्रेट का. कल किया था ना आपने. टार्जेट का, हाँ सर. तो वो डाउन टर्मिंग में आपका... अभी तक... वो रिपोर् अच्छा अच्छा ये कीज़ा है ठीक है तो अभी अभी चेकर तो ये कल हमने को बातचीत कर रही थी या कल आपने कम्प्रेंड किया था तो इसके अकॉर्डिंग अभी अपडेट मिल गया है तो पहल ये ही कूछ रहा हुआ हाँ अभी आपका वरिफिकेशन पे पेंडिंग द तो automatic आपको पता चल जाएगा कि request की inquiry कैसे आ रही है करके आपको? यह, मैं इस चीज़ के लिए पूछ रहा हूँ, मैं तो इस बार मेरे plan से चलना बात किता है, कल जो हमने query rate करी थी, कल जो हमने query rate करी थी, कि irrelevant leads वगरा आ रहे थी तो वो problem अभी, वो problem अभी हमारे profile पर update नहीं ह� और जो call flow जब होएगा न ऑटोमेटिक क्योंकि system के जो flow होते न वो सब स्कार स्कार number होते हैं जब वो डिगिट पे number के द्रू होते हैं तो आप एडारेज रैंडमली शो नहीं करता है जब आप समझ दो मेरी बात को जब एक बार जब number flow होएगे न जब आप जब call attend करेंगे न �",
+      "entities": []
+    }
+  ]
+}

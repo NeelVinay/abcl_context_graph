@@ -1,0 +1,303 @@
+{
+  "call_id": "LCS-CRB6",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "customer",
+        "service",
+        "good",
+        "afternoon",
+        "jaisal"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Good afternoon, I am Pooja from Jaisal Customer Service.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_respond_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "business",
+        "help",
+        "how",
+        "wrong",
+        "lease"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "How can I help you? Yes. Madam Ji, this is my sister's business. Yes, tell me. I am not getting a lease. If I am getting a lease, then it is a wrong",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "lease",
+        "now",
+        "getting"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "lease. Okay, I mean you are getting a lease. But now I have 15,000,000,000,000,000,000,000,000,000.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "काम",
+        "ऐसे",
+        "आगे",
+        "इश्यू",
+        "आपसे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "पैसा जब ही नहीं लीज देने का रहेगा पाक पाक जिनने देने का रहेगा आपसे नहीं भी नहीं देने का रहेगा तो सामने से बताने का ना कंपनियों आगे ने हम कराएगा नहीं नहीं इश्यू हमारा काम ऐसे ही चलता है दिना ऐसे चैन की भी काम चल रहा",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "बड़ा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "था बड़ा ब�",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "रॉंग"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रॉंग भी आ रही है",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_explain_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "दोनों"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "और आ रही है नहीं और कम आ रही है दोनों",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "प्रॉब्लम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "भी प्रॉब्लम हो जा",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_address",
+      "base_intent": "enter_address",
+      "keywords": [
+        "नंबर",
+        "रजिस्टर",
+        "मोबाल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रही है रजिस्टर मोबाल नंबर बता सकते हो",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "नंबर",
+        "रजिस्टर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आ रजिस्टर नंबर ना है नहीं",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_address",
+      "base_intent": "enter_address",
+      "keywords": [
+        "नंबर",
+        "भाई",
+        "ऑफिस",
+        "रजिस्टर",
+        "मोबाल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "क्या उधर यही नंबर से है ना 98 आमें नहीं से आपको हमें रजिस्टर मोबाल नंबर बता सकते है ना 98 98 आप अभी ऑफिस में किता भाई देता है? आज ऑफिस में किता भाई देता है? आज ऑफिस में किता भाई देता है? आज ऑफिस में किता भाई देता है? आज ऑफिस में किता भाई देता है?",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "उसको",
+        "लोगों",
+        "बोलता",
+        "तुम्हारे",
+        "रुपया"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कुछ भी नहीं है जो किसी को तुम्हारे कॉर्टरेबिजार जो मेरे पास आता है जो उसको बोलता है तो वो बोलता है लोगों को दो दो लाख रुपया भरते हैं तीन लाख रुपया भरते हैं चाली चाली जस्या रुपया भरते",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "हैं तो चाया",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "यार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप यार घर",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "पैसा",
+        "बेच"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बेच के पैसा त�",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_final_offer",
+      "base_intent": "final_offer",
+      "keywords": [
+        "पैकेज",
+        "हमको",
+        "तुमने"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "40,000 हमको तुमने पैकेज क्यों दिया 15,000 का",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "पैसे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "पैसे ना कम भी भर रहे हो ना तो कोई पास नहीं पर पैसे आप भर तो रहे हो ना",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "इंपोर्टेंट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बस बस हाँ और यह इंपोर्टेंट में",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_final_offer",
+      "base_intent": "final_offer",
+      "keywords": [
+        "देख",
+        "प्रॉब्लम",
+        "मैडम",
+        "पैसा",
+        "बिजनस"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपको बिजनस आना देगा मैडम दीवी वही बात है कि पैसा आमार जा रहा है उसे मतलब नहीं हमको आमा तो मैं आपका तो यह डिफरेंट कर लेती हूँ कि क्या प्रॉब्लम है, क्यों आपको यह इश्यो आ रही है, वन सेकेल दीजिए, जी, जी, सरी, सरी है, मैं यहाँ पर देख रहा हूँ,",
+      "entities": []
+    }
+  ]
+}

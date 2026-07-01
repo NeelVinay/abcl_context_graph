@@ -1,0 +1,94 @@
+{
+  "call_id": "LCS-7HAV",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_disclose_recording",
+      "base_intent": "recording_disclosure",
+      "keywords": [
+        "आगे",
+        "पता",
+        "इंक्वारी",
+        "पहली",
+        "जी।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आज मुझे एक हफ्ते के बाद आज एक पहली इंक्वारी आई है। जी। तो अभी का मुझे आगे का पता नहीं क्योंकि कल सकते मेरी",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "उन्होंने",
+        "इतना",
+        "उसको",
+        "समझ",
+        "आगे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "पूरी की कम्प्लेन के लिए अभी तर मेरे पास एक हफ्ता हो गया कोई इंक्वारी नहीं आई है। अच्छे तो आज अभी मेरे को फोइन समझ लो आप एक गंते पहले की इंकॉरी आई है तो अब मेरी बात हुई है बट उन्होंने आगे से बात नहीं कर पाए तो मैं ये चाहती हूँ कि अभी मेरी बात नहीं कर पाए तो आपको दिन में एक चीज में तक 10-12 हमें मिलनी चाहिए ताकि हम उसको 10 में फैक्रिस बनना दो तो कनवर्च करें किसी तरीके हाँ जी बहुत बहुत तो आज एक आई है, इतना मैं कहती हूँ कि आज आई है।",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_business_details",
+      "base_intent": "business_details",
+      "keywords": [
+        "business",
+        "लीड",
+        "शेयर",
+        "lead",
+        "contract"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है, मैं आपको बता देता हूँ, बेसिकली पूजा जी, लीड बेसिकली यूजर के सर्च फ्लो पे डेपेंड करता है, कि मार्केट में जो सर्चेस हैं, वो हम आपको शेयर करेंगे। अभी आपका जो कैटेगरी और कोई भी user searches करेंगे, उसके base पर आपको lead की services मिलते रहेगी, but lead को enhance करने के लिए, प्रोफाइल के visibility को improve करने की जरूरत है मैं, आप अपने प्रोफाइल में जादे से जादा photos post करेंगे, अपने business relevancy के related, दूसरा review और rating का, मैं आपको review और rating का एक link बेज रहा हूँ, जिससे आ वो आपको भी यहाँ पर rate करेंगे, तो प्रोफाइल की visibility टॉप पर display होती है, क्योंकि आपको plan rotation based contract है, ना कि fixed plan, ठीक है, fixed position plan नहीं है, तो आप अगर यह activity करते रहते हैं, जिस तो photo upload करना, और जादे से ज़्यादा review और rating को capture",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "देख",
+        "google"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "करना, मेरा अगर खुछ का, मैं google का अगर मैं देख",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_org_name",
+      "base_intent": "organization_name",
+      "keywords": [
+        "कॉल",
+        "शेयर",
+        "लिंक",
+        "रेटिंग",
+        "मिल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "गूगल से मैम वो गूगल की रेटिंग आपकी ये जस लाइल की दोनों मर्च नहीं किया जा सकता है ठीक है अच्छा हाँ जी जी फोटोस तो अलड़ी अपलोड़ेट है जहां तक आप बता रहे है ठीक है बट अभी रिवी और रेटिंग का में रोल है ठीक है तो आप अपने ठीक है तो मैंने यहाँ से आपको लिंक शेयर कर रहा है इसके बेस्ट पर और ताकि आपकी प्रोफाइल की विजिबिलिटी जाते से जाता इनहांस किया जाए और प्रोफाइल डिस्क्लेय हो और आपको सर्विसस मिल पाए जाते से जाता ठीक है बाद यह अपन उसके अधारत होएगा जिसमें 9 और 10 हाईयस्ट रीटिंग है तो आपका फीटबेक मेरे लिए इंपोर्टेंट है प्लीज शेयर कीज़ेगा इस कॉल के बाद ठीक है वाटसिप है हाँ जी वाटसिप है रेट मा एक्सपीरियंस का उप्षिन उसमें जाकर आपको रेट करना है",
+      "entities": []
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "call_id": "LCS-AZWX",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "से बात",
+        "call",
+        "lead",
+        "उनको",
+        "feedback"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लुमियार थाइस पा यहां से बात हो रही हलो लुमियार थाइस पा यहां से बात हो रही हलो लुमियार थाइस पा यहां से बात हो रही हलो जसजल.com से पराग बात कर रहा हूँ आपने एक request raise किया था आपके marketing ने lead report के लिए sir ठीक है sir owner आये नहीं owner आने के बाद मैं उनको भूल देगा अच्छा वो available नहीं है अभी ठीक है मैं feedback कर दू हाँ ठीक है चले वो बस ज़्यादा work नहीं है बस हमें कुछ verification करने होते है उन्हे तो इसी के लिए बस मुझे आप confirm कर लेजीगा कुछ details. Client का register mail id जान सकता हूँ मैं? Sir, mail नहीं मुझे मालूम नहीं है. ठीक है, मैं call back करता हूँ. Okay?",
+      "entities": []
+    }
+  ]
+}

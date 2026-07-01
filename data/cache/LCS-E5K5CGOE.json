@@ -1,0 +1,490 @@
+{
+  "call_id": "LCS-E5K5",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "सब्सक्राइब",
+        "शेयर",
+        "टाइम",
+        "lead",
+        "उन्होंने"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सब्सक्राइब करें Thank you sir, thank you for being on host. Checked out that you don't have a contact list, sir. Lead flow is very slow. Only 3 leads have come. So, there are no leads. I will definitely take a complaint for less leads. Based on user demand, there will be a lead, sir. Now, because there is no search, it may be like this. 3 and 3 leads have come to you. That is the 3rd and 2nd. और दूसरे लिए एक बार नियुक्त क्वेश्चन करने के लिए उपयोग करें। maybe searches ला रहना है तासर इपने इसके लिए नहीं कोंट्रैक्ट इन्युब्ल पढ़ता हुआ था इसके लिए return review आट पढ़ता है और फोटो वीडियो आट पढ़ता है इसलिए इसलिए इसलि� नेक्स्ट टाइम मत्ते ये लिपे रुकों अधिमारी उंगल मारी पैकेज कॉन्टैक्टर उन्होंने रुकांगे लेंगे ला अवंगे एलार को शेयर आते हैं अधिमारी शेयर आगेरदे नाले इपनी रुकों अधिमारी उंगल मारी पैकेज कॉन्टैक्टर उन्होंने रु इसकाफर वारा चार्ट आगा, response time 1 hour 10 minutes उड़ित करेंगे, मुदुझे वाला वारा calls को सीखरूं respond करना चाहिए पालेंगे",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "लेंगे",
+        "message",
+        "company",
+        "नेंगे",
+        "received"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "sir नेंगे company लेंगे कुरुगिरे message drone विच्छा ना चांद पाना मुझे हुआ है मैंनेके उल्ले received हुआ हुआ अगर ये रुपत दंची के बारे में आप रुपत",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "दंची के बारे में आप",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "रुपत दंची के बारे में आप रुपत दंची के बारे में",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "देखते",
+        "complaint"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं उनके पहले अंदु कंटीपा complaint है देखते हुए sirs, आप",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "देखते",
+        "complaint",
+        "अगले",
+        "कम्प्लेंट",
+        "वाइट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "वाइट करेंगे अगर आप मैंने देखते हुए complaint हैं, तो अगर आप मैंने देखते हुए complaint हैं, तो अगर आप मैंने देखते हुए complaint हैं, तो अगर आप मैंने देखते हुए complaint हैं, तो अगर आप मैंने देखते हु अगले माझे आज पानेंगे तीटे माँस माँसों अकाँगे ने उनके टेगे कम्प्लेंट माँसों",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "पेशने रहेगे ताहे यहाँ",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "सोले कुछ नहीं है सर नहीं",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "है सर नहीं है",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "लोगी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सर नहीं है स इस लोगी मैंने एक 100 गुदम प्रापरा गड़िगेला, पंधा",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "नीचे",
+        "रुके",
+        "दोस्त"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "दोस्त प्रिशाल है। 25 नीचे वाल्ड रुके हैं। प्रापरा मैक्सिमुल",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "कॉल",
+        "लेंगे",
+        "कंपनी",
+        "सेंटर",
+        "रुके"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "वाल्ड रुके हैं। कॉल सेंटर लेंगे मैक्सिमुल लीट्स वाल्ड रुके हैं। आया रोटी मुले मा? आया जा मैडम। आइए कंपनी ना",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "रिंग एक्टिविट पर नहीं",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "नहीं हो"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "एक्टिविट नहीं होती नहीं",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "होती नहीं",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "सब्सक्राइब",
+        "लीट्स",
+        "नालगी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "होती आरोग नालगी 25 लीट्स दा वंद रही है। सब्सक्राइब",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "उनको",
+        "यूजर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "करते हैं। तो उनको उनको तेरी हुआ है सर यूजर डिमेंड पूर्थ",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "होगा? नहीं मिड़ेट, मैं आर्डरी आर्डरी",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "यूजर",
+        "उगल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आर्डरी आर्डरी उगल के तरह यह यूजर डिमेंड पूर्वत",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "वरू"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "थां वरू उन्त।",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "यूजर",
+        "वरू"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अगर जा मड़ाम यूजर डिमेंड पूर्वत थां वरू उन्त।",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "लीड",
+        "यूजर",
+        "वरू"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अगर जा मड़ाम यूजर डिमेंड पूर्वत थां वरू उन्त। लीड",
+      "entities": []
+    },
+    {
+      "index": 22,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "यूजर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "वांड यूजर डिमेंड",
+      "entities": []
+    },
+    {
+      "index": 23,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_respond_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "यूजर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "पूर्थ वांड यूजर डिमेंड वांड",
+      "entities": []
+    },
+    {
+      "index": 24,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "मार्केटिंग",
+        "सोली"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आज मेरे मेरे मार्केटिंग पास में सोली रहे",
+      "entities": []
+    },
+    {
+      "index": 25,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "सब्सक्राइब",
+        "करें।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जाते हैं। सब्सक्राइब करने के लिए सब्सक्राइब करें।",
+      "entities": []
+    },
+    {
+      "index": 26,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_business_details",
+      "base_intent": "business_details",
+      "keywords": [
+        "कस्टमर",
+        "उनको",
+        "आगे",
+        "इसको",
+        "कंप्लेंट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सर इपकोड़ों लीड़ वरागे नाम सोले वेले सर लीड़ वरागे यूज़र डिमेंड पूर्ट्स वरागे सर ओर कस्टमर सर्च पान्ट रहांगे तीज़ रहांगे ना इसको उनको फॉरवेट आगे रहा हमारी लिखो नेंगे इपको कंप्लेंट पातेंगे पेश रहें�",
+      "entities": []
+    },
+    {
+      "index": 27,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "नहीं हो",
+        "लीड"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "अगर आप लीड प्रवाइट कर नहीं कर सकते हैं, तो आपके लिए वेलियाथ नहीं हो सकते हैं। अगर आप लीड प्रवाइट कर सकते हैं, तो आपके लिए वेलियाथ नहीं हो सकते हैं। अगर आप लीड प्रवाइट कर सकते हैं, तो आपके लिए वेलियाथ नहीं हो सकते",
+      "entities": []
+    },
+    {
+      "index": 28,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "उम्मी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "उम्मी की इब्लोग एक्स्ट्रेंट पानियेटुम सदी इतकमाद",
+      "entities": []
+    },
+    {
+      "index": 29,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "उम्मी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "उम्मी की इन्हें",
+      "entities": []
+    },
+    {
+      "index": 30,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "नांग"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "पाइड़ेवान सोलेंगे नांग",
+      "entities": []
+    },
+    {
+      "index": 31,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "कंप्लेंट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "पाइड़ेटारम इतकमा नाले � कंप्लेंट बनने। वेने की प्रयाय है ना",
+      "entities": []
+    },
+    {
+      "index": 32,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "वेट",
+        "अगले",
+        "यूजर",
+        "जाना।",
+        "लीट्स"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "भी वन्या वन्य। वेने की लीट्स जाना। अगले दाँ। लीट्स वारना। वाराम येंगे सर पूछूँ। यूजर डिमेंड पूछूँ। वेट परिणिक वारवर्ड हैं तैना इदुकू। इप्पू वर नाल नाल येंदे",
+      "entities": []
+    }
+  ]
+}

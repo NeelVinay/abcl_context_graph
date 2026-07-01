@@ -1,0 +1,206 @@
+{
+  "call_id": "LCS-FE74",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "हेलो",
+        "इश्यों"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हेलो हेलो गुड़ाउटर नहीं था? हेलो गुड़ाउटर नहीं था? दानप्ले इधन इश्यों नहीं था? इधन एक अम्रेड रेज जेता रहा है?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "सर्विस",
+        "एरिया",
+        "लाइट",
+        "अधि",
+        "पिन"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "दूस्तों अन्टे अधि? तो जा? अधि ले लोकेशन चेंजे लाइट है? एन लोकेशन? मा एरिया नंची, मा एरिया, अधि सर्विस एरिया उन्हें नहीं रहा? पिन कोट अन्हें रहा? पिन को�",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "अन्ते"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अन्ते एम जाएँगे, अन्ते",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "इपड अद्रेस्टेंट? माके",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_pan",
+      "base_intent": "enter_pan",
+      "keywords": [
+        "टेन"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओली टेन किलोमेटर लोपल हो जाएँगे। ओके, टेन किलोमेटर",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "हाँ।",
+        "मेको"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लोपल हो जाएँगे मेको? हाँ।",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "अन्ते",
+        "मेंचे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओके, अन्ते दूरा मेंचे एम",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "अन्ते",
+        "अगे",
+        "मेंचे",
+        "मेको"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अन्ते हो जाएँगे मेको? अगे, अगे, चाला दूरा मेंचे आँच्छे",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "लाइक",
+        "अन्ते",
+        "ज़रूर",
+        "अन्ने"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओके, अन्ते लाइक एक अन्ते एक अन्ने ज़रूर से सर एक अन्ने एकजंपल जपड़ जपड़ अन्ते लाइक एक अन्ने ज़रूर",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "अन्ने"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "से सर एक अन्ने",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "ज़रूर",
+        "अन्ने"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ज़रूर से सर एक अन्ने ज़रूर से सर",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "देखने",
+        "उत्तर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आ जाता है देखने में उत्तर में उपलब्ध हुआ",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "चेक",
+        "इतना",
+        "बड़ा",
+        "इनके",
+        "ओके।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हुआ हुआ सर नहीं है। ओके सर। मैंने आज आपडेज यह सुना हूँ न। इतना इस बड़ा कमेंट है पॉर्वर्ड होता है। चेक करें सर ओके न। ओके ओके। इनके मेरे पूर्वर्ड रूप में वाइडेशन टॉक",
+      "entities": []
+    }
+  ]
+}

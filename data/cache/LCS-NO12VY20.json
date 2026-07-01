@@ -1,0 +1,204 @@
+{
+  "call_id": "LCS-NO12",
+  "language": "hi-en",
+  "outcome": "raised_request",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_disclose_recording",
+      "base_intent": "recording_disclosure",
+      "keywords": [
+        "कॉल",
+        "इश्यू",
+        "रेट",
+        "अरेंज",
+        "कंट्राक्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपके लिए कॉल अरेंज आपको कुछ इश्यू है जर्जायल के कंट्राक्ट में? आपके लिए रेट",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "रेट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं आ रहे हैं आपके लिए रेट नहीं आ रहे हैं",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "लाइन"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं लाइन पर",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "चेक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रही हूँ, मैं चेक कर रही हूँ. हाँ,",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "check",
+        "contract",
+        "issue",
+        "lease",
+        "less"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लुट दिया, बहुत बहुत दो में जय हो having issue of less lease, contract check",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "कर रही है",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_explain_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "lead",
+        "category",
+        "feedback",
+        "concern",
+        "check"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तो contract आपका life है जी जी और आपके सोर्ज देखता रही हूँ तो सोर्ज भी आपके सारे ओन है लेकिन concern category का feedback अगर check कर रही हूँ तो आपके concern category का feedback थोड़ा low होने के कारण lead में issue हो रहा है यानि कि आपका हाविल position पीपी contact में flow कम है अभी थोड़ा festival event भी चल गए तो इस पर",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "issue",
+        "changes"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जिसे issue हो रहा है मैं changes करती अगर मैं",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "चेंजिस कर रही",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "हूँ आपके लिए",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "प्रॉपर",
+        "मिलेगा",
+        "रिस्पॉंस",
+        "अलावा",
+        "अभी।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपको प्रॉपर रिस्पॉंस मिलेगा अभी। इसके अलावा कोई आरिश्य है। इसके",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "अलावा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अलावा कोई आरिश्य है। ओके,",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "call",
+        "कस्टमर",
+        "टीम",
+        "सपोर्ट",
+        "thank"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं आपके इंफोर्मेशन देना चाहूँ कि जर्जल के अप्लीकेशन से कस्टमर सपोर्ट ऑप्शन लाइव है, कोई भी कंसर्न हो, कुछ भी इश्यू रहेगा, वहाँ से रेज करिए, और मैं और मेरी कंसर्न टीम विधिन 24 आज के अंगर आपको इस चीज़ का सजीश और एक request ये भी है कि call खतम होने के बाद आपके पास rating link आएगी मेरे लिए मैंने आपसे किस तरह बात किया है तो please मेरे call को rating दीजे 10 highest होता है request करूँगी 10 दीजे का आपकी rating पे set करते है और वो जबकी rating पे service return है तो please मेरे call को rating दीजे का 10 highest होता है 10 day में ना भुलेगा thank you so much for your valuable time",
+      "entities": []
+    }
+  ]
+}

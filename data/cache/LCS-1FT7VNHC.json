@@ -1,0 +1,75 @@
+{
+  "call_id": "LCS-1FT7",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "कॉल",
+        "call",
+        "person",
+        "wait",
+        "व्यक्ति"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "The person you have called is speaking to someone else. You can wait or call again later. आपने जिस व्यक्ति को कॉल पिया है, वो अन्य कॉल कर जैस थे. The person",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "speaking"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "you are speaking with has",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "कॉल",
+        "call",
+        "उसने",
+        "रखा",
+        "person"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "put your call on hold. Please stay on the line. आप जिस व्यक्ति से बात कर रहे हैं, उसने आपकी कॉल को hold पर रखा है. कृपया line पर बने रहे. The person you are speaking with has put your call on hold. Please stay on... Hello? RL Tour Central,",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "कॉल",
+        "उनको",
+        "थैंक",
+        "right",
+        "वाल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "right? एर्टिक्स उनको लाक्ट होगो ओके आ और कॉल मनागा पादे वाल मनागा ओके शाँ थैंक यू",
+      "entities": []
+    }
+  ]
+}

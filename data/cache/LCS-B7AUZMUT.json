@@ -1,0 +1,155 @@
+{
+  "call_id": "LCS-B7AU",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_disclose_recording",
+      "base_intent": "recording_disclosure",
+      "keywords": [
+        "रिक्वेस्ट",
+        "issue",
+        "business",
+        "रिसीव",
+        "जिसके"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपकी तरफ से एक रिक्वेस्ट हमें रिसीव होई थी संजिन जी जिसके related मैंने connect किया है कोई issue face कर रहे है business",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "समय",
+        "kyc",
+        "related"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "समय में this हाँ जी जर क्या होते है मेरा ID जो है वो KYC के लिए packing बता रहा था ना sir KYC के related हाँ जी",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_transfer_to_rm",
+      "base_intent": "transfer_to_rm",
+      "keywords": [
+        "issue",
+        "kyc"
+      ],
+      "sentiment": null,
+      "tool": "transfer_to_rm",
+      "text": "तो हाँ जी KYC में क्या issue आ रहा है",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "बोल",
+        "टाइम",
+        "उन्होंने",
+        "बोला",
+        "बताई"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "माम बताई है मेरा पेन नहीं ले रहा था ना पेन कार्ड नहीं ले रहा था ना अच उन्होंने बोला कि कल तक का टाइम दिया मुझे जी हंजी हंजी तो कल तक हो जाएगा बोल रहे",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "चेक",
+        "contract",
+        "details",
+        "मैम",
+        "जिसके"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "थे ठीक है मैं यहाँ से एक बार contract की details चेक कर रहा हूँ ठीक है अभी मैं यहाँ से चेक कर लेता हूँ कि आपका package अभी ना activated नहीं है ma'am ठीक है हंजी जी package इसलिए activated नहीं है क्य हाँ जी मैं यहाँ से चेक कर लेता हूँ क्या के नेसिसरी डॉक्मेंट अभी रिक्वाइड है जिसके भी आप पर हम प्रोसेस कर पाया है ठीक है अभी कंप्लीट नीम आपका जो अधार कार्ट पर है वो मुझे बता दीजेगा मैम कंजिन",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_respond_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "कंप्लीट",
+        "नीम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "चिला हाँ जी यह कंप्लीट नीम ठ",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "उद्यम",
+        "चेक",
+        "call",
+        "नंबर",
+        "देखिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तो आपका मैं यहाँ पर चेक कर पा रहा हूँ मैम जो name of the unit है यह white lotus homestay है रही हाँ जी मैं business name update कर देता हूँ white lotus homestay इसमें उद्यम नंबर आपने feed नहीं कर रहा है उद्यम नंबर आपका basically contract हिमाचल प्रदेश में run हो रहा है रही हाँ जी, तो मैं इसके लिए उद्यम नंबर को प्रोसेस कर देता हूँ, यहाँ से मैं प्रोसेस कर रहा हूँ, KYC प्रोसेस, ठीक है, जिसके लिए हम आपके contract को activate कर पाएं, और जो भी necessary document हमें required हैं, वो भी मैं आपको suggest कर दूँगा, वो आप भी share कीजिएगा, जिसक मैम जो उद्यम नंबर आपने हमें दे रखा है, यह वैलिड नहीं है, उद्यम नंबर वैलिड नहीं है, यहाँ पे जो शो हो रहा है हमारे पास, UDYM HP 07000001109, फिर से मैं चेक कर रहा हूँ, री चेक कर रहा हूँ मैम, आपका उद्धिम वैलिडेट हो चुका है माम यहाँ से ठीक है अभी मैं आपके office premises की images चेक कर लेता हूँ होडिंग दे रखा है माम आपने sign board white hotel होडिंग दे रखा है sign board white lotus home state ठीक है मैं email कर रहा हूँ back-end के पास contract की activation के लिए ठीक है माम आपको कोई भी changes नहीं करना है, ठीक है, wait करें, call disconnect नहीं करना है, मैं आपकी call एक minute के लिए और पर रख सकता हूँ, मैंने यहाँ से email send कर दिया है team के पास shortly आपका contract activate हो जाएगा फिर आपको lead की services मिलने लगेगी जिस दाइल से ठीक है ma'am अभी छोटी सी request रहीगी ma'am इस call के बाद न अभी whatsapp पर देखे मेरी तरफ से एक short feedback link आपके पास भेजा गया है जो completely आपके और मेरे बीच में बात हुई WhatsApp पर देखिए एक ticket ID का message आएगा आपके पास उसके नीचे देखिए rate my experience का option आ रहा होगा आपके पास नीचे शो रहा है ma'am टिकेट WhatsApp पर देखिए ticket ID का message आएगा जिसमें लिखा होगा hi user your ticket ID LCS is resolved how do we do please share your experience आ रहा होगा ma'am तो WhatsApp के हाँ WhatsApp है आपके पास rate my experience पर click करना है दिख रहा है rate my experience का option मैं? WhatsApp",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "पे? नहीं सिर्फ",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
+      "keywords": [
+        "चेक",
+        "शेयर",
+        "ऑप्शन",
+        "raise",
+        "प्लीज"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "WhatsApp पे क्या शो हो रहा है आपको ये बता दीजेगा मुझे WhatsApp पे Giselle से message आया है ticket ID का मैम? नहीं सिर्फ कोई message नहीं आया है? नहीं नहीं सिर्फ अच्छा आपने ticket raise कराओगे और ticket close किया गया उसका message आया होगा ना मैम? अच्छा वो चेक कर लीजियेगा प्लीज हाउ डू वी डू प्लीज शेयर योर एक्सपीरियंस के ऑप्शन आ रहा होगा ठीक है जिससे आता प्लीज शेयर कीजिएगा टेन हाई जिससे ठीक है इसके साथ साथ जर्जदाल आपको सेल्फ से एक ऑप्शन भी देता है जिससे बिना किसी क वेल्गमेन",
+      "entities": []
+    }
+  ]
+}

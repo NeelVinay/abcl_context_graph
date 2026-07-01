@@ -1,0 +1,211 @@
+{
+  "call_id": "LCS-115Q",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "हेलो",
+        "बोलो",
+        "हाँ।",
+        "हेलो।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हेलो हेलो गुड़ेवी साह। पूर्णी कौन? साह। साह। मेरे नाम प्रसंद है। हाँ। साह। क्या हो? आ बोलो साह। कोई चीज़ी है की साह। कोई चीज़ी है की साह। कोई चीज़ी है की साह। बोलो हेलो। हुई साह। कोई चीज़ी है की साह। कंट्रक में",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "ऊपर",
+        "वाशी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कोई चीज� वाशी मिशीन के नहीं आ रहे हैं, कौन ज्यादा आपका सेगन है? आपको उन्हें वाशी मिशीन के ऊपर आना आएगा",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "सा? नहीं, नहीं, फ्रीज के",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "ऊपर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ऊपर आना है, फ्रीज. फ्रीज के ऊपर आना है?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_business_details",
+      "base_intent": "business_details",
+      "keywords": [
+        "अंदर",
+        "ऊपर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "फ्रीज के ऊपर आना है अंदर, हाँ. हाँ? तो यह रीफ फ्रिज",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "अंदर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आ तुरीज से दलाना जी अपनी में अंदर स्ट्राइड",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "में वाशि मिशिन एक एसी और एक रिज्डेटर एपीन का रिज्डेटर रिपेरिंग रिपेरिंग",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "दियो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रिपेरिंग अब कन करना तो आज कर रहा है आप कन कर दियो थे ना",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ कल बाली तो है नसरा बल कल बात कर दिया हाँ कल बात कर",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "दिया नसरा मैं अगर",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "उन्होंने"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "उन्होंने से कर रहा था ना मैं आप तक चल",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "उन्होंने",
+        "दियो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "दियो थी तुनो कर आओ अगर उन्होंने ठीक है ठीक",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "है ठीक है",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है �",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "देख"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप देख सकते हैं?",
+      "entities": []
+    }
+  ]
+}

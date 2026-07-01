@@ -99,6 +99,74 @@ def _main_path_sequence(g):
     return seq
 
 
+_OUTCOME_COLOR = {           # leaf colours by call outcome
+    "transferred": "#cfe8ff", "completed": "#d9f2d9", "incomplete": "#ffd9d9",
+    "raised_request": "#fff2cc",   # amber: agent logged a request / promised follow-up
+}
+
+
+def visualize_flow(tree, out_path_no_ext: str) -> str | None:
+    """Render the call-flow TREE top-to-bottom (a clean flowchart, not the DFG hairball).
+    Trunk at top -> branches downward into each flow -> outcome leaves at the bottom.
+    GREEN = the single most-common flow. Edge thickness ∝ number of calls.
+    """
+    try:
+        from graphviz import Digraph
+    except Exception as e:  # noqa: BLE001
+        print(f"[viz] graphviz python package not available ({e}) - skipping flow tree.")
+        return None
+    from src.flowtree import main_flow_path
+
+    main = main_flow_path(tree)
+    total = tree.nodes[next(n for n, d in tree.nodes(data=True) if d.get("kind") == "root")]["count"]
+    max_c = max((d["count"] for *_, d in tree.edges(data=True)), default=1)
+
+    dot = Digraph("flow_tree", format="png")
+    # polyline (not ortho) + forcelabels keeps every edge count present and near its arrow
+    dot.attr(rankdir="TB", splines="polyline", nodesep="0.4", ranksep="0.9",
+             ordering="out", forcelabels="true")
+    dot.attr("node", fontname="Helvetica", fontsize="10", shape="box",
+             style="rounded,filled", margin="0.12,0.07")
+    dot.attr("edge", fontname="Helvetica", fontsize="9")
+
+    for n, d in tree.nodes(data=True):
+        kind = d.get("kind")
+        cnt = d.get("count", 0)
+        pct = f"  ({100*cnt/total:.0f}%)" if total and kind != "root" else ""
+        label = f"{d.get('label', n)}\\n{cnt} call{'s' if cnt != 1 else ''}{pct}"
+        if kind == "root":
+            fill, color, pw = "#333333", "#333333", "2"
+            dot.node(_safe_id(n), label, fillcolor=fill, fontcolor="white", color=color, penwidth=pw)
+            continue
+        if kind == "outcome":
+            fill, shape, border = _OUTCOME_COLOR.get(d.get("stage"), "#eeeeee"), "box", "#888888"
+        elif kind == "stub":
+            fill, shape, border = "#f0f0f0", "box", "#888888"
+        elif kind == "disposition":     # the "why" branch — stand out
+            fill, shape, border = "#ffe7c2", "box", "#d08b1f"
+        else:
+            fill, shape, border = "#eef3fb", "box", "#888888"
+        style = "rounded,filled,dashed" if kind == "stub" else "rounded,filled"
+        pw = "2" if kind == "disposition" else "1"
+        dot.node(_safe_id(n), label, fillcolor=fill, shape=shape, style=style,
+                 color=border, penwidth=pw)
+
+    for a, b, d in tree.edges(data=True):
+        c = d["count"]
+        pw = 1 + 3.5 * math.log1p(c) / math.log1p(max_c)
+        on_main = (a, b) in main
+        # regular edge label renders reliably; polyline (not ortho) keeps it near the line
+        dot.edge(_safe_id(a), _safe_id(b), label=f" {c} ", fontcolor="#333333",
+                 penwidth=f"{pw + (1.5 if on_main else 0):.2f}",
+                 color="darkgreen" if on_main else "#666666")
+    try:
+        dot.render(out_path_no_ext, cleanup=True)
+        return f"{out_path_no_ext}.png"
+    except Exception as e:  # noqa: BLE001
+        print(f"[viz] could not render flow tree ({e}). Install graphviz: brew install graphviz")
+        return None
+
+
 def render_graphviz(g, out_path_no_ext: str, min_count: int = 2, top_k: int = 2,
                     shape: str = "ellipse", show_phrasings: bool = False) -> str | None:
     """Natural left-to-right layout: graphviz ranks by flow and minimises crossings,

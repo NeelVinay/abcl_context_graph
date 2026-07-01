@@ -1,0 +1,279 @@
+{
+  "call_id": "LCS-9MBJ",
+  "language": "hi-en",
+  "outcome": "raised_request",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_explain_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "कॉल",
+        "शेयर",
+        "सर्वेस",
+        "कस्मो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लाफन सन पर की चांच ली जज़रल वट कम कस्मो सर्वेस मेंडी कॉल शेयर पर नानो",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "बोली"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ बोली मुड़ा",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_disclose_recording",
+      "base_intent": "recording_disclosure",
+      "keywords": [
+        "कॉल",
+        "thank",
+        "कॉंट्रैक्ट",
+        "होल्ड",
+        "कंसन"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ये कॉंट्रैक्ट प्रिलेटेड कंसन है बोलके कंप्रेंट राइज करें सर बोली ये क्या है कंसन नीर 24 बाइ 7 प्रिलेटेड प्रिलेटेड सर बोली मुझे एक बात नाइल पर रहिए, कॉल होल्ड पर पेस करियो सर्व। अक्के। Thank you sir, नाइन पर रहने के लिए, ये 29th May, 2026 तक है, sir. 29th May? हाँ, sir.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "बढ़ते"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप बढ़ते हुए, लीच की",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "चेक",
+        "लास्ट",
+        "डिटेल्स",
+        "टोटल",
+        "रेस्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "उन्हें रेस्ट बॉनिंग तो एक ही नहीं है, तो एक ही इकल नहीं है, आपको. डिटेल्स चेक करें, sir. टोटल आपको, मार्च फस्ट सेलेक्ट तिल डेट तक. लास्ट एंक्�",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "आज बहुत बहुत",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "चेक",
+        "नंबर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत बहुत नंबर पुलिस से कौन सा नंबर से चेक करेगा?",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "नंबर",
+        "मिनट",
+        "देखिये",
+        "लाइट",
+        "बोरो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नंबर देखिये लाइट मिनट तो बोरो मैं आपको नहीं मतलब हूँ",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "सर्विस",
+        "मैडम",
+        "रिसीव",
+        "दोनों",
+        "services"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ एक बोरो मैडम आज तो आपको दो रिसीव हुए सिर्फ एक तो CCTV रिपेर्शन सर्विस का है सिर्फ और एक है CCTV Reparation Services दोनों भी CCTV Reparation Services के लिए रिसेव हुए सर",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "services"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपको हाँ मैं CCTV Reparation Services के लिए जा रहा हूँ जाता",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "कॉल",
+        "लीड",
+        "नंबर",
+        "बोल",
+        "टाइम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हूँ जाता हूँ जो भी लीड आएगा अब हर एक लीड जिस डायल आप से ही रेस्पॉंड करिये सर बेटर सर्विसेस रिसीव होता ये टोटल 77 आये थे 63 रेस्पॉंड करें सर आवरेज रेस्पॉंड टाइम 15 मिनट्स है सर लीड आये तो इनिजियेटली JDR से कॉल करिये रेटिंग्स थोड़ हेलो नंबर बोल रहे",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "नंबर",
+        "शेयर",
+        "बोल",
+        "मैडम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "है शेयर अब? हाँ नंबर बोल रहा हुआ मैडम मैडम",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "नंबर",
+        "मैडम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैडम बड़ाम नंबर",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "सॉरी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लिखिए 890 890 8790 है बड़ाम सॉरी 8790 8790 63",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
+      "keywords": [
+        "कौन सा",
+        "चेक",
+        "नंबर",
+        "टाइम",
+        "inquiry"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "63 तीके तोड़े टाइम दीजिये, मैं back-end से check करके आपका update करवा सकते हैं, तीके? वो चेक करना पड़ता ना सर कौन सा नंबर पे आये थे वो कौन सा category पे आये थे कौन सा area पे inquiry करे पूरे डिटल चेक कर क्या",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "पूरे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपको बता जाता है जी पूरे",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_org_name",
+      "base_intent": "organization_name",
+      "keywords": [
+        "कॉल",
+        "चेक",
+        "thank",
+        "feedback",
+        "concern"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "चेक करने के लिए time देना पड़ता है सर अब time दिये तो मैं चेक करके आपको update करवा सकते है सर ये कॉल होने के बाद आपको feedback link share होगा, मैं कैसा बात करें, आप rating दीशिये, 6 to 10 positive रता, positive rating 10 दीशिये, कॉल के लिए, कुछ भी concern है, आप में ticket raise करें, हम directly कॉल करते हैं, और कोई जानकरी चाहिए, sir, ओके, sir, thank you for using justin.com, have a great day, sir.",
+      "entities": []
+    }
+  ]
+}

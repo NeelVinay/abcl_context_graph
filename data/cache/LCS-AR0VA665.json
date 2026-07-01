@@ -1,0 +1,169 @@
+{
+  "call_id": "LCS-AR0V",
+  "language": "hi-en",
+  "outcome": "raised_request",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "सर्विस",
+        "इशू",
+        "कॉंट्रेक्ट",
+        "जर्जाल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "करते हैं पूजा बात करूँ जर्जाल कर्सम और सर्विस है तो आपको कोई इशू आ रही है जर्जाल कॉंट्रेक्ट",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "इशू",
+        "कॉंट्रेक्ट",
+        "जर्जाल",
+        "बोले",
+        "रिलेटिट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "के रिलेटिट से क्या बोले मेलम जर्जाल कॉंट्रेक्ट में आपको कोई इशू आ रही है तो इशू आ",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "रहा है मैं",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "कॉल",
+        "पैसा",
+        "लिखे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "एकदम कॉल नहीं आ रहा है साइटिस का पैसा � मैं लिखे मैं कर नहीं पहुंगा मैं",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "प्रॉब्लम",
+        "अकम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "है ना हाँ अकम आ रही है यह भी प्रॉब्लम है रही है",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "मैम",
+        "wrong",
+        "location",
+        "नीड"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तो नहीं दिया नीड मैम विनून नहीं आ रही है और न� आज के दिन में रोहीद चोहाई। तो वो क्या थी, मतलब wrong थी, ज्यादा थी? मैं wrong location",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "call",
+        "customer",
+        "phone",
+        "गलती",
+        "बोलेंगे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "की थी madam, एक तो customer phone करते हैं, बोलेंगे, मैंने गलती से call कर लिया, मैंने call किया था, मुझे elbow चाहिए, हाँ,",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "काम",
+        "मैडम",
+        "लीज",
+        "problem",
+        "raise"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ, हाँ, मैं एक काम करती हूँ, एक बार नहीं ये चीजों के लिए raise करती चाहिए, आपको ये problem हो रही है, क्यों नहीं मैडम बताइ लीज को लेकिन टीजे में मैं पैकेज बंज कर दूँगा नहीं",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [
+        "जरूर",
+        "चार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं चार जरूर आपके लिए",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "सब्सक्राइब",
+        "रेस्ट",
+        "इश्योर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हम सब्सक्राइब करते हैं और कोई इश्योर है रेस्ट में",
+      "entities": []
+    }
+  ]
+}

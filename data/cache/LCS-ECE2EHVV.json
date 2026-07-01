@@ -1,0 +1,19 @@
+{
+  "call_id": "LCS-ECE2",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "प्रस्तुति प्रस्तुति",
+      "entities": []
+    }
+  ]
+}

@@ -19,3 +19,16 @@ graphviz>=0.20      # also needs the `dot` binary: `brew install graphviz`
 pydot>=1.4
 plotly>=5.0
 pyvis>=0.3
+
+# --- speech-to-text (mp3 -> transcript): all LOCAL, no API ---
+# Also requires the system `ffmpeg` binary: `brew install ffmpeg` (mac) / `apt install ffmpeg`.
+# First run downloads ~3-4GB of models (Whisper large-v3, pyannote, wav2vec align, MiniLM).
+# Needs a (free) HuggingFace token + accepted gated models:
+#   huggingface-cli login  AND accept  pyannote/speaker-diarization-3.1 + pyannote/segmentation-3.0
+whisperx>=3.7
+faster-whisper>=1.2
+pyannote.audio>=3.4
+speechbrain==1.0.3   # PINNED: 1.1.0 breaks on macs (eager k2 import). Do not bump blindly.
+ctranslate2>=4.8
+onnxruntime>=1.19
+soundfile>=0.13

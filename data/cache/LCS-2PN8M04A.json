@@ -1,0 +1,53 @@
+{
+  "call_id": "LCS-2PN8",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_disclose_recording",
+      "base_intent": "recording_disclosure",
+      "keywords": [
+        "कॉल",
+        "चेक",
+        "लीड",
+        "अंदर",
+        "com"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आलो, गुरीनी, निगार बात हो रही हूँ, जजजल.com के ब्लो हेवन यूनि सेक्स एनोन में बात हो रही हैं? हाँ, हाँ, बोलिये मैम. मैम, जैसा फीगबैक कॉल है, आपने चार तारीप को कंप्रेंट बैच के थी, आपको लीड के लग़न इशूज हो रहे थे, तो ह एक बाद फिर से भेजिये ना मैंने चेक करने की हूँ मैं वो रिसेंड नहीं होगा से मैम तो हमने यह जानना था यह क्लारिफिकेशन चाहिए कि हमने जो मैंने क्लाइंड को सेल किये हैं वो रिसीव हुए हैं जाने क्लाइंड के अंदर तो सिर्फ चेक किये चार तारीफ को",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "ज ये फीडबाइग नहीं",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "टाइम",
+        "थैंक",
+        "ग्रेट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "है, थैंक यू फोइ टाइम नाम, हैवा ग्रेट दे",
+      "entities": []
+    }
+  ]
+}

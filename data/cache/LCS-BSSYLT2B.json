@@ -1,0 +1,177 @@
+{
+  "call_id": "LCS-BSSY",
+  "language": "hi-en",
+  "outcome": "completed",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "recording_disclosure",
+      "keywords": [
+        "सब्सक्राइब",
+        "सबसे",
+        "वजह",
+        "notification",
+        "phone"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मेरे सब्सक्राइब करने के लिए कुछ बात करेंगे मेरे phone का setting वजह मेरे reset मार करके वापर install किया तब मुझे जो भी और करना चाहिए इस notification में मैंने हाथ से on किया हुआ है सबसे पहले",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "ऐसा",
+        "lead",
+        "request",
+        "ओपन",
+        "पूरा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तो मैं आपका mobile के tone के ये जो lead notification का वो आपका on कराजे एक बार मतलब on कराजे मतलब बोलेंगे तो मतलब ये software होते है न और software में through complaint में डाल के report प तो वो एक request डालता हूँ मैं आपका वो एक request डालता हूँ market में और वो जब ही है जब ही आप मतलब ऐसा बाहर जाते है या केवल जाते हो तो जब application ओपन करते हो तो उदर पूरा पांच सिर्फ में",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "दिखा",
+        "report",
+        "नेटवर्क"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "दिखा रहा है नेटवर्क का हाँ नेटवर्क मेरे में दिखता है मतलब एक दिखते हैं अच्छा ठीक है तो फिर मैं ये report डलवा देता",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "feedback",
+        "ताकि",
+        "लगता",
+        "पूरे",
+        "sms"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हूँ और ये अब कली तो इस विकेशन पर चालू होगा अब उसका SMS feedback वाला भी कर रहा है तो SMS feedback वाला आपके का कर रहा है नहीं ताकि नहीं है हाँ हाँ वो तो आप यह कर दीजिये ना तो सर पर उसका पूरे साल का चाल लगता है सर 2950 रुपा लगता है यह जो बाकी कंप्यूटर वाले लो वहाँ",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "प्रॉब्लम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जिस क्षेत्र में मैं रहता हूँ ना वहाँ पर यह तो प्रॉब्लम जिल्कुल एक पंचीन का भी सांस नहीं हुआ जिस एरियम में रहता",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "काम",
+        "notification",
+        "लीट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हूँ ठीक है तो मैं एक काम करता हूँ मैं आपका लीट का जो notification और",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "मतलब",
+        "check",
+        "option",
+        "महीने",
+        "notification"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इसमें एक option भी है जि notification वगैरा check करने का है tone check करने का है check करने अगर मैंने कोई मतलब नहीं है तो हर महीने चार्ज दे रहा हूँ और कोई कायदा ही",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "बोल",
+        "सबसे",
+        "whatsapp",
+        "नोटिफिकेशन"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं हो रहा हूँ मुझे। ओके तो सर मैं क्या बोल रहा हूँ कि सबसे पहले मैं WhatsApp नोटिफिकेशन का",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_respond_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "नंबर",
+        "हूँ।",
+        "मेल",
+        "चलो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जो है ना वो मैं आपका चलो करता हूँ। वो नंबर के थ्रू मेल नंबर है आपका इसका",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
+      "keywords": [
+        "lead",
+        "बोला",
+        "करवा",
+        "sms",
+        "notification"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कार्ड नहीं हो गया ना? नहीं, नहीं, हुआ है, SMS वाला आप नहीं करवा रहे हो ना, आपने बोला उसका नहीं करवा रहा है आपको, हाँ, तो वो नहीं करवा रहा हूँ, खाली lead notification का आपका चलू करवा रहा हूँ सब, ठीक है? हाँ, ठीक है, अगर को�",
+      "entities": []
+    }
+  ]
+}

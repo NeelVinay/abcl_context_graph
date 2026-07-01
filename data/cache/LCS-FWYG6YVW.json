@@ -1,0 +1,143 @@
+{
+  "call_id": "LCS-FWYG",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_disclose_recording",
+      "base_intent": "recording_disclosure",
+      "keywords": [
+        "कॉल",
+        "टाइम",
+        "लेंगे",
+        "जस्टाइल",
+        "कनेक्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जस्टाइल डॉटकॉम कस्तमत पूछते हैं लेंगे और कॉल पने लेंगे कॉल में कम्प्लेंट लेंगे जस्टाइल डॉटकॉम कस्तमत पूछते हैं लेंगे जस्टाइल डॉटकॉम कस्तमत पूछते हैं लेंगे जस्टाइल डॉटकॉम कस्तमत पूछते हैं लेंगे जस्� वी एंट कॉल कनेक्ट होते हुए तो अपने नंबरों को एक टाइम में कनेक्ट करने के लिए तो अपने नंबरों को एक टाइम में कनेक्ट करने के लिए तो अपने नंबरों को एक टाइम में कनेक्ट करने के",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "टाइम",
+        "कनेक्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लिए तो अपने नंबरों को एक टाइम में कनेक्ट करने के लिए",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "चेक",
+        "लिंक",
+        "टिकेट",
+        "लेंगे",
+        "team"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अन्यंस्टॉल्ड पानी पाकरेंगे ला, ना न्यू आप लिंक का अनुपरेंगे। अब अन्यंस्टॉल्ड पानीटुम्मा? हाँ, अन्यंस्टॉल्ड पानीटुम्मा, इपना उर पुदुर आप उड़ो लिंक सेंट पान रहें। जस्टाइल इसे दा, निंग आज डाउनल तो इन वोर mobile लेंगे तकन वो फोटोई एड़िते अधावध टिकेट ले निंगे attach पनेंगे नांग back-end team ले कुड़िते चेक पने सोड़ रहो सर इसलिए फूइल है? इद पर नियुक्ति",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "आदि"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इद पर नियुक्ति इ अगर आदि",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_pan",
+      "base_intent": "enter_pan",
+      "keywords": [
+        "नंबर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नंबर क्या है? नहीं सर,",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "टाइम",
+        "नोटिफिकेशन"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं सर, ओके ओके, इपो इन्हें फाइले रुकेरों उन्हें, इन्हें, एल्लार्थी में ओरे टाइम ले जा नोटिफिकेशन वारूँ फाइले",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "नंबर",
+        "उनको",
+        "आउट",
+        "बेस्ट",
+        "कंसर्न"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रुकेरों उन्हें फाइले रुकेरों उन्हें फा� इधे माधे इटको मुद्दे बेस्ट भी ये वालेट के चांसेस विखे येना ओर कस्टमर्स भी अवंगोरोड़ो नेम और अवंगोरोड़ो मोबाइल नंबर ला इंटर पणि वरवांगे सो संपेश अभी वालेट के चांसेस विखे निंगे पारेंगे उनको एलामे अभी � तो इन्हें एप इशूस ले फट आउट आई थी ओके अब इन्हें विद्धु राइड ओड़े मेबी उन्हें उन्हें पीछे लिया इधे वो कंसर्न रखने के लिए उन्हें पीछे लिया",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "उन्हें पीछे लिया उन्हें पीछे",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_transfer_to_rm",
+      "base_intent": "transfer_to_rm",
+      "keywords": [],
+      "sentiment": null,
+      "tool": "transfer_to_rm",
+      "text": "लिया उन्हें पीछे ल",
+      "entities": []
+    }
+  ]
+}

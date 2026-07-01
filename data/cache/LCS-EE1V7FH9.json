@@ -1,0 +1,112 @@
+{
+  "call_id": "LCS-EE1V",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "कस्टमर्स",
+        "जजजाई"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कर दो तो आप नहीं होने से आयम पूजा फर्म जजजाई कस्टमर्स सर्विष्ट है?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "लीड",
+        "इतना",
+        "लेकर",
+        "दूसरा",
+        "कस्टमर्स"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ, भूली मा? जजजाई कस्टमर्स सर्विष्ट से रिलेटिग लीड को लेकर इश्वारी की लीड से आपको कम आ जा रही है? येस, लीड से तो कम आ रही है, दूसरा मतलब कि खानी इतना है",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "चेक",
+        "काम",
+        "देख",
+        "मिल",
+        "कीजिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रही था understand करके मतलब आपको ऐसी issues हो रही है तो यूए इंडिस्ट्री आपको काम कीजिए लगेगी आपको यूए इसमें एक काम करते है एक बारे में मैं आपकी details चेक करने के लिए क्या problem हो रही है चालीज आपको मिल रही है इस सिस्थाब से मैं आपको profile को देख पाऊंगा � एक बार भी यहाँ पर ना एक बार भी यहाँ",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "पर ना एक बार",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "भी यहाँ पर ना एक बार",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "भी यहाँ पर",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_help_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "प्रॉब्लम",
+        "सपोर्ट",
+        "ऑप्शन",
+        "मिलता",
+        "जाकर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ना एक बार भी यहाँ पर ना एक बार भी यहाँ पर ना एक बार भी यहाँ पर ना एक और कोई एश्यू गए रहे इसका रहे जगवर पर कोई प्रॉब्लम होगा रेडिंग मिलता है जी लेकिन नहीं हो गई है और कोई प्रॉब्लम गए जज़ज़ाल करते हैं मैं सपोर्ट ऑप्शन लाइब हूँ वहाँ पर जाकर इस रह जाएं सकते हैं ओके? ओके सा, थांक य",
+      "entities": []
+    }
+  ]
+}

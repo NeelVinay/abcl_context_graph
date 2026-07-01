@@ -1,0 +1,3 @@
+Customer: आप जिस व्यक्ति से बात कर रहे हैं, उसने
+Agent: आपकी कॉल को hold पर रखा है, कृत्या line पर बने रहें. The person you are speaking with has put your call on hold. Please stay on the line.
+Customer: गुड़ाक्टर में वेलकम की जजजाल डॉट कॉम जिससे रुपिजा कमेंट से कस्टमर सपोर्ट डिपार्टमेंट हाउमेस एसिस्यू

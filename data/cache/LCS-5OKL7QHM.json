@@ -1,0 +1,231 @@
+{
+  "call_id": "LCS-5OKL",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_disclose_recording",
+      "base_intent": "recording_disclosure",
+      "keywords": [
+        "बोलिये",
+        "आलो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आलो आ बोलिये सर ये एको फोर्टेबल सॉलीशन में बात हो रही",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "बोलिये"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "है सर आ बोलिये",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
+      "keywords": [
+        "कॉल",
+        "लीड",
+        "प्रॉब्लम",
+        "टीम",
+        "कॉम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी मैं सैनास बात कर रही हूँ कस्टेमर सोविस टीम से जर्काल डॉट कॉम एक कॉल बैक अरेंज किया है सर आपने कुछ प्रॉब्लम है सर कॉन्ट्राट में कोई हेल्प चाहिए सर कॉन्ट् लीड सही नहीं आ रही है? नहीं. क्या दिक्कत आती है सर लीड में आपको?",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "मतलब",
+        "लीड",
+        "इंक्वारी",
+        "दिक्कत"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैंने इंक्वारी नहीं आ रही है, तो लीड में क्या दिक्कत आ रही है मैं? लीड आ ही नहीं है आपको? नहीं, एक आज इंक्वारी आ रही है, क्या मतलब हूँ? मैंने",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "बिजनेस",
+        "उसमें"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैंने पीस्ट पैटिक्स इं उसमें से बिजनेस आपका बन रहा है या नहीं",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "उसमें",
+        "बना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सर? उसमें तो भी फिलांग नहीं बना है",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "कुछ भी करना नहीं हुआ",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "रखा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ साइजा नहीं रखा",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "लेके",
+        "चलिए",
+        "तारिक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "चलिए ये मेरे साइजा सर अभी एक तारिक से लेके आज के दिन",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_do_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "लीड"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तक सत्रा लीड गई है सर आपको",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "तारिक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "एक तारिक से आज के",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "दिन तक आज",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "फिल्टर",
+        "लेड",
+        "मार्च"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ सर एक मार्च से साथ मार्च से लेटा अगर फिल्टर करूँ तो सत्रा लेड भी के लिए",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "manual_review",
+      "keywords": [
+        "चेक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सर ओके ठीक है मैं चेक करवाता हूँ बाद",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_employment_type",
+      "base_intent": "employment_type",
+      "keywords": [
+        "चेक",
+        "काम",
+        "लगा",
+        "रखा",
+        "हेल्प"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ आप इन बाद चेक कर लीजे कुछ हेल्प लगा तो बताई होंगे ओके आप काम करते हैं यहां तक कोई बंदा रखा है सर",
+      "entities": []
+    }
+  ]
+}

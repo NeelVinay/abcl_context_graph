@@ -1,0 +1,22 @@
+{
+  "call_id": "LCS-FPJ7",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "चाहता",
+        "पंपी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कर दो तो अगर मैंने पंपी चाहता हूँ, तो मैंने पंपी चाहता हूँ, तो मैंने पंपी चाहता हूँ, तो मैंने पंपी चाहता हूँ, तो मैंने पंपी चाहता हूँ,",
+      "entities": []
+    }
+  ]
+}

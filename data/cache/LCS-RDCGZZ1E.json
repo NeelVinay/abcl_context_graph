@@ -1,0 +1,39 @@
+{
+  "call_id": "LCS-RDCG",
+  "language": "hi-en",
+  "outcome": "raised_request",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "error"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बताइए सर क्या error आता",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "कॉल",
+        "चेक",
+        "लाइन",
+        "thank",
+        "category"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "है? लेड नहीं आ रही है? चेक कर लेते हैं, category आपकी live है, pin code आपकी चेक कर लेते हैं, लाइन करेगा साथ साथ बता देने चाहूँ सर, थोड़ा rating reviews पर ध्यान दीजेगा, आपकी rating काफ़ी कम है इसके से क्या होता है डारेक कॉल आने के समझ में कम हो जाती है। ठीक है, मैं यहाँ से excavation लगा रहा हूँ तो, contact में तो कोई error नहीं है, अब इन next 24 to 48 hours में जो भी search होगा, वो pure div app के साथ share कर दिया जाएगा से. धन्यवाद, आशा करता है आपको दिन शुरू हो, thank you for the valuable time.",
+      "entities": []
+    }
+  ]
+}

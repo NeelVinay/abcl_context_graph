@@ -1,0 +1,418 @@
+{
+  "call_id": "LCS-55MJ",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "ऐसे",
+        "कॉम",
+        "कस्टुमर",
+        "लोट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अल्लू गुराफ़ सुनो सर मैं अली बात कर रहा हूँ कस्टुमर के ऐसे जस टाइड लोट कॉम के अजय को जवान",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "के बाँ जवान के बाँ",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "सब्सक्राइब"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सब्सक्राइब करें और सब्सक्राइब करें",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "लाइन",
+        "वीडियो",
+        "धन्यवाद",
+        "देखने"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "और अब देखने के लिए 5 का वीडियो है और 4 वन के वीडियो है 5 के लिए 1 के लिए धन्यवाद लाइन",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
+      "keywords": [
+        "चेक",
+        "नंबर",
+        "अंदर",
+        "सुन",
+        "सेकंड"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "पर रहने के लिए लंबे होट के लिए शमा चाहेंगे आप से सुन पा रहे हैं मैंने चेक किया है आपकी विजिबिलिटी तो सेकंड नंबर पर आ रही है कैटिग्रीज के अंदर फरीदाबाद में आपकी, मट फरीदाबाद में आपकी कैटिग्रीज के अंदर सर्चिज नहीं है सर online सिर्फ 5% है, 95-98%",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "offline"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "offline है, क्योंकि ये kits के लिए program है।",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "मिल",
+        "लेते",
+        "पूरा",
+        "leads",
+        "searches"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं total understand करता हूँ आपकी मात्री सर, मैंने just आपको एक suggestion दिया है, कि अगर आप daily NCR पूरा करा लेते हैं, तो at least आपके जो online searches हैं, उसके according आपको leads टेक्निकले मिल सकते हैं सर।",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "ऐसा",
+        "continue",
+        "offline"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "offline में अगर नहीं है, तो मैं अगर continue नहीं करना � ऐसा नहीं",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "जरूर",
+        "रिगार्डिंग",
+        "टोटल",
+        "बिजनस"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "होता कि यहाँ पर फरीदवाद को रिवोट हो गया है, दिल्लू एंसियर में आता है, लीश यहाँ से होती है। मैं टोटल आपके बाद से अगरी करता हूँ सर, जैसे आपकी बिजनस के रिगार्डिंग के लिए आपको जरूर मिलती होंगे फरीदवाद से, बट अ अगर",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "आगे",
+        "लीज",
+        "साल",
+        "भूल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इसमें लीज में आगे तो सारे साल भूल जाये।",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "जरूर",
+        "मेल",
+        "कोंट्रैक्ट",
+        "बड़",
+        "रिक्वायमेंट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं टोटली आपके बाद चीज़ अंडरस्टेंट करता हूं सर बड़ अगर हमारे पास रिक्वायमेंट होगी तो डेफिनेंटली आपके पास आएगे कोंट्रैक्ट में आपके पहले नहीं है कि आपके आ रही हैं आपके आपके लिए जरूर उनके एक मेल रिस्ट करूंगा स",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "next",
+        "ecs"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इसके लागो यही चाहिए आप next ECS मेरे पर प्रोडक्ट नहीं चाहिए, जो 15 विन के बाद है, उसके लिए भी मैं एक कंप्रेंड दो-तीन बार कर चुगा, लेकिन मुझे इसका आया नहीं है।",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "टिकेट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "टिकेट आईडिया आपके पास अविलिबल होगा सर कोई, जिस बाद की बात हुई है, यह आपने",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "एडियस क इस आपके",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "call",
+        "customer",
+        "support",
+        "ticket",
+        "मार्केटिंग"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मार्केटिंग है, आपने मार्केटिंग के अलावा जो ETS की आप बात कर रहे हैं, जैसे 24 तारीख में मुझे यहाँ पर शो रहा है कि 3304 रूपे डिटेक्ट हुई है, तो उलड़े आपने जब 3 मीनी की पिक्चर दी थी, तो आपने customer support पर connect नहीं किया sir mail वगैरा कुछ या कुछ ticket या call",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "उसको",
+        "आगे",
+        "raise",
+        "ticket",
+        "पता"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बनाया था मैंने ticket raise करी थी ticket में आगे invalid date पता नहीं क्यों invalid date करके उसको close",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "raise",
+        "ticket",
+        "किस",
+        "department",
+        "करी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कर दे गया invalid date ठीक है किस department से आपने ticket raise करी थी sir",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "सब्सक्राइब",
+        "raise",
+        "ticket",
+        "उससे",
+        "करी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैंने doctorate 3 आपकी जो है उससे ticket raise करी थी सब्सक्राइब करने",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_pan",
+      "base_intent": "enter_pan",
+      "keywords": [
+        "सब्सक्राइब",
+        "लाइन",
+        "ऑप्शन",
+        "किस",
+        "करी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "का ऑप्शन आपके पास आ रहा है कि नहीं आ रहा है ठीक है लाइन पर एक सब्सक्राइब कर दो संकर के स्टेट में आपने करी थी सर अगर कुछ याद है किस लीक में आपने करी थी",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "टिकेट",
+        "करूँगी",
+        "कॉंट्रेक्ट",
+        "पेमेंट",
+        "ecs"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "20 परिक को मेरे मैंने इन कॉंट्रेक्ट पेमेंट पेमेंट करूँगी और 24 परिक को मेरा ECS बैबिट हुआ है 24 परिक के बाद मैंने इन टिकेट",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "कॉल",
+        "टिकेट",
+        "रेट",
+        "अरेंज",
+        "करूँगी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रेट करूँगी ठीक है मैं यहां से इंटरनेट टिकेट ट्रेस करके आपकी इसे से कॉल बैक अरेंज कराता हूं सर कल मंडे रहेगा कल यार आपके बस मंडे एक लूज़े से कॉल बैक आ जाएगा इसे इसका",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "सर ठीक है इसके लिए",
+      "entities": []
+    },
+    {
+      "index": 22,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "इसके लिए",
+      "entities": []
+    },
+    {
+      "index": 23,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपके बाद एक",
+      "entities": []
+    },
+    {
+      "index": 24,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_transfer_to_rm",
+      "base_intent": "transfer_to_rm",
+      "keywords": [
+        "feedback",
+        "service",
+        "link",
+        "आपसे",
+        "किये"
+      ],
+      "sentiment": null,
+      "tool": "transfer_to_rm",
+      "text": "feedback का link आएगा जो company service के product के लिए नहीं होगा सिर्फ मैंने आपसे बात के तरीके से किये उसके लिए होता है अगर बात करने का तरीका से लगाओ तैसे 10 सक rate कर सकते हैं खराब लगाओ इससे 5 सक rate कर सकते हैं चाहेंगे तो ignore भी कर सकते हैं तन्यवास आशा",
+      "entities": []
+    },
+    {
+      "index": 25,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "करते ह",
+      "entities": []
+    }
+  ]
+}

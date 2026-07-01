@@ -1,0 +1,177 @@
+{
+  "call_id": "LCS-9V23",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "से बात",
+        "लीड",
+        "ऐसा",
+        "अंदर",
+        "उसमें"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपकी तरफ से एक रिक्वेस्ट हमें रिसीव हुई थी जिसके भी आपे मैंने आपसे कनेक्ट किया है। राजकुमार जी से बात हो रही है अभी मेरी। ठीक है राज जी आपने मेंशन किया था आपने तीन तरीकों रेनिवल किया था और अभी आपका प्रोफाइल लाइव नहीं हुआ है जबकी लीड भी आपको दिखनी पारी है राज? जी हाँ जी राजकमार जी मैं बता देता हूँ आपका कॉंट्राक्ट ना अभी आक्टिव जी, अभी यहाँ पे ना, आपको मैं एक link share कर रहा हूँ, उसमें office premises की अंदर और बाहर की image upload कर दिजेगा, ठीक है, और accounts team को मैं email कर देता हूँ, जिसमें half an hour, अगर आप picture upload कर देते हैं, same locations upload करना है इस तरफ को, ऐसा नहीं है कि आप कहीं ओर हैं, और कहीं ओर की photo",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "फोन",
+        "डाल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "डाल रहे हैं पर आपके फोन से होगा",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "फोन"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ना सर? मेरे फोन से",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "क्या है वो भी तो कर सकते",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "मार्केटिंग",
+        "kyc",
+        "प्रोसेस",
+        "डीटेल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हैं सर जी KYC की जो डीटेल है वो आपके थुई ही प्रोसेस हो सकती है अगर आप मार्केटिंग को कह रहे हैं तो मैं एक बार यहां से मार्केटिंग एसाइन कर देता",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "मतलब",
+        "मतलब क्या",
+        "उनको",
+        "समय",
+        "मार्केटिंग"
+      ],
+      "sentiment": "confused",
+      "tool": null,
+      "text": "हूँ ठीक है मार्केटिंग सिविल पार्टर्स ही है उनको मैंने वो आये थे रिनूवल करने उस समय मैं पूछा थ आप दिन तारीख से आप आठ तारीख को इस चीज़ को बता रहे हैं तो मतलब क्या है आपका?",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "उन्होंने",
+        "बोला",
+        "अरेंज",
+        "दूँगा",
+        "जानना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं नहीं मैं यह जानना चाहरा हूँ उन्होंने बोला था कि मैं कर दूँगा आप विजिट अरेंज कराईए वहाँ बेजी है जहाँ पर मेरा बिजनिस है",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "परिशान मत हुई है",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "अरेंज"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं यहाँ से विजिट अरेंज कर देता हूँ",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "चलो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपको तो चलो क्वांटे नहीं हुआ है, वो सब चीज नहीं हुआ है। दौक्ष",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "कॉल",
+        "देख",
+        "बिजनेस",
+        "लिंक",
+        "रिक्वेस्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तो वो भी चीज तो देख जा रही है, जो वो बंदा बैठा हुआ, तीन जा चार अजार फिर रोज का उसका भी थोड़ा है। बल्कुल, बल्कुल, मैं यहाँ से रिक्वेस्ट प्रोस्टेस और आडवन्ट फीचर है जिससे आप अपने बिजनेस को ज्यादा बूस्ट या प्रमोट भी कर सकते हैं ठीक है जा? ठीक है जी जी कॉल के बाद शौर्ट फीडबैक लिंक वाटसिप के माध्यम से बेजा गया है जो कम्प्लीटली आपके और मेरे बीच में बात हुई है उसक",
+      "entities": []
+    }
+  ]
+}

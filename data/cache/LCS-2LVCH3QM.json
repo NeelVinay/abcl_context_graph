@@ -1,0 +1,439 @@
+{
+  "call_id": "LCS-2LVC",
+  "language": "hi-en",
+  "outcome": "completed",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "जजजा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जजजा लोग कुछ बात करते हैं सर कस्मा सदित डिपार्टमेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटेंटे",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "लेकर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "वाइस लेकर होते हैं",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "सब्सक्राइब",
+        "लास्ट",
+        "हलो",
+        "करें।",
+        "लेकर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सामेदी, पुछा वाइस लेकर होते हैं। हलो, हलो, कुछ डिस्ट्रेबेंस हो सकते हैं। सब्सक्राइब करें। जनवर लो लास्ट लॉगिन आयर जाता है।",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "लास्ट",
+        "लॉगिन",
+        "जनवर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जनवर लो लास्ट लॉगिन",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "आयर जाता है।",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "कॉल",
+        "में।",
+        "एक्सटर",
+        "मैंना।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "राल नहीं हुई मैंना। एक्सटर नहीं है जाने में। मुझे कॉल",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "मिनट",
+        "अपडेट",
+        "देखते"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "देखते रहते हैं। आवर देखते हैं। मैंने बैल देखते हैं। अपडेट करते हैं। मिनट देखते हैं। मतलब देखते हैं।",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "अपडेट",
+        "देखते",
+        "ओके।",
+        "जेडी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मेरे देखते हैं। ओके। आपने आपने अपडेट करते हैं। जेडी आ�",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "लाइन",
+        "लेंगे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लाइन लेंगे लाइन",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "लाइन",
+        "लेंगे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लेंगे लाइन लेंगे",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "इल्ला",
+        "रेस्पॉंस",
+        "मेंशन",
+        "जेसे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इल्ला मेंशन जेसे पड़ता हूँ, इल्ला कॉरेड होते हैं हमने कानी लेकिन स्कोर भी बहुत बहुत है, स्कोर भी बहुत बहुत है, लेकिन रेस्पॉंस भी बहुत बहुत ही करते हैं लेकिन आपके लिए इल्ला लेटकर रहते हैं लेकिन",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपके लिए लेटकर रहते हैं ल",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "कॉल",
+        "लीज़",
+        "इल्ला",
+        "फिल्टर",
+        "अन्ते"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओके, अन्ते कुछ हम अन्ते डाइरेट एंक्वारी जेसे अपड़ भड़ा मनागी, अन्ते ये पेपर्स अन्ते भड़ा मनागी फिल्टर जेड़ा अन्कुंडा सर। कुछ लीज़ ये अन्ते अपड़ वो कॉल जेसे में कारणडल कावल अन्ते अड़िगिन अपड़ वो व इल्ला पॉड़ेड रहते",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "मना",
+        "इल्ला",
+        "वालों",
+        "आइट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हैं। इल्ला पॉड़ेड रहते हैं। रामा वालों मना सिंसेर आइट मोची",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "लोगों",
+        "टाइमिंग",
+        "मैंना",
+        "वेस्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "वेस्ट रहेगा ली मैंना अपने दोई लोगों को आ सर एडिशनल टाइमिंग 24 अवार्स सब्दे",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "टाइमिंग",
+        "मैंना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "टाइमिंग सब्दे टाइमिंग मैंना",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "टाइमिंग",
+        "नगर",
+        "बोर्ड",
+        "गंटा",
+        "एंटी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आइन्ड आइन्ड इर्विनान गंटा सब्दे टाइमिंग आइन आशोग नगर राखोंडा एंटी सर आउजिंग बोर्ड हा? आउजिंग बोर्ड काल",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "प्रूफ",
+        "डॉक्यूमेंट",
+        "यदि"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नुमेड़ा कणी यदि आंटी एन प्रूफ डॉक्यूमेंट",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "सब्सक्राइब",
+        "बिजनेस",
+        "इतना",
+        "देते",
+        "करें।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "उन्हें देते हैं मैंने लेके रहा हूँ? हाँ विद्धत नर्मा देते हैं आप रहते हैं नुमेड़ा विद्धत नर्मा दे अगर आपको पंप करते हैं, तो आपको सब्सक्राइब करें। अवधी आकुन्डा बिजनेस चारल में पेर मेदे इतना रेजिस्टेशन गानी एदना लेबर सर्टिफिकेट गानी अल्लाँ उन्डाल सर्थ अल्लाँ उन्दाल पुर एंट अंत अंते इकड़ा बिजनेस अंते इतना रेजिस्टेशन गानी एदना लेबर सर्टिफिकेट ग",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_respond_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "उद्यम",
+        "certificate"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लेकिन उद्यम certificate",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_business_details",
+      "base_intent": "business_details",
+      "keywords": [
+        "कंपनी",
+        "लगता",
+        "जस्ट",
+        "डीटेल्स",
+        "डाइल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "होना लगता है लेकिन लेबर certificate रेजिस्टेशन certificate बी आर ट्रावेल्स में उन्हें उन्हें अग्दरेंट अग्दरेंट जस्ट जे यू एस्टी बी आई एल डाइल e-mail ID की रेजिस्टर में उंची एमएल मेंटन रिक्वेस बेट देंडी काइंडी चेंज माई कंपनी अड्रेस्ट अंग्योपेस्टी नी कंपनी डीटेल्स बेट",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_do_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "नंबर",
+        "फोन"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "देंडी या ट्रालर्स नी फोन नंबर नी",
+      "entities": []
+    },
+    {
+      "index": 22,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "इतना",
+        "लाइक",
+        "लीज",
+        "अपडेट",
+        "sms"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "पेरो बेट देंडी हाइद्राबाद अपडेट डेट अपडेट आ अन्ते सर इपड़ो मैं नीको पोवसानी कादू इपड़ो मनाकी लेटिगा पॉर्वर रावणा वल्ला मनाकी लाइक कंवर्ट चेस्को पोतुना जा सर लेटिगा पॉर्वर रावणा वल्ला अन्ते मेरे दारे के बाद मेरे पास फॉरवर्ड होते हैं। इजीजा मेरे पास फॉरवर्ड होते हैं। इप्पर मेरे पास लीज होते हैं तो फॉरवर्ड होते हैं। इप्पर सपोर्ज इतना पास लीज होते हैं तो फॉरवर्ड होते हैं। इस SMS मेरे पास लीज नहीं होते ह",
+      "entities": []
+    },
+    {
+      "index": 23,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "मैसेज"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लेकिन 3 पेजी एक मैसेज मिलेवा 3 पेजी में सुपर्टिस्टेवन पर देटिंग",
+      "entities": []
+    },
+    {
+      "index": 24,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "लीड",
+        "सब्सक्राइब",
+        "कस्टमर",
+        "बिजनेस",
+        "हूँ।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कीजिए इसी वीडियो के लिए एक कल लीड रहा है। ओके। मैं अपने वीडियो के लिए नमटाइट करता हूँ। अपने वीडियो के लिए नमटाइट करता हूँ। अपने वीडियो के ल तो मेरे बिजी गुणना मुबाइल मेंचे डिरेक्ट कस्टमर का नहीं दे जाती होती है तो आपको बारम नहीं है। इन्हें क्योंकि मेरे बिजनेस के बारे में कन्वर्शन होती है। मेरे बिजनेस के बारे में कन्वर्शन होती है। अब मेरे बिजनेस के बारे में कन्वर्� सब्सक्राइब करते हैं बेली-बेली ओन्ड नहीं हो गया यही भी बिजनेस है अपड़ लोस होते होते",
+      "entities": []
+    },
+    {
+      "index": 25,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "अल्लाँ"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "है कुछ मल्ली पेट्टाल्स होते होते है अल्लाँ",
+      "entities": []
+    },
+    {
+      "index": 26,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
+      "keywords": [
+        "कॉल",
+        "बिजनेस",
+        "सर्विस",
+        "टिकेट",
+        "कंपनी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बिजनेस नहीं होते है अब बेंड आउन होते होते है अब बेंड आउन नहीं होते है अब बेंड आउन नहीं होते है अब बेंड आउन नहीं ह इंके मेरे फर्जरी रुकायरी सुनते आप सड़ कॉल जायें सर ने टिकेट इसलिए ने में कॉल बग वस्तुन जो ये आप तुरू ने कॉल जाते है ने सर्विस गुरिंदे सर कंपनी सर्विस गुरिंदे सर ने माटलेना विदाना के सेटिंग इवें सर आरुन इंसी पारी �",
+      "entities": []
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "call_id": "LCS-7SJY",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "contact",
+        "चाहते",
+        "बंद"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपके नाम मजेरा, बाड़ा के नाम मजेरा। आपके नाम मजेरा, बाड़ा के नाम मजेरा। contact बंद करना है आपको हाँ dance concert क्यों बंद करना चाहते हैं",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "कॉल",
+        "call",
+        "बोल",
+        "ऐसा",
+        "inquiry"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैंको जब joining करने के time तो बोला गया था कि आपको inquiry आएंगे तो अभी तक मैं उसको कुछ inquiry आए लेकिन सब fake आए मतलब इसी इस जस्ट डाइल से देखते देखते call आ गया ऐसा कुछ ऐसा मतलब work के related कुछ भी call नहीं आ और उसके बाद जो मैंने इस person को जो local relationship वाला बंदा था उसको contact करने के लिए सोचा मतलब call करा फिर उसको बोला मिलने को कुछ google पर करने वाला था कुछ नहीं है मतलब joining कर दे उसके बाद तो उसने follow भी नहीं है कुछ follow भी नहीं है अच्छा मैंने कॉल किया बंद करने के लिए कॉल किया मैंने कल तो बोल रहा था मिर्कुल कि तो आपके पर्सनल बैंक वाले से बात करके बैंक वाले से बंद कर रहा था लेकिन जॉयरिंग तो आपकी तरफ कीजिए",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "लगाया",
+        "वालों",
+        "बैंक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हमने बैंक वालों को जाम लगाया है जी जी",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_personal_details",
+      "base_intent": "personal_details",
+      "keywords": [
+        "बिल्कुल",
+        "पूछ"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बिल्कुल कोई वो तो कब बन होगा वो ही तो पूछ रहा",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_org_name",
+      "base_intent": "organization_name",
+      "keywords": [
+        "कॉल",
+        "टीम",
+        "आगे",
+        "जिसके",
+        "राइट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हूँ आपको लो मैं नहीं बता सकता मेरे पास राइट नहीं है जिसके टीम के पास आगे फॉरवर्ड कर दे रहा हूँ अभी आपको वो कॉल करके बता देंगे सर",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "प्लीज"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओके ठीक ठीक है थोड़ा आर्जन करना प्लीज शौर सर शौर ठीक",
+      "entities": []
+    }
+  ]
+}

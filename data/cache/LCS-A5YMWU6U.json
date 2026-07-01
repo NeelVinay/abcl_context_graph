@@ -1,0 +1,97 @@
+{
+  "call_id": "LCS-A5YM",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "लीड",
+        "good",
+        "डिपार्टमेंट",
+        "afternoon",
+        "लड़का"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "good afternoon मैं ली बात कर रहा हूँ सर जैसे ही लड़का हूँ के लीड डिपार्टमेंट है संतोष सिंह जी से मेरी बात हो रही है",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "अभी हाँ जी आ जी",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "शेयर",
+        "मार्केटिंग",
+        "रिगार्डिंग",
+        "करनी",
+        "कोंटेक्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "संतोष जी मैं ली बात कर रहा हूँ आपको कोंटेक्ट में कोई एरड चल रहा है सर इसके रिकार्डिंग हमने एक टिकट रिकेट साइन करेगा ठीक है आपने जो कैटिगरी लिए हैं सर उसके रिगार्डिंग पर आपको पेस्टेसाइज राइसेंस शेयर करना होगा कि आपके पास अवेलेबल है क्या चीज पेस्टेसाइज राइसेंस होता है ना सर वह आपके पास अवेलेबल है अभी तो हमारे बाद, अभी तो हमने वहाँ भी कर रहे हैं, तो उसकी स्टार्टिंग में अभी हमने अप्लाई कर रहा है। ठीक है से, तो आपके कोई मार्केटिंग से बात करनी होगी आपको, पेस्टर साइज",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "लाइसन्स अगर नहीं है,",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_org_name",
+      "base_intent": "organization_name",
+      "keywords": [
+        "शेयर",
+        "उसको",
+        "category",
+        "अच्छी",
+        "समझ"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तो एक फॉर्म होता है, वो फिल करक form होता है form 11 हमारे पास ठीक है वो आपको देंगे आप उसे अपनी दुकान की महोर लगाओगे उसको फिल करोगे और वो हमारे साथ शेयर करोगे ठीक है आपकी category अभी block है ठीक है उसको unblock कराने के लिए हमें चाहिए आपका pesticide license जो कि आपके पास अभी नहीं है ठीक है बट आपके marketing person है वो आपको एक form देंगे उस form को आप भरोगे अपनी shop की stamp उस पे लगाओगे और वो हमारे पास दे दोगे तो जब तक आपका license नहीं बनता हम � फिर आपके पास अच्छी लिए रहेंगे सर ठीक है अब आप समझ गए न ठीक है तो अपने मार्केटिंग से बात कर लीजेगा सर",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है सर मैं बात कर लेता हूँ",
+      "entities": []
+    }
+  ]
+}

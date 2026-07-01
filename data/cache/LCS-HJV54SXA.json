@@ -1,0 +1,335 @@
+{
+  "call_id": "LCS-HJV5",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "वाइफ ग्रेक होते हैं अम्मा, केपड़ लोबल सेकरेटी",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "आउट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आउट सॉर्स है,",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "आउट",
+        "कंप्लेंट",
+        "कंसन"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सर? आउट हैं अम्मा? कॉंट्राक्ट्स लेटिंग कंसन होते हैं अम्मा, कंप्लेंट पेटे हैं",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "सर, केपड़ लोबल सेकरेटी",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "आउट",
+        "कंप्लेंट",
+        "कंसन",
+        "कंट्रेक्ट",
+        "एंटी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आउट सॉर्स है, सर? केपड़ लोबल सेकरेटी आउट सॉर्स है, कंट्रेक्ट से लिए कंसन उन्दी कंप्लेंट रेज चे सारे सर चेपटे ये एंटी कंसन",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "लीड्स",
+        "अन्य"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अमा लीड्स अन्य पेक लीड्स होते हैं बापा",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "चेक",
+        "लीड",
+        "सब्सक्राइब",
+        "हेलो",
+        "डिटेल्स"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कस्समर नमबर एक एक्जांपल दिवने सर पेक लीड्स होते हैं चेक जेस्तानो अभी सर लीड दे डिटेल्स एक एक्जांपल दिवन हेलो हेलो सब्सक्राइब",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "सब्सक्राइब",
+        "लीड्स"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "करते हैं सब्सक्राइब करते हैं माक वच्चे लीड्स",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
+      "keywords": [
+        "लीड्स",
+        "डीटेल्स",
+        "फेस",
+        "अल्ली"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अल्ली फेस लीड्स वच्चने नामा? आ लीड्स दी डीटेल्स",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "रीसेंट",
+        "एक्जांपल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अकटी एक्जांपल लिबाइंडी सर रीसेंट",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "लीड्स",
+        "कारण",
+        "फेस",
+        "अल्ली",
+        "लाइंग"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "का माटलाइड अवी फेस लीड्स वच्चने अवी जनार्धन जनार्धन अल्ली वक़ती वच्चो सूच्छोड़ दी कारण मेरे लाइंग",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_link_opened",
+      "base_intent": "open_link",
+      "keywords": [
+        "ओपन"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ये चीज़ ओपन हो",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "फिल्टर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रहते हैं ये उन्हें उन्हें अभी मैंने फिल्टर कर सकते हैं। अब मैंने कम्युनिकेशन नहीं है। अगर मैंने फिल्टर कर सकते हैं।",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "मना",
+        "फिल्टर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अगर मैंने फिल्टर कर सकते हैं। अगर मैंने फिल्टर कर सकते हैं। ये वो, मना की यहाँ ये, ये कार्यवेद्धवान के लिए कोई कोई",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "फिल्टर",
+        "अधि",
+        "अनेदी",
+        "सोर्स"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कोई कोई नहीं जाएँगड़ा? अधि मन्नम फिल्टर चेहिएलेम, सर, नेन आधे चेप्तुनाम। जस्टाइट अनेदी ओन्लाइन सोर्स उन्टेंगे,",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "ओपन",
+        "देते",
+        "जरूर",
+        "सोर्स"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओपन सोर्स उन्टेंगे, येकड़ा एक जरूर आज पूर्टिक पूर्टिक कर देते हैं इंड्रेस्टिंग पूर्टिक कर देते हैं जितंग में पलांग सैक्टिन",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "बिजनेस",
+        "यूज़",
+        "फोटोस",
+        "मात्रे",
+        "कार्ज"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "उन्हें मार्क टो कार्ज जावालने अपड़े मात्रे मात्रे यहोंने यूज़ टो आज यहोंने यहोंने बिजनेस विलेटर फोटोस विलेटर",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [
+        "अधिक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ना अधिक विलेटर",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "कॉल",
+        "सेंटर",
+        "सेर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ना आओने सेर वाली येवर होने येदी मनेकी सेट्पर कादा सर्पड़ून आपको कॉल सेंटर की कॉल होती",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "वेरे",
+        "अदि"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप वाली येवर के लिए आदो वेरो वेरे एक जाते उन्हारो अदि इंडरेस्ट येला बेंकटेटा",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_transfer_to_rm",
+      "base_intent": "transfer_to_rm",
+      "keywords": [
+        "कॉल",
+        "सब्सक्राइब",
+        "सर्विस",
+        "रेटिंग",
+        "feedback"
+      ],
+      "sentiment": null,
+      "tool": "transfer_to_rm",
+      "text": "रमना लेकोंटे से प्रेया ना येवर तरुप पोकुना ने साम सब्सक्राइब करने के लिए कॉल कर रहता है, मैंने feedback link share होता है। मैंने कैसे बात करने के लिए रेटिंग दें। 6-10 पॉजिटी है। पॉजिटी रिस्पॉंस 10 दें। यह कॉल के सर्विस रिलेटेड नहीं है। अगर हमारे प्रभावित हैं, हमारे प्रभावित नहीं है। अगर हमारे प्रभावित हैं,",
+      "entities": []
+    }
+  ]
+}

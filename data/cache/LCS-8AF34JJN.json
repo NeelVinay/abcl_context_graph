@@ -1,0 +1,69 @@
+{
+  "call_id": "LCS-8AF3",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_disclose_recording",
+      "base_intent": "recording_disclosure",
+      "keywords": [
+        "रिगार्डिंग",
+        "कॉंट्राक्ट",
+        "सेंड"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपका एक कॉंट्राक्ट हमारे पास सेंड कर रहा है, मुहमद अर्शक जी से मेरी बात हो रही है। इसके रिगार्डिंग",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "इश्यू",
+        "फेस",
+        "कॉंट्राक्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कुछ इश्यू फेस कर रहे हैं सर कॉंट्राक्ट",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "चेक",
+        "इश्यू",
+        "लेट",
+        "लाइव",
+        "विजिबिलिटी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "में? इश्यू फेस कर रहा है, इसमें लेट से नहीं आ रही है। लेट से नहीं आ रही है, मैं एक ब चैटिग्री आपके लाइव है, मैं विजिबिलिटी आपके अभी चेक कर रहा हूँ, प्रिजाइम",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "पर यह जाओ। तीन",
+      "entities": []
+    }
+  ]
+}

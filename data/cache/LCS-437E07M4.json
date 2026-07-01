@@ -1,0 +1,253 @@
+{
+  "call_id": "LCS-437E",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "कंप्लेंट",
+        "अगले",
+        "लीट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कंप्लेंट अटेंग में मुक्षी रहते हैं तो अगले लीट में मुझे रिकवरमेंट",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "चाहते",
+        "अगले",
+        "लीट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रहते हैं। अगले लीट सर्वीसोस आ गया है और लीट साइगित जा चाहते हैं।",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ, हाँ जो,",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "चाहते",
+        "अगले",
+        "लीट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ जो। अगले लीट सर्वीसोस आ गया है और लीट साइगित जा चाहते हैं। हाँ वानी प्लंबर्स के जैनम",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "सब्सक्राइब"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "श्मीपुराम इंदा सब्सक्राइब करते हैं महातेश",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "निम्हें बंदी के लादे में",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "आगे",
+        "नमक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "गित प्लम्बर्स के लादे में गित प्लम्बर्स के लादे में गित प्लम्बर्स के लादे हाँ, आगे रद नमक बताइद।",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "सब्सक्राइब",
+        "लाइन",
+        "इतना",
+        "निंगे",
+        "चक्पण"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओके, नाम यह ली चक्पण हो जा रहा था, निंगे almost ओन लाइन सब्सक्राइब में बरता रहा था, ओके ना? इतना सब्सक्राइब के लिए, नाम के",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "इतना",
+        "भाई",
+        "अगे",
+        "अदो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लिए इतना भाई... उल्ला, अदो, अगे ना",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "नमके"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "गुट्टी ला नमके, आओ कट्टमरो इल्ल आ,",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "कस्टमर",
+        "अटेंड"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कड़मे नु बसा, जैन निन्ने 3 बंधी रहा था, यादू 3 वाल्डि, 1 कस्टमर अटेंड माडिला सर, निम",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "लीज़",
+        "याद",
+        "कमी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इस्त्र सर? सर, निम इस्त्र? सर, कमी लीज़ करती नुम्मे? आयू बसा? निम गेट? सर, लीज़, कमी लीज़ करता है दे, मर्थे रोम लीज़ करता है, याद� प्लम्पिंग मेटीरियल डीलर्स 24 आर्थ एलेक्स्ट्रिक्शन अधिकला सर्विस्व कोड़ता है ना?",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "एल्ला"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "प्लम्पिंग, एलेक्स्ट्रिक्शन, गीजर, सोलर, एल्ला आलेमन, वाटिमिक्षिन, प्रिज्ज, मोटर, एलला नु मर्था जीवन।",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "लीज़",
+        "मत्ते",
+        "रॉम",
+        "कंप्यून"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओके सर नन कंप्यून तो होन थी न ओके न इमकी तरह रॉम लीज़ परता है दे मत्ते कार्वी लीज़ परता है नता आज पर सर्चे साक्षी देंगे जिम कैटेगरेज पर लीज़ के ने तागत",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "मैडम",
+        "इश्यू",
+        "इला"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओके ना सो इनने अगर इश्यू दिया सो ओके मैं नियं इला मैडम ननके",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_transfer_to_rm",
+      "base_intent": "transfer_to_rm",
+      "keywords": [
+        "कॉल",
+        "सर्विस",
+        "रेटिंग",
+        "लेंगे",
+        "लाइक"
+      ],
+      "sentiment": null,
+      "tool": "transfer_to_rm",
+      "text": "लीज अंडरे लाइक फोटोस वीडियोसेल अप्लोड मड़कोड़े ये रेटिंग से लाइक मड़कोड़े ये लिस्टन करसके ने निम्गे आदु एल्ला सबसे रेटिंग से लाइक मड़कोड़े ओके ना सा ओनलेन प्रेजेंटेक्शन लेंगे ये प्रेजेंटेक्शन लेंगे � सर ये कॉल में के टीटेंग में रेटिंग करते सेवन टू टेंग के लिए उच्छे रेटिंग करना ने मतलब सर्विस गला सर प्यूरले और कॉल में रेटिंग करना ने मतलब सर्विस गला सर प्यूरले और कॉल में रेटिंग करना क्या बुला है? जान बात मुझे आओ",
+      "entities": []
+    }
+  ]
+}

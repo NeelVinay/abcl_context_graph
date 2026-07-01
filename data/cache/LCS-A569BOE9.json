@@ -1,0 +1,83 @@
+{
+  "call_id": "LCS-A569",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_disclose_recording",
+      "base_intent": "recording_disclosure",
+      "keywords": [
+        "लीड",
+        "टिकेट",
+        "रिसीव",
+        "कॉंट्रैक्ट",
+        "इशू"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपको एक विशेष हमारे पास रन कर रहे हैं, इसके रिगारिंग हमने एक टिकेट रिसीव कर रहे हैं, कुछ इशू पेस कर रहे हैं कॉंट्रैक्ट में, लीड से रिलेटर्स? हाँ यार, बहुत बहुत",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "उसमें"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत बहुत बह� तो वही बात है उसमें",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "क्या है कि ये जो गुरुशनी में गुरुशनी का आई है तो मेरे पास आ रहा है ये एक बात है",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "सब्सक्राइब"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जो आपका बहुत ही बदलता है सब्सक्राइब करें",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "कॉल",
+        "सब्सक्राइब",
+        "पूछ",
+        "चाहेंगे",
+        "दोस्तों"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सब्सक्राइब करें शानकार जानते हुए तो कॉल डिस्टिनेक्ट करते हैं। कुछ पूछना चाहेंगे तो दोस्तों उसके बारे में पूछ सकते हैं।",
+      "entities": []
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "call_id": "LCS-GOQS",
+  "language": "hi-en",
+  "outcome": "raised_request",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_disclose_recording",
+      "base_intent": "recording_disclosure",
+      "keywords": [
+        "कॉल",
+        "इश्यू",
+        "अरेंज"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपके लिए कॉल अरेंज है, आपको कुछ इश्यू है जल्जल के कॉंटार्ट में?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "लेट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत लेट नहीं आ रही है, बहुत लेट नहीं आ रही है,",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "लेट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत लेट नहीं आ रही है, बहुत",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "लेट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लेट नहीं आ रही है",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "चेक",
+        "सब्सक्राइब",
+        "इतना",
+        "service",
+        "ऐसे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपका नाम जान सकते हैं वैक्सिन छोड़ी है? आपका नाम जान सकते हैं वैक्सिन छोड़ी है? आपका नाम जान सकते हैं वैक्सिन छोड़ी है? चेक कर पाएंगे तो contact आपका live है अपने contact आपका live आपका nature of business जो stage में आप deal करते हो वो AC repair and service की जाटर हुई institution selection service है institution selection service नहीं आएगा नहीं only है काटेग्री का इंटरनेक्सिक्स और बहुत सारी काटेग्री ऐसे और उसके पिन को स्ट्रेक्ट करते जल्दें जिनको स्ट्रेक्ट कर लियो आपने स्ट्रेक्ट लोग इतना कम हो रहा है उसके पिन को स्ट्रेक्ट कर रहा है तो अपने लाइटिनम डायमंड का वांटर ले तो सब्सक्राइब करने के लिए सब्सक्राइब इससे भी बड़ा फ्लो आपको आते रहेगा",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "काम",
+        "टाइम",
+        "फ्लो",
+        "चलता"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैंने फ्लो नहीं आ रहा है एक तो एक जो भी धर्मी के टाइम दे एक तो एक एक काम धर्मी के टाइम दे और जो भी आते जिनकी जो भी नहीं आती कोई इंप्राइट नहीं चलता है कि अब",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "कॉल",
+        "लीड",
+        "call",
+        "सब्सक्राइब",
+        "काम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इसके तरह क्या है क्या नहीं है अगर आप तो call लीड आ रही है students में बात करोगे न तो call कोई और connect कर लेगा वो ऐसी करेंगे हमने search नहीं किया हमने ज़रूरती हमारा काम हो गया मैंने तो search नहीं किया ऐसे तो बोलें नहीं भाई सुरान सुरान call in करते होड़ा प्रेस करूँगे अभी देखिए आपको मैं आपको ज़्यादा मिलना चाहूँगी ज़्यादी है कि आपके विशेष में कस्ताह में सब्सक्राइब लाइट है कोई भी पंच होना कुछ बेंच हो रहेगा और से रेस करें मैं अमेरिकन 20 विधिन 24 आज कॉल करके उस चीज़ पर सलूशन लेंगे और एक क्रिस्ट है कॉ",
+      "entities": []
+    }
+  ]
+}

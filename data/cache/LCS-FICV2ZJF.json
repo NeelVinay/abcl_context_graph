@@ -1,0 +1,88 @@
+{
+  "call_id": "LCS-FICV",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello. Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "customer",
+        "service",
+        "good",
+        "how",
+        "afternoon"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Good afternoon, I am Pooja from Just Dial Customer Service. How",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_do_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "लीड",
+        "नंबर",
+        "हलो",
+        "इसको",
+        "help"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "can I help you? इसको लीड गलत आ रहा है, गलत नंबर आ रहा है. Yes. लीड इन लीड मुझे आ रहा है मैं जो रॉंग नंबर दा रहा है, रॉंग नंबर हलो हलो",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "हलो",
+        "जैसा",
+        "आवाज",
+        "सेकंड"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ जी से बताओ नहीं चाहिए मतलब कॉबलम है आपको आवाजी आ रही है मेरी जैसा आवाज आ रही है एक सेकंड तो हलो हलो",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "बोरो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बोरो ना जो अच्छा बोरो",
+      "entities": []
+    }
+  ]
+}

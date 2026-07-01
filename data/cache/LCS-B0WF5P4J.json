@@ -1,0 +1,160 @@
+{
+  "call_id": "LCS-B0WF",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "जिसके",
+        "डॉट",
+        "डिपार्टमेंट",
+        "हेल्प",
+        "kyc"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "वेल्कॉम टो जर्ज़ाइल डॉट कॉम्पॉर्म लिट डिपार्टमेंट हाउ मैं हेल्प यू प्रांग की शोर्ट ट्रावेल भूमने पात हो रहा है? हाँ भी हो रहा है मेरा अच्छा KYC है ना वो कंप्लीट ही हो रहा है कंप्लीट नहीं हो रहा है KYC? हाँ KYC KYC अच्छे ब अब अप्शन है जिसके बिजनीज डिजिजिटर्ट करते हैं अप्शन है",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_do_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "अप्शन"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "और जो अप्शन साथ प्रिकेट पहुँचे",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "चेक",
+        "देख",
+        "शेयर",
+        "देखिए",
+        "लाइन"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रहना के लिए प्राजनार देखे आशिक खत्ता है ना हाँ हाँ ह What? उद्धिया माधर आपने PDF पॉर्मेट में शेयर किये थे? हाँ हाँ, सब कुछ शेयर किया मैंने हाँ. लाइन पे लोगी ठेक कर रहा हूँ? आपको मैं एक लिंक SMS में भेज रहा हूँ उसको थोड़ा ओपन करके देखिये आप एक्ट्रूफ कर पाड़े की नहीं चेक कीजिए एक मैसेज भेजा गया है आपको यह असपति है? SMS, नॉर्मल मैसेज चेक कीजिए न कि वो इसी बोलते आएगा आप उसमें बेजी के लिए � ओपन करके देखिए क्या options आ रहा है एप्रूफ करने का तो जी मैं next आया मैंने next किया ठीक है जोड़ जोड़ तुम्हारे में बेड़ी कोई भी रियेजी कराएगी, तुम्हें पार्टियां से तुम्हारे हैं अच्छी हाँ तुम्हें अल्लेख कर रहेंगे, हलो हाँ जी हलो जी हाँ इधर लिक्का हो रहा है कि उसके मेजिस्टर कंपनी डिटेल्स आम दौत गया थी तो इस दिजनेस डिटेल्स कर रहा है बेस हो रहा है इसलिए तो इसको हो रहा है जस्त सेकंड मैं देख ले रहा हूँ तब भारत में लिक्का है यह इसको भी नहीं हो रहा है क्या इसमें � प्राण फिशोड ट्रबल ओनार का नाम है प्राण फिशोड दात यह आपका पार्टनर्सिब नहीं है तो प्रोपाइटर्सिब है तो हाँ प्रोपाइटर्सिब है तो ठीक",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "है यह आपका",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "दो कर दो कि अ हुलो हाँ",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
+      "keywords": [
+        "कॉल",
+        "चेक",
+        "call",
+        "देखिए",
+        "लाइन"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "उत्रा लाइन पे रुकिये जाओ क्या इशू आ रहा है यहाँ पे शो भी कर नहीं रहा है लिगल नेम क्या कोई अलग है आपका या सेम लिगल नेम है लिगल नेम कंपनी के कोई दूसरा है आपका या सेम नेम है लिगल नेम क्या तक है पहले पांगी को रेट कर देता वो पहले चिंज है वो चिंज कर दे मैंने क्या मैस नहीं हो रहा यहाँ पर तो सो नहीं कर रहा है यही शो हो रहा है नस्टर वेगरमिट्स तो ये MSME में अगर issue हो रहा है आपके पास दूसरा option है आपके पास कोई document है GST है trade license GST कुछ है GST नहीं है trade license है trade license है तो अभी mail में भेज पाएंगे call पे हाँ तो अभी हम कर देते है न सर एक बाद देखिए अगर अभी आप भेज पाएंगे तो मैं ऑन कॉल इसको चेक करके फिर अपडेट कर दूँगा",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "क्योंकि यहाँ पे MSN",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "मेल",
+        "लीचे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ मेल आईटी लीचे दीजिए थोड़ा सा कोलकाता KOL KTA",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "डॉट",
+        "जस्ट",
+        "डाइल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जस्ट डाइल डॉट",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "कॉल",
+        "चेक",
+        "सब्सक्राइब",
+        "लेंगे",
+        "कॉम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कॉम जस्ट डाइल डॉट कॉम सब्सक्राइब करें आपको देखते हैं, हम लोग चेक करके आप कॉल बैक कर लेंगे डिफिनेटली बहुत बदल है बस जब लोगों में कॉल करने के लिए आप",
+      "entities": []
+    }
+  ]
+}

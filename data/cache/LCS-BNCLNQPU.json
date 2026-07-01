@@ -1,0 +1,193 @@
+{
+  "call_id": "LCS-BNCL",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "जजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजजज वीसा गुरेंची ओके 10 परसेंट है आपके",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "लिए 10 परसेंट",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "सब्सक्राइब",
+        "बिजनेस",
+        "ऑप्शन",
+        "लाइक",
+        "क्लिक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लाइक, मीनेट, लाइक लोंग दावे से मैं एक साथ अन्य डीटेल्स अन्य टेस्ट देखता हूँ, एक साथ अन्य देखता हूँ, एक साथ अन्य देखता हूँ, मैं एक सब्सक्राइब करता हूँ और एक सब्सक्राइब करता हूँ लेकिन अगर आपके परिवार परिवार के लिए परिवार परिवार अन्ते वाले purpose नीचे हमा गादा तरहिश कोने अगर मैंने फॉर्वर्ड होते हैं तो कुछ निक्स्टेंट में गूगल ले सर्वर्ड जाइएसन अपड़ू कुछ लाइक डिफरेंट फोर्वर्ड मेंचे ओप्टेंट है अन्ते अन्ते डाइरेस्टिका मेंको कस्मेर पे कमेर अगर आप नहीं रहते हैं, तो आप नहीं रहते हैं. लेब साइड लो चिन्ना राउंड पाइन होते हैं सर जेस्टर लो अन्ते घंटा सिमर अपोजेट होते होते हैं लेब साइड लो चिन्ना राउंड लो में प्रोफाल पिक होते हैं अधि क्लिक जाएं सर एक साइड अकड़े माई बिजनेस आन ऑप्शन होते हैं बिजनेस प्रोफेल",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_business_details",
+      "base_intent": "business_details",
+      "keywords": [
+        "बिजनेस"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बिजनेस प्रोफेल बिजनेस",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "हेलो",
+        "audible",
+        "मेको",
+        "लोकल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "प्रोफेल हेलो हेलो हेलो, audible है सर, मैं मार्टलेटेज़ विनपिष्टून हूँ तो अकड़ा मेको एन हम पिंट कोशिल है नहीं है सर, लोकल है नहीं है तो अकड़ा मेको एन हम पिंट कोशिल है नहीं है सर, लोकल है नहीं",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "मेको"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "है तो अकड़ा मेको एन हम पिंट कोशिल है",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "मेको"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं है तो अकड़ा मेको एन अगर",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप नहीं करते हैं, तो अगर आप",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_offer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं करते हैं, तो",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप नहीं करते हैं। अगर",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "सब्सक्राइब",
+        "उपयोग",
+        "विशेष"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपके साथ विशेष के लिए उपयोग करते हैं तो आपके साथ विशेष के लिए उपयोग करते हैं अगर आपको यह सब्सक्राइब करते हैं, तो आपको",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "सब्सक्राइब",
+        "करें।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "यह सब्सक्राइब करें।",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "category",
+        "वीडियो",
+        "अप्रूव",
+        "सॉरी",
+        "सार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओके, इसलिए मैंने कहाल से वीट वीडियो ने गया था सॉरी सॉरी अगर आप उत्तान कुछ नहीं है अगर आप उत्तान कुछ नहीं है अगर आप उत्तान कुछ नहीं है अगर आप उत्तान कुछ नहीं है अभी मैं category सब्डाइड कर देता हूँ sir एक सार अप्रूव जायेंगे",
+      "entities": []
+    }
+  ]
+}

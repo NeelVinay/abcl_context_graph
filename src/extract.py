@@ -16,6 +16,7 @@ from __future__ import annotations
 import json
 import re
 import sys
+from collections import Counter
 from datetime import datetime
 from pathlib import Path
 
@@ -160,8 +161,37 @@ def _is_noise(text):
 
 
 # ---------- parse + merge ----------
+def _load_plaintext(text):
+    """Parse the STT plain-text format (one turn per line):
+        Agent: ...
+        Customer: ...
+    Produced by src/transcribe.py. No timestamps (ts=None) — turns are already merged
+    per speaker, so _merge_fragments is a no-op on them."""
+    out = []
+    for line in text.splitlines():
+        line = line.strip()
+        if not line or ":" not in line:
+            continue
+        label, _, content = line.partition(":")
+        content = content.strip()
+        if not content:
+            continue
+        label = label.strip().lower()
+        if label.startswith("agent"):
+            speaker = "agent"
+        elif label.startswith("customer"):
+            speaker = "customer"
+        else:
+            continue
+        out.append({"speaker": speaker, "text": content, "ts": None})
+    return out
+
+
 def _load_turns(path):
-    data = json.loads(Path(path).read_text())
+    text = Path(path).read_text()
+    if not text.lstrip().startswith(("[", "{")):   # not JSON -> STT plain-text transcript
+        return _load_plaintext(text)
+    data = json.loads(text)
     out = []
     for m in data:
         content = (m.get("content") or "").strip()
@@ -283,7 +313,31 @@ def _salient_tokens(text, n=2):
     return uniq[:n]
 
 
-def extract_keywords(text, base, sentiment, entities):
+_WORD_RE = re.compile(r"[a-zA-Zऀ-ॿ]+")
+
+
+def build_keyword_vocab(texts, min_calls=2, min_len=3):
+    """Corpus-driven keyword vocabulary: content terms that recur across calls.
+
+    A document = one call. We keep terms appearing in >= min_calls DIFFERENT calls and
+    not in the stopword list. This adapts to whatever the calls are about (loan onboarding,
+    lead-gen support, ...) without curating per-domain lists, and the >=min_calls rule is
+    a built-in PII guard: a customer name/place is call-specific (in one call) so it never
+    qualifies, while domain vocabulary (leads, rating, ...) recurs and does.
+
+    `texts` is an iterable of full call transcripts (one string per call).
+    Returns {term: num_calls} used as a salience score.
+    """
+    from src.stopwords import STOPWORDS
+    df = Counter()
+    for call_text in texts:
+        seen = {w for w in _WORD_RE.findall(call_text.lower())
+                if len(w) >= min_len and w not in STOPWORDS and w not in _FILLERS}
+        df.update(seen)
+    return {w: c for w, c in df.items() if c >= min_calls}
+
+
+def extract_keywords(text, base, sentiment, entities, vocab=None):
     low = text.lower()
     kws = [kw for kw in INTENT_BY_NAME.get(base, []) if kw.lower() in low]
     if sentiment != "neutral":
@@ -291,8 +345,11 @@ def extract_keywords(text, base, sentiment, entities):
             if s == sentiment:
                 kws += [p for p in phrases if p.lower() in low]
     kws += [e["value"] for e in entities]
-    # NOTE: no "salient token" fallback — it grabbed names/filler (e.g. "SALMAN").
-    # Keywords are ONLY genuine matches: curated intent phrases, sentiment phrases, entities.
+    # Data-driven fill: recurring content terms present in this turn (highest call-spread
+    # first). Replaces the old "salient token" fallback that grabbed names/filler (SALMAN).
+    if vocab:
+        present = {w for w in _WORD_RE.findall(low) if w in vocab}
+        kws += sorted(present, key=lambda w: (-vocab[w], -len(w)))
     out, seen = [], set()
     for k in kws:
         if k.lower() not in seen:
@@ -302,17 +359,28 @@ def extract_keywords(text, base, sentiment, entities):
 
 
 # ---------- outcome ----------
-def _outcome(base_intents):
+def _outcome(base_intents, text=""):
+    """How the call resolved. Order = priority.
+      transferred     - handed to an RM / escalated
+      completed       - clean close (goodbye)
+      raised_request  - agent logged a request / promised a follow-up (the common
+                        lead-support resolution that used to be mislabeled 'incomplete')
+      incomplete      - none of the above (dropped without resolution)
+    """
     s = set(base_intents)
     if "transfer_to_rm" in s or "final_offer" in s or "manual_review" in s:
         return "transferred"
     if "end_call" in s:
         return "completed"
+    from src.dispositions import RESOLUTION
+    low = text.lower()
+    if any(p.lower() in low for p in RESOLUTION["raised_request"]):
+        return "raised_request"
     return "incomplete"
 
 
 # ---------- public API ----------
-def extract_call(path, drop_noise=True, bundle=None, use_model=True):
+def extract_call(path, drop_noise=True, bundle=None, use_model=True, vocab=None):
     path = Path(path)
     raw = _load_turns(path)
     merged = _merge_fragments(raw)
@@ -345,7 +413,7 @@ def extract_call(path, drop_noise=True, bundle=None, use_model=True):
             "type": "tool_call" if tool else "action",
             "intent": action_intent(speaker, base),
             "base_intent": base,
-            "keywords": extract_keywords(text, base, sentiment or "neutral", ents),
+            "keywords": extract_keywords(text, base, sentiment or "neutral", ents, vocab),
             "sentiment": sentiment if sentiment and sentiment != "neutral" else None,
             "tool": tool,
             "text": text,
@@ -354,7 +422,7 @@ def extract_call(path, drop_noise=True, bundle=None, use_model=True):
     return {
         "call_id": path.stem[:8],
         "language": "hi-en",
-        "outcome": _outcome(bases),
+        "outcome": _outcome(bases, " ".join(t["text"] for t in turns_in)),
         "turns": out_turns,
     }
 

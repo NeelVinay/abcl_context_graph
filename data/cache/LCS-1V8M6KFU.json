@@ -1,0 +1,439 @@
+{
+  "call_id": "LCS-1V8M",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_address",
+      "base_intent": "enter_address",
+      "keywords": [
+        "लेंगे",
+        "com",
+        "जस्टाइल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जस्टाइल.com कस्मत पूर्टियों लेंगे उन्हें पॉलिट",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_business_details",
+      "base_intent": "business_details",
+      "keywords": [
+        "लेंगे",
+        "com",
+        "जस्टाइल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "करेंगे जस्टाइल.com कस्मत पूर्टियों लेंगे उन्हें पॉलिट",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_address",
+      "base_intent": "enter_address",
+      "keywords": [
+        "com",
+        "जस्टाइल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "करेंगे जस्टाइल.com कस्मत",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "लेंगे",
+        "याद",
+        "पेर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "पूर्टियों लेंगे पुकी अनिको रांजी पेर वांगता हुआ था, ये रांजी पेर में याद",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "पेर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "में इत्सलेंगे मा? राजी पेर में इत्सलेंगे",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "उन्होंने",
+        "कुमार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इसे कुमार ने उन्होंने प्रिया वाला था? हमाँ",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "कॉल",
+        "टीम",
+        "उन्होंने",
+        "अच्छी",
+        "सेंटर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सर? या आजु? सर इसे उन्होंने अच्छी उन्होंने कवियार ओर टीम इंगे कॉल सेंटर रुकों पेटिंगला? हाँ अंगे कॉल सेंटर",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "कॉल",
+        "मना",
+        "सेंटर",
+        "अटेंड",
+        "टेस्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "पेटिंगला? अंगे कॉल सेंटर पेटिंगला वो ना अटेंड मना मतरें आल्रेडी टेस्ट चीज बल्लियर",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "टाइम",
+        "उन्होंने",
+        "पाते"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रहे हैं सर ना पाते रहे हैं उन्होंने रेटसांस टाइम कुछ अधिकमा रहे हैं सर फूर आस केटे एड़ित करेंगे",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "वेरी",
+        "अटेंड",
+        "इपना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मुझे जा रहे हैं नाम सीक्रम पेशना करेंगे ना ये वेरी है ना मैं इपना अटेंड मन",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "टाइम",
+        "उन्होंने",
+        "आगे",
+        "लेंगे",
+        "वीडियो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "और इस वीडियो में विश्वा आगे लेंगे, अगले लेंगे मैं उन्होंने आपको सोली रहा हूँ, वेस्वन्स टाइम आवरेज आईवरेज आईवरेज आईव तो मुदंदे वरा उनके लिए फिकेट कन्वर्ट होना चाहते हैं तो उन्हें इन्होंने सीकर पहले उनके लिए फिकेट कन्वर्ट करेंगे",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "तो उनके लिए फिकेट कन्वर्ट करेंगे तो",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_terms_accept",
+      "base_intent": "accept_terms",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "उनके लिए फिकेट कन्वर्ट",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "वाट्सएप"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "करेंगे तो उनके लिए फिकेट कन्वर्ट करेंगे वाट्सएप",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "लीड",
+        "इनके",
+        "कंसन",
+        "पाने",
+        "डाउनलोड"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ले एसमस ले टेंट पाने रुका सर डाउनलोड पानिकोंगा मेबी ट्यूब चोदनेर दे कंसन रुकना इनके स्क्रीनशर्ट कुड़ूमो सर इन्द लीड ऐनकी उल्ले विलेवा वन्दित्य अब",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "बैक",
+        "एंड",
+        "नांग"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रिम्प कांडिपा नांग आदे बैक एंड रिम्लो कुड़ू मैं अपने",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "सब्सक्राइब",
+        "हूँ।",
+        "करें।",
+        "नहीं।",
+        "इंट्रेस्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इंट्रेस्ट का इंट्रेस्ट नहीं हूँ। मैंने इंट्रेस्ट का इंट्रेस्ट नहीं। इसे सब्सक्राइब करने के लिए सब्सक्राइब करें।",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "कोड़े"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओर दाल कोड़े",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "में अटर्म करने के लिए मैंने वेस्टा पड़ती है। प्राइब करने के लिए प्राइब",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [
+        "नहीं हो",
+        "बेस्ट",
+        "प्र"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "करने के लिए प्राइब करने के लिए प्र आपको एक वारथ नहीं होता है। आपको एक वारथ नहीं होता है। ये तो रोटेक्टिंग बेस्ट लाड़ी पर फ़र्स्ट",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "लाड़ी पर फ़र्स्ट",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "लाड़ी पर फ़र्स्ट",
+      "entities": []
+    },
+    {
+      "index": 22,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "लाड़ी पर फ़र्स्ट",
+      "entities": []
+    },
+    {
+      "index": 23,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "लाड़ी अब इन्हें अगर",
+      "entities": []
+    },
+    {
+      "index": 24,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "लेंगे",
+        "बेस्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप रोटेशन बेस्ट लेंगे तो कुछ नहीं है। अब रोटेशन बेस्ट लेंगे तो कुछ नहीं है। अब रोटेशन बेस्ट लेंगे तो कुछ नहीं है। रोटेशन बेस्ट लेंगे",
+      "entities": []
+    },
+    {
+      "index": 25,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "इदे",
+        "इप्पो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तो कुछ नहीं है। इप्पो निगो कुछ इदे",
+      "entities": []
+    },
+    {
+      "index": 26,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "इदे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कुछ इदे कुछ",
+      "entities": []
+    },
+    {
+      "index": 27,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "इदे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इदे कुछ",
+      "entities": []
+    },
+    {
+      "index": 28,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "थैंक",
+        "फॉर",
+        "इन्होंने"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं लोड़ी कम्प्रिंट ऐसके तो इन्होंने वीश कर निपार हूँ सर थैंक यू फॉर रूजनी जैसेल डॉक्खम हाड़े के लिए थैंक यू",
+      "entities": []
+    }
+  ]
+}

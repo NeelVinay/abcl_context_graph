@@ -1,0 +1,263 @@
+{
+  "call_id": "LCS-2374",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_explain_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "सब्सक्राइब"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सब्सक्राइब करते हैं कि आपको कम आ रही हैं तो जो आपने का",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "लीड",
+        "रिगारिंग"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ट्रांसपोरी रिगारिंग तो यह लीड",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_help_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "लीड",
+        "रिगारिंग"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं आ रही है तो जो आपने का ट्रांसपोरी रिगारिंग तो यह लीड नहीं आ रही है",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "आगे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं तो आगे तक तो एक",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "कस्टमर",
+        "बोलते",
+        "मिला"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "भी कस्टमर नहीं मिला है। तो अभी आप जब बात करते हैं कस्टमर से तो क्या बोलते हो लोग आपको?",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "ऐसा",
+        "पता",
+        "कितना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं, जो आप लोग पर्थलोर का माले हैं तो ऐसा है, कुछ भी पता नहीं कितना कर लोग, ऐसा है ऐसा है।",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "call",
+        "काम",
+        "lead",
+        "टीम",
+        "inquiry"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अगर आपका पूरा ratio call आपका देखेंगे तो अंकुष्ट करके बात करें न आपने और आपको एक आया था दिखे दिखे करके तो यह आपका पूरा highlighted करके request के lead inquiry जो flow बढ़ना चाहिए न आपका उसका यह पूरा highlighted करा रहा हूँ आपका category के साथ और inquiry flow जो category न आपको lead अभी आ यहाँ पूरे लीड़ से काम कीजिएगा कोई लीड़ को छोड़ेगा नहीं सकती की यहाँ तो आपको यह टीम टीम के",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "अंदर",
+        "बताईए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अंदर इसका फिलिबाइब बताईए थोड़ी आप पेस्टमर",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "काम",
+        "सपोर्ट",
+        "टिकेट",
+        "हेल्प",
+        "डाल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सपोर्ट पर टिकेट डाल के काम करें यहाँ और कोई हेल्प कर सकते होगा आपके लिए अ� यह टांस्पोर्टर का यह सब चाहिए न",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपका यह सब कैटिगूल है हाँ महाराष",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "चलेगा",
+        "किधर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "में किधर से भी चलेगा",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "चलेगा",
+        "मंबई"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मंबई से नहीं आपका नहीं मंबई से चलेगा",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "यह आलिगर यह",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "चलेगा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आलिगर भीवांटी बिकानेर यह सब चाहिए न यह सब चाहिए यह पुने से भी चलेगा",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "customer",
+        "लगा",
+        "support",
+        "ticket",
+        "हेल्प"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कलापूर स अगर कोई हेल्प लगा तो जड़ी आपका customer support पर ticket ला लिखता है",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "रवी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "और आपको रवी जाना पर इस",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "देखिए",
+        "चीज़ा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "चीज़ा अटवर्टिंग कर लीजिए देखिए ये बहुत बहुत",
+      "entities": []
+    }
+  ]
+}

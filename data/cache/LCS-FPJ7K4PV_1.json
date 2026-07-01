@@ -1,0 +1,284 @@
+{
+  "call_id": "LCS-FPJ7",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "recording_disclosure",
+      "keywords": [
+        "person",
+        "speaking",
+        "called"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "The person you have called is speaking",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "चेक",
+        "बड़ा",
+        "हलो",
+        "wait",
+        "साइड"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "to someone else. You can wait. वेंकाटेश दार है ना सा मार्ज़ाड़ एदे? मैंने हिस्या होते हुए ना सा मार्ज़ाड़ करते हुए हलो हलो इप्पुड आडबल है सा? ताला बड़ा हुआ है इस्तेम बड़ा दिश्यों साइड सा हलो चेक बात",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "इश्यों"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "में इप्पुड ओके ना सा? हाँ सा एक अन इश्यों है ओके",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "लीड",
+        "लास्ट",
+        "रोज",
+        "इकड़ा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लास्ट यह प्रोचेस हो इन रोज ने में मन आच्छा है आपको? ओका लीड आच्छा है आपको? मौनिंग लेवन लेवन त्रिंग शोएस तो ना इकड़ा इरो जोड़चिल अर्थो।",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "इरो जोड़चिल अर्थो। ओके,",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "अन्ने",
+        "लगते"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "पेरी इंटे सर? आ दिगो अन्ने सच्छे लगते हैं नहीं है? पेरी इंटे हैं नहीं? पेरी इंटे हैं नहीं है? पेरी इंटे हैं नहीं है? पेरी इंटे हैं नहीं है? पेरी इंटे हैं नहीं है?",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "पेरी इंटे हैं नहीं है?",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "अन्ते",
+        "दान",
+        "वालो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "दान कुरेश, अन्ते ये बात नहीं है, मैंने अकर अकर की पंपिछ नहीं होते हुआ न वालो? वालो,",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "नहीं हो",
+        "वालो"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "ये बात नहीं है, मैंने अकर अकर की पंपिछ नहीं होते हुआ न वालो? वालो, ये बात नहीं होते हुआ न वालो? अगर",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "नहीं।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप इसे नहीं रहते हैं, तो आपको अगर मैं होते हूँ मेडम, एक पॉटरेंड होती नहीं। मैं एक पॉटरेंड होते हूँ, कार्रेंडर भी नहीं। मैं एक पॉटरेंड होते हूँ, कार्रेंडर भी नहीं। मैं एक पॉटरेंड होते हूँ, कार्रेंडर भी नहीं। मैं एक पॉटरेंड होते हूँ,",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "बड़ी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कार्रेंडर भी नहीं करते हैं। बड़ी है। बड़ी है। एन चुना रुद्या का अंजुमा ने तो सिज़े वराज्यों को पाइटे में लिखी चुड़ों। अंजुमा ने सिज़े वराज्यों को पाइटे में लिखी चुड़ों। अंजुमा ने सिज़े वराज्यों को पाइटे में लिखी चुड़ों। यह",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "लेंगे",
+        "सबस्क्राइब",
+        "जनवर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जनवर लेंगे लोग नहीं रहते हैं, अपने चोकर लोग नहीं रहते हैं। लेकिन मैं सबस्क्राइब करता हूँ",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "अंदर",
+        "लास्ट",
+        "लेट",
+        "करें।",
+        "पूर्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मतलब अंदर भी फारओर आया था तो लास्ट पूर्ट लेट मांग। आपको इन्हें पूर्ट लेट करें।",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "लगा",
+        "अपडेट",
+        "सर्चेस",
+        "यूजर",
+        "अरे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आदि वेरोंने पंपिछाकर में आपको वंपियाला मैनुवेल गाने देम उन्दर सर आदि यूजर रिक्वाइमेंट सर्चेस बट्टी आपको ऑटोमेटिका फॉरवेड होता है बट आदि पोजीशन उन्हाँ वाला की आदि एवरी इंग्वेरी अले देलते हैं वाला पैके अरे सर इपने उच्छीने टाइमिंग होकर लगा लेकिन लेटिव अपडेट ये सर आपने एक सारे मैंने",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "चाहिए तुम्हें नहीं है तैम लेल",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "मेरे जैसे जैसे इस प्रोग्राम से इस प्रोग्राम",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [
+        "इसको",
+        "पैकेज"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "से इस प्रोग्राम से पैकेज इसको नहीं,",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_help_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "951523",
+        "कॉल",
+        "call",
+        "लिंक",
+        "अच्छी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैंने इसका वो आपर मिलता हूँ, पूरे पूरे लिंक ओपन जाने लिंक नॉर्मल मेसेज लो वाट्सएप गालू नॉर्मल मेसेज लो 9515232090 दान को चीज़ लो इज़े मैं बल्ली पंपेट्या सो रहा हूँ अच्छी ना साथ अदि मना कार्रेंटल काटेगीरेस अनेदी ने अपडेट जेशाओ सर अदि लिंक में राले नहीं तू टांस पंपिछानो 951523 इन्हें मारे पर पंपर लगते हैं वो एक सारी कॉल ना भी देखकर अंत एक सारी अप्रूव के लिए जाएगा जाएगा बिज्ञा करना है। अप्रूफ कीजिए जैसे अप्रूफ कीजिए चाहिए चाहिए अब अपडेट होता है लेकिन इंका इस सिलेमेंट एवर जा सकता है अभी कुड़ा रहा कुड़ा फॉरवर्ड कीजिए चाहिए चाहिए सर वीडियो में आर्डम होते हैं सर वीडियो में आर्डम होते हैं सर वीडियो में आर्डम होते हैं normal message ने चूड़ेंगे, approve जाएंगे, इनके मेरे further any concerns होते हैं, call this, reticulate जाएंगे, area of room, my call back वह वह चाहते हुए. धन्यवाद.",
+      "entities": [
+        {
+          "type": "pincode",
+          "value": "951523"
+        }
+      ]
+    }
+  ]
+}
