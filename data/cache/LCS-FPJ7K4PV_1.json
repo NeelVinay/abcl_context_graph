@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-FPJ7",
+  "call_id": "LCS-FPJ7K4PV_1",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,8 +7,8 @@
       "index": 0,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "recording_disclosure",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [
         "person",
         "speaking",
@@ -23,8 +23,8 @@
       "index": 1,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
         "चेक",
         "बड़ा",
@@ -42,7 +42,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "इश्यों"
       ],
@@ -55,8 +55,8 @@
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "लीड",
         "लास्ट",
@@ -72,8 +72,8 @@
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_agree",
-      "base_intent": "agree",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -84,11 +84,11 @@
       "index": 5,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "अन्ने",
-        "लगते"
+        "लगते",
+        "अन्ने"
       ],
       "sentiment": null,
       "tool": null,
@@ -99,8 +99,8 @@
       "index": 6,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_request_wait",
-      "base_intent": "wait_hold",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -111,8 +111,8 @@
       "index": 7,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "अन्ते",
         "दान",
@@ -127,8 +127,8 @@
       "index": 8,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "नहीं हो",
         "वालो"
@@ -142,8 +142,8 @@
       "index": 9,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "नहीं।"
       ],
@@ -156,8 +156,8 @@
       "index": 10,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "बड़ी"
       ],
@@ -170,8 +170,8 @@
       "index": 11,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "लेंगे",
         "सबस्क्राइब",
@@ -186,8 +186,8 @@
       "index": 12,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_query",
-      "base_intent": "answer_query",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
       "keywords": [
         "अंदर",
         "लास्ट",
@@ -204,14 +204,14 @@
       "index": 13,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "लगा",
         "अपडेट",
+        "अरे",
         "सर्चेस",
-        "यूजर",
-        "अरे"
+        "यूजर"
       ],
       "sentiment": null,
       "tool": null,
@@ -222,8 +222,8 @@
       "index": 14,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_skip_udyam",
-      "base_intent": "skip_udyam",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -234,8 +234,8 @@
       "index": 15,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -246,8 +246,8 @@
       "index": 16,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_skip_udyam",
-      "base_intent": "skip_udyam",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "इसको",
         "पैकेज"
@@ -261,14 +261,14 @@
       "index": 17,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_help_address_error",
-      "base_intent": "address_error",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "951523",
         "कॉल",
         "call",
-        "लिंक",
-        "अच्छी"
+        "अच्छी",
+        "लिंक"
       ],
       "sentiment": null,
       "tool": null,

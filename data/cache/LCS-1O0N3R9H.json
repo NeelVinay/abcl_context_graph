@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-1O0N",
+  "call_id": "LCS-1O0N3R9H",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,8 +7,8 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_disclose_recording",
-      "base_intent": "recording_disclosure",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
         "चेक",
         "सब्सक्राइब",

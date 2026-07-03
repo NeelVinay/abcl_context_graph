@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-18CV",
+  "call_id": "LCS-18CVTM54",
   "language": "hi-en",
   "outcome": "raised_request",
   "turns": [
@@ -8,7 +8,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_greet",
-      "base_intent": "greeting",
+      "base_intent": "open",
       "keywords": [
         "वेलकम"
       ],
@@ -21,14 +21,14 @@
       "index": 1,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_greet",
-      "base_intent": "greeting",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "बात कर रही",
         "कॉल",
         "call",
         "नंबर",
-        "काम"
+        "काम",
+        "शेयर"
       ],
       "sentiment": null,
       "tool": null,

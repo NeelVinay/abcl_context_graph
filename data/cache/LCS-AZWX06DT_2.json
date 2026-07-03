@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-AZWX",
+  "call_id": "LCS-AZWX06DT_2",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,12 +7,12 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_greet",
-      "base_intent": "greeting",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "से बात",
         "call",
         "lead",
+        "request",
         "उनको",
         "feedback"
       ],

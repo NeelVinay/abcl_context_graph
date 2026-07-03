@@ -1,14 +1,14 @@
 {
-  "call_id": "LCS-FWYG",
+  "call_id": "LCS-FWYG6YVW",
   "language": "hi-en",
-  "outcome": "transferred",
+  "outcome": "incomplete",
   "turns": [
     {
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_disclose_recording",
-      "base_intent": "recording_disclosure",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
         "कॉल",
         "टाइम",
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_query_fee",
-      "base_intent": "processing_fee",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "टाइम",
         "कनेक्ट"
@@ -40,13 +40,13 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "चेक",
         "लिंक",
-        "टिकेट",
         "लेंगे",
+        "टिकेट",
         "team"
       ],
       "sentiment": null,
@@ -58,8 +58,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_request_wait",
-      "base_intent": "wait_hold",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "आदि"
       ],
@@ -72,8 +72,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_pan",
-      "base_intent": "enter_pan",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "नंबर"
       ],
@@ -86,8 +86,8 @@
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_query",
-      "base_intent": "answer_query",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "टाइम",
         "नोटिफिकेशन"
@@ -101,14 +101,14 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "नंबर",
         "उनको",
         "आउट",
-        "बेस्ट",
-        "कंसर्न"
+        "मोबाइल",
+        "बेस्ट"
       ],
       "sentiment": null,
       "tool": null,
@@ -119,8 +119,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_done",
-      "base_intent": "report_done",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -130,12 +130,12 @@
     {
       "index": 8,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "लिया उन्हें पीछे ल",
       "entities": []
     }

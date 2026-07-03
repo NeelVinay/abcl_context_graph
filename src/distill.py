@@ -27,10 +27,20 @@ from src.extract import EMBED_MODEL
 MODELS_DIR = config.CACHE_DIR.parent / "models"
 MODEL_PATH = MODELS_DIR / "intent_clf.pkl"
 
+# Domain -> (gold labels path, model output path). ABCL is the default/back-compat.
+DOMAINS = {
+    "abcl": {"gold": GOLD_PATH, "model": MODEL_PATH},
+    "justdial": {"gold": config.DATA / "gold_justdial" / "labels.jsonl",
+                 "model": MODELS_DIR / "justdial_clf.pkl"},
+    "justdial_coarse": {"gold": config.DATA / "gold_justdial" / "labels_coarse.jsonl",
+                        "model": MODELS_DIR / "justdial_clf.pkl"},
+}
 
-def load_dataset() -> list[dict]:
-    """Join gold labels with the cached turn text; add previous-turn context."""
-    gold = load_gold()
+
+def load_dataset(gold_path=None) -> list[dict]:
+    """Join gold labels with the cached turn text; add previous-turn context.
+    Only calls present in the gold set are used, so mixing ABCL + JD caches is safe."""
+    gold = load_gold(gold_path)
     samples = []
     for f in sorted(config.CACHE_DIR.glob("*.json")):
         c = json.loads(f.read_text())
@@ -122,12 +132,12 @@ def _call_groups(samples, indices):
     return g
 
 
-def cv_eval():
+def cv_eval(gold_path=None):
     from sklearn.model_selection import GroupKFold
     from sentence_transformers import SentenceTransformer
     print("loading embedding model + dataset ...")
     model = SentenceTransformer(EMBED_MODEL)
-    samples = load_dataset()
+    samples = load_dataset(gold_path)
     X, y, groups = featurize(samples, model)
     print(f"{len(samples)} samples, {X.shape[1]} features, {len(set(y))} classes")
 
@@ -157,7 +167,7 @@ def cv_eval():
                         "base_intent": classes[st], "keywords": []}
         print(f"  fold {fold}: train={len(tr)} test={len(te)}")
 
-    gold = load_gold()
+    gold = load_gold(gold_path)
     raw = score_intents(gold, oof_raw)
     print(f"\n===== 5-fold grouped CV vs Claude gold =====")
     print(f"RAW (per-turn)      accuracy={raw['accuracy']:.3f}  macro-F1={raw['macro_f1']:.3f}")
@@ -178,39 +188,47 @@ def cv_eval():
     return best_a
 
 
-def train_final():
+def train_final(gold_path=None, model_path=None):
     from sentence_transformers import SentenceTransformer
     MODELS_DIR.mkdir(parents=True, exist_ok=True)
     model = SentenceTransformer(EMBED_MODEL)
-    samples = load_dataset()
+    samples = load_dataset(gold_path)
     X, y, _ = featurize(samples, model)
     clf = _make_clf()
     clf.fit(X, y)
-    with open(MODEL_PATH, "wb") as fh:
+    out = model_path or MODEL_PATH
+    with open(out, "wb") as fh:
         pickle.dump({"clf": clf, "embed_model": EMBED_MODEL}, fh)
-    print(f"trained on {len(samples)} samples -> saved {MODEL_PATH}")
+    print(f"trained on {len(samples)} samples -> saved {out}")
 
 
 # ---------- inference (used by extract.py as the classification backend) ----------
-_PRED: dict = {}
+_PRED: dict = {}   # keyed by model path -> {clf, model}
 
 
-def load_predictor():
-    global _PRED
-    if not _PRED:
-        from sentence_transformers import SentenceTransformer
-        with open(MODEL_PATH, "rb") as fh:
+def load_predictor(model_path=None):
+    """Load (and cache) a distilled model. Defaults to the ABCL model; pass a path
+    (e.g. the JustDial model) to use a different one. Embedder is shared across models."""
+    from sentence_transformers import SentenceTransformer
+    path = model_path or MODEL_PATH
+    key = str(path)
+    if key not in _PRED:
+        with open(path, "rb") as fh:
             d = pickle.load(fh)
-        _PRED = {"clf": d["clf"], "model": SentenceTransformer(d["embed_model"])}
-    return _PRED
+        # reuse an already-loaded embedder if the model id matches
+        emb = next((p["model"] for p in _PRED.values()
+                    if p.get("embed_id") == d["embed_model"]), None)
+        emb = emb or SentenceTransformer(d["embed_model"])
+        _PRED[key] = {"clf": d["clf"], "model": emb, "embed_id": d["embed_model"]}
+    return _PRED[key]
 
 
-def predict_bases(turns: list[dict]) -> list[str]:
+def predict_bases(turns: list[dict], model_path=None) -> list[str]:
     """turns: ordered list of {speaker, text}. Returns base_intent per turn, using
     the SAME features as training (current+prev embedding, speaker, position)."""
     if not turns:
         return []
-    p = load_predictor()
+    p = load_predictor(model_path)
     model, clf = p["model"], p["clf"]
     n = len(turns)
     cur = _embed([t["text"] for t in turns], model)
@@ -224,7 +242,10 @@ def predict_bases(turns: list[dict]) -> list[str]:
 if __name__ == "__main__":
     import sys
     cmd = sys.argv[1] if len(sys.argv) > 1 else "eval"
+    dom = sys.argv[2] if len(sys.argv) > 2 else "abcl"
+    d = DOMAINS[dom]
+    print(f"[domain: {dom}]  gold={d['gold'].name}  model={d['model'].name}")
     if cmd == "eval":
-        cv_eval()
+        cv_eval(d["gold"])
     elif cmd == "train":
-        train_final()
+        train_final(d["gold"], d["model"])

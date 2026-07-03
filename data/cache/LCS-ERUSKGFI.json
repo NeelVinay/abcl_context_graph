@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-ERUS",
+  "call_id": "LCS-ERUSKGFI",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,8 +7,8 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
         "कॉल",
         "चेक",

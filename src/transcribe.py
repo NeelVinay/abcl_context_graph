@@ -20,8 +20,30 @@ from __future__ import annotations
 
 import argparse
 import re
+import signal
+import subprocess
+import tempfile
 import time
+from contextlib import contextmanager
 from pathlib import Path
+
+
+class _Timeout(Exception):
+    pass
+
+
+@contextmanager
+def _time_limit(seconds: int):
+    """Raise _Timeout if the block runs longer than `seconds` (main-thread only, Unix)."""
+    def _handler(signum, frame):  # noqa: ANN001
+        raise _Timeout(f"exceeded {seconds}s")
+    old = signal.signal(signal.SIGALRM, _handler)
+    signal.alarm(seconds)
+    try:
+        yield
+    finally:
+        signal.alarm(0)
+        signal.signal(signal.SIGALRM, old)
 
 # WhisperX / pyannote checkpoints predate torch 2.6's `weights_only=True` default.
 # These are trusted models shipped by the packages, so restore the legacy behavior.
@@ -45,12 +67,38 @@ import config  # noqa: E402
 MODEL_SIZE = "large-v3"          # `small` produces word-salad on noisy Hinglish phone audio
 LANG = "hi"                      # Hindi/Hinglish; Devanagari + English mixed
 COMPUTE_TYPE = "int8"            # CPU-friendly; CTranslate2 has no MPS path on Mac
+
+# Domain prompt: primes Whisper with the JustDial vocabulary it otherwise garbles
+# phonetically (leads/category/rating/etc.). A natural bilingual sentence works better
+# than a raw word list. Kept short (Whisper's prompt window is ~224 tokens).
+JUSTDIAL_PROMPT = (
+    "यह JustDial का customer support call है। Business owner leads, inquiry, category, "
+    "pincode, rating, reviews, feedback, contract, response को लेकर बात कर रहे हैं। "
+    "Agent customer support, ticket, area, location, renewal की help करता है।"
+)
+
 ASR_OPTIONS = {                  # tame Whisper's repetition / silence hallucinations
     "condition_on_previous_text": False,
     "no_speech_threshold": 0.6,
     "repetition_penalty": 1.15,  # discourage looping ("जी जी जी जी ...")
     "no_repeat_ngram_size": 3,   # hard-block any 3-gram from repeating
+    "initial_prompt": JUSTDIAL_PROMPT,   # (#1) domain vocabulary hint
+    "beam_size": 5,              # (#4) modest beam (8 hung on long garbled non-Hindi audio)
 }
+
+# Safety net: a single pathological call (garbled non-Hindi audio) can send Whisper's
+# decoder into a near-infinite loop and freeze the whole batch. Cap per-file wall time;
+# on timeout we skip that call and continue.
+MAX_SECONDS_PER_FILE = 600
+
+# (#2) Audio clean-up: light denoise + telephone-band filter + volume normalization,
+# applied via ffmpeg before Whisper sees the audio. Helps noisy phone recordings.
+CLEAN_AUDIO = True
+_FFMPEG_FILTER = "highpass=f=100,lowpass=f=3800,afftdn=nf=-25,dynaudnorm=g=5"
+
+# (#3) Per-file language detection: some calls are Telugu/Tamil, not Hindi — forcing
+# Hindi on them produces garble. Auto-detect per file and route the aligner accordingly.
+AUTO_LANG = True
 
 # Whisper hallucinates these on silence/noise (YouTube training artifacts) — drop a turn
 # that is essentially nothing but these phrases.
@@ -113,6 +161,20 @@ def _is_hallucination(text: str) -> bool:
     return len(leftover) < 3
 
 
+# ----------------------------- audio pre-processing (#2) -----------------------------
+def _clean_audio(path: Path):
+    """Run ffmpeg to denoise + band-filter + normalize -> 16k mono wav in a temp file.
+    Returns the temp path (caller deletes) or None if ffmpeg fails (falls back to raw)."""
+    tmp = Path(tempfile.gettempdir()) / f"_clean_{path.stem}.wav"
+    cmd = ["ffmpeg", "-y", "-i", str(path), "-af", _FFMPEG_FILTER,
+           "-ar", "16000", "-ac", "1", str(tmp)]
+    try:
+        subprocess.run(cmd, check=True, capture_output=True)
+        return tmp
+    except Exception:  # noqa: BLE001 — any ffmpeg issue -> use raw audio
+        return None
+
+
 # ----------------------------- model loading -----------------------------
 _MODELS: dict = {}
 
@@ -139,10 +201,13 @@ def load_models(model_size: str = MODEL_SIZE, gpu_device: str = "auto") -> dict:
     import whisperx
     from whisperx.diarize import DiarizationPipeline
     dev = _pick_gpu_device(gpu_device)
-    print(f"[load] WhisperX {model_size} (cpu/{COMPUTE_TYPE}, silero VAD, lang={LANG}) ...")
+    # (#3) language=None lets Whisper detect per file (Telugu/Tamil calls don't get forced to Hindi)
+    asr_lang = None if AUTO_LANG else LANG
+    print(f"[load] WhisperX {model_size} (cpu/{COMPUTE_TYPE}, silero VAD, "
+          f"lang={asr_lang or 'auto'}) ...")
     t0 = time.time()
     asr = whisperx.load_model(model_size, device="cpu", compute_type=COMPUTE_TYPE,
-                              vad_method="silero", language=LANG, asr_options=ASR_OPTIONS)
+                              vad_method="silero", language=asr_lang, asr_options=ASR_OPTIONS)
     print(f"[load]   done in {time.time() - t0:.0f}s")
     print(f"[load] Hindi alignment model on {dev} (word-level timestamps) ...")
     t0 = time.time()
@@ -166,8 +231,24 @@ def load_models(model_size: str = MODEL_SIZE, gpu_device: str = "auto") -> dict:
         diar = DiarizationPipeline(device="cpu")
     print(f"[load]   done in {time.time() - t0:.0f}s")
     _MODELS.update(whisperx=whisperx, asr=asr, diar=diar, align_dev=align_dev,
-                   align_model=align_model, align_meta=align_meta)
+                   align_model=align_model, align_meta=align_meta,
+                   aligners={LANG: (align_model, align_meta)})  # per-language aligner cache
     return _MODELS
+
+
+def _aligner_for(lang: str, models: dict):
+    """Return (model, meta) for a language, loading + caching on demand. None if
+    that language has no WhisperX aligner (caller falls back to segment-level labels)."""
+    cache = models["aligners"]
+    if lang in cache:
+        return cache[lang]
+    try:
+        m, meta = models["whisperx"].load_align_model(language_code=lang,
+                                                      device=models.get("align_dev", "cpu"))
+        cache[lang] = (m, meta)
+    except Exception:  # noqa: BLE001 — no aligner for this language
+        cache[lang] = (None, None)
+    return cache[lang]
 
 
 # ----------------------------- core steps -----------------------------
@@ -319,34 +400,46 @@ def transcribe_file(path: Path, models: dict, out_dir: Path,
         return f"skip (exists): {out_path.name}"
 
     whisperx = models["whisperx"]
-    audio = whisperx.load_audio(str(path))
+    # (#2) clean the audio first (denoise/filter/normalize); fall back to raw on any failure
+    clean_tmp = _clean_audio(path) if CLEAN_AUDIO else None
+    audio = whisperx.load_audio(str(clean_tmp or path))
     dur = len(audio) / 16000.0
 
-    result = models["asr"].transcribe(audio, batch_size=4)
-    # drop silence/noise hallucination segments BEFORE alignment so they can't bleed into turns
-    segments = [s for s in result["segments"] if not _is_hallucination((s.get("text") or "").strip())]
-    diar_df = models["diar"](audio, min_speakers=1, max_speakers=2)  # 1:1 calls
+    try:
+        with _time_limit(MAX_SECONDS_PER_FILE):   # a pathological call can't freeze the batch
+            result = models["asr"].transcribe(audio, batch_size=4)
+            lang = result.get("language", LANG)    # (#3) language Whisper detected for this file
+            # drop silence/noise hallucination segments BEFORE alignment (can't bleed into turns)
+            segments = [s for s in result["segments"]
+                        if not _is_hallucination((s.get("text") or "").strip())]
+            diar_df = models["diar"](audio, min_speakers=1, max_speakers=2)  # 1:1 calls
 
-    # Preferred path: align -> per-word speakers -> turns split at speaker changes.
-    turns, how = [], "segment"
-    if segments and models.get("align_model") is not None:
-        try:
-            aligned = whisperx.align(segments, models["align_model"], models["align_meta"],
-                                     audio, models.get("align_dev", "cpu"),
-                                     return_char_alignments=False)
-            turns = _aligned_to_turns(aligned, diar_df)
-            how = "word"
-        except Exception:  # noqa: BLE001 — fall back below
-            turns = []
-    if not turns:  # fallback: coarse segment-level assignment
-        turns = _segments_to_turns(segments, diar_df)
-        how = "segment"
+            # Align with the DETECTED language's aligner; non-aligned languages -> segment-level.
+            turns, how = [], "segment"
+            align_model, align_meta = _aligner_for(lang, models)
+            if segments and align_model is not None:
+                try:
+                    aligned = whisperx.align(segments, align_model, align_meta,
+                                             audio, models.get("align_dev", "cpu"),
+                                             return_char_alignments=False)
+                    turns = _aligned_to_turns(aligned, diar_df)
+                    how = "word"
+                except Exception:  # noqa: BLE001 — fall back below
+                    turns = []
+            if not turns:  # fallback: coarse segment-level assignment
+                turns = _segments_to_turns(segments, diar_df)
+                how = "segment"
+    except _Timeout:
+        return f"SKIPPED (timeout >{MAX_SECONDS_PER_FILE}s): {path.name}"
+    finally:
+        if clean_tmp:
+            clean_tmp.unlink(missing_ok=True)
 
     turns = [(s, _collapse_repeats(t)) for s, t in turns]   # squash Whisper loops
     turns = [(s, t) for s, t in turns if not _is_hallucination(t)]
     mapping = _map_speakers(turns, diar_df)
     out_path.write_text(_render(turns, mapping), encoding="utf-8")
-    return f"ok: {out_path.name}  ({dur:.0f}s, {len(turns)} turns, {how}-level)"
+    return f"ok: {out_path.name}  ({dur:.0f}s, {len(turns)} turns, {how}-level, lang={lang})"
 
 
 # ----------------------------- batch driver -----------------------------

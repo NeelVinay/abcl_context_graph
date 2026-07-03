@@ -1,15 +1,18 @@
-Agent: आलो आ बोलिये सर ये एको फोर्टेबल सॉलीशन में बात हो रही
-Customer: है सर आ बोलिये
-Agent: जी मैं सैनास बात कर रही हूँ कस्टेमर सोविस टीम से जर्काल डॉट कॉम एक कॉल बैक अरेंज किया है सर आपने कुछ प्रॉब्लम है सर कॉन्ट्राट में कोई हेल्प चाहिए सर कॉन्ट् लीड सही नहीं आ रही है? नहीं. क्या दिक्कत आती है सर लीड में आपको?
-Customer: मैंने इंक्वारी नहीं आ रही है, तो लीड में क्या दिक्कत आ रही है मैं? लीड आ ही नहीं है आपको? नहीं, एक आज इंक्वारी आ रही है, क्या मतलब हूँ? मैंने
-Agent: मैंने पीस्ट पैटिक्स इं उसमें से बिजनेस आपका बन रहा है या नहीं
-Customer: सर? उसमें तो भी फिलांग नहीं बना है
-Agent: कुछ भी करना नहीं हुआ
-Customer: हाँ साइजा नहीं रखा
-Agent: चलिए ये मेरे साइजा सर अभी एक तारिक से लेके आज के दिन
-Customer: तक सत्रा लीड गई है सर आपको
-Agent: एक तारिक से आज के
-Customer: दिन तक आज
-Agent: हाँ सर एक मार्च से साथ मार्च से लेटा अगर फिल्टर करूँ तो सत्रा लेड भी के लिए
-Customer: सर ओके ठीक है मैं चेक करवाता हूँ बाद
-Agent: हाँ आप इन बाद चेक कर लीजे कुछ हेल्प लगा तो बताई होंगे ओके आप काम करते हैं यहां तक कोई बंदा रखा है सर
+Customer: Hello Sir,
+Agent: we are talking about a portable solution Sir, I am talking about finance from customer service team, justdial.com Sir, you have arranged a callback, do you have any problem? Do you need
+Customer: any help in
+Agent: the contract? Sir, do you need any help in the contract? Do you have any
+Customer: issue? Sir, I don't have any need. Lead
+Agent: सही नहीं आ रही है। नहीं। क्या
+Customer: दिक्कत आती है sir lead में आपको। Madam inquiry नहीं आ रही है, lead में क्या दिक्कत है यह में। Lead आही नहीं आ रही है आपको। नहीं, एक आद inquiry आ रही है, यह क्या मतलब है। मेंदी में में 30% inquiry मिलेगी तुम कैसे
+Agent: गरेंगे इसको। इसके लिए 30% inquiry शी उसमें तो business आपका बन रहा है या नहीं sir?
+Customer: उसमें तो भी flang नहीं
+Agent: बना है। कुछ भी करना नहीं हुआ? हाँ.
+Customer: पाइशा नहीं रखा चल रहा है। यह
+Agent: मेरे साथ है। Sir, अभी एक तारिक
+Customer: से लेकर आज
+Agent: के दिन तक सत्रा
+Customer: लीड गई है sir आपको। एक
+Agent: तारिक से? आज के दिन तक। आ Yes sir, if I filter data from 1 March to 60 March, then 17 leads will be created
+Customer: sir. Okay. Okay, I will check
+Agent: it later. Yes, please check it later. If you need any help, please let me know. Okay. Do you work or do you have any staff?

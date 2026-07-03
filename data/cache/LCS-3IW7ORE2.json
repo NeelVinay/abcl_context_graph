@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-3IW7",
+  "call_id": "LCS-3IW7ORE2",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,14 +7,14 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
         "कॉल",
         "शेयर",
         "ओपन",
-        "प्रोफाइल",
-        "अपडेट"
+        "अपडेट",
+        "प्रोफाइल"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "अगले"
       ],
@@ -39,14 +39,14 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "शेयर",
         "अंदर",
         "टिकेट",
-        "लेने",
-        "out"
+        "out",
+        "लेने"
       ],
       "sentiment": null,
       "tool": null,

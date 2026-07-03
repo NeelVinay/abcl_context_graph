@@ -1,14 +1,14 @@
 {
-  "call_id": "LCS-6R5O",
+  "call_id": "LCS-6R5O6ZI2",
   "language": "hi-en",
-  "outcome": "transferred",
+  "outcome": "incomplete",
   "turns": [
     {
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_disclose_recording",
-      "base_intent": "recording_disclosure",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "लीड",
         "काम",
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -37,12 +37,12 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_terms_accept",
-      "base_intent": "accept_terms",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "डबल",
-        "पिन",
-        "कोड"
+        "कोड",
+        "पिन"
       ],
       "sentiment": null,
       "tool": null,
@@ -53,8 +53,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -65,11 +65,11 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_address",
-      "base_intent": "enter_address",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "कही",
-        "नगर"
+        "नगर",
+        "कही"
       ],
       "sentiment": null,
       "tool": null,
@@ -81,7 +81,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -92,14 +92,14 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "सब्सक्राइब",
         "चाहते",
         "एरिया",
         "दूँगा",
-        "गुड़"
+        "डबल"
       ],
       "sentiment": null,
       "tool": null,
@@ -109,9 +109,9 @@
     {
       "index": 7,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
         "सब्सक्राइब",
         "नंबर",
@@ -120,7 +120,7 @@
         "रिसीव"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "दबल दबल सब्सक्राइब कर दीजिए कि मैंने आपके साथ शेयर के टेक्स मैसेज पर रिसीव होगा प्लीज सेट कर दीजिए नंबर नंबर अगर बात करने का तरीका अच्छा लगा हो चाहिए सब्सक्राइब करें",
       "entities": []
     }

@@ -1,14 +1,14 @@
 {
-  "call_id": "LCS-BFC9",
+  "call_id": "LCS-BFC93UQJ",
   "language": "hi-en",
-  "outcome": "transferred",
+  "outcome": "raised_request",
   "turns": [
     {
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "सर्विस",
         "समय",
@@ -23,13 +23,13 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_sms_received",
-      "base_intent": "send_sms_link",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "नहीं हो रहा",
         "नहीं हो",
-        "मेसेज",
         "लेड",
+        "मेसेज",
         "रवी"
       ],
       "sentiment": "frustrated",
@@ -41,8 +41,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "call",
         "service",
@@ -59,8 +59,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "कॉल"
       ],
@@ -73,8 +73,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "लीड",
         "लास्ट",
@@ -90,14 +90,14 @@
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "कॉल",
         "उनको",
         "फोन",
         "उठा",
-        "चेंज"
+        "आईए"
       ],
       "sentiment": null,
       "tool": null,
@@ -108,8 +108,8 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_send_sms_link",
-      "base_intent": "send_sms_link",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
         "जाल"
       ],
@@ -122,8 +122,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
       "keywords": [
         "चेंज"
       ],
@@ -136,8 +136,8 @@
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
         "मिलता",
         "करा",
@@ -152,14 +152,14 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "मतलब",
         "नहीं हो",
         "call",
         "इतना",
-        "बाहर"
+        "बाहर",
+        "पैसा"
       ],
       "sentiment": "frustrated",
       "tool": null,
@@ -170,8 +170,8 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "चेक"
       ],
@@ -184,8 +184,8 @@
       "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_react_to_final_offer",
-      "base_intent": "final_offer",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
       "keywords": [
         "देख",
         "उसमें",
@@ -201,8 +201,8 @@
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "मिला",
         "चीन"
@@ -216,8 +216,8 @@
       "index": 13,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_respond",
+      "base_intent": "agent_handle",
       "keywords": [
         "मिला",
         "चीन"
@@ -231,8 +231,8 @@
       "index": 14,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_reassure_trust",
-      "base_intent": "reassure_trust",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
         "लीड",
         "उसमें",

@@ -19,9 +19,9 @@ import config
 GOLD_PATH = config.CACHE_DIR.parent / "gold" / "labels.jsonl"
 
 
-def load_gold() -> dict:
+def load_gold(path=None) -> dict:
     rows = {}
-    for line in GOLD_PATH.read_text().splitlines():
+    for line in (path or GOLD_PATH).read_text().splitlines():
         if not line.strip():
             continue
         r = json.loads(line)

@@ -1,0 +1,763 @@
+[
+  {
+    "call_id": "LCS-2LVCH3QM",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 5,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "frustrated",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 7,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 11,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 13,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 14,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 15,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 16,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 17,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 18,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 19,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": ["उद्यम certificate"],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "document_query"
+      },
+      {
+        "index": 20,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 21,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 22,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 23,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 24,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 25,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 26,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-2PN8M04A",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["फीगबैक कॉल", "कंप्रेंट", "लीड के लग़न इशूज", "रिसेंड", "क्लाइंड को सेल किये"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "base_intent": "end_call",
+        "keywords": ["थैंक यू", "हैवा ग्रेट दे"],
+        "sentiment": null,
+        "tool": null
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-3C5EN8R5",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["contact check", "nature of business", "feedback check", "लीड्स ओपन नहीं हो रहा", "नेटवर्स इशू"],
+        "sentiment": null,
+        "tool": "raise_ticket"
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "base_intent": "customer_provide_info",
+        "keywords": ["93222 वाले नंबर पे"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "base_intent": "advise_improvement",
+        "keywords": ["लीड ओपन हो रही है", "नेटवर्क करके लॉगिन कीजिए", "SMS पैक भी ले सकते हैं"],
+        "sentiment": null,
+        "tool": null
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-3ENT97UD",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["लीज नहीं आ रही है", "पिंकोड और कैटेग्री", "एरिया में changes", "Leads का count भी बढ़ेगा", "ticket manager raise"],
+        "sentiment": null,
+        "tool": "raise_ticket"
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "base_intent": "acknowledge",
+        "keywords": ["Thank you for"],
+        "sentiment": "happy",
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "base_intent": "end_call",
+        "keywords": ["Have a nice day"],
+        "sentiment": null,
+        "tool": null
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-3IW7ORE2",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "base_intent": "category_area_coverage",
+        "keywords": ["car rental", "out station", "टिकेट"],
+        "sentiment": null,
+        "tool": "raise_ticket"
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-3W62M5QM",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "base_intent": "ask_question",
+        "keywords": ["वाटसप नहीं आया", "ओपन करके नहीं देखा"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "base_intent": "ask_question",
+        "keywords": ["क्या है", "क्या देखना चाहते हैं"],
+        "sentiment": "confused",
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "base_intent": "answer_query",
+        "keywords": ["WhatsApp", "Resolution", "Clients को Resolution देखते हैं", "चेक करते हैं या नहीं"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "base_intent": "acknowledge",
+        "keywords": ["चेक किया था WhatsApp"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "base_intent": "acknowledge",
+        "keywords": ["चेक किया था"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 5,
+        "speaker": "customer",
+        "base_intent": "ask_question",
+        "keywords": ["मोबाइल नहीं", "प्रॉब्लम हो वो तो सॉल्व कर दीजिए", "पहले जो मेरी प्रॉब्लम"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "base_intent": "answer_query",
+        "keywords": ["रेजुलेशन भेज रहा है"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 7,
+        "speaker": "customer",
+        "base_intent": "acknowledge",
+        "keywords": ["आपको मालूम पड़ेगा"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-437E07M4",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "customer",
+        "base_intent": "report_no_leads",
+        "keywords": ["कंप्लेंट", "अगले लीट में मुझे रिकवरमेंट"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 2,
+        "speaker": "customer",
+        "base_intent": "agree",
+        "keywords": ["हाँ, हाँ जो"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 3,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 4,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 6,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": ["प्लम्बर्स के लादे"],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 7,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 8,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 9,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 10,
+        "speaker": "customer",
+        "base_intent": "report_no_leads",
+        "keywords": ["1 कस्टमर अटेंड माडिला"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 11,
+        "speaker": "agent",
+        "base_intent": "explain_lead_mechanics",
+        "keywords": ["कमी लीज़ करती", "प्लम्पिंग मेटीरियल डीलर्स", "एलेक्स्ट्रिक्शन"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 12,
+        "speaker": "customer",
+        "base_intent": "answer_query",
+        "keywords": ["प्लम्पिंग", "एलेक्स्ट्रिक्शन", "गीजर", "सोलर", "मोटर"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 13,
+        "speaker": "agent",
+        "base_intent": "explain_lead_mechanics",
+        "keywords": ["रॉम लीज़ परता है", "कैटेगरेज पर लीज़"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 14,
+        "speaker": "customer",
+        "base_intent": "acknowledge",
+        "keywords": ["ओके ना"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 15,
+        "speaker": "agent",
+        "base_intent": "advise_improvement",
+        "keywords": ["फोटोस वीडियोसेल अप्लोड", "रेटिंग से लाइक", "ओनलेन प्रेजेंटेक्शन", "रेटिंग करना"],
+        "sentiment": null,
+        "tool": null
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-49S5SJJ9",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 1,
+        "speaker": "agent",
+        "base_intent": "roi_complaint",
+        "keywords": ["150 leads", "लीड्स कंप्लीट का ड्रॉप होते है", "50%"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 3,
+        "speaker": "agent",
+        "base_intent": "advise_improvement",
+        "keywords": ["जस्ट डाइल वेबस्टाइट", "रूगल ले डिस्ले"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 4,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 6,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 7,
+        "speaker": "agent",
+        "base_intent": "renewal_upsell",
+        "keywords": ["जस्टाइल लो", "सर्वीसेस के चीज शुरू करना", "सब्सक्राइब करना"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 8,
+        "speaker": "customer",
+        "base_intent": "ask_question",
+        "keywords": ["ज़रूस है", "एमन सर्जेस्ट होते"],
+        "sentiment": "skeptical",
+        "tool": null
+      },
+      {
+        "index": 9,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 10,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 11,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 12,
+        "speaker": "customer",
+        "base_intent": "category_area_coverage",
+        "keywords": ["मेरी मना कैटेगरीज"],
+        "sentiment": "confused",
+        "tool": null
+      },
+      {
+        "index": 13,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["कैटेगरीज करें"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 14,
+        "speaker": "customer",
+        "base_intent": "ask_question",
+        "keywords": ["जस्ट कीवोर्ड्स"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 15,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["कैटेगरीज करेंगे", "कीवोर्ड्स"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 16,
+        "speaker": "customer",
+        "base_intent": "agree",
+        "keywords": ["मन चलता है"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 17,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      },
+      {
+        "index": 18,
+        "speaker": "customer",
+        "base_intent": "acknowledge",
+        "keywords": ["ओके"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 19,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null,
+        "suggested_intent": "unintelligible_garble"
+      }
+    ]
+  }
+]

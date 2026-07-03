@@ -1,0 +1,545 @@
+{
+  "call_id": "c6a8b74f",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello",
+        "कहिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello? जी हां जी कहिए",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते… क्या मैं INDER LAL जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello. INR?",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "बोल",
+        "aditya"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ जी, मैं प्रिया बोल रही हूँ Aditya",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "क्या नाम लिया आपने?",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मैंने INDER LAL नाम",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "सही"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां जी प्रिया राय जी सही है.",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "बोल",
+        "aditya",
+        "birla"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "INDER LAL जी, मैं प्रिया बोल रही हूँ Aditya Birla",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello. हां जी.",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "बोल",
+        "aditya",
+        "birla",
+        "बिल्कुल",
+        "जी।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बिल्कुल, INDER LAL जी। मैं प्रिया बोल रही हूँ Aditya Birla",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "सही"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां. हां जी, हां जी. हां जी, हां जी, हां जी, सही है.",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "वह Paytm वाला?",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "loan",
+        "offer",
+        "personal",
+        "capital",
+        "aditya"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अच्छा सवाल है... नहीं जी, ये Aditya Birla Capital का personal loan offer है, जो सीधे हमारी official वेबसाइट से लिंक होता है। इसमें आप बिना किसी पेमेंट ऐप के",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "interest",
+        "हज़ार",
+        "रुपए",
+        "पचास"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अच्छा क्या interest है इसका? पचास हज़ार रुपए का.",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_explain_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "interest rate",
+        "loan",
+        "offer",
+        "sms",
+        "amount"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, interest rate final approval पर depend करेगा और ये आपको last offer page पर दिखेगा, जहां आपका exact loan amount और interest rate confirm होगा। फिलहाल मैं आपको SMS से application लिंक भेजती हूँ जिससे आप process continue कर सकें। मैं SMS भेज रही हूँ, कृपया अपना फोन स्पीकर पर रखें और देखिए।",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms",
+        "कृपया",
+        "रखें",
+        "जिसमें",
+        "भेज"
+      ],
+      "sentiment": null,
+      "tool": "send_sms",
+      "text": "जी, मैंने आपके नंबर पर SMS भेज दिया है जिसमें एक लिंक होगा। कृपया अपना फोन स्पीकर पर रखें और देखिए कि आपको SMS मिला है या नहीं। क्या आपको SMS मिल गया है?",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
+      "keywords": [
+        "हूँ।",
+        "कॉल",
+        "धन्यवाद",
+        "चूंकि",
+        "समाप्त"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "चूंकि आप प्रतिक्रिया नहीं दे रहे हैं, मैं अब कॉल समाप्त कर रही हूँ। धन्यवाद!",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello हां जी.",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "loan",
+        "sms",
+        "देख",
+        "application",
+        "process"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, धन्यवाद बताने के लिए। क्या आपने SMS में लिंक देख लिया है? आप क्लिक करके अपना loan application process continue कर सकते हैं।",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है जी.",
+      "entities": []
+    },
+    {
+      "index": 22,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "लिंक पर क्लिक",
+        "apply",
+        "sms",
+        "now",
+        "कृपया"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है, कृपया SMS में मिले लिंक पर क्लिक करें और जो पेज खुलेगा, वहाँ नीचे \"Apply Now\" का बटन दिखेगा, उसे दबाएं। क्या आप लिंक खोल पाए हैं?",
+      "entities": []
+    },
+    {
+      "index": 23,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_link_opened",
+      "base_intent": "open_link",
+      "keywords": [
+        "खोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी हां जी खोल दिया.",
+      "entities": []
+    },
+    {
+      "index": 24,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_apply",
+      "base_intent": "click_apply",
+      "keywords": [
+        "apply now",
+        "apply",
+        "करें।",
+        "now",
+        "मदद"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत बढ़िया, अब आप नीचे \"Apply Now\" बटन पर क्लिक करें। इसके बाद आप login स्क्रीन पर पहुँच जाएंगे। कृपया ऐसा करें और बताएं जब आप वहाँ पहुंच जाएं ताकि मैं आपकी आगे मदद कर सकूं।",
+      "entities": []
+    },
+    {
+      "index": 25,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां जी, हां जी.",
+      "entities": []
+    },
+    {
+      "index": 26,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "apply",
+        "करें।",
+        "now",
+        "कृपया"
+      ],
+      "sentiment": null,
+      "tool": "send_otp",
+      "text": "शुक्रिया, अब आप \"Apply Now\" बटन पर क्लिक कर दीजिए। इसके बाद आप login पेज पर आ जाएंगे, जहाँ आपको अपना मोबाइल नंबर टाइप करना है और टर्म्स एंड कंडीशंस को चेक करना है। फिर \"Get OTP\" पर क्लिक करें। कृपया यह करें और बताएं जब OTP प्राप्त हो जाए।",
+      "entities": []
+    },
+    {
+      "index": 27,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_do_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "OTP आ गया जी.",
+      "entities": []
+    },
+    {
+      "index": 28,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "करें।",
+        "मदद",
+        "कृपया",
+        "verify"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत बढ़िया, कृपया OTP डालिए और \"Verify\" पर क्लिक करें। इसके बाद अगला पेज खुल जाएगा। जब आप अगला पेज खोल लें तो मुझे बताएं ताकि मैं आपकी आगे मदद कर सकूं।",
+      "entities": []
+    },
+    {
+      "index": 29,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां जी, हां जी.",
+      "entities": []
+    },
+    {
+      "index": 30,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "कृपया",
+        "verify",
+        "जाए",
+        "आगे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "शुक्रिया, अब कृपया OTP डालकर verify कर लें और बताएं जब verify हो जाए ताकि मैं आपको आगे guide कर सकूं।",
+      "entities": []
+    },
+    {
+      "index": 31,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_do_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "डाल",
+        "congratulation",
+        "eligible"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "OTP डाल दिया जी congratulation you are eligible",
+      "entities": []
+    },
+    {
+      "index": 32,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "loan",
+        "eligible"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "eligible for an intense loan up to fifties.",
+      "entities": []
+    },
+    {
+      "index": 33,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_final_offer",
+      "base_intent": "final_offer",
+      "keywords": [
+        "loan",
+        "offer",
+        "amount",
+        "final",
+        "देख"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत बढ़िया, INDER LAL जी। अब आप final loan offer पेज पर हैं जहाँ आपको आपका exact loan amount और interest rate दिखेगा। क्या आप वहाँ अपना loan offer और amount देख पा रहे हैं?",
+      "entities": []
+    },
+    {
+      "index": 34,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_final_offer",
+      "base_intent": "final_offer",
+      "keywords": [
+        "loan",
+        "offer",
+        "amount",
+        "thousand"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Thousand. Loan offer आ रहा है जी. बस. Loan offer amount. हां जी, हां जी.",
+      "entities": []
+    }
+  ]
+}

@@ -1,0 +1,367 @@
+{
+  "call_id": "77bb4be2",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते… क्या मैं DEEPAK S/O जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello",
+        "से बात"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello? हां जी, आप दीपक से बात कर रहे हो?",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "बोल",
+        "capital",
+        "aditya",
+        "birla",
+        "देर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बिल्कुल, DEEPAK S/O जी, मैं प्रिया बोल रही हूँ Aditya Birla Capital से। क्या मैं आपसे अभी कुछ देर बात कर सकती हूँ?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप बात कर सकते हैं",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "बिल्कुल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां बिल्कुल.",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms",
+        "loan",
+        "कृपया",
+        "application",
+        "process"
+      ],
+      "sentiment": null,
+      "tool": "send_sms",
+      "text": "ठीक है, DEEPAK S/O जी, मैं अभी आपको SMS भेज रही हूँ जिसमें एक लिंक होगा। उस लिंक को खोलकर आप वहीं से अपना loan application process continue कर पाएंगे जहाँ आपने छोड़ा था। कृपया अपना फोन स्पीकर पर रखें और बताएं क्या आपको SMS मिल गया है?",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_sms_received",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "मिल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां, मिल गया है.",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "खुल गया",
+        "लिंक पर क्लिक",
+        "sms",
+        "कृपया",
+        "बताएं"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "शाबाश, अब कृपया SMS में दिए गए लिंक पर क्लिक करें और बताएं कि क्या लिंक खुल गया है?",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "apply",
+        "sms",
+        "now",
+        "कृपया",
+        "देख"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, धन्यवाद। कृपया SMS में भेजा गया लिंक खोलें और बताएं कि क्या आपने होम स्क्रीन देख ली है जहाँ नीचे \"Apply Now\" का बटन दिखता है?",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "कर लिया",
+        "process"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैंने पहले process कर लिया है.",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "समझ",
+        "नंबर",
+        "मोबाइल",
+        "स्क्रीन",
+        "डालना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अच्छा, समझ गई। क्या आप लॉगिन स्क्रीन पर पहुँच गए हैं जहाँ आपको अपना मोबाइल नंबर डालना होता है?",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "दुबारा",
+        "ज़रूरत",
+        "द्वारा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैंने PhonePe के द्वारा कर लिया है. क्या दुबारा करने की ज़रूरत है?",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "loan",
+        "offer",
+        "amount",
+        "final",
+        "देख"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, अगर आपने पूरा loan application process पहले ही पूरा कर लिया है तो दुबारा करने की ज़रूरत नहीं है। क्या आप final offer page देख पा रहे हैं जहाँ आपका loan amount दिख रहा है?",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "आवाज़",
+        "sun"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं अभी आपको एक बात बताता हूं. क्या आप मेरी आवाज़ sun पा रहे हैं?",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "हूँ।",
+        "मदद",
+        "कृपया",
+        "बताएं",
+        "किस"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी हाँ, मैं आपकी आवाज़ सुन पा रही हूँ। कृपया बताएं, मैं आपकी किस तरह मदद कर सकती हूँ?",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "दूं"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं आपको बता दूं मैंने PhonePe के माध्यम से",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "कब तक",
+        "loan",
+        "approved",
+        "amount",
+        "application"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "लिया है loan app application approved complete दिखा रहा है. Dispersing loan amount pending है अभी. यह कब तक संभव हो पाएगा?",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "loan",
+        "amount",
+        "मदद",
+        "कृपया",
+        "process"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, समझ सकती हूँ आपकी बात। जब आपका KYC process पूरा हो जाएगा और loan approval confirm हो जाएगा, तो loan amount आपके बैंक अकाउंट में आमतौर पर चौबीस से अड़तालीस घंटे के अंदर ट्रांसफर हो जाता है। कृपया थोड़ा धैर्य रखें, अगर कोई और मदद चाहिए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_final_offer",
+      "base_intent": "final_offer",
+      "keywords": [
+        "loan",
+        "application",
+        "complete",
+        "approval"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Loan application approval complete हो गया है. इसका मतलब सब कुछ हो गया है.",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_final_offer",
+      "base_intent": "final_offer",
+      "keywords": [
+        "final offer",
+        "loan",
+        "offer",
+        "amount",
+        "final"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, बिल्कुल सही समझा आपने। इसका मतलब आपका loan application पूरी तरह से approve हो चुका है और अब loan amount जल्द ही आपके बैंक अकाउंट में आ जाएगा। क्या आप final offer page देख पा रहे हैं जहाँ आपका loan amount दिखाई दे रहा है?",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_final_offer",
+      "base_intent": "final_offer",
+      "keywords": [
+        "loan",
+        "amount",
+        "application",
+        "complete",
+        "हज़ार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, approval loan amount पचास हज़ार, loan आप application approval complete लिखा हुआ है, loan amount में लिखा हुआ है कि दो दिन के बाद",
+      "entities": []
+    }
+  ]
+}

@@ -1,14 +1,14 @@
 {
-  "call_id": "LCS-1FT7",
+  "call_id": "LCS-1FT7VNHC_1",
   "language": "hi-en",
-  "outcome": "transferred",
+  "outcome": "incomplete",
   "turns": [
     {
       "index": 0,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "recording_disclosure",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [
         "कॉल",
         "अल्लो",
@@ -24,14 +24,14 @@
       "index": 1,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "प्रॉब्लम",
         "कस्टमर",
         "उन्होंने",
-        "सपोर्ट",
-        "सर्विस"
+        "सर्विस",
+        "सपोर्ट"
       ],
       "sentiment": null,
       "tool": null,
@@ -42,8 +42,8 @@
       "index": 2,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
       "keywords": [
         "रिगार्डिंग",
         "हफ्ता",
@@ -58,14 +58,14 @@
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "लास्ट",
         "डिपार्टमेंट",
         "kyc",
         "डॉक्यूमेंट",
-        "कोड़ा"
+        "कोड़"
       ],
       "sentiment": null,
       "tool": null,
@@ -76,8 +76,8 @@
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge_transfer",
-      "base_intent": "transfer_to_rm",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "kyc",
         "पेंडिंग",
@@ -93,8 +93,8 @@
       "index": 5,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -105,8 +105,8 @@
       "index": 6,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "अलवा"
       ],

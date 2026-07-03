@@ -1,0 +1,666 @@
+[
+  {
+    "call_id": "LCS-EE1V7FH9",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "base_intent": "greeting",
+        "keywords": ["कस्टमर्स सर्विष्ट"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "base_intent": "report_no_leads",
+        "keywords": ["लीड से तो कम आ रही है"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["details चेक करने", "profile को देख पाऊंगा", "problem हो रही है"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 5,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "base_intent": "guide_customer_support",
+        "keywords": ["सपोर्ट ऑप्शन"],
+        "sentiment": null,
+        "tool": null
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-EOD9EHB9",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "base_intent": "explain_lead_mechanics",
+        "keywords": ["फोन सर्चेस", "वेब सर्चेस", "पोजिशन", "एन्क्वारी", "कैटेगरी"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "base_intent": "ask_question",
+        "keywords": ["लाओ अगर मेरा"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "base_intent": "end_call",
+        "keywords": ["बहुत बहुत धन्यवाद"],
+        "sentiment": null,
+        "tool": null
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-F1GLR102",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "base_intent": "greeting",
+        "keywords": ["good afternoon", "welcome to", "customer service team", "am i audible"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "base_intent": "end_call",
+        "keywords": ["थैंक यू"],
+        "sentiment": null,
+        "tool": null
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-FE7457BG",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "base_intent": "greeting",
+        "keywords": ["हेलो", "गुड़ाउटर"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "base_intent": "category_area_coverage",
+        "keywords": ["लोकेशन चेंजे", "मा एरिया", "सर्विस एरिया", "पिन कोट"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "base_intent": "answer_query",
+        "keywords": ["टेन किलोमेटर लोपल हो जाएँगे"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 5,
+        "speaker": "customer",
+        "base_intent": "acknowledge",
+        "keywords": ["लोपल हो जाएँगे", "हाँ"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 7,
+        "speaker": "customer",
+        "base_intent": "agree",
+        "keywords": ["हो जाएँगे मेको", "अगे"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 11,
+        "speaker": "customer",
+        "base_intent": "acknowledge",
+        "keywords": ["आ जाता है देखने में", "उपलब्ध हुआ"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["आज आपडेज यह सुना हूँ", "चेक करें"],
+        "sentiment": null,
+        "tool": null
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-FEM8RGOR",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "base_intent": "greeting",
+        "keywords": ["गुड़ी इवनिंग", "वेलकम"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "base_intent": "report_wrong_leads",
+        "keywords": ["बेकार बेकार लीड आ रहा है", "एरिया"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "base_intent": "ask_question",
+        "keywords": ["लीड्स आपको गलर कैसे आ रही है"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 5,
+        "speaker": "customer",
+        "base_intent": "report_wrong_leads",
+        "keywords": ["वेकार वेकार नहीं जा रहा है", "गर्वर आ रहा है", "पहले तो बढ़िया आता था"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["recent lead का नाम बताइ ये जो गलत आई थी"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 7,
+        "speaker": "customer",
+        "base_intent": "roi_complaint",
+        "keywords": ["चार महीने से ऐसा आ रहा", "office में हो नहीं हूँ"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "base_intent": "acknowledge",
+        "keywords": ["अच्छा"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "base_intent": "roi_complaint",
+        "keywords": ["महीने से कोई काम ही नहीं"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "base_intent": "ask_question",
+        "keywords": ["आपके डिटेल्स दो"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 11,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "base_intent": "ask_question",
+        "keywords": ["उसमें क्या है लपड़ा"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 13,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 14,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["टेंजिस कर रहा हूँ"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 15,
+        "speaker": "customer",
+        "base_intent": "ask_question",
+        "keywords": ["मेरा नाम उपर है", "फिर ऐसे क्यों आ रहा है", "पहले तो बढ़िया आता था"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 16,
+        "speaker": "agent",
+        "base_intent": "clarify_repeat",
+        "keywords": ["आवाज बड़ा बड़ नहीं आ रहा है"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 17,
+        "speaker": "customer",
+        "base_intent": "clarify_repeat",
+        "keywords": ["थोड़ा देखिए", "सुन आवाज पर"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 18,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 19,
+        "speaker": "customer",
+        "base_intent": "ask_question",
+        "keywords": ["प्रोफाइल कर दीजिए न"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 20,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["रिफाइस करूँगी", "नंबर भी देजिए"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 21,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 22,
+        "speaker": "agent",
+        "base_intent": "guide_customer_support",
+        "keywords": ["कस्टमर सपोर्ट ऑप्शन", "concern team within 24 hours", "concern हो तो"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 23,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-FICV2ZJF",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "customer",
+        "base_intent": "greeting",
+        "keywords": ["Hello"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "agent",
+        "base_intent": "greeting",
+        "keywords": ["Good afternoon", "Just Dial Customer Service"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "customer",
+        "base_intent": "report_wrong_leads",
+        "keywords": ["लीड गलत आ रहा है", "गलत नंबर आ रहा है", "रॉंग नंबर"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 3,
+        "speaker": "agent",
+        "base_intent": "ask_question",
+        "keywords": ["कॉबलम है आपको", "आवाजी आ रही है मेरी"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 4,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-FPJ7K4PV_1",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "agent",
+        "base_intent": "greeting",
+        "keywords": ["हलो", "इप्पुड आडबल है"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "customer",
+        "base_intent": "acknowledge",
+        "keywords": ["हाँ सा", "एक अन इश्यों है"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 3,
+        "speaker": "agent",
+        "base_intent": "ask_question",
+        "keywords": ["ओका लीड आच्छा है आपको"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 4,
+        "speaker": "customer",
+        "base_intent": "acknowledge",
+        "keywords": ["इरो जोड़चिल अर्थो", "ओके"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 6,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 7,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 8,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 9,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 10,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 11,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 12,
+        "speaker": "customer",
+        "base_intent": "ask_question",
+        "keywords": ["पूर्ट लेट", "आपको इन्हें पूर्ट लेट करें"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 13,
+        "speaker": "agent",
+        "base_intent": "explain_lead_mechanics",
+        "keywords": ["यूजर रिक्वाइमेंट सर्चेस", "ऑटोमेटिका फॉरवेड होता है", "पोजीशन", "कैटेगीरेस"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 14,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 15,
+        "speaker": "agent",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 16,
+        "speaker": "customer",
+        "base_intent": "cancel_churn",
+        "keywords": ["पैकेज इसको नहीं"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 17,
+        "speaker": "agent",
+        "base_intent": "advise_improvement",
+        "keywords": ["कैटेगीरेस", "अपडेट", "approve", "normal message"],
+        "sentiment": null,
+        "tool": null
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-FPO5U0LA",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "base_intent": "greeting",
+        "keywords": ["कस्टमर सेविस्ट", "वेलकम"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "base_intent": "other",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "base_intent": "advise_improvement",
+        "keywords": ["कैटेग्री", "लीड रागान एंट", "इमेडियट जो रेस्पॉंड", "लिंक पर लॉगिन", "थैंक यू"],
+        "sentiment": null,
+        "tool": null
+      }
+    ]
+  }
+]

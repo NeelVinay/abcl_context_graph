@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-7SJY",
+  "call_id": "LCS-7SJY3LJO",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,11 +7,11 @@
       "index": 0,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "contact",
         "चाहते",
+        "contact",
         "बंद"
       ],
       "sentiment": null,
@@ -23,8 +23,8 @@
       "index": 1,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "कॉल",
         "call",
@@ -41,11 +41,11 @@
       "index": 2,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "लगाया",
         "वालों",
+        "लगाया",
         "बैंक"
       ],
       "sentiment": null,
@@ -57,8 +57,8 @@
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_personal_details",
-      "base_intent": "personal_details",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "बिल्कुल",
         "पूछ"
@@ -72,8 +72,8 @@
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_provide_org_name",
-      "base_intent": "organization_name",
+      "intent": "customer_acknowledge",
+      "base_intent": "resolution",
       "keywords": [
         "कॉल",
         "टीम",
@@ -91,7 +91,7 @@
       "speaker": "agent",
       "type": "action",
       "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "प्लीज"
       ],

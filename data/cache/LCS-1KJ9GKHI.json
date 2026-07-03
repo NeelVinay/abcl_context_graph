@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-1KJ9",
+  "call_id": "LCS-1KJ9GKHI",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -8,7 +8,7 @@
       "speaker": "agent",
       "type": "action",
       "intent": "agent_greet",
-      "base_intent": "greeting",
+      "base_intent": "open",
       "keywords": [
         "request",
         "issue",
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "प्रॉब्लम",
         "inquiry",
@@ -43,8 +43,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "मालो"
       ],
@@ -69,8 +69,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "चेक",
         "लीड",
@@ -87,8 +87,8 @@
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
       "keywords": [
         "लीड",
         "सब्सक्राइब",
@@ -105,13 +105,13 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "लीड",
         "उसको",
-        "search",
         "जाए",
+        "search",
         "जिसके"
       ],
       "sentiment": null,
@@ -123,8 +123,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_address_error",
-      "base_intent": "address_error",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "नहीं हो",
         "देने",
@@ -139,8 +139,8 @@
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "चेक",
         "बिजनेस",
@@ -157,8 +157,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_done",
-      "base_intent": "report_done",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "वीडियो"
       ],
@@ -171,14 +171,14 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
         "कॉल",
         "शेयर",
         "रेटिंग",
         "प्लीज",
-        "वेलकम"
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": null,

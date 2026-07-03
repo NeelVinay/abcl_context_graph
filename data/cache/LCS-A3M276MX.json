@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-A3M2",
+  "call_id": "LCS-A3M276MX",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,11 +7,9 @@
       "index": 0,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_done",
-      "base_intent": "report_done",
-      "keywords": [
-        "हो गया"
-      ],
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "हो गया",
@@ -21,8 +19,8 @@
       "index": 1,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_send_sms_link",
-      "base_intent": "send_sms_link",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -33,8 +31,8 @@
       "index": 2,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_done",
-      "base_intent": "report_done",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -45,14 +43,14 @@
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_udyam",
-      "base_intent": "udyam_verification",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "शेयर",
         "business",
         "update",
-        "msme",
-        "address"
+        "address",
+        "msme"
       ],
       "sentiment": null,
       "tool": null,
@@ -63,8 +61,8 @@
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_provide_address",
-      "base_intent": "enter_address",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
       "keywords": [
         "address"
       ],
@@ -77,8 +75,8 @@
       "index": 5,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_wait",
-      "base_intent": "wait_hold",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "चेक",
         "पड़ेगा",
@@ -94,7 +92,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "base_intent": "question",
       "keywords": [
         "दिखा",
         "सिटी"
@@ -108,8 +106,8 @@
       "index": 7,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "दिखा",
         "नगर"
@@ -123,8 +121,8 @@
       "index": 8,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_request_wait",
-      "base_intent": "wait_hold",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
       "keywords": [
         "चेक",
         "कोंटेक्ट"
@@ -138,8 +136,8 @@
       "index": 9,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "ऐसा",
         "लीज",
@@ -156,8 +154,8 @@
       "index": 10,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "बिल"
       ],
@@ -170,14 +168,14 @@
       "index": 11,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_udyam",
-      "base_intent": "udyam_verification",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "उद्यम",
         "ऑप्शन",
         "समझ",
         "लीज",
-        "पॉइंट"
+        "पॉइंट",
+        "address"
       ],
       "sentiment": null,
       "tool": null,
@@ -200,14 +198,14 @@
       "index": 13,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
         "जाए",
-        "ticket",
         "whatsapp",
+        "ticket",
         "provide",
-        "दीजेगा"
+        "same"
       ],
       "sentiment": null,
       "tool": null,

@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-GOQS",
+  "call_id": "LCS-GOQS4UJO",
   "language": "hi-en",
   "outcome": "raised_request",
   "turns": [
@@ -7,8 +7,8 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_disclose_recording",
-      "base_intent": "recording_disclosure",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
         "कॉल",
         "इश्यू",
@@ -23,8 +23,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "लेट"
       ],
@@ -38,7 +38,7 @@
       "speaker": "agent",
       "type": "action",
       "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "लेट"
       ],
@@ -52,7 +52,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "लेट"
       ],
@@ -65,14 +65,14 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_reassure_trust",
-      "base_intent": "reassure_trust",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "चेक",
         "सब्सक्राइब",
         "इतना",
-        "service",
-        "ऐसे"
+        "ऐसे",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -83,8 +83,8 @@
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "काम",
         "टाइम",
@@ -100,8 +100,8 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_reassure_trust",
-      "base_intent": "reassure_trust",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "कॉल",
         "लीड",

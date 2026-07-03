@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-B0WF",
+  "call_id": "LCS-B0WF5P4J",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,8 +7,8 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_wait",
-      "base_intent": "wait_hold",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
         "जिसके",
         "डॉट",
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_do_otp",
-      "base_intent": "mobile_otp",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "अप्शन"
       ],
@@ -39,14 +39,14 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_guide_open_link",
-      "base_intent": "open_link",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "चेक",
         "देख",
         "शेयर",
-        "देखिए",
-        "लाइन"
+        "लाइन",
+        "देखिए"
       ],
       "sentiment": null,
       "tool": null,
@@ -58,7 +58,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -69,8 +69,8 @@
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_done",
-      "base_intent": "report_done",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -81,14 +81,14 @@
       "index": 5,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_clarify",
-      "base_intent": "ask_question",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "कॉल",
         "चेक",
         "call",
-        "देखिए",
-        "लाइन"
+        "लाइन",
+        "देखिए"
       ],
       "sentiment": null,
       "tool": null,
@@ -100,7 +100,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "base_intent": "question",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -111,8 +111,8 @@
       "index": 7,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_wait",
-      "base_intent": "wait_hold",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "मेल",
         "लीचे"
@@ -142,8 +142,8 @@
       "index": 9,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "कॉल",
         "चेक",

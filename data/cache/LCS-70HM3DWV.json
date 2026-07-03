@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-70HM",
+  "call_id": "LCS-70HM3DWV",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,14 +7,14 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
         "कॉल",
         "देख",
         "लाइन",
-        "कस्टमर",
-        "बिजनेस"
+        "बिजनेस",
+        "कस्टमर"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "कॉल",
         "thank",
@@ -43,14 +43,14 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_wait",
-      "base_intent": "wait_hold",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "एक मिनट",
-        "wait",
         "कॉल",
         "चेक",
-        "सब्सक्राइब"
+        "सब्सक्राइब",
+        "देख",
+        "शेयर"
       ],
       "sentiment": null,
       "tool": null,

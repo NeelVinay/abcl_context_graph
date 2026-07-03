@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-89OM",
+  "call_id": "LCS-89OM2PGT",
   "language": "hi-en",
   "outcome": "raised_request",
   "turns": [
@@ -7,8 +7,8 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "कॉल",
         "चेक",
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "समझ",
         "पूर्ण"
@@ -40,8 +40,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_reassure_trust",
-      "base_intent": "reassure_trust",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "कॉल",
         "चेक",

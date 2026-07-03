@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-1V8M",
+  "call_id": "LCS-1V8M6KFU",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,11 +7,11 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_address",
-      "base_intent": "enter_address",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
-        "लेंगे",
         "com",
+        "लेंगे",
         "जस्टाइल"
       ],
       "sentiment": null,
@@ -23,11 +23,11 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_provide_business_details",
-      "base_intent": "business_details",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
-        "लेंगे",
         "com",
+        "लेंगे",
         "जस्टाइल"
       ],
       "sentiment": null,
@@ -39,8 +39,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_address",
-      "base_intent": "enter_address",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "com",
         "जस्टाइल"
@@ -54,8 +54,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_query",
-      "base_intent": "answer_query",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "लेंगे",
         "याद",
@@ -70,8 +70,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "पेर"
       ],
@@ -99,8 +99,8 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "कॉल",
         "टीम",
@@ -117,8 +117,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_query",
-      "base_intent": "answer_query",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "कॉल",
         "मना",
@@ -135,8 +135,8 @@
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "टाइम",
         "उन्होंने",
@@ -167,13 +167,13 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "टाइम",
         "उन्होंने",
-        "आगे",
         "लेंगे",
+        "आगे",
         "वीडियो"
       ],
       "sentiment": null,
@@ -197,8 +197,8 @@
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_terms_accept",
-      "base_intent": "accept_terms",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -223,8 +223,8 @@
       "index": 14,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_reassure_trust",
-      "base_intent": "reassure_trust",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "लीड",
         "इनके",
@@ -257,8 +257,8 @@
       "index": 16,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "सब्सक्राइब",
         "हूँ।",
@@ -275,8 +275,8 @@
       "index": 17,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_address_error",
-      "base_intent": "address_error",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "कोड़े"
       ],
@@ -289,8 +289,8 @@
       "index": 18,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -301,8 +301,8 @@
       "index": 19,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_skip_udyam",
-      "base_intent": "skip_udyam",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "नहीं हो",
         "बेस्ट",
@@ -341,8 +341,8 @@
       "index": 22,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -353,8 +353,8 @@
       "index": 23,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -365,8 +365,8 @@
       "index": 24,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "लेंगे",
         "बेस्ट"
@@ -380,8 +380,8 @@
       "index": 25,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "इदे",
         "इप्पो"
@@ -395,8 +395,8 @@
       "index": 26,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "इदे"
       ],
@@ -409,8 +409,8 @@
       "index": 27,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "इदे"
       ],
@@ -423,12 +423,12 @@
       "index": 28,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "थैंक",
-        "फॉर",
-        "इन्होंने"
+        "इन्होंने",
+        "फॉर"
       ],
       "sentiment": null,
       "tool": null,

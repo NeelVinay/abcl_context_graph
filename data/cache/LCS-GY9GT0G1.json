@@ -1,0 +1,557 @@
+{
+  "call_id": "LCS-GY9GT0G1",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "open",
+      "keywords": [
+        "good",
+        "morning"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Good morning,",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "open",
+      "keywords": [
+        "com",
+        "welcome"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "welcome to JCI.com. इक्राजिश्चाई.com कस्टेमल स्पोर्ट की महाँ में",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "open",
+      "keywords": [
+        "लीड",
+        "बिजनेस",
+        "actually",
+        "टुड़े",
+        "मुबाइल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "एलपी टुड़े. Actually, मेरा बिजनेस है खांडोस्टर में, नाई मुबाइल में. मुझे लीड",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "लीड",
+        "हूँ।",
+        "आउट",
+        "बाहर",
+        "शेट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आता है दाईशियार बुरी वाली बाहर बाहर पीड़ रहा हूँ। आउट आफ पुरियर लीड मुझे कॉल्� 6495 शेट करें SP Design Studio का अल्टा पेरिया लिडा रहे",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "सेट",
+        "कहीं"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हैं हाँ मुझे नई मुबई कहीं जिसे ये नहीं है सेट",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "लीड",
+        "बोल",
+        "आउट",
+        "सॉरी",
+        "मुंबई"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "करते हैं आप मुझे क्रिशन नाम बता सकते हैं जो लीड आपका आउट अफ मुंबई चाहिए सॉरी क्या बोल रहा हूँ एक क्रिशन लीड का नाम बताइए जो आपका आउट अफ मुंबई चाहिए हम",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "देरी से हम देरी",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "जान",
+        "आउट",
+        "सेट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "से आउट अफ एजिया से आ रही है सेट करते हैं ह आपका नाम जान सकते हैं?",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "लाइन"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "चंकेट पादल वो मेरे लाइन पर है यूएट्स अच्छा अच्छा",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "अच्छा अच्छा",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "ब्लैंक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अच्छा अच्छा आपको ब्लैंक है ना, यह तो फ़ाउस है, यह तो ब्लैंक है ना, और",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "कॉल",
+        "चेक",
+        "उसमें",
+        "आउट",
+        "देखो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ने फीड में से आपको आड़ी आउट अप एरिया आ रही है तो मैं चेक करती हूँ एक मन्त में ही अंदेरी से जाइए और स्टाइलिट चाइफिज अच्छे में देखो क्या होता है JudgeDial आपको तीन सेट से प्रमोट करता है सब वेबसाइट सर्च, कॉल सर्च और अप्लीकेशन सर्च तो उसमें क्या होता है अगर हमारे पास कोई कॉल करके आपके डिटेल्स ले राइट JudgeDial में भी कॉल कर",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "concern"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रहा है concern ये",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "कॉल",
+        "चेक",
+        "lead",
+        "category",
+        "ताकि"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "categories के लिए आपकी जबी category तो जजजार में इसे पहले कॉल करके मैं बिल्कुल जी आपको कौन से area में चाहिए, क्या चाहिए exactly ताकि जजजार तो नहीं चाहिए इनका client और user दोनों upset हैं हमसे लेकिन website से जो lead आ रही है आपको वो lead ना थोड़ी मतलब user चेक नहीं",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
+      "keywords": [
+        "लगा",
+        "profile"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "करता है उनका profile अच्छा लगा होगा जि",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "देखे",
+        "response",
+        "प्रॉपर",
+        "मिलेगा",
+        "कितनी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं प्रॉपर कर रही हूँ आपके लिए कितनी पिंकोड मार्क करके आप देखे आपको प्रॉपर response मिलेगा",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "जाए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अभी मुझे अभी है ना फनवेल, हारगर, चलोजा, वासी, इजर के ही एरे जाए है, उलवा, इजर के ही मेरे को",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "जाए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ले जाए जाए ठीक",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "प्रॉपर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "है मैं प्रॉपर",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "मिल",
+        "request",
+        "response",
+        "जाए",
+        "करूँगी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "क ओके मैं request करूँगी आपके चीज में वो सारे pin code already updated है मैं changes करने के बाद देखती हूँ आपको proper response मिल जाए या",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "काम",
+        "इतना",
+        "उससे",
+        "code",
+        "pin"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं बट मुझे इतना चीज है कि मुझे जो pin code add है ना मुझे उससे ही काम",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
+      "keywords": [
+        "भाग"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आना तो मुझे भाग",
+      "entities": []
+    },
+    {
+      "index": 22,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "मत उपाम दो मैं उस अलपा",
+      "entities": []
+    },
+    {
+      "index": 23,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं क्या पहूँगा",
+      "entities": []
+    },
+    {
+      "index": 24,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_respond",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "बैक",
+        "दोनों",
+        "दूसरा",
+        "company",
+        "same"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जो ओके सर और और मेरा same company था नेरे में पहले जो है अभी मेरा दूसरा बैक जो खोला हूँ जो है address change हुआ है मेरा दोनों merge हो गया",
+      "entities": []
+    },
+    {
+      "index": 25,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "उसमें",
+        "ताकि",
+        "दोनों",
+        "दूसरा",
+        "address"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "है दोनों merge हो गया है हाँ ठीक है ताकि दूसरा address उसमें करोगे तो वो हो जाएगा है",
+      "entities": []
+    },
+    {
+      "index": 26,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "देख",
+        "actually",
+        "address",
+        "डाउन",
+        "नया"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं नहीं actually अभी मैं देख रहा हूँ जो है कि जो मेरा नया address है नहीं � मेरी वाले को डाउन करना",
+      "entities": []
+    },
+    {
+      "index": 27,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "लेके",
+        "डाउन",
+        "चार्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "है अब वो हमें एक स्क्रीन चार्ट लेके मुंबईएडर एड जर्जजर्ग डाउन कम पर",
+      "entities": []
+    },
+    {
+      "index": 28,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "शेयर",
+        "अच्छी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "शेयर कर सकते हो अच्छी मैं नंद्रम",
+      "entities": []
+    },
+    {
+      "index": 29,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask",
+      "base_intent": "question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "से बात किया था वो वो रिक्वेंट",
+      "entities": []
+    },
+    {
+      "index": 30,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "जाने मुझे है",
+      "entities": []
+    },
+    {
+      "index": 31,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "बोल",
+        "कीजिए",
+        "वेट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बोल रहे थे ठीक है तो आप थोड़ा वेट कीजिए",
+      "entities": []
+    },
+    {
+      "index": 32,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "लीड"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "वो हो जा� और लीड बहुत कम आ रही जो है, बहुत कम जो है।",
+      "entities": []
+    },
+    {
+      "index": 33,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "लीड",
+        "कैसा",
+        "फ्लो",
+        "मार्केट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कैसा फ्लो रहेगा मार्केट का वैसे, आपको लीड भी आएगी?",
+      "entities": []
+    },
+    {
+      "index": 34,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ, वो बात चाहिए, मैंने कुछ प्रेंड लोग हैं,",
+      "entities": []
+    },
+    {
+      "index": 35,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask",
+      "base_intent": "question",
+      "keywords": [
+        "उनको",
+        "सबसे",
+        "स्कूल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "उनको जो है, स्कूल क्वांटिस्टर के लिए सबसे टेंशन करने जाता रहा था जो है। ठीक है,",
+      "entities": []
+    }
+  ]
+}

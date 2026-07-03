@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-8AF3",
+  "call_id": "LCS-8AF34JJN",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,8 +7,8 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_disclose_recording",
-      "base_intent": "recording_disclosure",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
         "रिगार्डिंग",
         "कॉंट्राक्ट",
@@ -23,8 +23,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "इश्यू",
         "फेस",
@@ -39,8 +39,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_wait",
-      "base_intent": "wait_hold",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "चेक",
         "इश्यू",
@@ -57,8 +57,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [],
       "sentiment": null,
       "tool": null,

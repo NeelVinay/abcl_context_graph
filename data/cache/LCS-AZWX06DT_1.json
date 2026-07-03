@@ -1,20 +1,20 @@
 {
-  "call_id": "LCS-AZWX",
+  "call_id": "LCS-AZWX06DT_1",
   "language": "hi-en",
-  "outcome": "transferred",
+  "outcome": "incomplete",
   "turns": [
     {
       "index": 0,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_greet",
-      "base_intent": "greeting",
+      "base_intent": "open",
       "keywords": [
-        "से बात",
         "कस्टमर",
         "रिक्वेस्ट",
         "मार्केटिंग",
-        "बोलिए"
+        "बोलिए",
+        "स्पा"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "पता",
         "हमको"
@@ -40,13 +40,14 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "call",
         "request",
         "available",
-        "मार"
+        "मार",
+        "exactly"
       ],
       "sentiment": null,
       "tool": null,
@@ -57,8 +58,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_react_to_offer",
-      "base_intent": "present_offer",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "लीड",
         "just",
@@ -73,8 +74,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_send_sms_link",
-      "base_intent": "send_sms_link",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "लीड",
         "मिल",
@@ -90,8 +91,8 @@
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "कॉल"
       ],
@@ -104,8 +105,8 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "लीड"
       ],
@@ -119,7 +120,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -129,15 +130,15 @@
     {
       "index": 8,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "लीड",
         "रिपोर्ट"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "उसका रिपोर्ट मंगवाने के लिए जो लीड",
       "entities": []
     },
@@ -145,8 +146,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_do_otp",
-      "base_intent": "mobile_otp",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "नहीं हो",
         "नंबर",
@@ -161,8 +162,8 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_end_call",
-      "base_intent": "end_call",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "कॉल"
       ],
@@ -175,8 +176,8 @@
       "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "मैनेजर"
       ],
@@ -189,8 +190,8 @@
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "जानना",
         "जानते"

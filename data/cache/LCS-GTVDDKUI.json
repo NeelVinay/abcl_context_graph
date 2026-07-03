@@ -1,0 +1,243 @@
+{
+  "call_id": "LCS-GTVDDKUI",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "share",
+        "check",
+        "whatsapp",
+        "day",
+        "message"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बारा ठेड़ तो same day पे हमने आपको WhatsApp पे एक message share किया था मैं, तो वो WhatsApp message आपको receive हुआ था मैं, आपने check किया था?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask",
+      "base_intent": "question",
+      "keywords": [
+        "share"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ, मेरी share आया था.",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
+      "keywords": [
+        "उसने",
+        "resolution",
+        "out",
+        "per"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Okay, तो उसने resolution था, तो आपने वो resolution read out किया था, मतलब वो जो resolution था, satisfaction था, as per you?",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "पूरा",
+        "मैसेज",
+        "rate",
+        "नॉर्मल",
+        "लेड"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Excellent, मैंने चाहिए पूरा rate नहीं किया. Okay. नॉर्मल मैसेज था। हाँ, लेड इन अलाव, 73, यही था वो। और तुस्ट नहीं था।",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
+      "keywords": [
+        "मैम",
+        "था।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओके, सो एस पर यो कम्टेड वो सेटिस्पेक्ट फ्री था। था, मैम, आपकी अकॉर्डी या नहीं था।",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask",
+      "base_intent": "question",
+      "keywords": [
+        "था।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तोरी, मेरे अकॉर्डी भी था।",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
+      "keywords": [
+        "मैसेज",
+        "मिला",
+        "अकॉर्डिंग"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपके अकॉर्डिंग सैटिस्पाइट थे न आप सैटिस्पाइट थे न जो भी आपको रेजिलेशन मिला था आंसर मिला था वायर मैसेज",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "कितना",
+        "रेजिस्टर",
+        "कम्प्लेन"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं नहीं वो तो मेरे को कुछ भी नहीं आया है वो जर कितना आया है कि आप तो मतलब ये कम्प्लेन रेजिस्टर",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "की आ गया बस नही",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
+      "keywords": [
+        "हेलो",
+        "आवाज"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हेलो आपका आवाज आ रही है मेरी इसके",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "मैसेज",
+        "आवाज",
+        "कम्प्लेन",
+        "माम",
+        "आईडी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "लिए येस माम अभी आपकी आवाज स्लीरली आ रही था फिर उसकी कम्प्लेन आईडी था उसके बाद और कोई मैसेज नहीं",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
+      "keywords": [
+        "शेयर",
+        "मैसेज",
+        "नीचे",
+        "नॉर्मल",
+        "कम्प्लेन"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आया है फिर आपकी कम्प्लेन आईडी आईडी है हाँ बस में कोई नॉर्मल सा मैसेज है मैं बता देती हू और उसके एलावा नीचे रिसाइड इस अपडेजी शेयर इन अ एडफांस विप यॉर कम्युनिकेशन",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "रिसाइड है ओके तो इसके एलावा कोई नैक्सर तो मैं नहीं है ओके तो एक दिन ये आपको शो कर रहा था ये आपको बता रहा था कि आपने उसके दिन में",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "पता",
+        "उतना",
+        "आगा",
+        "आजा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपको इतन तो सगी रहा है क्योंकि इस तरह से मैंने पहले जो मैंने आफर लिया था उतना तो उतना उतनी अच्छा आजा पता है मैंने भी तो बहुत आगा प्राइज कर लिया है ओके",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "शेयर",
+        "फीडबैक",
+        "जानना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है मैं तो मैं एजन फीडबैक शेयर कहती हूँ यह जानना था यह ठीक है",
+      "entities": []
+    }
+  ]
+}

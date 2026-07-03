@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-D4BD",
+  "call_id": "LCS-D4BD3YDX",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -8,7 +8,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_greet",
-      "base_intent": "greeting",
+      "base_intent": "open",
       "keywords": [
         "अल्लो"
       ],
@@ -21,8 +21,8 @@
       "index": 1,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "कॉल",
         "इन्हां"
@@ -36,8 +36,8 @@
       "index": 2,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "देखेंगे",
         "इन्हों"
@@ -51,8 +51,8 @@
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "देखेंगे",
         "नोड़ता",
@@ -80,8 +80,8 @@
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "नेंगे"
       ],
@@ -94,8 +94,8 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -106,8 +106,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "इसको",
         "नोड़ता"
@@ -121,8 +121,8 @@
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "मड़म"
       ],
@@ -149,8 +149,8 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "अरेंच"
       ],
@@ -177,8 +177,8 @@
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -189,8 +189,8 @@
       "index": 13,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_skip_udyam",
-      "base_intent": "skip_udyam",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "शुरू",
         "अपलोड"

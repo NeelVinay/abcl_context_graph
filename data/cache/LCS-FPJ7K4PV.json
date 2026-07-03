@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-FPJ7",
+  "call_id": "LCS-FPJ7K4PV",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,8 +7,8 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
         "चाहता",
         "पंपी"

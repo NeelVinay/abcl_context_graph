@@ -1,15 +1,18 @@
-Agent: हेलो हेलो गुड़ेवी साह। पूर्णी कौन? साह। साह। मेरे नाम प्रसंद है। हाँ। साह। क्या हो? आ बोलो साह। कोई चीज़ी है की साह। कोई चीज़ी है की साह। कोई चीज़ी है की साह। बोलो हेलो। हुई साह। कोई चीज़ी है की साह। कंट्रक में
-Customer: कोई चीज� वाशी मिशीन के नहीं आ रहे हैं, कौन ज्यादा आपका सेगन है? आपको उन्हें वाशी मिशीन के ऊपर आना आएगा
-Agent: सा? नहीं, नहीं, फ्रीज के
-Customer: ऊपर आना है, फ्रीज. फ्रीज के ऊपर आना है?
-Agent: फ्रीज के ऊपर आना है अंदर, हाँ. हाँ? तो यह रीफ फ्रिज
-Customer: आ तुरीज से दलाना जी अपनी में अंदर स्ट्राइड
-Agent: में वाशि मिशिन एक एसी और एक रिज्डेटर एपीन का रिज्डेटर रिपेरिंग रिपेरिंग
-Customer: रिपेरिंग अब कन करना तो आज कर रहा है आप कन कर दियो थे ना
-Agent: हाँ कल बाली तो है नसरा बल कल बात कर दिया हाँ कल बात कर
-Customer: दिया नसरा मैं अगर
-Agent: उन्होंने से कर रहा था ना मैं आप तक चल
-Customer: दियो थी तुनो कर आओ अगर उन्होंने ठीक है ठीक
-Agent: है ठीक है
-Customer: ठीक है �
-Agent: आप देख सकते हैं?
+Agent: Hello! Hello! Good day sir! Hello! Who is this? Sir, I am talking to the customer service department. My name is Prasanna. Sir, I am talking to the customer service department. My name is Prasanna. Sir, I am talking to the customer service department. My name is
+Customer: Prasanna. Sir, I am talking to the
+Agent: customer service department. My name is Prasanna. Sir, I am talking to the customer service department. My name is Prasanna. Sir, I am talking to the customer service department. My name is Prasanna. Sir, I am talking to the customer service department. My name is Prasanna. Sir, I
+Customer: am talking to the
+Agent: customer service department. My name is Prasanna. Sir, I am talking to the customer service department. My name is Prasanna. Sir, I am talking to the customer service department. My name is Prasanna. Sir, I am talking to the customer service department. My name is Prasanna. Sir, I am talking to the customer service department. My Washi machine
+Customer: کے نہیں آ رہے ہیں call
+Agent: کیا گا آپ کا ڈیگر ہے ۔ ایسی
+Customer: کے ڈال رہا ہے ۔ ڈیگر کا جو ہے مکہ
+Agent: ڈالو گلا مکہ ۔ ڈیگر ڈالو گلا مکہ ۔ ڈیگر ڈالو گلا مکہ ۔ ڈیگر ڈیگر � Refrigerator ऊपर के आपको leave forward होना है क्या?
+Customer: आ, fridge के जलाना
+Agent: है जब दी में। अंदर, side में। Washing
+Customer: machine, AC and refrigerator.
+Agent: Apeen का नहीं जाना है। Apeen का नहीं जाना है। Repairing, service, repairing. Only repair services है क्या? आ,
+Customer: washing machine, oven, washing machine, fridge. एक मिनट आई में रोकिये
+Agent: साथ। आप डिट कर दें। आई कन
+Customer: करना तो आज कर रहे हैं। कन कर दिये थे न। हाँ कल बात कर
+Agent: दिये न साथ। बड़ कल बात कर दिये न। कल बात कर
+Customer: दिये न साथ। मैं औरिक जने से कर रहा था न। मैं आज तक सक दिये थी। सुनो करा औरिक जने Hello

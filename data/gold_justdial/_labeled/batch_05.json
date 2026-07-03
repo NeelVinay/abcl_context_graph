@@ -1,0 +1,693 @@
+[
+  {
+    "call_id": "LCS-9XSUA2AO",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "base_intent": "explain_lead_mechanics",
+        "keywords": ["SMS feedback", "plan आपने चालू नहीं कर रहा है", "lead जो आ रही है", "rotational होती है", "category based पे inquiry"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "base_intent": "roi_complaint",
+        "keywords": ["बताया नहीं था"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "base_intent": "explain_lead_mechanics",
+        "keywords": ["lead का जो float है", "market response", "rotational होती है", "complaint report पर कर रहा हूँ", "SMS feedback"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "base_intent": "acknowledge",
+        "keywords": ["हाँ हाँ"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "base_intent": "advise_improvement",
+        "keywords": ["SMS feedback", "late call नहीं होना चाहिए", "request करते है", "customer support", "ticket डाले"],
+        "sentiment": null,
+        "tool": "raise_ticket"
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-A3M276MX",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "customer",
+        "base_intent": "other",
+        "suggested_intent": "incomplete_utterance",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "agent",
+        "base_intent": "other",
+        "suggested_intent": "incomplete_utterance",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "customer",
+        "base_intent": "other",
+        "suggested_intent": "incomplete_utterance",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 3,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["MSME शेयर किया है", "business address", "update कर रहे हैं", "business है"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 4,
+        "speaker": "customer",
+        "base_intent": "ask_question",
+        "keywords": ["कौन सा address है"],
+        "sentiment": "confused",
+        "tool": null
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["MSME की अगर मैं चेक कर रहा हूँ"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 6,
+        "speaker": "customer",
+        "base_intent": "answer_query",
+        "keywords": ["सिटी मुझे दिखा रही है"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 7,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["address mismatch", "सास नगर दिखा रहा है"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 8,
+        "speaker": "customer",
+        "base_intent": "ask_question",
+        "keywords": ["कोंटेक्ट मुझे चेक कर"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 9,
+        "speaker": "agent",
+        "base_intent": "ask_question",
+        "keywords": ["प्रूफ है", "लीज", "ट्रेड लाइसेंस", "विजली का बिल"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 10,
+        "speaker": "customer",
+        "base_intent": "answer_query",
+        "keywords": ["कोई बिल क्या दिया था", "नहीं नहीं"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 11,
+        "speaker": "agent",
+        "base_intent": "answer_query",
+        "keywords": ["address mismatch हो रहा है", "प्रेज लाइसेंस दे सकते हैं", "लीज या रेंटल एग्रीमेंट", "सेयर स्टैक रेजिस्टेशन"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 12,
+        "speaker": "customer",
+        "base_intent": "other",
+        "suggested_intent": "incomplete_utterance",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 13,
+        "speaker": "agent",
+        "base_intent": "raise_request",
+        "keywords": ["ticket आपके whatsapp पर आएगा", "same ticket को reopen करके", "बिजली का बिल", "resolve हो जाएगा"],
+        "sentiment": null,
+        "tool": "raise_ticket"
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-A569BOE9",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["टिकेट रिसीव कर रहे हैं", "इशू पेस कर रहे हैं", "कॉंट्रैक्ट में", "लीड से रिलेटर्स"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "base_intent": "acknowledge",
+        "keywords": ["वही बात है उसमें"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "base_intent": "other",
+        "suggested_intent": "incomplete_utterance",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "base_intent": "other",
+        "suggested_intent": "incomplete_utterance",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "base_intent": "end_call",
+        "keywords": ["कॉल डिस्टिनेक्ट करते हैं", "पूछना चाहेंगे तो पूछ सकते हैं"],
+        "sentiment": null,
+        "tool": null
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-A5YMWU6U",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "base_intent": "greeting",
+        "keywords": ["good afternoon", "लीड डिपार्टमेंट"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "base_intent": "greeting",
+        "keywords": ["हाँ जी"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["कोंटेक्ट में कोई एरड चल रहा है", "टिकट रिकेट साइन करेगा", "कैटिगरी लिए हैं", "पेस्टेसाइज राइसेंस शेयर करना होगा"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "base_intent": "ask_question",
+        "keywords": ["लाइसन्स अगर नहीं है"],
+        "sentiment": "confused",
+        "tool": null
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "base_intent": "answer_query",
+        "keywords": ["फॉर्म होता है", "category अभी block है", "unblock कराने के लिए", "pesticide license", "अपनी दुकान की महोर लगाओगे"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 5,
+        "speaker": "customer",
+        "base_intent": "agree",
+        "keywords": ["ठीक है सर मैं बात कर लेता हूँ"],
+        "sentiment": "neutral",
+        "tool": null
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-AGNVA1GM",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "customer",
+        "base_intent": "report_no_leads",
+        "keywords": ["inquiry आपको चाहिए वैसे नहीं आ रही है", "check कर लेते हूँ", "एक minute के लिए hold पर रख सकते हूँ"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "agent",
+        "base_intent": "wait_hold",
+        "keywords": ["कार्यकारी वर्तमान में आपको समाधान प्रदान करने के लिए", "स्वयं सेवा पोर्टल", "विवरन एकट कर रहा है"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "customer",
+        "base_intent": "report_no_leads",
+        "keywords": ["ज़्यादा इंक्वायरी जेनरेट नहीं हो रहा है", "लास्ट इंक्वायरी", "थोड़ा सा patience रखेगा", "अभी तक सब बिल जेनेरेट नहीं हुआ है"],
+        "sentiment": "neutral",
+        "tool": null
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-AR0VA665",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "base_intent": "ask_question",
+        "keywords": ["कोई इशू आ रही है", "जर्जाल कॉंट्रेक्ट"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "base_intent": "report_no_leads",
+        "keywords": ["जर्जाल कॉंट्रेक्ट में", "कोई इशू आ रही है"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "base_intent": "other",
+        "suggested_intent": "incomplete_utterance",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "base_intent": "report_no_leads",
+        "keywords": ["एकदम कॉल नहीं आ रहा है", "पैसा"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 4,
+        "speaker": "customer",
+        "base_intent": "report_wrong_leads",
+        "keywords": ["प्रॉब्लम है रही है"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["wrong location", "नहीं आ रही है"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 6,
+        "speaker": "customer",
+        "base_intent": "report_wrong_leads",
+        "keywords": ["wrong location की थी", "customer phone करते हैं", "गलती से call कर लिया"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 7,
+        "speaker": "agent",
+        "base_intent": "raise_request",
+        "keywords": ["raise करती", "problem हो रही है", "पैकेज बंज कर दूँगा"],
+        "sentiment": null,
+        "tool": "raise_ticket"
+      },
+      {
+        "index": 8,
+        "speaker": "customer",
+        "base_intent": "acknowledge",
+        "keywords": ["नहीं"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 9,
+        "speaker": "agent",
+        "base_intent": "end_call",
+        "keywords": ["सब्सक्राइब करते हैं", "कोई इश्योर है"],
+        "sentiment": null,
+        "tool": null
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-ATFUQRWB",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "base_intent": "ask_question",
+        "keywords": ["लीड आपको कमारी", "कोई प्रॉब्लम"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "base_intent": "report_wrong_leads",
+        "keywords": ["प्रॉब्लम हो रही है"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "base_intent": "ask_question",
+        "keywords": ["रिक्राज ला था"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "base_intent": "report_wrong_leads",
+        "keywords": ["लीड मेरे को ज़्यादा करते हैं", "चलू नहीं"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["सलून की लीड आई है", "लीड आपको"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 5,
+        "speaker": "customer",
+        "base_intent": "report_wrong_leads",
+        "keywords": ["स्पार्च लीड", "सलून का आते है", "category based", "एक भी रिखा आया है नहीं", "activation"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["category का area भी नहीं आ रही है", "wrong थी", "profile देख रहती हूँ"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 7,
+        "speaker": "customer",
+        "base_intent": "category_area_coverage",
+        "keywords": ["category हाँ मुझे category", "सब दोनों गुरुष नहीं दिखा"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["profile देख रहती हूँ", "lead आ रही है", "चलून की आ रही है", "category में निकाल रही हूँ", "लिंक आपको भूज रही हूँ"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "base_intent": "ask_question",
+        "keywords": ["उसके अंदर का लिए"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "base_intent": "answer_query",
+        "keywords": ["लिंक अप्रूफ करेंगे", "हमारे हाथ से हट जाएगा"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 11,
+        "speaker": "customer",
+        "base_intent": "acknowledge",
+        "keywords": ["आपको नहीं मिलोगा"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "base_intent": "check_account",
+        "keywords": ["मैं चेक करता हूँ"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 13,
+        "speaker": "customer",
+        "base_intent": "ask_question",
+        "keywords": ["ओपन करनी जो बाद में"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 14,
+        "speaker": "agent",
+        "base_intent": "answer_query",
+        "keywords": ["अपने फोन से कर लें", "आपके फोन से भी हो जाएगा"],
+        "sentiment": null,
+        "tool": null
+      }
+    ]
+  },
+  {
+    "call_id": "LCS-ATFUQRWB_1",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "base_intent": "other",
+        "suggested_intent": "incomplete_utterance",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "base_intent": "ask_question",
+        "keywords": ["प्रूफ कैसा जाती है", "लिंग बोल रहा हूँ", "समझ रहा हूँ मैं क्या"],
+        "sentiment": "confused",
+        "tool": null
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "base_intent": "guide_customer_support",
+        "keywords": ["लिंक देजा है", "लिंक आया वो क्लिक करके ओपन करो", "टेक्स नसीज आया है लिंक"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "base_intent": "ask_question",
+        "keywords": ["जो दिखा है ब्लू में", "उसको ओपन करो"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "base_intent": "guide_customer_support",
+        "keywords": ["उसको ब्लू में", "उसको ओपन करो"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 5,
+        "speaker": "customer",
+        "base_intent": "ask_question",
+        "keywords": ["एक मेरे को और लिखे"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "base_intent": "ask_question",
+        "keywords": ["लिंक अप खुला"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 7,
+        "speaker": "customer",
+        "base_intent": "technical_issue",
+        "keywords": ["नहीं खुल रहा हूँ"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "base_intent": "guide_customer_support",
+        "keywords": ["approve changes करते option", "लिखा हुआ"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "base_intent": "ask_question",
+        "keywords": ["इसके अंदर क्या है", "manage, content, return, use, email"],
+        "sentiment": "confused",
+        "tool": null
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "base_intent": "guide_customer_support",
+        "keywords": ["अप्रूफ चेंजेस लिखा हुआ रहेगा", "उसी पे क्लिक करोगे"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 11,
+        "speaker": "customer",
+        "base_intent": "ask_question",
+        "keywords": ["अप्रूफ चेंजेस लिखा हुआ होगा", "इसके अंदर क्या लिखा"],
+        "sentiment": "confused",
+        "tool": null
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "base_intent": "other",
+        "suggested_intent": "incomplete_utterance",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 13,
+        "speaker": "customer",
+        "base_intent": "answer_query",
+        "keywords": ["How can we help you today", "सेट मैनेज"],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 14,
+        "speaker": "agent",
+        "base_intent": "technical_issue",
+        "keywords": ["वाटसप नहीं आएगा", "टेक्स मेसेज", "फिर से भेजा हुआ है"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 15,
+        "speaker": "customer",
+        "base_intent": "other",
+        "suggested_intent": "incomplete_utterance",
+        "keywords": [],
+        "sentiment": "neutral",
+        "tool": null
+      },
+      {
+        "index": 16,
+        "speaker": "agent",
+        "base_intent": "other",
+        "suggested_intent": "incomplete_utterance",
+        "keywords": [],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 17,
+        "speaker": "customer",
+        "base_intent": "technical_issue",
+        "keywords": ["नहीं आरे मैडम", "नहीं रहा है", "लिंक ओपन"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 18,
+        "speaker": "agent",
+        "base_intent": "guide_customer_support",
+        "keywords": ["लिंक भेज रही हूँ", "टेक्स मैसेज पर आया है", "मैसेज पर भेज रहा हूँ"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 19,
+        "speaker": "customer",
+        "base_intent": "technical_issue",
+        "keywords": ["टेक्स मैसेज कुछ नहीं मिल रहा"],
+        "sentiment": "frustrated",
+        "tool": null
+      },
+      {
+        "index": 20,
+        "speaker": "agent",
+        "base_intent": "acknowledge",
+        "keywords": ["नहीं हो रहा है", "नहीं मिल रहा"],
+        "sentiment": null,
+        "tool": null
+      },
+      {
+        "index": 21,
+        "speaker": "customer",
+        "base_intent": "ask_question",
+        "keywords": ["आपके बाजु में कोई होगा", "पुलिये नंबर पर है"],
+        "sentiment": "neutral",
+        "tool": null
+      }
+    ]
+  }
+]

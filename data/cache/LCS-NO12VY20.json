@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-NO12",
+  "call_id": "LCS-NO12VY20",
   "language": "hi-en",
   "outcome": "raised_request",
   "turns": [
@@ -7,8 +7,8 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_disclose_recording",
-      "base_intent": "recording_disclosure",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
         "कॉल",
         "इश्यू",
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "रेट"
       ],
@@ -40,7 +40,7 @@
       "speaker": "agent",
       "type": "action",
       "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "लाइन"
       ],
@@ -54,7 +54,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "चेक"
       ],
@@ -67,12 +67,12 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_present_offer",
-      "base_intent": "present_offer",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "check",
-        "contract",
         "issue",
+        "contract",
         "lease",
         "less"
       ],
@@ -86,7 +86,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -97,8 +97,8 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_explain_fee",
-      "base_intent": "processing_fee",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "lead",
         "category",
@@ -115,8 +115,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "issue",
         "changes"
@@ -130,8 +130,8 @@
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -142,8 +142,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_request_wait",
-      "base_intent": "wait_hold",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -154,13 +154,13 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
-        "प्रॉपर",
         "मिलेगा",
-        "रिस्पॉंस",
+        "प्रॉपर",
         "अलावा",
+        "रिस्पॉंस",
         "अभी।"
       ],
       "sentiment": null,
@@ -173,7 +173,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "अलावा"
       ],
@@ -186,14 +186,14 @@
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
         "call",
         "कस्टमर",
         "टीम",
-        "सपोर्ट",
-        "thank"
+        "request",
+        "सपोर्ट"
       ],
       "sentiment": null,
       "tool": null,

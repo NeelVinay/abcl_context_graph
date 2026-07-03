@@ -1,20 +1,20 @@
 {
-  "call_id": "LCS-4P6Q",
+  "call_id": "LCS-4P6QDMOU",
   "language": "hi-en",
-  "outcome": "transferred",
+  "outcome": "raised_request",
   "turns": [
     {
       "index": 0,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_greet",
-      "base_intent": "greeting",
+      "base_intent": "open",
       "keywords": [
-        "बात कर रही",
         "टीम",
         "सपोर्ट",
         "com",
-        "हेलो"
+        "हेलो",
+        "गुड़"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "कॉल",
         "इश्यू",
@@ -43,8 +43,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_reassure_trust",
-      "base_intent": "reassure_trust",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "कॉल",
         "चेक",
@@ -62,10 +62,10 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "थैंक",
-        "मिलेगा"
+        "मिलेगा",
+        "थैंक"
       ],
       "sentiment": null,
       "tool": null,
@@ -76,8 +76,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "चेक",
         "टीम",
@@ -105,9 +105,9 @@
     {
       "index": 6,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "कॉल",
         "टाइम",
@@ -116,7 +116,7 @@
         "रिक्वेस्ट"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "मैं आपको इनफॉर्मेशन देना चाहूँगी जल जल के अप्लीकेशन से कस्टेमर सपोर्ट ऑप्शन लाई है कोई भी कंसर्न हो खुद भी इश्योर है कहां से रेज करिए मैं और मेरी कंसर्न 3,24,000 कॉल करके इस चीज़ का सलूशन देंगे और एक रिक्वेस्ट है कॉल खत धन्यवाद वाली वेल टाइम से आपको जर्जया में आपको किंती समय देने के लिए धन्यवाद",
       "entities": []
     }

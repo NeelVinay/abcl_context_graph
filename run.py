@@ -75,7 +75,7 @@ def _write_outputs(g, calls, args) -> None:
     out_json.write_text(json.dumps(_serialize(g), indent=2, ensure_ascii=False))
     rpt = write_report(g, calls, out_dir / "report.md")
     turns = write_turns(calls, out_dir / "turns.md")
-    gls = write_glossary(out_dir / "intents.md")
+    gls = write_glossary(out_dir / "intents.md", g)   # dataset-aware: only intents present
     print(visualize.text_summary(g, calls))
     print(f"\nWrote {out_json}")
     print(f"Wrote {rpt}   <- keywords + sentiment + tool calls (aggregated)")

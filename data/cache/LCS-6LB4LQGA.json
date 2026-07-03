@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-6LB4",
+  "call_id": "LCS-6LB4LQGA",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,8 +7,8 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_present_offer",
-      "base_intent": "present_offer",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "लीड",
         "नंबर",
@@ -26,7 +26,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "base_intent": "question",
       "keywords": [
         "कॉल",
         "लाइन",
@@ -43,8 +43,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "लाइन",
         "उनको",
@@ -59,8 +59,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "कॉल",
         "call",
@@ -77,14 +77,14 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "call",
         "बोल",
         "देखिए",
-        "टाइम",
-        "lead"
+        "lead",
+        "टाइम"
       ],
       "sentiment": null,
       "tool": null,

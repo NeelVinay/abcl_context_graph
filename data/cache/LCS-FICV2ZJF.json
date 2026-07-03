@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-FICV",
+  "call_id": "LCS-FICV2ZJF",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -8,10 +8,8 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_greet",
-      "base_intent": "greeting",
-      "keywords": [
-        "hello"
-      ],
+      "base_intent": "open",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "Hello. Hello.",
@@ -21,8 +19,8 @@
       "index": 1,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
         "customer",
         "service",
@@ -39,8 +37,8 @@
       "index": 2,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_do_otp",
-      "base_intent": "mobile_otp",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "लीड",
         "नंबर",
@@ -57,8 +55,8 @@
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "हलो",
         "जैसा",

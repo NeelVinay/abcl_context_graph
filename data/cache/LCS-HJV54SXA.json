@@ -1,14 +1,14 @@
 {
-  "call_id": "LCS-HJV5",
+  "call_id": "LCS-HJV54SXA",
   "language": "hi-en",
-  "outcome": "transferred",
+  "outcome": "incomplete",
   "turns": [
     {
       "index": 0,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_greet",
-      "base_intent": "greeting",
+      "base_intent": "open",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -19,8 +19,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "आउट"
       ],
@@ -33,8 +33,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "आउट",
         "कंप्लेंट",
@@ -49,8 +49,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_agree",
-      "base_intent": "agree",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -61,8 +61,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "आउट",
         "कंप्लेंट",
@@ -79,8 +79,8 @@
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "लीड्स",
         "अन्य"
@@ -94,8 +94,8 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "चेक",
         "लीड",
@@ -112,8 +112,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_done",
-      "base_intent": "report_done",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "सब्सक्राइब",
         "लीड्स"
@@ -127,8 +127,8 @@
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_clarify",
-      "base_intent": "ask_question",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "लीड्स",
         "डीटेल्स",
@@ -144,8 +144,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_greet",
-      "base_intent": "greeting",
+      "intent": "customer_respond",
+      "base_intent": "agent_handle",
       "keywords": [
         "रीसेंट",
         "एक्जांपल"
@@ -159,8 +159,8 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "लीड्स",
         "कारण",
@@ -177,8 +177,8 @@
       "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_link_opened",
-      "base_intent": "open_link",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "ओपन"
       ],
@@ -191,10 +191,11 @@
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "फिल्टर"
+        "फिल्टर",
+        "कम्युनिकेशन"
       ],
       "sentiment": null,
       "tool": null,
@@ -205,8 +206,8 @@
       "index": 13,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "मना",
         "फिल्टर"
@@ -220,8 +221,8 @@
       "index": 14,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "फिल्टर",
         "अधि",
@@ -237,8 +238,8 @@
       "index": 15,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "ओपन",
         "देते",
@@ -254,8 +255,8 @@
       "index": 16,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "बिजनेस",
         "यूज़",
@@ -272,8 +273,8 @@
       "index": 17,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_skip_udyam",
-      "base_intent": "skip_udyam",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "अधिक"
       ],
@@ -286,8 +287,8 @@
       "index": 18,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "कॉल",
         "सेंटर",
@@ -316,9 +317,9 @@
     {
       "index": 20,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
         "कॉल",
         "सब्सक्राइब",
@@ -327,7 +328,7 @@
         "feedback"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "रमना लेकोंटे से प्रेया ना येवर तरुप पोकुना ने साम सब्सक्राइब करने के लिए कॉल कर रहता है, मैंने feedback link share होता है। मैंने कैसे बात करने के लिए रेटिंग दें। 6-10 पॉजिटी है। पॉजिटी रिस्पॉंस 10 दें। यह कॉल के सर्विस रिलेटेड नहीं है। अगर हमारे प्रभावित हैं, हमारे प्रभावित नहीं है। अगर हमारे प्रभावित हैं,",
       "entities": []
     }

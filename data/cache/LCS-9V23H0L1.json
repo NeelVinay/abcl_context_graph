@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-9V23",
+  "call_id": "LCS-9V23H0L1",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -8,13 +8,13 @@
       "speaker": "agent",
       "type": "action",
       "intent": "agent_greet",
-      "base_intent": "greeting",
+      "base_intent": "open",
       "keywords": [
-        "से बात",
         "लीड",
         "ऐसा",
+        "उसमें",
         "अंदर",
-        "उसमें"
+        "share"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
       "keywords": [
         "फोन",
         "डाल"
@@ -40,8 +40,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_send_sms_link",
-      "base_intent": "send_sms_link",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "फोन"
       ],
@@ -54,8 +54,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -66,8 +66,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "मार्केटिंग",
         "kyc",
@@ -84,13 +84,13 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "base_intent": "question",
       "keywords": [
-        "मतलब",
         "मतलब क्या",
         "उनको",
         "समय",
-        "मार्केटिंग"
+        "मार्केटिंग",
+        "आये"
       ],
       "sentiment": "confused",
       "tool": null,
@@ -101,8 +101,8 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "उन्होंने",
         "बोला",
@@ -119,8 +119,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_address_error",
-      "base_intent": "address_error",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -131,8 +131,8 @@
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
         "अरेंज"
       ],
@@ -145,8 +145,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "चलो"
       ],
@@ -159,8 +159,8 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "कॉल",
         "देख",

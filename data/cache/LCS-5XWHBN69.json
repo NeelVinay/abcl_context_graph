@@ -1,20 +1,20 @@
 {
-  "call_id": "LCS-5XWH",
+  "call_id": "LCS-5XWHBN69",
   "language": "hi-en",
-  "outcome": "transferred",
+  "outcome": "incomplete",
   "turns": [
     {
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_present_offer",
-      "base_intent": "present_offer",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "नंबर",
         "काम",
         "देखिए",
         "बिजनेस",
-        "फोन"
+        "concern"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "call",
         "customer",
@@ -42,18 +42,18 @@
     {
       "index": 2,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "call",
         "काम",
         "customer",
-        "thank",
-        "उनको"
+        "अच्छी",
+        "thank"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "holding. Your call is important to us. यहां पे आपके पास GST या MSME या Trade License कुछ होगा था? क्या? लाइक GST certificate, GST certificate जैसे होता है था या Trade License जैसे होता है या MSME certificate कुछ होगा था? नहीं तर यह सब नहीं है हमने पहले ही discussion कर दिया था इस ज़रूरत को ले करके यह सब बुलिटिफिकार का रिकॉर्ण नहीं है आपको थोड़ा सा ये आपका जो business है सार होटेल के ऊपर थोड़ा सा requirement है सार ये documents का only देनी सार ये contact हम लोग further activation के लिए process कर पाएंगे सार सार हमको नहीं देना है वाली जद्धियां से कोई नहीं फिर सार मेरा पैसा उससे बुली विकंग कर जाएंगी ने हमकी इस अच्छी जीव के � आप भी करवाईए मेरे पैसा refund का करवाईए process दीखे refund का कोई हम लोग बात नहीं कर पाते sir क्योंकि ये customer के profile के ऊपर काम होता है तो payment and refund पुरा marketing लोग ही देखते है sir वो लोग की operate करते है और सुरत कुमार सुनने की से एक बार बात कर सकते है इन case में हम लोग यहाँ पे profile के ऊ� यहाँ पे ठीक है मैं आप marketing team पे inform कर दे रहा हूँ ताकि वो लोग एक बार आपके साथ coordinate कर ले सर आपका number पे एक बार coordinate कर ले आप number format नहीं कर सकते हैं सर? हाँ no sir number यहाँ से नहीं होता सर अगर यह? no number नहीं होता सर यहाँ पे किसी का number नहीं होते हैं? no आप उनको very urgent PA करने के आपको अगर MSME भी हो तो वो भी दे दीजिए MSME certificate तो एक घंटा में ही बन जाता है sir तो accordingly हम लोग तो फिर activities के लिए भी process कर देंगे अच्छा ठीक है sir ओके ओके sure ठीक है thank you please आप skill support portal add-on",
       "entities": []
     },
@@ -61,8 +61,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_agree",
-      "base_intent": "agree",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "यूज़"
       ],

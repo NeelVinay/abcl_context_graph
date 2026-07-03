@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-1QJ9",
+  "call_id": "LCS-1QJ96LEN",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -8,13 +8,13 @@
       "speaker": "agent",
       "type": "action",
       "intent": "agent_greet",
-      "base_intent": "greeting",
+      "base_intent": "open",
       "keywords": [
         "कॉल",
         "call",
         "customer",
-        "thank",
-        "लिंक"
+        "लिंक",
+        "रेटिंग"
       ],
       "sentiment": null,
       "tool": null,

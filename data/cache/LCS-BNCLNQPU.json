@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-BNCL",
+  "call_id": "LCS-BNCLNQPU",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,8 +7,8 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_greet",
-      "base_intent": "greeting",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -31,14 +31,14 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "सब्सक्राइब",
         "बिजनेस",
         "ऑप्शन",
         "लाइक",
-        "क्लिक"
+        "अन्ते"
       ],
       "sentiment": null,
       "tool": null,
@@ -49,8 +49,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_provide_business_details",
-      "base_intent": "business_details",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "बिजनेस"
       ],
@@ -63,8 +63,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "हेलो",
         "audible",
@@ -80,8 +80,8 @@
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "मेको"
       ],
@@ -94,8 +94,8 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "मेको"
       ],
@@ -108,8 +108,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_skip_udyam",
-      "base_intent": "skip_udyam",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -120,8 +120,8 @@
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_offer_skip_udyam",
-      "base_intent": "skip_udyam",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -132,8 +132,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_skip_udyam",
-      "base_intent": "skip_udyam",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -144,12 +144,12 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "सब्सक्राइब",
-        "उपयोग",
-        "विशेष"
+        "विशेष",
+        "उपयोग"
       ],
       "sentiment": null,
       "tool": null,
@@ -160,8 +160,8 @@
       "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_done",
-      "base_intent": "report_done",
+      "intent": "customer_respond",
+      "base_intent": "agent_handle",
       "keywords": [
         "सब्सक्राइब",
         "करें।"
@@ -175,14 +175,14 @@
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "category",
         "वीडियो",
-        "अप्रूव",
         "सॉरी",
-        "सार"
+        "जायेंगे",
+        "अप्रूव"
       ],
       "sentiment": null,
       "tool": null,

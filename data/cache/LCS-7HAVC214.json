@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-7HAV",
+  "call_id": "LCS-7HAVC214",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,8 +7,8 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_disclose_recording",
-      "base_intent": "recording_disclosure",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "आगे",
         "पता",
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "उन्होंने",
         "इतना",
@@ -43,14 +43,14 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_business_details",
-      "base_intent": "business_details",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "business",
         "लीड",
         "शेयर",
         "lead",
-        "contract"
+        "link",
+        "business"
       ],
       "sentiment": null,
       "tool": null,
@@ -61,8 +61,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_query",
-      "base_intent": "answer_query",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
       "keywords": [
         "देख",
         "google"
@@ -76,14 +76,14 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_org_name",
-      "base_intent": "organization_name",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "कॉल",
         "शेयर",
         "लिंक",
-        "रेटिंग",
-        "मिल"
+        "मिल",
+        "रेटिंग"
       ],
       "sentiment": null,
       "tool": null,

@@ -1,20 +1,20 @@
 {
-  "call_id": "LCS-6W7C",
+  "call_id": "LCS-6W7CZ03G",
   "language": "hi-en",
-  "outcome": "transferred",
+  "outcome": "raised_request",
   "turns": [
     {
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_disclose_recording",
-      "base_intent": "recording_disclosure",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
         "नंबर",
         "बोल",
         "कीजिए",
         "राइट",
-        "विशेष"
+        "मोबाइल"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_react_to_offer",
-      "base_intent": "present_offer",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [
         "thank"
       ],
@@ -38,9 +38,9 @@
     {
       "index": 2,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "call",
         "customer",
@@ -49,7 +49,7 @@
         "service"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "holding. Your call is important to us. Our executive is currently gathering the necessary details to provide you with a resolution. Meanwhile, we encourage you to explore our self-service portal for instant answers to your queries without needing to contact a customer service representative. We value your feedback on this platform. We appreciate your patience. Thank you for holding. Thank you for being on hold. आपके पार जर्साल के जर्व से इस महीने में अभी तक 5 इंक्वाइरी गई है ठीक है? तो जो इंक्वाइरी आपके पास जा रहा है उस पे क्या रेस्पॉन्स",
       "entities": []
     },
@@ -57,8 +57,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "काम",
         "इंक्वाइरी",
@@ -74,8 +74,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_reassure_trust",
-      "base_intent": "reassure_trust",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "काम",
         "आपसे",
@@ -91,8 +91,8 @@
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "बोलता",
         "hours"
@@ -106,8 +106,8 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "देखिए",
         "inquiry",

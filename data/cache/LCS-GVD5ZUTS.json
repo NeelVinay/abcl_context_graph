@@ -1,0 +1,25 @@
+{
+  "call_id": "LCS-GVD5ZUTS",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "चेक",
+        "लीड",
+        "call",
+        "नंबर",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "शिवम जी आपकी तरफ से एक request मिली थी हमें जिसके भी आपके मैंने connect किया है कोई issue face कर रहे हैं बताइये लेड्स के लिए बोला गया था, कई बार बोल गया है, बट बार के लेड्स आती है। ठीक है, शिवम जी आप कहना चाह रहे हैं कि लेड्स आपको जो डेलिवर्ड हो रही है, वो आउट ओफ एरिया से मिल रही है या आउट ओफ सिटी लीड्स है? आउट ओफ सिटी भी, आउ अगर आपको out of area की lead आ रही है तो आप मुझे एक से दो samples पता देंगे ताकि मैं चेक करता हूँ जैसे कोई lead आपको out of area से डिलिवर्ड हुई है तो caller का नाम और नंबर आ पता देंगे मैं आपको नाम से पता हूँ या ऐसे बता देंगे हाँ जी अभी बता देजेगा लीड प तो गाजियाबाद में जितने भी आपके जैसे की for example ये सारा ना NCR में आ जाता है जैसे की Delhi, Gurgaon, Faridabad, Haryana ठीक है इसके basis पे आपको lead की services मिलेगी पर अगर आप चाहते हैं सिर्फ गाजियाबाद से ही आए ठीक है तो आप मुझे distance किलोमीटर बता दिजेगा मैं restrictions लगा देता ह दस किलोमेटर का restrictions में input कर देता हूँ, अभी न, दस से ज़्यादा का input है, इसकी वजह से आपको out of city या out of area leads डेलिवर्ड हो रही है, ठीक है? जी, restrictions मैंने input कर दिया है, अब आपके पास जो भी leads मिलेगी, वो आपको 10 किलोमेटर के range से ही डेलिवर्ड किया जाएगा, ठीक है? � और add-on feature है जिससे आप अपने business को और ज्यादा boost या promote कर सकते हैं ठीक है अभी छोटी सी request रही है कि इस call के बाद short feedback link WhatsApp के माध्यम से बेजा गया है जो completely आपके और मेरे बीच में बात हुई है उसके अधार्थ होगा जिसमें 9 और 10 highest rating है तो आपका feedback important है प्लीज share कीजिएगा ठी",
+      "entities": []
+    }
+  ]
+}

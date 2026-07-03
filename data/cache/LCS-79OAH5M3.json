@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-79OA",
+  "call_id": "LCS-79OAH5M3",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -8,7 +8,7 @@
       "speaker": "agent",
       "type": "action",
       "intent": "agent_greet",
-      "base_intent": "greeting",
+      "base_intent": "open",
       "keywords": [
         "सपोर्ट",
         "अंत",
@@ -36,8 +36,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_present_offer",
-      "base_intent": "present_offer",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "इश्यू",
         "इदर"
@@ -51,8 +51,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [
         "number",
         "self",
@@ -68,8 +68,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "car"
       ],
@@ -82,8 +82,8 @@
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_query",
-      "base_intent": "answer_query",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "car"
       ],
@@ -96,8 +96,8 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "car"
       ],
@@ -110,8 +110,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_query",
-      "base_intent": "answer_query",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "car"
       ],
@@ -124,8 +124,8 @@
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "इतना",
         "लीज",
@@ -140,8 +140,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_query",
-      "base_intent": "answer_query",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "बढ़ता",
         "स्टेट",
@@ -156,8 +156,8 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "बढ़ता",
         "दिए"
@@ -171,8 +171,8 @@
       "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "बढ़ता",
         "दिए"
@@ -186,8 +186,8 @@
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "दिए",
         "खड़मे"
@@ -202,7 +202,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "सब्सक्राइब"
       ],

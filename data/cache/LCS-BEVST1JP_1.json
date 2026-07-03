@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-BEVS",
+  "call_id": "LCS-BEVST1JP_1",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,14 +7,14 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
         "लीड",
         "इश्यू",
         "रिगार्डिंग",
         "फेस",
-        "कीवर्ड्स"
+        "क्वेश्चन"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_done",
-      "base_intent": "report_done",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "कीवर्ड्स"
       ],
@@ -39,8 +39,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_clarify",
-      "base_intent": "ask_question",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "कराने"
       ],

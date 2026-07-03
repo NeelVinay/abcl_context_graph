@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-RDCG",
+  "call_id": "LCS-RDCGZZ1E",
   "language": "hi-en",
   "outcome": "raised_request",
   "turns": [
@@ -7,8 +7,8 @@
       "index": 0,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_address_error",
-      "base_intent": "address_error",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "error"
       ],
@@ -21,8 +21,8 @@
       "index": 1,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_wait",
-      "base_intent": "wait_hold",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
         "कॉल",
         "चेक",

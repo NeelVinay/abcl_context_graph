@@ -1,14 +1,14 @@
 {
-  "call_id": "LCS-CRB6",
+  "call_id": "LCS-CRB6ZOPT",
   "language": "hi-en",
-  "outcome": "transferred",
+  "outcome": "incomplete",
   "turns": [
     {
       "index": 0,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_greet",
-      "base_intent": "greeting",
+      "base_intent": "open",
       "keywords": [
         "customer",
         "service",
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_respond_udyam",
-      "base_intent": "udyam_verification",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "business",
         "help",
@@ -43,11 +43,11 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "lease",
         "now",
+        "lease",
         "getting"
       ],
       "sentiment": null,
@@ -59,8 +59,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "काम",
         "ऐसे",
@@ -77,8 +77,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "बड़ा"
       ],
@@ -91,8 +91,8 @@
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_react_to_offer",
-      "base_intent": "present_offer",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "रॉंग"
       ],
@@ -105,8 +105,8 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_explain_fee",
-      "base_intent": "processing_fee",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "दोनों"
       ],
@@ -119,8 +119,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_address_error",
-      "base_intent": "address_error",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "प्रॉब्लम"
       ],
@@ -133,8 +133,8 @@
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_address",
-      "base_intent": "enter_address",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "नंबर",
         "रजिस्टर",
@@ -149,8 +149,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_address_error",
-      "base_intent": "address_error",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "नंबर",
         "रजिस्टर"
@@ -164,8 +164,8 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_address",
-      "base_intent": "enter_address",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "नंबर",
         "भाई",
@@ -182,8 +182,8 @@
       "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "उसको",
         "लोगों",
@@ -201,7 +201,7 @@
       "speaker": "agent",
       "type": "action",
       "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -212,8 +212,8 @@
       "index": 13,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "यार"
       ],
@@ -226,8 +226,8 @@
       "index": 14,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "पैसा",
         "बेच"
@@ -241,8 +241,8 @@
       "index": 15,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_react_to_final_offer",
-      "base_intent": "final_offer",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "पैकेज",
         "हमको",
@@ -257,8 +257,8 @@
       "index": 16,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_reassure_trust",
-      "base_intent": "reassure_trust",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "पैसे"
       ],
@@ -272,7 +272,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "इंपोर्टेंट"
       ],
@@ -285,14 +285,14 @@
       "index": 18,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_present_final_offer",
-      "base_intent": "final_offer",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "देख",
         "प्रॉब्लम",
         "मैडम",
         "पैसा",
-        "बिजनस"
+        "देगा"
       ],
       "sentiment": null,
       "tool": null,

@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-9MBJ",
+  "call_id": "LCS-9MBJX5MT",
   "language": "hi-en",
   "outcome": "raised_request",
   "turns": [
@@ -7,8 +7,8 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_explain_fee",
-      "base_intent": "processing_fee",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
         "कॉल",
         "शेयर",
@@ -24,8 +24,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_agree",
-      "base_intent": "agree",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [
         "बोली"
       ],
@@ -38,14 +38,14 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_disclose_recording",
-      "base_intent": "recording_disclosure",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
         "कॉल",
         "thank",
         "कॉंट्रैक्ट",
         "होल्ड",
-        "कंसन"
+        "नाइन"
       ],
       "sentiment": null,
       "tool": null,
@@ -70,8 +70,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "चेक",
         "लास्ट",
@@ -88,8 +88,8 @@
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -100,8 +100,8 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "चेक",
         "नंबर"
@@ -115,8 +115,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_request_wait",
-      "base_intent": "wait_hold",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "नंबर",
         "मिनट",
@@ -133,8 +133,8 @@
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "सर्विस",
         "मैडम",
@@ -151,8 +151,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [
         "services"
       ],
@@ -165,8 +165,8 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "कॉल",
         "लीड",
@@ -184,7 +184,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "नंबर",
         "शेयर",
@@ -200,8 +200,8 @@
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_udyam",
-      "base_intent": "udyam_verification",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "नंबर",
         "मैडम"
@@ -215,8 +215,8 @@
       "index": 13,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_address_error",
-      "base_intent": "address_error",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "सॉरी"
       ],
@@ -229,14 +229,14 @@
       "index": 14,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_clarify",
-      "base_intent": "ask_question",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
-        "कौन सा",
         "चेक",
         "नंबर",
         "टाइम",
-        "inquiry"
+        "inquiry",
+        "category"
       ],
       "sentiment": null,
       "tool": null,
@@ -247,8 +247,8 @@
       "index": 15,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_done",
-      "base_intent": "report_done",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "पूरे"
       ],
@@ -261,8 +261,8 @@
       "index": 16,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_org_name",
-      "base_intent": "organization_name",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
         "कॉल",
         "चेक",

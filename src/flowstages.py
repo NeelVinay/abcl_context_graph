@@ -51,6 +51,13 @@ STAGE_OF = {
     "agree": "ack",
     "report_done": "ack",
     "acknowledge": "ack",
+    # --- JustDial COARSE buckets (justdial_clf.pkl) -> their own stages ---
+    "complaint": "jd_complaint",
+    "agent_handle": "jd_handle",
+    "resolution": "jd_resolution",
+    "question": "qa",
+    "open": "open",
+    "backchannel": "ack",
 }
 
 # stages filtered out of the trace entirely: pure back-channel ("ack") and unclassified
@@ -69,6 +76,10 @@ STAGE_LABEL = {
     "transfer": "Transfer to RM",
     "close": "Call close",
     "other": "Other",
+    # JustDial coarse stages
+    "jd_complaint": "Customer complaint",
+    "jd_handle": "Agent investigates / explains",
+    "jd_resolution": "Raise request / transfer",
 }
 
 

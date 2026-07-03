@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-5Y7D",
+  "call_id": "LCS-5Y7DOA4A",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,8 +7,8 @@
       "index": 0,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -19,8 +19,8 @@
       "index": 1,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
         "कॉल",
         "कस्टमर",
@@ -37,8 +37,8 @@
       "index": 2,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_agree",
-      "base_intent": "agree",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "दिखा"
       ],
@@ -51,8 +51,8 @@
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_reassure_trust",
-      "base_intent": "reassure_trust",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "बोल",
         "ऐसा",
@@ -68,8 +68,8 @@
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "काम",
         "बोल",
@@ -85,14 +85,14 @@
       "index": 5,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_wait",
-      "base_intent": "wait_hold",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
-        "एक मिनट",
         "लाइन",
         "देखे",
         "मिनट",
-        "प्रॉपर"
+        "प्रॉपर",
+        "दिखा"
       ],
       "sentiment": null,
       "tool": null,

@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-3OK6",
+  "call_id": "LCS-3OK6FSNU",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,14 +7,14 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_greet",
-      "base_intent": "greeting",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "बात कर रही",
-        "से बात",
         "कॉल",
         "call",
-        "शेयर"
+        "शेयर",
+        "बोल",
+        "customer"
       ],
       "sentiment": null,
       "tool": null,

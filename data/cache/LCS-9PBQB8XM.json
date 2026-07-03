@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-9PBQ",
+  "call_id": "LCS-9PBQB8XM",
   "language": "hi-en",
   "outcome": "raised_request",
   "turns": [
@@ -7,8 +7,8 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_guide_open_link",
-      "base_intent": "open_link",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "लीड",
         "आईएगी"
@@ -22,8 +22,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_provide_address",
-      "base_intent": "enter_address",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "नंबर",
         "बोर्ड"
@@ -37,12 +37,13 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "लीड",
         "उसने",
-        "पता"
+        "पता",
+        "भाग"
       ],
       "sentiment": null,
       "tool": null,
@@ -54,7 +55,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "base_intent": "question",
       "keywords": [
         "इसमे"
       ],
@@ -67,8 +68,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "category",
         "number",
@@ -86,7 +87,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "base_intent": "question",
       "keywords": [
         "number",
         "mobile"
@@ -100,8 +101,8 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -112,8 +113,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -124,8 +125,8 @@
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "बोली"
       ],
@@ -138,8 +139,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_agree",
-      "base_intent": "agree",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "दीजिये"
       ],
@@ -152,8 +153,8 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_pan",
-      "base_intent": "enter_pan",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "नंबर"
       ],
@@ -181,8 +182,8 @@
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_pan",
-      "base_intent": "enter_pan",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "दीजिये"
       ],
@@ -196,7 +197,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "दीजिये"
       ],
@@ -210,7 +211,7 @@
       "speaker": "agent",
       "type": "action",
       "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "कॉल",
         "ऐसा",
@@ -226,8 +227,8 @@
       "index": 15,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_request_wait",
-      "base_intent": "wait_hold",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
       "keywords": [
         "कॉल",
         "मिनट",
@@ -244,8 +245,8 @@
       "index": 16,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "कॉल",
         "लीड",
@@ -263,7 +264,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "base_intent": "question",
       "keywords": [
         "काम",
         "उसमें",
@@ -280,14 +281,14 @@
       "index": 18,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_org_name",
-      "base_intent": "organization_name",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
         "लीड",
         "call",
+        "request",
         "उसको",
-        "category",
-        "request"
+        "category"
       ],
       "sentiment": null,
       "tool": null,
@@ -298,13 +299,13 @@
       "index": 19,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "उसको",
         "देखे",
-        "time",
-        "पूरा"
+        "पूरा",
+        "time"
       ],
       "sentiment": null,
       "tool": null,
@@ -315,8 +316,8 @@
       "index": 20,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
         "कॉल",
         "लीड",
@@ -333,8 +334,8 @@
       "index": 21,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "शोर"
       ],
@@ -347,8 +348,8 @@
       "index": 22,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
         "अंदर",
         "देते",

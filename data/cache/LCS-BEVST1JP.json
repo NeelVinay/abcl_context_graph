@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-BEVS",
+  "call_id": "LCS-BEVST1JP",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,14 +7,14 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "कॉल",
         "सब्सक्राइब",
+        "बैक",
         "अरेंज",
-        "मार्केटिंग",
-        "बैक"
+        "मार्केटिंग"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_done",
-      "base_intent": "report_done",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "सब्सक्राइब"
       ],

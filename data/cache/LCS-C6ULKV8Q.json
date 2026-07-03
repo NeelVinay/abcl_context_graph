@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-C6UL",
+  "call_id": "LCS-C6ULKV8Q",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,8 +7,8 @@
       "index": 0,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_agree",
-      "base_intent": "agree",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [
         "रिक्वेस्ट",
         "तरफ"
@@ -22,8 +22,8 @@
       "index": 1,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_send_sms_link",
-      "base_intent": "send_sms_link",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "जिसके",
         "इशू",
@@ -40,7 +40,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "base_intent": "question",
       "keywords": [
         "inquiry",
         "whatsapp",
@@ -55,8 +55,8 @@
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "notification"
       ],
@@ -69,8 +69,8 @@
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "call",
         "option",
@@ -85,8 +85,8 @@
       "index": 5,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_reassure_trust",
-      "base_intent": "reassure_trust",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "दिख"
       ],
@@ -100,7 +100,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "वाटसेप"
       ],
@@ -113,8 +113,8 @@
       "index": 7,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_reassure_trust",
-      "base_intent": "reassure_trust",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "शेयर",
         "देखिए",
@@ -132,7 +132,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "base_intent": "question",
       "keywords": [
         "call",
         "देते",
@@ -147,8 +147,8 @@
       "index": 9,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "देख",
         "lead",
@@ -166,7 +166,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "दूँ"
       ],
@@ -179,8 +179,8 @@
       "index": 11,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_pan",
-      "base_intent": "enter_pan",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "call",
         "देते",
@@ -196,8 +196,8 @@
       "index": 12,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_query",
-      "base_intent": "answer_query",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
       "keywords": [
         "साल"
       ],
@@ -210,8 +210,8 @@
       "index": 13,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "वहीं"
       ],
@@ -224,8 +224,8 @@
       "index": 14,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "मार्च"
       ],
@@ -238,14 +238,14 @@
       "index": 15,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_clarify",
-      "base_intent": "ask_question",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "whatsapp",
         "sms",
         "provide",
-        "नोटिफिकेशन",
-        "माध्यम"
+        "माध्यम",
+        "नोटिफिकेशन"
       ],
       "sentiment": null,
       "tool": null,
@@ -256,8 +256,8 @@
       "index": 16,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
       "keywords": [
         "whatsapp",
         "notification",
@@ -273,8 +273,8 @@
       "index": 17,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_reassure_trust",
-      "base_intent": "reassure_trust",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "आपसे",
         "whatsapp",
@@ -291,7 +291,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "चाह"
       ],
@@ -304,12 +304,12 @@
       "index": 19,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_clarify",
-      "base_intent": "ask_question",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
         "लिंक",
-        "रेटिंग",
         "मिल",
+        "रेटिंग",
         "मिलेगा",
         "जाए"
       ],

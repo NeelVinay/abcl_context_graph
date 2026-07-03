@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-FE74",
+  "call_id": "LCS-FE7457BG",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -8,7 +8,7 @@
       "speaker": "agent",
       "type": "action",
       "intent": "agent_greet",
-      "base_intent": "greeting",
+      "base_intent": "open",
       "keywords": [
         "हेलो",
         "इश्यों"
@@ -22,8 +22,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "सर्विस",
         "एरिया",
@@ -40,8 +40,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "अन्ते"
       ],
@@ -54,8 +54,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -66,9 +66,10 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_pan",
-      "base_intent": "enter_pan",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
+        "किलोमेटर",
         "टेन"
       ],
       "sentiment": null,
@@ -80,8 +81,8 @@
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_agree",
-      "base_intent": "agree",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "हाँ।",
         "मेको"
@@ -95,8 +96,8 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "अन्ते",
         "मेंचे"
@@ -110,8 +111,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_query_fee",
-      "base_intent": "processing_fee",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "अन्ते",
         "अगे",
@@ -127,8 +128,8 @@
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_wait",
-      "base_intent": "wait_hold",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "लाइक",
         "अन्ते",
@@ -144,8 +145,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_request_wait",
-      "base_intent": "wait_hold",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "अन्ने"
       ],
@@ -158,8 +159,8 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "ज़रूर",
         "अन्ने"
@@ -173,8 +174,8 @@
       "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_address_error",
-      "base_intent": "address_error",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
         "देखने",
         "उत्तर"
@@ -188,8 +189,8 @@
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "चेक",
         "इतना",

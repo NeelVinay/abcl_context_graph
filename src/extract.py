@@ -98,6 +98,71 @@ ACTIONS = {
     "end_call": {"agent": "agent_end_call", "customer": "customer_acknowledge"},
 }
 
+# plain-English description per action-intent name (for intents.md glossary)
+INTENT_DESC = {
+    "agent_greet": "Agent's opening greeting and self-introduction",
+    "customer_greet": "Customer's opening / picks up the call",
+    "agent_disclose_recording": "Agent discloses the call is recorded for quality/training",
+    "agent_present_offer": "Agent pitches the pre-approved loan offer",
+    "customer_react_to_offer": "Customer reacts to the loan offer (interest, doubt, refusal)",
+    "agent_send_sms_link": "Agent sends the SMS with the application link",
+    "customer_report_sms_received": "Customer confirms the SMS/link arrived",
+    "agent_guide_open_link": "Agent guides the customer to open the link/website",
+    "customer_report_link_opened": "Customer confirms the link/page opened",
+    "agent_guide_apply": "Agent guides the customer to tap Apply Now / start the form",
+    "customer_report_applied": "Customer confirms they clicked Apply / started",
+    "agent_request_otp": "Agent asks the customer to enter and verify the OTP",
+    "customer_do_otp": "Customer enters/verifies the OTP",
+    "agent_request_pan": "Agent asks the customer to fill their PAN number",
+    "customer_provide_pan": "Customer fills/confirms their PAN",
+    "agent_request_personal_details": "Agent asks for name, gender, DOB, marital status",
+    "customer_provide_personal_details": "Customer fills their personal details",
+    "agent_request_email": "Agent asks the customer to enter their email",
+    "customer_provide_email": "Customer enters their email",
+    "agent_request_address": "Agent asks the customer to fill their address / pincode",
+    "customer_provide_address": "Customer fills their address details",
+    "agent_help_address_error": "Agent helps resolve an address field error",
+    "customer_report_address_error": "Customer reports the address field is erroring",
+    "agent_ask_employment_type": "Agent asks salaried vs self-employed",
+    "customer_state_employment_type": "Customer states their employment type",
+    "agent_request_income": "Agent asks the customer to enter monthly income",
+    "customer_provide_income": "Customer enters their income",
+    "agent_request_business_details": "Agent asks for business details (self-employed)",
+    "customer_provide_business_details": "Customer provides business details",
+    "agent_request_org_name": "Agent asks for the organization/company name",
+    "customer_provide_org_name": "Customer provides the organization name",
+    "agent_request_udyam": "Agent asks for Udyam number (business registration)",
+    "customer_respond_udyam": "Customer responds about Udyam registration",
+    "agent_offer_skip_udyam": "Agent offers to skip Udyam (goes to manual review)",
+    "customer_skip_udyam": "Customer chooses to skip Udyam",
+    "agent_request_terms_accept": "Agent asks the customer to accept terms & conditions",
+    "customer_accept_terms": "Customer accepts the terms & conditions",
+    "agent_inform_manual_review": "Agent informs the application goes to manual review",
+    "agent_present_final_offer": "Agent presents the final loan offer (amount, tenure)",
+    "customer_react_to_final_offer": "Customer reacts to the final offer",
+    "agent_transfer_to_rm": "Agent hands off to a Relationship Manager for KYC",
+    "customer_acknowledge_transfer": "Customer acknowledges the transfer to RM",
+    "agent_explain_fee": "Agent explains processing fee / EMI / interest rate",
+    "customer_query_fee": "Customer asks about fees, EMI, or interest rate",
+    "agent_reassure_trust": "Agent reassures the customer it's genuine (not fraud)",
+    "customer_express_distrust": "Customer suspects fraud / is reluctant to share info",
+    "agent_answer_query": "Agent answers the customer's question",
+    "customer_ask_query": "Customer asks the agent a question",
+    "agent_clarify": "Agent clarifies or re-explains a step",
+    "customer_ask_question": "Customer asks what to do / what a field means",
+    "agent_ask_to_repeat": "Agent asks the customer to repeat / didn't catch it",
+    "customer_unclear": "Customer's turn was unclear / asked to repeat",
+    "agent_wait": "Agent asks the customer to wait / is checking",
+    "customer_request_wait": "Customer asks the agent to hold on a moment",
+    "agent_confirm": "Agent confirms / agrees to proceed",
+    "customer_agree": "Customer agrees to proceed",
+    "agent_confirm_step": "Agent confirms a step is done, moves on",
+    "customer_report_done": "Customer reports they finished the step",
+    "agent_acknowledge": "Agent acknowledgement / back-channel",
+    "customer_acknowledge": "Customer acknowledgement / agreement / back-channel",
+    "agent_end_call": "Agent closes the call",
+}
+
 # --- tool / API call inference (STRICT, intent-coupled) ---
 # The transcript has NO real tool logs, so a tool call is INFERRED from the
 # agent's speech. Two guards keep it honest:
@@ -270,7 +335,12 @@ def detect_sentiment(text):
 
 
 def action_intent(speaker, base):
-    return ACTIONS.get(base, {}).get(speaker, f"{speaker}_{base}")
+    if base in ACTIONS:
+        return ACTIONS[base].get(speaker, f"{speaker}_{base}")
+    from src.justdial_coarse import ACTIONS as JD_ACTIONS   # coarse JustDial buckets
+    if base in JD_ACTIONS:
+        return JD_ACTIONS[base].get(speaker, f"{speaker}_{base}")
+    return f"{speaker}_{base}"
 
 
 def tool_for(speaker, base, text):
@@ -387,13 +457,16 @@ def extract_call(path, drop_noise=True, bundle=None, use_model=True, vocab=None)
     turns_in = [t for t in merged if not _is_noise(t["text"])] if drop_noise else merged
 
     # Prefer the distilled student model (trained on Claude's labels); fall back to
-    # the keyword/embedding rules if no model is present.
+    # the keyword/embedding rules if no model is present. Route by domain: JustDial
+    # transcripts (LCS-* names) use the JustDial model, everything else the ABCL model.
     model_bases = None
     if use_model:
         try:
             from src import distill
-            if distill.MODEL_PATH.exists():
-                model_bases = distill.predict_bases(turns_in)
+            is_justdial = path.stem.startswith("LCS")
+            model_path = distill.DOMAINS["justdial"]["model"] if is_justdial else distill.MODEL_PATH
+            if model_path.exists():
+                model_bases = distill.predict_bases(turns_in, model_path=model_path)
         except Exception:  # noqa: BLE001
             model_bases = None
     if model_bases is None and bundle is None:
@@ -420,7 +493,7 @@ def extract_call(path, drop_noise=True, bundle=None, use_model=True, vocab=None)
             "entities": ents,
         })
     return {
-        "call_id": path.stem[:8],
+        "call_id": path.stem,   # full stem: unique (stem[:8] collided for LCS-* names)
         "language": "hi-en",
         "outcome": _outcome(bases, " ".join(t["text"] for t in turns_in)),
         "turns": out_turns,

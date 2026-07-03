@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-3C5E",
+  "call_id": "LCS-3C5EN8R5",
   "language": "hi-en",
   "outcome": "raised_request",
   "turns": [
@@ -7,14 +7,14 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_disclose_recording",
-      "base_intent": "recording_disclosure",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "चेक",
         "लीड",
         "देख",
         "शेयर",
-        "देखिए"
+        "लाइन"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_sms_received",
-      "base_intent": "send_sms_link",
+      "intent": "customer_respond",
+      "base_intent": "agent_handle",
       "keywords": [
         "नंबर"
       ],
@@ -39,14 +39,14 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "चेक",
         "लीड",
         "सब्सक्राइब",
         "शेयर",
-        "फोन"
+        "कीजिए"
       ],
       "sentiment": null,
       "tool": null,

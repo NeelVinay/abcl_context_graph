@@ -1,5 +1,5 @@
 {
-  "call_id": "LCS-03F4",
+  "call_id": "LCS-03F4NQPZ",
   "language": "hi-en",
   "outcome": "incomplete",
   "turns": [
@@ -7,14 +7,14 @@
       "index": 0,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "कॉल",
         "चेक",
         "लीड",
         "लाइन",
-        "इश्यू"
+        "जान"
       ],
       "sentiment": null,
       "tool": null,
@@ -26,12 +26,8 @@
       "speaker": "agent",
       "type": "action",
       "intent": "agent_greet",
-      "base_intent": "greeting",
-      "keywords": [
-        "hello",
-        "बात कर रही",
-        "से बात"
-      ],
+      "base_intent": "open",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "मेरा नाम ध्यांका आ गया हूँ? Hello? मेरा नाम ध्यांका है, आज में चीजिंग से बात कर रही",
@@ -41,8 +37,8 @@
       "index": 2,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_provide_personal_details",
-      "base_intent": "personal_details",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [
         "हमको"
       ],
@@ -55,8 +51,8 @@
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_personal_details",
-      "base_intent": "personal_details",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
         "जान",
         "जिसके"
@@ -70,8 +66,8 @@
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "लीड",
         "ऐसे",
@@ -88,8 +84,8 @@
       "index": 5,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_personal_details",
-      "base_intent": "personal_details",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "लीड"
       ],
@@ -102,8 +98,8 @@
       "index": 6,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "लीड",
         "गलत"
@@ -117,10 +113,9 @@
       "index": 7,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_wait",
-      "base_intent": "wait_hold",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "एक मिनट",
         "मिनट"
       ],
       "sentiment": null,
@@ -132,8 +127,8 @@
       "index": 8,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "चेक",
         "लीड",
@@ -150,10 +145,9 @@
       "index": 9,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_wait",
-      "base_intent": "wait_hold",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "एक मिनट",
         "चेक",
         "मिनट"
       ],
@@ -166,8 +160,8 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_wait",
-      "base_intent": "wait_hold",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
         "देखिए",
         "लगा"
@@ -181,8 +175,8 @@
       "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_respond",
+      "base_intent": "agent_handle",
       "keywords": [
         "customer",
         "concern",

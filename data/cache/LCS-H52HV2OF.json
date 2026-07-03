@@ -1,0 +1,232 @@
+{
+  "call_id": "LCS-H52HV2OF",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "सब्सक्राइब",
+        "सर्विस",
+        "एंड",
+        "सेंटर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अबी वाशिंग मेशिन एंड इप्रेजिटेक्स सर्विस सेंटर लिप्टिंग करेंगे सब्सक्राइब यह बहुत बहुत",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_respond",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "506168",
+        "जरूर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत बहुत 506168 इसे जरूर सा 506168",
+      "entities": [
+        {
+          "type": "pincode",
+          "value": "506168"
+        },
+        {
+          "type": "pincode",
+          "value": "506168"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "506168",
+        "जरूर",
+        "अरे",
+        "लाओ",
+        "पेन"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इसे जरूर सा 506168 इसे जरूर सा ओके, अति अन्यभी अरे पॉस्टी पॉजिशियों ने नहीं है सर, आ रेंड पेन कोर लाओ गोड़ा ने नहीं है? ओके, अति अन्यभी अरे पॉस्टी पॉजिशियों ने नहीं है सर, आ रेंड पेन कोर लाओ गोड़ा ने नहीं है? ओके, अति अन्यभी अरे पॉस्टी पॉ वाशियों मिशीन रिपेरेंट प्रोविस वह नहीं है सा? नहीं है, नहीं है। ओके, एयर कुलनेल में रिपेरेंट प्रोविस",
+      "entities": [
+        {
+          "type": "pincode",
+          "value": "506168"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "रिपेरेंट",
+        "मिशीन"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "वह नहीं है, वाशियों मिशीन में रिपेरेंट प्रोविस वह नहीं है, नही ये",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "मना",
+        "डबल",
+        "इतने",
+        "रूप",
+        "अल्ली"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "टेपिक राइन के लिए वार्नेट काफ़ होंगे इतने आईबी इतने डबल रहेंगे इतने डबल इनकी मॉशिन मिशीन एर कुली मना पॉलिस्ट अल्ली करबाव मना पूपाल बन रूप सवर होते हैं सावर होते हैं इदी परकल इदानी दूरम अगर अन्मकुंडा अन्मकुंडा सी दी सी फाइन अगर आरे पल्ली पल्ली दूरम उस्तों आरे पल्ली अगर आरे पल्ली दूरम उस्तों आरे",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "आरे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "पल्ली अगर आरे पल्ली दूरम उस्तों",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "हूँ।",
+        "ऑप्शन",
+        "लेते",
+        "अपडेट",
+        "सेट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तो ये इसे मैंने अपडेट जाता हूँ चाहिए, अपने 15-20 किलीमेटर के लिए मेरे सारों के लिए अपडेट जाता हूँ। अपने अपने अन्ते आ एरिया लो अन्ते अन्ते पिंकोस आनेथी नीते दी सेखो अकड़े एरिया वाले पिंकोस आनेथी सेट कुना ऑप्शन होते हैं सर बरांगे सेट कुना परले लो बट ओन्दी मीट को 20 किलोमेटर से लेते पिंकोस वराउंडिंग्स होता है अकड़े सेट कुनां कोड अगर आप इस प्रोजीजन नहीं होते हैं, तो आपको मेल करने के लिए क्या कर सकते हैं? अगर आपको मेल करने के लिए क्या कर सकते हैं, तो आपको मेल कर सकते हैं। नॉर्मल पैकेट रहते हैं तो हम इसलिए तीसे हो सकते हैं लेकिन यह पॉजिशन",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "रिक्वेस्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "के लिए मेरी रिक्वेस्ट बढ़ाव सकते",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "कॉल",
+        "अच्छी",
+        "लेते",
+        "वीडियो",
+        "अगले"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हैं यह पॉजिशन के लिए बढ़ाव सकते हैं लेकिन यह पॉजिशन के लिए बढ़ाव सकते हैं अगले वीडियो यह मतलब एक-एक कॉल परिमंदी के परवर्वरी लेते हैं और वहाँ पर वहाँ कंप्यूट है और वहाँ पर वहाँ कंप्यूट है और वहाँ कंप्यूट है अच्छी",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "लास्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "में लास्ट में पूरो",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "कॉल",
+        "नंबर",
+        "देख",
+        "अच्छी",
+        "लिंक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "एक कॉल देखना वाली नहीं देगी अच्छी में लास्ट में पूरो एक कॉल देखना वाली नहीं देगी अच्छी में लास्ट में पूरो एक कॉल देखना वाली नहीं देगी यहाँ, अगर आप यहाँ देख सकते हैं, तो यहाँ देख सकते हैं, तो यहाँ देख सकते हैं. इंका फर्थर के मैंना क्वाइरेशन में कॉल जायेंसा निधर तिक्के रहे जायेंगे रेडी हैं तो रेडी पेस्ट ऑप्शन हैं तो ने कॉल बैक हो जायेंगे जायेंगे मैंने पंप देखती हुआ है यही साल देखकर हुआ है हाँ हाँ देखकर ओवर नंबर तो नो� find everything you need with your finger tip, download this area of now and then click in the link also. अधि download आ लिंक को ने download जाएगो अधि download आ लिंक को ने download जाएगो अधि download आ लिंक को ने download जाएगो इन्होंने वाली ने",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "टाइप",
+        "पोट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "टाइप रहेगा? अब पोट रहेगा,",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "इन्होंने",
+        "देश",
+        "टाइप",
+        "पोट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब पोट रहेगा. अब इन्होंने वाली ने मता अब्बेद देश पेटा रहेगा. ओके, इन्होंने वाली ने टाइप देश पेटा रहेगा. अब इन्होंने वाली ने मता अब्बेद देश पेटा रहेगा.",
+      "entities": []
+    }
+  ]
+}

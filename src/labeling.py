@@ -2,115 +2,167 @@
 
 Claude (the teacher) labels each segmented turn with the correct base intent,
 keywords, sentiment, and tool. A small local model (the student) later trains to
-imitate these labels. This module just handles the I/O around that:
+imitate these labels. This module handles the I/O around that:
 
-  build_guide()  -> the labeling contract (taxonomy + examples) given to labelers
-  emit_batches() -> split cached calls into batch files for parallel labelers
-  assemble()     -> validate labeler outputs and merge into data/gold/labels.jsonl
+  build_guide(tax)  -> the labeling contract (taxonomy + examples) given to labelers
+  emit_batches(tax) -> split that domain's cached calls into batch files to label
+  assemble(tax)     -> validate labeler outputs and merge into <gold>/labels.jsonl
 
-The unit of labeling is the SEGMENTED turn from extract_call (after merge + noise
-drop), so the training pairs align exactly with what the student model sees.
+Two domains are supported via a Taxonomy object (they share the same cache dir but
+own disjoint call sets):
+  abcl      -> loan-application calls  (src/extract.py taxonomy, data/gold)
+  justdial  -> lead-gen support calls  (src/justdial_taxonomy.py, data/gold_justdial)
 """
 from __future__ import annotations
 
 import json
+from dataclasses import dataclass
 from pathlib import Path
+from typing import Callable
 
 import config
-from src.extract import INTENT_LIBRARY, ACTIONS, SENTIMENT_LEXICON, TOOL_RULES
-
-GOLD_DIR = config.CACHE_DIR.parent / "gold"   # data/gold
-TOLABEL_DIR = GOLD_DIR / "_tolabel"
-LABELED_DIR = GOLD_DIR / "_labeled"
-LABELS_PATH = GOLD_DIR / "labels.jsonl"
-GUIDE_PATH = GOLD_DIR / "LABELING_GUIDE.md"
-
-VALID_BASE = {name for name, _, _ in INTENT_LIBRARY} | {"other"}
-# action-form name -> base name, so a labeler that wrote "customer_request_wait"
-# (the action form) instead of "wait_hold" (the base form) is recovered, not dropped.
-ACTION_TO_BASE = {a: base for base, pair in ACTIONS.items() for a in pair.values()}
-VALID_SENTIMENT = {s for s, _ in SENTIMENT_LEXICON} | {"neutral"}
-VALID_TOOL = {t for t, _ in TOOL_RULES.values()} | {None}
+from src import extract, justdial_taxonomy
 
 
-def build_guide() -> str:
+@dataclass
+class Taxonomy:
+    name: str
+    intent_library: list
+    actions: dict
+    sentiment_lexicon: list
+    tool_rules: dict
+    gold_dir: Path
+    owns: Callable[[str], bool]   # does this call_id/stem belong to this domain?
+
+    @property
+    def valid_base(self):
+        return {n for n, _, _ in self.intent_library} | {"other"}
+
+    @property
+    def action_to_base(self):
+        return {a: base for base, pair in self.actions.items() for a in pair.values()}
+
+    @property
+    def valid_sentiment(self):
+        return {s for s, _ in self.sentiment_lexicon} | {"neutral"}
+
+    @property
+    def valid_tool(self):
+        return {t for t, _ in self.tool_rules.values()} | {None}
+
+
+ABCL = Taxonomy(
+    name="ABCL loan-application calls",
+    intent_library=extract.INTENT_LIBRARY, actions=extract.ACTIONS,
+    sentiment_lexicon=extract.SENTIMENT_LEXICON, tool_rules=extract.TOOL_RULES,
+    gold_dir=config.DATA / "gold",
+    owns=lambda stem: not stem.startswith("LCS"),
+)
+JUSTDIAL = Taxonomy(
+    name="JustDial lead-generation support calls",
+    intent_library=justdial_taxonomy.INTENT_LIBRARY, actions=justdial_taxonomy.ACTIONS,
+    sentiment_lexicon=extract.SENTIMENT_LEXICON, tool_rules=justdial_taxonomy.TOOL_RULES,
+    gold_dir=config.DATA / "gold_justdial",
+    owns=lambda stem: stem.startswith("LCS"),
+)
+TAXONOMIES = {"abcl": ABCL, "justdial": JUSTDIAL}
+
+
+def _dirs(tax: Taxonomy):
+    return (tax.gold_dir / "_tolabel", tax.gold_dir / "_labeled",
+            tax.gold_dir / "labels.jsonl", tax.gold_dir / "LABELING_GUIDE.md")
+
+
+def build_guide(tax: Taxonomy) -> str:
     """Human/agent-readable labeling contract, generated from the live taxonomy."""
-    out = ["# Labeling guide — ABCL loan-application calls (Hinglish)\n",
+    out = [f"# Labeling guide — {tax.name} (Hinglish)\n",
            "You are the TEACHER creating ground-truth labels. For EACH turn assign the "
            "single best `base_intent` from the list below, the signal `keywords` "
-           "(verbatim spans copied from the turn text — the words that reveal the intent), "
-           "the customer `sentiment`, and any `tool` call.\n",
+           "(verbatim spans copied from the turn text), the customer `sentiment`, and any "
+           "`tool` call.\n",
            "Rules:",
-           "- `base_intent` MUST be exactly one value from the list (or `other` if nothing fits — "
-           "then add `suggested_intent` with a short new name).",
-           "- `keywords`: 1-5 short phrases COPIED VERBATIM from the turn text. No paraphrasing, "
-           "no invented words, no names/PII. If nothing is salient, use [].",
+           "- `base_intent` MUST be exactly one value from the list (or `other` if nothing "
+           "fits — then add `suggested_intent` with a short new name).",
+           "- `keywords`: 1-5 short phrases COPIED VERBATIM from the turn text. No "
+           "paraphrasing, no invented words, no names/PII, and NO number sequences "
+           "(phone numbers, OTPs, spelled-out digits like 'नाइन डबल टू'). If nothing is "
+           "salient, use [].",
            "- `sentiment`: ONLY for customer turns, else null. One of: "
-           f"{sorted(VALID_SENTIMENT)}. Use `neutral` if no clear emotion.",
+           f"{sorted(tax.valid_sentiment)}. Use `neutral` if no clear emotion.",
            "- `tool`: ONLY for agent turns where an actual system action is performed "
-           f"(not merely mentioned). One of: {sorted(t for t in VALID_TOOL if t)} or null.",
+           f"(not merely mentioned). One of: {sorted(t for t in tax.valid_tool if t)} or null.",
            "- Judge by MEANING and context, not keyword presence. The transcript is Hinglish "
-           "(mixed Hindi/Devanagari + romanized English) and may have ASR errors.\n",
+           "(mixed Hindi/Devanagari + romanized English) and may have ASR errors.",
+           "- If a turn is unintelligible ASR garble (repeated/nonsensical tokens, no clear "
+           "meaning), label `base_intent` = `other`, `keywords` = [], and move on — do NOT "
+           "over-analyze it.\n",
            "## Valid base intents (with example utterances)\n"]
-    for name, kws, examples in INTENT_LIBRARY:
-        pair = ACTIONS.get(name, {})
+    for name, kws, examples in tax.intent_library:
+        pair = tax.actions.get(name, {})
         roles = f"agent→`{pair.get('agent','?')}`, customer→`{pair.get('customer','?')}`"
         ex = " | ".join(examples[:3])
         out.append(f"- **{name}** ({roles})\n    e.g. {ex}")
     out.append("\n## Output format (per call): JSON")
     out.append("```json")
     out.append('{"call_id": "<id>", "turns": [')
-    out.append('  {"index": 0, "speaker": "customer", "base_intent": "greeting", '
-               '"keywords": ["hello"], "sentiment": "neutral", "tool": null},')
-    out.append('  {"index": 1, "speaker": "agent", "base_intent": "send_sms_link", '
-               '"keywords": ["sms", "link", "भेज"], "sentiment": null, "tool": "send_sms"}')
+    out.append('  {"index": 0, "speaker": "customer", "base_intent": "report_no_leads", '
+               '"keywords": ["लीड नहीं आ"], "sentiment": "frustrated", "tool": null}')
     out.append(']}')
     out.append("```")
     return "\n".join(out)
 
 
 def _segmented_turns(call: dict) -> list[dict]:
-    """Strip the local predictions; keep only what the labeler needs."""
     return [{"index": t["index"], "speaker": t["speaker"], "text": t["text"]}
             for t in call["turns"]]
 
 
-def emit_batches(per_batch: int = 8) -> list[Path]:
-    """Read all cached extractions, write batch files of stripped turns to label."""
-    TOLABEL_DIR.mkdir(parents=True, exist_ok=True)
-    calls = []
-    for f in sorted(config.CACHE_DIR.glob("*.json")):
+def _owned_caches(tax: Taxonomy):
+    """Cache files belonging to this domain (JD = LCS-*, ABCL = the rest)."""
+    return [f for f in sorted(config.CACHE_DIR.glob("*.json")) if tax.owns(f.stem)]
+
+
+def emit_batches(tax: Taxonomy, per_batch: int = 8, min_turns: int = 3) -> list[Path]:
+    """Read this domain's cached extractions, write batch files of stripped turns.
+    Skips near-empty calls (< min_turns) — nothing labelable there, just wasted tokens."""
+    tolabel, _, _, guide = _dirs(tax)
+    tolabel.mkdir(parents=True, exist_ok=True)
+    calls, skipped = [], 0
+    for f in _owned_caches(tax):
         c = json.loads(f.read_text())
-        calls.append({"call_id": c["call_id"], "turns": _segmented_turns(c)})
+        turns = _segmented_turns(c)
+        if len(turns) < min_turns:
+            skipped += 1
+            continue
+        calls.append({"call_id": c["call_id"], "turns": turns})
+    if skipped:
+        print(f"[{tax.name}] skipped {skipped} near-empty call(s) (< {min_turns} turns)")
     paths = []
     for i in range(0, len(calls), per_batch):
         batch = calls[i:i + per_batch]
-        p = TOLABEL_DIR / f"batch_{i // per_batch:02d}.json"
+        p = tolabel / f"batch_{i // per_batch:02d}.json"
         p.write_text(json.dumps(batch, ensure_ascii=False, indent=2))
         paths.append(p)
-    GUIDE_PATH.parent.mkdir(parents=True, exist_ok=True)
-    GUIDE_PATH.write_text(build_guide())
+    guide.write_text(build_guide(tax))
     return paths
 
 
-def _cache_text_index() -> dict:
-    """(call_id, index) -> turn text, from the cached extractions (the source text)."""
+def _cache_text_index(tax: Taxonomy) -> dict:
     idx = {}
-    for f in config.CACHE_DIR.glob("*.json"):
+    for f in _owned_caches(tax):
         c = json.loads(f.read_text())
         for t in c["turns"]:
             idx[(c["call_id"], t["index"])] = t["text"]
     return idx
 
 
-def assemble() -> tuple[int, list[str]]:
-    """Validate every labeled batch and merge into labels.jsonl (one turn per line).
-    Keywords not found verbatim in the source turn text are dropped (self-cleaning),
-    so a minor labeler slip can't poison the gold data."""
+def assemble(tax: Taxonomy) -> tuple[int, list[str]]:
+    """Validate every labeled batch and merge into <gold>/labels.jsonl."""
+    _, labeled_dir, labels_path, _ = _dirs(tax)
     rows, problems = [], []
-    text_idx = _cache_text_index()
+    text_idx = _cache_text_index(tax)
     dropped_kw = 0
-    for f in sorted(LABELED_DIR.glob("*.json")):
+    for f in sorted(labeled_dir.glob("*.json")):
         try:
             data = json.loads(f.read_text())
         except Exception as e:  # noqa: BLE001
@@ -120,9 +172,9 @@ def assemble() -> tuple[int, list[str]]:
             cid = call.get("call_id")
             for t in call.get("turns", []):
                 b = t.get("base_intent")
-                if b not in VALID_BASE:
-                    b = ACTION_TO_BASE.get(b)   # recover action-form labels
-                if b not in VALID_BASE:
+                if b not in tax.valid_base:
+                    b = tax.action_to_base.get(b)      # recover action-form labels
+                if b not in tax.valid_base:
                     problems.append(f"{cid} turn {t.get('index')}: bad base_intent "
                                     f"{t.get('base_intent')!r}")
                     continue
@@ -139,7 +191,7 @@ def assemble() -> tuple[int, list[str]]:
                     "sentiment": t.get("sentiment"), "tool": t.get("tool"),
                     "suggested_intent": t.get("suggested_intent"),
                 })
-    LABELS_PATH.write_text("\n".join(json.dumps(r, ensure_ascii=False) for r in rows))
+    labels_path.write_text("\n".join(json.dumps(r, ensure_ascii=False) for r in rows))
     if dropped_kw:
         problems.append(f"(info) dropped {dropped_kw} non-verbatim keywords")
     return len(rows), problems
@@ -148,14 +200,17 @@ def assemble() -> tuple[int, list[str]]:
 if __name__ == "__main__":
     import sys
     cmd = sys.argv[1] if len(sys.argv) > 1 else "emit"
+    dom = sys.argv[2] if len(sys.argv) > 2 else "abcl"
+    tax = TAXONOMIES[dom]
     if cmd == "emit":
-        paths = emit_batches(int(sys.argv[2]) if len(sys.argv) > 2 else 8)
-        print(f"Wrote {len(paths)} batch files to {TOLABEL_DIR}")
-        print(f"Wrote guide to {GUIDE_PATH}")
+        per = int(sys.argv[3]) if len(sys.argv) > 3 else 8
+        paths = emit_batches(tax, per)
+        tolabel, _, _, guide = _dirs(tax)
+        print(f"[{dom}] wrote {len(paths)} batch files to {tolabel}")
+        print(f"[{dom}] wrote guide to {guide}")
     elif cmd == "assemble":
-        n, probs = assemble()
-        print(f"Assembled {n} labeled turns -> {LABELS_PATH}")
-        if probs:
-            print(f"{len(probs)} problems:")
-            for p in probs[:20]:
-                print("  ", p)
+        n, probs = assemble(tax)
+        _, _, labels_path, _ = _dirs(tax)
+        print(f"[{dom}] assembled {n} labeled turns -> {labels_path}")
+        for p in probs[:20]:
+            print("  ", p)
