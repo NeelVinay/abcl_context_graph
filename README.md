@@ -1,114 +1,134 @@
 # ABCL / JustDial Call Context Graphs
 
-Turns call-center recordings into **context graphs** — visual maps of how calls actually
-flow (intents, keywords, dispositions, outcomes). The whole pipeline runs **locally, no
-paid API at runtime** (customer audio/PII stays on-machine).
+Turns call-center recordings into **visual analytics** — flow charts, context graphs, and
+SOP overlays that show how calls actually progress. The whole pipeline runs **100% locally**;
+customer audio and transcripts never leave the machine.
 
-Two stages:
-1. **Speech-to-text** — `mp3` recordings → plain-text transcripts (Whisper + diarization).
-2. **Graph build** — transcripts → intents/keywords → a **top-down flow tree** and/or the
-   classic **process graph (DFG)**, plus `report.md` / `turns.md` / `intents.md`.
-
-Two domains are supported, each with its own trained intent model (auto-selected by the
-transcript's filename):
-- **ABCL** — loan-application calls (the original `data/transcripts/*.txt`, JSON format).
-- **JustDial** — lead-generation support calls (`data/audio_transcripts/LCS-*.txt`, from `leads_mp3_data`).
+Two domains are supported, each with its own trained intent model (auto-selected by filename):
+- **ABCL** — loan-application outbound calls (uuid-named `.txt` transcripts).
+- **JustDial** — lead-generation support calls (`LCS-*.txt`, from `leads_mp3_data`).
 
 ---
 
-## Setup (one-time)
+## ⚡ Quick start — ABCL SOP call-flow chart (no transcription needed)
+
+The `data/test_100/` transcripts and extraction cache are **already committed**.
+After a one-time environment setup you can generate the C-suite SOP chart in ~1–2 min.
+
+### One-time setup
 
 ```bash
+# 1. System binary (rendering engine)
+brew install graphviz          # macOS
+# sudo apt install graphviz    # Linux
+
+# 2. Python environment
 cd abcl-context-graph
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+# ↑ downloads torch + sentence-transformers (~1–2 GB, takes ~10 min first time)
 ```
 
-**System binaries** (needed for audio + graph rendering):
+> **First run** also auto-downloads the multilingual embedding model
+> (`paraphrase-multilingual-MiniLM-L12-v2`, ~500 MB, cached to `~/.cache/sentence-transformers/`).
+> Subsequent runs are instant.
+
+### Generate the SOP chart
+
 ```bash
-brew install ffmpeg graphviz          # macOS
-# sudo apt install ffmpeg graphviz    # Linux
+# C-suite exec view (collapsed form steps, percentages, clean layout)
+python run.py --all --src data/test_100 --out data/output/test_100_sop --graph sop-exec
+
+# Detailed view (every individual SOP step, full skeleton including zero-count branches)
+python run.py --all --src data/test_100 --out data/output/test_100_sop --graph sop
 ```
 
-**HuggingFace token** — only needed if you will **transcribe audio** (the diarization model
-is gated). Not needed just to build graphs from existing transcripts.
+Output: `data/output/test_100_sop/sop_exec.png` (or `sop_flow.png` for the detailed view).
+
+### What you do NOT need for the SOP chart
+| Requirement | Needed? |
+|---|---|
+| `ffmpeg` | ✗ No — only for transcribing audio |
+| HuggingFace token | ✗ No — only for pyannote diarization |
+| Pyannote / WhisperX | ✗ No — only for transcribing audio |
+| Audio / MP3 files | ✗ No — transcripts are in `data/test_100/` |
+| Re-labeling / training | ✗ No — intent model is in `data/models/` |
+
+---
+
+## What each output shows
+
+### SOP call-flow chart (`--graph sop-exec` / `--graph sop`)
+A **fixed ABCL procedure skeleton** (decision diamonds, labeled branches, colored terminals)
+with real call data overlaid as edge counts and percentages.
+
+- **`sop-exec`** — C-suite presentation view: granular form steps collapsed into summary
+  boxes (e.g. all 5 personal-detail fields → one "Personal Details" node), zero-count
+  branches hidden, percentages on every edge, 150 DPI, bold green main path.
+- **`sop`** — Full detailed view: every individual SOP node and branch, including steps
+  that had zero calls in the dataset (useful for auditing coverage).
+
+The **green path** is the greedy main path — at each decision point it follows the branch
+with the most calls, showing the single most common end-to-end journey.
+
+### Flow tree (`--graph flow`, default)
+Top-down call-flow tree driven purely by the data. Shows how calls actually branch by
+disposition (callback / not-interested / proceeding / etc.) then by intent sequence.
+
+### Process graph / DFG (`--graph dfg`)
+Classic directly-follows process graph — every intent-to-intent transition weighted by
+call count.
+
+---
+
+## Setup for transcription (optional — only if you have new audio)
+
+All of the above works **without** this section. Only do this if you are transcribing
+new `.mp3` recordings.
+
+**Additional system binary:**
 ```bash
-huggingface-cli login                 # paste a free read token; answer 'n' to git-credential
+brew install ffmpeg             # macOS
+# sudo apt install ffmpeg       # Linux
 ```
-Then accept the terms (once) on these two gated models while logged into the same account:
-- https://huggingface.co/pyannote/speaker-diarization-3.1
-- https://huggingface.co/pyannote/segmentation-3.0
+
+**HuggingFace token** (diarization model is gated):
+```bash
+huggingface-cli login          # paste a free read token; answer 'n' to git-credential
+```
+Accept the terms (once) while logged in:
+- `pyannote/speaker-diarization-3.1`
+- `pyannote/segmentation-3.0`
 
 First transcription run downloads ~3–4 GB of models (Whisper large-v3, pyannote, aligner).
 
----
-
-## 1. Transcribe recordings (mp3 → transcript)
-
+### Transcribe recordings
 ```bash
 python run_transcribe.py --limit 100
+# Reads .mp3 from ~/Downloads/leads_mp3_data
+# Writes Agent:/Customer: plain-text to data/audio_transcripts/<id>.txt
+# Resumable: re-running skips files already done. --overwrite to redo.
 ```
-- Reads `.mp3` from `~/Downloads/leads_mp3_data` → writes plain-text (`Agent:`/`Customer:`,
-  one turn per line) to `data/audio_transcripts/<id>.txt`.
-- **Skip-if-exists** (resumable): re-running skips files already done. Use `--overwrite` to redo.
-- Flags: `--limit N`, `--src DIR`, `--overwrite`, `--gpu-device auto|mps|cpu`.
-- **Note:** transcription is CPU-bound on Apple Silicon (~2–3× realtime) — a full ~100-call
-  batch takes hours. Keep the Mac awake/plugged in; the run is resumable if interrupted.
+Note: transcription is CPU-bound on Apple Silicon (~2–3× realtime). A 100-call batch
+takes hours. Keep the Mac awake and plugged in; the run is resumable.
 
 ---
 
-## 2. Build the graph (transcript → flow tree / process graph)
-
-Two entry points, each with a `--data` selector (`mp3` = JustDial audio, `txt` = ABCL text):
+## All pipeline commands
 
 ```bash
-python make_flowchart.py --data mp3     # top-to-bottom call-flow tree
-python make_graph.py     --data txt     # classic process graph (DFG)
+# -- SOP flow charts (ABCL, from committed test_100 data) ---------------------
+python run.py --all --src data/test_100 --out data/output/test_100_sop --graph sop-exec
+python run.py --all --src data/test_100 --out data/output/test_100_sop --graph sop
+
+# -- Flow tree / DFG (any transcript directory) --------------------------------
+python run.py --all --src data/test_100  --out data/output/test_100  --graph flow
+python run.py --all --src data/audio_transcripts --out data/output/mp3 --graph flow
+
+# -- Transcribe new audio then build chart in one go --------------------------
+python make_flowchart.py --data mp3 --transcribe --limit 100
 ```
-- Builds **only from existing transcripts** by default (no transcription).
-- Add `--transcribe` (mp3 only) to transcribe first, `--limit N` to cap it.
-- `make_flowchart` extra: `--all-flows` shows every flow (very wide at scale; default folds
-  rare flows into "+N other flows" for readability).
-- Each build takes ~2–3 min (it re-runs the intent model over every turn).
-
-The correct intent model is chosen automatically: `LCS-*` transcripts → JustDial model,
-everything else → ABCL model.
-
----
-
-## Where the outputs are
-
-Everything lands under **`data/output/`**, one subfolder per dataset:
-
-```
-data/output/
-├── mp3/         # JustDial (audio) results
-├── txt/         # ABCL (text) results
-└── original/    # frozen original demo (do not overwrite)
-```
-Each folder contains:
-- `flow_tree.png` — the top-down call-flow tree (start → branches → colored outcomes).
-- `master_graph.png` / `master_graph.json` — the classic process graph.
-- `report.md` — keywords + sentiment + tool calls, per intent.
-- `turns.md` — every turn: speaker · intent · sentiment · tool · keywords.
-- `intents.md` — glossary of the intents present in that dataset, with descriptions + counts.
-
----
-
-## How it works (brief)
-
-- **Transcription:** WhisperX (`large-v3`) + silero VAD + pyannote diarization + word-level
-  alignment → per-turn `Agent:`/`Customer:` text. A domain prompt, audio clean-up, per-file
-  language detection, and repetition guards improve noisy Hinglish phone audio. All in `src/transcribe.py`.
-- **Intents:** a small local classifier (sentence-embeddings + logistic regression),
-  **distilled** from Claude-labeled gold — trained once at dev time, runs 100% locally after.
-  `src/distill.py`, models in `data/models/` (`intent_clf.pkl` = ABCL, `justdial_clf.pkl` = JustDial).
-- **Keywords:** corpus-driven — terms that recur across calls (PII-safe by construction).
-- **Dispositions:** semantic classification of *why* the call happened, used as the top
-  branch of the flow tree (`src/dispositions.py`).
-- **Graph:** per-call traces merged into a weighted graph (`src/merge.py`), rendered as a
-  flow tree (`src/flowtree.py` + `src/flowstages.py`) or DFG (`src/visualize.py`).
 
 ---
 
@@ -116,11 +136,56 @@ Each folder contains:
 
 | Task | Command |
 |---|---|
+| **SOP exec chart (C-suite)** | `python run.py --all --src data/test_100 --out data/output/test_100_sop --graph sop-exec` |
+| SOP detailed chart | `python run.py --all --src data/test_100 --out data/output/test_100_sop --graph sop` |
+| Flow tree from ABCL test data | `python run.py --all --src data/test_100 --out data/output/test_100 --graph flow` |
+| Flow tree from JustDial audio transcripts | `python run.py --all --src data/audio_transcripts --out data/output/mp3 --graph flow` |
 | Transcribe up to 100 recordings | `python run_transcribe.py --limit 100` |
-| Flow tree from audio | `python make_flowchart.py --data mp3` |
-| Flow tree from ABCL text | `python make_flowchart.py --data txt` |
-| Process graph (DFG) from audio | `python make_graph.py --data mp3` |
-| Show every flow (no folding) | `python make_flowchart.py --data mp3 --all-flows` |
-| Transcribe then build in one go | `python make_flowchart.py --data mp3 --transcribe --limit 100` |
+| Transcribe then build flow tree | `python make_flowchart.py --data mp3 --transcribe --limit 100` |
 
-(If `python` isn't the venv's, use `.venv/bin/python`.)
+---
+
+## Output locations
+
+```
+data/output/
+├── test_100_sop/    # ABCL SOP charts (sop_exec.png, sop_flow.png)
+├── test_100/        # ABCL flow tree + report from the 116-call test set
+├── mp3/             # JustDial (audio transcripts) results
+└── original/        # frozen original demo (do not overwrite)
+```
+
+Each folder contains:
+- `sop_exec.png` / `sop_flow.png` — SOP call-flow overlaid with real call counts (sop modes only).
+- `flow_tree.png` — top-down call-flow tree (start → branches → colored outcomes).
+- `report.md` — keywords + sentiment + tool calls, per intent.
+- `turns.md` — every turn: speaker · intent · sentiment · tool · keywords.
+- `intents.md` — glossary of the intents present in that dataset, with descriptions + counts.
+
+---
+
+## How it works
+
+- **Dispositions:** call-level classification of *why* a call happened — lightweight
+  prototype matching via sentence embeddings (no API, `src/dispositions.py`). ABCL and
+  JustDial have separate prototype sets; routing is by call-id prefix (`LCS-*` = JustDial).
+- **SOP skeleton:** fixed ABCL procedure DAG defined in `src/sop_flow.py` — each call is
+  walked through the skeleton using its disposition + intents + outcome to produce an
+  edge-count overlay.
+- **Intents:** local classifier (sentence-embeddings + logistic regression) distilled from
+  Claude-labeled gold data. Trained once, runs fully locally. Models in `data/models/`.
+- **Keywords:** corpus-driven — terms that recur across calls (PII-safe by construction).
+- **Flow tree:** per-call traces merged into a weighted DAG, rendered top-to-bottom
+  (`src/flowtree.py`). Main path = greedy walk (fattest branch at each step).
+- **Transcription:** WhisperX (`large-v3`) + pyannote diarization → per-turn
+  `Agent:`/`Customer:` text (`src/transcribe.py`). Only needed for new audio.
+
+---
+
+## Security / PII
+
+- All processing is **local** — no data is sent to any API at runtime.
+- `data/test_100/` and `data/audio_transcripts/` contain real customer transcripts — treat
+  as confidential, do not share or upload.
+- The HF token lives at `~/.cache/huggingface/token` — never echo or commit it.
+- Keywords are corpus-frequency filtered and contain no PII by design.

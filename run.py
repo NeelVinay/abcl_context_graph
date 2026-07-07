@@ -160,12 +160,18 @@ def main() -> None:
         if not files:
             raise SystemExit(f"No transcripts in {src} — drop .txt/.json files there.")
         print(f"Processing {len(files)} transcript(s) ...\n")
-        # Build the corpus keyword vocabulary from the parsed turn texts (not raw files,
-        # so speaker labels don't leak), then extract with it.
-        from src.extract import build_keyword_vocab, _load_turns
-        vocab = build_keyword_vocab(" ".join(t["text"] for t in _load_turns(p)) for p in files)
-        print(f"Keyword vocabulary: {len(vocab)} recurring terms\n")
-        calls = [_load_or_extract(p, vocab=vocab) for p in files]
+        if args.graph in ("sop", "sop-exec"):
+            # SOP modes only need intents + dispositions — keywords are unused.
+            # Load straight from cache (vocab=None) so no re-extraction or model download
+            # is required when cache files are present (e.g. after a fresh git pull).
+            calls = [_load_or_extract(p) for p in files]
+        else:
+            # Build the corpus keyword vocabulary from the parsed turn texts (not raw files,
+            # so speaker labels don't leak), then extract with it.
+            from src.extract import build_keyword_vocab, _load_turns
+            vocab = build_keyword_vocab(" ".join(t["text"] for t in _load_turns(p)) for p in files)
+            print(f"Keyword vocabulary: {len(vocab)} recurring terms\n")
+            calls = [_load_or_extract(p, vocab=vocab) for p in files]
         _write_outputs(build_master(calls), calls, args)
         return
 
