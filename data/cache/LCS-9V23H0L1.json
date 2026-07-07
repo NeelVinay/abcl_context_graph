@@ -7,59 +7,70 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_greet",
-      "base_intent": "open",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "लीड",
-        "ऐसा",
-        "उसमें",
-        "अंदर",
-        "share"
+        "lead",
+        "contract",
+        "business",
+        "team",
+        "request"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आपकी तरफ से एक रिक्वेस्ट हमें रिसीव हुई थी जिसके भी आपे मैंने आपसे कनेक्ट किया है। राजकुमार जी से बात हो रही है अभी मेरी। ठीक है राज जी आपने मेंशन किया था आपने तीन तरीकों रेनिवल किया था और अभी आपका प्रोफाइल लाइव नहीं हुआ है जबकी लीड भी आपको दिखनी पारी है राज? जी हाँ जी राजकमार जी मैं बता देता हूँ आपका कॉंट्राक्ट ना अभी आक्टिव जी, अभी यहाँ पे ना, आपको मैं एक link share कर रहा हूँ, उसमें office premises की अंदर और बाहर की image upload कर दिजेगा, ठीक है, और accounts team को मैं email कर देता हूँ, जिसमें half an hour, अगर आप picture upload कर देते हैं, same locations upload करना है इस तरफ को, ऐसा नहीं है कि आप कहीं ओर हैं, और कहीं ओर की photo",
+      "text": "आपकी तरफ से एक request हमें receive हुई थी जिसके बिहापे मैंने आपसे connect किया है। राजकुमार की से बात हो रही है अभी मेरी। ठीक है राजी आपने mention किया था आपने 3 तरीको renewal किया था और अभी आपका profile लाइव नहीं हुआ है जबकी lead भी आपको देख नहीं पारी है राइट। जी। हाँ जी राजकमार जी मैं बता देता हूँ आपका contract ना अभी active नहीं है। जिसके कारण आपका अभी business लाइव नहीं जी, अभी यहाँ पे ना, आपको मैं एक link share कर रहा हूँ, उसमें office premises की अंदर और बाहर की image upload कर दिजेगा। ठीक है। और account team को मैं email कर देता हूँ, जिसमें half an hour, अगर आप picture upload कर देते हैं, same locations upload करना है इससे आपको। ऐसा नहीं है कि आप कहीं ओर हैं",
       "entities": []
     },
     {
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "फोन",
+        "से।",
+        "renewal",
+        "किस",
+        "पैसा",
         "डाल"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "डाल रहे हैं पर आपके फोन से होगा",
+      "text": "और कहीं ओर की photo डाल रहे पैसे किस बात के लिए रह रहा है। वो renewal करने के जुम्मिदारी उनकी है। पैसा लेके घर बैठे हो आराम से।",
       "entities": []
     },
     {
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "backchannel",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
-        "फोन"
+        "सर।",
+        "upload",
+        "करनी"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "ना सर? मेरे फोन से",
+      "text": "नहीं, नहीं, image upload करनी की बात कर रहा हूँ मैं सर। पर सर,",
       "entities": []
     },
     {
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
-      "keywords": [],
+      "intent": "customer_ask_question",
+      "base_intent": "question",
+      "keywords": [
+        "company",
+        "payment",
+        "तरफ",
+        "ना।",
+        "duty"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "क्या है वो भी तो कर सकते",
+      "text": "मैं duty पे हो ना। उस बंदे को जो payment किया है, आपकी company तरफ से payment किया है। उस आदमी को वहाँ",
       "entities": []
     },
     {
@@ -69,32 +80,30 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "मार्केटिंग",
+        "marketing",
+        "process",
         "kyc",
-        "प्रोसेस",
         "डीटेल"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "हैं सर जी KYC की जो डीटेल है वो आपके थुई ही प्रोसेस हो सकती है अगर आप मार्केटिंग को कह रहे हैं तो मैं एक बार यहां से मार्केटिंग एसाइन कर देता",
+      "text": "बेजिये KYC की जो डीटेल हैं वो आपके थ्रूई ही process हो सकती हैं। अगर आप marketing को कह रहे हैं तो मैं एक बार यहां से marketing assign",
       "entities": []
     },
     {
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
+      "intent": "customer_respond",
+      "base_intent": "agent_handle",
       "keywords": [
         "मतलब क्या",
-        "उनको",
-        "समय",
-        "मार्केटिंग",
-        "आये"
+        "हूँ।",
+        "तारिक"
       ],
       "sentiment": "confused",
       "tool": null,
-      "text": "हूँ ठीक है मार्केटिंग सिविल पार्टर्स ही है उनको मैंने वो आये थे रिनूवल करने उस समय मैं पूछा थ आप दिन तारीख से आप आठ तारीख को इस चीज़ को बता रहे हैं तो मतलब क्या है आपका?",
+      "text": "कर देता हूँ। आप तीन तारिक से आप आठ तारिक को इस चीज़ को बता रहे हैं तो मतलब क्या है आपका?",
       "entities": []
     },
     {
@@ -106,39 +115,48 @@
       "keywords": [
         "उन्होंने",
         "बोला",
+        "जानना",
         "अरेंज",
-        "दूँगा",
-        "जानना"
+        "विजिट"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "नहीं नहीं मैं यह जानना चाहरा हूँ उन्होंने बोला था कि मैं कर दूँगा आप विजिट अरेंज कराईए वहाँ बेजी है जहाँ पर मेरा बिजनिस है",
+      "text": "नहीं नहीं मैं यह जानना चाहरा हूँ उन्होंने बोला था कि मैं कर दूँगा। आप विजिट अरेंज कराईए वहाँ बेजी है जहाँ पर मेरा बिजनिस है।",
       "entities": []
     },
     {
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [],
+      "intent": "customer_ask_question",
+      "base_intent": "question",
+      "keywords": [
+        "complaint",
+        "किस",
+        "सर।",
+        "पैसा"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "परिशान मत हुई है",
+      "text": "शूर्ट सर। ठी मेलों के लिए complaint होगी फालतू का पैसा फिर आप से पैसा लिया हैं तो आप किस बात कर रहे हो और मेरे पास",
       "entities": []
     },
     {
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_raise_request",
-      "base_intent": "resolution",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "अरेंज"
+        "contract",
+        "business",
+        "पैसा",
+        "generate",
+        "activated"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "मैं यहाँ से विजिट अरेंज कर देता हूँ",
+      "text": "business generate नहीं हो रहा है। हाँ आप ही contract activated नहीं है और पैसा कोई consume",
       "entities": []
     },
     {
@@ -148,11 +166,15 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "चलो"
+        "नहीं हो रहा",
+        "नहीं हो",
+        "हूँ।",
+        "business",
+        "arrange"
       ],
-      "sentiment": null,
+      "sentiment": "frustrated",
       "tool": null,
-      "text": "आपको तो चलो क्वांटे नहीं हुआ है, वो सब चीज नहीं हुआ है। दौक्ष",
+      "text": "नहीं हो रहा है। ठीक है आप परिशान मत होई हैं मैं यहाँ से business arrange कर देखा हूँ। पर शायद business भी तो loss",
       "entities": []
     },
     {
@@ -162,15 +184,15 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "कॉल",
-        "देख",
-        "बिजनेस",
-        "लिंक",
-        "रिक्वेस्ट"
+        "justdial",
+        "customer",
+        "call",
+        "support",
+        "thank"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "तो वो भी चीज तो देख जा रही है, जो वो बंदा बैठा हुआ, तीन जा चार अजार फिर रोज का उसका भी थोड़ा है। बल्कुल, बल्कुल, मैं यहाँ से रिक्वेस्ट प्रोस्टेस और आडवन्ट फीचर है जिससे आप अपने बिजनेस को ज्यादा बूस्ट या प्रमोट भी कर सकते हैं ठीक है जा? ठीक है जी जी कॉल के बाद शौर्ट फीडबैक लिंक वाटसिप के माध्यम से बेजा गया है जो कम्प्लीटली आपके और मेरे बीच में बात हुई है उसक",
+      "text": "रिक्वेस्ट प्रोसेस कर रहा हूँ। मार्केटिंग विजिट के लिए। साथ ही साथ मैं इमेल को प्रोसेस कर रहा हूँ। हमारी अकाउंट स्टीम को अक्टिवीशन के लिए। इसके साथ साथ JustDial आपको सेलेक्ट ऑप्शन भी देता है। जिससे बिना किसी customer support के call के एक ह� जिस पर 9 out of 10 highest rating है। JustDial में कीमती work देने के लिए देना वाला आपका दिन शुभू। Thank you.",
       "entities": []
     }
   ]

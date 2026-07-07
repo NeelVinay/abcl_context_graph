@@ -1,8 +1,30 @@
-Customer: Hello! Hello! Good afternoon sir. ఇందేందేందేందేందేందేందేందేందేందే Sir, ఇల్లా ఉస్సిల్లాం చెప్తే నికా సర్ తెరిస్యంది? కారి నూవు నేం బిజిన్నత్ల రీస్టారేంది ఎప్పుడు నాగు లీస్ రెప్రవంకిస్తు నూవు JustDial ప్రాట్ ప్రాట్
-Agent: Last year సరాది అది ఎందు గచ్చిం నాకు ఎప్పుడ అచ్చిం సరాది అది ఎందు గచ్చిం సరాది అది
-Customer: इक्का జू జू Sir, ఇప్రు మీక కాఉంట్ యేర్స్ అన్నా వికో నికు కాఉంట్టింగ్ అనేద్ ఎల్లా తెలుస్తు సర్వికో? Sir, ఇప్రు మీక కాఉంట్ యేర్స్ అన్నా వికో ని
-Agent: Contact లేయుటి సరిప్పడే response ఆవటలేయా అత్తన? ఆ ఇంతు నాచ్యంది వావతుంది నింది పైకెలు గాచ్చారు నూవు బంబిచ్చాలు నా నేను పోయు నింది పోయున్�
-Customer: Take me as an example ఇలా ఉస్తిమే ఇగ్జాంప్ప్రే ఇవాలు ఇవాలు కొలో తరుసా అంటే మీ కార్డే రీస్ మీ కార�
-Agent: नेरे మాత్లాడే యుత్తి నీ కోడ్లి హల్ల కుస్తారు దేశేశి లాయన్న రోచ్చి అందందేయు ఆక్షిస్ ప్రపుస్య బాత్ కరువిహర్ అం హల్ల నాక్షేశి Okay sir, నంక్కా అంచార్ బెడిస్తాం వాడిస్ వాడిస్ Category minimum service గావలి అన్న అప్పుడ అది వాలు ఇకలో చోచ్చింది విజ్యమాం కాలం తెలుస్కొండి అది పంపెచ్చారు అది వాలు ఇకలో చోచ్చింది విజ్యమాం కా
-Customer: वाला డూట్తే వాలాగి నిజమకాలా కల్లిస్కోనే ఫార్వడ్ అవ్తాయ్ కొన్ని బుగుల సర్విస్
-Agent: I will contact you if there are any issues like this. If it gets forwarded like this, I will contact you in the next follow up. I will contact you. I will talk to the ECS department. There is a concern team. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department Sorry sir. అంతి పేవ్మెంటా దీస్తురున్నాయు అంతి పేవ్మెంటా దీస్తురున్�
+Customer: Hello! Hello! Good afternoon sir. ఇందేందేందేందేందేందేందేందేందేందే
+Agent: Sir, ఇల్లా ఉస్సిల్లాం చెప్తే నికా సర్ తెరిస్యంది?
+Customer: కారి నూవు నేం బిజిన్నత్ల రీస్టారేంది ఎప్పుడు నాగు లీస్ రెప్రవంకిస్తు
+Agent: నూవు JustDial ప్రాట్ ప్రాట్ Last year సరాది
+Customer: అది ఎందు గచ్చిం నాకు
+Agent: ఎప్పుడ అచ్చిం సరాది
+Customer: అది ఎప్పుడ అచ్చిం సరాది
+Agent: అది ఎప్పుడ అచ్చిం సరాది అది ఎందు గచ్చిం సరాది అది इक्का జू జू Sir, ఇప్రు మీక కాఉంట్ యేర్స్ అన్నా
+Customer: వికో నికు కాఉంట్టింగ్ అనేద్ ఎల్లా తెలుస్తు సర్వికో? Sir, ఇప్రు మీక కాఉంట్ యేర్స్ అన్నా వికో ని
+Agent: Contact లేయుటి సరిప్పడే response
+Customer: ఆవటలేయా అత్తన? ఆ ఇంతు నాచ్యంది వావతుంది నింది
+Agent: పైకెలు గాచ్చారు నూవు బంబిచ్చాలు నా నేను పోయు నింది
+Customer: పోయున్� Take me as an example
+Agent: ఇలా ఉస్తిమే ఇగ్జాంప్ప్రే ఇవాలు ఇవాలు కొలో తరుసా అంటే మీ కార్డే రీస్ మీ
+Customer: కార్డే రీస్ మీ కార�
+Agent: नेरे మాత్లాడే యుత్తి నీ కోడ్లి హల్ల కుస్తారు దేశేశి లాయన్న రోచ్చి అందందేయు ఆక్షిస్ ప్రపుస్య
+Customer: బాత్ కరువిహర్ అం హల్ల నాక్షేశి
+Agent: Okay sir, నంక్కా అంచార్ బెడిస్తాం వాడిస్ వాడిస్ Category minimum service గావలి అన్న అప్పుడ అది వాలు ఇకలో చోచ్చింది విజ్యమాం కాలం తెలుస్కొండి అది పంపెచ్చారు అది వాలు ఇకలో చోచ్చింది విజ్యమాం కా वाला డూట్తే వాలాగి నిజమకాలా కల్లిస్కోనే ఫార్వడ్ అవ్తాయ్ కొన్ని
+Customer: బుగుల సర్విస్ కొన్ని బుగుల సర్విస్
+Agent: I will contact you if there are any issues like this. If it gets forwarded like this, I will contact you in the next follow up. I will contact
+Customer: you. I will talk to the ECS department. There
+Agent: is a concern team. I will talk to the
+Customer: ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS
+Agent: department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department.
+Customer: I will talk to the ECS department. I will
+Agent: talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS
+Customer: department. I will talk to the ECS department Sorry
+Agent: sir. అంతి పేవ్మెంటా దీస్తురున్నాయు
+Customer: అంతి పేవ్మెంటా దీస్తురున్నాయు అంతి
+Agent: పేవ్మెంటా దీస్తురున్�

@@ -1,0 +1,221 @@
+{
+  "call_id": "3528f83c-0dbb-47f2-b05c-dcee03f4715e-transcript",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "<CHD/>",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं सारला दुर्गेश मार्करवार जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "phone",
+        "बोलिए",
+        "काम",
+        "company",
+        "cut"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Madam क्या हो गया पहले यह बताइए Clear cut बोलिए बहुत phone आता है तुम्हारे company का परेशान हो गया अबे इससे. बोलिए क्या काम है?",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "pre-approved",
+        "loan offer",
+        "loan",
+        "approved",
+        "offer"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "यह Aditya Birla Capital की तरफ से आपके लिए एक pre-approved loan offer",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "काम",
+        "चुका",
+        "पंद्रह"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello? हां तो क्या काम? वह हो चुका है madam हो चुका है एक पंद्रह दिन हो गया हो चुका है.",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "समझ"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मैं समझ सकती हूँ कि आपको",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "है. Hello.",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "हो गया",
+        "अरे",
+        "चुका"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अरे हो चुका है हमारा disbursed भी हो गया सब चीज़ हो गया.",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "loan",
+        "approved",
+        "offer",
+        "pre",
+        "तरफ"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, समझ गई। यह Aditya Birla Capital की तरफ से आपका pre-approved loan offer था जिससे हम आपको apply करने में मदद कर रहे थे। क्या मैं आपकी मदद के लिए कुछ और कर",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_final_offer",
+      "base_intent": "final_offer",
+      "keywords": [
+        "loan",
+        "apply",
+        "मिल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैंने होगा. वह apply हो भी गया, मिल भी गया loan.",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "मदद",
+        "समझ",
+        "पूछना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, समझ गई। क्या मैं आपकी और कोई मदद कर सकती हूँ या आप कुछ और पूछना",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "बात तेरी मैं.",
+      "entities": []
+    }
+  ]
+}

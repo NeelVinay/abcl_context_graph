@@ -1,217 +1,191 @@
 {
   "call_id": "LCS-88GCGAIC",
   "language": "hi-en",
-  "outcome": "raised_request",
+  "outcome": "incomplete",
   "turns": [
     {
       "index": 0,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [
-        "उससे",
-        "इल्ला"
+        "good",
+        "afternoon"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "सर इल्ला उससे नहीं चेपता नहीं है सर तेलिशिया",
+      "text": "Hello! Hello! Good afternoon sir. ఇందేందేందేందేందేందేందేందేందేందే",
       "entities": []
     },
     {
       "index": 1,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "बिजनेस",
-        "नाक"
-      ],
+      "intent": "agent_greet",
+      "base_intent": "open",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "दी ताली नूँ नेंद बिजनेस लो रीस्टार हैंदी एपड़ू नाक लीन्स",
+      "text": "Sir, ఇల్లా ఉస్సిల్లాం చెప్తే నికా సర్ తెరిస్యంది?",
       "entities": []
     },
     {
       "index": 2,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_other",
+      "intent": "customer_other",
       "base_intent": "other",
-      "keywords": [
-        "नानी",
-        "गुड़ा"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "रिप्रेवंटिश ने नूँ एपड़ो इंटर्यूट लेकिन नानी गुड़ा",
+      "text": "కారి నూవు నేం బిజిన్నత్ల రీస్టారేంది ఎప్పుడు నాగు లీస్ రెప్రవంకిస్తు",
       "entities": []
     },
     {
       "index": 3,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
-        "नाक"
+        "justdial",
+        "last",
+        "year"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "नाक पॉइंटेंग ले गड़ेपुन",
+      "text": "నూవు JustDial ప్రాట్ ప్రాట్ Last year సరాది",
       "entities": []
     },
     {
       "index": 4,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_other",
+      "intent": "customer_other",
       "base_intent": "other",
-      "keywords": [
-        "लेनी"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "हैंदी तप लेनी �",
+      "text": "అది ఎందు గచ్చిం నాకు",
       "entities": []
     },
     {
       "index": 5,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_other",
+      "intent": "agent_other",
       "base_intent": "other",
-      "keywords": [
-        "लीज़",
-        "दोस्तों"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "दोस्तों चीज़रे माग लीज़ से 20% हैंटी हैंटी दोस्तों चीज़रे माग",
+      "text": "ఎప్పుడ అచ్చిం సరాది",
       "entities": []
     },
     {
       "index": 6,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_other",
+      "intent": "customer_other",
       "base_intent": "other",
-      "keywords": [
-        "लीज़"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "लीज़ से 20% हैंटी हैंटी",
+      "text": "అది ఎప్పుడ అచ్చిం సరాది",
       "entities": []
     },
     {
       "index": 7,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "लीज़",
-        "दोस्तों"
-      ],
+      "intent": "agent_greet",
+      "base_intent": "open",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "दोस्तों चीज़रे माग लीज़ से 20% हैंटी",
+      "text": "అది ఎప్పుడ అచ్చిం సరాది అది ఎందు గచ్చిం సరాది అది इक्का జू జू Sir, ఇప్రు మీక కాఉంట్ యేర్స్ అన్నా",
       "entities": []
     },
     {
       "index": 8,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [
-        "लीज़",
-        "दोस्तों"
-      ],
+      "intent": "customer_greet",
+      "base_intent": "open",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "हैंटी दोस्तों चीज़रे माग लीज़ से",
+      "text": "వికో నికు కాఉంట్టింగ్ అనేద్ ఎల్లా తెలుస్తు సర్వికో? Sir, ఇప్రు మీక కాఉంట్ యేర్స్ అన్నా వికో ని",
       "entities": []
     },
     {
       "index": 9,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
-        "लीज़",
-        "दोस्तों"
+        "response",
+        "contact"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "20% हैंटी हैंटी दोस्तों चीज़रे माग लीज़ से",
+      "text": "Contact లేయుటి సరిప్పడే response",
       "entities": []
     },
     {
       "index": 10,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_other",
+      "intent": "customer_other",
       "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "जुवन 3",
+      "text": "ఆవటలేయా అత్తన? ఆ ఇంతు నాచ్యంది వావతుంది నింది",
       "entities": []
     },
     {
       "index": 11,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_other",
+      "intent": "agent_other",
       "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "जुवन 14 जुवन 13 जुवन",
+      "text": "పైకెలు గాచ్చారు నూవు బంబిచ్చాలు నా నేను పోయు నింది",
       "entities": []
     },
     {
       "index": 12,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_other",
+      "intent": "customer_other",
       "base_intent": "other",
-      "keywords": [],
+      "keywords": [
+        "take",
+        "example"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "14 जुवन 15 जुवन 16 जुवन 17",
+      "text": "పోయున్� Take me as an example",
       "entities": []
     },
     {
       "index": 13,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "जुवन 18 जुवन 19 जुवन 20 जुवन 21 जुवन 22 जुवन 23 जुवन",
+      "text": "ఇలా ఉస్తిమే ఇగ్జాంప్ప్రే ఇవాలు ఇవాలు కొలో తరుసా అంటే మీ కార్డే రీస్ మీ",
       "entities": []
     },
     {
       "index": 14,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "24 जुवन 25 जुवन 26 जुवन 27 जुवन 28 जुवन 29",
-      "entities": []
-    },
-    {
-      "index": 15,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_other",
@@ -219,172 +193,208 @@
       "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "जुवन 30 जुवन 31 जुवन 32 जुवन 33 जुवन 34",
+      "text": "కార్డే రీస్ మీ కార�",
       "entities": []
     },
     {
-      "index": 16,
+      "index": 15,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "अज़े"
+        "नेरे"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "अज़े काउंटिंग के लिए तुम्हें आवत नहीं है। आज जून्द और अगर्सान आते हैं, तुम्हें",
+      "text": "नेरे మాత్లాడే యుత్తి నీ కోడ్లి హల్ల కుస్తారు దేశేశి లాయన్న రోచ్చి అందందేయు ఆక్షిస్ ప్రపుస్య",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "బాత్ కరువిహర్ అం హల్ల నాక్షేశి",
       "entities": []
     },
     {
       "index": 17,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "service",
+        "category"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Okay sir, నంక్కా అంచార్ బెడిస్తాం వాడిస్ వాడిస్ Category minimum service గావలి అన్న అప్పుడ అది వాలు ఇకలో చోచ్చింది విజ్యమాం కాలం తెలుస్కొండి అది పంపెచ్చారు అది వాలు ఇకలో చోచ్చింది విజ్యమాం కా वाला డూట్తే వాలాగి నిజమకాలా కల్లిస్కోనే ఫార్వడ్ అవ్తాయ్ కొన్ని",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "బుగుల సర్విస్ కొన్ని బుగుల సర్విస్",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "contact",
+        "any",
+        "there",
+        "like",
+        "issues"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I will contact you if there are any issues like this. If it gets forwarded like this, I will contact you in the next follow up. I will contact",
+      "entities": []
+    },
+    {
+      "index": 20,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "देख"
+        "department",
+        "there",
+        "talk",
+        "ecs"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "काउंटिंग के लिए कुछ देख सकते हैं। आपके लिए काउंटिंग",
-      "entities": []
-    },
-    {
-      "index": 18,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [
-        "देख"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "के लिए कुछ देख सकते हैं, तुम्हें काउंटिंग के लिए कुछ �",
-      "entities": []
-    },
-    {
-      "index": 19,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "नहीं आवश्यान नहीं है। मेरी स्टार्ट जयसे",
-      "entities": []
-    },
-    {
-      "index": 20,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "बिजनेस",
-        "सर्विस",
-        "इपने"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "सर्विस होती है। कुछ बिजनेस है। सर, इपने मेरे",
+      "text": "you. I will talk to the ECS department. There",
       "entities": []
     },
     {
       "index": 21,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
-        "बिजनेस",
-        "लगे",
-        "काउंट",
-        "येश"
+        "team",
+        "concern",
+        "talk"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "काउंट है। आपको काउंटिंग नहीं है। आपको कुछ बिजनेस नहीं है। आपको कुछ बिजनेस नहीं है। आड़ो गुड़बे प्रतार येश करेंगे अध्यानी फंचेनिंग अत्लाह अने येवरो येवरो स्लंगिया लगे",
+      "text": "is a concern team. I will talk to the",
       "entities": []
     },
     {
       "index": 22,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
-        "लेंगे"
+        "department",
+        "talk",
+        "ecs"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "कॉंटक्ट ले लेंगे सर्पर रेस्पोंड होते रहते ना",
+      "text": "ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS",
       "entities": []
     },
     {
       "index": 23,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_other",
+      "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "लेंगे"
+        "department",
+        "talk",
+        "ecs"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "हाँ इसलिए नाच लेंगे वहाँ तो मैंने पाइके ले रहता हूँ तो तो �",
+      "text": "department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department.",
       "entities": []
     },
     {
       "index": 24,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_other",
+      "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "कहते",
-        "अल्लाँ",
-        "जर्च"
+        "department",
+        "talk",
+        "ecs"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "इरे जर्च में अल्लाँ अल्लाँ कहते",
+      "text": "I will talk to the ECS department. I will",
       "entities": []
     },
     {
       "index": 25,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_other",
+      "intent": "agent_other",
       "base_intent": "other",
-      "keywords": [],
+      "keywords": [
+        "department",
+        "talk",
+        "ecs"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "हैं सामी को?",
+      "text": "talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS department. I will talk to the ECS",
       "entities": []
     },
     {
       "index": 26,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_other",
+      "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "लाइक",
-        "कहते",
-        "तारी",
-        "अंतर",
-        "काल"
+        "department",
+        "sorry",
+        "talk",
+        "ecs"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "मैंने काल की तारी में होता है लो नहीं को? मैंने लो नहीं कहते हैं सामी को? मैंने काल की तारी में होता है लो नहीं को? मैंने काल की तारी में होता है लो नहीं को? तो बंदे। अंतर लाइक इस इसे वच्छा या सर अंतर लाइक मैंने चर्चे देना अंतना रहा",
+      "text": "department. I will talk to the ECS department Sorry",
       "entities": []
     },
     {
       "index": 27,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "sir. అంతి పేవ్మెంటా దీస్తురున్నాయు",
+      "entities": []
+    },
+    {
+      "index": 28,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_other",
@@ -392,21 +402,7 @@
       "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "वालू? नहीं आपने इसे वच्छा या सर अंतना रहा",
-      "entities": []
-    },
-    {
-      "index": 28,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [
-        "आगर"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "वालू? ओके सर मेरे कांग्जार में बेड़ता हूँ अगर आगर अगर अगर",
+      "text": "అంతి పేవ్మెంటా దీస్తురున్నాయు అంతి",
       "entities": []
     },
     {
@@ -415,77 +411,10 @@
       "type": "action",
       "intent": "agent_other",
       "base_intent": "other",
-      "keywords": [
-        "अधि",
-        "सर्वेस",
-        "वालो"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "अगर अगर अ ये कैटेगेल में हमारे सर्वेस गावाली अन्नपुट अधि वालो इका लोग चौच्छी वी निज़ा हमारा खाला",
-      "entities": []
-    },
-    {
-      "index": 30,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "अधि"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "तेलिश कोई अधि पंपे चाहिए",
-      "entities": []
-    },
-    {
-      "index": 31,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [
-        "लेंगे",
-        "लेके",
-        "इसको",
-        "सर्च",
-        "कहते"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "अधि वालो इका लोग चौच्छी वी निज़ा हमारा खाला तेलिश कोई अधि पंपे चाहिए अधि वालो लेकिन वांट आइडिंग से पंपिक्शन लेंगे जिसे इन्होंने सर्च लेके पहले वाला अड़ा पहले पंपिक्शन लेंगे वाला अड़ूते वाला इसे निजमा नहीं कहते हैं तो इसको फॉरवर्ड होता है कुछ बुल्ले सर्च लेंगे आइडर वर्ष में बेंगम प मैं चलते हैं अपने विशेषों के लिए विशेष अंदली वाली डेविड होते हैं तो आपको, अंदली पेमेंट देशकुना रहा है? नहीं पेमेंट रहा हूँ. Sorry, Sir. अंदली पेमेंट देशकुना रहा हूँ.",
-      "entities": []
-    },
-    {
-      "index": 32,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "टीम"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "आज कांसर्ट टीम होते हैं इसेज",
-      "entities": []
-    },
-    {
-      "index": 33,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [
-        "अलग",
-        "डिपार्टमेंट",
-        "मार्ट",
-        "अले"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "डिपार्टमेंट अले, वाले तो रोक से मार्ट रहेंगे. मैं अलग रक्षा",
+      "text": "పేవ్మెంటా దీస్తురున్�",
       "entities": []
     }
   ]

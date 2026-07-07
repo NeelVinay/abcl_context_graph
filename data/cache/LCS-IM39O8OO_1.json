@@ -11,7 +11,8 @@
       "base_intent": "complaint",
       "keywords": [
         "दिये",
-        "रखते"
+        "रखते",
+        "फूल"
       ],
       "sentiment": null,
       "tool": null,
@@ -26,10 +27,10 @@
       "base_intent": "agent_handle",
       "keywords": [
         "call",
+        "leads",
+        "number",
         "inquiry",
-        "मिल",
-        "request",
-        "number"
+        "request"
       ],
       "sentiment": null,
       "tool": null,

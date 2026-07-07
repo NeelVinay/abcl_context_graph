@@ -1,0 +1,84 @@
+{
+  "call_id": "a6f05b6c-3204-46d5-924d-24bb939448d9-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ जी, नमस्ते! मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से। क्या मैं <<devanagari_name>> जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello. हां.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "आदित्य",
+        "कैपिटल",
+        "बिरला",
+        "तरफ"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "बोलो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बोलो. Hello?",
+      "entities": []
+    }
+  ]
+}

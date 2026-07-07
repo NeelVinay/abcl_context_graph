@@ -1,0 +1,117 @@
+{
+  "call_id": "15b98285-d762-407f-9c5b-e9b0e274b83a-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं BEENAGONI UPENDAR जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "तेलुगू"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां, yes तेलुगू.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_org_name",
+      "base_intent": "organization_name",
+      "keywords": [
+        "personal",
+        "company",
+        "reject"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Company personal role reject कर लिया.",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "sorry",
+        "help",
+        "language"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Sorry पर, मैं इस language में help",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "reason"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "क्यों? Reason?",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "धन्यवाद",
+        "time",
+        "sorry",
+        "help",
+        "source"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Sorry पर, मैं इस language में help नहीं कर सकती। आपके time के लिए धन्यवाद।\n<EOC source=\"voicemail\"/>",
+      "entities": []
+    }
+  ]
+}

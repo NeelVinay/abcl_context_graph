@@ -90,6 +90,14 @@ _NAMES = {
     "संदीप", "संजय", "सुरेश", "रमेश", "राजेश", "महेश", "दिनेश", "अंकित", "आशीष",
     "दीपक", "मनोज", "अनिल", "सुनील", "अरुण", "वरुण", "गौरव", "सौरभ", "नितिन",
     "प्रकाश", "मोहित", "करण", "आकाश", "अर्जुन", "अमन", "कुनाल", "नंदू",
+    # common Indian surnames (recur across calls as agent/customer names -> leak as keywords)
+    "yadav", "kumar", "sharma", "singh", "verma", "gupta", "patel", "devi", "khan",
+    "reddy", "rao", "das", "shah", "jain", "mishra", "pandey", "chauhan", "tiwari",
+    "यादव", "कुमार", "शर्मा", "सिंह", "वर्मा", "गुप्ता", "पटेल", "देवी", "खान",
+    "रेड्डी", "राव", "दास", "शाह", "जैन", "मिश्रा", "पांडे", "चौहान", "तिवारी",
 }
 
-STOPWORDS = _HINDI | _ENGLISH | _HINGLISH | _NAMES
+# system / DSL markers that leak from the agent transcripts (e.g. <chd>, <EOC/>)
+_SYSTEM = {"chd", "eoc", "eoc/", "chd/"}
+
+STOPWORDS = _HINDI | _ENGLISH | _HINGLISH | _NAMES | _SYSTEM

@@ -1,0 +1,86 @@
+{
+  "call_id": "e2ce6d18-ab02-42b8-966a-0e92301fe6d0-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं दसारथा रामायाह श्रीरामदास जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_unclear",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "number",
+        "wrong"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello. Wrong number.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "समझ",
+        "समय",
+        "उपलब्ध"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओह, समझ गई। क्या दसारथा रामायाह श्रीरामदास जी इस समय उपलब्ध हैं?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "फिर से कह",
+        "कीजिए",
+        "माफ़"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "माफ़ कीजिए, क्या आप फिर से कह सकते हैं?",
+      "entities": []
+    }
+  ]
+}

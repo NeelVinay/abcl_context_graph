@@ -10,15 +10,15 @@
       "intent": "agent_greet",
       "base_intent": "open",
       "keywords": [
-        "रिक्वेस्ट",
-        "issue",
         "business",
-        "रिसीव",
-        "जिसके"
+        "issue",
+        "related",
+        "connect",
+        "face"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आपकी तरफ से एक रिक्वेस्ट हमें रिसीव होई थी संजिन जी जिसके related मैंने connect किया है कोई issue face कर रहे है business",
+      "text": "आपके लिए चंजन जी। जिसके related मैंने connect किया है। कोई issue face कर रहे हैं business",
       "entities": []
     },
     {
@@ -28,46 +28,40 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "समय",
-        "kyc",
-        "related"
+        "owner"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "समय में this हाँ जी जर क्या होते है मेरा ID जो है वो KYC के लिए packing बता रहा था ना sir KYC के related हाँ जी",
+      "text": "owner this। हाँ जी sir क्या हो जाएं। मेरा ID क्यों",
       "entities": []
     },
     {
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask",
-      "base_intent": "question",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
-        "issue",
         "kyc"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "तो हाँ जी KYC में क्या issue आ रहा है",
+      "text": "KYC के लिए packing",
       "entities": []
     },
     {
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
-        "बोल",
-        "टाइम",
-        "उन्होंने",
-        "बोला",
-        "बताई"
+        "sir।",
+        "kyc"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "माम बताई है मेरा पेन नहीं ले रहा था ना पेन कार्ड नहीं ले रहा था ना अच उन्होंने बोला कि कल तक का टाइम दिया मुझे जी हंजी हंजी तो कल तक हो जाएगा बोल रहे",
+      "text": "कर रहा था न sir। KYC के",
       "entities": []
     },
     {
@@ -77,48 +71,50 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "चेक",
-        "contract",
-        "details",
-        "मैम",
-        "जिसके"
+        "issue",
+        "जी।",
+        "kyc",
+        "related।"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "थे ठीक है मैं यहाँ से एक बार contract की details चेक कर रहा हूँ ठीक है अभी मैं यहाँ से चेक कर लेता हूँ कि आपका package अभी ना activated नहीं है ma'am ठीक है हंजी जी package इसलिए activated नहीं है क्य हाँ जी मैं यहाँ से चेक कर लेता हूँ क्या के नेसिसरी डॉक्मेंट अभी रिक्वाइड है जिसके भी आप पर हम प्रोसेस कर पाया है ठीक है अभी कंप्लीट नीम आपका जो अधार कार्ट पर है वो मुझे बता दीजेगा मैम कंजिन",
+      "text": "related। हाँ जी तो हाँ जी। KYC में क्या issue",
       "entities": []
     },
     {
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_respond",
-      "base_intent": "agent_handle",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "कंप्लीट",
-        "नीम"
+        "time",
+        "था।",
+        "उन्होंने",
+        "बोला",
+        "मुझे।"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "चिला हाँ जी यह कंप्लीट नीम ठ",
+      "text": "आ रहा है माम बताईए। मैं पेन कार्ड नहीं ले रहा था। अच्छा पेन कार्ड नही उन्होंने बोला की कल तक का time दिया मुझे।",
       "entities": []
     },
     {
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_raise_request",
-      "base_intent": "resolution",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "चेक",
-        "call",
-        "नंबर",
-        "देखिए",
-        "lead"
+        "हूँ।",
+        "check",
+        "contract",
+        "number",
+        "बोल"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "तो आपका मैं यहाँ पर चेक कर पा रहा हूँ मैम जो name of the unit है यह white lotus homestay है रही हाँ जी मैं business name update कर देता हूँ white lotus homestay इसमें उद्यम नंबर आपने feed नहीं कर रहा है उद्यम नंबर आपका basically contract हिमाचल प्रदेश में run हो रहा है रही हाँ जी, तो मैं इसके लिए उद्यम नंबर को प्रोसेस कर देता हूँ, यहाँ से मैं प्रोसेस कर रहा हूँ, KYC प्रोसेस, ठीक है, जिसके लिए हम आपके contract को activate कर पाएं, और जो भी necessary document हमें required हैं, वो भी मैं आपको suggest कर दूँगा, वो आप भी share कीजिएगा, जिसक मैम जो उद्यम नंबर आपने हमें दे रखा है, यह वैलिड नहीं है, उद्यम नंबर वैलिड नहीं है, यहाँ पे जो शो हो रहा है हमारे पास, UDYM HP 07000001109, फिर से मैं चेक कर रहा हूँ, री चेक कर रहा हूँ मैम, आपका उद्धिम वैलिडेट हो चुका है माम यहाँ से ठीक है अभी मैं आपके office premises की images चेक कर लेता हूँ होडिंग दे रखा है माम आपने sign board white hotel होडिंग दे रखा है sign board white lotus home state ठीक है मैं email कर रहा हूँ back-end के पास contract की activation के लिए ठीक है माम आपको कोई भी changes नहीं करना है, ठीक है, wait करें, call disconnect नहीं करना है, मैं आपकी call एक minute के लिए और पर रख सकता हूँ, मैंने यहाँ से email send कर दिया है team के पास shortly आपका contract activate हो जाएगा फिर आपको lead की services मिलने लगेगी जिस दाइल से ठीक है ma'am अभी छोटी सी request रहीगी ma'am इस call के बाद न अभी whatsapp पर देखे मेरी तरफ से एक short feedback link आपके पास भेजा गया है जो completely आपके और मेरे बीच में बात हुई WhatsApp पर देखिए एक ticket ID का message आएगा आपके पास उसके नीचे देखिए rate my experience का option आ रहा होगा आपके पास नीचे शो रहा है ma'am टिकेट WhatsApp पर देखिए ticket ID का message आएगा जिसमें लिखा होगा hi user your ticket ID LCS is resolved how do we do please share your experience आ रहा होगा ma'am तो WhatsApp के हाँ WhatsApp है आपके पास rate my experience पर click करना है दिख रहा है rate my experience का option मैं? WhatsApp",
+      "text": "जी। हंजी हंजी तो कल तक हो जाएगा बोल रहे थे। ठीक है मैं यहाँ से contract की details check कर रहा हूँ। ठीक है। Okay sir. हाँ جی میں یہاں سے check کر لیتا ہوں کہ necessary document ابھی required ہے جس کے بھی آپ پر ہم process کر پائیں۔ ابھی complete name آپ کا جو ادھار card پہ ہے وہ مجھے بتا دیجئے گا مہم۔ تنزین چلا؟ ہاں جی یہ complete name؟ چھیک ہے۔ ہاں جی ہاں جی. 9667 آپ کا ادھار number",
       "entities": []
     },
     {
@@ -127,28 +123,92 @@
       "type": "action",
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
-      "keywords": [],
+      "keywords": [
+        "right"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "पे? नहीं सिर्फ",
+      "text": "ہے right؟ ہاں جی ہاں جی.",
       "entities": []
     },
     {
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_raise_request",
-      "base_intent": "resolution",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "चेक",
-        "शेयर",
-        "ऑप्शन",
-        "प्लीज",
-        "मैम"
+        "business",
+        "run"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "WhatsApp पे क्या शो हो रहा है आपको ये बता दीजेगा मुझे WhatsApp पे Giselle से message आया है ticket ID का मैम? नहीं सिर्फ कोई message नहीं आया है? नहीं नहीं सिर्फ अच्छा आपने ticket raise कराओगे और ticket close किया गया उसका message आया होगा ना मैम? अच्छा वो चेक कर लीजियेगा प्लीज हाउ डू वी डू प्लीज शेयर योर एक्सपीरियंस के ऑप्शन आ रहा होगा ठीक है जिससे आता प्लीज शेयर कीजिएगा टेन हाई जिससे ठीक है इसके साथ साथ जर्जदाल आपको सेल्फ से एक ऑप्शन भी देता है जिससे बिना किसी क वेल्गमेन",
+      "text": "بزنس کیسے run کر رہے ہیں مہم؟ یہ individual business ہے آپ",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "business"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "کا؟ ہاں جی individual business میں ہے۔",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "justdial",
+        "call",
+        "lead",
+        "check",
+        "contract"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तो आपका मैं यहाँ पर check कर पा रहा हूँ ma'am। जो name of the unit है यह White Lotus Homestay हैं right। हाँ, हाँ, यहां से मैं process कर रहा हूं KYC process ठीक है। जिसके लिए हम आपके contract को activate कर पाएं। और जो भी necessary document हमें required हैं। वो भी मैं आपको suggest कर दूंगा। वो आप भी share कीजिएगा। जिसके बेस्ट तभी जाके contract आपका activate हो पाएगा। ठीक है। हाँ ठीक है। मैम जो odium number आपने हमें दे र UDYM number valid نہیں ہے، یہاں پہ جو show ہو رہا ہے ہمارے پاس۔ UDYM HP 07000001109، پھر سے میں check کر رہا ہوں، recheck کر رہا ہوں۔ आपका उद्धिम validate हो चुका है। Half an hour or one hour کے اندر اندر contract activate ہو جاتا ہے۔ آپ کو کوئی changes نہیں کرنا ہے۔ Call disconnect نہیں کرنا ہے۔ Call on करنے کے لئے دنوار, لمبی پرتکشہ, کلیشہ میں چاہوں گا مام۔ میں نے یہاں سے email send کر دیا ہے team کے پاس۔ Okay sir. Shortly آپ کا contract activate ہو جائے گا، پھر آپ کو lead کی services ملنے لگے گی JustDial سے، ٹھیک ہے مام؟ Okay sir. جی جی، ابھی چھوٹی سے request رہی گی مام، اس call کے بعد نا، ابھی WhatsApp پہ دیکھیں، میری طرف سے ایک short feedback link آپ کے پاس بھیجا گیا ہے، جو completely آپ کے اور میرے بیچ میں بات ہوئی ہے، اس کے ادھار پہ ہوئے گا، جس پہ 9 or 10 highest rating ہے۔ کہ آپ over the call جا کے ایک بار check کر WhatsApp पर देखिए ticket ID का message آئےगा आपके बास। उसके नीचे देखिए rate my experience का option आ रहा होगा आपके बास। नीचे है। Show रहा है ma'am। WhatsApp पर देखिए ticket ID का message आएगा जिसमें लिखा होगा hi user, your ticket ID LCS is resolved. How do we do? Please share your experience आ रहा होगा ma'am। So WhatsApp पर? हाँ WhatsApp पर हैं। आपके बास rate my experience पर click करना ह दिख रहा है rate my experience का option मैं WhatsApp पे। नहीं sir। WhatsApp पे क्या show हो रहा है आपको ये बता दीजिएगा मुझे। WhatsApp पे JustDial से message آया है ticket ID का ma'am। नहीं sir। कोई message नहीं آया है। नहीं, नहीं sir। अच्छा आपने ticket raise कर रहे होगे और ticket close किया गया उसके message آये होगा",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "sir।",
+        "am।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ना ma'am। नहीं sir।",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "thank",
+        "how",
+        "share",
+        "much",
+        "very"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "How do we do? Please share your experience. Thank you very much",
       "entities": []
     }
   ]

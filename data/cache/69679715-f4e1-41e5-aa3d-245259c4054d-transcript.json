@@ -1,0 +1,116 @@
+{
+  "call_id": "69679715-f4e1-41e5-aa3d-245259c4054d-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं pawannath जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "कितना",
+        "लगेगा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Charge कितना लगेगा?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_explain_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "interest rate",
+        "offer",
+        "शुरू",
+        "application",
+        "link"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Interest rate ten point nine nine percent से शुरू होती है और आपके final offer पर depend करती है। मैं अभी आपको SMS भेजती हूँ जिसमें link होगा, कृपया उस पर click करके process शुरू करें।\nमैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "link",
+        "sms",
+        "click"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब आप SMS में जो link है उसे click करें।",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "आया ही नहीं.",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "link",
+        "check",
+        "try",
+        "connection",
+        "internet"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Internet connection check करें और link को एक बार फिर से try करें।",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं.",
+      "entities": []
+    }
+  ]
+}

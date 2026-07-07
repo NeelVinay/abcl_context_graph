@@ -7,30 +7,36 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_greet",
-      "base_intent": "open",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "कॉल",
-        "शेयर",
-        "लाइन",
-        "कस्टमर",
-        "लेते"
+        "justdial",
+        "customer",
+        "com",
+        "service",
+        "what"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "पॉइंट सेन अपर गितांच लीजसल डॉट कॉम कस्टमर सेविस्ट होंगे कॉल शेयर सेविस्ट नान। क्योंकि? इदे कॉंटाक रिलीट्सल कंसन हो जाने कंप्लाइन पेटायर है सर फीनिक्स टूर्फेंट राजू? आव वीडियो रामत लेते हैं। इवेर के लिए ली� लाइन लोग कर",
+      "text": "I am calling from JustDial.com customer service. What is it? I am calling from JustDial.com customer service. What is",
       "entities": []
     },
     {
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [],
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "justdial",
+        "customer",
+        "com",
+        "service",
+        "what"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "दो कर दो टोटन",
+      "text": "it? I am calling from JustDial.com customer service. What is it? Agent customer",
       "entities": []
     },
     {
@@ -40,15 +46,33 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "कॉल",
-        "चेक",
-        "लीड",
-        "नंबर",
-        "उन्होंने"
+        "support",
+        "leads",
+        "business",
+        "category",
+        "ticket"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "में उच्छेशी मार्च्यों फ़स्ट में उन्होंने पिगले ज़रूर को निकु 15 एंक्वेरीज लिया है सेर यी मंथ लो आजोख में इन्होंने मार्केट प्रिंचन दल्लों देखे रहेंगे कैटेगरी रिलेगे मनेक सर्चेस तक उड़ना है सेर मार्केट प्रिंचन वन इस्टर चलन उनका लीड़ चलन नंबर चलते हैं। अपनी कोंट्राक्ट में कीवर्ड्स बहुत बहुत बढ़ते हैं। 44 बेटायर गदा, आउस्ट्रम लेनी उन्हें अन्नी तीचेंगे से, उन्हीं मेहिंगा ये वैटे सर्विसेस प्रोवाइड जेस्तार। दानी वर्को अपडेट जेएंडी, कच्छितेंगा सर्विसेस अन्येथी इन्हें बेटार उस्ट्राइड जेस्तार मेकु। अरे अन्य सरे सर, मैं आपके लिए कोल बैक करेंगे अपिस्टानू, कैटेग्री समय जो रिमूँ जेस्कोंडी, आवरेज लीड टाइम्स टाइम्स फोर आवर्स उन्दे सर, लीड रागान एंट अंतें इमेडियट जो रेस्पॉंड अवंडे, आपने उन्दे कॉल जेंदे इंका बे� सल्वी से समझें बेटर होता है जैसे है ओके न एडिट पर लिंक पंपी चाहिए आ लिंक पर लॉगिन आएगो न मेरी कैटेग्रीज चेक जाएगी जैसे ओके सारे मेरे दान पर इंची कोड़े छूड़ान दे साथ ओके न कि मैंने इससे उन्हां कोड़े जजडाल आपने सल पोस्ट यू रस्पांच तेन दिवाने चाहिए जो यहाँ तलस्को या थैंक यू सा यूजिंग जजटाल डॉटकाम भावक रेट एक",
+      "text": "support, ticket, area, location, renewal की help करता है। Business owner leads, inquiry, category, pincode, rating, response को लेकर बात कर रहे हैं। Okay sir, లేంగ్గో ఉన్నందుకు సోటన్న్నో ఉచ్చేసి మార్చ్య పస్టన్ ఉండి పుబ్లీయుత్వరుకు మికు 15 ఎంక్వైరిస్ ఇల్లేయ్ సేర్ ఇ మంత్లో ఆజుప్ మ One is to seven. Only main జ జ services provide జ జ",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "justdial",
+        "call",
+        "com",
+        "lead",
+        "thank"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I will tell you the callback area. Remove the categories. The average response time is 4 hours. If you don't get the lead, don't respond immediately. Call from the app. You will receive better services. In addition, check the ratings. I have put the link in WhatsApp. Send it to the family, friends, relatives, whoever is there and increase it. JustDial ಈ ಈ Thank you for watching JustDial.com. Have a great day.",
       "entities": []
     }
   ]

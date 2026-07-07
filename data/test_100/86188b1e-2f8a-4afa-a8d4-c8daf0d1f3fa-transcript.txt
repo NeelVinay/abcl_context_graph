@@ -1,0 +1,86 @@
+[
+  {
+    "timestamp": "2026-07-06T05:55:31",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:55:31",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं साचिन बालसाहेब अलहत जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:55:41",
+    "speaker": "user",
+    "content": "Hello. हां.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:55:41",
+    "speaker": "assistant",
+    "content": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है सत्तर हजार रुपये का — मैं अभी इस call पर आपको इस loan को apply करने में मदद",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:55:52",
+    "speaker": "user",
+    "content": "मेरा",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:55:52",
+    "speaker": "assistant",
+    "content": "करने में मदद कर सकती हूँ। क्या हम",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:55:55",
+    "speaker": "user",
+    "content": "मैं मेरा",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:55:57",
+    "speaker": "user",
+    "content": "मेरा file हो गया है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:56:01",
+    "speaker": "user",
+    "content": "Process भी हो गया file भी होगा. पैसा भी आ गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:56:01",
+    "speaker": "assistant",
+    "content": "बहुत बढ़िया, साचिन जी। अगर आपका file और process दोनों हो गए हैं और पैसा भी आ गया है, तो क्या आप इस call में और कोई मदद चाहते हैं या कुछ पूछना है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:56:14",
+    "speaker": "user",
+    "content": "नहीं नहीं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:56:14",
+    "speaker": "assistant",
+    "content": "ठीक है, साचिन जी। आपके समय के लिए धन्यवाद। अगर आगे कभी मदद चाहिए तो हम उपलब्ध हैं। Goodbye।<EOC/>",
+    "feedback": null,
+    "agent_id": null
+  }
+]

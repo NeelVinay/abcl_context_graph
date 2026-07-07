@@ -1,0 +1,159 @@
+{
+  "call_id": "86188b1e-2f8a-4afa-a8d4-c8daf0d1f3fa-transcript",
+  "language": "hi-en",
+  "outcome": "completed",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं साचिन बालसाहेब अलहत जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello. हां.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "pre-approved",
+        "loan offer",
+        "आदित्य",
+        "कैपिटल",
+        "बिरला"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है सत्तर हजार रुपये का — मैं अभी इस call पर आपको इस loan को apply करने में मदद",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "मेरा",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "मदद"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "करने में मदद कर सकती हूँ। क्या हम",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_respond_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "process"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं मेरा मेरा file हो गया है. Process भी हो गया file भी होगा. पैसा भी आ गया.",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "call",
+        "मदद",
+        "process",
+        "दोनों",
+        "चाहते"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत बढ़िया, साचिन जी। अगर आपका file और process दोनों हो गए हैं और पैसा भी आ गया है, तो क्या आप इस call में और कोई मदद चाहते हैं या कुछ पूछना है?",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं नहीं.",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
+      "keywords": [
+        "goodbye",
+        "मदद",
+        "समय",
+        "धन्यवाद",
+        "आगे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है, साचिन जी। आपके समय के लिए धन्यवाद। अगर आगे कभी मदद चाहिए तो हम उपलब्ध हैं। Goodbye।<EOC/>",
+      "entities": []
+    }
+  ]
+}

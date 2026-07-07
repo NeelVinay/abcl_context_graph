@@ -7,18 +7,18 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge_complaint",
-      "base_intent": "complaint",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
-        "आगे",
-        "पता",
-        "इंक्वारी",
-        "पहली",
-        "जी।"
+        "जिसके",
+        "तरफ",
+        "रिक्वेस्ट",
+        "बिजनेस",
+        "मिली"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आज मुझे एक हफ्ते के बाद आज एक पहली इंक्वारी आई है। जी। तो अभी का मुझे आगे का पता नहीं क्योंकि कल सकते मेरी",
+      "text": "आपकी तरफ से रिक्वेस्ट मिली थी माम, जिसके बिहाफ़ में मैंने कनेक्ट किया है। कोई इश्यू फेज कर रहे हैं आप बिजनेस सम्मंदित माम।",
       "entities": []
     },
     {
@@ -28,15 +28,15 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
+        "inquiry",
         "उन्होंने",
-        "इतना",
-        "उसको",
         "समझ",
-        "आगे"
+        "जी।",
+        "पता"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "पूरी की कम्प्लेन के लिए अभी तर मेरे पास एक हफ्ता हो गया कोई इंक्वारी नहीं आई है। अच्छे तो आज अभी मेरे को फोइन समझ लो आप एक गंते पहले की इंकॉरी आई है तो अब मेरी बात हुई है बट उन्होंने आगे से बात नहीं कर पाए तो मैं ये चाहती हूँ कि अभी मेरी बात नहीं कर पाए तो आपको दिन में एक चीज में तक 10-12 हमें मिलनी चाहिए ताकि हम उसको 10 में फैक्रिस बनना दो तो कनवर्च करें किसी तरीके हाँ जी बहुत बहुत तो आज एक आई है, इतना मैं कहती हूँ कि आज आई है।",
+      "text": "Sir, आज मुझे एक हफ़ते के बाद आज एक पहली inquiry आ गया है। जी। तो अभी का मुझे आगे का पता नहीं क्योंकि कल तो आज अभी मेरे कोई समझ लो कि आप एक घंटे पहले एक inquiry आई है। तो अब मेरी बात हुई है बट उन्होंने आगे से बात नहीं कर पाए। तो मैं यह चाहती हूँ कि अभी मेरी बात नहीं कर पाए। तो अभी मेरी बात नहीं कर पाए। तो अभी मेरी बात नहीं कर पा तो आज एक आई",
       "entities": []
     },
     {
@@ -46,30 +46,23 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "लीड",
-        "शेयर",
-        "lead",
-        "link",
-        "business"
+        "इतना"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "ठीक है, मैं आपको बता देता हूँ, बेसिकली पूजा जी, लीड बेसिकली यूजर के सर्च फ्लो पे डेपेंड करता है, कि मार्केट में जो सर्चेस हैं, वो हम आपको शेयर करेंगे। अभी आपका जो कैटेगरी और कोई भी user searches करेंगे, उसके base पर आपको lead की services मिलते रहेगी, but lead को enhance करने के लिए, प्रोफाइल के visibility को improve करने की जरूरत है मैं, आप अपने प्रोफाइल में जादे से जादा photos post करेंगे, अपने business relevancy के related, दूसरा review और rating का, मैं आपको review और rating का एक link बेज रहा हूँ, जिससे आ वो आपको भी यहाँ पर rate करेंगे, तो प्रोफाइल की visibility टॉप पर display होती है, क्योंकि आपको plan rotation based contract है, ना कि fixed plan, ठीक है, fixed position plan नहीं है, तो आप अगर यह activity करते रहते हैं, जिस तो photo upload करना, और जादे से ज़्यादा review और rating को capture",
+      "text": "है। इतना मैं",
       "entities": []
     },
     {
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
-      "keywords": [
-        "देख",
-        "google"
-      ],
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "करना, मेरा अगर खुछ का, मैं google का अगर मैं देख",
+      "text": "कहती हूँ की आज आई है।",
       "entities": []
     },
     {
@@ -79,15 +72,112 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "कॉल",
-        "शेयर",
-        "लिंक",
-        "मिल",
-        "रेटिंग"
+        "हूँ।",
+        "contract",
+        "business",
+        "लेकर",
+        "लीड"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "गूगल से मैम वो गूगल की रेटिंग आपकी ये जस लाइल की दोनों मर्च नहीं किया जा सकता है ठीक है अच्छा हाँ जी जी फोटोस तो अलड़ी अपलोड़ेट है जहां तक आप बता रहे है ठीक है बट अभी रिवी और रेटिंग का में रोल है ठीक है तो आप अपने ठीक है तो मैंने यहाँ से आपको लिंक शेयर कर रहा है इसके बेस्ट पर और ताकि आपकी प्रोफाइल की विजिबिलिटी जाते से जाता इनहांस किया जाए और प्रोफाइल डिस्क्लेय हो और आपको सर्विसस मिल पाए जाते से जाता ठीक है बाद यह अपन उसके अधारत होएगा जिसमें 9 और 10 हाईयस्ट रीटिंग है तो आपका फीटबेक मेरे लिए इंपोर्टेंट है प्लीज शेयर कीज़ेगा इस कॉल के बाद ठीक है वाटसिप है हाँ जी वाटसिप है रेट मा एक्सपीरियंस का उप्षिन उसमें जाकर आपको रेट करना है",
+      "text": "लेकर मैं आपको बता देता हूँ। बेसिकली पूजा जी लीड बेसिकली यूजर के सर्च फ्लो पे डेपेंड करता है। के मार्केट में जो सर्चेस है। वो हम आपको शेयर करेंगे। अभी आपका जो कैटेग्री है ना कैटेग्री का नेचर डिसाइड करता है। कितना एर प्रोफाइल की visibility को improve करने की जरूरत है। आप अपने प्रोफाइल में जाते से जाता photos पोस्ट करेंगे अपने business relevancy के लिए। प्रोफाइल की visibility टॉप पे display होती है। क्योंकि आपको plan rotation बीच contract है। ना कि fix plan ठीक है। तो आप अगर ये activity करते रहते हैं, जिसका photo upload करना और जादे से जादा review और",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
+      "keywords": [
+        "rating",
+        "find",
+        "गूगल",
+        "देखूं",
+        "करना।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "rating को capture करना। आप मुझे एक लिए पताओ, मेरा अगर खुद का मैं गूगल का अगर मैं देखूं, फिर आप आज find",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "rating",
+        "share",
+        "link",
+        "चेक",
+        "उसमें"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हैं, मेरा खुद का गूगल को आप चेक करोगे, तो उसमें तो अच्छी rating दिखा � जी जी फोटोस तो अलड़ी uploaded है जहां तक आप बता रहे हैं ठीक हैं बट अभी review और rating का main role है ठीक हैं तो आप अपने friend circle मैं आपको link बेज देता हूँ whatsapp पे वो आप अपने friend circle family members को share कर दीजेगा वो आपको यहाँ पे rate करेंगे तो प्रोफाइल की visibility जायद सी बात है जो ची� ताकि आपकी प्रोफाइल की visibility ज्यादा से ज्यादा enhance किया जाए और प्रोफाइल display हो और आपको services मिल",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "पाए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "पाए ज्यादा से ज्यादा,",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "काम",
+        "further",
+        "बिल्कुल",
+        "साइड"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है। ठीक है, बाद भी अपना काम करते रहे हैं। हाँ जी, बिल्कुल, further कोई और साइड",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "है। और आज",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
+      "keywords": [
+        "call",
+        "feedback",
+        "share",
+        "उसमें",
+        "whatsapp"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Sunday है, पर कल से तुम्हारे � तो आपका feedback मेरे लिए important है, please share कीज़ेगा इस call के बाद, ठीक है। WhatsApp है? हाँ जी, WhatsApp पर आएगा, rate my experience का option, उसमें जाकर आपको rate करना है, ठीक है। ठीक है,",
       "entities": []
     }
   ]

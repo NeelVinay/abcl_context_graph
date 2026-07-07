@@ -7,15 +7,14 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask",
-      "base_intent": "question",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
-        "लीड",
-        "ऐसी"
+        "lead"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "क्या से बात कर रहा है? आपने लीड आपको कमारी ऐसी कोई",
+      "text": "Hello! Hello! Yeah, lead",
       "entities": []
     },
     {
@@ -25,23 +24,32 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "प्रॉब्लम"
+        "lead",
+        "leads",
+        "request",
+        "right",
+        "problem"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "प्रॉब्लम हो रही है,",
+      "text": "آپ کو کم آ رہی ہے، ایسی کوئی problem ہو رہی ہے right آپ نے request ڈالا تھا۔ Yeah, lead میرے کو زیادہ کرتے ہیں saloon ring car ہے۔ Okay, saloon کی lead آئی ہے مطلب lead آپ کو جا رہی ہے۔ No, no, no, no. مجھے leads آتا ہے، ایک lead آئے گا وہ بھی کہی چاہتا ہے، میرا branch بینڈرا میں ہے، میں بینڈرا کا بولایا ہے ڈالنے کے لئے۔ مجھے آتا ہے چینبور کا, کورلا کا وہ بھی آیا ہے دن میں ایک، باقی طرح چھے ساتھ تو مجھے salon کا حصہ ہے۔ کل سے چھے salon کا ہے، ایک بھی lead آیا ہے اس پاک کے لئے، ڈیلی کا اس لئے ہے۔ تو میں ایک بار بھی بولا ہوں کہ activation آپ لوگ میں کس نے کیا ہے، مجھے salon کا نہیں چاہیے، مجھے کہاں اس پاک کا ہی چاہیے۔ آپ بھی بولو",
       "entities": []
     },
     {
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask",
-      "base_intent": "question",
-      "keywords": [],
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "lead",
+        "category",
+        "area",
+        "wrong"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "रही है? आपने रिक्राज ला था.",
+      "text": "आपको कहने का मतलब यह हो गया कि आपको lead जो आ रही है वो wrong आ रही है। Yes. आपके category की लिए नहीं आ रही है। Yes. category का area भी नहीं आ रही है और lead आपको कम भी आ रही है। Yes. आपका आज एक lead आ रही है।",
       "entities": []
     },
     {
@@ -51,28 +59,33 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "लीड",
-        "चलू"
+        "lead",
+        "sorry",
+        "only",
+        "wrong",
+        "mujhe"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आपने लीड मेरे को ज़्यादा करते हैं, चलू नहीं कह रहे हैं.",
+      "text": "यह क्या है सं? मतलब wrong थी क्या थी? Sorry? आज जो lead आ रही थी वो क्या थी? म Mujhe taluk, saldo nao guruj nahi dhikr, only spark چاہتی ہے، only spark",
       "entities": []
     },
     {
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "backchannel",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "लीड",
-        "जाओ",
-        "सलून"
+        "lead",
+        "check",
+        "category",
+        "right",
+        "one"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "ओके सलून की लीड आई है मतलब लीड आपको जाओ नहीं नहीं",
+      "text": "Like کام کرتے ہیں، ایک بار رہنا ہی حاصل کریں، یہاں پر آپ کی profile ڈیس رہتی ہوں، ہر لیف کبھی آ رہا ہے، آپ نے کہا نا، جیسے ہی ہر لیف کبھی آ رہی ہے۔ اور جو بھی lead آ رہی ہے، it's saloon کی آ رہی ہے، right؟ ہاں، saloon کیا ہے؟ category ڈالا ہوگا، ایسا کچھ saloon کا، اس لیے جیسا آ رہا ہوگا، one second دو مجھے I will check it out for you. One second. तो मतलब तो उसके अंदर कोई film खड़ा लगता है। आ नहीं दोहों भी डाला",
       "entities": []
     },
     {
@@ -82,161 +95,45 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "लीड",
-        "मैडम",
-        "डाला",
-        "बोलो",
-        "बाकी"
+        "रखो"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "सोनो सोनो मैडम मेरे को पहला बात करने दो फिर आप बात करो मैंने मैंने लीड डाला है स्पार्च लीड ठीक है ओके दिन में मेरे को छे साथ सौ सलून का आते है ओके रुखो ना मेरे को बात तो कर मुझे आता है चेंबूर का कुरला को भी आया दिन में एक बाकी तक 6-7 तो मुझे सरूम का हित पर कल से 6 सरूम का है एक भी रिखा आया है नहीं स्पा के लिए तेली का हित नहीं है तो मैं एक बार भी बोलो कि activation",
+      "text": "था पर चलून रखो ही मत हटा",
       "entities": []
     },
     {
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
-        "category",
-        "area",
-        "wrong",
-        "किसने",
-        "sorry"
+        "link",
+        "message",
+        "चाहिए।",
+        "देखो",
+        "दो।"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आप लोगने किसने किया है मुझे सरूम का नहीं चाहिए मुझे और category का area भी नहीं आ रही है और लिरा तो कम भी आ रही है आज तो आज ये लिरा ये ये क्या है सं? मतलब wrong थी क्या थी? sorry? आज जो लिरा ये थी तो क्या थी?",
+      "text": "दो। आ तो ठीक है तो चलून हटा दो चलून नहीं चाहिए। तो मैंने हटा के आपको link भूख रहे हैं देखो text message दे। यो link approve करेंगे तो हमारे हाँ से हट",
       "entities": []
     },
     {
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
-      "keywords": [
-        "category",
-        "दिखा",
-        "दोनों",
-        "उन्हीं",
-        "एकी"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "मेरे को जो चाहिए तो category हाँ मुझे category 45 ही है मुझे सब दोनों गुरुष नहीं दिखा उन्हीं 45 ही है एकी जी है 45",
-      "entities": []
-    },
-    {
-      "index": 8,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "कॉल",
-        "देख",
-        "ऐसा",
-        "lead",
-        "लिंक"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "हा यहाँ पर आपकी profile देख रहती हूँ one second और लीज़ कब भी आ रहा है आपने कहा न जैसे की one second हाँ कॉल करो क्यों और जो भी lead आ रही है चलून की आ रही है right हाँ चलून की आ रही है चलून की डाला होगा ऐसा कुछ चलून का इसमें जैसे ऐसा आ रहा होगा one second दो मुझे हाँ पर आपका यहाँ पर आपने बारोपर्ग में साथ यह सब डाला तो यह पुरुष में ना बीट्यू सेलोन, सेलोन, डाला यह ना इस वजह से आ रहा है साथ चलॉन और ब्यूटी चलॉन की चैटिगरी में निकाल रही हूँ और मैं लिंक आपको भूज रही हूँ वो लिंक अप्रूफ करो एन सकन दीजिए अजी आपको चंदी आएगा वैसा तो",
-      "entities": []
-    },
-    {
-      "index": 9,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
-      "keywords": [
-        "अंदर"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "मतलब तो उसके अंदर का लिए फेलून",
-      "entities": []
-    },
-    {
-      "index": 10,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "लिंक",
-        "दोनों",
-        "डाला",
-        "अप्रूफ",
-        "पढ़ा"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "पढ़ा ला था हाँ नहीं दोनों भी डाला थ वो लिंक अप्रूफ करेंगे तो हमारे हाथ से हट जाएगा तो",
-      "entities": []
-    },
-    {
-      "index": 11,
-      "speaker": "customer",
-      "type": "action",
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "उसका आपको नहीं मिलोगा",
-      "entities": []
-    },
-    {
-      "index": 12,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
       "keywords": [
-        "चेक",
-        "करनी",
-        "जाओ"
+        "जाएगा।",
+        "मिलेगा",
+        "text"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "ठीक है मैं चेक करता हूँ अभी ओके तो इस नाशिंग हो जाओ चेक करनी जो",
-      "entities": []
-    },
-    {
-      "index": 13,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
-      "keywords": [
-        "ओपन",
-        "पड़ेगा",
-        "करनी"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "ओपन करनी जो बाद में से नहीं वालूं पड़ेगा तो फिर आपको",
-      "entities": []
-    },
-    {
-      "index": 14,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "प्रॉब्लम",
-        "फोन",
-        "लें"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "कुछ और बहुत प्रॉब्लम हो और नहीं होता है फिर आप अपने फोन से कर लें तो आपके फोन से भी हो जाएगा",
+      "text": "जाएगा। ठीक है ठीक है। तो उसका आपको नहीं मिलेगा Text messaging ڈھوڑ ڈھوڑ",
       "entities": []
     }
   ]

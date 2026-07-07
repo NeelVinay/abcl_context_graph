@@ -67,11 +67,12 @@ RESOLUTION = {
 DISPOSITION_LABEL = {key: label for key, label, _ in DISPOSITIONS}
 DISPOSITION_LABEL["none"] = "No clear disposition"
 
-# COARSE, well-separated disposition buckets for SEMANTIC matching. The fine lead
-# complaints (no-leads / wrong-leads / no-ROI) don't separate on noisy Hinglish ASR — they
-# all read as "my leads aren't working" — so they're merged into one reliable `lead_issue`.
-# (Fine-grained splitting would need labeled data + a trained classifier; see plan Phase B+.)
-DISPOSITION_PROTOTYPES = {
+# SEMANTIC disposition prototypes, PER DOMAIN. A call is matched (zero-shot, no training)
+# to the closest domain-appropriate bucket. Dispositions are ROUTED by domain in
+# assign_dispositions so JustDial buckets never leak onto ABCL calls and vice-versa.
+
+# --- JustDial (lead-gen support): why a business owner is complaining ---
+JUSTDIAL_PROTOTYPES = {
     "lead_issue": ["मुझे लीड नहीं आ रही है", "leads नहीं मिल रहे हैं", "बहुत कम लीड आ रहे हैं",
                    "जो लीड आ रही है वो गलत है", "रॉंग एरिया की लीड आ रही है",
                    "लीड को लेकर problem है", "इतना पैसा देकर भी लीड का फायदा नहीं हुआ",
@@ -86,15 +87,53 @@ DISPOSITION_PROTOTYPES = {
                            "मुझे interest नहीं है", "अब मुझे ये नहीं चाहिए"],
 }
 
+# --- ABCL (loan-application resume): how/why the loan call went ---
+ABCL_PROTOTYPES = {
+    "proceeding_application": ["हाँ link भेज दीजिए", "मैं apply करना चाहता हूँ",
+                              "हो गया भर दिया", "आगे बताइए", "ठीक है शुरू करते हैं"],
+    "not_interested": ["मुझे loan नहीं चाहिए", "मुझे interest नहीं है", "अभी loan नहीं लेना",
+                       "नहीं चाहिए मुझे"],
+    "already_has_loan": ["मेरा पहले से loan चल रहा है", "मैंने दूसरी जगह से loan ले लिया",
+                         "already मेरे पास loan है", "किसी और bank से ले लिया"],
+    "callback_requested": ["अभी busy हूँ बाद में call करें", "कल बात करते हैं",
+                           "अभी time नहीं है", "बाद में call करना"],
+    "wrong_person": ["ये मेरा number नहीं है", "आप galat number पे call कर रहे हैं",
+                     "मैं वो व्यक्ति नहीं हूँ", "ये किसी और का number है"],
+    "tech_or_otp_issue": ["OTP नहीं आया", "link नहीं खुल रहा", "page पे error आ रहा है",
+                          "app नहीं चल रहा", "SMS नहीं मिला"],
+    "security_concern": ["ये fraud तो नहीं है", "fake link तो नहीं", "scam तो नहीं है",
+                         "genuine है क्या", "भरोसा नहीं हो रहा"],
+    "language_barrier": ["मुझे हिंदी नहीं आती", "english में बात करो",
+                         "मेरी language में बोलिए"],
+}
+
+DISPOSITION_PROTOTYPES = {"justdial": JUSTDIAL_PROTOTYPES, "abcl": ABCL_PROTOTYPES}
+
 DISPOSITION_LABEL.update({
+    # JustDial
     "lead_issue": "Lead problem (none / wrong / low-value)",
     "rating_issue": "Rating / review concern",
     "coverage_issue": "Category / area coverage",
     "technical_issue": "App / system error",
     "cancel_disinterest": "Cancel / not interested",
+    # ABCL
+    "proceeding_application": "Proceeding with application",
+    "not_interested": "Not interested",
+    "already_has_loan": "Already has a loan / other lender",
+    "callback_requested": "Callback requested",
+    "wrong_person": "Wrong person / number",
+    "tech_or_otp_issue": "Tech / OTP / link issue",
+    "security_concern": "Fraud / security concern",
+    "language_barrier": "Language barrier",
 })
 
-_EMBED = {"model": None, "centroids": None, "keys": None}
+
+def _domain_of(call: dict) -> str:
+    """JustDial calls are LCS-* ; everything else is ABCL."""
+    return "justdial" if str(call.get("call_id", "")).startswith("LCS") else "abcl"
+
+
+_EMBED: dict = {"model": None, "by_domain": {}}
 
 
 def _ensure_embedder():
@@ -103,29 +142,32 @@ def _ensure_embedder():
     import numpy as np
     from sentence_transformers import SentenceTransformer
     from src.extract import EMBED_MODEL
-    m = SentenceTransformer(EMBED_MODEL)
-    keys, cents = [], []
-    for k, protos in DISPOSITION_PROTOTYPES.items():
-        emb = m.encode(protos, normalize_embeddings=True)
-        cents.append(np.asarray(emb).mean(axis=0))
-        keys.append(k)
-    _EMBED.update(model=m, centroids=np.vstack(cents), keys=keys)
+    m = _EMBED["model"] = SentenceTransformer(EMBED_MODEL)
+    for domain, protos in DISPOSITION_PROTOTYPES.items():
+        keys, cents = [], []
+        for k, examples in protos.items():
+            emb = m.encode(examples, normalize_embeddings=True)
+            cents.append(np.asarray(emb).mean(axis=0))
+            keys.append(k)
+        _EMBED["by_domain"][domain] = {"keys": keys, "centroids": np.vstack(cents)}
 
 
 def assign_dispositions(calls: list[dict], threshold: float = 0.30) -> None:
-    """Set call['disposition'] for every call via SEMANTIC similarity to prototypes.
-    Uses the CUSTOMER's turns (the complaint); below threshold -> 'none'. Batched."""
+    """Set call['disposition'] via SEMANTIC similarity to that call's DOMAIN prototypes
+    (ABCL vs JustDial, routed by call_id). Uses customer turns; below threshold -> 'none'."""
     import numpy as np
     _ensure_embedder()
-    texts = []
+    texts, domains = [], []
     for c in calls:
         cust = " ".join(t["text"] for t in c.get("turns", []) if t.get("speaker") == "customer")
         texts.append(cust or " ".join(t["text"] for t in c.get("turns", [])))
+        domains.append(_domain_of(c))
     embs = np.asarray(_EMBED["model"].encode(texts, normalize_embeddings=True))
-    sims = embs @ _EMBED["centroids"].T          # cosine (both normalized)
-    for c, row in zip(calls, sims):
-        best = int(row.argmax())
-        c["disposition"] = _EMBED["keys"][best] if row[best] >= threshold else "none"
+    for c, emb, dom in zip(calls, embs, domains):
+        d = _EMBED["by_domain"][dom]
+        sims = emb @ d["centroids"].T
+        best = int(sims.argmax())
+        c["disposition"] = d["keys"][best] if sims[best] >= threshold else "none"
 
 
 def detect_dispositions(call: dict) -> list[tuple[str, int]]:

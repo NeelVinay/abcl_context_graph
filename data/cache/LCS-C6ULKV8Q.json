@@ -1,7 +1,7 @@
 {
   "call_id": "LCS-C6ULKV8Q",
   "language": "hi-en",
-  "outcome": "incomplete",
+  "outcome": "raised_request",
   "turns": [
     {
       "index": 0,
@@ -9,46 +9,44 @@
       "type": "action",
       "intent": "customer_greet",
       "base_intent": "open",
-      "keywords": [
-        "रिक्वेस्ट",
-        "तरफ"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "आपके तरफ से रिक्वेस्ट",
+      "text": "अगर आपको साबरे बात कर",
       "entities": []
     },
     {
       "index": 1,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge_complaint",
-      "base_intent": "complaint",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
-        "जिसके",
-        "इशू",
-        "मिली",
-        "आपे"
+        "justdial",
+        "customer",
+        "service",
+        "team",
+        "request"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "मिली थी जिसके भी आपे मैंने कनिक किया है कोई इशू",
+      "text": "रहा हूँ JustDial के customer service team से। लक्ष्मन enterprise में मेरी बात हो रही है और गौविन गुप्ता जी से। आपकी तरफ से request मिली थी जिसके भी आप पर मैंने connect",
       "entities": []
     },
     {
       "index": 2,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "inquiry",
         "whatsapp",
-        "पेस्ट"
+        "notification"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "पेस्ट करेंगे तो आपका कहना है क्या inquiry जो भी आपके पास WhatsApp पर",
+      "text": "किया है। आपका कहना है क्या inquiry जो भी आपके पास WhatsApp पर notification आती",
       "entities": []
     },
     {
@@ -58,55 +56,68 @@
       "intent": "agent_ask",
       "base_intent": "question",
       "keywords": [
-        "notification"
+        "call",
+        "हूँ।",
+        "inquiry",
+        "share",
+        "message"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "notification आती हैं? कुछ ही",
+      "text": "हैं। कुछ नहीं आती, और कुछी के call के option तक नहीं आते। Inquiry दिख नहीं रही है ना, आप यह गहरे हैं, वाटसपेश नहीं होईगी। हाँ जी, हाँ जी। ठीक है, बहुत माफ़ी चाहूँ वैसे, मैं बल्कुल आपकी concern को समझ रहा हूँ। गोबिन जी की notification ही share होईगी WhatsApp के थूब। मीनवाल claim आपको यह बताना चाहूँगा सर अगर आप चाहते हैं क्या WhatsApp की inquiry आपको मिल जाएं WhatsApp के थूब आपके पास details receive हो या message के माध्यम से details receive हो तो उसका अलग package का course है सर सर एक से पहले तो अच्छा कुछ नहीं था सर मैं वो ही आपको बता � उसकी base पर process किया जाता है।",
       "entities": []
     },
     {
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
       "keywords": [
         "call",
+        "inquiry",
+        "whatsapp",
         "option",
-        "कुछी"
+        "देते"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आती कुछ ही नहीं आती और कुछी के call के option तक",
+      "text": "जो इसके पहले तो call के option भी दिखाई देते थे और inquiry भी आती थी WhatsApp पर।",
       "entities": []
     },
     {
       "index": 5,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge_complaint",
-      "base_intent": "complaint",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "दिख"
+        "lead",
+        "number",
+        "inquiry",
+        "search",
+        "whatsapp"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "नहीं आते एंक्वाइरी दिख नहीं रही है ना आप यह गहरे हैं",
+      "text": "WhatsApp के हैं। हाँ notification आता था। notification वही मैं कह रहा हूँ ना sir, notification और inquiry में बहुत बड़ा अंतर है वो बिंदीर। आप यहाँ तो समझ नहीं पा रहे हैं, मैं क्या कहना चाह रहा हू AMC target, अब मेरी जो inquiry है, वो आपके पास delivered होगी, but मेरे जो notification है, lead का जो notification है, वो आपको WhatsApp पर delivered होगा, मेरा number नहीं दिखेगा, inquiry आने के मतलब, मेरा number दिखेगा, हर चीज़े show होगी, किस reason से मैंने search करा, वो उसी facilities हमने app पर दे रखी है, access दे रखा है, but inquiry का notification, जो notification है के मतलब, हा� अगर आप चाहते हैं कि caller का number या address जैसे app में देख रहे हैं वैसे facilities आपको मिल जाएं WhatsApp की माध्यम से या SMS की माध्यम से उसका additional cost है 4000 रूपी का सालाना cost रहता है बट अगर आप चाहते हैं तो मैं offer की base पर इसे process कर रहा हूँ sir जिसमें आपको 2950 रूपे साल बर का cost पे करना होग अगर आप credit card यूज़ करते हैं तो मैं offer दिला दूँगा आपको और भी ज़्यादा 2700 में पढ़ जाएगा आपको। अगर",
       "entities": []
     },
     {
       "index": 6,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
       "keywords": [
-        "वाटसेप"
+        "call",
+        "option",
+        "आपको।",
+        "देते"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "वाटसेप पर ठीक है",
+      "text": "तुम से पहले तो सर call का option दिखाई देते थे न वहाँ आपको।",
       "entities": []
     },
     {
@@ -116,15 +127,12 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "शेयर",
-        "देखिए",
-        "मिल",
-        "concern",
-        "समझ"
+        "उसमें",
+        "design"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "बहुत माफ़िक चाहूंगा से मैं बल्कुल आपके concern को समझ रहा हूँ गोविन जी मैं आपको बता देता हूँ देखिए जो practice आ ठीक है जी नोटिफिकेशन ही शेयर होईगी वाटसेप के थूँ ठीक है मीनवाइल क्लेम आपको ये बताना चाहूँगा सर अगर आप चाहते हैं क्या वाटसेप के इंक्वाइरी आपको मिल जाए वाटसेप के थूँ आपके पास डीजल रिसीव हो या मेसेज के माध्यम से � उसकी base पर process किया जाता है",
+      "text": "सर नहीं आते थे उसमें वही मैं आपको बता रहा हूँ न जो facility design ने पहले आपको दे",
       "entities": []
     },
     {
@@ -134,13 +142,11 @@
       "intent": "customer_ask_question",
       "base_intent": "question",
       "keywords": [
-        "call",
-        "देते",
-        "option"
+        "साल"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "जो इसके पहले तो call के option भी दिखाई देते थे और",
+      "text": "Sir, इससे पहले पिछले साल भी मैं कर रहा था",
       "entities": []
     },
     {
@@ -150,60 +156,62 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "देख",
-        "lead",
-        "inquiry",
-        "मिल",
-        "number"
+        "whatsapp",
+        "sms",
+        "purchase",
+        "माध्यम",
+        "प्रोवाइड"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "inquiry भी आती थी WhatsApp पर है हाँ notification आता था notification वही मैं कह रहा हूँ ना sir notification और inquiry में बहुत बड़ा अंतर है गोविंदी ठीक है आप यहाँ तो समझ नहीं पार है मैं क्या कहना चाह रहा हूँ मैं आपको अब मेरी जो inquiry है वो आपके पास delivered होगी but मेरे जो notification है lead का जो notification है वो आपको whatsapp पर delivered होगा मेरा number नहीं दिखेगा inquiry आने के मतलब मेरा number दिखेगा हर चीज़े show होगी किस reason से मैंने search करा वो उसकी facilities हमने app पर दे रखी है access दे रखा है but inquiry का notification जो notification है के मतलब हाँ आपको inquiry receive हुई है अगर आप चाहते हैं कि caller का number या as it is जैसे app में देख रहे हैं वैसे facilities आपको मिल जाए WhatsApp की माध्यम से या SMS की माध्यम से उसका additional cost पर 4000 उपीश का सालाना cost रहता है बट अगर आप चाहते हैं तो मैं offer की base पर इसे process करा सकता हूँ sir जिसमें आपको 2950 उपीश साल बर का cost पे करना ह जो आपको मुझे ले जाता है, 2950 रुपए GST के साथ, 2950 रुपए, हाँ, अगर आप credit card यूज़ करते हैं, तो मैं offer दिला",
+      "text": "जैसे की, इससे पहले के लिए कौन आ जाता है। बहुत बहुत वो डीटेल आपके WhatsApp में नहीं शो होगी। उसका paid subscription है। ठीक है अगर आप paid subscription purchase करते हैं तब आपको WhatsApp और SMS के माध्यम से facilities प्रोवाइड कर पाएंगे।",
       "entities": []
     },
     {
       "index": 10,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "दूँ"
+        "whatsapp",
+        "notification",
+        "आएगी।",
+        "चलिए"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "दूँ आपको, और भी ज़्यादा",
+      "text": "सर महान के चलिए WhatsApp पर notification भी नहीं आएगी। कुछ भी नहीं",
       "entities": []
     },
     {
       "index": 11,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
-        "call",
-        "देते",
-        "option",
-        "पढ़"
+        "inquiry",
+        "whatsapp",
+        "सर।",
+        "notification",
+        "आपसे"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "2700 में पढ़ जाएगा वह आपको, अच्छा, हाँ जी, तब तुम से पहले तब सर call का option दिखाई देते थे न, वहा",
+      "text": "आएगा। वो ही मैं आपसे कह रहा हूँ ना सर। WhatsApp पर आपके � अब inquiry मैंने बता दिया कि inquiry नहीं आती। आपको सिर्फ notification ही दिया जाता है। Notification",
       "entities": []
     },
     {
       "index": 12,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
-      "keywords": [
-        "साल"
-      ],
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "सर इससे पहले पिछले साल भी मैं कर रहा था",
+      "text": "भी तो नहीं आ",
       "entities": []
     },
     {
@@ -213,60 +221,64 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "वहीं"
+        "था।",
+        "लिए।",
+        "notification",
+        "आएगा।",
+        "setting"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "जैसे कि इससे पहले के लिए कौन आ जाता है वहीं मैं कह रहा हूँ सर 2025 के बाद 2025 के",
+      "text": "रहा था। Notification, notification आएगा। वो मैं यहाँ से setting को reset कर देता हूँ उसके लिए। अगर आप notification लेना चाह रहे हैं तो ठीक है। Notification",
       "entities": []
     },
     {
       "index": 14,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
-        "मार्च"
+        "inquiry",
+        "जी।",
+        "अलग"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "मार्च के मार्च से हैं ये वाला",
+      "text": "अलग बात है गौबिन जी। Inquiry",
       "entities": []
     },
     {
       "index": 15,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "whatsapp",
-        "sms",
-        "provide",
-        "माध्यम",
-        "नोटिफिकेशन"
+        "inquiry",
+        "मिल",
+        "अलग",
+        "possible",
+        "जाए"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "फीचर टेबल कर दिया गया है जो फीचर की आप बात कर रहे हैं सर ठीक है हाँ जी सर नोटिफिकेशन है वैसे वो डीटेल आपके WhatsApp में नहीं शो होगी, उसका paid subscription है। ठीक है, अगर आप paid subscription purchase करते हैं, तब आपको WhatsApp और SMS के माध्यम से facilities provide कर पाएंगे।",
+      "text": "आना वो अलग बात ह पर inquiry के detail नहीं मिलेगा। अगर आप चाहेंगे कि inquiry मिल जाए तो inquiry possible नहीं",
       "entities": []
     },
     {
       "index": 16,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "whatsapp",
-        "notification",
-        "मान",
-        "चलिए"
+        "justdial",
+        "app"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "सर, मान के चलिए WhatsApp पर notification भी नहीं आएगी, कुछ",
+      "text": "है। दोस्तों नहीं तो JustDial के app को जाना पड़ागा न तुझे।",
       "entities": []
     },
     {
@@ -276,14 +288,15 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "आपसे",
-        "whatsapp",
-        "नॉटिफिकेशन",
-        "सेटिंग"
+        "justdial",
+        "check",
+        "होगा।",
+        "app",
+        "जी।"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "भी नहीं आएगा। वो ही मैं आपसे कह रहा हूँ ना सर, WhatsApp पर आपके पास, अभी आ� अब इन्क्वाइरी मैंने बता दिया कि इन्क्वाइरी नहीं आती, आपको सिर्फ नॉटिफिकेशन ही दिया जाता है। नॉटिफिकेशन आएगा, वो मैं यहाँ सेटिंग को रिसेट कर देता हूँ उसके लिए, अगर आप नॉटिफिकेशन",
+      "text": "हाँ उसके लिए JustDial के app में आपको login करना होगा और जाके check करना होगा। ठीक है। अच्छा। हाँ जी। पर दर मैंने यहाँ से setting को refresh क इसके साथ",
       "entities": []
     },
     {
@@ -293,11 +306,12 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "चाह"
+        "justdial",
+        "self"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "लेना चाह रहे",
+      "text": "साथ JustDial आपको self-save",
       "entities": []
     },
     {
@@ -307,15 +321,15 @@
       "intent": "agent_raise_request",
       "base_intent": "resolution",
       "keywords": [
-        "लिंक",
-        "मिल",
-        "रेटिंग",
-        "मिलेगा",
-        "जाए"
+        "customer",
+        "call",
+        "support",
+        "business",
+        "issue"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "हैं तो, ठीक है बट इन्क्वाइरी के नीचे नहीं मिलेगा, अगर आप चाहेंगे क्या इन्क्वाइरी मिल जाए, तो इन्क्वाइरी पॉस्टबल नहीं है, ठीक है? इसके लिए जस्डाइल के आपको जाना पड़ेगा, न भी जाएगा? हाँ, उसके लिए जस्डाइल के आप में आपको ल आपका फीडबैक लिंक वटसिप के माध्यम से बेजा गया है गोविन जी जो कंप्लीटली आपके और मेरे बीच में बात हुई है उसके अधार पर होगा जिसमें 9 और 10 हाई एस्ट रेटिंग है आपका फीडबैक मेरे लिए बूस्ट है",
+      "text": "option भी देता है। जिससे बिना किसी customer support के call की एक उससे भी issue raise कर सकते हैं। और add-on feature है जिससे आप अपने business को और ज्यादा boost या promote भी कर सकते हैं। इस call के बाद short feedback link WhatsApp के माध्यम से बेजा गया है गोविन जी। जो complete के आपके और मेरे बीच में बात",
       "entities": []
     }
   ]

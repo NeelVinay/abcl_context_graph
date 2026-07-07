@@ -1,0 +1,243 @@
+{
+  "call_id": "208b2cd3-b80e-4c77-b225-1216312cb3aa-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "से बात",
+        "आदित्य",
+        "बोल",
+        "कैपिटल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं HITESHBHAI GANDABHAI PARMAR जी से बात",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "बोलिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello. हां बोलिए. हां ok ok. Ok.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "pre-approved",
+        "loan offer",
+        "आदित्य",
+        "कैपिटल",
+        "बिरला"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है एक लाख पचास हजार रुपये का — मैं अभी इस call पर आपको इस loan को",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "बोलिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बोलिए. Ok sir.",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं अभी आपको",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "करनी",
+        "approval"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Approval नहीं करनी है?",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_explain_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "interest rate",
+        "interest",
+        "rate",
+        "ten",
+        "point"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Interest rate ten point",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello",
+        "बोलिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां बोलिए. Hello. Hello.",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_explain_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "interest rate",
+        "शुरू",
+        "final",
+        "percent",
+        "interest"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Interest rate ten point nine nine percent से शुरू होती है और आपके final",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "interest rate",
+        "interest",
+        "rate"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सुनाई चाहिए. नहीं. Interest rate ज़्यादा है आपका?",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_explain_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "interest rate",
+        "offer",
+        "शुरू",
+        "sms",
+        "phone"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Interest rate ten point nine nine percent से शुरू होती है और आपके final offer पर depend करती है। अब मैं SMS भेजती हूँ, कृपया phone पर ध्यान दें।",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "link",
+        "sms",
+        "click"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब आप SMS में जो link है उसे click करें।",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं नहीं तो.",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "link",
+        "try",
+        "connection",
+        "internet",
+        "चेक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "क्या आप link खोल पाए? अगर नहीं, तो internet connection चेक करें और फिर से try करें।",
+      "entities": []
+    }
+  ]
+}

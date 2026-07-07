@@ -1,0 +1,275 @@
+[
+  {
+    "timestamp": "2026-07-06T07:48:27",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:48:31",
+    "speaker": "user",
+    "content": "This call is now being recorded. Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:48:31",
+    "speaker": "assistant",
+    "content": "Hello, I am Priya from Aditya Birla Capital. May I please speak with Jakeershaha?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:48:42",
+    "speaker": "user",
+    "content": "जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:48:42",
+    "speaker": "assistant",
+    "content": "Hello Jakeershaha, you have an exciting pre-approved loan offer from Aditya Birla Capital. I can help you apply for this loan of up to ten lakh rupees. Shall we begin?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:48:58",
+    "speaker": "user",
+    "content": "No. No, I don't have excited.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:48:58",
+    "speaker": "assistant",
+    "content": "I understand. This loan can help with daily needs or urgent expenses. If you'd like, I can assist you with the application now. Shall we proceed?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:49:07",
+    "speaker": "user",
+    "content": "हां.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:49:09",
+    "speaker": "user",
+    "content": "Ok ok.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:49:09",
+    "speaker": "assistant",
+    "content": "I will now send you an SMS with a link to your application. Please keep your phone on speaker and check the SMS.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:49:17",
+    "speaker": "assistant",
+    "content": "Now please click the link in the SMS to proceed with your application.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:49:32",
+    "speaker": "user",
+    "content": "I don't have received any message.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:49:32",
+    "speaker": "assistant",
+    "content": "Please check your SMS inbox again, and if you do not see it, I can resend the link for you. Would you like me to resend the SMS?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:49:44",
+    "speaker": "user",
+    "content": "Wait",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:49:44",
+    "speaker": "assistant",
+    "content": "Sure, I am waiting...",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:49:54",
+    "speaker": "assistant",
+    "content": "Sorry, are you still there on the call?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:50:05",
+    "speaker": "assistant",
+    "content": "Sorry, are you still with me?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:50:12",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:50:12",
+    "speaker": "assistant",
+    "content": "Hello Jakeershaha, you have an exciting pre-approved loan offer from Aditya Birla Capital. I can help you apply for this loan of up to ten lakh rupees. Shall we begin?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:50:23",
+    "speaker": "user",
+    "content": "हां.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:50:23",
+    "speaker": "assistant",
+    "content": "Great! I will now send you an SMS with a link to your application. Please keep your phone on speaker and check the SMS.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:50:31",
+    "speaker": "assistant",
+    "content": "Now please click the link in the SMS to proceed with your application.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:50:41",
+    "speaker": "assistant",
+    "content": "Sorry, could you please repeat that?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:50:48",
+    "speaker": "user",
+    "content": "तो Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:50:48",
+    "speaker": "assistant",
+    "content": "Hello Jakeershaha, you have an exciting pre-approved loan offer from Aditya Birla Capital. I can help you apply for this loan of up to ten lakh rupees. Shall we begin?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:51:08",
+    "speaker": "user",
+    "content": "लेकिन थोड़ा ज़्यादा दीजिए. Order.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:51:14",
+    "speaker": "user",
+    "content": "उनको भूख दे रहा",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:51:17",
+    "speaker": "user",
+    "content": "business Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:51:17",
+    "speaker": "assistant",
+    "content": "जी हाँ, आपको और amount का loan मिल सकता है — एक बार आप process complete करेंगे तो आपको आपकी profile के हिसाब से loan offer दिख जाएगा, आप उसमें से choose कर सकते हैं। क्या हम आगे बढ़ें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:51:33",
+    "speaker": "user",
+    "content": "हिंदी में बोलो हिंदी में.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:51:33",
+    "speaker": "assistant",
+    "content": "जी हाँ, आपको और amount का loan मिल सकता है — एक बार आप process complete करेंगे तो आपको आपकी profile के हिसाब से loan offer दिख जाएगा, आप उसमें से choose कर सकते हैं। क्या हम आगे बढ़ें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:51:52",
+    "speaker": "assistant",
+    "content": "Sorry, can you say that once more?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:52:03",
+    "speaker": "user",
+    "content": "तुम्हारे साथ",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:52:03",
+    "speaker": "assistant",
+    "content": "Yes, you may be eligible for a higher loan amount — once you complete the process, you will see the loan offer based on your profile and can choose from it. Shall we continue?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:52:14",
+    "speaker": "user",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:52:22",
+    "speaker": "assistant",
+    "content": "Sorry, could you please say that again?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:52:32",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:52:32",
+    "speaker": "assistant",
+    "content": "Hello Jakeershaha,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:52:39",
+    "speaker": "user",
+    "content": "वह जो ऐसा बोल रही हूं",
+    "feedback": null,
+    "agent_id": null
+  }
+]

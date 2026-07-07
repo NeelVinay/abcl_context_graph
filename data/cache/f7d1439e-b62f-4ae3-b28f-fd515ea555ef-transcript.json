@@ -1,0 +1,176 @@
+{
+  "call_id": "f7d1439e-b62f-4ae3-b28f-fd515ea555ef-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं धिडी नवीन जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "बोलिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां बोलिए.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hi, good evening. मैं Mister शाह रेड्डी की दुकान. Hello.",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बोलिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां बोलिए. नमस्ते madam बोलिए.",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "आदित्य",
+        "बोल",
+        "कैपिटल",
+        "बिरला",
+        "शुरू"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से। क्या हम शुरू करें?",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "बोलिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां बोलिए.",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "बोलिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां बोलिए.",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms",
+        "application",
+        "link",
+        "click",
+        "process"
+      ],
+      "sentiment": null,
+      "tool": "send_sms",
+      "text": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "link",
+        "sms",
+        "click"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब आप SMS में जो link है उसे click करें।",
+      "entities": []
+    }
+  ]
+}

@@ -134,22 +134,19 @@ def _remove_subtree(g: nx.DiGraph, node: str) -> None:
 
 
 def main_flow_path(g: nx.DiGraph) -> set:
-    """Edges on the single MOST-COMMON complete flow = the highest-count outcome leaf,
-    traced back to the root. (Not a greedy fattest-edge walk, which can pick a path no
-    single call actually took and breaks ties arbitrarily.)"""
+    """GREEDY 'where most calls go': from the root, at each step follow the child with the
+    most calls (ignoring the '+N other flows' stub), until a leaf. This is the modal
+    journey step-by-step — intuitive even when no single full path dominates (which is the
+    case with sparse/varied data, where a most-common-complete-path highlight is arbitrary)."""
     root = next((n for n, d in g.nodes(data=True) if d.get("kind") == "root"), None)
     if root is None:
         return set()
-    leaves = [n for n in g.nodes
-              if g.out_degree(n) == 0 and g.nodes[n].get("kind") != "stub"]
-    if not leaves:
-        return set()
-    best = max(leaves, key=lambda n: g.nodes[n].get("count", 0))
-    edges, cur = set(), best
-    while cur != root:                      # tree -> unique parent path back to root
-        preds = list(g.predecessors(cur))
-        if not preds:
+    edges, cur = set(), root
+    while True:
+        kids = [c for c in g.successors(cur) if g.nodes[c].get("kind") != "stub"]
+        if not kids:
             break
-        edges.add((preds[0], cur))
-        cur = preds[0]
+        nxt = max(kids, key=lambda c: g[cur][c]["count"])   # fattest real branch
+        edges.add((cur, nxt))
+        cur = nxt
     return edges

@@ -1,0 +1,167 @@
+{
+  "call_id": "25d8836a-8525-4d12-9517-de6c4f8794fb-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "<CHD/>",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello hello.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं धीर सिंह जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms",
+        "application",
+        "link",
+        "click",
+        "process"
+      ],
+      "sentiment": null,
+      "tool": "send_sms",
+      "text": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "link",
+        "sms",
+        "click"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब आप SMS में जो link है उसे click करें।",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_link_opened",
+      "base_intent": "open_link",
+      "keywords": [
+        "नहीं हो रहा",
+        "नहीं हो",
+        "open"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "Open नहीं हो रहा ma'am.",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "link",
+        "check",
+        "try",
+        "connection",
+        "internet"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Internet connection check करें और link को एक बार फिर से try करें।",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_link_opened",
+      "base_intent": "open_link",
+      "keywords": [
+        "open",
+        "choose",
+        "app"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Choose an app to open. Open हो नहीं रहा है.",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "आपसे",
+        "connect",
+        "जल्दी",
+        "team",
+        "issue"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कुछ technical issue लग रहा है। हमारी team जल्दी आपसे connect करेगी।",
+      "entities": []
+    }
+  ]
+}

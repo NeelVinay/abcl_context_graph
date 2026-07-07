@@ -5,164 +5,38 @@
   "turns": [
     {
       "index": 0,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_ask",
-      "base_intent": "question",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "सर्विस",
-        "इशू",
-        "कॉंट्रेक्ट",
-        "जर्जाल"
+        "justdial",
+        "customer",
+        "call",
+        "lead",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "करते हैं पूजा बात करूँ जर्जाल कर्सम और सर्विस है तो आपको कोई इशू आ रही है जर्जाल कॉंट्रेक्ट",
+      "text": "JustDial customer service है। चा आपको कोई issue आ रही है JustDial contract के related चा। चा बोड़े मेलाम। JustDial contract में आपको कोई issue आ रही है चा। Issue आ रहा है मैं एकदम call नहीं आ रहा है। Psychist का पैसा खाई पुकट में जा। Lead करी नहीं आ रहा है। General Dombi वाली location है। Lead आता है। पुरा Mumbai ही चा मुझे। Okay। मु",
       "entities": []
     },
     {
       "index": 1,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
-      "keywords": [
-        "इशू",
-        "कॉंट्रेक्ट",
-        "जर्जाल",
-        "बोले",
-        "रिलेटिट"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "के रिलेटिट से क्या बोले मेलम जर्जाल कॉंट्रेक्ट में आपको कोई इशू आ रही है तो इशू आ",
-      "entities": []
-    },
-    {
-      "index": 2,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "रहा है मैं",
-      "entities": []
-    },
-    {
-      "index": 3,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
-      "keywords": [
-        "कॉल",
-        "पैसा",
-        "लिखे"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "एकदम कॉल नहीं आ रहा है साइटिस का पैसा � मैं लिखे मैं कर नहीं पहुंगा मैं",
-      "entities": []
-    },
-    {
-      "index": 4,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
-      "keywords": [
-        "प्रॉब्लम",
-        "अकम"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "है ना हाँ अकम आ रही है यह भी प्रॉब्लम है रही है",
-      "entities": []
-    },
-    {
-      "index": 5,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "मैम",
-        "wrong",
-        "location",
-        "नीड"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "तो नहीं दिया नीड मैम विनून नहीं आ रही है और न� आज के दिन में रोहीद चोहाई। तो वो क्या थी, मतलब wrong थी, ज्यादा थी? मैं wrong location",
-      "entities": []
-    },
-    {
-      "index": 6,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
-      "keywords": [
-        "call",
-        "customer",
-        "phone",
-        "गलती",
-        "बोलेंगे"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "की थी madam, एक तो customer phone करते हैं, बोलेंगे, मैंने गलती से call कर लिया, मैंने call किया था, मुझे elbow चाहिए, हाँ,",
-      "entities": []
-    },
-    {
-      "index": 7,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_raise_request",
-      "base_intent": "resolution",
-      "keywords": [
-        "काम",
-        "मैडम",
-        "लीज",
-        "problem",
-        "raise"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "हाँ, हाँ, मैं एक काम करती हूँ, एक बार नहीं ये चीजों के लिए raise करती चाहिए, आपको ये problem हो रही है, क्यों नहीं मैडम बताइ लीज को लेकिन टीजे में मैं पैकेज बंज कर दूँगा नहीं",
-      "entities": []
-    },
-    {
-      "index": 8,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
-      "keywords": [
-        "जरूर",
-        "चार"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "नहीं चार जरूर आपके लिए",
-      "entities": []
-    },
-    {
-      "index": 9,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "सब्सक्राइब",
-        "रेस्ट",
-        "इश्योर"
+        "customer",
+        "call",
+        "lead",
+        "check",
+        "leads"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "हम सब्सक्राइब करते हैं और कोई इश्योर है रेस्ट में",
+      "text": "ना ये थे मैं कर नहीं बाहुँगा मैं। Okay, मैं check कर लेती क्या problem होडी, क्यों आपको लेकर ऐसी issues आ रही हैं। Okay, check कर लेती, call से बने रही हैं। रोंग आ रही है न, sir, ऐसी problem है न। हाँ जी? हाँ, ma'am, बोलिये। हाँ, मैं ये बोलिये। आपको lead रोंग आ रही है, ये भी problem है न। हाँ। अकाम आ रही है, ये भी problem है, right? Don't worry. Need, ma'am, genuine नहीं आ रही है। I'm a patient, बाद need आ रही है। ठीक है, मैं चेक कर रो, ती call कर रही है। Business owner leads, inquiry, category, pincode, rating, response को लेकर बात करता है। लेकर एक करिक्षे लेकर अभी तक का देख रहे हुआ। आपको लीडियो आये। टोटल आये। बजीरू और लास्ट लीड आये। रोहीद नाम की। आज के टिपने रोहीद चोहान। तो वो क्या थी। मतलब रॉंग थी। मैं रॉंग location की थी madam। एक को customer phone करने बोलेंगे। वजहरण ये चीज़ों के लिए raise करती है। आपको ये problem हो रही है। चीज़ों लीज़ जा रही है। वो इन रवने wrong inquiry आ रही है। लीज़ कुले के problem हो रही है। मैं एक बार refresh डाल रही है। जस्ते निभाई जीना वैसा हम आपको रेच से। मेच्चा करेंगे। लीज़ जनर नहीं, नहीं, sir. जरूर आपके लिए हम पताते हैं। जरूर आपके लिए हम पताते हैं।",
       "entities": []
     }
   ]

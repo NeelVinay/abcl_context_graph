@@ -10,73 +10,119 @@
       "intent": "agent_greet",
       "base_intent": "open",
       "keywords": [
-        "लीड",
-        "टिकेट",
-        "रिसीव",
-        "कॉंट्रैक्ट",
-        "यार"
+        "good",
+        "afternoon"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आपको एक विशेष हमारे पास रन कर रहे हैं, इसके रिगारिंग हमने एक टिकेट रिसीव कर रहे हैं, कुछ इशू पेस कर रहे हैं कॉंट्रैक्ट में, लीड से रिलेटर्स? हाँ यार, बहुत बहुत",
+      "text": "Hello! Good afternoon, sir,",
       "entities": []
     },
     {
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [
-        "उसमें"
+        "com",
+        "lead",
+        "leads",
+        "contract",
+        "business"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "बहुत बहुत बह� तो वही बात है उसमें",
+      "text": "अली बात करूँ, social.com के lead department से। आपका एक business हमारे पास run कर रहा है, sir, इसके रिगारी हमने एक ticket रिसीव कर रहे हैं। कुछ issue पेश कर रहे हैं, contract में, leads related.",
       "entities": []
     },
     {
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [],
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "lead",
+        "बोलते"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "क्या है कि ये जो गुरुशनी में गुरुशनी का आई है तो मेरे पास आ रहा है ये एक बात है",
+      "text": "क्या बोलते हैं आप? कुछ दिन से तो lead आई",
       "entities": []
     },
     {
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_respond",
+      "base_intent": "agent_handle",
       "keywords": [
-        "सब्सक्राइब"
+        "lead",
+        "receive",
+        "date",
+        "तरीके",
+        "टोटल"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "जो आपका बहुत ही बदलता है सब्सक्राइब करें",
+      "text": "नहीं है। Sir, आपको आठ की date में आई है। टोटल 3 lead आपने receive कर रही हैं। 7 तरीके date में टोटल आपके बाद 5 lead आई हैं। इस वीक में आपने पूरी लिए...",
       "entities": []
     },
     {
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "backchannel",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
-        "कॉल",
-        "सब्सक्राइब",
-        "पूछ",
-        "चाहेंगे",
-        "दोस्तों"
+        "वीक"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "सब्सक्राइब करें शानकार जानते हुए तो कॉल डिस्टिनेक्ट करते हैं। कुछ पूछना चाहेंगे तो दोस्तों उसके बारे में पूछ सकते हैं।",
+      "text": "इस वीक में आपने पूरी लिए...",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "उसमें",
+        "वीक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इस वीक में आपने पूरी लिए... इस तो वही बात है। उसमें",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask",
+      "base_intent": "question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "क्या है। यह जो गुरुपणी में आ रहा है।",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "करें।",
+        "सब्सक्राइब"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपको सब्सक्राइब करते हैं। आपको सब्सक्राइब करें।",
       "entities": []
     }
   ]

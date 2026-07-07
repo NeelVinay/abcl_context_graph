@@ -1,0 +1,184 @@
+{
+  "call_id": "81487f07-9fd6-4a74-8557-8429d45d36fb-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं सूनिता मोर जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "pre-approved",
+        "loan offer",
+        "आदित्य",
+        "कैपिटल",
+        "बिरला"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है 10 लाख रुपये तक का — मैं अभी इस call पर आपको इस loan को apply",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "लाख",
+        "बोलिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बोलिए. दस लाख का.",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms",
+        "application",
+        "link",
+        "click",
+        "process"
+      ],
+      "sentiment": null,
+      "tool": "send_sms",
+      "text": "जी, मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "अच्छा. जी जी.",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "link",
+        "sms"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब आप SMS में जो link है",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "already",
+        "busy"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Busy नहीं चाहिए. Already चल रहा है.",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_apply",
+      "base_intent": "click_apply",
+      "keywords": [
+        "apply now",
+        "apply",
+        "click",
+        "now",
+        "screen"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप home screen पर आ गए हैं। आप नीचे एक 'Apply Now' button देख सकते हैं, उस पर click करें।",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "सही",
+        "already",
+        "मना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं आपकी बात सही है. वह मना नहीं कर रही मैं. Already मेरा चल रहा है दीदी. एक.",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "click",
+        "check",
+        "number",
+        "mobile"
+      ],
+      "sentiment": null,
+      "tool": "send_otp",
+      "text": "क्या आप अपना mobile number enter कर चुके हैं? फिर Terms and Conditions checkbox को check करें और 'Get OTP' पर click करें।",
+      "entities": []
+    }
+  ]
+}

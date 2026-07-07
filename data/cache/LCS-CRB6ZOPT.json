@@ -10,15 +10,15 @@
       "intent": "agent_greet",
       "base_intent": "open",
       "keywords": [
+        "justdial",
         "customer",
-        "service",
         "good",
-        "afternoon",
-        "jaisal"
+        "service",
+        "help"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "Good afternoon, I am Pooja from Jaisal Customer Service.",
+      "text": "Good afternoon, I am Pooja from JustDial customer service. How can I help you?",
       "entities": []
     },
     {
@@ -28,31 +28,25 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "business",
-        "help",
-        "how",
-        "wrong",
-        "lease"
+        "business"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "How can I help you? Yes. Madam Ji, this is my sister's business. Yes, tell me. I am not getting a lease. If I am getting a lease, then it is a wrong",
+      "text": "Yes? Madam ji, this is my sister's business.",
       "entities": []
     },
     {
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge_complaint",
-      "base_intent": "complaint",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "now",
-        "lease",
-        "getting"
+        "tell"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "lease. Okay, I mean you are getting a lease. But now I have 15,000,000,000,000,000,000,000,000,000.",
+      "text": "Yes, tell me.",
       "entities": []
     },
     {
@@ -62,15 +56,12 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "काम",
-        "ऐसे",
-        "आगे",
-        "इश्यू",
-        "आपसे"
+        "getting",
+        "lease"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "पैसा जब ही नहीं लीज देने का रहेगा पाक पाक जिनने देने का रहेगा आपसे नहीं भी नहीं देने का रहेगा तो सामने से बताने का ना कंपनियों आगे ने हम कराएगा नहीं नहीं इश्यू हमारा काम ऐसे ही चलता है दिना ऐसे चैन की भी काम चल रहा",
+      "text": "I am not getting a lease. If I am getting",
       "entities": []
     },
     {
@@ -80,11 +71,15 @@
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "बड़ा"
+        "getting",
+        "saying",
+        "wrong",
+        "mean",
+        "lease"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "था बड़ा ब�",
+      "text": "a lease, then I am getting a wrong lease. Okay, I mean you are saying... But I",
       "entities": []
     },
     {
@@ -94,11 +89,15 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "रॉंग"
+        "leads",
+        "issue",
+        "काम",
+        "one",
+        "company"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "रॉंग भी आ रही है",
+      "text": "have filled 15,000 rupees. One minute, listen to me. पैसा जब नहीं leads देने का रहेगा, पाकपा जिनने का देने का रहेगा, आप से नहीं देने का रहेगा, तो सामने से पता नहीं का रहेगा, company वाले नहीं। हम कराएगा नहीं issue, हमारा काम ऐसे ही चलता है। बिना ऐसे",
       "entities": []
     },
     {
@@ -108,92 +107,91 @@
       "intent": "agent_acknowledge_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "दोनों"
+        "काम",
+        "था।",
+        "style"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "और आ रही है नहीं और कम आ रही है दोनों",
+      "text": "style की भी काम चल रहा था।",
       "entities": []
     },
     {
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "प्रॉब्लम"
+        "wrong"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "भी प्रॉब्लम हो जा",
+      "text": "Wrong भी आ रहे हैं और आ",
       "entities": []
     },
     {
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "नंबर",
-        "रजिस्टर",
-        "मोबाल"
+        "नहीं।",
+        "दोनों"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "रही है रजिस्टर मोबाल नंबर बता सकते हो",
+      "text": "रहे हैं नहीं। हो कम आ रहे हैं। दोनों भी",
       "entities": []
     },
     {
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
+        "problem",
         "नंबर",
-        "रजिस्टर"
+        "मोबाल"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आ रजिस्टर नंबर ना है नहीं",
+      "text": "problem हो जा रहे हैं। रजिस्टर मोबाल नंबर बता",
       "entities": []
     },
     {
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask",
-      "base_intent": "question",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
-        "नंबर",
-        "भाई",
-        "ऑफिस",
-        "रजिस्टर",
-        "मोबाल"
+        "how",
+        "right",
+        "sorry",
+        "know",
+        "नंबर"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "क्या उधर यही नंबर से है ना 98 आमें नहीं से आपको हमें रजिस्टर मोबाल नंबर बता सकते है ना 98 98 आप अभी ऑफिस में किता भाई देता है? आज ऑफिस में किता भाई देता है? आज ऑफिस में किता भाई देता है? आज ऑफिस में किता भाई देता है? आज ऑफिस में किता भाई देता है?",
+      "text": "सकते हुआ। रजिस्टर नंबर ना है नहीं क्या उदर। यही नंबर से है न 9-8। नहीं से है। आपको हमें रजिस्टर मोबाल नंबर बता सकते हुआ। How do you know? Okay, Ashok Bracken, sorry, Bracken, right?",
       "entities": []
     },
     {
       "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
-        "उसको",
-        "लोगों",
-        "बोलता",
-        "तुम्हारे",
-        "रुपया"
+        "abhi",
+        "toh"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "कुछ भी नहीं है जो किसी को तुम्हारे कॉर्टरेबिजार जो मेरे पास आता है जो उसको बोलता है तो वो बोलता है लोगों को दो दो लाख रुपया भरते हैं तीन लाख रुपया भरते हैं चाली चाली जस्या रुपया भरते",
+      "text": "Kuch bhi nahi hai jo jo. Sumate quarter ka jaar jo mere paas aata hai, tisor jo mele usko bolta hai, toh bolta hai logonko 2-2 lakh rupiah bharte hai, 2-2 lakh rupiah bharte hai, 40-40-40 lakh rupiah bharte hai. So kya abhi yaar ghar bheche paise tumkoi bharne ka jaa?",
       "entities": []
     },
     {
@@ -205,7 +203,7 @@
       "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "हैं तो चाया",
+      "text": "Nahi sir, aisa nahi hai sir, ma nahi aapko yeh nahi kaha ki",
       "entities": []
     },
     {
@@ -215,11 +213,12 @@
       "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "यार"
+        "toh",
+        "chahiye"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आप यार घर",
+      "text": "aapko... Peer, usko jawab dene ka toh tarika aana chahiye",
       "entities": []
     },
     {
@@ -229,28 +228,27 @@
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "पैसा",
-        "बेच"
+        "right",
+        "usne"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "बेच के पैसा त�",
+      "text": "na? Right sir, aap sahi bhojo. Kaise hai dikhe kab... Usne dumche",
       "entities": []
     },
     {
       "index": 15,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
-        "पैकेज",
-        "हमको",
-        "तुमने"
+        "bhai",
+        "branch"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "40,000 हमको तुमने पैकेज क्यों दिया 15,000 का",
+      "text": "bhai, yeh branch bhaate bhi 40,000 bharaya hai.",
       "entities": []
     },
     {
@@ -260,11 +258,15 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "पैसे"
+        "leads",
+        "business",
+        "category",
+        "inquiry",
+        "what"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "पैसे ना कम भी भर रहे हो ना तो कोई पास नहीं पर पैसे आप भर तो रहे हो ना",
+      "text": "Business owner leads, inquiry, category, So, I will take a look at the details for you. What",
       "entities": []
     },
     {
@@ -274,29 +276,30 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "इंपोर्टेंट"
+        "issue",
+        "problem",
+        "getting",
+        "give",
+        "why"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "बस बस हाँ और यह इंपोर्टेंट में",
+      "text": "is the problem? Why are you getting this issue? Give",
       "entities": []
     },
     {
       "index": 18,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "देख",
-        "प्रॉब्लम",
-        "मैडम",
-        "पैसा",
-        "देगा"
+        "one",
+        "second"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आपको बिजनस आना देगा मैडम दीवी वही बात है कि पैसा आमार जा रहा है उसे मतलब नहीं हमको आमा तो मैं आपका तो यह डिफरेंट कर लेती हूँ कि क्या प्रॉब्लम है, क्यों आपको यह इश्यो आ रही है, वन सेकेल दीजिए, जी, जी, सरी, सरी है, मैं यहाँ पर देख रहा हूँ,",
+      "text": "me one second.",
       "entities": []
     }
   ]

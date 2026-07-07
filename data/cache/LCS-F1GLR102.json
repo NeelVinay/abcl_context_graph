@@ -10,51 +10,51 @@
       "intent": "agent_greet",
       "base_intent": "open",
       "keywords": [
-        "call",
-        "बोल",
+        "justdial",
         "customer",
-        "बिजनेस",
+        "call",
+        "com",
         "thank"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "good afternoon, welcome to justjahil.com, मैं justjahil.com customer service team से बात कर रहा हूँ नीना आपके साथ, am i audible, सुन पा रहे हैं मुझे? हाँ, हाँ, actually मेरा अच्छे बार के अनुसार दो नहीं दाया है, अच्छा, कौन सी location से बात कर रहे हैं, city एक बार चाहना चाहूँगा, कलकता, कलकता city से बात कर रहे है ये जो बिजनेस आपका है ये आपका प्रिंस फाइस कहा के नाम पहे हाँ हाँ महमद नजीरे नामे बिजनेस हो जी काशाते कथा बोल ची आपना नाम पे क्यों बोलें मैम नीधी मैम कथा बोल चेन Thank you for holding. Your call is important to us. Our executive is currently gathering the necessary details to provide you with a resolution.",
+      "text": "Good afternoon, welcome to JustDial.com میں JustDial.com customer service team سے بات کر رہا ہوں مہینہ آپ سے Sir, am I audible? سن پا رہے ہیں مجھے؟ ہاں ہاں ہاں، اکتوبر سے جو مہینہ جا رہا ہے؟ اچھا کونسی location سے بات کر رہے ہیں؟ city ایک بار جاننا چاہتا ہوں کلکتہ city سے بات کر رہے ہیں اور جس number سے آپ کا profile register ہے وہ number بتائیے گا Thank you for holding. Your call is important to us. Our executive is currently gathering the necessary details to provide",
       "entities": []
     },
     {
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [
-        "call",
         "customer",
+        "call",
         "thank",
-        "feedback",
-        "service"
+        "service",
+        "feedback"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "We encourage you to explore our self-service portal for instant answers to your queries without needing to contact a customer service representative. We value your feedback on this platform. We appreciate your patience. Thank you for holding. Your call is important to us. Our executive is currently gathering the necessary details to provide you... Thank you for",
+      "text": "you with a resolution. We encourage you to explore our self-service portal for instant answers to your queries without needing to contact a customer service representative. We value your feedback on this platform. We appreciate your patience. Thank you for holding. Your call is important to us. Our executive is currently gathering the necessary details to provide you... Thank you for being on hold.",
       "entities": []
     },
     {
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "backchannel",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "थैंक",
-        "जाए",
-        "भाई",
-        "hold",
-        "चीज़ा"
+        "thank",
+        "service",
+        "any",
+        "करें।",
+        "other"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "being on hold. चीज़ा चेका चेका ओके, एक टाइज तो मां भाई राजबाई, एनिथिंग एल्स, आर कुछ साथ जो भाई राजबाई, थैंक यू मैं, जस जाए लोट कमेंस में माई राजबाई जाना धून लोगा, तपा दिन मालो गाटू, खावे जाए दे, थैंक यू.",
+      "text": "जो आप सबस्क्राइब करने के लिए सबस्क्राइब करें। anything else can be done by any other service or not? yes, yes, Okay. Anything else? Thank you.",
       "entities": []
     }
   ]

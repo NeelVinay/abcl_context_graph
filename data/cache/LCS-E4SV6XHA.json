@@ -1,7 +1,7 @@
 {
   "call_id": "LCS-E4SV6XHA",
   "language": "hi-en",
-  "outcome": "incomplete",
+  "outcome": "raised_request",
   "turns": [
     {
       "index": 0,
@@ -10,15 +10,147 @@
       "intent": "agent_greet",
       "base_intent": "open",
       "keywords": [
-        "कॉल",
-        "लीड",
-        "टिकेट",
-        "इश्यू",
-        "कॉम"
+        "com",
+        "lead",
+        "good",
+        "contract",
+        "how"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आपका एक कंट्रेक्ट हमारे पास रेंड कर रहा है, सचस्टाइल और कॉम पे, मैं लीड डिपार्टमेंट से बात कर रहा हूँ, इसके रिगारी हमें एक तरीके रिसीफ कर रहा है, कुछ इश्यू फेस कर रहे हैं से कंट्रेक्ट में? मेरी बात में से पंकज गुप्ता जी स जो लीड आपके पास आती हैं आपके कॉंट्रैक्ट में जी क्या उसके रिलेटिट को इशू फेस कर रहे हैं सर अपने टिकेट रेस किया था इसलिए मैं आपको कॉल कर रहा हूँ अलग सर ठीक है अगर कुछ भी इशू है तो अपने टिकेट रेस कर लीचे का आशा करते हैं � चंकर से आपके तो कॉल डिस्कनेक कर सकते हैं",
+      "text": "Good afternoon, sir. How are you? I'm good, thanks. You have a contract with us on suchasyle.com. I am talking to the lead department regarding which we have received a request. Are you facing any issues in the contract? No. I am talking to Mr. Pankaj Gupta. Yes, yes,",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "tell"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "tell me. I am",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "open",
+      "keywords": [
+        "com",
+        "lead",
+        "business",
+        "department",
+        "any"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "talking to the lead department of suchasyle.com. Yes, yes. Suchasyle is your business cell, position plan. Are you facing any issues related",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "lead",
+        "how"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "to the lead? How",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "lead",
+        "any",
+        "much",
+        "related",
+        "issues"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "much? No, are you facing any issues related to the lead?",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "payment",
+        "base"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Base payment से क्या? नहीं पहुंच",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "call",
+        "leads",
+        "contract",
+        "issue",
+        "ticket"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रहे हैं। जो leads आती हैं आपके contract में। जी। क्या उसके related कोई issue face कर रहे हैं sir? आपने ticket raise किया था, इसलिए मैं आपको call कर रहा",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "हूँ।",
+        "अलग",
+        "पूर्ण"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हूँ। अलग सा पूर्ण",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "thank",
+        "issue",
+        "ticket",
+        "time",
+        "raise"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "है। अलग सा। ठीक है, next time अगर कुछ भी issue है तो after sale के ज़रूर से ticket raise कर लिखे। आशा करते ह Thank you for watching this video.",
       "entities": []
     }
   ]

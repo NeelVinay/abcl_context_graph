@@ -1,7 +1,7 @@
 {
   "call_id": "LCS-FEM8RGOR",
   "language": "hi-en",
-  "outcome": "raised_request",
+  "outcome": "incomplete",
   "turns": [
     {
       "index": 0,
@@ -10,42 +10,49 @@
       "intent": "agent_greet",
       "base_intent": "open",
       "keywords": [
-        "वेलकम",
-        "डॉटकॉम"
+        "justdial",
+        "customer",
+        "com",
+        "support",
+        "good"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "गुड़ी इवनिंग वेलकम टी जर्जटाइन डॉटकॉम एकरा",
+      "text": "Good evening, welcome to JustDial.com, एकड़ा दिस्टा एकम customer support team, how may I help you today?",
       "entities": []
     },
     {
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "टीम",
-        "सपोर्ट",
-        "कस्टम",
-        "टुड़े",
-        "हाई"
+        "lead",
+        "काम",
+        "बोल",
+        "कहीं",
+        "road"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "दिश्चा एकम कस्टम और सपोर्ट टीम आओ मैं एलपी टुड़े हाई रेडम मैं",
+      "text": "अभी madam, मैं Bombay Bhimandi से बोल रहा था, UP Assam Road के अरियार। मेरा lead तो बिकार बिकार lead आ रहा है, 3-4 मेने से एक भी lead कहीं नहीं आ रहा है। क्या करूँ, वर्ल कर दू क्या अब? पहले काम अच्छा आ था था, अभी तो क्या हो गय",
       "entities": []
     },
     {
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [],
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "number",
+        "mobile",
+        "registered"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "बॉंबे भीमाली से",
+      "text": "Registered mobile number",
       "entities": []
     },
     {
@@ -55,16 +62,20 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "लीड",
-        "नंबर",
-        "बोल",
+        "932209",
         "जान",
-        "एरिया"
+        "road",
+        "sam"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "बोल रहा था यूपी आसाम रोट के एरिया जी मेरा लीड तो बेकार बेकार लीड आ रहा है तीन चार रजिस्टर में वाइन नंबर जान सकते हैं? 93220 9 93220 93220 2823 2823 12 यूटी आइट",
-      "entities": []
+      "text": "जान सकते हैं। 932209 93220 93220 2823 2823 12 UTI Sam Road Carriers,",
+      "entities": [
+        {
+          "type": "pincode",
+          "value": "932209"
+        }
+      ]
     },
     {
       "index": 4,
@@ -73,11 +84,11 @@
       "intent": "agent_ask",
       "base_intent": "question",
       "keywords": [
-        "लीड्स"
+        "leads"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "हम रोट करें लीड्स आपको गलर कैसे आ रही है?",
+      "text": "leads आपको कैसे आ रही हैं।",
       "entities": []
     },
     {
@@ -88,31 +99,30 @@
       "base_intent": "complaint",
       "keywords": [
         "बार बार",
-        "फोन",
+        "हूँ।",
         "देखिये",
         "बोलता",
-        "किसने"
+        "फोन"
       ],
       "sentiment": "frustrated",
       "tool": null,
-      "text": "वेकार वेकार नहीं जा रहा है, कोई बोलता है हिक कार्टून है, कोई बोलता है आपको किसने फोन किया, क्यों फोन कर रहे हो बार बार, हाँ, मेरा फाइल खोल कर देखिये मैं क्या लफरा चल रहा हूँ,",
+      "text": "विकाल विकाल नहीं दा रहा है। कोई बोलता है हेट कार्टून है, कोई बोलता है आपको किसने फोन किया, क्यों फोन कर रहे हो बार बार। मेरा फाइल फोल के देखिये मैं क्या लफरा चल रहा हूँ।",
       "entities": []
     },
     {
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
         "lead",
-        "गलत",
-        "recent",
-        "बताइ"
+        "थी।",
+        "recent"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आपका नामजान से कूछ। नरेंदर चोदर। एक recent lead का नाम बताइ ये जो गलत आई थी",
+      "text": "आपका नामजान चुके। नरेंदर चोदरूद। एक recent lead का नाम बता ये जो गलक आई थी।",
       "entities": []
     },
     {
@@ -122,117 +132,127 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "ऐसा",
-        "महीने",
-        "चार",
-        "पांच",
-        "office"
+        "नहीं।",
+        "ऑफिस"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "अब वो तो office में रहता है मैं अभी office में हो नहीं हूँ नहीं नहीं आज सिर्फ आरी नहीं आज चार पांच दीन चार महीने से ऐसा आ रहा",
+      "text": "अब वो तो ऑफिस में रहता है, मैं अभी ऑफिस में हो नहीं। नहीं, नहीं,",
       "entities": []
     },
     {
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "backchannel",
-      "keywords": [],
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "चार",
+        "यार"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "है मुझे उस पास अच्छा",
+      "text": "आज फिर सारी नहीं, यार चार,",
       "entities": []
     },
     {
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "काम",
-        "महीने"
+        "पांच",
+        "चार"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "महीने से कोई काम ही नहीं",
+      "text": "पांच, ये दीन, चार",
       "entities": []
     },
     {
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask",
-      "base_intent": "question",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "कॉल",
+        "call",
         "काम",
-        "उसमें",
-        "डिटेल्स"
+        "ऐसा",
+        "details",
+        "उनको"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "करना हो जाता है इसे कोई काम ही नहीं मि तो उसमें क्या है तो अगर कोई हमारे पास कॉल करके आपके डिटेल्स दो",
+      "text": "महीने से ऐसा आ रहा है मुझे इस पार। अच्छा महीने से कोई काम ही नहीं करना हो जाता है, इ तो उसने क्या है तो अगर तो हमारे पास call करके आपकी details दो तो column का पास filter करते हैं उनको",
       "entities": []
     },
     {
       "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
       "keywords": [
-        "इंटर"
+        "उसको",
+        "देखिये",
+        "उसने",
+        "पूछते"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "तो कॉलम के पास इंटर करते हैं",
+      "text": "पूछते हैं। मेरा जो यह है ना उसको देखिये ना उसने क्या है लपड़ा कुछ कर रहा",
       "entities": []
     },
     {
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask",
-      "base_intent": "question",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "उनको",
-        "उसको",
-        "उसमें",
+        "response",
+        "मिल",
+        "changes",
         "देखिये",
-        "पूछते"
+        "कैसा"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "उनको पूछते हैं। मेरा जो ये है ना उसको देखिये ना उसमें क्या है लपड़ा",
+      "text": "है क्या। नहीं मैं changes कर रहा हूँ आपके लिए आप देखिये आपको कैसा response मिल गए अभी मेर",
       "entities": []
     },
     {
       "index": 13,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [],
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "उसमें",
+        "चाहिए।",
+        "नहीं।",
+        "आएगा।",
+        "ऊपर"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "कुछ कर रहा है",
+      "text": "गरीब प्रेस मालिये तो उसली जो गर्वर आ रहा है उसमें नहीं आएगा। मेरा नाम ऊपर है की नहीं। है चाहिए। तो",
       "entities": []
     },
     {
       "index": 14,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
-        "देख"
+        "तो।"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "क्या? नहीं मैं टेंजिस कर रहा हूँ आपके लिए आप देख",
+      "text": "की रह से क्यों आ रहा है। पहले तो बढ़ियां आता था तो गंगा रफ़ांडे था तो। चाहिए",
       "entities": []
     },
     {
@@ -242,77 +262,80 @@
       "intent": "customer_ask_question",
       "base_intent": "question",
       "keywords": [
-        "उसमें",
-        "ऐसे",
+        "कैसे",
+        "करूँ।",
+        "explain",
         "बोलिये",
-        "प्रेस",
-        "बढ़िया"
+        "बाती"
       ],
-      "sentiment": null,
+      "sentiment": "confused",
       "tool": null,
-      "text": "भरी प्रेस मालिये तो अपनी जो गर्वर आ रहा है उसमें नहीं आएगा मेरा नाम उपर है तो नहीं है तो फिर ऐसे क्यों आ रहा है पहले तो बढ़िया आता था तो बोलिये",
+      "text": "बाती नहीं सुनिया तो कैसे explain करूँ। बोलिये Sir, मैं",
       "entities": []
     },
     {
       "index": 16,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "backchannel",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "बड़ा",
-        "आवाज",
-        "बड़"
+        "response",
+        "देखिये",
+        "फ्लो",
+        "प्रॉपर",
+        "इश्यू"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आपको आवाज बड़ा बड़ नहीं आ रहा है मैटम कोई हूँ हूँ",
+      "text": "आज केंजिस कर रहा हूँ, आप देखिये आपको प्रॉपर response करेंगे, तो आपको किसी इश्यू नहीं है। तो आप प्रॉपर हैं, तो थोड़ा फ्लो कम होने",
       "entities": []
     },
     {
       "index": 17,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
       "keywords": [
-        "देखिए",
-        "आवाज",
-        "सुन"
+        "लीड",
+        "कारण",
+        "इश्यू",
+        "किसके"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "हूँ हूँ हो रहा है थोड़ा देखिए तो सुन आवाज पर",
+      "text": "के कारण लीड में इश्यू हो रहा है। किसके",
       "entities": []
     },
     {
       "index": 18,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "देखिए",
-        "प्रॉपर",
-        "रिस्पॉंस"
+        "लीड",
+        "कारण",
+        "फ्लो"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आप देखिए आपको प्रॉपर रिस्पॉंस नहीं है तो आपको प्रॉपर रिस्पॉंस नहीं है तो आप प्रॉपर रिस्पॉंस न",
+      "text": "कारण? फ्लो कम होने के कारण लीड",
       "entities": []
     },
     {
       "index": 19,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "प्रोफाइल"
+        "इश्यू"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "तो प्रोफाइल कर दीजिए न प्रोफाइल कुछ न मैं प्रोफाइल",
+      "text": "में इश्यू हो",
       "entities": []
     },
     {
@@ -322,64 +345,49 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "नंबर",
-        "करूँगी",
-        "बेट",
-        "करिए"
+        "issue",
+        "changes",
+        "मिलेगा",
+        "अलावा",
+        "देखें"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "कर रहा हूँ तो रिफाइस करूँगी बेट करिए तो और नंबर भी देजिए मैंने को आ आपके",
+      "text": "रहा है, � आप देखें आपको बहुत रिस्पांस मिलेगा अब इस मेरी changes के बाद। इसके अलावा को यार issue हैं?",
       "entities": []
     },
     {
       "index": 21,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_respond",
-      "base_intent": "agent_handle",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "देखे",
-        "प्रोफाइल",
-        "मिलेगा",
-        "चेंजी",
-        "इसने"
+        "issue",
+        "इतना",
+        "तुम्हारा"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "वाच्चा पर आ जाएगा आप देखे आपको प्रोफाइल रिस्पंस मिलेगा अब इसने भी चेंजी इ",
+      "text": "नहीं नहीं बस इतना ही issue है madam तुम्हारा वो कर दी",
       "entities": []
     },
     {
       "index": 22,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
-        "कॉल",
-        "कस्टमर",
-        "सपोर्ट",
+        "justdial",
+        "com",
         "thank",
-        "concern"
+        "calling",
+        "पैसा"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आपको एक इन्फॉर्मेशन देना चाहिए यह बेस्टर के अप्रिवेशन पर कस्टमर सपोर्ट ऑप्शन लाइज है जब भी concern हो तो भी शुरू है कहां से रेट करिए मैं और मेरी concern team within 24 hours कॉल करके उस चीज़ का सलूशन देंगे Thank you so much वाली बेट्यान have a nice day Hello Thank you for calling me Thank you for calling",
-      "entities": []
-    },
-    {
-      "index": 23,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
-      "keywords": [
-        "com"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "bestial.com �",
+      "text": "ये लोग तुम्हारा धन्दा करे तो वो हम पैसा ले वा करे ना। हम धन्दा ही नहीं करेंगे तो हम पैसा कहां भेजा Thank you for calling JustDial.com",
       "entities": []
     }
   ]

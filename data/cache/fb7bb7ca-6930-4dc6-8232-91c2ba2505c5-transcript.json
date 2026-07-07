@@ -1,0 +1,303 @@
+{
+  "call_id": "fb7bb7ca-6930-4dc6-8232-91c2ba2505c5-transcript",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं परमेस्वरी जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello",
+        "हिंदी",
+        "english",
+        "only",
+        "know"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello. I don't know हिंदी know only english.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "pre-approved",
+        "loan offer",
+        "loan",
+        "approved",
+        "offer"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello, I am Priya from Aditya Birla Capital. May I assist you with your pre-approved loan offer today?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "amount",
+        "how"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok. Yes. How many how many amount come?",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "pre-approved",
+        "loan offer",
+        "loan",
+        "approved",
+        "offer"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "You have an exciting pre-approved loan offer of up to ten lakh rupees from Aditya Birla Capital. Shall we start the application process?",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "manual_review",
+      "keywords": [
+        "application",
+        "process",
+        "now"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां, ok. You you scan now application process?",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms",
+        "application",
+        "link",
+        "click",
+        "phone"
+      ],
+      "sentiment": null,
+      "tool": "send_sms",
+      "text": "I will now send you an SMS with a link to complete your application. Please check your phone and click the",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_sms_received",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms",
+        "send",
+        "anything"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello? Ok ok, you send me. You send me first the SMS. I do it anything.",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "link",
+        "sms",
+        "click",
+        "now"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Now, please click the link in the SMS.",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_sms_received",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "send",
+        "after"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok ok. You send me after I do.",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_apply",
+      "base_intent": "click_apply",
+      "keywords": [
+        "apply now",
+        "apply",
+        "link",
+        "click",
+        "now"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Once you open the link, you will see the home screen. Please click the \"Apply Now\" button to proceed.",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "call",
+        "sorry",
+        "there",
+        "still"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Sorry, are you still there on the call?",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "wait",
+        "minute",
+        "one"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Wait wait wait madam. One minute wait हां.",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "sure"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Sure. <CHD/>",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "I do it",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "apply",
+        "click",
+        "check",
+        "number"
+      ],
+      "sentiment": null,
+      "tool": "send_otp",
+      "text": "Great! After clicking \"Apply Now,\" please enter your mobile number, check the Terms and Conditions box, and click \"Get OTP.\"",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "click",
+        "screen",
+        "enter",
+        "verify"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "You will receive a confirmation message saying \"We have sent an OTP.\" Please enter the OTP on the next screen and click \"Verify.\"",
+      "entities": []
+    }
+  ]
+}

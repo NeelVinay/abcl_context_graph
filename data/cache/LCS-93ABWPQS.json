@@ -11,14 +11,14 @@
       "base_intent": "open",
       "keywords": [
         "customer",
-        "service",
         "com",
         "good",
+        "service",
         "help"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "Good evening, welcome to jaisal.com, shainaf.com, customer service department. How may I help you?",
+      "text": "Good evening. Welcome to Jaisal.com. Shaina from customer service department. How may I help you?",
       "entities": []
     },
     {
@@ -29,27 +29,32 @@
       "base_intent": "complaint",
       "keywords": [
         "leads",
+        "what",
         "marketing",
-        "irrelevant",
-        "job"
+        "getting",
+        "saying"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "Sir, मुझे leads बहुत irrelevant आ रहे हैं जो job या marketing के लिए है और आपके दो दिन से leads बहुत नहीं आ रहे",
+      "text": "Sir, I am getting leads very early which are for job or marketing purposes. And I am not getting leads for two months. What are you saying, sir? I am saying that I am getting leads which are irrelevant. Leads are",
       "entities": []
     },
     {
       "index": 2,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "बोल"
+        "leads",
+        "what",
+        "issues",
+        "face",
+        "coming"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "हैं क्या बोल रहे है, sir?",
+      "text": "not coming properly? No. What issues do you face in leads?",
       "entities": []
     },
     {
@@ -59,12 +64,13 @@
       "intent": "agent_acknowledge_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "leads",
-        "irrelevant"
+        "call",
+        "marketing",
+        "job"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "मैं कह रहा हूँ, मुझे leads जो आ रहे हैं बहुत irrelevant",
+      "text": "Mostly वो job की लिए या marketing की लिए call होते है।",
       "entities": []
     },
     {
@@ -74,207 +80,216 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "leads",
-        "proper"
+        "number",
+        "mobile",
+        "दीजिये"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आ रहे हैं leads proper",
+      "text": "Mobile number दीजिये",
       "entities": []
     },
     {
       "index": 5,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge_complaint",
-      "base_intent": "complaint",
-      "keywords": [],
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "590734",
+        "register"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "नहीं आ रहे",
-      "entities": []
+      "text": "register 7021 590734 ये",
+      "entities": [
+        {
+          "type": "pincode",
+          "value": "590734"
+        }
+      ]
     },
     {
       "index": 6,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [
-        "lead",
-        "issue"
+        "business",
+        "just",
+        "लिख",
+        "institute"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "हैं? नहीं क्या issue आ था lead में?",
+      "text": "just211 computer institute के नाम से business लिख",
       "entities": []
     },
     {
       "index": 7,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge_complaint",
-      "base_intent": "complaint",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "call",
-        "marketing",
-        "mobile",
-        "job"
+        "correct"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "mostly वो job के लिए है या marketing के लिए call होते है mobile",
+      "text": "रहे हैं sir Correct",
       "entities": []
     },
     {
       "index": 8,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_respond",
-      "base_intent": "agent_handle",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [
-        "प्रॉब्लम",
-        "अच्छी",
-        "number",
-        "जान",
-        "business"
+        "leads",
+        "what",
+        "problem",
+        "name",
+        "know"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "number दीजिये register 7021 590 734 ये यस्ट 211 computer institute के नाम से business दिख रहा है sir correct मैं आपका नाम जान सकती हूँ तो? येश जी और लीड़ में क्या प्रॉब्लम आता? कॉलेज अच्छी नहीं है या लीड़ ही",
+      "text": "May I know your name sir? Yes. What is the problem with leads? Is the quality not",
       "entities": []
     },
     {
       "index": 9,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge_complaint",
-      "base_intent": "complaint",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
-        "लीड़"
+        "good",
+        "leads",
+        "any",
+        "there",
+        "getting"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "नहीं आ रही आपको? अभी दो दिन से तो कुछ भी लीड़ नहीं है तो इसके पहले",
+      "text": "good or are you not getting any leads? There are no leads from the previous two teams. But the ones that used to come before this were for different purposes only. They are more looking for",
       "entities": []
     },
     {
       "index": 10,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "अलग",
-        "purpose"
+        "call",
+        "what",
+        "feedback",
+        "first",
+        "give"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "जो आते थे ना वो सारे अलग-अलग purpose",
+      "text": "complicated calls. Okay, so will you give me feedback? Sir, when you call, what do the customers say? What are the requirements? First",
       "entities": []
     },
     {
       "index": 11,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
+        "customer",
+        "leads",
+        "whatsapp",
         "ऐसा",
-        "ऐसे",
-        "अलग",
-        "देखोगे",
-        "जिनको"
+        "all"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "की लिए होते थे मतल या कुछ जिनको साफ सील होता है ऐसा कुछ अलग-अलग होता है अगर आप जिनका डाटा देखोगे तो काफी सारे ऐसे लीडियो जो दोंबी भी नहीं है या कल्यान ऐसे सब पर इच्छे आ रहे हैं जबकि अपना चाहिए",
+      "text": "of all, someone has to fill some bulk of the WhatsApp plan. If they have to run on Google, then we also provide that. Yes. या कुछ जिनको staff की होता है। ऐसा कुछ अलग-अलग होता है। अगर आप देखोगे तो काफी सारे ऐसे leads हैं जो Domini या Kalyan ऐसे सब पर इसके आ रहे हैं। जबकि अपना customer से कामी ही दिया इसमें। Okay.",
       "entities": []
     },
     {
       "index": 12,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
       "keywords": [
-        "लीड",
-        "काम",
-        "आउट",
-        "ताकि",
-        "बाहर"
+        "lead",
+        "area",
+        "out",
+        "लगा",
+        "ताकि"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "इसको काम ही दिया इसमें ओके आउट अप वीडिय ताकि आपको बाहर का लीड नहीं आया, आपने जो एक लाइट दिया है, वहीं चाहिए,",
+      "text": "Out of email जो आ रहा है उसके लिए मैं restriction लगा सकती हूँ sir. ताकि आपको बाहर का lead ना है। आपने जो area का lead दिया है, वहीं से",
       "entities": []
     },
     {
       "index": 13,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
         "उनको",
-        "लाइट"
+        "online",
+        "बाहर"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "ठीक है, यह एक लाइट नहीं चाहिए, क्योंकि उनको ऑनलाइन",
+      "text": "है। क्यूंकि उनको online चीज़ता है, उनको बाहर से भी",
       "entities": []
     },
     {
       "index": 14,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_respond",
-      "base_intent": "agent_handle",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
-        "नहीं हो",
-        "उनको",
-        "बाहर",
-        "सीखा"
+        "चीज़ा"
       ],
-      "sentiment": "frustrated",
+      "sentiment": null,
       "tool": null,
-      "text": "सीखता है, उनको उन्हें बाहर से भी सीखा सकते है, पर उनको ऑफलाइन ही करना होता है, तो वो नहीं होता है, ठीक है,",
+      "text": "चीज़ा सकते हैं। पर",
       "entities": []
     },
     {
       "index": 15,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "category",
-        "ऑप्शन",
-        "review",
-        "तुझे",
-        "लगे"
+        "उनको",
+        "offline"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "नहीं नहीं कोई चेंजी कोई किया बस तुझे बार बार एक तो ऑप्शन लगे कि review किन को review category है सा",
+      "text": "उनको offline भी",
       "entities": []
     },
     {
       "index": 16,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
+      "intent": "customer_respond",
+      "base_intent": "agent_handle",
       "keywords": [
-        "लास्ट",
-        "check",
-        "issue",
-        "hold",
-        "धीर"
+        "नहीं हो",
+        "lead",
+        "restriction",
+        "apply"
       ],
-      "sentiment": null,
+      "sentiment": "frustrated",
       "tool": null,
-      "text": "एक सेकंडा में check कर लेती क्या issue है 5 तारीखो लास्ट धीर रही थी कल एक दी मुझे राज्य नहीं गई हाँ hold",
+      "text": "करना होता है क्या वो नहीं होता है। ठीक है। मैंने restriction apply कर दिया है। Sir, lead भी आप कह रहे है के 2 दिन से lead भी नहीं हाई",
       "entities": []
     },
     {
@@ -284,144 +299,153 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "request",
-        "कीजिए",
+        "category",
+        "pincode",
+        "option",
         "ऐसे",
-        "message"
+        "review"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "कीजिए सा मुझे एक message भी भी आया था वच्चा से कि मैंने request किया क्योंकि ऐसे तो refresh में दिया नहीं है",
+      "text": "नहीं हुई। कोई चीज़ नहीं कीज़ किया। बस तुझे बार बार ऐसे option ला रहे हैं कि review, pincode, review category है।",
       "entities": []
     },
     {
       "index": 18,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_respond",
-      "base_intent": "agent_handle",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "response",
-        "contract",
-        "पूरा",
-        "problem",
-        "complaint"
+        "check",
+        "issue",
+        "day",
+        "last",
+        "पांच"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "मुझे तो continue रखना है नहीं तो contract तो ht भी आपका visibility भी है सारी 47 keywords आपके contract में तो problem तो कुछ नहीं है मैंने अभी complaint note down किया है contract को पूरा फिर से re-update करके देती हूँ फिर आप देखती ही कैसा response आ रहा है ठीक है active है sir नाम तो दिख रहा है आपका",
+      "text": "एक सेकंडा में check कर लेती क्या issue है। पांच तारीख को last day रहे",
       "entities": []
     },
     {
       "index": 19,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask",
-      "base_intent": "question",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "जिसका",
-        "जगह",
-        "account"
+        "request",
+        "day",
+        "message",
+        "whatsapp",
+        "hold"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "सब जगह ओके और जिसका मेरे लिए ये JD Plus और JD C के बारे में बात करना था जी ये मेरे account यदी है या नहीं है",
+      "text": "थी। कल एक day में ज़राज नहीं गई है। Hold कीज़ है। मुझे एक message भी दिया है था WhatsApp पे कि मैंने request किया ह Okay, aiko to request mo nahi kiya nahi hai, mujhe to continue",
       "entities": []
     },
     {
       "index": 20,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
-        "second",
-        "दिख",
-        "list",
-        "फिलाल"
+        "contract",
+        "visibility",
+        "aapka",
+        "keywords",
+        "active"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "एक second sir फिलाल जो दिख रहा है list में नहीं है sir",
+      "text": "rathna hai. No, so contract to active aapka, visibility bhi hai, sari 47 keywords aapke contract mein",
       "entities": []
     },
     {
       "index": 21,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [],
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "right"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "तो किसी ना मेरे कॉंटर से भी शार्ट किया था लगभग 3 मैने हो गया है बात को देया दिन में ना हाँ तो विमर जी करके",
+      "text": "hai. Right, right.",
       "entities": []
     },
     {
       "index": 22,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_respond",
+      "base_intent": "agent_handle",
       "keywords": [
-        "उन्होंने",
-        "आये"
+        "contract",
+        "response",
+        "problem",
+        "complaint",
+        "update"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "मेरे पास आये थे उन्होंने",
+      "text": "No, so problem toh kuch nahi hai, maine abhi complaint note down kiya hai. Contract पूरा फिर से re-update करके देती हूँ, फिर update ही करता है response आ रहा है। Active है sir, लाम तो दिख",
       "entities": []
     },
     {
       "index": 23,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_raise_request",
-      "base_intent": "resolution",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
-        "कॉल",
-        "टाइम",
-        "टीम",
-        "बुला",
-        "काफी"
+        "था।",
+        "account",
+        "मिले",
+        "जगह।"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "मुझे बुला का करेंगे इससे बाद में हमारा काफी टाइम बात हुआ फिर आपके टीम में कॉल किया पर अपनी तो को� वेरिफाइड",
+      "text": "रहा है आपका सब जगह। Okay, अब इसका मिले यह JD Cross और JD CC बात करना था। यह मेरे account में भी है या नहीं है।",
       "entities": []
     },
     {
       "index": 24,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "मेल",
-        "कहीं",
-        "वाटसप"
+        "sir।",
+        "दिख",
+        "list",
+        "फिलाल"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "जो है वो मतलब चार्जेबल है तो पे करना होता है उसके लिए लेकिन अगर अपने प्राइंट ने दिया था या मेल पे या वाटसप पे कहीं से चैट किया था",
+      "text": "Sir, फिलाल जो दिख रहा है, list में नहीं है sir।",
       "entities": []
     },
     {
       "index": 25,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
-        "उन्होंने",
-        "बोला",
-        "लोगों",
-        "आये",
-        "ऑफिस"
+        "contract",
+        "time",
+        "team",
+        "getting",
+        "give"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आप लोगों में नहीं और भली कि वो ऑफिस में आये थे उन्होंने बोला कि अगर आप आपके आ� तो वो उसी चीज के लिए मैंने लॉक करने के लिए किया था",
+      "text": "I started my contract about 3 months ago. So, he came to me and told me that he will do it. After that, we talked for a long time and then your team called. But it is not getting resolved. So, he was going to give you a",
       "entities": []
     },
     {
@@ -431,45 +455,170 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "टाइम",
-        "कीजिए"
+        "pay"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "ठीक है आप में जैसे थोड़ा सा टाइम अलॉग कीजिए सर वीमल से बात करेंगे",
+      "text": "complimentary or pay?",
       "entities": []
     },
     {
       "index": 27,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "backchannel",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "फोन",
-        "उठा"
+        "one",
+        "take",
+        "get",
+        "provide",
+        "because"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "मेरे पास क्योंकि वो अभी फोन भी नहीं उठा",
+      "text": "Yes, yes, complimentary. Because he said that if you take a one-year plan, you will not get it, but if you take a three-year plan, they will provide it to you. So, I did it for three years. Okay,",
       "entities": []
     },
     {
       "index": 28,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_respond",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
+      "keywords": [
+        "what",
+        "whatsapp",
+        "mail",
+        "give",
+        "say"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "so the verification is chargeable, so you have to pay for it. But what did the management say to you? Did they give it to you via mail or chat on WhatsApp? No,",
+      "entities": []
+    },
+    {
+      "index": 29,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "thank you so much",
-        "चेक",
-        "call",
-        "customer",
-        "thank"
+        "था।",
+        "today",
+        "doing",
+        "currently",
+        "office"
       ],
-      "sentiment": "happy",
+      "sentiment": null,
       "tool": null,
-      "text": "रहे मेरा हाँ मैं चेक पर रिप्लाई दूंगी करें पिंज नहीं उठा रहे ठ इस call के बाद एक link आएगा तो rating करना हो मेरे लिए होगा sir और कुछ पहली रही जर्जाल के app पे भी option है customer support का आप race कर सकते हैं आपको हम optionally call कर लेंगे sir ठीक थी चलेगा ठीक थी thank you so much sir thank you for calling digital.com have a nice day",
+      "text": "they came to the office and said that if you sign up today, I have paid an upfront amount of 6 months. I mean, I have 2 EMI's which I am currently doing. तो उसी चीज़ के लिए मैंने लॉक करने के लिए किया था। ठीक",
+      "entities": []
+    },
+    {
+      "index": 30,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "time"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "है, आप में जैसे थोड़ा सा time",
+      "entities": []
+    },
+    {
+      "index": 31,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "लिए।",
+        "phone",
+        "कीज़े",
+        "सा।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "allow कीज़े सा। हीमल से बात करने के लिए। क्योंकि वो अभी phone भी नहीं उता",
+      "entities": []
+    },
+    {
+      "index": 32,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "message",
+        "phone",
+        "करे",
+        "मेरा।",
+        "reply"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रहे मेरा। हाँ, message के reply के नहीं करे, phone",
+      "entities": []
+    },
+    {
+      "index": 33,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "भी नहीं उता रहे।",
+      "entities": []
+    },
+    {
+      "index": 34,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है, sir, मैं उसे",
+      "entities": []
+    },
+    {
+      "index": 35,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
+      "keywords": [
+        "हूँ।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बात करती हूँ।",
+      "entities": []
+    },
+    {
+      "index": 36,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "justdial",
+        "customer",
+        "call",
+        "support",
+        "rating"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इस call के बाद एक link आएगा तो rating करना मेरे लिए होगा sir। और कुछ query रही है JustDial के app पे भी option है customer support का। आप race कर सकते हैं। आपको हम optionally call कर लेंगे sir। चले रहा है।",
       "entities": []
     }
   ]

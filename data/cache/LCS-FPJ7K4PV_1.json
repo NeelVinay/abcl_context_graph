@@ -26,73 +26,72 @@
       "intent": "agent_greet",
       "base_intent": "open",
       "keywords": [
-        "चेक",
-        "बड़ा",
-        "हलो",
         "wait",
-        "साइड"
+        "someone",
+        "else"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "to someone else. You can wait. वेंकाटेश दार है ना सा मार्ज़ाड़ एदे? मैंने हिस्या होते हुए ना सा मार्ज़ाड़ करते हुए हलो हलो इप्पुड आडबल है सा? ताला बड़ा हुआ है इस्तेम बड़ा दिश्यों साइड सा हलो चेक बात",
+      "text": "to someone else. You can wait. Venkatesh గారిన సా మార్గాడేది? ఇక్కుర ఓకేన సా? ఇదాన ఇశ్య విందా సా కాన్రట్ లో? ఇక్కుర",
       "entities": []
     },
     {
       "index": 2,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
-      "keywords": [
-        "इश्यों"
-      ],
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "में इप्पुड ओके ना सा? हाँ सा एक अन इश्यों है ओके",
+      "text": "ఓకేన సా? ఇదాన ఇశ్య విందా సా కాన్రట్ లో? ఇదాన ఇశ్ Okay",
       "entities": []
     },
     {
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask",
-      "base_intent": "question",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "लीड",
-        "लास्ट",
-        "रोज",
-        "इकड़ा"
+        "three"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "लास्ट यह प्रोचेस हो इन रोज ने में मन आच्छा है आपको? ओका लीड आच्छा है आपको? मौनिंग लेवन लेवन त्रिंग शोएस तो ना इकड़ा इरो जोड़चिल अर्थो।",
+      "text": "లాసి ఎప్ప్రా చేసో ఇరోజు నిందే మన ఉచ్చాయా మికో ఒక్క లిడ్ ఉచ్చిలు సార్ అదే మోర్ణింగ లేవన్ టూవేల్ అందు త్రీ ఉచ్చాయు సార్ అంద Three tourists నా ఇక్కడ ఇరో జోచ్చిల అట్టు? Three tourists నా ఇక్కడ ఇరో జోచ్చిల అట్టు? Three tourists నా",
       "entities": []
     },
     {
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
-      "keywords": [],
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "agent",
+        "three"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "इरो जोड़चिल अर्थो। ओके,",
+      "text": "ఇక్కడ ఇరో జోచ్చిల అట్టు? Three tourists నా ఇక్కడ ఇరో జోచ్చిల అట్టు? Three tourists నా ఇక్క Agent",
       "entities": []
     },
     {
       "index": 5,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge_complaint",
-      "base_intent": "complaint",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
-        "लगते",
-        "अन्ने"
+        "customer",
+        "support",
+        "ticket",
+        "help",
+        "area"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "पेरी इंटे सर? आ दिगो अन्ने सच्छे लगते हैं नहीं है? पेरी इंटे हैं नहीं? पेरी इंटे हैं नहीं है? पेरी इंटे हैं नहीं है? पेरी इंटे हैं नहीं है? पेरी इंटे हैं नहीं है?",
+      "text": "customer support, ticket, area, location, renewal की help करता है। Dan Ganesh, అంటే ఈమాం నార్సాన్ మాక్ అక్కాన్ అక్కట్ పంబిస్తి మారా వాలు? వాలు ఇప్పరుస్తోర్యాడ్ వాడామ్ నార్విక్రాకు గోవాలో పండ్యార్�",
       "entities": []
     },
     {
@@ -101,26 +100,30 @@
       "type": "action",
       "intent": "customer_other",
       "base_intent": "other",
-      "keywords": [],
+      "keywords": [
+        "what",
+        "don",
+        "know"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "पेरी इंटे हैं नहीं है?",
+      "text": "I don't know what to do. I don't",
       "entities": []
     },
     {
       "index": 7,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "अन्ते",
-        "दान",
-        "वालो"
+        "what",
+        "don",
+        "know"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "दान कुरेश, अन्ते ये बात नहीं है, मैंने अकर अकर की पंपिछ नहीं होते हुआ न वालो? वालो,",
+      "text": "know what to do. I don't know what to do. I don't know what to do. I don't know what to do.",
       "entities": []
     },
     {
@@ -130,40 +133,51 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "नहीं हो",
-        "वालो"
+        "what",
+        "here",
+        "coming",
+        "when",
+        "doing"
       ],
-      "sentiment": "frustrated",
+      "sentiment": null,
       "tool": null,
-      "text": "ये बात नहीं है, मैंने अकर अकर की पंपिछ नहीं होते हुआ न वालो? वालो, ये बात नहीं होते हुआ न वालो? अगर",
+      "text": "What are you doing here, madam? When are you coming here? I am coming here to",
       "entities": []
     },
     {
       "index": 9,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "नहीं।"
+        "time",
+        "see",
+        "long",
+        "car",
+        "rental"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आप इसे नहीं रहते हैं, तो आपको अगर मैं होते हूँ मेडम, एक पॉटरेंड होती नहीं। मैं एक पॉटरेंड होते हूँ, कार्रेंडर भी नहीं। मैं एक पॉटरेंड होते हूँ, कार्रेंडर भी नहीं। मैं एक पॉटरेंड होते हूँ, कार्रेंडर भी नहीं। मैं एक पॉटरेंड होते हूँ,",
+      "text": "see the car rental. I have not seen the car rental for a long time. I have not seen the car rental for a long time. I have not seen the car rental for a long time. I have not seen the car rental for a long time. I have not seen the car rental for a long time. I have not seen the car",
       "entities": []
     },
     {
       "index": 10,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "बड़ी"
+        "customer",
+        "support",
+        "ticket",
+        "time",
+        "agent"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "कार्रेंडर भी नहीं करते हैं। बड़ी है। बड़ी है। एन चुना रुद्या का अंजुमा ने तो सिज़े वराज्यों को पाइटे में लिखी चुड़ों। अंजुमा ने सिज़े वराज्यों को पाइटे में लिखी चुड़ों। अंजुमा ने सिज़े वराज्यों को पाइटे में लिखी चुड़ों। यह",
+      "text": "rental for a long time. I have not seen the car rental for a long time. I have not seen the car rental for a long time. I have not seen the car rental for a long time. Agent customer support ಈ ಈ Angel న ఉద్ధాగా Angela న త సిజే వరాట్టి ఉక్క పాయ్టిందు నికిస్కుడే పట్టిందు ఉద్ధాగా Angela న ఉద్ధాగా Angela ఉ Agent customer support, ticket,",
       "entities": []
     },
     {
@@ -173,31 +187,30 @@
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "लेंगे",
-        "सबस्क्राइब",
-        "जनवर"
+        "help",
+        "area",
+        "location",
+        "renewal"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "जनवर लेंगे लोग नहीं रहते हैं, अपने चोकर लोग नहीं रहते हैं। लेकिन मैं सबस्क्राइब करता हूँ",
+      "text": "area, location, renewal की help करता है।",
       "entities": []
     },
     {
       "index": 12,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "अंदर",
-        "लास्ट",
-        "लेट",
-        "करें।",
-        "पूर्ट"
+        "customer",
+        "support",
+        "like"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "मतलब अंदर भी फारओर आया था तो लास्ट पूर्ट लेट मांग। आपको इन्हें पूर्ट लेट करें।",
+      "text": "Like my customer support పెస్టే పెస్టే Mal అందర గింది పారోడేయన తోత లాస్ కొర్తునే లేట్స్ మాకు ఆప్పరేస్ట్ పోర్తునే లేట్స్నే లేట్స్నే",
       "entities": []
     },
     {
@@ -207,19 +220,44 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "लगा",
-        "अपडेट",
-        "अरे",
-        "सर्चेस",
-        "यूजर"
+        "searches",
+        "requirement",
+        "user"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आदि वेरोंने पंपिछाकर में आपको वंपियाला मैनुवेल गाने देम उन्दर सर आदि यूजर रिक्वाइमेंट सर्चेस बट्टी आपको ऑटोमेटिका फॉरवेड होता है बट आदि पोजीशन उन्हाँ वाला की आदि एवरी इंग्वेरी अले देलते हैं वाला पैके अरे सर इपने उच्छीने टाइमिंग होकर लगा लेकिन लेटिव अपडेट ये सर आपने एक सारे मैंने",
+      "text": "Sir, అది వేరంనక్ పంపిచ్చాకనే మీకు పంపియాలా మానువల్గానే దీము ఉండా సర్వాదే ఎల్దుకాంటే user requirement searches బట్టి అవిం అటమేటికా ఫోరేడ్ ఆవుత్తాయ్ � Sir, ఇప్పర ఉచ్చిన టాఇమింగ్ ఉక్కనాగా మీక్ లేటియో పోర్ అప్డేట్ యే సార్ ఆపనే ఉక్సారే అప్పర",
       "entities": []
     },
     {
       "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "team",
+        "same"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ఉచ్చిన టాఇమింగ్ ఉక్కనాగా మీక్ లేటియో My team is in the same level. జে జে",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "జে జে Yes. ప్రోగు స్వార్ స్వార్",
+      "entities": []
+    },
+    {
+      "index": 16,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_other",
@@ -227,34 +265,7 @@
       "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "चाहिए तुम्हें नहीं है तैम लेल",
-      "entities": []
-    },
-    {
-      "index": 15,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "मेरे जैसे जैसे इस प्रोग्राम से इस प्रोग्राम",
-      "entities": []
-    },
-    {
-      "index": 16,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
-      "keywords": [
-        "इसको",
-        "पैकेज"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "से इस प्रोग्राम से पैकेज इसको नहीं,",
+      "text": "స్వార్ స్వార్ Sir, మిక ఒక లింకో చే సార్ చూడండండి బార్ పెకేస్ ఇస్టోలే సార్ పెకేస్",
       "entities": []
     },
     {
@@ -264,21 +275,16 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "951523",
-        "कॉल",
-        "call",
-        "अच्छी",
-        "लिंक"
+        "justdial",
+        "business",
+        "what",
+        "rating",
+        "message"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "मैंने इसका वो आपर मिलता हूँ, पूरे पूरे लिंक ओपन जाने लिंक नॉर्मल मेसेज लो वाट्सएप गालू नॉर्मल मेसेज लो 9515232090 दान को चीज़ लो इज़े मैं बल्ली पंपेट्या सो रहा हूँ अच्छी ना साथ अदि मना कार्रेंटल काटेगीरेस अनेदी ने अपडेट जेशाओ सर अदि लिंक में राले नहीं तू टांस पंपिछानो 951523 इन्हें मारे पर पंपर लगते हैं वो एक सारी कॉल ना भी देखकर अंत एक सारी अप्रूव के लिए जाएगा जाएगा बिज्ञा करना है। अप्रूफ कीजिए जैसे अप्रूफ कीजिए चाहिए चाहिए अब अपडेट होता है लेकिन इंका इस सिलेमेंट एवर जा सकता है अभी कुड़ा रहा कुड़ा फॉरवर्ड कीजिए चाहिए चाहिए सर वीडियो में आर्डम होते हैं सर वीडियो में आर्डम होते हैं सर वीडियो में आर्डम होते हैं normal message ने चूड़ेंगे, approve जाएंगे, इनके मेरे further any concerns होते हैं, call this, reticulate जाएंगे, area of room, my call back वह वह चाहते हुए. धन्यवाद.",
-      "entities": [
-        {
-          "type": "pincode",
-          "value": "951523"
-        }
-      ]
+      "text": "ఇస్టోలే మేన్ ఇస్టోల आदु open జేం జేం Normal message వాట్సాప్ గాలు, 9515232090 JustDial ಈ ಈ What's up? JustDial ಈ ಈ Business owner । Approve changes ಈ ಈ Wrong. ಈ ಈ Okay నే ఒక్షలే ఇది concern గుడా పెడితం సర్ ఇల్ల కారేడ్ ఆస్టునేయని లేక్స్ రంపిటాం అకుందా ఇది లేన్స్టే అర్యిప్పు న కాల్ వర్డ్ అక్షలే ఓప Rating ಈ ಈ",
+      "entities": []
     }
   ]
 }

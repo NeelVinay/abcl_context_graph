@@ -5,107 +5,130 @@
   "turns": [
     {
       "index": 0,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_greet",
+      "intent": "customer_greet",
       "base_intent": "open",
-      "keywords": [
-        "कस्टमर्स",
-        "जजजाई"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "कर दो तो आप नहीं होने से आयम पूजा फर्म जजजाई कस्टमर्स सर्विष्ट है?",
+      "text": "Hello! Hello!",
       "entities": []
     },
     {
       "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "justdial",
+        "customer",
+        "good",
+        "service",
+        "leads"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Good afternoon sir, I am Pooja from JustDial customer service sir. Sir, you are getting less leads related to JustDial",
+      "entities": []
+    },
+    {
+      "index": 2,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "लीड",
-        "इतना",
-        "लेकर",
-        "दूसरा",
-        "कस्टमर्स"
+        "नहीं हो रहा",
+        "नहीं हो",
+        "justdial",
+        "lead",
+        "leads"
       ],
-      "sentiment": null,
+      "sentiment": "frustrated",
       "tool": null,
-      "text": "हाँ, भूली मा? जजजाई कस्टमर्स सर्विष्ट से रिलेटिग लीड को लेकर इश्वारी की लीड से आपको कम आ जा रही है? येस, लीड से तो कम आ रही है, दूसरा मतलब कि खानी इतना है",
-      "entities": []
-    },
-    {
-      "index": 2,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "चेक",
-        "काम",
-        "देख",
-        "मिल",
-        "कीजिए"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "रही था understand करके मतलब आपको ऐसी issues हो रही है तो यूए इंडिस्ट्री आपको काम कीजिए लगेगी आपको यूए इसमें एक काम करते है एक बारे में मैं आपकी details चेक करने के लिए क्या problem हो रही है चालीज आपको मिल रही है इस सिस्थाब से मैं आपको profile को देख पाऊंगा � एक बार भी यहाँ पर ना एक बार भी यहाँ",
+      "text": "contracts, right? Yes, yes. Leads are getting less, but the other thing is that the general surgeon. उससे आगी process कोई भी नहीं हो रहा है। मैं तो message कर रहा हूँ आगे। पर JustDial से क्या हो रहा है। पर ऐसे अगर lead आएगा तो मेरे क्या काम का फिर। JustDial",
       "entities": []
     },
     {
       "index": 3,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "पर ना एक बार",
-      "entities": []
-    },
-    {
-      "index": 4,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "भी यहाँ पर ना एक बार",
-      "entities": []
-    },
-    {
-      "index": 5,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "भी यहाँ पर",
-      "entities": []
-    },
-    {
-      "index": 6,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "प्रॉब्लम",
-        "सपोर्ट",
-        "ऑप्शन",
-        "मिलता",
-        "जाकर"
+        "check",
+        "right",
+        "what",
+        "problem",
+        "one"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "ना एक बार भी यहाँ पर ना एक बार भी यहाँ पर ना एक बार भी यहाँ पर ना एक और कोई एश्यू गए रहे इसका रहे जगवर पर कोई प्रॉब्लम होगा रेडिंग मिलता है जी लेकिन नहीं हो गई है और कोई प्रॉब्लम गए जज़ज़ाल करते हैं मैं सपोर्ट ऑप्शन लाइब हूँ वहाँ पर जाकर इस रह जाएं सकते हैं ओके? ओके सा, थांक य",
+      "text": "लेकर। Right, I understand that if you are facing such issues, you will need to find a job in UAE. So I will do one thing, I will check your details to see what is the problem and what are the results you are getting. According to this, I will",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "look"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "look at your",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask",
+      "base_intent": "question",
+      "keywords": [
+        "check",
+        "right",
+        "one",
+        "details",
+        "name"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "profile. Okay, okay, okay. Satish, your name is Satish, right? Yes, sir. Okay, I will hold on to it. I will do one thing, I will check your details. Okay, okay, okay.",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "Okay, okay, okay, okay.",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "justdial",
+        "customer",
+        "support",
+        "thank",
+        "problem"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपको कोई problem रहे, JustDial customer support option लाइज हैं, वहाँ पर जाकर referral कर सकते हैं। Okay sir, thank you. Have a nice day. आपको कोई problem रहे हैं, तो आप बताये।",
       "entities": []
     }
   ]

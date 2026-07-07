@@ -1,0 +1,119 @@
+{
+  "call_id": "b1654169-e498-4c1f-ad30-fe4a166a4509-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं प्रदीप कुमार सिंह जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "बोलिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी बोलिए.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "loan",
+        "कितने"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कितने का loan है?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "pre-approved",
+        "loan",
+        "approved",
+        "pre",
+        "शुरू"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपके लिए 10 लाख रुपये तक का loan pre-approved है। क्या हम शुरू करें?",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "interest",
+        "कितना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Interest कितना है?",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_explain_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "interest rate",
+        "offer",
+        "शुरू",
+        "application",
+        "link"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Interest rate ten point nine nine percent से शुरू होती है और आपके final offer पर depend करती है। जी, मैं अभी आपको SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप",
+      "entities": []
+    }
+  ]
+}

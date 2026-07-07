@@ -10,75 +10,80 @@
       "intent": "customer_greet",
       "base_intent": "open",
       "keywords": [
-        "हेलो"
+        "justdial",
+        "com",
+        "lead",
+        "good",
+        "how"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "हेलो हेलो ठीक है",
+      "text": "Hello Good morning, welcome to JustDial.com. This is Aditya from lead department. How may I",
       "entities": []
     },
     {
       "index": 1,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_greet",
-      "base_intent": "open",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
-        "नंबर",
-        "हेलो",
-        "मोबाइल"
+        "number",
+        "help",
+        "what"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "हेलो अच्छा 6997 छोड़ मोबाइल नंबर",
+      "text": "help you? Yes, what is your number?",
       "entities": []
     },
     {
       "index": 2,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
-      "keywords": [],
+      "intent": "customer_greet",
+      "base_intent": "open",
+      "keywords": [
+        "688974",
+        "call",
+        "number",
+        "back",
+        "mobile"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "अच्छा अच्छा बताइए 829368997 जते मुंत दिन आ बताइए",
-      "entities": []
+      "text": "I will call you back. Hello Hello Okay Hello 8293 अच्छा 688974 Mobile number आँ, अच्छा, अच्छा, बताये।",
+      "entities": [
+        {
+          "type": "pincode",
+          "value": "688974"
+        }
+      ]
     },
     {
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge_complaint",
-      "base_intent": "complaint",
-      "keywords": [
-        "लीड",
-        "देख",
-        "अच्छी",
-        "पैसा",
-        "कारण"
-      ],
+      "intent": "agent_greet",
+      "base_intent": "open",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "बताइए बात बता रहा है अपनी ज़र्जान वाला पैसा लेने कारण पैसा बंची ज़र्जान लेने कारण पैसा लेने कार� जितना में लीड आ रही है, कब देख नहीं आ रही है। लीड नहीं आ रही है। आपको एक बात पोचना देंगे ना, जो कस्टेबार से ही इसमें पैसा मंति नहीं है, और मंति नहीं है, 12,000 लीड इसका रह रही है, तो कस्टेबार को अच्छी तरीका से लीड देना चाहिए �",
+      "text": "8293688974 जते मुतिन, जते",
       "entities": []
     },
     {
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
-        "देख",
-        "लाइन",
-        "ताकि",
-        "जाए",
-        "सही"
+        "बताये।"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "जी जी सही बात है मैं अभी कम्प्लेन ले ले रहा हूँ ताकि ये देख की पाई हो जाए और लाइन पे लोगे",
+      "text": "मुतिन आँ, आँ बताये। जते",
       "entities": []
     },
     {
@@ -88,398 +93,454 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "नंबर",
-        "कितना",
-        "मोबाइल"
+        "customer",
+        "support",
+        "lead",
+        "contract",
+        "ticket"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "और ये टोका से कितना नंबर मोबाइल नंबर आया थे तो बता कर सकते हैं? कौन सा कौन",
+      "text": "मुतिन बात बता रहे हैं। Customer support, ticket, area, location, review, feedback, contract, response करता है। अगर उन्होंने daily lead दे रहे हैं। 100, 200, 500 lead दे रहे हैं। उन्होंने 200 lead भी भी",
       "entities": []
     },
     {
       "index": 6,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "नंबर",
-        "कितना"
+        "number",
+        "what",
+        "mobile"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "सा? इन दिन गेटी मीटिन का टोका में कितना नंबर",
+      "text": "भी भी भ What is the number of your mobile number? Mobile number",
       "entities": []
     },
     {
       "index": 7,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_acknowledge_complaint",
-      "base_intent": "complaint",
-      "keywords": [
-        "पैसा",
-        "अलग",
-        "मोबाइल",
-        "आपे"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "आया थे मोबाइल न अगर हर मंति के लिए एक कस्टरों वाले से फ्लेड पांचे रिजिस्ट के लिए ले रही है इसके तो अलग से पैसा भी तो इसके आपे भी आम से पैसा देंगे ना हाँ तो अगर मेरा बेजना वाला पैसा",
-      "entities": []
-    },
-    {
-      "index": 8,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "चलेगा"
+        "number",
+        "like",
+        "same"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "नहीं तो चलेगा तो",
+      "text": "is the same number as yours, 8293688974. Sir, I would like",
       "entities": []
     },
     {
-      "index": 9,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_raise_request",
-      "base_intent": "resolution",
-      "keywords": [
-        "दिखा",
-        "पैसा",
-        "मैसेज",
-        "महीने",
-        "अगले"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "तुम्हे कहां से पैसा देगा अगर आम हमारा अगले महीने मैंने मैसेज देने के लिए सहय ही दिखा रहा",
-      "entities": []
-    },
-    {
-      "index": 10,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
-      "keywords": [
-        "आउट",
-        "फिल्टर",
-        "सिस्टम"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "है मैं हम लोग फिल्टर आउट कर दे रहे हैं सिस्टम कर दे रहे हैं अब",
-      "entities": []
-    },
-    {
-      "index": 11,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "प्रॉब्लम",
-        "सही",
-        "महीना",
-        "आईए"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "एपिकास आईए आज से सही हो जायेगा कोई प्रॉब्लम नहीं है और आप थोड़ा सा दो तीन अगर मैं इस महीना में बार",
-      "entities": []
-    },
-    {
-      "index": 12,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "ठीक है, आप बस जैसे मुद्दी जी एक",
-      "entities": []
-    },
-    {
-      "index": 13,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "काम",
-        "चाहते"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "बात काम कीजिए। यह दिखरा में चाहते है कि मुद्दी जी एक बात काम कीजिए। मुद्दी जी एक बात काम",
-      "entities": []
-    },
-    {
-      "index": 14,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
-      "keywords": [
-        "काम",
-        "देखिए",
-        "link",
-        "whatsapp",
-        "profile"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "कीजिए। मुद्दी जी एक बात काम कीजिए। मुद्दी जी एक बात काम कीजिए। मुद्दी जी एक बात काम कीजि देखिए WhatsApp में दो link चला गया है एक में आपको photo डालने की की आपका profile score बहुत इच्छा आ गया",
-      "entities": []
-    },
-    {
-      "index": 15,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [
-        "photo",
-        "लगते",
-        "रेडिंग",
-        "डालने"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "है हम तो मालिम लगते है photo डालने की न रेडिंग लगते है नहीं मालिम लगते है",
-      "entities": []
-    },
-    {
-      "index": 16,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_respond",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "प्रॉब्लम",
-        "profile",
-        "करूँगा",
-        "face",
-        "आशा"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "वो थोड़ा सा कार्टी है कोड़ रहा हूँ क्योंकि आपका score बहुत कम हो गया profile का ये भी बहुत � वो आपको पर्वाट होता रहा है ठीक है? ठीक है बेलकुल बेलकुल सर आशा करूँगा और कोई प्रॉब्लम आप face नहीं कर रहा",
-      "entities": []
-    },
-    {
-      "index": 17,
+      "index": 8,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_ask",
       "base_intent": "question",
       "keywords": [
-        "अलावा",
-        "लीट",
-        "पॉब्लम"
+        "customer",
+        "share",
+        "one",
+        "don",
+        "send"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "है इसके अलावा मैंने लीट टाइट पॉब्लम था लीट आपको कोई पॉब्लम नहीं होगा ठीक है? नहीं",
+      "text": "to ask you one thing. If a customer comes to you and asks you to give him or her a share of the money, where will you give it to him or her? If I don't have the money to send it to you, where will you give it to me? अगर आप हमारे घर में",
       "entities": []
     },
     {
-      "index": 18,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
-      "keywords": [
-        "प्रॉब्लम",
-        "सही"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "नहीं नहीं वो सही हो जाएगा आ कोई प्रॉब्लम नहीं",
-      "entities": []
-    },
-    {
-      "index": 19,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_acknowledge_complaint",
-      "base_intent": "complaint",
-      "keywords": [
-        "प्रोफाल",
-        "लेगा",
-        "गड़"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "है और काक्षे गड़ का निकला गया इससे कोई लाइटर भी नहीं है उसका लेगा चाहिए तो प्रोफाल कैसे नहीं हो जाएगी",
-      "entities": []
-    },
-    {
-      "index": 20,
+      "index": 9,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "रेटिंग",
-        "प्रोफाल",
-        "बढ़ा"
+        "पैसा",
+        "nothing"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "ना कौन सा यह लाइटर है प्रोफाल में थोड़ा रेटिंग बढ़ा दी जाना है प्रोफाल का",
+      "text": "nothing है तो पैसा कपा रहा है। No,",
       "entities": []
     },
     {
-      "index": 21,
+      "index": 10,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "रेटिंग",
-        "बोर"
+        "lead",
+        "हूँ।",
+        "सही",
+        "use",
+        "देखिए।"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "रेटिंग हाँ आपको शहर आपको मेरे बोर रहा है मिंबाई मेरा विजिमाल विजिमाल लेकिन",
+      "text": "no, no, सही बात है। मैं सही कर दे रहा हूँ। मैंने सुखे से देखिए। सुखे से मैंने 70, 70 lead मैंने use की है। एक",
       "entities": []
     },
     {
-      "index": 22,
+      "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "ऐसा",
-        "मेल",
-        "इशूज"
+        "lead",
+        "message",
+        "सही",
+        "दुबारा",
+        "देखिए।"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "ऐसा कुछ अगर इशूज है तो वो आपको एक बार मेल करना",
+      "text": "भी lead parthal नहीं तक 60 lead है। अगर मैंने message जाएगा सही lead की दुबारा आ देखिए। मैं हम लोग",
       "entities": []
     },
     {
-      "index": 23,
+      "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "ताकि",
+        "out",
         "करें।",
-        "पड़ेगा",
-        "डॉकुमेंट",
-        "वैलिडेट"
+        "देने",
+        "filter",
+        "वेट"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "पड़ेगा सर ताकि हम लोग उनका डॉकुमेंट दोबारा से वैलिडेट करें। वो तो देना पड़ेगा वो देना पड़ेगा हम",
+      "text": "filter out कर दे रह इस महिना में 12 पर 100 मंतुली मेरे पर 12 बारार के लिए से दिना करें। अगर दो तीन मेरे वेट करने के लिए देने के लिए तीन साइशन वाले कोई नहीं सुनेगा। ये दो तीन को पाक",
       "entities": []
     },
     {
-      "index": 24,
+      "index": 13,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "देख",
-        "कीजिए",
-        "मेल",
-        "डेफिनेटली",
-        "टेक"
+        "करें।",
+        "पैसा"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "लोग वो नहीं करते हैं वो वैलिटेड एक्सिली हम लोग नहीं करते हैं ठीक है तो आप मेल पे वो चीज़ खेयर कीजिए डेफिनेटली आपको सीनियर देख से वो टेक करके एक बार",
+      "text": "मेरे पैसा करें।",
       "entities": []
     },
     {
-      "index": 25,
+      "index": 14,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "बैक",
-        "जरूर",
-        "उतना",
-        "डॉकुमेंट",
-        "गेट"
+        "पैसा"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "गेट बैक किया जाओगा एक उतना कुछ डॉकुमेंट जरूर दिया है,",
+      "text": "वो तीन नहीं सुनेगा। पैसा करने के लिए तीन साइशन करके दे �",
       "entities": []
     },
     {
-      "index": 26,
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "rating",
+        "link",
+        "whatsapp",
+        "देखिए",
+        "review"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कुछ photo aur rating review ना आप जो है थोड़ा सा डाल लीजिये। यह बहुत ही ज़रूरी है। मैंने आपको link भेज दिया है। ठीक है। देखिए WhatsApp में दो link चला",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask",
+      "base_intent": "question",
+      "keywords": [
+        "profile",
+        "थी।",
+        "photo",
+        "डालने"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "गया है। एक में आपको photo डालने की थी। आपका profile",
+      "entities": []
+    },
+    {
+      "index": 17,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "नहीं हो"
+        "rating",
+        "problem",
+        "सर।",
+        "forward",
+        "डाल"
       ],
-      "sentiment": "frustrated",
+      "sentiment": null,
       "tool": null,
-      "text": "ऐता बात नहीं होता है।",
+      "text": "score बहुत इच्छे आ गया है। हम तो मारूम ना photo डालने की ना rating लगे। � डाल दीजिये। ठीक है। ठीक है सर। बाकी तो और कोई problem नहीं है। बाकी आप use दीजिया। सच्चिस जैसे जैसे आयेगा। वो आपको forward होता रहे है। ठीक है। बेलकुल, बेलकुल",
       "entities": []
     },
     {
-      "index": 27,
+      "index": 18,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "problem",
+        "face",
+        "सर।",
+        "आशा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सर। आशा करोंगा और कोई problem आप face नहीं कर रहे हैं।",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "इसके अलावा। नहीं ह आप बेटी कर रहे हैं। ठीक है। कोई",
+      "entities": []
+    },
+    {
+      "index": 20,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "rate"
+        "problem",
+        "profile",
+        "जाएगी।"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आपको फोल्काता at the rate",
+      "text": "problem है। और काक्सेवर का निग्रा गर जाएगी। इसके कोई lighter भी नहीं है। उसका लेगा चाहिए तो profile कैसे नहीं है। कौन सा, कौन सा? यह नहीं lighter।",
       "entities": []
     },
     {
-      "index": 28,
+      "index": 21,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_respond",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "rating",
+        "profile",
+        "बढ़ा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "profile का rating भी बढ़ा दी जाना है। profile का rating? हम लोग तो बढ़ा ली सकते हैं। लेकिन",
+      "entities": []
+    },
+    {
+      "index": 22,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "काम",
+        "definitely",
+        "इसको",
+        "बताया।",
+        "लाभ"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "definitely मै आपको पहर आपको बहुत बहुत रहे हैं। मुंदाई में बहुत बहुत रहे हैं। जैसे काम करता है। इसको मैंने बताया। आपको एक बात रहता रहे हैं। मेखनाफूर का वाले छोष्ठा में MP Logger & Manpower Supply। इसका लाभ मेखनाफूर का छोष्ठा",
+      "entities": []
+    },
+    {
+      "index": 23,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_other",
       "base_intent": "other",
-      "keywords": [
-        "com",
-        "mail",
-        "justdial"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "justdial.com पे mail भेजी है सब हम लोग डेफिनिटली",
+      "text": "में MP Logger &",
       "entities": []
     },
     {
-      "index": 29,
+      "index": 24,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "Manpower Supply। इसका ला If",
+      "entities": []
+    },
+    {
+      "index": 25,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "any",
+        "there",
+        "issues",
+        "mail",
+        "such"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "there are any such issues, you will have to mail them once so that we can",
+      "entities": []
+    },
+    {
+      "index": 26,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "चेक",
-        "उसको",
-        "लेंगे"
+        "already",
+        "again",
+        "validate",
+        "sent",
+        "many"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "उसको चेक कर लेंगे कोई बॉबलम नहीं है",
+      "text": "validate their documents again. I have already sent mails many times. I have already sent mails many times. I have already sent mails many times. जो आपके लाइसेज़ नहीं है, तो पूछा लाइसेज़ नहीं हो रहा है। कुछ लाइसेज़ नहीं हो रहा है। कुछ लाइसेज़ नहीं हो रहा है।",
+      "entities": []
+    },
+    {
+      "index": 27,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "नहीं हो रहा",
+        "नहीं हो",
+        "definitely",
+        "senior"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "कुछ लाइसेज़ नहीं हो रहा है। Definitely आपको senior tech से",
+      "entities": []
+    },
+    {
+      "index": 28,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "take",
+        "था।",
+        "get",
+        "like",
+        "back"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "वो take करके एक बार get back किया था। No, something or the other has been given, nothing like that has happened. You",
+      "entities": []
+    },
+    {
+      "index": 29,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "resolution",
+      "keywords": [
+        "mail",
+        "send"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "send a mail",
+      "entities": []
+    },
+    {
+      "index": 30,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "justdial",
+        "com",
+        "rate"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "to bolkata at the rate justdial.com, we will",
+      "entities": []
+    },
+    {
+      "index": 31,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "check",
+        "there",
+        "definitely"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "definitely check it, there will",
+      "entities": []
+    },
+    {
+      "index": 32,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "lead",
+        "good",
+        "problem",
+        "bad"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "be no problem. If the lead is good, then it will be good. But if not, then it will be bad. If the lead is good, then it will be good. But if not, then it will be bad. But if not, then it will be bad.",
       "entities": []
     }
   ]

@@ -7,105 +7,74 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "इल्ला",
-        "लगता",
-        "इन्हां",
-        "बढ़ता",
-        "अल्लो"
+        "justdial"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "अल्लो अल्लो ओके ओके आ बढ़ता नहीं है मड़म डाइली वन नातरा बढ़ता है ओके इन्हां चक्पण नोड़ता है इल्ला बैंगलूर इदी आ इमिन बैंगलूर सिटी सिट्स में पिलता है ये लगता है मड़म",
+      "text": "JustDial ಈ ಈ बड़ता नहीं है । జ జ",
       "entities": []
     },
     {
       "index": 1,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "अपडेट",
-        "माड़ी"
+        "category"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "इन्हें आओर अपडेट माड़ी दर",
+      "text": "Category జા జા",
       "entities": []
     },
     {
       "index": 2,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "category",
-        "लीज",
-        "बढ़ता",
-        "चक्मा",
-        "मड़म"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "मड़म ओके लीज बढ़ता इला अंतरा हाँ मैंने category चक्मा रहा हूँ वो category से",
-      "entities": []
-    },
-    {
-      "index": 3,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
-      "keywords": [
-        "हूँ।",
-        "ओके।"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "जुड़ाते रहे भी शुद्धा हूँ। ओके। जुड़ता है?",
-      "entities": []
-    },
-    {
-      "index": 4,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "लाइक",
-        "रिपोर्ट",
-        "फीडबैक",
-        "कैटेगरी",
-        "लगते"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "शो आपते रहे हैं विश्युरू लगते हैं ना लाइक ना नू कैटेगरी ना कैटेगरी और कार एंटर अंता फीडबैक और लाइक इदू कैटेगरी फीडबैक रिपोर्ट रन",
-      "entities": []
-    },
-    {
-      "index": 5,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "चेक",
-        "नोट",
-        "जागा",
-        "माड़"
+        "category"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "माड़नागा चेक माड़ नोट जागा",
+      "text": "జા జા Category",
       "entities": []
     },
     {
-      "index": 6,
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "feedback",
+        "report",
+        "users"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "feedback report రన్మాడ్యావా చెస్మాడ్ నోడ్యాగా పొర్ తెస్టేస్ కమీడే users రూ దేవిటు వేట్ మేడి",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "అన్ను కమ్ప్రీంతే అంటే",
+      "entities": []
+    },
+    {
+      "index": 5,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_other",
@@ -113,7 +82,7 @@
       "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "कोई प्रस्टेस्ट कमेंगे यूजर्सों तो दैवी त ठीक है मार्य।",
+      "text": "ఇద్దర్పండ్ దల్లి తల్లాక్� OK మార్ ఇశ్యం ఇద్ర నివు చేస్టే లేప్ పర్లి లీప్ పేట్ చేల్లి నింగే సెల్సావ్ ఆఉక్షన్ అందింగే సెల్సావ్ బోత్ర అంతేయార్తే అల్లు స",
       "entities": []
     }
   ]

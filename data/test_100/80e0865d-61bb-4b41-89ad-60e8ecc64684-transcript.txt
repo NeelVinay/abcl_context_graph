@@ -1,0 +1,79 @@
+[
+  {
+    "timestamp": "2026-07-06T09:36:01",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:36:01",
+    "speaker": "assistant",
+    "content": "<CHD/>",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:36:03",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:36:03",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं VSS PRAKASH JYOTHI जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:36:14",
+    "speaker": "user",
+    "content": "भैया किधर से बात कर रहे हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:36:14",
+    "speaker": "assistant",
+    "content": "मैं प्रिया हूँ, Aditya Birla Capital की तरफ से बोल रही हूँ। क्या मैं आपकी मदद कर सकती",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:36:21",
+    "speaker": "user",
+    "content": "Hello? ठीक है,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:36:22",
+    "speaker": "user",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:36:25",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:36:25",
+    "speaker": "assistant",
+    "content": "यह Aditya Birla Capital की तरफ से एक pre-approved loan offer है जो आपके लिए है। क्या हम शुरू करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:36:35",
+    "speaker": "user",
+    "content": "रहा",
+    "feedback": null,
+    "agent_id": null
+  }
+]

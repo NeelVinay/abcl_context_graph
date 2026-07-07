@@ -5,99 +5,247 @@
   "turns": [
     {
       "index": 0,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
-        "चाहते",
-        "contact",
-        "बंद"
+        "calling",
+        "name",
+        "reason",
+        "record"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आपके नाम मजेरा, बाड़ा के नाम मजेरा। आपके नाम मजेरा, बाड़ा के नाम मजेरा। contact बंद करना है आपको हाँ dance concert क्यों बंद करना चाहते हैं",
+      "text": "If you record your name and reason for calling, I'm... Hello.",
       "entities": []
     },
     {
       "index": 1,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_acknowledge_complaint",
-      "base_intent": "complaint",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [
-        "कॉल",
-        "call",
-        "बोल",
-        "ऐसा",
-        "inquiry"
+        "justdial",
+        "customer",
+        "com",
+        "good",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "मैंको जब joining करने के time तो बोला गया था कि आपको inquiry आएंगे तो अभी तक मैं उसको कुछ inquiry आए लेकिन सब fake आए मतलब इसी इस जस्ट डाइल से देखते देखते call आ गया ऐसा कुछ ऐसा मतलब work के related कुछ भी call नहीं आ और उसके बाद जो मैंने इस person को जो local relationship वाला बंदा था उसको contact करने के लिए सोचा मतलब call करा फिर उसको बोला मिलने को कुछ google पर करने वाला था कुछ नहीं है मतलब joining कर दे उसके बाद तो उसने follow भी नहीं है कुछ follow भी नहीं है अच्छा मैंने कॉल किया बंद करने के लिए कॉल किया मैंने कल तो बोल रहा था मिर्कुल कि तो आपके पर्सनल बैंक वाले से बात करके बैंक वाले से बंद कर रहा था लेकिन जॉयरिंग तो आपकी तरफ कीजिए",
+      "text": "Very good morning, this is Arpit from customer service department of JustDial.com. I'm speaking with concerned person of Lovely Photography.",
       "entities": []
     },
     {
       "index": 2,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
-        "वालों",
-        "लगाया",
-        "बैंक"
+        "tell"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "हमने बैंक वालों को जाम लगाया है जी जी",
+      "text": "Yes, tell me.",
       "entities": []
     },
     {
       "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
+      "keywords": [
+        "contract",
+        "any",
+        "there",
+        "related",
+        "query"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Yes, sir. Is there any query related to your contract? Yes, I",
+      "entities": []
+    },
+    {
+      "index": 4,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_ask",
       "base_intent": "question",
       "keywords": [
-        "बिल्कुल",
-        "पूछ"
+        "want",
+        "close"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "बिल्कुल कोई वो तो कब बन होगा वो ही तो पूछ रहा",
-      "entities": []
-    },
-    {
-      "index": 4,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "resolution",
-      "keywords": [
-        "कॉल",
-        "टीम",
-        "आगे",
-        "जिसके",
-        "राइट"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "हूँ आपको लो मैं नहीं बता सकता मेरे पास राइट नहीं है जिसके टीम के पास आगे फॉरवर्ड कर दे रहा हूँ अभी आपको वो कॉल करके बता देंगे सर",
+      "text": "want to close it.",
       "entities": []
     },
     {
       "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "contact",
+        "आपको।",
+        "हाँ।",
+        "जान",
+        "बंद"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Contact बंद करना है आपको। हाँ। जान सकता हूँ तक क्यों बंद",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "justdial",
+        "call",
+        "time",
+        "inquiry",
+        "contact"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "करना चाह रहे हैं। मेंको जब joining करने का time तक बोला गया था कि आपको inquiry आएंगे। अभी तक मेंको कुछ inquiry आए लेकिन सब fake आए। मतलब इसी इस JustDial पर देखते देखते call आ गया ऐसा कुछ ऐसा। Okay। मतलब work के Okay, maafin shaham. उसके बाद जो मैंने इस person को local relationship वाला बंदा था, उसको contact करने के लिए सोचा, call करा, फिर उसको बोला, मिलने को कुछ Google पर करने वाला था, कुछ नहीं, मतलब joining कर दे, उसके बाद तो उसने follow भी नहीं है, कुछ follow भी नहीं है।",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "Okay, I will",
+      "entities": []
+    },
+    {
+      "index": 8,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "प्लीज"
+        "call",
+        "back",
+        "talk",
+        "called",
+        "side"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "ओके ठीक ठीक है थोड़ा आर्जन करना प्लीज शौर सर शौर ठीक",
+      "text": "call you back. I called you to stop the call. I called you yesterday. You were telling me to talk to your personal bank and stop the call from the bank. But the joining was on your side. We did not call the bank. Yes, yes,",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "call",
+        "issue",
+        "request",
+        "here",
+        "now"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "absolutely. No issue, sir. I am putting a request from here. I am forwarding it to you. Okay. Now you will get a call.",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
+      "keywords": [
+        "right",
+        "payment",
+        "next",
+        "give",
+        "month"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Okay, so from next month, they will give us some payment, right?",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "only",
+        "closed"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "It will be closed then only, sir.",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "वो तो कब बन होता है। वो ही तो कुछ करना",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "resolution",
+      "keywords": [
+        "call",
+        "हूँ।",
+        "team",
+        "आपको।",
+        "forward"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपको। लो, मैं नहीं बता सकता। मेरे पास rights नहीं है। Team के पास आगे forward कर दे रहा हूँ। अभी आपको वो call करके बता देंगे sir, okay।",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "thank",
+        "sure",
+        "urgent"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक, ठीक है। थोड़ा urgent करना please। Sure, sir, sure। Okay, okay, thank you.",
       "entities": []
     }
   ]

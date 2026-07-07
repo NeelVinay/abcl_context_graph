@@ -5,114 +5,46 @@
   "turns": [
     {
       "index": 0,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_greet",
+      "intent": "agent_greet",
       "base_intent": "open",
       "keywords": [
-        "कॉल",
-        "अल्लो",
-        "इन्दा",
-        "जेस्टर"
+        "how",
+        "kyc",
+        "document"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "अल्लो अल्लो आरोड ट्रूट संट्रॉलर येर तो रिकु जेस्टर इन्दा कॉल",
+      "text": "How is it sir? జాజ జాజ Document ఇల్లా మూర్డుంన్నా నా కై document సబ్మిట్ మాడుందురున్నా అత్పొటా, ఇస్పొటా ఇల్లా అప్లోడ్ మాడి KYC ప్రావ్లమ్ ఆగుందిదురున్నా నంక్ సర్వి",
       "entities": []
     },
     {
       "index": 1,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_acknowledge_complaint",
-      "base_intent": "complaint",
-      "keywords": [
-        "प्रॉब्लम",
-        "कस्टमर",
-        "उन्होंने",
-        "सर्विस",
-        "सपोर्ट"
-      ],
+      "intent": "customer_greet",
+      "base_intent": "open",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "मेरे तेरे वर्षिना कस्टमर सपोर्ट इन्दा उन कंप्रेंट प्रेजमेंट इन्दा मांड्रेस लेके नक्के एन इश्यूस उत्तो आदम इदरल के वैसे इन्नो कंप्लीट आगे इल्ला के अगर याद लीड़ पड़ता है लाग तुमने नियो चार्जस तक उन्हें दिन कड़ेंदा केवाईसी पेंडिंग इटको उन्हें ना डॉक्यूमेंट अल्ला सब्बिट माड़ी थी दिन कड़ेंदा केवाईसी पेंडिंग इटको उन्हें ना नमदेन लासी थे तो उन्हें डॉक्यूमेंट अल्ला मूर्ड नाकाई डॉक्यूमेंट सब्मिट माड़कर उन्होंने अथपोटा इथपोटा अलाप्लोड माड़ी KYC प्रॉब्लम आगे निर्दर है मैंने सर्विस है बड़ा तुन्ने कार्ज इमिडिट आगे कार्जस्ट आगे सिरा मेले KYC पेंडिंग �",
+      "text": "Sir, కంన్డిసర్ నింద కంసాన్ హక్టాయితో ఇదురు రిగాడింగ్",
       "entities": []
     },
     {
       "index": 2,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
-      "keywords": [
-        "रिगार्डिंग",
-        "हफ्ता",
-        "नीम"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "सर कंडिक सर नीम कंसरन हफ्ता है तो इसलिए रिगार्डिंग",
-      "entities": []
-    },
-    {
-      "index": 3,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "लास्ट",
-        "डिपार्टमेंट",
+        "thank",
         "kyc",
-        "डॉक्यूमेंट",
-        "कोड़"
+        "choosing"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "नारे नीम के KYC डिपार्टमेंट के लिए नीम के पॉलिवाक एरेंचमेंट कोड़ा? अवे लास्ट वन दुआरा अध्नाई दीसन नीदे मरते रहे हैं अग डॉक्यूमेंट कोड़ी इस डॉक्यूमेंट कोड़",
-      "entities": []
-    },
-    {
-      "index": 4,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
-      "keywords": [
-        "kyc",
-        "पेंडिंग",
-        "नोड़ता",
-        "चक्मार"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "चक्मार नोड़ता है कि KYC पेंडिंग है।",
-      "entities": []
-    },
-    {
-      "index": 5,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "क्योंकि क्योंकि",
-      "entities": []
-    },
-    {
-      "index": 6,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "अलवा"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "क्योंकि क्योंकि अलवा",
+      "text": "నారే నిందే KYC డిపాట్మన్ట్ కడేండా నిందే పోయ్వాక్ రెంచ్మన్ట్ పోడా? అవే లాస� KIC పెన్డింగా పెన్డింగా Thank you for choosing me. ಈ ಈ",
       "entities": []
     }
   ]

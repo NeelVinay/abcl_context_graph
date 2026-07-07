@@ -10,29 +10,32 @@
       "intent": "agent_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "कॉल",
         "call",
-        "person",
         "wait",
-        "व्यक्ति"
+        "person",
+        "speaking",
+        "called"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "The person you have called is speaking to someone else. You can wait or call again later. आपने जिस व्यक्ति को कॉल पिया है, वो अन्य कॉल कर जैस थे. The person",
+      "text": "The person you have called is speaking to someone else. You can wait or call again later. The person you have called is speaking to someone else. You can wait or call again later. The person you have called is speaking to someone else. The person you have called is speaking to someone else. The person you have called is speaking to someone else. The person you have called is speaking to someone else. The person you have",
       "entities": []
     },
     {
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "speaking"
+        "speaking",
+        "called",
+        "someone",
+        "else"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "you are speaking with has",
+      "text": "called is speaking to someone else.",
       "entities": []
     },
     {
@@ -42,15 +45,15 @@
       "intent": "agent_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "कॉल",
         "call",
-        "उसने",
-        "रखा",
-        "person"
+        "person",
+        "line",
+        "hold",
+        "speaking"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "put your call on hold. Please stay on the line. आप जिस व्यक्ति से बात कर रहे हैं, उसने आपकी कॉल को hold पर रखा है. कृपया line पर बने रहे. The person you are speaking with has put your call on hold. Please stay on... Hello? RL Tour Central,",
+      "text": "The person you have called is speaking to someone else. Please stay on the line. Niyo maatanaadutkirwa vekkiyo nimma kareyanu hold nalli hisiddaare. Daidittu line nalliye diri. Aap jis vekti se baat kar rahe hain, usne aapki call ko hold par rakha hai. Kripyan line par bane rahi. The person you are speaking with has put your call on hold. Please stay on...",
       "entities": []
     },
     {
@@ -60,15 +63,15 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "कॉल",
-        "उनको",
-        "थैंक",
-        "right",
-        "वाल"
+        "call",
+        "thank",
+        "number",
+        "what",
+        "owner"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "right? एर्टिक्स उनको लाक्ट होगो ओके आ और कॉल मनागा पादे वाल मनागा ओके शाँ थैंक यू",
+      "text": "Hello? RL Tour Central, howdy? Okay, one minute sir. Who is Akshita? Akshita? Akshita, Akshita. Who is she? She is the lady owner. Okay, what is her number? Like 73... 73 or something like that. 861? One minute sir, one minute sir. Air 61500. Okay, आरु call मेणा दा? रादे वाल में। Okay, sure. Thank you. Thank you for joining us.",
       "entities": []
     }
   ]

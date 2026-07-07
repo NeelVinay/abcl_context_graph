@@ -5,96 +5,144 @@
   "turns": [
     {
       "index": 0,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_greet",
-      "base_intent": "open",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "अम्मेर अच्छी। इसलिए",
-      "entities": []
-    },
-    {
-      "index": 1,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "लीड्स",
-        "तुम्हारे"
+        "leads",
+        "issue",
+        "there",
+        "why",
+        "far"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "मैंने तुम्हारे पर लीड्स रहा नहीं गया है। इसलिए मैंने तुम्हारे पर लीड्स रहा",
+      "text": "Issue is that there are no leads so far, that's why... Okay. Are",
       "entities": []
     },
     {
-      "index": 2,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_raise_request",
-      "base_intent": "resolution",
-      "keywords": [
-        "लीड्स",
-        "तुम्हारे"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "नहीं गया है। इसलिए मैंने तुम्हारे पर लीड्स रहा नहीं गया है। शेग जा",
-      "entities": []
-    },
-    {
-      "index": 3,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "रहे हैं तो तो",
-      "entities": []
-    },
-    {
-      "index": 4,
+      "index": 1,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_other",
       "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "तो तो",
-      "entities": []
-    },
-    {
-      "index": 5,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_respond",
-      "base_intent": "agent_handle",
       "keywords": [
-        "सब्सक्राइब"
+        "any",
+        "there",
+        "new"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "तो सब्सक्राइब करें",
+      "text": "there any new",
       "entities": []
     },
     {
-      "index": 6,
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "leads",
+        "message",
+        "any",
+        "there",
+        "now"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "leads now? Yes, there are new leads. We are getting a message saying that customers are talking earlier than usual. Okay. Have you got any new leads since yesterday? Yes, there are new leads. We are getting a message saying that customers",
+      "entities": []
+    },
+    {
+      "index": 3,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "सब्सक्राइब"
+        "now",
+        "get",
+        "update",
+        "categories",
+        "talking"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "सब्सक्राइब करने के लिए ठीक है",
+      "text": "are talking earlier than usual. Okay. I will update this soon. Because the categories are live now. We will get",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "customer",
+        "call",
+        "leads",
+        "business",
+        "issue"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "a call soon. There is an issue. That's it sir. Business owner leads are coming. Customer leads are also coming, right? Yes sir. Customer leads",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "call",
+        "thank",
+        "check",
+        "leads",
+        "any"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "are directly coming. These are our leads. You can check it out. Okay. Thank you. Okay. Thank you sir. You will get the update immediately. Check it out. You will get the update from today. Hello. Madam. You will get the update from today. Check it out. Okay. Okay. Okay sir, we will call you if there is any further questions. Thank you",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "customer",
+        "time",
+        "calling",
+        "take",
+        "much"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "very much for your time today. Okay. Okay, take care sir. I will keep you updated with the reviews. The customer has been calling me for a long time. When I was talking to him earlier, he was not responding to me properly. Okay. I was wondering if he was talking to me",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "justdial",
+        "call",
+        "com",
+        "thank",
+        "how"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "earlier. Okay. I will update you soon sir. Okay? Call me as soon as possible. Okay. Okay. Sir, I have a call for you. How did I talk to you? Call me. Thank you sir. Thank you for coming. This is JustDial.com. Have a great day.",
       "entities": []
     }
   ]

@@ -1,0 +1,100 @@
+[
+  {
+    "timestamp": "2026-07-06T09:32:14",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:32:14",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं आपसे बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:32:30",
+    "speaker": "user",
+    "content": "Hello. हां.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:32:30",
+    "speaker": "assistant",
+    "content": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है 10 लाख रुपये तक का — मैं अभी इस call पर आपको इस loan को apply करने में मदद कर सकती हूँ। क्या हम शुरू करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:32:49",
+    "speaker": "user",
+    "content": "No ma'am अभी मैं बाहर हूं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:32:51",
+    "speaker": "user",
+    "content": "मैं आपको कल बताऊंगा tomorrow.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:32:51",
+    "speaker": "assistant",
+    "content": "ज़रूर। आप कौन सा दिन और समय prefer",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:32:55",
+    "speaker": "user",
+    "content": "I am interested.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:33:01",
+    "speaker": "user",
+    "content": "Welcome welcome tomorrow.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:33:01",
+    "speaker": "assistant",
+    "content": "Okay. Please tell me the preferred day and time for the callback.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:33:10",
+    "speaker": "user",
+    "content": "Tomorrow, Tuesday.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:33:11",
+    "speaker": "user",
+    "content": "Two PM.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:33:11",
+    "speaker": "assistant",
+    "content": "Thank you for confirming. I have scheduled your callback for tomorrow, Tuesday at 2 PM. Our team will connect with you then.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:33:26",
+    "speaker": "user",
+    "content": "अच्छा.",
+    "feedback": null,
+    "agent_id": null
+  }
+]

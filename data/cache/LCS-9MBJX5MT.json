@@ -1,37 +1,36 @@
 {
   "call_id": "LCS-9MBJX5MT",
   "language": "hi-en",
-  "outcome": "raised_request",
+  "outcome": "incomplete",
   "turns": [
     {
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_greet",
-      "base_intent": "open",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "कॉल",
-        "शेयर",
-        "सर्वेस",
-        "कस्मो"
+        "justdial",
+        "customer",
+        "call",
+        "support",
+        "leads"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "लाफन सन पर की चांच ली जज़रल वट कम कस्मो सर्वेस मेंडी कॉल शेयर पर नानो",
+      "text": "JustDial का customer support call है। Business owner leads, inquiry, category, pincode, rating, response को लेकर बात कर रहे हैं। Nail పె రహీయే కాల్ హోడ్ పె పె",
       "entities": []
     },
     {
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_greet",
-      "base_intent": "open",
-      "keywords": [
-        "बोली"
-      ],
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "हाँ बोली मुड़ा",
+      "text": "పెస్ కరీయు స్వర్ అక్కే",
       "entities": []
     },
     {
@@ -41,238 +40,144 @@
       "intent": "agent_greet",
       "base_intent": "open",
       "keywords": [
-        "कॉल",
-        "thank",
-        "कॉंट्रैक्ट",
-        "होल्ड",
-        "नाइन"
+        "thank"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "ये कॉंट्रैक्ट प्रिलेटेड कंसन है बोलके कंप्रेंट राइज करें सर बोली ये क्या है कंसन नीर 24 बाइ 7 प्रिलेटेड प्रिलेटेड सर बोली मुझे एक बात नाइल पर रहिए, कॉल होल्ड पर पेस करियो सर्व। अक्के। Thank you sir, नाइन पर रहने के लिए, ये 29th May, 2026 तक है, sir. 29th May? हाँ, sir.",
+      "text": "Thank you sir. Lines రেనికలి 29th May, 2026 తక్ హే",
       "entities": []
     },
     {
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "बढ़ते"
-      ],
+      "intent": "customer_greet",
+      "base_intent": "open",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "आप बढ़ते हुए, लीच की",
+      "text": "సర్. 29th May హా సర్. ఆ బడం తే నిరీ",
       "entities": []
     },
     {
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "चेक",
-        "लास्ट",
-        "डिटेल्स",
-        "टोटल",
-        "रेस्ट"
-      ],
+      "intent": "agent_greet",
+      "base_intent": "open",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "उन्हें रेस्ट बॉनिंग तो एक ही नहीं है, तो एक ही इकल नहीं है, आपको. डिटेल्स चेक करें, sir. टोटल आपको, मार्च फस्ट सेलेक्ट तिल डेट तक. लास्ट एंक्�",
+      "text": "లీస్ యూన్యార స్ మార్ణిస్ తే ఏక్వి లీత్ ఏక్వి ఇక్వాలి నియా ఆవందే లీటెల్ చె� Ma'am",
       "entities": []
     },
     {
       "index": 5,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "आज बहुत बहुत",
-      "entities": []
-    },
-    {
-      "index": 6,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "चेक",
-        "नंबर"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "बहुत बहुत नंबर पुलिस से कौन सा नंबर से चेक करेगा?",
-      "entities": []
-    },
-    {
-      "index": 7,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
-      "keywords": [
-        "नंबर",
-        "मिनट",
-        "देखिये",
-        "लाइट",
-        "बोरो"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "नंबर देखिये लाइट मिनट तो बोरो मैं आपको नहीं मतलब हूँ",
-      "entities": []
-    },
-    {
-      "index": 8,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "सर्विस",
-        "मैडम",
-        "रिसीव",
-        "दोनों",
-        "services"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "हाँ एक बोरो मैडम आज तो आपको दो रिसीव हुए सिर्फ एक तो CCTV रिपेर्शन सर्विस का है सिर्फ और एक है CCTV Reparation Services दोनों भी CCTV Reparation Services के लिए रिसेव हुए सर",
-      "entities": []
-    },
-    {
-      "index": 9,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_greet",
-      "base_intent": "open",
-      "keywords": [
-        "services"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "आपको हाँ मैं CCTV Reparation Services के लिए जा रहा हूँ जाता",
-      "entities": []
-    },
-    {
-      "index": 10,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "कॉल",
-        "लीड",
-        "नंबर",
-        "बोल",
-        "टाइम"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "हूँ जाता हूँ जो भी लीड आएगा अब हर एक लीड जिस डायल आप से ही रेस्पॉंड करिये सर बेटर सर्विसेस रिसीव होता ये टोटल 77 आये थे 63 रेस्पॉंड करें सर आवरेज रेस्पॉंड टाइम 15 मिनट्स है सर लीड आये तो इनिजियेटली JDR से कॉल करिये रेटिंग्स थोड़ हेलो नंबर बोल रहे",
-      "entities": []
-    },
-    {
-      "index": 11,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
-      "keywords": [
-        "नंबर",
-        "शेयर",
-        "बोल",
-        "मैडम"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "है शेयर अब? हाँ नंबर बोल रहा हुआ मैडम मैडम",
-      "entities": []
-    },
-    {
-      "index": 12,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "नंबर",
-        "मैडम"
+        "number",
+        "police"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "मैडम बड़ाम नंबर",
+      "text": "జ జ Number police కోన్స నంబర్ సె చెక్కర్యా",
       "entities": []
     },
     {
-      "index": 13,
+      "index": 6,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "सॉरी"
+        "minute",
+        "last"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "लिखिए 890 890 8790 है बड़ाम सॉरी 8790 8790 63",
+      "text": "నంబర్ విక్కి last minute గోరో మే ఆప్పరో మాద్ హలో హా ఏక గుడ్ గోరో మేడల్",
       "entities": []
     },
     {
-      "index": 14,
+      "index": 7,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "justdial",
+        "call",
+        "lead",
+        "number",
+        "time"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ఆజ తో ఆపకో దో రిసివు హుయే ఏక తో CCTV రిపర్ CBC TV Repairs and Services । ಈ ಈ जो भी lead ఆయిగా, ఆప హరేక lead JustDial ఆప చే రేస్పండ్ కరీయు సేవు, better services రేస్వీవ హోతా యే total 77 ఆయితే 63 రేస్పోండ్ కరేయు సేవు, average response time 15 minutes హే సేవు, lead ఆయితో immediately JD app చే call కరీయు, ratings Hello! Number",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "number"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "గోల్రే సేరా? ఆ, Number గోల్రే సేరా? ఆ,",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "number"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Number గోల్రే సేరా?",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
       "base_intent": "question",
       "keywords": [
-        "चेक",
-        "नंबर",
-        "टाइम",
-        "inquiry",
-        "category"
+        "check",
+        "number"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "63 तीके तोड़े टाइम दीजिये, मैं back-end से check करके आपका update करवा सकते हैं, तीके? वो चेक करना पड़ता ना सर कौन सा नंबर पे आये थे वो कौन सा category पे आये थे कौन सा area पे inquiry करे पूरे डिटल चेक कर क्या",
+      "text": "ఆ, Number గోల్రే సేరా? वो check करना पड़ता",
       "entities": []
     },
     {
-      "index": 15,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
-      "keywords": [
-        "पूरे"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "आपको बता जाता है जी पूरे",
-      "entities": []
-    },
-    {
-      "index": 16,
+      "index": 11,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_raise_request",
-      "base_intent": "resolution",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "कॉल",
-        "चेक",
-        "thank",
-        "feedback",
-        "concern"
+        "customer",
+        "support",
+        "category",
+        "ticket",
+        "number"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "चेक करने के लिए time देना पड़ता है सर अब time दिये तो मैं चेक करके आपको update करवा सकते है सर ये कॉल होने के बाद आपको feedback link share होगा, मैं कैसा बात करें, आप rating दीशिये, 6 to 10 positive रता, positive rating 10 दीशिये, कॉल के लिए, कुछ भी concern है, आप में ticket raise करें, हम directly कॉल करते हैं, और कोई जानकरी चाहिए, sir, ओके, sir, thank you for using justin.com, have a great day, sir.",
+      "text": "న సర్ కోంసా number పే ఆయేతే కోంసా category పే ఆయేతే కోంసా area పే ఇంక్వారి కరే పూర డీటల చేక్కారు కే ఆపకో బదాచుతే సర్ Agent customer support, ticket, area, location, renewal की help करता है।",
       "entities": []
     }
   ]

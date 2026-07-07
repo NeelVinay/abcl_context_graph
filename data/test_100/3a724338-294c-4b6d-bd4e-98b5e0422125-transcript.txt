@@ -1,0 +1,72 @@
+[
+  {
+    "timestamp": "2026-07-06T05:41:15",
+    "speaker": "user",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:41:15",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं अनिल यादव जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:41:25",
+    "speaker": "user",
+    "content": "जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:41:25",
+    "speaker": "assistant",
+    "content": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है 10 लाख रुपये तक का — मैं अभी इस call पर आपको इस loan को apply करने में मदद कर सकती हूँ। क्या हम शुरू करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:41:45",
+    "speaker": "user",
+    "content": "इस number से बात नहीं हो पाएगा. Net काम नहीं करेगा.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:41:45",
+    "speaker": "assistant",
+    "content": "ज़रूर। आप कौन सा दिन और समय prefer करेंगे? हम 10 AM से 7 PM, साथों दिन इस time available रहते हैं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:41:57",
+    "speaker": "user",
+    "content": "दूसरे number पर call करना पड़ेगा.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:41:57",
+    "speaker": "assistant",
+    "content": "कोई specific time बता दीजिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:42:05",
+    "speaker": "user",
+    "content": "एक बजे.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:42:05",
+    "speaker": "assistant",
+    "content": "आपका callback 1 बजे confirm कर लिया गया है। हमारी team आपसे इस समय contact करेगी। धन्यवाद।",
+    "feedback": null,
+    "agent_id": null
+  }
+]

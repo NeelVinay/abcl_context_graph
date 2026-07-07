@@ -1,0 +1,55 @@
+{
+  "call_id": "d1d11242-0eb1-4139-91fa-4b3ae1c7b31f-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं अजाय कुमार जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_unclear",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "phone",
+        "अरे",
+        "परेशान"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello. अरे नहीं मैं कर रहा हूं मत करो phone भाई साहब परेशान मत करो. ठीक है? मेरा वैसे sir फटा जा रहा है सदर से.",
+      "entities": []
+    }
+  ]
+}

@@ -5,434 +5,107 @@
   "turns": [
     {
       "index": 0,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_greet",
+      "intent": "customer_greet",
       "base_intent": "open",
       "keywords": [
-        "com",
-        "लेंगे",
-        "जस्टाइल"
+        "justdial",
+        "com"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "जस्टाइल.com कस्मत पूर्टियों लेंगे उन्हें पॉलिट",
+      "text": "JustDial.com कத்துமத்தை பொறுத்தீங்கள் என்று பால் பண்ணிருக்கோம். சரி, சரி, சரி. சரி,",
       "entities": []
     },
     {
       "index": 1,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "com",
-        "लेंगे",
-        "जस्टाइल"
+        "call",
+        "lead",
+        "ticket",
+        "time",
+        "response"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "करेंगे जस्टाइल.com कस्मत पूर्टियों लेंगे उन्हें पॉलिट",
+      "text": "வேலையைக்கும் மற்றும் ஒன்றும் திட்டியாக வாழ்ந்தாராம். சரி, உங்களுக்கு ஐயார் ஓட்டீம் இங்கே call center இருக்கும் பற்றினில்லாம். அங்கே call செய்ய வந்திருக்கு lead தான் சரி. இதை முடிந்த வரை எல்லாவற்றை உங்களுக்கு ஒட்டனைக்கு ஒட்டனை connect பண்ணதான் try செய்து வாங்கும். உங்களுக்கு வேறு ஏதாவது I will tell you that response time is average. I will not say that you are giving 4 hours for a day. If it is based on 30 days, it will take half a day or 20 minutes. If it is more than that, it will be the same time for 7 people. 7 people will have to speak as soon as possible. The ticket should be converted to them at the end. So they can speak as soon as possible.",
       "entities": []
     },
     {
       "index": 2,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_other",
+      "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "com",
-        "जस्टाइल"
+        "justdial",
+        "lead",
+        "app",
+        "notification",
+        "calls"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "करेंगे जस्टाइल.com कस्मत",
+      "text": "So, அதனால, அப்படியிருக்கும் என்று சொல்லுங்கள். நீங்கள் முடிந்த வரை, உங்கள் calls நீங்கள் பிடிப்பதையில் try பண்ணுங்கள். JustDial appயை, எப்போதும் அப்படியிருக்கும் என்றால் notification சொல்லுங்கள். ஏன் எனக்கு, பார்த்தீர்களா, ஒரு lead கூட convert ஆவமாற்றிருக்கிறது. வேற்றுதான் போதையிருக்கிறது. நம்ம பேசி convert சொல்லுங் ஒரு அளவுக்கு நீங்கள் எப்போதும் கோனை கையில் வைத்துக்க முடியாது யாராலுமே, முடிஞ்சை வரை நீங்கள் அந்த notification sound கேட்கிறார்கள் என்றால் காட்சி கிட்டுவிடுங்கள். எனக்கு வந்த ஒன்று, ஒன்று,",
       "entities": []
     },
     {
       "index": 3,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
-        "लेंगे",
-        "याद",
-        "पेर"
+        "justdial",
+        "lead",
+        "check",
+        "issue",
+        "number"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "पूर्टियों लेंगे पुकी अनिको रांजी पेर वांगता हुआ था, ये रांजी पेर में याद",
+      "text": "Maybe if you have the same concern, you can give me a screenshot. This lead is so reliable to me. We will definitely give it to the backend team and check it out. I can't show you the lead option. If you open the lead, you can't see what the lead is and what the option is. I can't see it. You can't do anything about that lead. I'm not interested or not interested. JustDial காட்டு வருகிறார்கள் என்றால் சம்மையில் செய்து செய்து செய்கிறார்கள் என்றால் எதுவும் இல்லையா? அவளுடைய name and mobile number போட்டுத்தான் entry பண்ணி உள்ள போட்டுத்துனால மட்டும் மட்டும் அது உங்களுக்கு forward ஆகும். மற்ற lead எல்லாம் அவங்க போய் தேடுறாங்க, search பண்ணிறாங்க, உங்களுடைய contact திட்டு பண்ணிறாங்க அப்படின்னாலும் அது உங்களுக்கு forward ஆகும். So இதைப் படித்தான் சொல்கிறோம். So நீங்க wait பண்ணி பாருங்க, issue எது",
       "entities": []
     },
     {
       "index": 4,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "पेर"
+        "customer",
+        "support",
+        "wait",
+        "already",
+        "first"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "में इत्सलेंगे मा? राजी पेर में इत्सलेंगे",
+      "text": "செய்து பாருங்கள் ஐயா, அப்போது இந்த வாரத்து எல்லாமே நிறுதியாகத்தானே வருகிறது எனக்கு, ஒரு கால் கூட நான் first customer மேல் எனக்கு வரலாம். நீங்க கொஞ்சம் wait பார்ந்து பாராங்க, கொஞ்சம் முடிஞ்ச வரலாம். எல்லா customer இல்லா madam, ஒரு customer கூட இல்லா, எல்லா customerத்துமே already நான் விட்டத்து பேசின்புக்குப்போர்த்தான் எனக்கு வருகிறது. சர 4, 5 பேர் customer support வந்துக்கு அப்புறம் வந்தால் என்னால் எப்படி convert செய்து கொள்ள முடியும் என்றால் நீங்கள் rotation basedலாமல் நீங்கள் வருத்திருக்கிறீர்கள், நாடிக்கு வருத்திருக்கிறீர்கள் என்றால் ஆளுக்கு ஒரு job எடுக்க முடியும் என்றால் ஐயா ஐயா �",
       "entities": []
     },
     {
       "index": 5,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "उन्होंने",
-        "कुमार"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "इसे कुमार ने उन्होंने प्रिया वाला था? हमाँ",
-      "entities": []
-    },
-    {
-      "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
-        "कॉल",
-        "टीम",
-        "उन्होंने",
-        "अच्छी",
-        "सेंटर"
+        "justdial",
+        "com",
+        "thank",
+        "time",
+        "response"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "सर? या आजु? सर इसे उन्होंने अच्छी उन्होंने कवियार ओर टीम इंगे कॉल सेंटर रुकों पेटिंगला? हाँ अंगे कॉल सेंटर",
-      "entities": []
-    },
-    {
-      "index": 7,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "कॉल",
-        "मना",
-        "सेंटर",
-        "अटेंड",
-        "टेस्ट"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "पेटिंगला? अंगे कॉल सेंटर पेटिंगला वो ना अटेंड मना मतरें आल्रेडी टेस्ट चीज बल्लियर",
-      "entities": []
-    },
-    {
-      "index": 8,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [
-        "टाइम",
-        "उन्होंने",
-        "पाते"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "रहे हैं सर ना पाते रहे हैं उन्होंने रेटसांस टाइम कुछ अधिकमा रहे हैं सर फूर आस केटे एड़ित करेंगे",
-      "entities": []
-    },
-    {
-      "index": 9,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "वेरी",
-        "अटेंड",
-        "इपना"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "मुझे जा रहे हैं नाम सीक्रम पेशना करेंगे ना ये वेरी है ना मैं इपना अटेंड मन",
-      "entities": []
-    },
-    {
-      "index": 10,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [
-        "टाइम",
-        "उन्होंने",
-        "लेंगे",
-        "आगे",
-        "वीडियो"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "और इस वीडियो में विश्वा आगे लेंगे, अगले लेंगे मैं उन्होंने आपको सोली रहा हूँ, वेस्वन्स टाइम आवरेज आईवरेज आईवरेज आईव तो मुदंदे वरा उनके लिए फिकेट कन्वर्ट होना चाहते हैं तो उन्हें इन्होंने सीकर पहले उनके लिए फिकेट कन्वर्ट करेंगे",
-      "entities": []
-    },
-    {
-      "index": 11,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "तो उनके लिए फिकेट कन्वर्ट करेंगे तो",
-      "entities": []
-    },
-    {
-      "index": 12,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "उनके लिए फिकेट कन्वर्ट",
-      "entities": []
-    },
-    {
-      "index": 13,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "वाट्सएप"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "करेंगे तो उनके लिए फिकेट कन्वर्ट करेंगे वाट्सएप",
-      "entities": []
-    },
-    {
-      "index": 14,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [
-        "लीड",
-        "इनके",
-        "कंसन",
-        "पाने",
-        "डाउनलोड"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "ले एसमस ले टेंट पाने रुका सर डाउनलोड पानिकोंगा मेबी ट्यूब चोदनेर दे कंसन रुकना इनके स्क्रीनशर्ट कुड़ूमो सर इन्द लीड ऐनकी उल्ले विलेवा वन्दित्य अब",
-      "entities": []
-    },
-    {
-      "index": 15,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "बैक",
-        "एंड",
-        "नांग"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "रिम्प कांडिपा नांग आदे बैक एंड रिम्लो कुड़ू मैं अपने",
-      "entities": []
-    },
-    {
-      "index": 16,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [
-        "सब्सक्राइब",
-        "हूँ।",
-        "करें।",
-        "नहीं।",
-        "इंट्रेस्ट"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "इंट्रेस्ट का इंट्रेस्ट नहीं हूँ। मैंने इंट्रेस्ट का इंट्रेस्ट नहीं। इसे सब्सक्राइब करने के लिए सब्सक्राइब करें।",
-      "entities": []
-    },
-    {
-      "index": 17,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "कोड़े"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "ओर दाल कोड़े",
-      "entities": []
-    },
-    {
-      "index": 18,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "में अटर्म करने के लिए मैंने वेस्टा पड़ती है। प्राइब करने के लिए प्राइब",
-      "entities": []
-    },
-    {
-      "index": 19,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "नहीं हो",
-        "बेस्ट",
-        "प्र"
-      ],
-      "sentiment": "frustrated",
-      "tool": null,
-      "text": "करने के लिए प्राइब करने के लिए प्र आपको एक वारथ नहीं होता है। आपको एक वारथ नहीं होता है। ये तो रोटेक्टिंग बेस्ट लाड़ी पर फ़र्स्ट",
-      "entities": []
-    },
-    {
-      "index": 20,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "लाड़ी पर फ़र्स्ट",
-      "entities": []
-    },
-    {
-      "index": 21,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "लाड़ी पर फ़र्स्ट",
-      "entities": []
-    },
-    {
-      "index": 22,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "लाड़ी पर फ़र्स्ट",
-      "entities": []
-    },
-    {
-      "index": 23,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "लाड़ी अब इन्हें अगर",
-      "entities": []
-    },
-    {
-      "index": 24,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "लेंगे",
-        "बेस्ट"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "आप रोटेशन बेस्ट लेंगे तो कुछ नहीं है। अब रोटेशन बेस्ट लेंगे तो कुछ नहीं है। अब रोटेशन बेस्ट लेंगे तो कुछ नहीं है। रोटेशन बेस्ट लेंगे",
-      "entities": []
-    },
-    {
-      "index": 25,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "इदे",
-        "इप्पो"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "तो कुछ नहीं है। इप्पो निगो कुछ इदे",
-      "entities": []
-    },
-    {
-      "index": 26,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [
-        "इदे"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "कुछ इदे कुछ",
-      "entities": []
-    },
-    {
-      "index": 27,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "इदे"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "इदे कुछ",
-      "entities": []
-    },
-    {
-      "index": 28,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "थैंक",
-        "इन्होंने",
-        "फॉर"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "मैं लोड़ी कम्प्रिंट ऐसके तो इन्होंने वीश कर निपार हूँ सर थैंक यू फॉर रूजनी जैसेल डॉक्खम हाड़े के लिए थैंक यू",
+      "text": "அப்படின்னா கூடுத்துக்கொள்ளுங்கள் rotation basement கூடுத்துக்கொள்ளுங்கள் அப்படிதான் பார்த்துக்கொள்ளுங்கள் 7 பேருக்கு rotational basement கூடுத்துக்கொள்ளுங்கள் rotation basement கூடுத்துக்கொள்ளுங்கள் அப்படின்னா கூடுத்துக்கொள்ளுங்கள் 7 பேருக்கு rotational basement கூடுத்துக்கொள்ளுங்கள் rotation basement கூடுத்துக்கொள்ளுங்கள் அப்படின்னா இப்பு நீங்க கொஞ்சு இதுக்கு இதுக்கு முன்னாடி நீங்க கம்மி பண்ணிங்க அல்லது கொஞ்சு response time அதே போல இன்னும் கொஞ்சு கம்மி பண்ணி நீங்க security பேத்து try பண்ணுங்க கண்டிப்பா convert ஆகம் சொன்னீங்க கொஞ்சு try பண்ணி பண்ணும் சொன்னீங்க நான் இதுவோ கொஞ்சு போரம் பேசிக்கத்து மாற்றி மாட்டுகிறேன் Thank you sir. Thank you for using JustDial.com.",
       "entities": []
     }
   ]

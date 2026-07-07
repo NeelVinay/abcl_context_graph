@@ -10,32 +10,33 @@
       "intent": "customer_greet",
       "base_intent": "open",
       "keywords": [
-        "आपसे",
-        "जिसके",
-        "तरफ",
-        "कमेंट",
-        "हलो।"
+        "justdial",
+        "customer",
+        "support",
+        "good",
+        "team"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आपकी तरफ से एक रिक्विस्ट कमेंट की पुष्टी जिसके भी आप पर मैंने आपसे टेनेक किया है। हलो।",
+      "text": "Hi, good afternoon, I am the customer support team of JustDial. I am talking to you about the solution. I have received a request from you that I have connected to you.",
       "entities": []
     },
     {
       "index": 1,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_greet",
-      "base_intent": "open",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "कॉम",
-        "डॉट",
-        "जस्ट",
-        "हलो।"
+        "justdial",
+        "customer",
+        "support",
+        "thank",
+        "good"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "हलो। गुड़ात्मी चाहिए, सुषान बात कर रहा हूँ, जस्ट जैल्ड डॉट कॉम",
+      "text": "Hello. Hello. Good afternoon, I am Tushant from JustDial customer support team. I am talking to you about the packers and movers. Yes sir. Yes sir, I am talking to you. Thank you for the confirmation. Sir, we have received a request from you for your JustDial business listing. Do you want to take any information? Do you",
       "entities": []
     },
     {
@@ -45,32 +46,28 @@
       "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "टीम",
-        "सपोर्ट",
-        "कस्टुमर",
-        "से।"
+        "any",
+        "changes",
+        "want",
+        "make"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "कस्टुमर सपोर्ट टीम से। मेरी बात",
+      "text": "want to make any changes in the",
       "entities": []
     },
     {
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
-        "चेक",
-        "बिजनेस",
-        "अंदर",
-        "मिनट",
-        "चाहते"
+        "profile"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "जी, पैकर्स और मूवर्स में हो सर हमें आपके अंदर से रिक्वेश्ट रिसीव हुआ था आपकी जजजल बिजनेस रिस्टिंग के लिए कोई जानकारी लेने चाहते है कोई चेंजेस वगैरह करवाना चाहते है प्रोफाइल में पर यह नहीं है यह बात रुकट वारा प्लान रिन्यू करवाया था पर्सों � 19,824 रुपीस का पेमेंट रिसीव कर रहा है। नहीं, नहीं, वो नहीं है, सर रोहतक वाला नहीं है, ये दिखो न, वो मैस्टिकी बादरुगड़ वाला। बादरुगड़ वाला, एक मिनट, सर आप मुझे रोहतक वाला जो है, आपको दूसरी लिस्टिंग का चेक कर एक",
+      "text": "profile? Sir, we",
       "entities": []
     },
     {
@@ -80,12 +77,11 @@
       "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "मिनट",
-        "रिलेटेड"
+        "plan"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "मिनट से इसके रिलेटेड",
+      "text": "have renewed the plan.",
       "entities": []
     },
     {
@@ -94,54 +90,65 @@
       "type": "action",
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
-      "keywords": [],
+      "keywords": [
+        "check",
+        "how",
+        "right",
+        "what",
+        "much"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "आपने कल भी बात किया था",
+      "text": "Yes, okay. So, it has not been activated yet. What's the matter? Wait a minute. Sir, let me check. You have told me that you have renewed the plan. Yes. Yes. Sir, I am also able to check your plan listing. On the 27th, you had received a payment of Rs. 19,824, right? How much? Rs. 19,824 payment received. No, no, no, no. यह पगवाला तो हो गया थे न। ठीक है, बहादुर्गलवाला, right?",
       "entities": []
     },
     {
       "index": 6,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
-      "keywords": [],
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "justdial",
+        "customer",
+        "support"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "और आपको बताया गया था रही है कि प्रेमिन्ट अपनी 24 गंटे के बाद ही जी",
+      "text": "हाँ, बहादुर्गलवाला. यह पगवाला तो हो गया थे न। JustDial का customer support",
       "entities": []
     },
     {
       "index": 7,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
-        "चेक",
-        "रखा",
-        "पेमेंट",
-        "तारीख",
-        "लिस्टिंग"
+        "justdial",
+        "call"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आपने लिस्टिंग UBL के साथ ले रखा है ठीक है जी आपने अभी 6 तारीख कोई पेमेंट सब्बिट कर रहा था हमारे पास ECSVS मोड पे 5576 रुपीज का पेमेंट सब्बिट कर रहा है हमारे पास ठीक है और इसका मैं चेक कर लेता हूँ कांट्राक लिस्टिंग में क्या �",
+      "text": "call है। JustDial का",
       "entities": []
     },
     {
       "index": 8,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
+      "intent": "customer_respond",
+      "base_intent": "agent_handle",
       "keywords": [
-        "कार्ड"
+        "justdial",
+        "customer",
+        "call",
+        "support",
+        "contract"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आपका आधार कार्ड वालिडेटेड है",
+      "text": "customer support call है। JustDial का customer support call है। Contract has been",
       "entities": []
     },
     {
@@ -151,15 +158,47 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "शेयर",
-        "request",
-        "देखे",
-        "share",
-        "रिक्वेस्ट"
+        "contract",
+        "चेक",
+        "line",
+        "payment",
+        "मिनट"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "ठीक है आपका MSME भी अपडेटेड है आपने अपना MSME वोडे है ठीक है सर तो देखे जैसा आपने मिश्चिंग के बेसिस पर जो रिक्वेस्ट शेयर कर रहा है ना आपका KYC जो भी पेंडिंग है KYC कर पर देखा रहे हैं आपको जो ब ठीक है कि आपके KYC है ना उसे approve करवा दिया जाए ठीक है आज आपको बताना चाहूँगा देखिया Sunday non-working है otherwise जो mail initiate होता है ना वो आज ही होता है जो comments आते हैं मैं आपको share कर देता है पर currently जो team है वो अभी activate नहीं है ठीक है तो आपसे request करूँगा थोड़ा wait कर लीजिए आपके बिल्कुल सर बिल्कुल आप निश्चिन रहिए मेरे एंड से जो बेस्ट पॉसिबल वे में हो पाएगा ना सर मैं जरूर कर दूँगा ओके? ओके जी ओके ओके सर जस्टेल्ड डॉट कॉम में समय देने के लिए धन्यवाद आपका दिन शुगलें सैंक्यू वेली",
+      "text": "activated. जी आपने listing UBL के साथ ले रखा है। चीक है। जी आपने अभी 6 तारी कोई payment submit कर रहा था हमारे पास ECS Waste Mode पे। 5,576 रुपी का payment submit कर रहा है हमारे पास। चीक है। और इसका चेक कर लेता हूँ contract listing में क्या आया, deactivation पे क्या आ रहा है। एक मिनट line पर मिनट",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "ले।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ले। ठीक है",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "justdial",
+        "com",
+        "team",
+        "request",
+        "share"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपका Aadhaar Card Validated है। आपका MSME भी Updated है। आपने अपना MSME Voting है। ठीक है सर तो देखे जैसे आपने listing के basis पे request share कर रहा है न। आपका KYC जो भी pending है। KYC कर पर भी सर है। यह फोक फोक वाले जो डाव रखे हैं। हां हां बिलकुल बिलकुल। तो जो आपका pendency है न भी in review है। आपके KYC न अप्रूव करवा दिया जाये। दो दिन होने से अभी तक हो नहीं है। देखे सर, मैं आपको बताना चाहूँगा। देखे, आज Sunday non-working है। Otherwise, जो mail initiate होता है न, वो आज ही होके, आज जो comments आते हैं, मैं आपको share कर देता है। पर currently जो team है, वो अभी activate नहीं है। तो JustDial.com में समय देने के लिए।",
       "entities": []
     }
   ]

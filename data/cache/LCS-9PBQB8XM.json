@@ -1,21 +1,24 @@
 {
   "call_id": "LCS-9PBQB8XM",
   "language": "hi-en",
-  "outcome": "raised_request",
+  "outcome": "incomplete",
   "turns": [
     {
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
-        "लीड",
-        "आईएगी"
+        "justdial",
+        "customer",
+        "com",
+        "service",
+        "category"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "तो अभी इसमें लीड से आपको यही कैटेगी के हिसाब से दिया पर आईएगी आपको सब ठीक है",
+      "text": "Hello, आप अगर पुरुंबरिंग हैं, सर सुझाय बात करें, सर आप। कौन, बोले आप। पुरुंबरिंग, मैं रवी बोल रहा हूँ, JustDial.com customer service से। हाँ। मुंबाई से बात कर रहा हूँ, सर, रवी बोल रहा हूँ, JustDial.com customer service से। बोले। सुझाय सर, यह आपका keyword सब आपका add तो अभी उसमें लीड से आपको यही category के हिसाब से दिया पर आईए आपको करती के? Category",
       "entities": []
     },
     {
@@ -25,12 +28,12 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "नंबर",
-        "बोर्ड"
+        "number",
+        "calls"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "कैटेगी में नंबर फॉल्ट बोर्ड पर आ",
+      "text": "में number of calls बहुत",
       "entities": []
     },
     {
@@ -40,99 +43,110 @@
       "intent": "agent_ask",
       "base_intent": "question",
       "keywords": [
+        "issue",
         "लीड",
-        "उसने",
+        "उसमें",
         "पता",
-        "भाग"
+        "ratio"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "रहा है लीड का जो मतलब उसने भी आपको रिश्यो का भाग करना था आपको लीड के बारे में यह पता है",
+      "text": "कम आ रहा है। लीड का जो मतलब उसमें आपको ratio का भाग करना था आपको लीड के बारे में यह पता है यह क्या issue है?",
       "entities": []
     },
     {
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "इसमे"
+        "leads",
+        "quality",
+        "रूप"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "क्या रिश्यो है इसमे",
+      "text": "इसमें quality of leads रूप करना",
       "entities": []
     },
     {
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "category",
-        "number",
-        "service",
-        "mobile",
-        "repair"
+        "category"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "अच्छा तो ये category का प्राइड है आपका GDSTV installation, service, repair, setup box ये सब चाहिए आपका VIP, mobile number",
+      "text": "है। अच्छा तो यह category को प्रा� आप",
       "entities": []
     },
     {
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "number",
-        "mobile"
+        "देंगे।",
+        "पाएगा।"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आज VIP, mobile number तो क्या हो जाता है? अच्छा अच्छा हो क्या हो जाता है? तो आपको",
+      "text": "लोग का जैसे चमित्र करते हैं तो इसका क्यों केवल आ रही है। लोग तो क्यों के लिए कर देंगे। रिप्लाई नहीं आ पाएगा।",
       "entities": []
     },
     {
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [],
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "पाएगा।"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "महर-महर कहा रहा है लेकिन",
+      "text": "रिप्लाई नहीं आ पाएगा।",
       "entities": []
     },
     {
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [],
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "customer",
+        "call",
+        "चाहिए।",
+        "मिनट",
+        "आगे"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "ज्ञाजा का हो रहा",
+      "text": "हाँ आपको कितना समय चले आगे इस समय नस्करेगा तो call के लिए customer करने के लिए एक दो मिनट चाहिए। हाँ तो अब चाहिए बाम मिनट के बाद हम",
       "entities": []
     },
     {
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "बोली"
+        "काम",
+        "उसमें",
+        "लेते",
+        "मिनट",
+        "उससे"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "है नहीं कहा रहा है बोली बोली फिर आभी आओ याभी बोली",
+      "text": "तीन मिनट लेते हैं तो ऑटोमेटिक कट हो गया है उससे बाद। नहीं नहीं अभी यह बहुत बहुत अब उसमें कुछ काम बनाता है अपना प्रोडकेस्ट अभी सब कुछ काम बनाता है।",
       "entities": []
     },
     {
@@ -141,55 +155,61 @@
       "type": "action",
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
-      "keywords": [
-        "दीजिये"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "नहीं दीजिये शब्द चाहिए दीजिये दीजिये शब्द चाहिए",
+      "text": "यह सब है क्या रीम्स क्वेश्चन के खौन रहता है। अच्छा अच्छा",
       "entities": []
     },
     {
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
-        "नंबर"
+        "call",
+        "category",
+        "number",
+        "request",
+        "था।"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "इसका रेटियल नंबर वाला",
+      "text": "पर उसको highlight कराने के request के number के call आपका कर रहा था। और review का जो पूरा category जो आपने keyword बताये न आपका। इसका भी highlight",
       "entities": []
     },
     {
       "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
       "keywords": [
-        "नंबर",
-        "दीजिये"
+        "pincode",
+        "था।"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "दीजिये शब्द चाहिए दीजिये दीजिये शब्द चाहिए इसका रेटियल नंबर",
+      "text": "कर रहा था। और जो आपके pincode",
       "entities": []
     },
     {
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "दीजिये"
+        "call",
+        "number",
+        "time",
+        "inquiry",
+        "काम"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "वाला दीजिये शब्द चाहिए दीजिये",
+      "text": "के number लिख जाएगी न आपका। तो उसको मेरा ध्यान देखे काम की जाएगा। और आपको ध्यान लिख जाएगा। बहुत बहुत जो रिपोर्ट के तुरू आपका डाल रहा हूँ, मैं रिपोर्ट आपका। कि आपका वाला call hour जो ली रहे हैं वो inquiry आपको proper time पर आ रहा",
       "entities": []
     },
     {
@@ -198,168 +218,28 @@
       "type": "action",
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
-      "keywords": [
-        "दीजिये"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "दीजिये शब्द चाहिए इसका रेटियल न",
+      "text": "है। एक्जैक्टी। या सॉर।",
       "entities": []
     },
     {
       "index": 14,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "backchannel",
-      "keywords": [
-        "कॉल",
-        "ऐसा",
-        "लेट",
-        "बोलते"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "लेट कॉल भी होता है मतलब डीले डीले भी हो रहा है मतलब ऐसा बोलते",
-      "entities": []
-    },
-    {
-      "index": 15,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
-      "keywords": [
-        "कॉल",
-        "मिनट",
-        "समय",
-        "वेट",
-        "जितना"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "हो हाँ आपको जितना अपना समय तक आप इस समय नस्करेगा न एक तो कॉल के लिए पासपार करने के लिए वेट दो मिनट चाहिए आप तो कल चाक बाम मिनट के",
-      "entities": []
-    },
-    {
-      "index": 16,
-      "speaker": "agent",
-      "type": "action",
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "कॉल",
-        "लीड",
-        "लास्ट",
-        "मिनट",
-        "टोटल"
+        "customer",
+        "com",
+        "support",
+        "thank",
+        "ticket"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "बाद हम तीन मिनट रहते हैं तो आपको तो उसके ऊपर workout करके जो लीड के जो गहरा कॉल, नौ कॉल जाते हैं तो टोटल एफरेक्ट में भी गहरा में से नौ कॉल जो अटेड किया है न आपने लास्ट आपने मुक्र की",
-      "entities": []
-    },
-    {
-      "index": 17,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
-      "keywords": [
-        "काम",
-        "उसमें",
-        "उससे",
-        "बना",
-        "जाओ"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "करके बात गया था न आपने मुक्र की अब उससे जाओ उसमें कुछ काम बना था आपका प्रोड",
-      "entities": []
-    },
-    {
-      "index": 18,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_raise_request",
-      "base_intent": "resolution",
-      "keywords": [
-        "लीड",
-        "call",
-        "request",
-        "उसको",
-        "category"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "पर उसको highlight कराने के request के number के call आपका चलाता हूँ और इन लीड का पूरा category जो आपने keyword बताये न आपका इनका भी आने के चलाता हूँ और यहाँ दिल्कुड के जो number लिख जाएगी",
-      "entities": []
-    },
-    {
-      "index": 19,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
-      "keywords": [
-        "उसको",
-        "देखे",
-        "पूरा",
-        "time"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "न आपको तो उसको पूरा time देखे",
-      "entities": []
-    },
-    {
-      "index": 20,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_raise_request",
-      "base_intent": "resolution",
-      "keywords": [
-        "कॉल",
-        "लीड",
-        "काम",
-        "टाइम",
-        "दिखा"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "काम कीजिएगा बल्कि कोई लीड को चलाता हूँ और आप जाता है अगर एक 1.25 मिनिट आपका दिखा रहा है आवरेज आपका तो रिपोर्ट के तुरू आपका डाल रहा हूँ मैं रिपोर्ट आपका कि आपका वाला कॉल और जो लीड है वो इंक्वारी आपको प्रोफ़र टाइम पर आवरेज",
-      "entities": []
-    },
-    {
-      "index": 21,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
-      "keywords": [
-        "शोर"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "दो ठीक है एक्जैक्टी या शोर आग",
-      "entities": []
-    },
-    {
-      "index": 22,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_raise_request",
-      "base_intent": "resolution",
-      "keywords": [
-        "अंदर",
-        "देते",
-        "डाल",
-        "बताईए",
-        "hours"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "या शुरू, या विदिंग 24 संटे के अंदर रिजॉल कराके देते है आपको, 24 hours में रिजॉल कराके देते है आपको, और टील टील के अंदर इसका फिल्डिबैक बताईए सर, ठीक है, जिल्डी आप पेस्ट में जबोर पेस्ट हो, टेके डाल दो, या आपको या रभी के नम�",
+      "text": "और यह तीन-तीन के अंदर इसका feedback बताइए। जिल्दी आप customer support से ticket डालते हैं। या सॉर� यह अपने यह रविके नंबू सिस्टार वेटिंग है रीडिंग कर रहे हैं। यह गॉल को टेंसला वेटिंग हमारे feedback लेता है। Thank you sir for calling today.com प्रस्तुम चलीजिए।",
       "entities": []
     }
   ]

@@ -1,68 +1,24 @@
 {
   "call_id": "LCS-8AF34JJN",
   "language": "hi-en",
-  "outcome": "incomplete",
+  "outcome": "raised_request",
   "turns": [
     {
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_greet",
-      "base_intent": "open",
-      "keywords": [
-        "रिगार्डिंग",
-        "कॉंट्राक्ट",
-        "सेंड"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "आपका एक कॉंट्राक्ट हमारे पास सेंड कर रहा है, मुहमद अर्शक जी से मेरी बात हो रही है। इसके रिगार्डिंग",
-      "entities": []
-    },
-    {
-      "index": 1,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
-      "keywords": [
-        "इश्यू",
-        "फेस",
-        "कॉंट्राक्ट"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "कुछ इश्यू फेस कर रहे हैं सर कॉंट्राक्ट",
-      "entities": []
-    },
-    {
-      "index": 2,
-      "speaker": "agent",
-      "type": "action",
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "चेक",
-        "इश्यू",
-        "लेट",
-        "लाइव",
-        "विजिबिलिटी"
+        "lead",
+        "हूँ।",
+        "category",
+        "issue",
+        "share"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "में? इश्यू फेस कर रहा है, इसमें लेट से नहीं आ रही है। लेट से नहीं आ रही है, मैं एक ब चैटिग्री आपके लाइव है, मैं विजिबिलिटी आपके अभी चेक कर रहा हूँ, प्रिजाइम",
-      "entities": []
-    },
-    {
-      "index": 3,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "पर यह जाओ। तीन",
+      "text": "आपका एक contact हमारे पास send कर रहे हैं। इसके regarding कुछ issue face कर रहे हैं। इस category आपके लाइव है। मैं visibility आपके अभी चेक कर रहा हूँ। नहीं चाहिए आप। तीन मार्स को आपकी payment आपने receive कर रही है। तीन मार्स से आपका मैं जब चेक कर रहा हूँ, तीन मार्स से तक lead क्यों नहीं आई है। आपके contact में तो कोई error नहीं है। अभी आपकी areas के अंदर को demands हुए हैं जो की direct calls के वाध्यम से हुए हैं। इसलिए आपके पास lead नहीं आ पाई। मैं यहाँ से भी explanation लगा रहा हूँ। Next 24 to 48 hours में जो भी normal search होगा वो purity पर आपके साथ share कर दिया जाएगा sir। जो सुविधा हुई",
       "entities": []
     }
   ]

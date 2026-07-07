@@ -7,32 +7,50 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
-        "कॉल",
-        "सब्सक्राइब",
-        "बैक",
-        "अरेंज",
-        "मार्केटिंग"
+        "justdial",
+        "com",
+        "department",
+        "today",
+        "late"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "सब्सक्राइब करें सब्सक्राइब सब्सक्राइब करने के लिए मार्केटिंग का रिक्वारमेंट होगा तो मार्केटिंग की कॉल बैक अरेंज कराइट कराइट है सब्सक्राइब करें और",
+      "text": "Today Craftsman, MLA बात कर रहा हूँ, JustDial.com के late department",
       "entities": []
     },
     {
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
-        "सब्सक्राइब"
+        "से।"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "सब्सक्राइब करें",
+      "text": "से। ठीक है ma'am,",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
+      "keywords": [
+        "call",
+        "thank",
+        "हूँ।",
+        "category",
+        "ticket"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तो मैं आपका ticket close कर रहा हूँ, जब भी आपका बस available time हो, same ticket भी ओपन कर लीजिएगा, 10 टाइमेंट number पर call फली जाएगा। Sorry, क्या बोल रहा हूँ? ठीक है ma'am, आपका ना only ticket back date का ही है, बस मैं आपको inform करना चाहता हू� MBBS का document requirement होगा। जितनी भी सभी हैं सिर्फ Ayurvedic से related categories आप कर सकते हैं। position plan है आपका। तो category change करने के लिए marketing का requirement होगा तो मैं marketing system की callback arrange कराएता हूँ। कोई बात नहीं है। जब क्या available time होगा आप coordinate कर लीजिएगा हमारे साथ। All right. Thank you so much for available time.",
       "entities": []
     }
   ]

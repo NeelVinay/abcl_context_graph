@@ -24,11 +24,11 @@
       "intent": "agent_raise_request",
       "base_intent": "resolution",
       "keywords": [
-        "कॉल",
-        "चेक",
-        "लाइन",
         "thank",
-        "category"
+        "category",
+        "time",
+        "rating",
+        "share"
       ],
       "sentiment": null,
       "tool": null,

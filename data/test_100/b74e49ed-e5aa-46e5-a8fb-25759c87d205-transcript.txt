@@ -1,0 +1,184 @@
+[
+  {
+    "timestamp": "2026-07-05T11:48:45",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:48:46",
+    "speaker": "assistant",
+    "content": "हाँ जी, नमस्ते। क्या मैं आपसे कुछ देर बात कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:48:54",
+    "speaker": "user",
+    "content": "Sorry,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:48:54",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:48:58",
+    "speaker": "user",
+    "content": "हां बोलो.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:48:58",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं रामारामहिरमसुथार जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:49:13",
+    "speaker": "user",
+    "content": "हां.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:49:13",
+    "speaker": "assistant",
+    "content": "जी, आपको आदित्य बिरला कैपिटल की",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:49:15",
+    "speaker": "user",
+    "content": "हां. बोलो ना.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:49:15",
+    "speaker": "assistant",
+    "content": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है। मैं अभी इस call पर आपको इस loan को apply करने में मदद कर सकती हूँ। क्या हम शुरू करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:49:28",
+    "speaker": "user",
+    "content": "हां.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:49:28",
+    "speaker": "assistant",
+    "content": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:49:45",
+    "speaker": "user",
+    "content": "मिला है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:49:45",
+    "speaker": "assistant",
+    "content": "अब आप SMS में जो link है उसे click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:49:55",
+    "speaker": "user",
+    "content": "बस आया नहीं ma'am अभी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:49:55",
+    "speaker": "assistant",
+    "content": "Internet connection check करें और link को एक बार फिर से try करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:50:07",
+    "speaker": "user",
+    "content": "WhatsApp आया है",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:50:07",
+    "speaker": "assistant",
+    "content": "कृपया SMS में आए link को ही open करें, WhatsApp link से process नहीं होगा। क्या आप SMS वाला link open कर पाए हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:50:18",
+    "speaker": "user",
+    "content": "आया ही नहीं ma'am.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:50:18",
+    "speaker": "assistant",
+    "content": "कृपया अपने phone की SMS inbox में जाकर एक बार फिर से SMS चेक करें। अगर SMS नहीं मिला है तो",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:50:25",
+    "speaker": "user",
+    "content": "नहीं ma'am.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:50:25",
+    "speaker": "assistant",
+    "content": "मैं अभी एक बार फिर SMS भेज देती हूँ। कृपया थोड़ी देर में अपनी inbox चेक करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:50:39",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिए, क्या आप अभी भी कॉल पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:50:47",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिए, क्या आप फिर से कह सकते",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:50:51",
+    "speaker": "user",
+    "content": "नहीं आया था madam थोड़ी देर बाद से हो गई है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-05T11:50:51",
+    "speaker": "assistant",
+    "content": "आपका SMS मिल गया, यह अच्छी बात है। अब आप SMS में जो link है उसे click",
+    "feedback": null,
+    "agent_id": null
+  }
+]

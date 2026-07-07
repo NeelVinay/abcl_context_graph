@@ -5,84 +5,198 @@
   "turns": [
     {
       "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "open",
+      "keywords": [
+        "com",
+        "good",
+        "afternoon",
+        "अली",
+        "jaisal"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello! Good afternoon, मैं अली बात कर रहा हूँ सर, Jaisal.com",
+      "entities": []
+    },
+    {
+      "index": 1,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_greet",
       "base_intent": "open",
       "keywords": [
-        "लीड",
-        "good",
-        "डिपार्टमेंट",
-        "afternoon",
-        "लड़का"
+        "department",
+        "अली",
+        "अभी।"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "good afternoon मैं ली बात कर रहा हूँ सर जैसे ही लड़का हूँ के लीड डिपार्टमेंट है संतोष सिंह जी से मेरी बात हो रही है",
-      "entities": []
-    },
-    {
-      "index": 1,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_greet",
-      "base_intent": "open",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "अभी हाँ जी आ जी",
+      "text": "के elite department है। Santosh Singh जी से मेरी बात हो रही है अभी। Hello! हाँ जी, हाँ जी! Santosh जी, मैं अली बात कर रहा",
       "entities": []
     },
     {
       "index": 2,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "शेयर",
-        "मार्केटिंग",
-        "रिगार्डिंग",
-        "करनी",
-        "कोंटेक्ट"
+        "call",
+        "हूँ।",
+        "contact",
+        "regarding",
+        "error"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "संतोष जी मैं ली बात कर रहा हूँ आपको कोंटेक्ट में कोई एरड चल रहा है सर इसके रिकार्डिंग हमने एक टिकट रिकेट साइन करेगा ठीक है आपने जो कैटिगरी लिए हैं सर उसके रिगार्डिंग पर आपको पेस्टेसाइज राइसेंस शेयर करना होगा कि आपके पास अवेलेबल है क्या चीज पेस्टेसाइज राइसेंस होता है ना सर वह आपके पास अवेलेबल है अभी तो हमारे बाद, अभी तो हमने वहाँ भी कर रहे हैं, तो उसकी स्टार्टिंग में अभी हमने अप्लाई कर रहा है। ठीक है से, तो आपके कोई मार्केटिंग से बात करनी होगी आपको, पेस्टर साइज",
+      "text": "हूँ। आपको कोई contact में कोई error चल रही है सर, regarding अमिनिक टिकट लिखी चल रहा है। Sir, error चल रहा है। जो भी मेरे को call आ रही है न, स� आज की date में",
       "entities": []
     },
     {
       "index": 3,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_ask_question",
+      "intent": "agent_ask",
       "base_intent": "question",
-      "keywords": [],
+      "keywords": [
+        "लीड"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "लाइसन्स अगर नहीं है,",
+      "text": "लीड आपके पास चाहिए वो कैसी है",
       "entities": []
     },
     {
       "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "लीड",
+        "विजिट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "सर? आज ये लीड आई थी तो वो उनका मैंने विजिट किया था और ये मैंने कुछ हुआ नहीं हुआ था आज आया था मेरे",
+      "entities": []
+    },
+    {
+      "index": 5,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "शेयर",
-        "अच्छी",
-        "उसको",
         "category",
-        "समझ"
+        "लीड",
+        "regarding",
+        "पैसे",
+        "साइज"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "तो एक फॉर्म होता है, वो फिल करक form होता है form 11 हमारे पास ठीक है वो आपको देंगे आप उसे अपनी दुकान की महोर लगाओगे उसको फिल करोगे और वो हमारे साथ शेयर करोगे ठीक है आपकी category अभी block है ठीक है उसको unblock कराने के लिए हमें चाहिए आपका pesticide license जो कि आपके पास अभी नहीं है ठीक है बट आपके marketing person है वो आपको एक form देंगे उस form को आप भरोगे अपनी shop की stamp उस पे लगाओगे और वो हमारे पास दे दोगे तो जब तक आपका license नहीं बनता हम � फिर आपके पास अच्छी लिए रहेंगे सर ठीक है अब आप समझ गए न ठीक है तो अपने मार्केटिंग से बात कर लीजेगा सर",
+      "text": "पास लीड साइन पड़ेगा। ठीक है आपने जो category लिए हैं सर उसके regarding पर आपको पैसे साइज रा पेस्टर साइज लाइसेंस होता है ना सिर्फ। वो आपके",
       "entities": []
     },
     {
-      "index": 5,
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "पास अवेलेबल है।",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "marketing",
+        "person"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अभी तो हमारे पास Marketing person marketing",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "marketing",
+        "person"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "person marketing",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "lead",
+        "marketing",
+        "person",
+        "समझ",
+        "अच्छी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "person marketing person उसके बाद ही आपको पास अच्छी lead आएगी। आप समझ गया है मैं दुबारा",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "हूँ।",
+        "समझा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपको समझा हूँ। आपकी",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
+      "keywords": [
+        "lead",
+        "category",
+        "marketing",
+        "person",
+        "उसको"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "category अभी block है। उसको unblock कराने के लिए हमें चाहिए आपका pesticide license जो कि आपके पास अभी नहीं है। जो आपकी marketing person है वो आपको एक form देंगे। उस form को आप भरोगे, अपनी shop की stamp उस पर लगाओगे और वो हमारे पास दे दोगे। तो जब तक आपका license नहीं बनता, हम उसके भागते आपकी category life कर देंगे। फिर आपके पास अच्छी lead आएंगे sir, ठीक है। अब आप समझ गए न। ठीक है, तो अपने marketing से एक",
+      "entities": []
+    },
+    {
+      "index": 12,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
@@ -90,7 +204,7 @@
       "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "ठीक है सर मैं बात कर लेता हूँ",
+      "text": "बार बात कर",
       "entities": []
     }
   ]

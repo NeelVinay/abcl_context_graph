@@ -1,0 +1,269 @@
+{
+  "call_id": "9a902798-a609-45e5-99f5-557dac2bd522-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं SATHEESH KALIVEETTIL जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello. हां.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms",
+        "application",
+        "link",
+        "click",
+        "process"
+      ],
+      "sentiment": null,
+      "tool": "send_sms",
+      "text": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "link",
+        "sms",
+        "click"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब आप SMS में जो link है उसे click करें।",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_apply",
+      "base_intent": "click_apply",
+      "keywords": [
+        "apply now",
+        "apply",
+        "click",
+        "now",
+        "screen"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप home screen पर आ गए हैं। आप नीचे एक 'Apply Now' button देख सकते हैं, उस पर click करें।",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "interest",
+        "कितना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "यह कितना यह कितना है इसका interest?",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_explain_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "interest rate",
+        "offer",
+        "शुरू",
+        "click",
+        "check"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Interest rate ten point nine nine percent से शुरू होती है और आपके final offer पर depend करती है। अब आप अपना mobile number enter करें। फिर Terms and Conditions checkbox को check करें और 'Get OTP' पर click करें।",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "नहीं हो रहा",
+        "नहीं हो",
+        "call",
+        "open"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "Call पर है पर यह open नहीं हो रहा है.",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "link",
+        "check",
+        "try",
+        "connection",
+        "internet"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Internet connection check करें और link को एक बार फिर से try करें।",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "सही"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Government commission सही है.",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "link",
+        "open",
+        "कोशिश"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "क्या आप link को एक बार फिर से open करने की कोशिश करेंगे?",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "check",
+        "number",
+        "mobile",
+        "enter"
+      ],
+      "sentiment": null,
+      "tool": "send_otp",
+      "text": "क्या आप अपना mobile number enter करें? फिर Terms and Conditions checkbox को check करें और 'Get OTP'",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "नहीं हो रहा",
+        "नहीं हो",
+        "open"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "मैं यह open नहीं हो रहा है.",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "link",
+        "check",
+        "try",
+        "connection",
+        "internet"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Internet connection check करें और link को एक बार फिर से try करें।",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "नहीं हो"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "नहीं होता.",
+      "entities": []
+    }
+  ]
+}

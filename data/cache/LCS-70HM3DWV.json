@@ -10,11 +10,11 @@
       "intent": "agent_greet",
       "base_intent": "open",
       "keywords": [
-        "कॉल",
         "देख",
+        "हाँ।",
         "लाइन",
-        "बिजनेस",
-        "कस्टमर"
+        "जी।",
+        "मिनट"
       ],
       "sentiment": null,
       "tool": null,
@@ -28,10 +28,10 @@
       "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "कॉल",
         "thank",
+        "कॉल",
         "किये",
-        "धन्यवाद",
+        "बिना",
         "बीच"
       ],
       "sentiment": null,
@@ -46,11 +46,11 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "कॉल",
-        "चेक",
-        "सब्सक्राइब",
-        "देख",
-        "शेयर"
+        "lead",
+        "हूँ।",
+        "check",
+        "contract",
+        "category"
       ],
       "sentiment": null,
       "tool": null,

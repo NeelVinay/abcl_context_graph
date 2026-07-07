@@ -10,194 +10,210 @@
       "intent": "agent_greet",
       "base_intent": "open",
       "keywords": [
-        "कॉल",
-        "इश्यू",
-        "रेट",
-        "अरेंज",
-        "कंट्राक्ट"
+        "justdial",
+        "customer",
+        "com",
+        "support",
+        "मार्निंग"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आपके लिए कॉल अरेंज आपको कुछ इश्यू है जर्जायल के कंट्राक्ट में? आपके लिए रेट",
+      "text": "आ गुद मार्निंग, मैं किरा बात कर रही हूँ JustDial.com customer support",
       "entities": []
     },
     {
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
-        "रेट"
+        "से।",
+        "टीम"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "नहीं आ रहे हैं आपके लिए रेट नहीं आ रहे हैं",
+      "text": "टीम से। जी, जी,",
       "entities": []
     },
     {
       "index": 2,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_acknowledge",
+      "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "लाइन"
+        "लीड"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "मैं लाइन पर",
+      "text": "जी, जी, लीड",
       "entities": []
     },
     {
       "index": 3,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_acknowledge",
+      "intent": "agent_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
         "चेक"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "रही हूँ, मैं चेक कर रही हूँ. हाँ,",
+      "text": "कम आ रहे हैं। चेक",
       "entities": []
     },
     {
       "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "लाइन"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "करते हैं दो मिर्ण लाइन",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "लीड",
+        "जान"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "पर रहे हैं क्या इस सारा क्यों लीड कम आ रही है। आपका नाम जान सकते हैं मेरी बाटकिम पर हो रही हैं। आपका नाम जान सकते हैं मेरी बाटकिम पर हो रही हैं।",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "राजित कौन इंटर का जीव है। बात करता है।",
+      "entities": []
+    },
+    {
+      "index": 7,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
         "check",
-        "issue",
         "contract",
-        "lease",
-        "less"
+        "issue",
+        "less",
+        "having"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "लुट दिया, बहुत बहुत दो में जय हो having issue of less lease, contract check",
+      "text": "Having issue of less lease, contract check",
       "entities": []
     },
     {
-      "index": 5,
+      "index": 8,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
-      "keywords": [],
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "contract"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "कर रही है",
+      "text": "कर रही है तो contract",
       "entities": []
     },
     {
-      "index": 6,
+      "index": 9,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
         "lead",
+        "हूँ।",
+        "check",
         "category",
-        "feedback",
-        "concern",
-        "check"
+        "issue"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "तो contract आपका life है जी जी और आपके सोर्ज देखता रही हूँ तो सोर्ज भी आपके सारे ओन है लेकिन concern category का feedback अगर check कर रही हूँ तो आपके concern category का feedback थोड़ा low होने के कारण lead में issue हो रहा है यानि कि आपका हाविल position पीपी contact में flow कम है अभी थोड़ा festival event भी चल गए तो इस पर",
-      "entities": []
-    },
-    {
-      "index": 7,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
-      "keywords": [
-        "issue",
-        "changes"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "जिसे issue हो रहा है मैं changes करती अगर मैं",
-      "entities": []
-    },
-    {
-      "index": 8,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "चेंजिस कर रही",
-      "entities": []
-    },
-    {
-      "index": 9,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "हूँ आपके लिए",
+      "text": "आपका live है। जी जी और आपके source देख पा रही हूँ। तो source भी आपके सारे on हैं। लेकिन concern category का feedback अगर check कर रही हूँ तो concern category का feedback थोड़ा low होने के कारण lead में issue हो रहा है। यानि की आपका मापिल, position, PAP, contractor में flow कम है अभी थोड़ा। festival people भी चल गया है तो इस प्रजिस issue हो रहा है। मैं changes",
       "entities": []
     },
     {
       "index": 10,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [
-        "मिलेगा",
-        "प्रॉपर",
-        "अलावा",
-        "रिस्पॉंस",
-        "अभी।"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "आपको प्रॉपर रिस्पॉंस मिलेगा अभी। इसके अलावा कोई आरिश्य है। इसके",
-      "entities": []
-    },
-    {
-      "index": 11,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
-      "keywords": [
-        "अलावा"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "अलावा कोई आरिश्य है। ओके,",
+      "text": "करती हूँ अगर मैं",
       "entities": []
     },
     {
-      "index": 12,
+      "index": 11,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_raise_request",
       "base_intent": "resolution",
       "keywords": [
-        "call",
-        "कस्टमर",
-        "टीम",
-        "request",
-        "सपोर्ट"
+        "response",
+        "प्रॉपर"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "मैं आपके इंफोर्मेशन देना चाहूँ कि जर्जल के अप्लीकेशन से कस्टमर सपोर्ट ऑप्शन लाइव है, कोई भी कंसर्न हो, कुछ भी इश्यू रहेगा, वहाँ से रेज करिए, और मैं और मेरी कंसर्न टीम विधिन 24 आज के अंगर आपको इस चीज़ का सजीश और एक request ये भी है कि call खतम होने के बाद आपके पास rating link आएगी मेरे लिए मैंने आपसे किस तरह बात किया है तो please मेरे call को rating दीजे 10 highest होता है request करूँगी 10 दीजे का आपकी rating पे set करते है और वो जबकी rating पे service return है तो please मेरे call को rating दीजे का 10 highest होता है 10 day में ना भुलेगा thank you so much for your valuable time",
+      "text": "चेंजेस कर रही हूँ, आपके लिए आपको प्रॉपर response",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "मिलेगा",
+        "अलावा",
+        "अभी।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मिलेगा अभी। इसके अलावा कोई और इसलिए है। अगर मैं चेंजेस",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
+      "keywords": [
+        "justdial",
+        "customer",
+        "call",
+        "support",
+        "lead"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कर रही हूँ, आपके लिए आपको प्रॉपर response मिलेगा अभी। Okay, मैं आपको इन information देना चाहूँ की JustDial की application से customer support option लाइव है। कोई भी concern हो, कुछ भी issue रहेगा, वहाँ से raise करिए। मैं और मेरी concern team within 24 hours के अंगर आपको इस चीज़ का position देंगे call करके। और देखिए अभी आपको changes के और proper response मिल रहा है या नहीं, proper lead आ रही है या नहीं। और � रिक्वेस्ट करूँगे 10BJ का आपकी rating पे set करते हैं और वो जबकी rating पे service return है तो please मेरे call को rating दीजेगा 10 highest होता है। 10 day में न भूलेगा। Thank you so much for your valuable time.",
       "entities": []
     }
   ]

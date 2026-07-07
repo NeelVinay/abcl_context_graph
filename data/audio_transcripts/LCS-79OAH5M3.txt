@@ -1,14 +1,16 @@
-Agent: पार्णिया साइडेंटेस सर इदु जेस्टेड इन्दा कॉल्यूमेड पेवेद वर्षी ना कस्टमाल सपोर्ट इन्दा उन्दु कॉन्ट्राक्ट लेटेड अंत
-Customer: एबुट इदु कंप्यून्ट रेजमेड
-Agent: इदर एन इश्यू इतु सर इदु वर्म सर उन्दु कॉन्ट्राक
-Customer: car rental, self-drive number car rental, self-drive, car rental, car rentals, car
-Agent: rentals, car
-Customer: rentals, car
-Agent: rentals, car
-Customer: rentals, car
-Agent: rentals, car rentals, ता 161 लीज में इतना लाइटिंग में लाइटिंग
-Customer: वेला वेला स्टेट बढ़ता है दबना, यारों पार्किंग बढ़ता है दिए, यारों ड्राइडिंग एसा बढ़ता
-Agent: है दिए, वेला वेला बढ़ता है दिए, यारों पार्किंग
-Customer: बढ़ता है दिए, यारों ड्राइडिंग एसा बढ़ता
-Agent: है दिए, यारों ड्राइडिं खड़मे लीज्ज करते हैं यह यह लीज्ज करते हैं ओके ओके
-Customer: ओके ओके सब्सक्राइब करें
+Agent: How are you sir? How are you? Sir, this is JustDial calling from customer support. What is the issue with the complaint raised that the contract is delayed? Sir, what is the issue with the complaint raised that the contract is delayed? Sir, what is the issue with the complaint raised that the contract is delayed? Sir, what is
+Customer: the issue with the complaint raised that
+Agent: the contract is delayed? Sir, what is the issue with the complaint raised that the contract is delayed? Sir, what is the issue with the complaint raised that the contract
+Customer: is delayed? Sir, what is the issue with the complaint raised that the contract is delayed? Sir, what is the issue with the complaint raised that the
+Agent: contract is delayed? Sir, what is the issue with the complaint raised that the contract is delayed? Sir, what is the issue with the complaint raised that the contract is delayed? Sir, what is the issue with the complaint raised that the contract is delayed? Sir, what is the issue with the complaint raised that the contract is delayed? Sir,
+Customer: what is the issue with the complaint raised that the contract Car rental, self-drive number. Okay. Car rental, self-drive, car rental, car rental for outstation. Okay. Car rental for self-drivers, right?
+Agent: Okay. Sir, 161 leads mati talai tingal naar, ellar take or hate
+Customer: aa? Aave maram, vandhu leads confirm aagin laak naam,
+Agent: sir. Okay. Sir, main jain customer nodadhaga like online searches ina nimge leads indaak thirudu, okay?
+Customer: Na, issara searches ki filter maadi. Ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex- बात कर रहे हैं। आकरमा,
+Agent: पड़मे leads करते हैं, genuine leads करते हैं। पड़मे leads करते हैं। Okay sir, as per such as of the thing, you are the lead candidate, okay?
+Customer: Okay, okay, thank you. Sure.
+Agent: Any other issue you have, sir?
+Customer: No, no, no, not at all.
+Agent: Sure. Now, if you don't have any complaint, please wait, okay? Okay, okay. Sure, thank you, sir. Thank you for sharing this story with us. Thank
+Customer: you. Okay, thank you.

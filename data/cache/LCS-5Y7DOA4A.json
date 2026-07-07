@@ -12,73 +12,74 @@
       "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "मेरे सन मन भड़कन में याराम",
+      "text": "मेरे सन्मन भड़कन में याराम राम है। मन मंदिर",
       "entities": []
     },
     {
       "index": 1,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_greet",
-      "base_intent": "open",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "कॉल",
-        "कस्टमर",
-        "कॉंट्रैक्ट",
-        "जजजा",
-        "सॉर्विस"
+        "justdial",
+        "customer",
+        "com",
+        "हूँ।",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "राम है मन मंदिर के दलपन में याराम जजजा लॉटफॉर्म कस्टमर सॉर्विस से बात कर रही हूँ, कॉंट्रैक्ट के लिए कुछ शुशू आ रहा था, कॉल बाक अरेंच किया",
+      "text": "के दलपन में याराम है। JustDial.com customer service से बात कर रही हूँ। Contract कर रही हूँ। कुछ issue आ रहा",
       "entities": []
     },
     {
       "index": 2,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
       "keywords": [
-        "दिखा"
+        "call",
+        "था।",
+        "back",
+        "arrange"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "था? हाँ, मैं इससे यह नहीं दिखा रहा हूँ, शिप्टिंग का नहीं दिखा रहा हूँ",
+      "text": "था। Call back arrange किया था। अहाँ।",
       "entities": []
     },
     {
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "बोल",
-        "ऐसा",
+        "काम",
         "दिखा",
-        "इंक्वाइरी"
+        "मुझसे",
+        "पर।"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "मेरे दिखा. किसी का नहीं दिखा रहा ह क्या आपको जा रहे हैं सर? निर जा रहे हैं आपको क्या रहे हैं? ट्रांसपोर्टर्स के लिए इंक्वाइरी तो जा रहे हैं ट्रांसपोर्टर्स के लिए आपको उस चीज के लिए ही आएगा ऐसा बोल",
+      "text": "मुझसे यह नहीं दिखा रहा है। Shipping का नहीं दिखा रहा है मेरे पर। किसी सा नहीं दिखा रहा है। Shipping. Shipping का जो काम जाने कर रहा है। दिखा नहीं रहा है। Shipping का",
       "entities": []
     },
     {
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "काम",
-        "बोल",
-        "ऐसा",
-        "दोनों"
+        "thank",
+        "काम"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "रही हो बोल रही है मैं दोनों में ऐसा जलबाया था 15 का भी काम जलबा",
+      "text": "काम नहीं दि� Thank",
       "entities": []
     },
     {
@@ -88,15 +89,15 @@
       "intent": "agent_raise_request",
       "base_intent": "resolution",
       "keywords": [
-        "लाइन",
-        "देखे",
-        "मिनट",
-        "प्रॉपर",
-        "दिखा"
+        "call",
+        "thank",
+        "हूँ।",
+        "complaint",
+        "much"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "यहाँ पर तो तो लाइन यही दिखा रहा है ठीक है इसके लिए मैं इसके लिए मेरियन से एक मिनट सुन लीजिए मेरियन से इसके लिए मैं कम्प्रेंट डाल देती हूँ थोड़ा पेशन्स रखे देखे प्रॉपर है की नहीं ठीक है तो लाइन रखेंगे कोई क्या रेटिं झाल झाल",
+      "text": "you very much. Thank you very much. यहां पर तो चलान यही दिखा रहा है। ठीक है। इसके लिए मैंने... एक मिनट सुन लीजिये। मैंने इसके लिए मैं complaint डाल देखी हूँ। थोड़ा patience रखे देखिये proper है की नहीं। ठीक है। Okay, okay, okay. कोई क्या रेटिंग नहीं कहेगा। रेटिंग से किसी का call लगे। आप � Thank you very much.",
       "entities": []
     }
   ]

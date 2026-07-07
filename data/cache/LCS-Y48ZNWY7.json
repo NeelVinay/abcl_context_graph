@@ -11,8 +11,8 @@
       "base_intent": "open",
       "keywords": [
         "customer",
-        "service",
         "good",
+        "service",
         "help",
         "how"
       ],
@@ -44,9 +44,9 @@
       "intent": "agent_acknowledge_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "लीज",
         "mobile",
-        "register"
+        "register",
+        "लीज"
       ],
       "sentiment": null,
       "tool": null,
@@ -189,9 +189,8 @@
       "keywords": [
         "लीड",
         "लास्ट",
-        "लीज",
-        "पॉइंट",
-        "मिली"
+        "मिली",
+        "लीज"
       ],
       "sentiment": null,
       "tool": null,
@@ -246,9 +245,7 @@
       "type": "action",
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
-      "keywords": [
-        "रॉम"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "लेती, चल देती हूँ नहीं आया हुआ है आपने बात किया होगा उसका कन्वर्जन नहीं हुआ होगा क्या बात हुई रॉम",
@@ -273,11 +270,11 @@
       "intent": "agent_raise_request",
       "base_intent": "resolution",
       "keywords": [
+        "लेकर",
+        "मिल",
         "कॉल",
         "प्रॉब्लम",
-        "मिल",
-        "रेटिंग",
-        "थैंक"
+        "धन्यवाद"
       ],
       "sentiment": null,
       "tool": null,

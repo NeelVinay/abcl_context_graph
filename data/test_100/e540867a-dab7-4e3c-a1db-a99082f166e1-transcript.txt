@@ -1,0 +1,107 @@
+[
+  {
+    "timestamp": "2026-07-06T06:03:38",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T06:03:38",
+    "speaker": "assistant",
+    "content": "<CHD/>",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T06:03:44",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T06:03:44",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं AJROODDIN SON OF MR MUBIN जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T06:03:54",
+    "speaker": "user",
+    "content": "जी हां.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T06:03:54",
+    "speaker": "assistant",
+    "content": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है 10 लाख रुपये तक का — मैं अभी इस call पर आपको इस loan को apply करने में मदद कर सकती हूँ। क्या हम शुरू करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T06:04:11",
+    "speaker": "user",
+    "content": "Ok.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T06:04:11",
+    "speaker": "assistant",
+    "content": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T06:04:24",
+    "speaker": "assistant",
+    "content": "अब आप SMS में जो link है उसे click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T06:04:31",
+    "speaker": "user",
+    "content": "Call पर नहीं चलता है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T06:04:31",
+    "speaker": "assistant",
+    "content": "Internet connection check करें और link को एक बार फिर से try करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T06:04:39",
+    "speaker": "user",
+    "content": "Call internet call पर नहीं चलता.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T06:04:39",
+    "speaker": "assistant",
+    "content": "Internet connection check करें और link को एक बार फिर से try करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T06:04:51",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिए, क्या आप अभी भी कॉल पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T06:04:57",
+    "speaker": "assistant",
+    "content": "चूंकि आप उत्तर नहीं दे रहे हैं, मैं अब कॉल समाप्त कर रही हूँ। धन्यवाद!",
+    "feedback": null,
+    "agent_id": null
+  }
+]

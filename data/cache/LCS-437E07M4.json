@@ -1,50 +1,47 @@
 {
   "call_id": "LCS-437E07M4",
   "language": "hi-en",
-  "outcome": "raised_request",
+  "outcome": "incomplete",
   "turns": [
     {
       "index": 0,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [
-        "कंप्लेंट",
-        "अगले",
-        "लीट"
+        "complaint"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "कंप्लेंट अटेंग में मुक्षी रहते हैं तो अगले लीट में मुझे रिकवरमेंट",
+      "text": "Hello! జాగర ఇంట్రోప్రైస్ సేల్సేంచ్ అనీన్ను? జాగర ఇం� complaint అటేంం మాడు అలా ముఖ్షిర్తారే తుమా అదే రీట్ లో మంజే రీకోవర్మేస్",
       "entities": []
     },
     {
       "index": 1,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [
-        "चाहते",
-        "अगले",
-        "लीट"
-      ],
+      "intent": "agent_greet",
+      "base_intent": "open",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "रहते हैं। अगले लीट सर्वीसोस आ गया है और लीट साइगित जा चाहते हैं।",
+      "text": "త్రేక్ అన్య తర్యో అన్య రీట్ రీట్",
       "entities": []
     },
     {
       "index": 2,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
-      "keywords": [],
+      "intent": "customer_greet",
+      "base_intent": "open",
+      "keywords": [
+        "customer",
+        "agent"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "हाँ, हाँ जो,",
+      "text": "రీట్ ర� Agent customer",
       "entities": []
     },
     {
@@ -54,27 +51,29 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "चाहते",
-        "अगले",
-        "लीट"
+        "support",
+        "ticket",
+        "area",
+        "location"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "हाँ जो। अगले लीट सर्वीसोस आ गया है और लीट साइगित जा चाहते हैं। हाँ वानी प्लंबर्स के जैनम",
+      "text": "support, ticket, area, location,",
       "entities": []
     },
     {
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "सब्सक्राइब"
+        "help",
+        "renewal"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "श्मीपुराम इंदा सब्सक्राइब करते हैं महातेश",
+      "text": "renewal की help करता है। Okay,",
       "entities": []
     },
     {
@@ -86,117 +85,107 @@
       "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "निम्हें बंदी के लादे में",
+      "text": "so ఇట్ని మహతేసంట్టా",
       "entities": []
     },
     {
       "index": 6,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "आगे",
-        "नमक"
+        "don",
+        "know"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "गित प्लम्बर्स के लादे में गित प्लम्बर्स के लादे में गित प्लम्बर्स के लादे हाँ, आगे रद नमक बताइद।",
+      "text": "నిమగే బండితలాడింగి ఇట్టు ప్లమ్బర్తంటా ప్లమ్బర్తంటా ప్లమ్బర్ I don't know.",
       "entities": []
     },
     {
       "index": 7,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "सब्सक्राइब",
-        "लाइन",
-        "इतना",
-        "चक्पण",
-        "निंगे"
+        "don",
+        "know"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "ओके, नाम यह ली चक्पण हो जा रहा था, निंगे almost ओन लाइन सब्सक्राइब में बरता रहा था, ओके ना? इतना सब्सक्राइब के लिए, नाम के",
+      "text": "I don't know.",
       "entities": []
     },
     {
       "index": 8,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_respond",
+      "base_intent": "agent_handle",
       "keywords": [
-        "इतना",
-        "भाई",
-        "अगे",
-        "अदो"
+        "customer",
+        "support",
+        "ticket",
+        "help",
+        "area"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "लिए इतना भाई... उल्ला, अदो, अगे ना",
+      "text": "Customer support, ticket, area, location, renewal की help करता हैं।",
       "entities": []
     },
     {
       "index": 9,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "नमके"
+        "customer",
+        "per",
+        "satisfaction"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "गुट्टी ला नमके, आओ कट्टमरो इल्ल आ,",
+      "text": "As per customer satisfaction నిం కెటేగ్రిస్ మేలు నింకె లీస్ చెల్లిటాగతే ఉక్కినా",
       "entities": []
     },
     {
       "index": 10,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
-      "keywords": [
-        "कस्टमर",
-        "अटेंड"
-      ],
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "कड़मे नु बसा, जैन निन्ने 3 बंधी रहा था, यादू 3 वाल्डि, 1 कस्टमर अटेंड माडिला सर, निम",
+      "text": "తో ప్లమ్బింగ్ మెటిరియల్ డిలార్ సూ టెలేక్ట్రిస్ చెల్లిట్రిస్ చెల్ల�",
       "entities": []
     },
     {
       "index": 11,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "लीज़",
-        "याद",
-        "कमी",
-        "गेट"
-      ],
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "इस्त्र सर? सर, निम इस्त्र? सर, कमी लीज़ करती नुम्मे? आयू बसा? निम गेट? सर, लीज़, कमी लीज़ करता है दे, मर्थे रोम लीज़ करता है, याद� प्लम्पिंग मेटीरियल डीलर्स 24 आर्थ एलेक्स्ट्रिक्शन अधिकला सर्विस्व कोड़ता है ना?",
+      "text": "Okay Sir, నా కంప్ప్రింద్ తో ఉన్తేను ఉకేనా ఇమ్మికి",
       "entities": []
     },
     {
       "index": 12,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_respond",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "एल्ला"
-      ],
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "प्लम्पिंग, एलेक्स्ट्रिक्शन, गीजर, सोलर, एल्ला आलेमन, वाटिमिक्षिन, प्रिज्ज, मोटर, एलला नु मर्था जीवन।",
+      "text": "తేరా రోం లీడ్స్ పర్త్తాయిదే మత్తే కార్వే లీడ్స్ పర్త్తాయిదే అంతాన్ ఏస్పోర్ కర్",
       "entities": []
     },
     {
@@ -206,48 +195,30 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "लीज़",
-        "मत्ते",
-        "रॉम",
-        "कंप्यून"
+        "customer",
+        "support",
+        "ticket",
+        "help",
+        "area"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "ओके सर नन कंप्यून तो होन थी न ओके न इमकी तरह रॉम लीज़ परता है दे मत्ते कार्वी लीज़ परता है नता आज पर सर्चे साक्षी देंगे जिम कैटेगरेज पर लीज़ के ने तागत",
+      "text": "Agent customer support, ticket, area, location, renewal की help करता है। Sir, ఇ కోలు విటితంగి ఉంద రేటి కోలు కోలు",
       "entities": []
     },
     {
       "index": 14,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "मैडम",
-        "इश्यू",
-        "इला"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "ओके ना सो इनने अगर इश्यू दिया सो ओके मैं नियं इला मैडम ननके",
-      "entities": []
-    },
-    {
-      "index": 15,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
+      "intent": "customer_respond",
       "base_intent": "agent_handle",
       "keywords": [
-        "कॉल",
-        "सर्विस",
-        "रेटिंग",
-        "लेंगे",
-        "जान"
+        "thank",
+        "watching"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "लीज अंडरे लाइक फोटोस वीडियोसेल अप्लोड मड़कोड़े ये रेटिंग से लाइक मड़कोड़े ये लिस्टन करसके ने निम्गे आदु एल्ला सबसे रेटिंग से लाइक मड़कोड़े ओके ना सा ओनलेन प्रेजेंटेक्शन लेंगे ये प्रेजेंटेक्शन लेंगे � सर ये कॉल में के टीटेंग में रेटिंग करते सेवन टू टेंग के लिए उच्छे रेटिंग करना ने मतलब सर्विस गला सर प्यूरले और कॉल में रेटिंग करना ने मतलब सर्विस गला सर प्यूरले और कॉल में रेटिंग करना क्या बुला है? जान बात मुझे आओ",
+      "text": "Thank you for watching. Please subscribe to our channel.",
       "entities": []
     }
   ]

@@ -1,24 +1,503 @@
 {
   "call_id": "LCS-D3HH0U7G",
   "language": "hi-en",
-  "outcome": "incomplete",
+  "outcome": "raised_request",
   "turns": [
     {
       "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "leads",
+        "contract",
+        "number",
+        "time",
+        "problem"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "We are not getting the number of leads as promised during the time of purchase of the contract. We would like to speak to our relationship manager to sort out this problem.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "call",
+        "right",
+        "any",
+        "calls",
+        "correct"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Correct. I haven't got any call yet. Right. From past two months, I think totally zero calls.",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask",
+      "base_intent": "question",
+      "keywords": [
+        "any",
+        "getting"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "So, you are not getting any single",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "leads",
+        "two",
+        "months",
+        "zero",
+        "think"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "leads? I think from past two months, zero. No",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask",
+      "base_intent": "question",
+      "keywords": [
+        "lead",
+        "leads",
+        "one",
+        "all",
+        "minute"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "leads at all. Ok. You have received only one lead in this month. One minute.",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "don",
+        "know",
+        "whether"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I don't know whether",
+      "entities": []
+    },
+    {
+      "index": 6,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_acknowledge_complaint",
       "base_intent": "complaint",
       "keywords": [
         "call",
-        "सब्सक्राइब",
-        "नंबर",
-        "lead",
-        "टाइम"
+        "number",
+        "right",
+        "department",
+        "don"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "प्रॉब्टर में कर्चना माता रहते रहते हैं तो कर्चना सपोर्टिंग हाँ प्रॉब्टर अवन्दू टुपी प्रेस में रहेगा ला वे आर नोट गेटिंग दो नंबर ऑफ लीड्स आज प्रॉमिस्ट यूरिंग द टाइम ऑफ पर्चेस ऑफ टा कॉंट्रैक्ट या वे correct we haven't got any call yet okay right from past two months i think totally zero calls okay so you are not getting any single leads hmm i think from past two months zero no leads at all okay you have only received only one lead in this month yeah okay one minute मैं नहीं मिलता हूँ, मैं पार्टनर नहीं मिलता हूँ। ओके, लेकिन मैं इस नंबर को चाहता हूँ, लेकिन मैं इस नंबर को चाहता हूँ, लेकिन मैं इस नंबर को चाहता हूँ, लेकिन मैं इस नंबर को चाहता हूँ, लेकिन मैं इस नंबर को चाहता हूँ, लेकिन मैं इ मैं नहीं नहीं one is double line 4 5 yeah see two number is always good because when both rings I have one that picks the call so it can be there see even the other number can be there but if it's not coming I don't need this any other way you can spot it it'll be great sure sure one minute sir So, institution for sound engineering, right? Your categories are like music colleges. आपको बहुत बहुत January you have received two, February you have received one list and March one list. Correct. How can this be made better? Sir? How can this be made better? Why are we getting only one list? Yeah, one minute. Sir, I am seeing like category feedback. Like how many searches are happening on your category? One minute. सब्सक्राइब करने के लिए but see before and only if you just go back to last year and all you were getting more calls I don't know why this is depleted now December you have received 6 leads 2025 okay November you have received only 4 leads ओक्टॉम्बर थी लीज़ तो सर तस्पोर्ट आइम सेइंग लाइट दे रहा है लेस्ट सर्चेज लेस्ट यूजर्स वन योर काटेगरी तो ऑन सराउंडिंग वोटेवर पिंक कोड सिटीज योर सिलेक्टेड राइट फ्रॉम दट लाइट फ्रॉम द So, one minute. करते हैं So thank you for being in line. Sorry sir. Okay. Like you got one lead no? Like you found it. How was that? Like how did customer respond sir? How was the customer? I don't know. I didn't know that the lead was happening. Because it's showing 2 days 20 hours response time. Yes. I didn't respond. Correct, I don't respond directly, maybe the other person does. Okay sir, I will raise a complaint saying that you are not getting any single lease. Okay, as per surges, you will be getting a lease. As per surges happens, you will be getting a lease. Okay? Okay. Is there any concern upon this? Okay. Sir, your good name? No, just this. One more person, partner? Okay. शॉर्ट सर, I will raise a complaint saying that you are not getting a lease and I will inform your sales executive too regarding this. I will arrange a call back. शॉर्ट सर,",
+      "text": "they are in the department or in the department. Okay, but I am trying to call this number like 99456552671, right? That's another number, no? That's another number, but I am trying to reach him, but it's not connecting. Why? I don't know. I tried like four to five times. It's not connecting. So I called to this number. Like 8861042648. Okay. Was the phone",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "what",
+        "just",
+        "going",
+        "done",
+        "even"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "going? No, it's not even ringing. Oh, okay. Cool. So what could we have done? Could we just have",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "number",
+        "one"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "one number? Huh? Could we",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "number",
+        "one",
+        "don",
+        "like",
+        "just"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "just have one number? Like I don't",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "contract",
+        "number",
+        "there",
+        "know",
+        "two"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "know. There is two number in our contract. 2 number is always",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "great",
+        "call",
+        "good",
+        "any",
+        "one"
+      ],
+      "sentiment": "happy",
+      "tool": null,
+      "text": "good because when both rings, whoever picks the call sign, it can be there. But if it's not coming, I don't know if there is any other way I can spot it. It will be great. Sure, sure. One minute sir.",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "right",
+        "like",
+        "categories",
+        "sound"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "So, instruction for sound engineering, right? Your categories are like music colleges.",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "thank"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Thank you for",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "lead",
+        "one",
+        "sorry",
+        "line",
+        "only"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "being in line. Okay. In February, you have received only one lead, sir. Sorry? In February also, you have received",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
+      "keywords": [
+        "lead",
+        "one",
+        "only",
+        "date",
+        "january"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "only one single lead. Yeah, yeah, I think so. The date is January 1, February 1, and March 1. Yeah,",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "lead",
+        "received",
+        "january",
+        "march"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "yes, sir. January you have received 2, February you have received 1 lead and March",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_respond",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "lead",
+        "how",
+        "what",
+        "getting",
+        "better"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "1 lead. How can this be made better? How can this be made better? What are you getting 1 lead?",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "leads",
+        "category",
+        "how",
+        "right",
+        "feedback"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "1 minute. I am seeing category feedback. How many searches are happening on your category? 1 minute. Sir, on your category there are less searches surrounding, sir. Users are less searches. Less searches. So only you are not receiving any leads, sir. Like inspiration for music, right? Okay. So, when I searched categories with the report, there are less searches on your category. Before",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "all",
+        "don",
+        "now",
+        "just",
+        "getting"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "and only if you just go back to last year and all, you were getting more calls. I don't know why this is depleted now.",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "lead",
+        "leads",
+        "category",
+        "right",
+        "what"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "December you have received 6 leads, 2025. November you have received only 4 leads. 4... Sir, that's what I'm saying. There are less searches, less users on your category. On surrounding, whatever pincode, cities you have selected, right? From that, once this happens, you will be getting a lead. Like you are selected all over Bangalore. Okay, back in our Balaris, I mean, Balaris road.",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "question",
+      "keywords": [
+        "call",
+        "business",
+        "one",
+        "concern",
+        "just"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "My only concern as a business person is, if I'm just getting one call in a month, is it even making sense to invest on this?",
+      "entities": []
+    },
+    {
+      "index": 22,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "customer",
+        "lead",
+        "thank",
+        "how",
+        "one"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "So, one minute. Thank you for being in line. Sorry sir. You got one lead. How did customer respond sir? I don't know. I didn't answer the lead. Because it's",
+      "entities": []
+    },
+    {
+      "index": 23,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "time",
+        "response",
+        "hours",
+        "days"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "showing 2 days 20 hours response time.",
+      "entities": []
+    },
+    {
+      "index": 24,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "correct",
+        "respond",
+        "didn"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Correct. I didn't respond to that. Correct.",
+      "entities": []
+    },
+    {
+      "index": 25,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "person",
+        "other",
+        "respond",
+        "didn"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I didn't respond to that. It may be the other person.",
+      "entities": []
+    },
+    {
+      "index": 26,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
+      "keywords": [
+        "call",
+        "lead",
+        "good",
+        "leads",
+        "any"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok sir. There is a complaint saying that you are not getting any single leads. Okay, as per success, you will be getting a lead. As per success happens, you will be getting a lead. Okay? Okay. Is there any concern apart from this? Okay. Sir, your good name? No, just this. One more person, partner name? All. Okay. Sure, sir. I will raise a complaint saying that you are not getting a lead and I will inform your sales executive too regarding this. I will arrange a call back.",
+      "entities": []
+    },
+    {
+      "index": 27,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "thank",
+        "sorry"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Okay. Okay. Sorry. Sorry. Thank you. Thank you for",
+      "entities": []
+    },
+    {
+      "index": 28,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "doing"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "doing this.",
       "entities": []
     }
   ]

@@ -1,0 +1,107 @@
+[
+  {
+    "timestamp": "2026-07-06T09:23:10",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:23:11",
+    "speaker": "assistant",
+    "content": "<CHD/>",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:23:13",
+    "speaker": "user",
+    "content": "Hello",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:23:13",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं गुड्डू यादव जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:23:23",
+    "speaker": "user",
+    "content": "हां गुड़िया यादव जी से बात हो रहा है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:23:27",
+    "speaker": "user",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:23:27",
+    "speaker": "assistant",
+    "content": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है 10 लाख रुपये तक का — मैं अभी इस call पर आपको इस loan",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:23:36",
+    "speaker": "user",
+    "content": "जी. हां.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:23:36",
+    "speaker": "assistant",
+    "content": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:23:44",
+    "speaker": "user",
+    "content": "आवाज़? हां.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:23:47",
+    "speaker": "user",
+    "content": "इसका percentage क्या है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:23:47",
+    "speaker": "assistant",
+    "content": "Interest rate ten point nine nine percent से शुरू होती है और आपके final offer पर depend करती है। अब आप SMS में जो link है उसे click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:23:59",
+    "speaker": "user",
+    "content": "ठीक है, भेजो.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:23:59",
+    "speaker": "assistant",
+    "content": "आप home screen पर आ गए हैं। आप नीचे एक 'Apply Now' button देख सकते हैं, उस पर click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:24:09",
+    "speaker": "user",
+    "content": "ठीक है मैं रखा.",
+    "feedback": null,
+    "agent_id": null
+  }
+]

@@ -1,0 +1,222 @@
+{
+  "call_id": "752ff7d4-cd71-43ce-8b9b-ed94b6918480-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं सिद्धिक पाशा जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "बोलिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां जी बोलिए जी.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "thousand",
+        "four",
+        "लेकर",
+        "पच्चीस",
+        "fifty"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अभी लेकर मैं बीस पच्चीस ही नहीं रहा ना मतलब fifty four thousand",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "loan",
+        "रुपये",
+        "हज़ार",
+        "मिल",
+        "पचास"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी हाँ, आपको पचास हज़ार रुपये का loan मिल सकता है —",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_unclear",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "four"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "four Hello.",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं सिद्धिक पाशा जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "बोलिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां madam बात कर रहे हैं बोलिए.",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "मतलब",
+        "loan"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मतलब अभी मैं कुछ भी नहीं हुआ madam एक और loan लिया था मैं अभी तक बिना",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "loan",
+        "offer",
+        "process",
+        "complete",
+        "amount"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपको और amount का loan मिल सकता है — एक बार आप process complete करेंगे तो आपको आपकी profile के हिसाब से loan offer दिख जाएगा, आप उसमें से choose कर सकते हैं। क्या हम आगे बढ़ें?",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "मेरा मनसू है. अभी मैं drive कर रहा हूं madam मैं.",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "इंतज़ार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ जी, मैं इंतज़ार कर रही हूँ...",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "customer"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं drive कर रहा हूं madam अभी मैं customer के साथ drive कर रहा हूं मैं.",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "इंतज़ार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ जी, मैं इंतज़ार कर रही हूँ...",
+      "entities": []
+    }
+  ]
+}

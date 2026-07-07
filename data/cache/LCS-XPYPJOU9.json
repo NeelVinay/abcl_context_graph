@@ -119,8 +119,7 @@
       "intent": "customer_ask_question",
       "base_intent": "question",
       "keywords": [
-        "उसने",
-        "असर"
+        "उसने"
       ],
       "sentiment": null,
       "tool": null,
@@ -133,9 +132,7 @@
       "type": "action",
       "intent": "agent_acknowledge_complaint",
       "base_intent": "complaint",
-      "keywords": [
-        "इंकॉरी"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "सकते हो? वो सब चेर वाले लोग और उसके पहले पर तो जो एक मलाड़ से आई न वो भी जड़ जड़ केंद्र। इसकी सब बेहतार इंकॉरी आती है। कोई मतलब से नहीं",
@@ -148,11 +145,11 @@
       "intent": "customer_acknowledge",
       "base_intent": "resolution",
       "keywords": [
-        "लीड",
-        "काम",
         "हूँ।",
-        "ओके।",
-        "इन्हां"
+        "काम",
+        "लीड",
+        "इन्हां",
+        "ओके।"
       ],
       "sentiment": null,
       "tool": null,
@@ -166,7 +163,6 @@
       "intent": "agent_acknowledge_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "इंक्वारी",
         "महीने"
       ],
       "sentiment": null,
@@ -182,8 +178,7 @@
       "base_intent": "question",
       "keywords": [
         "काम",
-        "प्रॉब्लम",
-        "करवाती"
+        "प्रॉब्लम"
       ],
       "sentiment": null,
       "tool": null,
@@ -198,10 +193,9 @@
       "base_intent": "complaint",
       "keywords": [
         "पैसा",
-        "इंक्वारी",
-        "सिस्टम",
         "रुपया",
-        "बनता"
+        "बनता",
+        "सिस्टम"
       ],
       "sentiment": null,
       "tool": null,
@@ -227,11 +221,11 @@
       "intent": "agent_acknowledge_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "टाइम",
         "पैसा",
-        "जैस",
-        "नया",
-        "बैंक"
+        "टाइम",
+        "करो।",
+        "महिना",
+        "जवाब"
       ],
       "sentiment": null,
       "tool": null,
@@ -258,10 +252,10 @@
       "base_intent": "complaint",
       "keywords": [
         "काम",
-        "सर्विस",
         "देने",
         "बंद",
-        "बिल्कुल"
+        "बिल्कुल",
+        "चाहता"
       ],
       "sentiment": null,
       "tool": null,
@@ -343,10 +337,10 @@
       "base_intent": "backchannel",
       "keywords": [
         "टाइम",
-        "फोन",
         "देखा",
-        "रोज",
-        "रखो"
+        "फोन",
+        "रखो",
+        "नया"
       ],
       "sentiment": null,
       "tool": null,

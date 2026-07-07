@@ -1,0 +1,93 @@
+{
+  "call_id": "7ff93b38-84be-471e-b164-697df16a3565-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "इंतज़ार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ जी, मैं इंतज़ार कर रही हूँ...",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप कौन हो?",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "बोल",
+        "तरफ",
+        "capital",
+        "aditya",
+        "birla"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं प्रिया हूँ, Aditya Birla Capital की तरफ से बोल रही हूँ।",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "अभी है नहीं ma'am घर पर वह.",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "समय",
+        "contact",
+        "देने"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है, हम बाद में contact करेंगे। आपका समय देने के लिए",
+      "entities": []
+    }
+  ]
+}

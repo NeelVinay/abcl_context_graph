@@ -1,7 +1,8 @@
-Agent: अम्मेर अच्छी। इसलिए
-Customer: मैंने तुम्हारे पर लीड्स रहा नहीं गया है। इसलिए मैंने तुम्हारे पर लीड्स रहा
-Agent: नहीं गया है। इसलिए मैंने तुम्हारे पर लीड्स रहा नहीं गया है। शेग जा
-Customer: रहे हैं तो तो
-Agent: तो तो
-Customer: तो सब्सक्राइब करें
-Agent: सब्सक्राइब करने के लिए ठीक है
+Customer: Issue is that there are no leads so far, that's why... Okay. Are
+Agent: there any new
+Customer: leads now? Yes, there are new leads. We are getting a message saying that customers are talking earlier than usual. Okay. Have you got any new leads since yesterday? Yes, there are new leads. We are getting a message saying that customers
+Agent: are talking earlier than usual. Okay. I will update this soon. Because the categories are live now. We will get
+Customer: a call soon. There is an issue. That's it sir. Business owner leads are coming. Customer leads are also coming, right? Yes sir. Customer leads
+Agent: are directly coming. These are our leads. You can check it out. Okay. Thank you. Okay. Thank you sir. You will get the update immediately. Check it out. You will get the update from today. Hello. Madam. You will get the update from today. Check it out. Okay. Okay. Okay sir, we will call you if there is any further questions. Thank you
+Customer: very much for your time today. Okay. Okay, take care sir. I will keep you updated with the reviews. The customer has been calling me for a long time. When I was talking to him earlier, he was not responding to me properly. Okay. I was wondering if he was talking to me
+Agent: earlier. Okay. I will update you soon sir. Okay? Call me as soon as possible. Okay. Okay. Sir, I have a call for you. How did I talk to you? Call me. Thank you sir. Thank you for coming. This is JustDial.com. Have a great day.

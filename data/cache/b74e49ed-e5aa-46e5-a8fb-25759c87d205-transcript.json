@@ -1,0 +1,345 @@
+{
+  "call_id": "b74e49ed-e5aa-46e5-a8fb-25759c87d205-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "आपसे",
+        "देर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ जी, नमस्ते। क्या मैं आपसे कुछ देर बात कर सकती हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "sorry"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Sorry,",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "बोलो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां बोलो.",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं रामारामहिरमसुथार जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "आदित्य",
+        "कैपिटल",
+        "बिरला"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपको आदित्य बिरला कैपिटल की",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "बोलो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां. बोलो ना.",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms",
+        "application",
+        "link",
+        "click",
+        "process"
+      ],
+      "sentiment": null,
+      "tool": "send_sms",
+      "text": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_sms_received",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "मिला"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मिला है.",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "link",
+        "sms",
+        "click"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब आप SMS में जो link है उसे click करें।",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_sms_received",
+      "base_intent": "send_sms_link",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "बस आया नहीं ma'am अभी.",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "link",
+        "check",
+        "try",
+        "connection",
+        "internet"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Internet connection check करें और link को एक बार फिर से try करें।",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "whatsapp"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "WhatsApp आया है",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "link",
+        "sms",
+        "process",
+        "कृपया",
+        "open"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कृपया SMS में आए link को ही open करें, WhatsApp link से process नहीं होगा। क्या आप SMS वाला link open कर पाए हैं?",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "आया ही नहीं ma'am.",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "sms",
+        "phone",
+        "कृपया",
+        "चेक",
+        "जाकर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कृपया अपने phone की SMS inbox में जाकर एक बार फिर से SMS चेक करें। अगर SMS नहीं मिला है तो",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं ma'am.",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "sms",
+        "भेज",
+        "कृपया",
+        "चेक",
+        "देर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं अभी एक बार फिर SMS भेज देती हूँ। कृपया थोड़ी देर में अपनी inbox चेक करें।",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "फिर से कह",
+        "कीजिए",
+        "माफ़"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "माफ़ कीजिए, क्या आप फिर से कह सकते",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "देर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं आया था madam थोड़ी देर बाद से हो गई है.",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "link",
+        "sms",
+        "click",
+        "मिल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपका SMS मिल गया, यह अच्छी बात है। अब आप SMS में जो link है उसे click",
+      "entities": []
+    }
+  ]
+}

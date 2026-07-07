@@ -1,0 +1,61 @@
+{
+  "call_id": "LCS-HS3FMGCK",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "open",
+      "keywords": [
+        "justdial",
+        "customer",
+        "com",
+        "support",
+        "leads"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "प्राप्तनन मैं अली बात कर रहा हूँ customer support department, justdial.com के एक business آپका हमारे पास अच्छा रहा है। मेरी बात अभी इर्फान हम्मद जी से हो रही है। इर्फान जी, जो contact आपका चल रहा है, इसमें कुछ issue आप face कर रहे हैं, leads",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "issue",
+        "message",
+        "related",
+        "बताये",
+        "cover"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "related ? क्या issue आ रहा है, बताये ? प्रीजन, میरे message में cover to कर रह Okay. Okay. और मांसा",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "thank",
+        "leads",
+        "contract",
+        "business",
+        "category"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "देश्ट और मांसा देश्ट और मनाली। Business owner leads, inquiry, category, pincode, rating, reviews, feedback, contract, response लेकर बात कर रहे हैं। but ہماری کوشش ہے کہ زیادہ تر آپ کو اپکے commit areas ہی دیکھنے کے لئے مل پائیں۔ I am Kadeeq. میں اپنے business میں restriction apply کر رہا ہوں۔ I am Kadeeq. میں اپنے business میں restriction apply کر رہا ہوں۔ Thank you for your valuable time.",
+      "entities": []
+    }
+  ]
+}

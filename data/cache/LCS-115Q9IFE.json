@@ -10,127 +10,109 @@
       "intent": "agent_greet",
       "base_intent": "open",
       "keywords": [
-        "हेलो",
-        "बोलो",
-        "हाँ।",
-        "हेलो।"
+        "customer",
+        "good",
+        "service",
+        "department",
+        "day"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "हेलो हेलो गुड़ेवी साह। पूर्णी कौन? साह। साह। मेरे नाम प्रसंद है। हाँ। साह। क्या हो? आ बोलो साह। कोई चीज़ी है की साह। कोई चीज़ी है की साह। कोई चीज़ी है की साह। बोलो हेलो। हुई साह। कोई चीज़ी है की साह। कंट्रक में",
+      "text": "Hello! Hello! Good day sir! Hello! Who is this? Sir, I am talking to the customer service department. My name is Prasanna. Sir, I am talking to the customer service department. My name is Prasanna. Sir, I am talking to the customer service department. My name is",
       "entities": []
     },
     {
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [
-        "ऊपर",
-        "मिशीन",
-        "वाशी"
+        "talking"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "कोई चीज� वाशी मिशीन के नहीं आ रहे हैं, कौन ज्यादा आपका सेगन है? आपको उन्हें वाशी मिशीन के ऊपर आना आएगा",
+      "text": "Prasanna. Sir, I am talking to the",
       "entities": []
     },
     {
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask",
-      "base_intent": "question",
-      "keywords": [],
+      "intent": "agent_greet",
+      "base_intent": "open",
+      "keywords": [
+        "customer",
+        "service",
+        "department",
+        "name",
+        "talking"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "सा? नहीं, नहीं, फ्रीज के",
+      "text": "customer service department. My name is Prasanna. Sir, I am talking to the customer service department. My name is Prasanna. Sir, I am talking to the customer service department. My name is Prasanna. Sir, I am talking to the customer service department. My name is Prasanna. Sir, I",
       "entities": []
     },
     {
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
-        "ऊपर"
+        "talking"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "ऊपर आना है, फ्रीज. फ्रीज के ऊपर आना है?",
+      "text": "am talking to the",
       "entities": []
     },
     {
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
-        "अंदर",
-        "ऊपर"
+        "customer",
+        "service",
+        "department",
+        "name",
+        "talking"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "फ्रीज के ऊपर आना है अंदर, हाँ. हाँ? तो यह रीफ फ्रिज",
+      "text": "customer service department. My name is Prasanna. Sir, I am talking to the customer service department. My name is Prasanna. Sir, I am talking to the customer service department. My name is Prasanna. Sir, I am talking to the customer service department. My name is Prasanna. Sir, I am talking to the customer service department. My Washi machine",
       "entities": []
     },
     {
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "अंदर"
+        "call"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आ तुरीज से दलाना जी अपनी में अंदर स्ट्राइड",
+      "text": "کے نہیں آ رہے ہیں call",
       "entities": []
     },
     {
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "में वाशि मिशिन एक एसी और एक रिज्डेटर एपीन का रिज्डेटर रिपेरिंग रिपेरिंग",
+      "text": "کیا گا آپ کا ڈیگر ہے ۔ ایسی",
       "entities": []
     },
     {
       "index": 7,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
-      "keywords": [
-        "दियो"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "रिपेरिंग अब कन करना तो आज कर रहा है आप कन कर दियो थे ना",
-      "entities": []
-    },
-    {
-      "index": 8,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "हाँ कल बाली तो है नसरा बल कल बात कर दिया हाँ कल बात कर",
-      "entities": []
-    },
-    {
-      "index": 9,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_other",
@@ -138,74 +120,161 @@
       "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "दिया नसरा मैं अगर",
+      "text": "کے ڈال رہا ہے ۔ ڈیگر کا جو ہے مکہ",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "forward",
+        "ऊपर",
+        "leave"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ڈالو گلا مکہ ۔ ڈیگر ڈالو گلا مکہ ۔ ڈیگر ڈالو گلا مکہ ۔ ڈیگر ڈیگر � Refrigerator ऊपर के आपको leave forward होना है क्या?",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "आ, fridge के जलाना",
       "entities": []
     },
     {
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "उन्होंने"
+        "में।",
+        "अंदर",
+        "side",
+        "washing"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "उन्होंने से कर रहा था ना मैं आप तक चल",
+      "text": "है जब दी में। अंदर, side में। Washing",
       "entities": []
     },
     {
       "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
-        "उन्होंने",
-        "दियो"
+        "machine"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "दियो थी तुनो कर आओ अगर उन्होंने ठीक है ठीक",
+      "text": "machine, AC and refrigerator.",
       "entities": []
     },
     {
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "backchannel",
-      "keywords": [],
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "service",
+        "only",
+        "services",
+        "repair"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "है ठीक है",
+      "text": "Apeen का नहीं जाना है। Apeen का नहीं जाना है। Repairing, service, repairing. Only repair services है क्या? आ,",
       "entities": []
     },
     {
       "index": 13,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
-      "keywords": [],
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "मिनट",
+        "machine",
+        "washing"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "ठीक है �",
+      "text": "washing machine, oven, washing machine, fridge. एक मिनट आई में रोकिये",
       "entities": []
     },
     {
       "index": 14,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask",
-      "base_intent": "question",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
-        "देख"
+        "साथ।",
+        "दें।"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आप देख सकते हैं?",
+      "text": "साथ। आप डिट कर दें। आई कन",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "दिये"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "करना तो आज कर रहे हैं। कन कर दिये थे न। हाँ कल बात कर",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "दिये",
+        "साथ।",
+        "बड़"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "दिये न साथ। बड़ कल बात कर दिये न। कल बात कर",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "थी।",
+        "करा",
+        "दिये",
+        "साथ।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "दिये न साथ। मैं औरिक जने से कर रहा था न। मैं आज तक सक दिये थी। सुनो करा औरिक जने Hello",
       "entities": []
     }
   ]

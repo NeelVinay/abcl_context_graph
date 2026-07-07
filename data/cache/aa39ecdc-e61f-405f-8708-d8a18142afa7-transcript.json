@@ -1,0 +1,182 @@
+{
+  "call_id": "aa39ecdc-e61f-405f-8708-d8a18142afa7-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "<CHD/>",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं सारिका जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "नहीं हो"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "जी. नहीं हो पा रहा है.",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms",
+        "link",
+        "जिसमें",
+        "भेज",
+        "कृपया"
+      ],
+      "sentiment": null,
+      "tool": "send_sms",
+      "text": "कृपया बताएं, क्या आपको SMS में link मिल गया है? मैं अभी एक SMS भेज देती हूँ जिसमें आपका",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_link_opened",
+      "base_intent": "open_link",
+      "keywords": [
+        "link",
+        "open",
+        "try",
+        "करिए",
+        "मिला"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Link मिला link open कर रही हूं कह रहा है thirty days बाद try करिए.",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "link",
+        "कृपया",
+        "बताएं",
+        "open",
+        "जाए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इंटरनेट connection चेक करें और link को एक बार फिर से try करें। कृपया बताएं जब link open हो जाए।",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "बार बार",
+        "बोल",
+        "चुकी",
+        "चार"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "तीन चार बार कर चुकी हूं बार बार thirty days बाद बोल रहा है.",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "आपसे",
+        "connect",
+        "जल्दी",
+        "team",
+        "issue"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कुछ technical issue लग रहा है। हमारी team जल्दी आपसे connect करेगी।",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "thank"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok, thank you.",
+      "entities": []
+    }
+  ]
+}

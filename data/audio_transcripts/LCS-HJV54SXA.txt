@@ -1,21 +1,17 @@
-Agent: वाइफ ग्रेक होते हैं अम्मा, केपड़ लोबल सेकरेटी
-Customer: आउट सॉर्स है,
-Agent: सर? आउट हैं अम्मा? कॉंट्राक्ट्स लेटिंग कंसन होते हैं अम्मा, कंप्लेंट पेटे हैं
-Customer: सर, केपड़ लोबल सेकरेटी
-Agent: आउट सॉर्स है, सर? केपड़ लोबल सेकरेटी आउट सॉर्स है, कंट्रेक्ट से लिए कंसन उन्दी कंप्लेंट रेज चे सारे सर चेपटे ये एंटी कंसन
-Customer: अमा लीड्स अन्य पेक लीड्स होते हैं बापा
-Agent: कस्समर नमबर एक एक्जांपल दिवने सर पेक लीड्स होते हैं चेक जेस्तानो अभी सर लीड दे डिटेल्स एक एक्जांपल दिवन हेलो हेलो सब्सक्राइब
-Customer: करते हैं सब्सक्राइब करते हैं माक वच्चे लीड्स
-Agent: अल्ली फेस लीड्स वच्चने नामा? आ लीड्स दी डीटेल्स
-Customer: अकटी एक्जांपल लिबाइंडी सर रीसेंट
-Agent: का माटलाइड अवी फेस लीड्स वच्चने अवी जनार्धन जनार्धन अल्ली वक़ती वच्चो सूच्छोड़ दी कारण मेरे लाइंग
-Customer: ये चीज़ ओपन हो
-Agent: रहते हैं ये उन्हें उन्हें अभी मैंने फिल्टर कर सकते हैं। अब मैंने कम्युनिकेशन नहीं है। अगर मैंने फिल्टर कर सकते हैं।
-Customer: अगर मैंने फिल्टर कर सकते हैं। अगर मैंने फिल्टर कर सकते हैं। ये वो, मना की यहाँ ये, ये कार्यवेद्धवान के लिए कोई कोई
-Agent: कोई कोई नहीं जाएँगड़ा? अधि मन्नम फिल्टर चेहिएलेम, सर, नेन आधे चेप्तुनाम। जस्टाइट अनेदी ओन्लाइन सोर्स उन्टेंगे,
-Customer: ओपन सोर्स उन्टेंगे, येकड़ा एक जरूर आज पूर्टिक पूर्टिक कर देते हैं इंड्रेस्टिंग पूर्टिक कर देते हैं जितंग में पलांग सैक्टिन
-Agent: उन्हें मार्क टो कार्ज जावालने अपड़े मात्रे मात्रे यहोंने यूज़ टो आज यहोंने यहोंने बिजनेस विलेटर फोटोस विलेटर
-Customer: ना अधिक विलेटर
-Agent: ना आओने सेर वाली येवर होने येदी मनेकी सेट्पर कादा सर्पड़ून आपको कॉल सेंटर की कॉल होती
-Customer: आप वाली येवर के लिए आदो वेरो वेरे एक जाते उन्हारो अदि इंडरेस्ट येला बेंकटेटा
-Agent: रमना लेकोंटे से प्रेया ना येवर तरुप पोकुना ने साम सब्सक्राइब करने के लिए कॉल कर रहता है, मैंने feedback link share होता है। मैंने कैसे बात करने के लिए रेटिंग दें। 6-10 पॉजिटी है। पॉजिटी रिस्पॉंस 10 दें। यह कॉल के सर्विस रिलेटेड नहीं है। अगर हमारे प्रभावित हैं, हमारे प्रभावित नहीं है। अगर हमारे प्रभावित हैं,
+Agent: JustDial వాస్ వేకావుతుంన్ అమ్మా కెప్పుర్ లోబల్ సెక్యరోటి ఆఉట్ సోర్సే సేర్ సేర్ JustDial ఉండి మాట్లరుతునన్ సర్ కస్టమర్ సర్విస్టున్ ఉండి కంట్రక్ట్ సిమిరు కంసన్ ఉండి కంప్లైంట్ రేస్ చేసారు సర్ చేప్పండి ఎంటి కంస Adi sir, lead ది, details ఉకట్టి, example ఇవండి, check జేస్తాము. Hello. Voice కట్టావుతుది, sir, మేది.
+Customer: Hello. Yes, sir. Okay, sir.
+Agent: Sir, నా పేర్
+Customer: గితాంజులి, చెప్పండి Sir. కర్యా నానా,
+Agent: నేర్ పేర్ గితాంజులి, నా పేర్ వెంగటేస్తో. మాకు ఉచ్చే లీడ్స్ అన్ని ఫేస్ లీడ్స్ ఉచ్� JustDial ಈ ಈ
+Customer: Market requirement అన్నారు అన్నారు
+Agent: Block based ఇంటే కొంచ్చం response తగ్గిపుతు తగ్గిన పరవాలేయు మీ blockchain ఇంటే ఒక వన వేక్ వర్కు చేస్తాను శూడా నీ response అల్కు ఉస్తుందీ అనే research లీచ్చాను అదు నానా �
+Customer: I am tagging you instead of coming here, sir. You are the
+Agent: perfect candidate for
+Customer: me. I am a good candidate for at least one month. I should have seen your target, right? We can't filter that, sir. JustDial
+Agent: has an open source. What is the requirement of this process? మాట్లాడి requirement
+Customer: ఇంటి కనుక్కుని పంబిచ్చేది కాదు ప్రాసేస్ అనేది కనుక్కుని ప్రాసేస్ అనేది
+Agent: Ok Sir, I am doing a blog. See how the response will be in one week. Increase the rating a little. I have put a link in your whatsapp. You can increase it by sending it to the family, friends, relatives, whoever you have. Business related, photos related, etc.
+Customer: There are people in our field office. They just asked. It came to us again. What did you ask? Who
+Agent: did you ask? What did you ask JustDial? What did you ask JustDial? Process ఇదే ఉంట్తాది Sir మనకి JustDial ఉంట్తాది Sir ఇదే ఉంట్తాది Sir
+Customer: ఇదే ఉంట్తాది Sir ఇదే ఉంట్త Payment ని పల్లా, Service
+Agent: ని పల్లా ఉక్కే నా? Thank you for calling us.

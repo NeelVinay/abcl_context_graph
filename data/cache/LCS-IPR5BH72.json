@@ -10,10 +10,7 @@
       "intent": "agent_greet",
       "base_intent": "open",
       "keywords": [
-        "लाइन",
-        "जस्टाइल",
-        "पाने",
-        "डॉटकाम"
+        "लाइन"
       ],
       "sentiment": null,
       "tool": null,
@@ -28,7 +25,7 @@
       "base_intent": "other",
       "keywords": [
         "यार",
-        "पाने",
+        "इश्वा",
         "वाल"
       ],
       "sentiment": null,
@@ -43,6 +40,7 @@
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
+        "ना।",
         "वीडियो"
       ],
       "sentiment": null,
@@ -57,6 +55,7 @@
       "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
+        "ना।",
         "लेट"
       ],
       "sentiment": null,
@@ -72,8 +71,7 @@
       "base_intent": "agent_handle",
       "keywords": [
         "पेंडिंग",
-        "सिस्टम",
-        "इन्हों"
+        "सिस्टम"
       ],
       "sentiment": null,
       "tool": null,
@@ -143,7 +141,6 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "पढ़ता",
         "पूर्ण"
       ],
       "sentiment": null,
@@ -170,8 +167,7 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "कंपनी",
-        "पूर्ट"
+        "कंपनी"
       ],
       "sentiment": null,
       "tool": null,
@@ -186,10 +182,10 @@
       "base_intent": "resolution",
       "keywords": [
         "कॉल",
+        "kyc",
         "टाइम",
-        "टीम",
-        "ऑप्शन",
-        "अपडेट"
+        "अपडेट",
+        "टीम"
       ],
       "sentiment": null,
       "tool": null,
@@ -204,7 +200,6 @@
       "base_intent": "other",
       "keywords": [
         "लगता",
-        "लाओ",
         "एक्शन",
         "पूछे"
       ],
@@ -220,8 +215,8 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "टीम",
         "kyc",
+        "टीम",
         "प्रूफ",
         "लाँ"
       ],
@@ -237,8 +232,8 @@
       "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "टीम",
         "kyc",
+        "टीम",
         "पूछे"
       ],
       "sentiment": null,
@@ -253,10 +248,8 @@
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "नंबर",
         "उन्होंने",
-        "नानी",
-        "इन्होंना"
+        "नंबर"
       ],
       "sentiment": null,
       "tool": null,
@@ -284,8 +277,7 @@
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "उन्होंने",
-        "नानी"
+        "उन्होंने"
       ],
       "sentiment": null,
       "tool": null,

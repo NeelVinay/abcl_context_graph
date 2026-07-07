@@ -7,89 +7,106 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_greet",
-      "base_intent": "open",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "सपोर्ट",
-        "अंत",
-        "कॉन्ट्राक्ट",
-        "इन्दा"
+        "justdial",
+        "customer",
+        "support",
+        "contract",
+        "issue"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "पार्णिया साइडेंटेस सर इदु जेस्टेड इन्दा कॉल्यूमेड पेवेद वर्षी ना कस्टमाल सपोर्ट इन्दा उन्दु कॉन्ट्राक्ट लेटेड अंत",
+      "text": "How are you sir? How are you? Sir, this is JustDial calling from customer support. What is the issue with the complaint raised that the contract is delayed? Sir, what is the issue with the complaint raised that the contract is delayed? Sir, what is the issue with the complaint raised that the contract is delayed? Sir, what is",
       "entities": []
     },
     {
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [],
+      "intent": "customer_greet",
+      "base_intent": "open",
+      "keywords": [
+        "issue",
+        "complaint",
+        "raised"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "एबुट इदु कंप्यून्ट रेजमेड",
+      "text": "the issue with the complaint raised that",
       "entities": []
     },
     {
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "इश्यू",
-        "इदर"
+        "contract",
+        "issue",
+        "what",
+        "complaint",
+        "raised"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "इदर एन इश्यू इतु सर इदु वर्म सर उन्दु कॉन्ट्राक",
+      "text": "the contract is delayed? Sir, what is the issue with the complaint raised that the contract is delayed? Sir, what is the issue with the complaint raised that the contract",
       "entities": []
     },
     {
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_greet",
-      "base_intent": "open",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "number",
-        "self",
-        "rental",
-        "car"
+        "contract",
+        "issue",
+        "what",
+        "complaint",
+        "raised"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "car rental, self-drive number car rental, self-drive, car rental, car rentals, car",
+      "text": "is delayed? Sir, what is the issue with the complaint raised that the contract is delayed? Sir, what is the issue with the complaint raised that the",
       "entities": []
     },
     {
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "car"
+        "contract",
+        "issue",
+        "what",
+        "complaint",
+        "raised"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "rentals, car",
+      "text": "contract is delayed? Sir, what is the issue with the complaint raised that the contract is delayed? Sir, what is the issue with the complaint raised that the contract is delayed? Sir, what is the issue with the complaint raised that the contract is delayed? Sir, what is the issue with the complaint raised that the contract is delayed? Sir,",
       "entities": []
     },
     {
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [
-        "car"
+        "contract",
+        "issue",
+        "number",
+        "right",
+        "what"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "rentals, car",
+      "text": "what is the issue with the complaint raised that the contract Car rental, self-drive number. Okay. Car rental, self-drive, car rental, car rental for outstation. Okay. Car rental for self-drivers, right?",
       "entities": []
     },
     {
@@ -99,11 +116,12 @@
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "car"
+        "leads",
+        "take"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "rentals, car",
+      "text": "Okay. Sir, 161 leads mati talai tingal naar, ellar take or hate",
       "entities": []
     },
     {
@@ -113,88 +131,95 @@
       "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "car"
+        "leads",
+        "naam",
+        "confirm"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "rentals, car",
+      "text": "aa? Aave maram, vandhu leads confirm aagin laak naam,",
       "entities": []
     },
     {
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "इतना",
-        "लीज",
-        "car"
+        "customer",
+        "leads",
+        "like",
+        "searches",
+        "online"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "rentals, car rentals, ता 161 लीज में इतना लाइटिंग में लाइटिंग",
+      "text": "sir. Okay. Sir, main jain customer nodadhaga like online searches ina nimge leads indaak thirudu, okay?",
       "entities": []
     },
     {
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "बढ़ता",
-        "स्टेट",
-        "दिए"
+        "searches",
+        "filter"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "वेला वेला स्टेट बढ़ता है दबना, यारों पार्किंग बढ़ता है दिए, यारों ड्राइडिंग एसा बढ़ता",
+      "text": "Na, issara searches ki filter maadi. Ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex-ex- बात कर रहे हैं। आकरमा,",
       "entities": []
     },
     {
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "बढ़ता",
-        "दिए"
+        "lead",
+        "leads",
+        "per",
+        "thing",
+        "genuine"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "है दिए, वेला वेला बढ़ता है दिए, यारों पार्किंग",
+      "text": "पड़मे leads करते हैं, genuine leads करते हैं। पड़मे leads करते हैं। Okay sir, as per such as of the thing, you are the lead candidate, okay?",
       "entities": []
     },
     {
       "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "बढ़ता",
-        "दिए"
+        "thank",
+        "sure"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "बढ़ता है दिए, यारों ड्राइडिंग एसा बढ़ता",
+      "text": "Okay, okay, thank you. Sure.",
       "entities": []
     },
     {
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_ask",
+      "base_intent": "question",
       "keywords": [
-        "दिए",
-        "खड़मे"
+        "issue",
+        "any",
+        "other"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "है दिए, यारों ड्राइडिं खड़मे लीज्ज करते हैं यह यह लीज्ज करते हैं ओके ओके",
+      "text": "Any other issue you have, sir?",
       "entities": []
     },
     {
@@ -204,11 +229,43 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "सब्सक्राइब"
+        "all"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "ओके ओके सब्सक्राइब करें",
+      "text": "No, no, no, not at all.",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "thank",
+        "any",
+        "complaint",
+        "don",
+        "now"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Sure. Now, if you don't have any complaint, please wait, okay? Okay, okay. Sure, thank you, sir. Thank you for sharing this story with us. Thank",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "thank"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "you. Okay, thank you.",
       "entities": []
     }
   ]

@@ -1,29 +1,37 @@
-Customer: Good evening, welcome to jaisal.com, shainaf.com, customer service department. How may I help you?
-Agent: Sir, मुझे leads बहुत irrelevant आ रहे हैं जो job या marketing के लिए है और आपके दो दिन से leads बहुत नहीं आ रहे
-Customer: हैं क्या बोल रहे है, sir?
-Agent: मैं कह रहा हूँ, मुझे leads जो आ रहे हैं बहुत irrelevant
-Customer: आ रहे हैं leads proper
-Agent: नहीं आ रहे
-Customer: हैं? नहीं क्या issue आ था lead में?
-Agent: mostly वो job के लिए है या marketing के लिए call होते है mobile
-Customer: number दीजिये register 7021 590 734 ये यस्ट 211 computer institute के नाम से business दिख रहा है sir correct मैं आपका नाम जान सकती हूँ तो? येश जी और लीड़ में क्या प्रॉब्लम आता? कॉलेज अच्छी नहीं है या लीड़ ही
-Agent: नहीं आ रही आपको? अभी दो दिन से तो कुछ भी लीड़ नहीं है तो इसके पहले
-Customer: जो आते थे ना वो सारे अलग-अलग purpose
-Agent: की लिए होते थे मतल या कुछ जिनको साफ सील होता है ऐसा कुछ अलग-अलग होता है अगर आप जिनका डाटा देखोगे तो काफी सारे ऐसे लीडियो जो दोंबी भी नहीं है या कल्यान ऐसे सब पर इच्छे आ रहे हैं जबकि अपना चाहिए
-Customer: इसको काम ही दिया इसमें ओके आउट अप वीडिय ताकि आपको बाहर का लीड नहीं आया, आपने जो एक लाइट दिया है, वहीं चाहिए,
-Agent: ठीक है, यह एक लाइट नहीं चाहिए, क्योंकि उनको ऑनलाइन
-Customer: सीखता है, उनको उन्हें बाहर से भी सीखा सकते है, पर उनको ऑफलाइन ही करना होता है, तो वो नहीं होता है, ठीक है,
-Agent: नहीं नहीं कोई चेंजी कोई किया बस तुझे बार बार एक तो ऑप्शन लगे कि review किन को review category है सा
-Customer: एक सेकंडा में check कर लेती क्या issue है 5 तारीखो लास्ट धीर रही थी कल एक दी मुझे राज्य नहीं गई हाँ hold
-Agent: कीजिए सा मुझे एक message भी भी आया था वच्चा से कि मैंने request किया क्योंकि ऐसे तो refresh में दिया नहीं है
-Customer: मुझे तो continue रखना है नहीं तो contract तो ht भी आपका visibility भी है सारी 47 keywords आपके contract में तो problem तो कुछ नहीं है मैंने अभी complaint note down किया है contract को पूरा फिर से re-update करके देती हूँ फिर आप देखती ही कैसा response आ रहा है ठीक है active है sir नाम तो दिख रहा है आपका
-Agent: सब जगह ओके और जिसका मेरे लिए ये JD Plus और JD C के बारे में बात करना था जी ये मेरे account यदी है या नहीं है
-Customer: एक second sir फिलाल जो दिख रहा है list में नहीं है sir
-Agent: तो किसी ना मेरे कॉंटर से भी शार्ट किया था लगभग 3 मैने हो गया है बात को देया दिन में ना हाँ तो विमर जी करके
-Customer: मेरे पास आये थे उन्होंने
-Agent: मुझे बुला का करेंगे इससे बाद में हमारा काफी टाइम बात हुआ फिर आपके टीम में कॉल किया पर अपनी तो को� वेरिफाइड
-Customer: जो है वो मतलब चार्जेबल है तो पे करना होता है उसके लिए लेकिन अगर अपने प्राइंट ने दिया था या मेल पे या वाटसप पे कहीं से चैट किया था
-Agent: आप लोगों में नहीं और भली कि वो ऑफिस में आये थे उन्होंने बोला कि अगर आप आपके आ� तो वो उसी चीज के लिए मैंने लॉक करने के लिए किया था
-Customer: ठीक है आप में जैसे थोड़ा सा टाइम अलॉग कीजिए सर वीमल से बात करेंगे
-Agent: मेरे पास क्योंकि वो अभी फोन भी नहीं उठा
-Customer: रहे मेरा हाँ मैं चेक पर रिप्लाई दूंगी करें पिंज नहीं उठा रहे ठ इस call के बाद एक link आएगा तो rating करना हो मेरे लिए होगा sir और कुछ पहली रही जर्जाल के app पे भी option है customer support का आप race कर सकते हैं आपको हम optionally call कर लेंगे sir ठीक थी चलेगा ठीक थी thank you so much sir thank you for calling digital.com have a nice day
+Customer: Good evening. Welcome to Jaisal.com. Shaina from customer service department. How may I help you?
+Agent: Sir, I am getting leads very early which are for job or marketing purposes. And I am not getting leads for two months. What are you saying, sir? I am saying that I am getting leads which are irrelevant. Leads are
+Customer: not coming properly? No. What issues do you face in leads?
+Agent: Mostly वो job की लिए या marketing की लिए call होते है।
+Customer: Mobile number दीजिये
+Agent: register 7021 590734 ये
+Customer: just211 computer institute के नाम से business लिख
+Agent: रहे हैं sir Correct
+Customer: May I know your name sir? Yes. What is the problem with leads? Is the quality not
+Agent: good or are you not getting any leads? There are no leads from the previous two teams. But the ones that used to come before this were for different purposes only. They are more looking for
+Customer: complicated calls. Okay, so will you give me feedback? Sir, when you call, what do the customers say? What are the requirements? First
+Agent: of all, someone has to fill some bulk of the WhatsApp plan. If they have to run on Google, then we also provide that. Yes. या कुछ जिनको staff की होता है। ऐसा कुछ अलग-अलग होता है। अगर आप देखोगे तो काफी सारे ऐसे leads हैं जो Domini या Kalyan ऐसे सब पर इसके आ रहे हैं। जबकि अपना customer से कामी ही दिया इसमें। Okay.
+Customer: Out of email जो आ रहा है उसके लिए मैं restriction लगा सकती हूँ sir. ताकि आपको बाहर का lead ना है। आपने जो area का lead दिया है, वहीं से
+Agent: है। क्यूंकि उनको online चीज़ता है, उनको बाहर से भी
+Customer: चीज़ा सकते हैं। पर
+Agent: उनको offline भी
+Customer: करना होता है क्या वो नहीं होता है। ठीक है। मैंने restriction apply कर दिया है। Sir, lead भी आप कह रहे है के 2 दिन से lead भी नहीं हाई
+Agent: नहीं हुई। कोई चीज़ नहीं कीज़ किया। बस तुझे बार बार ऐसे option ला रहे हैं कि review, pincode, review category है।
+Customer: एक सेकंडा में check कर लेती क्या issue है। पांच तारीख को last day रहे
+Agent: थी। कल एक day में ज़राज नहीं गई है। Hold कीज़ है। मुझे एक message भी दिया है था WhatsApp पे कि मैंने request किया ह Okay, aiko to request mo nahi kiya nahi hai, mujhe to continue
+Customer: rathna hai. No, so contract to active aapka, visibility bhi hai, sari 47 keywords aapke contract mein
+Agent: hai. Right, right.
+Customer: No, so problem toh kuch nahi hai, maine abhi complaint note down kiya hai. Contract पूरा फिर से re-update करके देती हूँ, फिर update ही करता है response आ रहा है। Active है sir, लाम तो दिख
+Agent: रहा है आपका सब जगह। Okay, अब इसका मिले यह JD Cross और JD CC बात करना था। यह मेरे account में भी है या नहीं है।
+Customer: Sir, फिलाल जो दिख रहा है, list में नहीं है sir।
+Agent: I started my contract about 3 months ago. So, he came to me and told me that he will do it. After that, we talked for a long time and then your team called. But it is not getting resolved. So, he was going to give you a
+Customer: complimentary or pay?
+Agent: Yes, yes, complimentary. Because he said that if you take a one-year plan, you will not get it, but if you take a three-year plan, they will provide it to you. So, I did it for three years. Okay,
+Customer: so the verification is chargeable, so you have to pay for it. But what did the management say to you? Did they give it to you via mail or chat on WhatsApp? No,
+Agent: they came to the office and said that if you sign up today, I have paid an upfront amount of 6 months. I mean, I have 2 EMI's which I am currently doing. तो उसी चीज़ के लिए मैंने लॉक करने के लिए किया था। ठीक
+Customer: है, आप में जैसे थोड़ा सा time
+Agent: allow कीज़े सा। हीमल से बात करने के लिए। क्योंकि वो अभी phone भी नहीं उता
+Customer: रहे मेरा। हाँ, message के reply के नहीं करे, phone
+Agent: भी नहीं उता रहे।
+Customer: ठीक है, sir, मैं उसे
+Agent: बात करती हूँ।
+Customer: इस call के बाद एक link आएगा तो rating करना मेरे लिए होगा sir। और कुछ query रही है JustDial के app पे भी option है customer support का। आप race कर सकते हैं। आपको हम optionally call कर लेंगे sir। चले रहा है।

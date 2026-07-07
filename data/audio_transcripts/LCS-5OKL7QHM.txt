@@ -1,5 +1,4 @@
-Customer: Hello Sir,
-Agent: we are talking about a portable solution Sir, I am talking about finance from customer service team, justdial.com Sir, you have arranged a callback, do you have any problem? Do you need
+Agent: Hello Sir, we are talking about a portable solution Sir, I am talking about finance from customer service team, justdial.com Sir, you have arranged a callback, do you have any problem? Do you need
 Customer: any help in
 Agent: the contract? Sir, do you need any help in the contract? Do you have any
 Customer: issue? Sir, I don't have any need. Lead

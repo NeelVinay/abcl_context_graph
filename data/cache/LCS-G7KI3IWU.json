@@ -9,9 +9,7 @@
       "type": "action",
       "intent": "customer_greet",
       "base_intent": "open",
-      "keywords": [
-        "वेलकम"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "गुड़ीविंग वेलकम गुड़ीविंग",
@@ -25,9 +23,9 @@
       "base_intent": "complaint",
       "keywords": [
         "उन्होंने",
-        "फोन",
-        "बाहर",
         "सबसे",
+        "बाहर",
+        "गलत",
         "ऐसी"
       ],
       "sentiment": null,
@@ -70,11 +68,11 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "चेक",
         "call",
         "lead",
-        "concern",
-        "लाइक"
+        "right",
+        "चेक",
+        "concern"
       ],
       "sentiment": null,
       "tool": null,
@@ -88,11 +86,11 @@
       "intent": "agent_acknowledge_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "लीड",
         "lead",
-        "उनको",
+        "issue",
+        "time",
         "share",
-        "फोन"
+        "लीड"
       ],
       "sentiment": null,
       "tool": null,
@@ -106,8 +104,7 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "फोन",
-        "उठा"
+        "फोन"
       ],
       "sentiment": null,
       "tool": null,
@@ -121,10 +118,10 @@
       "intent": "agent_acknowledge_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "बिजनेस",
         "उन्होंने",
+        "बिजनेस",
+        "गूगल",
         "ऐसी",
-        "जस्ट",
         "साइड"
       ],
       "sentiment": null,
@@ -167,9 +164,7 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "गूगल",
-        "लिस्टिंग",
-        "प्लान"
+        "गूगल"
       ],
       "sentiment": null,
       "tool": null,
@@ -183,11 +178,11 @@
       "intent": "agent_acknowledge_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "कॉल",
-        "लीड",
         "काम",
+        "लीड",
         "बोल",
-        "टाइम"
+        "marketing",
+        "उन्होंने"
       ],
       "sentiment": null,
       "tool": null,
@@ -201,11 +196,11 @@
       "intent": "customer_respond",
       "base_intent": "agent_handle",
       "keywords": [
-        "देखे",
-        "concern",
         "time",
+        "concern",
         "profile",
-        "searches"
+        "related",
+        "like"
       ],
       "sentiment": null,
       "tool": null,
@@ -219,11 +214,11 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
+        "लेकर",
         "उनको",
         "देखे",
-        "लेकर",
-        "आये",
-        "upload"
+        "reviews",
+        "photos"
       ],
       "sentiment": null,
       "tool": null,
@@ -238,10 +233,10 @@
       "base_intent": "agent_handle",
       "keywords": [
         "लीड",
-        "सब्सक्राइब",
         "बोल",
+        "बोला",
         "देखिए",
-        "बोला"
+        "सब्सक्राइब"
       ],
       "sentiment": null,
       "tool": null,
@@ -256,9 +251,9 @@
       "base_intent": "complaint",
       "keywords": [
         "call",
-        "देखिए",
         "lead",
         "मिल",
+        "second",
         "अंदर"
       ],
       "sentiment": null,
@@ -273,11 +268,11 @@
       "intent": "customer_respond",
       "base_intent": "agent_handle",
       "keywords": [
-        "ऐसा",
-        "मिल",
         "check",
+        "leads",
         "response",
-        "बोला"
+        "right",
+        "day"
       ],
       "sentiment": null,
       "tool": null,
@@ -292,9 +287,9 @@
       "base_intent": "complaint",
       "keywords": [
         "लीड",
-        "देखिए",
         "उन्होंने",
-        "फोन",
+        "देखिए",
+        "because",
         "उसने"
       ],
       "sentiment": null,
@@ -321,11 +316,11 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "टाइम",
         "मिल",
-        "पता",
         "पैसा",
-        "कहते"
+        "पता",
+        "टाइम",
+        "करूँगा"
       ],
       "sentiment": null,
       "tool": null,
@@ -355,7 +350,8 @@
       "keywords": [
         "बोल",
         "पता",
-        "सही"
+        "सही",
+        "जलत"
       ],
       "sentiment": null,
       "tool": null,
@@ -371,8 +367,7 @@
       "keywords": [
         "किस",
         "कनेक्ट",
-        "कुमार",
-        "बोर"
+        "मेर"
       ],
       "sentiment": null,
       "tool": null,
@@ -386,8 +381,7 @@
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "आये",
-        "कुमार"
+        "आये"
       ],
       "sentiment": null,
       "tool": null,
@@ -401,8 +395,7 @@
       "intent": "customer_ask_question",
       "base_intent": "question",
       "keywords": [
-        "जिससे",
-        "जेडी"
+        "जिससे"
       ],
       "sentiment": null,
       "tool": null,
@@ -417,8 +410,7 @@
       "base_intent": "complaint",
       "keywords": [
         "नंबर",
-        "फोन",
-        "उठा"
+        "फोन"
       ],
       "sentiment": null,
       "tool": null,
@@ -432,10 +424,10 @@
       "intent": "customer_respond",
       "base_intent": "agent_handle",
       "keywords": [
-        "चेक",
-        "नंबर",
-        "कीजिए",
         "issue",
+        "चेक",
+        "कीजिए",
+        "नंबर",
         "resolution"
       ],
       "sentiment": null,
@@ -450,10 +442,10 @@
       "intent": "agent_ask",
       "base_intent": "question",
       "keywords": [
-        "अच्छी",
-        "मिल",
         "problem",
-        "refund"
+        "मिल",
+        "solve",
+        "अच्छी"
       ],
       "sentiment": null,
       "tool": null,
@@ -467,11 +459,11 @@
       "intent": "customer_acknowledge",
       "base_intent": "resolution",
       "keywords": [
-        "concern",
-        "मिलेगा",
+        "help",
         "complaint",
         "raise",
-        "help"
+        "concern",
+        "definitely"
       ],
       "sentiment": null,
       "tool": null,
@@ -485,11 +477,11 @@
       "intent": "agent_acknowledge_complaint",
       "base_intent": "complaint",
       "keywords": [
+        "check",
         "लीड",
-        "देखिए",
         "ऐसा",
-        "उनको",
-        "ऐसे"
+        "direct",
+        "उनको"
       ],
       "sentiment": null,
       "tool": null,
@@ -504,10 +496,10 @@
       "base_intent": "agent_handle",
       "keywords": [
         "नहीं हो",
-        "चेक",
-        "लीड",
-        "काम",
-        "शेयर"
+        "lead",
+        "check",
+        "leads",
+        "issue"
       ],
       "sentiment": "frustrated",
       "tool": null,
@@ -521,8 +513,8 @@
       "intent": "agent_ask",
       "base_intent": "question",
       "keywords": [
-        "बाकि",
-        "ecs"
+        "ecs",
+        "बाकि"
       ],
       "sentiment": null,
       "tool": null,
@@ -572,8 +564,8 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "महीने",
-        "month"
+        "month",
+        "महीने"
       ],
       "sentiment": null,
       "tool": null,
@@ -589,9 +581,9 @@
       "keywords": [
         "call",
         "thank",
-        "concern",
+        "issue",
         "number",
-        "issue"
+        "time"
       ],
       "sentiment": null,
       "tool": null,

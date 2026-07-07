@@ -82,6 +82,19 @@ def _write_outputs(g, calls, args) -> None:
     print(f"Wrote {turns}   <- per-turn intent capture (every agent/customer turn)")
     print(f"Wrote {gls}   <- glossary of what each intent means")
     mode = getattr(args, "graph", "flow")
+    if mode in ("sop", "sop-exec"):
+        from src.dispositions import assign_dispositions
+        from src import sop_flow
+        assign_dispositions(calls)
+        if mode == "sop":
+            sop = sop_flow.render(calls, str(out_dir / "sop_flow"))
+            if sop:
+                print(f"Wrote {sop}   <- ABCL SOP call-flow (fixed procedure + real call counts)")
+        else:
+            sop = sop_flow.render_exec(calls, str(out_dir / "sop_exec"))
+            if sop:
+                print(f"Wrote {sop}   <- ABCL SOP exec view (collapsed, C-suite clean)")
+        return
     if mode in ("flow", "both"):
         from src.dispositions import assign_dispositions
         assign_dispositions(calls)     # semantic call-level disposition for the early branch
@@ -119,8 +132,10 @@ def main() -> None:
                     help="node shape on the graph (ellipse is the clean default)")
     ap.add_argument("--words-on-graph", action="store_true",
                     help="put a sample phrase on each node (off by default; words live in report.md)")
-    ap.add_argument("--graph", choices=["flow", "dfg", "both"], default="flow",
-                    help="flow = top-to-bottom call-flow tree (default); dfg = old process graph")
+    ap.add_argument("--graph", choices=["flow", "dfg", "both", "sop", "sop-exec"], default="flow",
+                    help="flow = flow tree (default); dfg = process graph; "
+                    "sop = fixed ABCL SOP call-flow with real call counts overlaid; "
+                    "sop-exec = C-suite view (collapsed form steps, no zero-count branches)")
     ap.add_argument("--flow-top-k", type=int, default=0,
                     help="flow tree: max branches per node before folding into a stub "
                     "(0 = show EVERY flow, no folding)")

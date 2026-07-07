@@ -7,30 +7,28 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge_complaint",
-      "base_intent": "complaint",
+      "intent": "agent_greet",
+      "base_intent": "open",
       "keywords": [
-        "लीड",
-        "काम",
-        "बिजनेस",
-        "आउट",
-        "एरिया"
+        "justdial",
+        "com",
+        "department"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "कर दो सर एक बिजनेस चल रहा है आपका जलता है लॉट कॉम्पेस के रिगार्डिंग हमने एक टिकट रेसीव कर रहा है आपका कुछ इशु फेस कर रहे हैं लीड से रिलेटिट कोंटेक्ट में लीड से रिलेटिट कोई इशु फेस कर रहे हैं सर बिजनेस में आपने कोई आउट � नहीं गुड़गाओं को एक पिन कोड लाइव है ठीक है मैं आपको एक करके आपके पिन कोड एरिया बता रहा हूँ अब बताना इसमें काम करते हो नहीं करते हो ठीक है बताओ तो रोहीनी डी एन सी रोहीनी",
+      "text": "Hello Hello مرحبا سنو سر میں لی بات کر رہا ہوں JustDial.com کے لیے department سے مانشو کمار جیسے میری بات ہو رہی",
       "entities": []
     },
     {
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "डी एन सी",
+      "text": "ہے؟ بولیں سر",
       "entities": []
     },
     {
@@ -40,25 +38,30 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "डबल",
-        "कोड",
-        "पिन"
+        "leads",
+        "business",
+        "category",
+        "ticket",
+        "response"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "रोहीनी इसका पिन कोड है डबल वन ड",
+      "text": "Business owner leads, inquiry, category, ticket, response को लेकर बात कर रहے हैं। गुड़गाउं की pin code लाइज है। नहीं कहां रही है। रोहिनी कही है। NDNC रोहिनी भी आता है। मंगोलपुरी। बुद्धवियार। श्रावल नगर। मुलतान नगर। श्रागड़ी। विष्णो कार्डन कुड़गाउ। पच्चिम विहार, खंजाबला, नागलोई, संजाईबाद, सैलिमरबाद, संजयगादी ट्रासपور्ट नगर, पिलक नगर, बवान, नी ओशोक नगर, अगर आप चाहते हैं तो आप मुझे कोई pin code area बता सकते हैं जो इसमें add करना है। I'll",
       "entities": []
     },
     {
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
-      "keywords": [],
+      "intent": "customer_ask_question",
+      "base_intent": "question",
+      "keywords": [
+        "check",
+        "out"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "नहीं कहाँ कहाँ सर ये जी एंडी एंसी ये",
+      "text": "check it out,",
       "entities": []
     },
     {
@@ -68,12 +71,15 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "नगर",
-        "कही"
+        "check",
+        "share",
+        "link",
+        "message",
+        "उसमें"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "रोहिनी कही है सर एंडी एंसी ये रोहिनी भी आता है सर आपका तो ठीक है मंगोलपुरी ओके बुद्धवियार ओके श्रावल नगर ठीक है मुलतान नगर",
+      "text": "double one, double zero, double three. I'll check it out, double one, double zero, double three. ठीक है जी आपको बस एक SMS आएगा SMS में आपको एक link प्राप्त होगा। जैसे आप link पर click करते हैं उसमें लिखाएगा approve changes। उस पर click करके approve कर दीजिए। मैंने आपके साथ share किया है। text message पर receive होगा।",
       "entities": []
     },
     {
@@ -82,46 +88,31 @@
       "type": "action",
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
-      "keywords": [],
+      "keywords": [
+        "check",
+        "लीजिए।"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "ठीक है श्रागडी",
+      "text": "please check कर लीजिए।",
       "entities": []
     },
     {
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge_complaint",
-      "base_intent": "complaint",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "सब्सक्राइब",
-        "चाहते",
-        "एरिया",
-        "दूँगा",
-        "डबल"
+        "call",
+        "service",
+        "ticket",
+        "time",
+        "right"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "ठीक है विश्णो गार्डियन गुड़ पच्चिम विहार, खंजाबला, नागलोई, संजारी बाग, शालिमर बाग, चंजे गादी ट्रास्पोर्ट नगर, पिलक नगर, बवाना, नियो शोक नगर, अगर आप चाहते हैं तो आप मुझे कोई पिन कोड एरिया बता सकते हैं जो इसमें एड कराना हूँ आपको डबल डबल दियो थर्टी द्री नहीं ये एड नहीं था एड कर दिया सर ये सब्सक्राइब करते हैं सर बिलकुल मैं अभी एड कर दूँगा हाँ",
-      "entities": []
-    },
-    {
-      "index": 7,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_raise_request",
-      "base_intent": "resolution",
-      "keywords": [
-        "सब्सक्राइब",
-        "नंबर",
-        "शेयर",
-        "लगा",
-        "रिसीव"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "दबल दबल सब्सक्राइब कर दीजिए कि मैंने आपके साथ शेयर के टेक्स मैसेज पर रिसीव होगा प्लीज सेट कर दीजिए नंबर नंबर अगर बात करने का तरीका अच्छा लगा हो चाहिए सब्सक्राइब करें",
+      "text": "receive किया sir آپने। all right sir आपना अप्रूफ चेंज कर दो। Done sir, میں نے یہاں سے update کر دیا। ابھی آپ کے پاس ultimate date, ATSA date آئے گی۔ All right sir, آپ سے ایک چھوٹے سے نیوے دن رہے گا۔ اس call کے بعد ایک feedback link آپ کے پاس آئے گا۔ اگر بات کرنے کا طریقہ اچھا لگاؤ 4 سے 10 تک rate کیجئے گا، خراب لگا 4 سے 5 تک کیجئے گا۔ Next time if anything happens, take a ticket from HSL's sales service portal.",
       "entities": []
     }
   ]

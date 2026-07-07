@@ -1,0 +1,226 @@
+{
+  "call_id": "de00ec0e-d218-4e5e-8027-9f3e05dfe178-transcript",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं मनोज कुमार जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं ma'am.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "समझ",
+        "समय",
+        "उपलब्ध"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ओह, समझ गई। क्या मनोज कुमार जी इस समय उपलब्ध हैं?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं ma'am.",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "call"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है, क्या मैं बाद में call कर सकती हूँ?",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "sorry",
+        "बजे",
+        "उससे",
+        "खेद"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ma'am खेद है वह sorry नौ बजे के बाद बात करना फिर आऐंगे. उससे पहले नहीं मिलेंगे आपको.",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "समय",
+        "time",
+        "ज़रूर",
+        "available",
+        "prefer"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ज़रूर। आप कौन सा दिन और समय prefer करेंगे? हम 10 AM से 7 PM, साथों दिन इस time available रहते हैं।",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "phone",
+        "बजे",
+        "शाम",
+        "पाएगी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ma'am शाम को नौ बजे के बाद आप phone करिएगा तभी बात हो पाएगी.",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "time",
+        "specific"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कोई specific time बता दीजिए।",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "बजे",
+        "करिए",
+        "पांच",
+        "सुबह"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ma'am सुबह पांच बजे करिए आप ही.",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "कॉल",
+        "कृपया",
+        "कीजिए",
+        "समय",
+        "माफ़"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "माफ़ कीजिए, हम सुबह 10 बजे से शाम 7 बजे तक कॉल कर सकते हैं। कृपया इस समयावधि में कोई दूसरा समय बताइए।",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "नहीं हो"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "नहीं. नहीं ma'am नहीं हो सकता फिर.",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_transfer_to_rm",
+      "base_intent": "transfer_to_rm",
+      "keywords": [
+        "आपसे",
+        "connect",
+        "जल्दी",
+        "thank"
+      ],
+      "sentiment": null,
+      "tool": "transfer_to_rm",
+      "text": "ठीक है, हम आपसे जल्दी connect करेंगे। Thank you।",
+      "entities": []
+    }
+  ]
+}

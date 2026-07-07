@@ -1,0 +1,74 @@
+{
+  "call_id": "b497790e-fa9c-4436-975e-812c274d458c-transcript",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं रविंदर कुमार निर्मल जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "कैसे",
+        "loan",
+        "मिलेगा",
+        "पंद्रह"
+      ],
+      "sentiment": "confused",
+      "tool": null,
+      "text": "और मेरी repay capacity तो है ही नहीं. को तो retire होती. पंद्रह साल हो गए मुझे कैसे loan मिलेगा बहत्तर साल मैंने pay करता",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_transfer_to_rm",
+      "base_intent": "transfer_to_rm",
+      "keywords": [
+        "relationship manager",
+        "मदद",
+        "समझ",
+        "connect",
+        "help"
+      ],
+      "sentiment": null,
+      "tool": "transfer_to_rm",
+      "text": "मैं आपकी स्थिति समझ सकती हूँ। Relationship Manager आपको सही तरीके से help कर सकेंगे। मैं अभी आपको Relationship Manager से connect कर देती हूँ जो आपकी बात विस्तार से समझेंगे और मदद करेंगे।",
+      "entities": []
+    }
+  ]
+}

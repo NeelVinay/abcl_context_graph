@@ -5,67 +5,47 @@
   "turns": [
     {
       "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "open",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello Hello అదు ఆ మేడంమేడి",
+      "entities": []
+    },
+    {
+      "index": 1,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_greet",
       "base_intent": "open",
       "keywords": [
-        "अल्लो"
+        "customer"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "अल्लो अल्लो",
-      "entities": []
-    },
-    {
-      "index": 1,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [
-        "कॉल",
-        "इन्हां"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "इन्हां देबर कॉल मत रहे हैं तो कॉल",
+      "text": "ఇదు ఉడ్డాక్టనో అత్నా మాచ్చరుట్టాయుదు customer",
       "entities": []
     },
     {
       "index": 2,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "देखेंगे",
-        "इन्हों"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "पीस मत रहे हैं ना बेजिब पर देखेंगे इन्हों सर",
-      "entities": []
-    },
-    {
-      "index": 3,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "देखेंगे",
-        "नोड़ता",
-        "चक्मा",
-        "इले"
+        "customer",
+        "support"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "नान चक्मा नोड़ता है इले यहाँ तो देखेंगे",
+      "text": "support ఇదు ఆ మేడంమేడి ఇదు ఉడ్డాక్టనో అత్నా మాచ్చరుట్టాయుదు customer support ఇదు ఆ మేడంమే� Inna దిబర కాల్ మట్లేసు కాల్ పీల్స్ మత్తేయన్న బీదిబర కల్లాయిను సానాం చక్మా నూడుదాగా ఇల్లి ఆవ్తవుదు ఇస్టులే కాటేగరియల్ అప్రువ",
       "entities": []
     },
     {
-      "index": 4,
+      "index": 3,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_other",
@@ -73,7 +53,19 @@
       "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "लेकिन लेकिन अप्रुवाल नहीं",
+      "text": "Sir, ಈ ಈ",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "ಈ ಈ Sir, మడ్డం అదు",
       "entities": []
     },
     {
@@ -82,24 +74,24 @@
       "type": "action",
       "intent": "customer_other",
       "base_intent": "other",
-      "keywords": [
-        "नेंगे"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "सर इस टिंजू नेंगे मुहतियों रिस्पेंड",
+      "text": "నావు ఏన అప్డేడ్ మడ్డం",
       "entities": []
     },
     {
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [],
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "executive"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "रहा है तो यादवाना पालपाल रही थे अगर",
+      "text": "అదు అదు ప్రేవా గల్డం మడ్డం అదు ఆ టైమగు మత్ర స్టేవ్ అంటు పొరుత్తే ఉందా అప్పున అవర వంస్టేట్ Executive న అరేంచ్ మర్వేకాతే నిమ్గే? అదే మర్ము ఏగ్సికిటివన అరేంచ్ మర్వేకాతే నిమ్గే? అదే",
       "entities": []
     },
     {
@@ -109,95 +101,12 @@
       "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "इसको",
-        "नोड़ता"
+        "thank",
+        "choosing"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "अगर इसको नहीं रही थे तो ना चप्मा नोड़ता है यादवाना पालपाल रहा है तो ना चप्मा नोड़ता है यादवाना पालपाल रहा है तो ना चप्मा नोड़ता है",
-      "entities": []
-    },
-    {
-      "index": 8,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [
-        "मड़म"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "सर मड़म अगर क्यान",
-      "entities": []
-    },
-    {
-      "index": 9,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "मड़म"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "मड़बेच मड़म अगर क्यान",
-      "entities": []
-    },
-    {
-      "index": 10,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [
-        "अरेंच"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "अगर क्यान मड़बेच मड़बेच एग्जिकेटिव न अरेंच मड़वे करते हैं निम्दी? अधे मड़वे मैं एग्जिकेटिव न नमकरेंदे",
-      "entities": []
-    },
-    {
-      "index": 11,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "अपलोड"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "येन अपलोड मेरे",
-      "entities": []
-    },
-    {
-      "index": 12,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "कार्चा नहीं है मड़वे वीडियोस पागली, इपोर्टर",
-      "entities": []
-    },
-    {
-      "index": 13,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "शुरू",
-        "अपलोड"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "पागली येन अपलोड मेरे कार्चा नहीं है मड़वे मैं एग्जिकेटिव न कल् शुरू है शुरू",
+      "text": "మర్ము ఏగ్సికిటివన అరేంచ్ మర్వేకాతే నిమ్గే? Thank you for choosing us.",
       "entities": []
     }
   ]

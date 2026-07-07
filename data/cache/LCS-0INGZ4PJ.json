@@ -5,34 +5,74 @@
   "turns": [
     {
       "index": 0,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_greet",
+      "intent": "customer_greet",
       "base_intent": "open",
       "keywords": [
-        "किरा"
+        "justdial",
+        "customer",
+        "com",
+        "support",
+        "good"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "अगर आपके लिए मैं किरा बात कर रही हूँ, जर्जायर डॉकम कस्टन में",
+      "text": "Hello! Good afternoon, I am just talking to JustDial.com customer support team. Good afternoon, I am just talking to JustDial.com",
       "entities": []
     },
     {
       "index": 1,
-      "speaker": "customer",
+      "speaker": "agent",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "चेक",
-        "call",
-        "सब्सक्राइब",
-        "नंबर",
-        "देख"
+        "justdial",
+        "customer",
+        "com",
+        "support",
+        "good"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "सपोर्ट टीम से आजय दिन आपके लिए गॉल रहे हैं कि आपको एरन रंगी चाह रहे हैं। वीडियो के लिए बताइए कि जो प्लाइंट आपको जलता है ये रहुना आपको लीजिए बताइए लेंको प्लाइंट को कंप्रेस्ट के लिए जरूर के लिए अच्छल में देखो क्या होता है न जजज़ा और जज़ज़ा राबोट करते हैं। मैडम मैंने उसको मेरा से पैक्रीमेंट बनना चाहता है। मैंने तो सीखा बोला था मैंको कस्टमर केट सब्सक्राइब शेवा नहीं बनना है। अभी मैंने सोड़ा घर साड़े सोड़ा घर यह मेरा material आने वाला है, मेरा माल आने वाला है, मेरा ही आने वाला है। मेरी बात सुनिये सर, अभी का अंचारी समीराई में तारी गलती आ रही है। हाँ, तो मैं बोला लो, कोई भी एक नंबर बोलो और चेक करें। अभी का अंचारी समीराई में तारी गलती आ रही है। हाँ अच्छी भाई ऐसा ऐसा है वो बोलता है नहीं कोई भी मैसेज नहीं आएगा आप पिक्की का कॉंट्रैक्ट करो करके अच्छे तीके मैं ऐसे ना चेंजेस करती है आपके लिए रस्टाइड सोर्ज बन करती है उसके माते को लीज़ की कॉंट्रैक्टी वो कमोगी लेकिन क्व जो inquiry है जो normal inquiry है जो latest है वो अंधिरी अंधिरी पे सबका आएगा sir मैं ऐसे बापर करती हूँ आप देख लें जाको response देगा आपका please madam sorry मैं बोल नहीं आओ या तो मैंको letter भी निकल के देगे कि sorry हमसे mission पर pending हो गई हम नहीं दे पा रहे हैं नहीं इसका process करें या तो फिर मैं letter दे मैं ऐसे प्रॉपर कर रही हूँ आप देखिये अब आपको response मिलने का प्रॉपर है सुझा होता हूँ आप सुनिये ना मेरा थैंक यू आपने call दिया है तब ही आपको प्रोफेशनली वर्ण सेट मैं तुम्हें जानता हूँ अच्छे से ठीक है ना तभी हमने contact किय रिक्वेस्ट करूँगी वेट कर रही हूँ और देखिए आपको रिस्पॉंज मिलेगा अभी। ठीक हूँ, थैंक यू समय। अम्सू, सारी आपको जुड़ी जाएगा। ठीक हूँ, शॉक आउट करेगा उनको बत ले, या कुछ लीजर भी हमें ले आपको रिक्वेस्ट करेंगे बेट करके देखिए आपको रिस्पॉन्स मिले आपको बेटर रिस्पॉन्स मिले और आपको एक इंफॉर्मेशन देना चाहूँगी जर्जल के अप्लीगेशन से पेशन में सपोर्ट अप्शन रही है कोई भी concern होगा विश्व रहेगा आपको �",
+      "text": "customer support team. Good afternoon, I am just talking to JustDial.com customer support team.",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "customer",
+        "support",
+        "ticket",
+        "area",
+        "location"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Agent customer support, ticket, area, location,",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "justdial",
+        "customer",
+        "call",
+        "support",
+        "thank"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "revenue, etc. Agent customer support, ticket, area, location, revenue, etc. Agent customer support, ticket, area, location, revenue, etc. Actually, what happens is that the judge will come to you and tell you what to do. Madam, I had to make a statement from my side. I was saying that I don't want to be a public servant of customer care. I have taken a package of 16,000-16,500. Because it happened at night. It happened on Monday. Our team was given to do it. That too, they say that the entire customer care has been made. My agent's number, my material is going to come, my goods are going to come, my ARN is going to come. Listen to me sir, all these mistakes are coming. Yes, then I will tell you, tell me any number and I will check it. JustDial promotes you from 3 states, right? Communications, web connectors and call search. So what happens in that, if they go to the website and search... No, no, what will I say, listen to me, listen to me. I understand one message, okay? So all these things, when a contract is made, they should be told at that time, right? अच्छी भाई ऐसा ऐसा है। वो बोलता है कोई भी message नहीं आएगा। आप ticket का contract करो करके। अच्छे तीके मैं ऐसे ना changes करके आपके लिए website tours बन करके। उसके मां आपकी leads की quantity वो कमोगे। लेकिन quality leads भाई जी। वो ही आये ना madam। household आये, cargo का आये। और जो leads अगर एक जो आती जो inquiry है, जो normal inquiry है, जो latest है, वो अंदिरी अंदिरी पे सबका आएगा। Sir, मैं ऐसे वापर करके आप देखे जाकर response देखें। Please madam, sorry मतलब मैं बोल नहीं आओ। या तो मेरे को letter में letter के देखें कि sorry हमसे mission में pending हो गई। आप नहीं देखा रहे हैं नहीं। इसका process करें या को थी मे मैं ऐसे proper कर रही है। आप देखिये अभी आपको response मिलेगा proper कर रही है। सुझा होता है। Thank you. आपने call दिया है। Then here to professional work है। जो आपको में जानता हो अच्छे से। ठीक है न। तभी हमने contract कर रहे हैं। But contract time पर हमने already bad situation में बात कर रहे हैं। I request you to vote and see if you will get a response now. Thank you sir. I am so sorry if you have any issues. No problem. We will sort it out at that time or you can give us a letter. I will do it properly and see if you will get a response. Thank you. Thank you so much. You most welcome. Have a nice day. Thank you.",
       "entities": []
     }
   ]

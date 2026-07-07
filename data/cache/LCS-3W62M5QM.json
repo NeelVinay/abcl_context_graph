@@ -7,16 +7,18 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask",
-      "base_intent": "question",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "ओपन",
-        "वाटसप",
-        "देखा"
+        "com",
+        "check",
+        "leads",
+        "message",
+        "complaint"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आपको वाटसप नहीं आया या अपने ओपन करके नहीं देखा था सर?",
+      "text": "गुड़ापुन, इगार बात कर ली, jazel.com से भरत मैट्रिज में बात हो रही है। आपने पांच तारीफ को complaint raise की थी, आपको complaint में leads की related issues आ रहे थे। हमने आपको WhatsApp पर एक message किया था, पांच तारीफ को आपको एक WhatsApp आया था, jazel की तरफ से, तो आपने वो check किया, आपने open करके",
       "entities": []
     },
     {
@@ -26,12 +28,11 @@
       "intent": "customer_ask_question",
       "base_intent": "question",
       "keywords": [
-        "चाहते",
-        "देखना"
+        "चाहते"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "क्या है क्या देखना चाहते हैं मैं बताओगे",
+      "text": "क्या है चार्च देखना चाहते हैं मैं बताओगे।",
       "entities": []
     },
     {
@@ -41,15 +42,15 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "चेक",
+        "check",
         "उसमें",
-        "देखते",
         "whatsapp",
-        "resolution"
+        "resolution",
+        "बेजा"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "सर क्योंकि वो जो WhatsApp हमने आपको भीजा था उसमें आपका Resolution था तो हमें यही जानना है कि हम जो अपने Clients को Resolution देखते हैं वो लग वो चेक करते हैं या नहीं करते हैं तो आपने वो Resolution",
+      "text": "Sir क्योंकि वो जो WhatsApp हमने आपको बेजा था उसमें आपका resolution था तो हमें यही जानना है कि हम जो अपने clients को resolution देखते हैं वो लोग वो check करते हैं या नहीं करते हैं। तो आपने वो resolution check किया था WhatsApp पे?",
       "entities": []
     },
     {
@@ -59,12 +60,11 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "चेक",
-        "whatsapp"
+        "check"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "चेक किया था WhatsApp",
+      "text": "No, no, no, check",
       "entities": []
     },
     {
@@ -73,73 +73,46 @@
       "type": "action",
       "intent": "agent_acknowledge",
       "base_intent": "backchannel",
-      "keywords": [
-        "चेक"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "पे मैंने वो चेक किया था है",
+      "text": "किया था है। अ�",
       "entities": []
     },
     {
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "चेक",
-        "प्रॉब्लम",
+        "problem",
         "उसमें",
-        "मोबाइल",
-        "सॉल्व"
+        "mobile",
+        "solve",
+        "सेट"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "अभी तो मोबाइल नहीं उसमें क्या हो चेक करना जरूरी है मैं पहले जो मेरी प्रॉब्लम हो वो तो सॉल्व कर दीजिए वो सच प्रॉब्लम हो",
+      "text": "अभी तो mobile नहीं उसमें क्या हो सेट करना जरूरी है। मैंने पहले जो मेरी problem हो वो तो solve कर दीजिये। सब problem नहीं है",
       "entities": []
     },
     {
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
-        "ओपन",
-        "भेज",
-        "देखोगे"
+        "काम",
+        "complaint",
+        "open",
+        "हाँ।",
+        "sir।"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "तो जो तो वो रेजुलेशन भेज रहा है सर हाँ हाँ तो आप ओपन करके देखोगे तो",
-      "entities": []
-    },
-    {
-      "index": 7,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "backchannel",
-      "keywords": [
-        "पड़ेगा",
-        "मालूम"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "आपको मालूम पड़ेगा",
-      "entities": []
-    },
-    {
-      "index": 8,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "अपने जो",
+      "text": "तो वो resolution भेज रहा है sir। हाँ, हाँ। तो आप open करके देखोगे तो आपको मालूम पड़ेगा अपने जो complaint रेज की थी उस पर क्या काम हो रहा है, मुझे क्य",
       "entities": []
     }
   ]

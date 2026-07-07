@@ -7,12 +7,34 @@
       "index": 0,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [],
+      "intent": "agent_greet",
+      "base_intent": "open",
+      "keywords": [
+        "message",
+        "calling",
+        "name",
+        "like",
+        "person"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "प्रस्तुति प्रस्तुति",
+      "text": "First, if you record your name and reason for calling IC, this person is available. I'm sorry, this person is not available. If you would like to leave an additional message, please reply after the tone.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "thank",
+        "watching",
+        "video"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Thank you for watching this video.",
       "entities": []
     }
   ]

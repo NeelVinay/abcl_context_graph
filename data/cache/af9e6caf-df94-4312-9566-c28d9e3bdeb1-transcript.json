@@ -1,0 +1,262 @@
+{
+  "call_id": "af9e6caf-df94-4312-9566-c28d9e3bdeb1-transcript",
+  "language": "hi-en",
+  "outcome": "completed",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं गोविंद झा जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "call",
+        "कितना",
+        "बोला"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं madam कितना बार बोला हूं call मत करो.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "pre-approved",
+        "approved",
+        "offer",
+        "pre",
+        "तरफ"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मुझे समझ में आ गया। यह Aditya Birla Capital की तरफ से आपके लिए एक pre-approved offer है जो आपकी जरूरत में",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं चाहिए.",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "emi",
+        "चलेगा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "EMI नहीं भरूंगा चलेगा?",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_explain_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "interest rate",
+        "offer",
+        "शुरू",
+        "final",
+        "percent"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Interest rate ten point nine nine percent से शुरू होती है और आपके final offer पर depend करती है। क्या हम आगे बढ़ें?",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "interest rate",
+        "interest",
+        "rate",
+        "कितना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अभी interest rate कितना है madam?",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_explain_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "interest rate",
+        "offer",
+        "शुरू",
+        "final",
+        "percent"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Interest rate ten point nine nine percent से शुरू होती है और आपके final offer पर depend करती है। क्या हम आगे बढ़ें?",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "offer",
+        "final",
+        "कितना",
+        "कितने"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मेरा final offer कितने आता है? कितना कराया है?",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "लाख",
+        "interest",
+        "rate",
+        "कितना",
+        "हज़ार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "और एक लाख पचास हज़ार का rate of interest कितना लगाओगे आप?",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_explain_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "interest rate",
+        "offer",
+        "शुरू",
+        "final",
+        "percent"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Interest rate ten point nine nine percent से शुरू होती है और आपके final offer पर depend करती है। क्या हम आगे बढ़ें?",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "Madam नहीं.",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "धन्यवाद"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है, धन्यवाद।",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "call"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब call मत करना madam.",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
+      "keywords": [
+        "goodbye",
+        "time",
+        "thank"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपके time के लिए thank you जी। Goodbye.<EOC/>",
+      "entities": []
+    }
+  ]
+}

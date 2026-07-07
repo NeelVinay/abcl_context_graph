@@ -1,0 +1,338 @@
+{
+  "call_id": "7c50b370-13ec-49c0-b1fd-d9aead434973-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं रशीद खान जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं रशीद खान जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी हां हां yes.",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "processing fee",
+        "emi",
+        "interest rate",
+        "process",
+        "interest"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी process बताइए क्या क्या process है इसकी? EMI कितनी आएगी? Interest rate कितना है? Total amount कितना जमा होगा? Processing fees कितनी cut जाएगी? यह बताइए ज़रा.",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_explain_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "interest rate",
+        "offer",
+        "शुरू",
+        "application",
+        "link"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Interest rate ten point nine nine percent से शुरू होती है और आपके final offer पर depend करती है। अब मैं आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "emi",
+        "amount",
+        "कितना",
+        "कितने"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "EMI कितने की आएगी ma'am? Totally amount कितना जमा होगा यह पुछ रहा हूं मैं?",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_explain_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "interest rate",
+        "offer",
+        "शुरू",
+        "link",
+        "sms"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Interest rate ten point nine nine percent से शुरू होती है और आपके final offer पर depend करती है। अब आप SMS में जो link है उसे click करें।",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "call",
+        "whatsapp",
+        "पड़ेगा",
+        "दोनों",
+        "net"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी ma'am उसके लिए call काटना पड़ेगा आपको क्योंकि net नहीं चल रहा है ऐसे double three में होने के कारण दोनों में WhatsApp चल रहा है.",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "page",
+        "refresh",
+        "reload"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Page को एक बार refresh/reload करें।",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "call",
+        "net",
+        "चलता"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Net on call पर net नहीं चलता ma'am? Net off आता है call पर.",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "link",
+        "sms",
+        "open",
+        "पूरी",
+        "browser"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Browser tab को पूरी तरह close करें और SMS में जो link है उसे फिर से open करें।",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "इंतज़ार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ जी, मैं इंतज़ार कर रही हूँ...",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "sms",
+        "whatsapp"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "SMS WhatsApp पर आएगा क्या ma'am?",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "link",
+        "sms",
+        "click",
+        "number",
+        "mobile"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "SMS सीधे आपके registered mobile number पर आएगा, WhatsApp पर नहीं। आप SMS में जो link मिलेगा, उस पर click करके आगे बढ़ सकते हैं।",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "कर दिया",
+        "sms",
+        "click"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी हां, SMS को click कर दिया मैंने.",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_apply",
+      "base_intent": "click_apply",
+      "keywords": [
+        "apply now",
+        "apply",
+        "click",
+        "now",
+        "screen"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप home screen पर आ गए हैं। आप नीचे एक 'Apply Now' button देख सकते हैं, उस पर click करें।",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "call",
+        "line",
+        "person",
+        "hold",
+        "speaking"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "The person you are speaking with has put your call on hold. Please stay on the line.",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "call",
+        "hold",
+        "रखा",
+        "व्यक्ति"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप जिस व्यक्ति से बात कर रहे हैं, उसने आपकी call को hold पर रखा है.",
+      "entities": []
+    }
+  ]
+}

@@ -10,11 +10,11 @@
       "intent": "agent_acknowledge_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "कॉल",
-        "काम",
         "customer",
-        "कस्टमर",
-        "बोलते"
+        "support",
+        "ticket",
+        "काम",
+        "कॉल"
       ],
       "sentiment": null,
       "tool": null,

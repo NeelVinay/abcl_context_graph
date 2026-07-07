@@ -7,15 +7,18 @@
       "index": 0,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_greet",
-      "base_intent": "open",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
       "keywords": [
-        "उसने",
-        "व्यक्ति"
+        "call",
+        "person",
+        "hold",
+        "speaking",
+        "put"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आप जिस व्यक्ति से बात कर रहे हैं, उसने",
+      "text": "The person you are speaking with has put your call on hold.",
       "entities": []
     },
     {
@@ -25,33 +28,30 @@
       "intent": "agent_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "कॉल",
-        "call",
-        "रखा",
-        "person",
-        "line"
+        "line",
+        "stay"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आपकी कॉल को hold पर रखा है, कृत्या line पर बने रहें. The person you are speaking with has put your call on hold. Please stay on the line.",
+      "text": "Please stay on the line.",
       "entities": []
     },
     {
       "index": 2,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_greet",
-      "base_intent": "open",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "कस्टमर",
-        "सपोर्ट",
-        "कॉम",
-        "वेलकम",
-        "डॉट"
+        "justdial",
+        "customer",
+        "com",
+        "support",
+        "good"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "गुड़ाक्टर में वेलकम की जजजाल डॉट कॉम जिससे रुपिजा कमेंट से कस्टमर सपोर्ट डिपार्टमेंट हाउमेस एसिस्यू",
+      "text": "Good afternoon, welcome to justdial.com जिससे रुपी जा का उन्हें से customer support department हाँ में assist you।",
       "entities": []
     }
   ]

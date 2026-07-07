@@ -10,108 +10,15 @@
       "intent": "agent_greet",
       "base_intent": "open",
       "keywords": [
-        "हूँ।"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "पुरापर वेलकुम से जरूरा लड़ता हूँ। पिशर फ्राम कस्टमोर्स ऑपर्टर।",
-      "entities": []
-    },
-    {
-      "index": 1,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_greet",
-      "base_intent": "open",
-      "keywords": [
-        "साइड",
-        "सर।",
-        "अलो।"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "हाँ मसेस्ट यू। अलो। ये सर। मैं साइड चेरिंग से",
-      "entities": []
-    },
-    {
-      "index": 2,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "शेयर",
-        "बोल",
-        "बिजनेस",
-        "हूँ।",
-        "kyc"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "बोल रहा हूँ। ये सर बताइए। बिजनेस चारीफिक्ट अनता क्या हुआ। प्रोफार्मेंट का इंटरेसिप कर रहा ह चले। यहाँ पर सर जो सिर्फ सारा KYC के विजय से प्रेंडिंग शो हो रहा है तो यह आपने सर KYC के डॉक्यूमेट सारी शेयर के डाइजेंज हो तब",
-      "entities": []
-    },
-    {
-      "index": 3,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_respond",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "शेयर",
-        "असर"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "शेयर किया रहा है असर असर अस",
-      "entities": []
-    },
-    {
-      "index": 4,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "चेक",
-        "issue",
-        "business",
-        "kyc",
-        "दिख"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "मैं business का तो नहीं issue मगर ये जो KYC document चेक कर रहा हूँ तो मैं यहाँ पे मुझे सिर्फ आपको hotel का photo दिख रहा है और जो अपनी address पर उसके लिए क्या दिया था वहाँ का",
-      "entities": []
-    },
-    {
-      "index": 5,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_respond",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "share",
-        "पूरा"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "तो उनका नाम क्या है अपना share करेगा तो उनका पूरा share क्या है उनका नाम है अजु",
-      "entities": []
-    },
-    {
-      "index": 6,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_ask",
-      "base_intent": "question",
-      "keywords": [
+        "justdial",
+        "customer",
         "call",
-        "कीजि"
+        "com",
+        "support"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "अजु से तो call कीजि�",
+      "text": "Welcome to JustDial.com, I am Kishore from customer support, how much is it to you? Hello! Yes sir! میں سائی چینل سے بول رہا ہوں! Yes sir, بتائیے! Business care is in a mess, کیا ہوا, purpose کیا پتایا? Procurement sector is in a problem. In factivate کی regarding question ہو گیا? ہاں! Yes sir, can you take a little bit of time to confirm the status for a minute please? चले। यहां पर सब्सक्राइब कर रहे हैं। Business کا تو نہیں issue مگر یہ جو KBC document check کر رہا ہوں تو میں یہاں پہ مجھے صرف اپکا hotel کا photo دکھ رہا ہے اور جو اپنی address list کے لئے کیا دیا تھا وہاں کا Sir ان کا نام کیا ہے اپنا شیئر شیئر کرے گا نام جائے گا ان کو نا شیئر کیا ہے اس کا نام ہے آگو آگو شیئر کو call دیجئے آج میرا چیک آن لے گا ٹاکس ٹھیک ہے میں بات کرتا ہوں",
       "entities": []
     }
   ]

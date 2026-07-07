@@ -1,0 +1,107 @@
+[
+  {
+    "timestamp": "2026-07-06T09:09:14",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:09:15",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं मनोज कुमार जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:09:24",
+    "speaker": "user",
+    "content": "नहीं ma'am.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:09:24",
+    "speaker": "assistant",
+    "content": "ओह, समझ गई। क्या मनोज कुमार जी इस समय उपलब्ध हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:09:31",
+    "speaker": "user",
+    "content": "नहीं ma'am.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:09:31",
+    "speaker": "assistant",
+    "content": "ठीक है, क्या मैं बाद में call कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:09:39",
+    "speaker": "user",
+    "content": "Ma'am खेद है वह sorry नौ बजे के बाद बात करना फिर आऐंगे.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:09:41",
+    "speaker": "user",
+    "content": "उससे पहले नहीं मिलेंगे आपको.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:09:41",
+    "speaker": "assistant",
+    "content": "ज़रूर। आप कौन सा दिन और समय prefer करेंगे? हम 10 AM से 7 PM, साथों दिन इस time available रहते हैं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:09:59",
+    "speaker": "user",
+    "content": "Ma'am शाम को नौ बजे के बाद आप phone करिएगा तभी बात हो पाएगी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:09:59",
+    "speaker": "assistant",
+    "content": "कोई specific time बता दीजिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:10:09",
+    "speaker": "user",
+    "content": "Ma'am सुबह पांच बजे करिए आप ही.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:10:09",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिए, हम सुबह 10 बजे से शाम 7 बजे तक कॉल कर सकते हैं। कृपया इस समयावधि में कोई दूसरा समय बताइए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:10:20",
+    "speaker": "user",
+    "content": "नहीं. नहीं ma'am नहीं हो सकता फिर.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:10:20",
+    "speaker": "assistant",
+    "content": "ठीक है, हम आपसे जल्दी connect करेंगे। Thank you।",
+    "feedback": null,
+    "agent_id": null
+  }
+]

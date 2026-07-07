@@ -1,6 +1,15 @@
-Customer: आपके नाम मजेरा, बाड़ा के नाम मजेरा। आपके नाम मजेरा, बाड़ा के नाम मजेरा। contact बंद करना है आपको हाँ dance concert क्यों बंद करना चाहते हैं
-Agent: मैंको जब joining करने के time तो बोला गया था कि आपको inquiry आएंगे तो अभी तक मैं उसको कुछ inquiry आए लेकिन सब fake आए मतलब इसी इस जस्ट डाइल से देखते देखते call आ गया ऐसा कुछ ऐसा मतलब work के related कुछ भी call नहीं आ और उसके बाद जो मैंने इस person को जो local relationship वाला बंदा था उसको contact करने के लिए सोचा मतलब call करा फिर उसको बोला मिलने को कुछ google पर करने वाला था कुछ नहीं है मतलब joining कर दे उसके बाद तो उसने follow भी नहीं है कुछ follow भी नहीं है अच्छा मैंने कॉल किया बंद करने के लिए कॉल किया मैंने कल तो बोल रहा था मिर्कुल कि तो आपके पर्सनल बैंक वाले से बात करके बैंक वाले से बंद कर रहा था लेकिन जॉयरिंग तो आपकी तरफ कीजिए
-Customer: हमने बैंक वालों को जाम लगाया है जी जी
-Agent: बिल्कुल कोई वो तो कब बन होगा वो ही तो पूछ रहा
-Customer: हूँ आपको लो मैं नहीं बता सकता मेरे पास राइट नहीं है जिसके टीम के पास आगे फॉरवर्ड कर दे रहा हूँ अभी आपको वो कॉल करके बता देंगे सर
-Agent: ओके ठीक ठीक है थोड़ा आर्जन करना प्लीज शौर सर शौर ठीक
+Agent: If you record your name and reason for calling, I'm... Hello.
+Customer: Very good morning, this is Arpit from customer service department of JustDial.com. I'm speaking with concerned person of Lovely Photography.
+Agent: Yes, tell me.
+Customer: Yes, sir. Is there any query related to your contract? Yes, I
+Agent: want to close it.
+Customer: Contact बंद करना है आपको। हाँ। जान सकता हूँ तक क्यों बंद
+Agent: करना चाह रहे हैं। मेंको जब joining करने का time तक बोला गया था कि आपको inquiry आएंगे। अभी तक मेंको कुछ inquiry आए लेकिन सब fake आए। मतलब इसी इस JustDial पर देखते देखते call आ गया ऐसा कुछ ऐसा। Okay। मतलब work के Okay, maafin shaham. उसके बाद जो मैंने इस person को local relationship वाला बंदा था, उसको contact करने के लिए सोचा, call करा, फिर उसको बोला, मिलने को कुछ Google पर करने वाला था, कुछ नहीं, मतलब joining कर दे, उसके बाद तो उसने follow भी नहीं है, कुछ follow भी नहीं है।
+Customer: Okay, I will
+Agent: call you back. I called you to stop the call. I called you yesterday. You were telling me to talk to your personal bank and stop the call from the bank. But the joining was on your side. We did not call the bank. Yes, yes,
+Customer: absolutely. No issue, sir. I am putting a request from here. I am forwarding it to you. Okay. Now you will get a call.
+Agent: Okay, so from next month, they will give us some payment, right?
+Customer: It will be closed then only, sir.
+Agent: वो तो कब बन होता है। वो ही तो कुछ करना
+Customer: आपको। लो, मैं नहीं बता सकता। मेरे पास rights नहीं है। Team के पास आगे forward कर दे रहा हूँ। अभी आपको वो call करके बता देंगे sir, okay।
+Agent: ठीक, ठीक है। थोड़ा urgent करना please। Sure, sir, sure। Okay, okay, thank you.

@@ -1,7 +1,7 @@
 {
   "call_id": "LCS-C6FGT81Y",
   "language": "hi-en",
-  "outcome": "incomplete",
+  "outcome": "raised_request",
   "turns": [
     {
       "index": 0,
@@ -10,15 +10,15 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "कॉल",
-        "चेक",
-        "लीड",
+        "justdial",
         "call",
-        "शेयर"
+        "com",
+        "lead",
+        "check"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "गुदासम निकाल बात कर रही हूँ जैसार कौन कस्टमर सविस डिपार्टमेंट से मारुख डिजिटल में बात हो रही है बस जैसार से बात कर रही हूँ मारुख डिजिटल में बात हो रही है तो जैसा feedback call है, आपने campaign रही थी 5 तारिब को, lead के related, तो wherein हमने आपको WhatsApp ते message शेयर किया था, sir, with resolution, तो आपको WhatsApp रिसीव हुआ था, आपने resolution check किया था? एक मिनट, sir, hello, yes, जी कौन? sir, निगार बात करी, Brazil.com से, जैसे फीडबैक कॉल है, पांच ताइर को आपने कम्प्लेन रेज के लिए कि आपको लीड नहीं आ रही है, तो उसके दोसित पर सेम दे हमने आपको वासप पर मैसेज शेयर किया था, वासप पर रेजलूशन आया होगा, तो आपने वो रेजलूशन चेक किया था? पर कोई कम तो आपको WhatsApp, पांच साइगो कोई WhatsApp रिसीव नहीं हुआ था गर्जल कंपनी की तरफ से? नहीं मैम. ओके, यही जाना था साइब कि यह कैसा होता है न, आप जो कंपेंट करते हो, तो हम आपको WhatsApp पर message करते हैं, कंपेंट आएगी और resolution के साथ, तो इन्हें स्वीशन में जब भी आ",
+      "text": "JustDial سے بات کر رہی ہے۔ Maluk Digital میں بات ہو رہی ہے۔ Sir, just a feedback call ہے। آپ نے campaign receipt 5 طارق کو lead کے related। So wherein ہم نے آپ کو WhatsApp message share کیا تھا sir with resolution. So آپ کو WhatsApp receipt ہوا تھا، آپ نے resolution check کیا تھا। Sir, نگاہ بات کر رہی ہے Brazil.com سے There is some feedback call है। पांच चाहिए को आपने complaint रही है कि आपको lead नहीं आ रही है। तो उसके dosage पर same day हमने आपको WhatsApp पर message share किया था। Resolution. WhatsApp पर resolution आया होगा। तो आपने वो resolution check किया था। पर कोई complaint नहीं आ जाता। Sorry. अच्छा, आपको WhatsApp, पांच चाहिए को कोई WhatsApp receive नहीं हुआ था जर्जल company की तरफ से। नहीं ma'am। Okay, यही जाना था sir की यह कैसा होता न, आप जब campaign करते हो, तो हम आपको WhatsApp पर message करतے, campaign آएगी और resolution के साथ। तो इन्हें tuition में जब भी आपकी campaign raise करते हो, तो एक बाद WhatsApp check कीजिए�",
       "entities": []
     }
   ]

@@ -1,1096 +1,197 @@
 [
   {
-    "call_id": "LCS-89OM2PGT",
+    "call_id": "LCS-DF7CBAT8",
     "turns": [
-      {
-        "index": 0,
-        "speaker": "agent",
-        "base_intent": "explain_lead_mechanics",
-        "keywords": ["लीड नहीं आ रही है", "फ्लो कम होगा", "nearby में ही सर्च करते हैं", "नाशनल लिस्टिंग", "सोर्स प्रॉपर करूँगी"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 1,
-        "speaker": "customer",
-        "base_intent": "clarify_repeat",
-        "keywords": ["समझ रहा है या नहीं"],
-        "sentiment": "frustrated",
-        "tool": null
-      },
-      {
-        "index": 2,
-        "speaker": "agent",
-        "base_intent": "guide_customer_support",
-        "keywords": ["अप्लीकेशन से कस्टम में सपोर्ट", "कन्सर्न टीम विधिन 24", "concern प्रॉपर समझ गई हूँ", "रेटिंग"],
-        "sentiment": null,
-        "tool": null
-      }
+      {"index": 0, "speaker": "customer", "base_intent": "report_no_leads", "keywords": ["no leads so far", "Issue is that there are no leads"], "sentiment": "frustrated", "tool": null},
+      {"index": 1, "speaker": "agent", "base_intent": "ask_question", "keywords": ["any new"], "sentiment": null, "tool": null},
+      {"index": 2, "speaker": "customer", "base_intent": "report_no_leads", "keywords": ["there are new leads", "customers are talking earlier than usual", "new leads since yesterday"], "sentiment": "neutral", "tool": null},
+      {"index": 3, "speaker": "agent", "base_intent": "answer_query", "keywords": ["I will update this soon", "categories are live now"], "sentiment": null, "tool": null},
+      {"index": 4, "speaker": "customer", "base_intent": "ask_question", "keywords": ["Business owner leads are coming", "Customer leads are also coming", "There is an issue"], "sentiment": "neutral", "tool": null},
+      {"index": 5, "speaker": "agent", "base_intent": "end_call", "keywords": ["Thank you", "You will get the update from today", "we will call you if there is any further questions"], "sentiment": null, "tool": null},
+      {"index": 6, "speaker": "customer", "base_intent": "end_call", "keywords": ["very much for your time today", "take care sir", "I will keep you updated with the reviews"], "sentiment": "happy", "tool": null},
+      {"index": 7, "speaker": "agent", "base_intent": "end_call", "keywords": ["I will update you soon sir", "Thank you for coming", "This is JustDial.com", "Have a great day"], "sentiment": null, "tool": null}
     ]
   },
   {
-    "call_id": "LCS-89RRMLZ8",
+    "call_id": "LCS-DMBHWDEE",
     "turns": [
-      {
-        "index": 0,
-        "speaker": "agent",
-        "base_intent": "ask_question",
-        "keywords": ["क्या concern है सर"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 1,
-        "speaker": "customer",
-        "base_intent": "report_wrong_leads",
-        "keywords": ["bogus inquiry", "तीन दिन से नहीं फोन लगा रहा है", "फोन नहीं उठा रहा है"],
-        "sentiment": "frustrated",
-        "tool": null
-      },
-      {
-        "index": 2,
-        "speaker": "agent",
-        "base_intent": "guide_customer_support",
-        "keywords": ["lead के लिए आपको customer support"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 3,
-        "speaker": "customer",
-        "base_intent": "report_wrong_leads",
-        "keywords": ["कुछ काम की नहीं हो इंक्वारी"],
-        "sentiment": "frustrated",
-        "tool": null
-      },
-      {
-        "index": 4,
-        "speaker": "agent",
-        "base_intent": "check_account",
-        "keywords": ["चेक करता हूँ"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 5,
-        "speaker": "customer",
-        "base_intent": "report_wrong_leads",
-        "keywords": ["इंक्वारी एक भी चीक से नहीं है", "सही इंक्वारी देओ ना", "पैसे तो लेते हैं आप"],
-        "sentiment": "frustrated",
-        "tool": null
-      },
-      {
-        "index": 6,
-        "speaker": "agent",
-        "base_intent": "check_account",
-        "keywords": ["हमें चेक करना होगा", "एक भी इंक्वारी सही"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 7,
-        "speaker": "customer",
-        "base_intent": "ask_question",
-        "keywords": ["किस तरह की इंक्वारी है आपको", "केट्रिन का होना चाहिए"],
-        "sentiment": "frustrated",
-        "tool": null
-      },
-      {
-        "index": 8,
-        "speaker": "agent",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 9,
-        "speaker": "customer",
-        "base_intent": "report_wrong_leads",
-        "keywords": ["खाना चाहिए उसको खाने का नहीं चाहिए उसको जगा चाहिए"],
-        "sentiment": "frustrated",
-        "tool": null
-      },
-      {
-        "index": 10,
-        "speaker": "agent",
-        "base_intent": "ask_question",
-        "keywords": ["ऐसी inquiry का", "डेटेल दीजे"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 11,
-        "speaker": "customer",
-        "base_intent": "clarify_repeat",
-        "keywords": ["अभी डेटेल नहीं"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 12,
-        "speaker": "agent",
-        "base_intent": "transfer_to_team",
-        "keywords": ["lead के regarding है", "lead team की"],
-        "sentiment": null,
-        "tool": "transfer_team"
-      },
-      {
-        "index": 13,
-        "speaker": "customer",
-        "base_intent": "acknowledge",
-        "keywords": ["call back arrange करता हूँ"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 14,
-        "speaker": "agent",
-        "base_intent": "report_wrong_leads",
-        "keywords": ["एक भी inquiry सही नहीं है", "lead का concern है", "inquiry का"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 15,
-        "speaker": "customer",
-        "base_intent": "acknowledge",
-        "keywords": ["हमारी team है", "अलग department"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 16,
-        "speaker": "agent",
-        "base_intent": "transfer_to_team",
-        "keywords": ["टीम्स की ओर से गॉल बैग अरेंज करता हूँ"],
-        "sentiment": null,
-        "tool": "transfer_team"
-      },
-      {
-        "index": 17,
-        "speaker": "customer",
-        "base_intent": "acknowledge",
-        "keywords": ["पूरा डिटेल देगी", "ठीक है"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 18,
-        "speaker": "agent",
-        "base_intent": "request_rating",
-        "keywords": ["रेट कीजिए", "आपको कॉल आएगा"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 19,
-        "speaker": "customer",
-        "base_intent": "other",
-        "suggested_intent": "ask_about_agent",
-        "keywords": ["क्या नाम है क्या कोई"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 20,
-        "speaker": "agent",
-        "base_intent": "guide_customer_support",
-        "keywords": ["customer support handle करती है", "lead team handle करती है", "concern हो रहा है आपको"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 21,
-        "speaker": "agent",
-        "base_intent": "transfer_to_team",
-        "keywords": ["टीम को बेज रहा हूँ", "टीम आपको कॉल करेगी"],
-        "sentiment": null,
-        "tool": "transfer_team"
-      }
+      {"index": 0, "speaker": "customer", "base_intent": "roi_complaint", "keywords": ["Complaint waste செய்து கொண்டிருக்கிறேன்"], "sentiment": "frustrated", "tool": null},
+      {"index": 1, "speaker": "agent", "base_intent": "explain_lead_mechanics", "keywords": ["lead வந்து", "after September", "call செய்யாது"], "sentiment": null, "tool": null},
+      {"index": 2, "speaker": "customer", "base_intent": "ask_question", "keywords": ["எத்தனை மணிக்கின்றார்கள்"], "sentiment": "neutral", "tool": null},
+      {"index": 3, "speaker": "agent", "base_intent": "check_account", "keywords": ["Notification எப்போ send ஆகியிருக்கு", "lead வந்திருக்கு", "notification send ஆன time", "delay ஆயிருக்கு"], "sentiment": null, "tool": null},
+      {"index": 4, "speaker": "customer", "base_intent": "ask_question", "keywords": ["எனக்கு message எப்போது வருகிறது", "நீங்கள் சொல்லுங்கள்"], "sentiment": "frustrated", "tool": null},
+      {"index": 5, "speaker": "agent", "base_intent": "guide_customer_support", "keywords": ["WhatsApp number option இல்லை", "complaint page செய்ய", "JustDial appில் leads", "average response time"], "sentiment": null, "tool": null},
+      {"index": 6, "speaker": "customer", "base_intent": "ask_question", "keywords": ["Inquiry செய்யுங்கள்", "செய்ததை எனக்கு காண்பித்தாலும்"], "sentiment": "skeptical", "tool": null},
+      {"index": 7, "speaker": "agent", "base_intent": "advise_improvement", "keywords": ["monthly app update பண்ணி வைச்சுக்கோங்க", "complaint எடுத்துக்கொள்", "Thank you for using justdial.com", "Have a great day"], "sentiment": null, "tool": null}
     ]
   },
   {
-    "call_id": "LCS-8AF34JJN",
+    "call_id": "LCS-E4SV6XHA",
     "turns": [
-      {
-        "index": 0,
-        "speaker": "agent",
-        "base_intent": "identify_business",
-        "keywords": ["कॉंट्राक्ट हमारे पास सेंड कर रहा है"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 1,
-        "speaker": "customer",
-        "base_intent": "report_no_leads",
-        "keywords": ["कुछ इश्यू फेस कर रहे हैं", "कॉंट्राक्ट"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 2,
-        "speaker": "agent",
-        "base_intent": "check_account",
-        "keywords": ["लेट से नहीं आ रही है", "विजिबिलिटी आपके अभी चेक कर रहा हूँ"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 3,
-        "speaker": "customer",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": "neutral",
-        "tool": null
-      }
+      {"index": 0, "speaker": "agent", "base_intent": "greeting", "keywords": ["Good afternoon, sir", "contract with us", "Are you facing any issues in the contract"], "sentiment": null, "tool": null},
+      {"index": 1, "speaker": "customer", "base_intent": "acknowledge", "keywords": ["tell me"], "sentiment": "neutral", "tool": null},
+      {"index": 2, "speaker": "agent", "base_intent": "identify_business", "keywords": ["lead department", "your business cell, position plan", "Are you facing any issues related"], "sentiment": null, "tool": null},
+      {"index": 3, "speaker": "customer", "base_intent": "clarify_repeat", "keywords": ["How"], "sentiment": "confused", "tool": null},
+      {"index": 4, "speaker": "agent", "base_intent": "ask_question", "keywords": ["are you facing any issues related to the lead"], "sentiment": null, "tool": null},
+      {"index": 5, "speaker": "customer", "base_intent": "clarify_repeat", "keywords": ["Base payment से क्या", "नहीं पहुंच"], "sentiment": "confused", "tool": null},
+      {"index": 6, "speaker": "agent", "base_intent": "check_account", "keywords": ["leads आती हैं आपके contract में", "ticket raise किया था", "मैं आपको call कर रहा"], "sentiment": null, "tool": null},
+      {"index": 7, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "neutral", "tool": null, "suggested_intent": "unintelligible_fragment"},
+      {"index": 8, "speaker": "agent", "base_intent": "guide_customer_support", "keywords": ["next time अगर कुछ भी issue है", "after sale के ज़रूर से ticket raise", "Thank you for watching this video"], "sentiment": null, "tool": null}
     ]
   },
   {
-    "call_id": "LCS-8EMSZ4LZ",
+    "call_id": "LCS-E5K5CGOE",
     "turns": [
-      {
-        "index": 0,
-        "speaker": "agent",
-        "base_intent": "greeting",
-        "keywords": ["डिजिजिटल डॉट कम", "कॉल शेवित"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 1,
-        "speaker": "customer",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 2,
-        "speaker": "agent",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 3,
-        "speaker": "customer",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 4,
-        "speaker": "agent",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 5,
-        "speaker": "customer",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 6,
-        "speaker": "agent",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 7,
-        "speaker": "customer",
-        "base_intent": "clarify_repeat",
-        "keywords": ["मेरे को?"],
-        "sentiment": "confused",
-        "tool": null
-      },
-      {
-        "index": 8,
-        "speaker": "agent",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 9,
-        "speaker": "customer",
-        "base_intent": "explain_lead_mechanics",
-        "keywords": ["लीड़ भी माकी लीड़ पिक पार्ट"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 10,
-        "speaker": "agent",
-        "base_intent": "explain_lead_mechanics",
-        "keywords": ["लीड़ सोचते ने"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 11,
-        "speaker": "customer",
-        "base_intent": "explain_lead_mechanics",
-        "keywords": ["लीड़ भी उकटी डिटेल्स", "लीड़ सेन"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 12,
-        "speaker": "agent",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 13,
-        "speaker": "customer",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 14,
-        "speaker": "agent",
-        "base_intent": "explain_lead_mechanics",
-        "keywords": ["सिस्टम जनरेटेड होते हैं", "फिल्टर कर सकते हैं", "इंक्वायरी करते हैं"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 15,
-        "speaker": "customer",
-        "base_intent": "acknowledge",
-        "keywords": ["फॉरवर्ड होता है"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 16,
-        "speaker": "agent",
-        "base_intent": "request_rating",
-        "keywords": ["रेटिंग लिंक", "customer care option", "ticket raise", "फीडबैक link शेयर"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 17,
-        "speaker": "customer",
-        "base_intent": "end_call",
-        "keywords": ["Thank you"],
-        "sentiment": "happy",
-        "tool": null
-      },
-      {
-        "index": 18,
-        "speaker": "agent",
-        "base_intent": "end_call",
-        "keywords": ["Have a great day"],
-        "sentiment": null,
-        "tool": null
-      }
+      {"index": 0, "speaker": "agent", "base_intent": "raise_request", "keywords": ["Lead flow மே ரொம்ப குறைவா இருக்கு", "மூன்னு lead தான் வந்துருக்கு", "complaint எடுத்துக்கிறேன்", "category check பண்ணிக்கோங்க", "photos, videos, ad பண்டத்தை"], "sentiment": null, "tool": null},
+      {"index": 1, "speaker": "customer", "base_intent": "technical_issue", "keywords": ["received ஆவது", "open chatலல sound வருறது", "எப்படி response hold time எடுக்க முடியும்", "complaint எல்லாம் எண்டும் கொடுக்கிறீங்கள்"], "sentiment": "frustrated", "tool": null},
+      {"index": 2, "speaker": "agent", "base_intent": "roi_complaint", "keywords": ["ஒரு lead ஒரும் பிராப்பரா கிடைக்கவில்லை", "call centerலன்து call", "maximum leads வந்திருக்கும்"], "sentiment": null, "tool": null},
+      {"index": 3, "speaker": "customer", "base_intent": "answer_query", "keywords": ["இரண்டாம் மாதம்", "இரண்டு மாதம் ஆகிறது", "60 நாளைக்க"], "sentiment": "neutral", "tool": null},
+      {"index": 4, "speaker": "agent", "base_intent": "explain_lead_mechanics", "keywords": ["user demand கொடுத்து வருது", "lead வந்து", "manually ஐயா", "user demand பிரகாரம்தான்"], "sentiment": null, "tool": null},
+      {"index": 5, "speaker": "customer", "base_intent": "roi_complaint", "keywords": ["lead ஏ உங்களால provide செய்ய முடியவில்லனா", "வேலையாத்தியாவில்லை", "நான் ஏன் complaint செய்யவேண்டும்"], "sentiment": "frustrated", "tool": null},
+      {"index": 6, "speaker": "agent", "base_intent": "check_account", "keywords": ["user demand பொறுத்தும்", "category fix பண்ணிட்டேன்", "leads வரலாம்"], "sentiment": null, "tool": null}
     ]
   },
   {
-    "call_id": "LCS-93ABWPQS",
+    "call_id": "LCS-EE1V7FH9",
     "turns": [
-      {
-        "index": 0,
-        "speaker": "customer",
-        "base_intent": "greeting",
-        "keywords": ["Good evening", "customer service department", "How may I help you"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 1,
-        "speaker": "agent",
-        "base_intent": "report_wrong_leads",
-        "keywords": ["leads बहुत irrelevant आ रहे हैं", "job या marketing के लिए", "दो दिन से leads बहुत नहीं आ रहे"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 2,
-        "speaker": "customer",
-        "base_intent": "clarify_repeat",
-        "keywords": ["क्या बोल रहे है"],
-        "sentiment": "confused",
-        "tool": null
-      },
-      {
-        "index": 3,
-        "speaker": "agent",
-        "base_intent": "report_wrong_leads",
-        "keywords": ["leads जो आ रहे हैं बहुत irrelevant"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 4,
-        "speaker": "customer",
-        "base_intent": "report_no_leads",
-        "keywords": ["leads proper"],
-        "sentiment": "frustrated",
-        "tool": null
-      },
-      {
-        "index": 5,
-        "speaker": "agent",
-        "base_intent": "report_no_leads",
-        "keywords": ["नहीं आ रहे"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 6,
-        "speaker": "customer",
-        "base_intent": "ask_question",
-        "keywords": ["क्या issue आ था lead में"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 7,
-        "speaker": "agent",
-        "base_intent": "report_wrong_leads",
-        "keywords": ["mostly वो job के लिए है", "marketing के लिए call होते है"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 8,
-        "speaker": "customer",
-        "base_intent": "check_account",
-        "keywords": ["computer institute के नाम से business", "लीड़ में क्या प्रॉब्लम आता"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 9,
-        "speaker": "agent",
-        "base_intent": "report_no_leads",
-        "keywords": ["दो दिन से तो कुछ भी लीड़ नहीं है"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 10,
-        "speaker": "customer",
-        "base_intent": "report_wrong_leads",
-        "keywords": ["जो आते थे ना वो सारे अलग-अलग purpose"],
-        "sentiment": "frustrated",
-        "tool": null
-      },
-      {
-        "index": 11,
-        "speaker": "agent",
-        "base_intent": "explain_lead_mechanics",
-        "keywords": ["अलग-अलग होता है", "इच्छे आ रहे हैं"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 12,
-        "speaker": "customer",
-        "base_intent": "category_area_coverage",
-        "keywords": ["बाहर का लीड नहीं आया", "एक लाइट दिया है, वहीं चाहिए"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 13,
-        "speaker": "agent",
-        "base_intent": "explain_lead_mechanics",
-        "keywords": ["ऑनलाइन"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 14,
-        "speaker": "customer",
-        "base_intent": "check_account",
-        "keywords": ["ऑफलाइन ही करना होता है"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 15,
-        "speaker": "agent",
-        "base_intent": "check_account",
-        "keywords": ["review category"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 16,
-        "speaker": "customer",
-        "base_intent": "wait_hold",
-        "keywords": ["एक सेकंडा में check कर लेती", "hold"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 17,
-        "speaker": "agent",
-        "base_intent": "check_account",
-        "keywords": ["request किया", "refresh में दिया नहीं है"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 18,
-        "speaker": "customer",
-        "base_intent": "check_account",
-        "keywords": ["visibility भी है", "keywords आपके contract में", "complaint note down किया है", "re-update करके देती हूँ"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 19,
-        "speaker": "agent",
-        "base_intent": "ask_question",
-        "keywords": ["JD Plus और JD C के बारे में", "मेरे account यदी है या नहीं है"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 20,
-        "speaker": "customer",
-        "base_intent": "wait_hold",
-        "keywords": ["एक second sir", "list में नहीं है"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 21,
-        "speaker": "agent",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 22,
-        "speaker": "customer",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 23,
-        "speaker": "agent",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 24,
-        "speaker": "customer",
-        "base_intent": "ask_question",
-        "keywords": ["चार्जेबल है तो पे करना होता है", "मेल पे या वाटसप पे"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 25,
-        "speaker": "agent",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 26,
-        "speaker": "customer",
-        "base_intent": "other",
-        "suggested_intent": "request_specific_agent",
-        "keywords": ["थोड़ा सा टाइम अलॉग कीजिए"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 27,
-        "speaker": "agent",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": ["फोन भी नहीं उठा"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 28,
-        "speaker": "customer",
-        "base_intent": "guide_customer_support",
-        "keywords": ["app पे भी option है customer support का", "इस call के बाद एक link आएगा", "thank you for calling"],
-        "sentiment": "neutral",
-        "tool": null
-      }
+      {"index": 0, "speaker": "customer", "base_intent": "greeting", "keywords": ["Hello"], "sentiment": "neutral", "tool": null},
+      {"index": 1, "speaker": "agent", "base_intent": "greeting", "keywords": ["Good afternoon sir", "JustDial customer service", "getting less leads"], "sentiment": null, "tool": null},
+      {"index": 2, "speaker": "customer", "base_intent": "roi_complaint", "keywords": ["Leads are getting less", "उससे आगी process कोई भी नहीं हो रहा है", "ऐसे अगर lead आएगा तो मेरे क्या काम का"], "sentiment": "frustrated", "tool": null},
+      {"index": 3, "speaker": "agent", "base_intent": "check_account", "keywords": ["I will check your details", "what is the problem", "what are the results you are getting"], "sentiment": null, "tool": null},
+      {"index": 4, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "neutral", "tool": null, "suggested_intent": "unintelligible_fragment"},
+      {"index": 5, "speaker": "agent", "base_intent": "check_account", "keywords": ["I will do one thing", "I will check your details"], "sentiment": null, "tool": null},
+      {"index": 6, "speaker": "customer", "base_intent": "acknowledge", "keywords": ["Okay, okay, okay"], "sentiment": "neutral", "tool": null},
+      {"index": 7, "speaker": "agent", "base_intent": "guide_customer_support", "keywords": ["JustDial customer support option", "referral कर सकते हैं", "thank you", "Have a nice day"], "sentiment": null, "tool": null}
     ]
   },
   {
-    "call_id": "LCS-9MBJX5MT",
+    "call_id": "LCS-EOD9EHB9",
     "turns": [
-      {
-        "index": 0,
-        "speaker": "agent",
-        "base_intent": "greeting",
-        "keywords": ["जज़रल वट कम कस्मो सर्वेस"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 1,
-        "speaker": "customer",
-        "base_intent": "greeting",
-        "keywords": ["हाँ बोली"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 2,
-        "speaker": "agent",
-        "base_intent": "check_account",
-        "keywords": ["कॉंट्रैक्ट प्रिलेटेड कंसन", "कॉल होल्ड पर"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 3,
-        "speaker": "customer",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 4,
-        "speaker": "agent",
-        "base_intent": "check_account",
-        "keywords": ["डिटेल्स चेक करें", "मार्च फस्ट सेलेक्ट तिल डेट तक"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 5,
-        "speaker": "customer",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 6,
-        "speaker": "agent",
-        "base_intent": "check_account",
-        "keywords": ["कौन सा नंबर से चेक करेगा"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 7,
-        "speaker": "customer",
-        "base_intent": "wait_hold",
-        "keywords": ["लाइट मिनट तो बोरो"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 8,
-        "speaker": "agent",
-        "base_intent": "check_account",
-        "keywords": ["CCTV Reparation Services", "दो रिसीव हुए"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 9,
-        "speaker": "customer",
-        "base_intent": "identify_business",
-        "keywords": ["CCTV Reparation Services के लिए"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 10,
-        "speaker": "agent",
-        "base_intent": "advise_improvement",
-        "keywords": ["हर एक लीड जिस डायल आप से ही रेस्पॉंड करिये", "आवरेज रेस्पॉंड टाइम", "लीड आये तो इनिजियेटली"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 11,
-        "speaker": "customer",
-        "base_intent": "ask_question",
-        "keywords": ["नंबर बोल रहा हुआ"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 12,
-        "speaker": "agent",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 13,
-        "speaker": "customer",
-        "base_intent": "check_account",
-        "keywords": [],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 14,
-        "speaker": "agent",
-        "base_intent": "check_account",
-        "keywords": ["back-end से check करके", "कौन सा category पे आये थे", "कौन सा area पे inquiry"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 15,
-        "speaker": "customer",
-        "base_intent": "acknowledge",
-        "keywords": ["आपको बता जाता है"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 16,
-        "speaker": "agent",
-        "base_intent": "request_rating",
-        "keywords": ["feedback link share होगा", "positive rating", "ticket raise करें", "thank you for using"],
-        "sentiment": null,
-        "tool": null
-      }
+      {"index": 0, "speaker": "agent", "base_intent": "greeting", "keywords": ["JustDial call from JustDial customer support", "complaint has been raised", "getting wrong leads", "none of them are genuine"], "sentiment": null, "tool": null},
+      {"index": 1, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "neutral", "tool": null, "suggested_intent": "hold_audio_bleed"},
+      {"index": 2, "speaker": "agent", "base_intent": "raise_request", "keywords": ["I will take the complaint", "wrong leads", "Now, please take this complaint", "solve the problem"], "sentiment": null, "tool": null}
     ]
   },
   {
-    "call_id": "LCS-9PBQB8XM",
+    "call_id": "LCS-ERUSKGFI",
     "turns": [
-      {
-        "index": 0,
-        "speaker": "agent",
-        "base_intent": "explain_lead_mechanics",
-        "keywords": ["लीड से आपको यही कैटेगी के हिसाब से"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 1,
-        "speaker": "customer",
-        "base_intent": "category_area_coverage",
-        "keywords": ["कैटेगी में नंबर फॉल्ट"],
-        "sentiment": "confused",
-        "tool": null
-      },
-      {
-        "index": 2,
-        "speaker": "agent",
-        "base_intent": "ask_question",
-        "keywords": ["लीड के बारे में यह पता है"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 3,
-        "speaker": "customer",
-        "base_intent": "ask_question",
-        "keywords": ["क्या रिश्यो है इसमे"],
-        "sentiment": "confused",
-        "tool": null
-      },
-      {
-        "index": 4,
-        "speaker": "agent",
-        "base_intent": "check_account",
-        "keywords": ["category का प्राइड है", "GDSTV installation, service, repair"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 5,
-        "speaker": "customer",
-        "base_intent": "ask_question",
-        "keywords": ["VIP, mobile number तो क्या हो जाता है"],
-        "sentiment": "confused",
-        "tool": null
-      },
-      {
-        "index": 6,
-        "speaker": "agent",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 7,
-        "speaker": "customer",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": "confused",
-        "tool": null
-      },
-      {
-        "index": 8,
-        "speaker": "agent",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 9,
-        "speaker": "customer",
-        "base_intent": "clarify_repeat",
-        "keywords": ["शब्द चाहिए"],
-        "sentiment": "confused",
-        "tool": null
-      },
-      {
-        "index": 10,
-        "speaker": "agent",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 11,
-        "speaker": "customer",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": "confused",
-        "tool": null
-      },
-      {
-        "index": 12,
-        "speaker": "agent",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 13,
-        "speaker": "customer",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": "confused",
-        "tool": null
-      },
-      {
-        "index": 14,
-        "speaker": "agent",
-        "base_intent": "explain_lead_mechanics",
-        "keywords": ["लेट कॉल भी होता है", "डीले डीले भी हो रहा है"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 15,
-        "speaker": "customer",
-        "base_intent": "ask_question",
-        "keywords": ["कॉल के लिए पासपार करने के लिए वेट", "दो मिनट चाहिए"],
-        "sentiment": "frustrated",
-        "tool": null
-      },
-      {
-        "index": 16,
-        "speaker": "agent",
-        "base_intent": "explain_lead_mechanics",
-        "keywords": ["नौ कॉल जाते हैं", "रेस्पॉंड करें"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 17,
-        "speaker": "customer",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 18,
-        "speaker": "agent",
-        "base_intent": "raise_request",
-        "keywords": ["highlight कराने के request", "लीड का पूरा category", "keyword बताये"],
-        "sentiment": null,
-        "tool": "raise_ticket"
-      },
-      {
-        "index": 19,
-        "speaker": "customer",
-        "base_intent": "acknowledge",
-        "keywords": ["पूरा time देखे"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 20,
-        "speaker": "agent",
-        "base_intent": "raise_request",
-        "keywords": ["रिपोर्ट आपका डाल रहा हूँ", "इंक्वारी आपको प्रोफ़र टाइम पर"],
-        "sentiment": null,
-        "tool": "raise_ticket"
-      },
-      {
-        "index": 21,
-        "speaker": "customer",
-        "base_intent": "acknowledge",
-        "keywords": ["ठीक है"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 22,
-        "speaker": "agent",
-        "base_intent": "raise_request",
-        "keywords": ["24 hours में रिजॉल", "फिल्डिबैक बताईए"],
-        "sentiment": null,
-        "tool": null
-      }
+      {"index": 0, "speaker": "agent", "base_intent": "greeting", "keywords": ["Good evening", "Welcome to justdial.com", "How may I help you today"], "sentiment": null, "tool": null},
+      {"index": 1, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "neutral", "tool": null, "suggested_intent": "unintelligible_fragment"},
+      {"index": 2, "speaker": "agent", "base_intent": "ask_question", "keywords": ["kya issue aara hai", "epoxy flooring", "Jalat lead aa raha hai", "Aapka naam jaan sakte"], "sentiment": null, "tool": null},
+      {"index": 3, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "neutral", "tool": null, "suggested_intent": "system_metadata_artifact"},
+      {"index": 4, "speaker": "agent", "base_intent": "check_account", "keywords": ["Check कर रहे हैं", "epoxy का मैंने डाला नहीं है", "गलत की आये है", "epoxy क्यों आ रहा है"], "sentiment": null, "tool": null},
+      {"index": 5, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "neutral", "tool": null, "suggested_intent": "audio_artifact"},
+      {"index": 6, "speaker": "agent", "base_intent": "advise_improvement", "keywords": ["home page के ऊपर circle है", "categories आपको revise करनी हैं", "revise कर दीजेगा", "आपको guide करती हैं"], "sentiment": null, "tool": null}
     ]
   },
   {
-    "call_id": "LCS-9V23H0L1",
+    "call_id": "LCS-F1GLR102",
     "turns": [
-      {
-        "index": 0,
-        "speaker": "agent",
-        "base_intent": "technical_issue",
-        "keywords": ["प्रोफाइल लाइव नहीं हुआ है", "image upload कर दिजेगा", "accounts team को मैं email कर देता हूँ"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 1,
-        "speaker": "customer",
-        "base_intent": "ask_question",
-        "keywords": ["आपके फोन से होगा"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 2,
-        "speaker": "agent",
-        "base_intent": "clarify_repeat",
-        "keywords": ["मेरे फोन से"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 3,
-        "speaker": "customer",
-        "base_intent": "agree",
-        "keywords": ["वो भी तो कर सकते"],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 4,
-        "speaker": "agent",
-        "base_intent": "advise_improvement",
-        "keywords": ["KYC की जो डीटेल है", "मार्केटिंग एसाइन कर देता"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 5,
-        "speaker": "customer",
-        "base_intent": "ask_question",
-        "keywords": ["रिनूवल करने उस समय", "इस चीज़ को बता रहे हैं तो मतलब क्या है"],
-        "sentiment": "frustrated",
-        "tool": null
-      },
-      {
-        "index": 6,
-        "speaker": "agent",
-        "base_intent": "answer_query",
-        "keywords": ["उन्होंने बोला था कि मैं कर दूँगा", "विजिट अरेंज कराईए"],
-        "sentiment": null,
-        "tool": null
-      },
-      {
-        "index": 7,
-        "speaker": "customer",
-        "base_intent": "other",
-        "suggested_intent": "garble_partial",
-        "keywords": [],
-        "sentiment": "neutral",
-        "tool": null
-      },
-      {
-        "index": 8,
-        "speaker": "agent",
-        "base_intent": "raise_request",
-        "keywords": ["विजिट अरेंज कर देता हूँ"],
-        "sentiment": null,
-        "tool": "raise_ticket"
-      },
-      {
-        "index": 9,
-        "speaker": "customer",
-        "base_intent": "roi_complaint",
-        "keywords": ["क्वांटे नहीं हुआ है", "वो सब चीज नहीं हुआ है"],
-        "sentiment": "frustrated",
-        "tool": null
-      },
-      {
-        "index": 10,
-        "speaker": "agent",
-        "base_intent": "renewal_upsell",
-        "keywords": ["आडवन्ट फीचर है", "बिजनेस को ज्यादा बूस्ट या प्रमोट", "फीडबैक लिंक वाटसिप के माध्यम से"],
-        "sentiment": null,
-        "tool": null
-      }
+      {"index": 0, "speaker": "agent", "base_intent": "greeting", "keywords": ["Good afternoon, welcome to JustDial.com", "سن پا رہے ہیں مجھے", "کونسی location سے بات کر رہے ہیں", "profile register ہے وہ number بتائیے گا"], "sentiment": null, "tool": null},
+      {"index": 1, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "neutral", "tool": null, "suggested_intent": "hold_audio_bleed"},
+      {"index": 2, "speaker": "agent", "base_intent": "end_call", "keywords": ["anything else", "Thank you"], "sentiment": null, "tool": null}
+    ]
+  },
+  {
+    "call_id": "LCS-FE7457BG",
+    "turns": [
+      {"index": 0, "speaker": "agent", "base_intent": "greeting", "keywords": ["Good afternoon sir", "I am calling from JustDial.com sir"], "sentiment": null, "tool": null},
+      {"index": 1, "speaker": "customer", "base_intent": "ask_question", "keywords": ["location change"], "sentiment": "neutral", "tool": null},
+      {"index": 2, "speaker": "agent", "base_intent": "other", "keywords": [], "sentiment": null, "tool": null, "suggested_intent": "unintelligible_garble"},
+      {"index": 3, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "neutral", "tool": null, "suggested_intent": "audio_artifact"}
+    ]
+  },
+  {
+    "call_id": "LCS-FEM8RGOR",
+    "turns": [
+      {"index": 0, "speaker": "agent", "base_intent": "greeting", "keywords": ["Good evening", "welcome to JustDial.com", "how may I help you today"], "sentiment": null, "tool": null},
+      {"index": 1, "speaker": "customer", "base_intent": "roi_complaint", "keywords": ["lead तो बिकार बिकार lead आ रहा है", "3-4 मेने से एक भी lead कहीं नहीं आ रहा है", "पहले काम अच्छा आ था था"], "sentiment": "frustrated", "tool": null},
+      {"index": 2, "speaker": "agent", "base_intent": "check_account", "keywords": ["Registered mobile number"], "sentiment": null, "tool": null},
+      {"index": 3, "speaker": "customer", "base_intent": "check_account", "keywords": ["UTI Sam Road Carriers"], "sentiment": "neutral", "tool": null},
+      {"index": 4, "speaker": "agent", "base_intent": "ask_question", "keywords": ["leads आपको कैसे आ रही हैं"], "sentiment": null, "tool": null},
+      {"index": 5, "speaker": "customer", "base_intent": "report_wrong_leads", "keywords": ["विकाल विकाल नहीं दा रहा है", "कोई बोलता है आपको किसने फोन किया", "क्यों फोन कर रहे हो बार बार", "मेरा फाइल फोल के देखिये"], "sentiment": "frustrated", "tool": null},
+      {"index": 6, "speaker": "agent", "base_intent": "check_account", "keywords": ["एक recent lead का नाम बता ये जो गलक आई थी"], "sentiment": null, "tool": null},
+      {"index": 7, "speaker": "customer", "base_intent": "answer_query", "keywords": ["ऑफिस में रहता है", "मैं अभी ऑफिस में हो नहीं"], "sentiment": "neutral", "tool": null},
+      {"index": 8, "speaker": "agent", "base_intent": "other", "keywords": [], "sentiment": null, "tool": null, "suggested_intent": "unintelligible_fragment"},
+      {"index": 9, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "neutral", "tool": null, "suggested_intent": "unintelligible_fragment"},
+      {"index": 10, "speaker": "agent", "base_intent": "explain_lead_mechanics", "keywords": ["महीने से ऐसा आ रहा है", "call करके आपकी details दो", "filter करते हैं उनको"], "sentiment": null, "tool": null},
+      {"index": 11, "speaker": "customer", "base_intent": "ask_question", "keywords": ["उसको देखिये ना", "लपड़ा कुछ कर रहा"], "sentiment": "confused", "tool": null},
+      {"index": 12, "speaker": "agent", "base_intent": "check_account", "keywords": ["changes कर रहा हूँ आपके लिए", "कैसा response मिल गए"], "sentiment": null, "tool": null},
+      {"index": 13, "speaker": "customer", "base_intent": "ask_question", "keywords": ["मेरा नाम ऊपर है की नहीं"], "sentiment": "neutral", "tool": null},
+      {"index": 14, "speaker": "agent", "base_intent": "other", "keywords": [], "sentiment": null, "tool": null, "suggested_intent": "unintelligible_fragment"},
+      {"index": 15, "speaker": "customer", "base_intent": "clarify_repeat", "keywords": ["बाती नहीं सुनिया तो कैसे explain करूँ", "बोलिये"], "sentiment": "frustrated", "tool": null},
+      {"index": 16, "speaker": "agent", "base_intent": "answer_query", "keywords": ["आज केंजिस कर रहा हूँ", "प्रॉपर response करेंगे", "थोड़ा फ्लो कम होने"], "sentiment": null, "tool": null},
+      {"index": 17, "speaker": "customer", "base_intent": "ask_question", "keywords": ["लीड में इश्यू हो रहा है", "किसके"], "sentiment": "frustrated", "tool": null},
+      {"index": 18, "speaker": "agent", "base_intent": "explain_lead_mechanics", "keywords": ["फ्लो कम होने के कारण लीड"], "sentiment": null, "tool": null},
+      {"index": 19, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "neutral", "tool": null, "suggested_intent": "unintelligible_fragment"},
+      {"index": 20, "speaker": "agent", "base_intent": "answer_query", "keywords": ["बहुत रिस्पांस मिलेगा अब", "मेरी changes के बाद", "इसके अलावा को यार issue हैं"], "sentiment": null, "tool": null},
+      {"index": 21, "speaker": "customer", "base_intent": "agree", "keywords": ["नहीं नहीं बस इतना ही issue है"], "sentiment": "neutral", "tool": null},
+      {"index": 22, "speaker": "agent", "base_intent": "end_call", "keywords": ["Thank you for calling JustDial.com"], "sentiment": null, "tool": null}
+    ]
+  },
+  {
+    "call_id": "LCS-FICV2ZJF",
+    "turns": [
+      {"index": 0, "speaker": "agent", "base_intent": "greeting", "keywords": ["Good afternoon", "JustDial customer service", "how can I help you"], "sentiment": null, "tool": null},
+      {"index": 1, "speaker": "customer", "base_intent": "report_wrong_leads", "keywords": ["getting a wrong lead"], "sentiment": "neutral", "tool": null},
+      {"index": 2, "speaker": "agent", "base_intent": "acknowledge", "keywords": ["wrong number"], "sentiment": null, "tool": null},
+      {"index": 3, "speaker": "customer", "base_intent": "report_wrong_leads", "keywords": ["Wrong number ka aara hai", "Wrong number"], "sentiment": "neutral", "tool": null},
+      {"index": 4, "speaker": "agent", "base_intent": "ask_question", "keywords": ["what is the problem", "what is the issue with the contract", "let me check"], "sentiment": null, "tool": null},
+      {"index": 5, "speaker": "customer", "base_intent": "report_wrong_leads", "keywords": ["just two leads have come", "called both the leads", "JustDial को लेकर बात कर रहे हैं"], "sentiment": "neutral", "tool": null},
+      {"index": 6, "speaker": "agent", "base_intent": "acknowledge", "keywords": ["lead आपको मिल रही है", "received हो रही है", "wrong lead हो"], "sentiment": null, "tool": null},
+      {"index": 7, "speaker": "customer", "base_intent": "agree", "keywords": ["हाँ, जी"], "sentiment": "neutral", "tool": null},
+      {"index": 8, "speaker": "agent", "base_intent": "report_wrong_leads", "keywords": ["fake lead आ रही है", "वो response नहीं कर रहे है"], "sentiment": null, "tool": null},
+      {"index": 9, "speaker": "customer", "base_intent": "report_wrong_leads", "keywords": ["उठाके भी बोल रहे है", "कोई requirement"], "sentiment": "neutral", "tool": null},
+      {"index": 10, "speaker": "agent", "base_intent": "acknowledge", "keywords": ["नहीं है, ऐसा उन्होंने"], "sentiment": null, "tool": null},
+      {"index": 11, "speaker": "customer", "base_intent": "agree", "keywords": ["search नहीं है, right"], "sentiment": "neutral", "tool": null},
+      {"index": 12, "speaker": "agent", "base_intent": "ask_question", "keywords": ["अभी देखिये, आप बताइये"], "sentiment": null, "tool": null},
+      {"index": 13, "speaker": "customer", "base_intent": "ask_question", "keywords": ["कुछ लिए आपने provide किया है", "वही check कर"], "sentiment": "neutral", "tool": null},
+      {"index": 14, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "neutral", "tool": null, "suggested_intent": "unintelligible_fragment"},
+      {"index": 15, "speaker": "agent", "base_intent": "check_account", "keywords": ["main ek tarikh se lekar pehle main check karna saunge"], "sentiment": null, "tool": null},
+      {"index": 16, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "neutral", "tool": null, "suggested_intent": "unintelligible_fragment"},
+      {"index": 17, "speaker": "agent", "base_intent": "check_account", "keywords": ["80% की आयी है", "fake है", "profile से जाकर click किया है", "आपकी profile को check किय"], "sentiment": null, "tool": null},
+      {"index": 18, "speaker": "customer", "base_intent": "report_wrong_leads", "keywords": ["पहले भी आया है", "ऐसा ही fake आ रहा है"], "sentiment": "frustrated", "tool": null},
+      {"index": 19, "speaker": "agent", "base_intent": "raise_request", "keywords": ["request दाल देती है", "आपको यह problem face नहीं करनी पड़ेगी", "Lead का flow"], "sentiment": null, "tool": "raise_ticket"}
+    ]
+  },
+  {
+    "call_id": "LCS-FPJ7K4PV_1",
+    "turns": [
+      {"index": 0, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "neutral", "tool": null, "suggested_intent": "hold_audio_bleed"},
+      {"index": 1, "speaker": "agent", "base_intent": "greeting", "keywords": ["Venkatesh", "ఓకేన సా", "ఇదాన ఇశ్య విందా సా కాన్రట్ లో"], "sentiment": null, "tool": null},
+      {"index": 2, "speaker": "customer", "base_intent": "acknowledge", "keywords": ["Okay"], "sentiment": "neutral", "tool": null},
+      {"index": 3, "speaker": "agent", "base_intent": "explain_lead_mechanics", "keywords": ["ఒక్క లిడ్ ఉచ్చిలు సార్", "మోర్ణింగ లేవన్ టూవేల్", "త్రీ ఉచ్చాయు సార్"], "sentiment": null, "tool": null},
+      {"index": 4, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "neutral", "tool": null, "suggested_intent": "unintelligible_garble"},
+      {"index": 5, "speaker": "agent", "base_intent": "other", "keywords": [], "sentiment": null, "tool": null, "suggested_intent": "unintelligible_garble"},
+      {"index": 6, "speaker": "customer", "base_intent": "ask_question", "keywords": ["I don't know what to do"], "sentiment": "confused", "tool": null},
+      {"index": 7, "speaker": "agent", "base_intent": "other", "keywords": [], "sentiment": null, "tool": null, "suggested_intent": "unintelligible_garble"},
+      {"index": 8, "speaker": "customer", "base_intent": "ask_question", "keywords": ["What are you doing here, madam", "When are you coming here"], "sentiment": "neutral", "tool": null},
+      {"index": 9, "speaker": "agent", "base_intent": "other", "keywords": [], "sentiment": null, "tool": null, "suggested_intent": "unintelligible_garble"},
+      {"index": 10, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "neutral", "tool": null, "suggested_intent": "unintelligible_garble"},
+      {"index": 11, "speaker": "agent", "base_intent": "other", "keywords": [], "sentiment": null, "tool": null, "suggested_intent": "unintelligible_garble"},
+      {"index": 12, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "neutral", "tool": null, "suggested_intent": "unintelligible_garble"},
+      {"index": 13, "speaker": "agent", "base_intent": "explain_lead_mechanics", "keywords": ["user requirement searches బట్టి", "అటమేటికా ఫోరేడ్ ఆవుత్తాయ్", "టాఇమింగ్"], "sentiment": null, "tool": null},
+      {"index": 14, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "neutral", "tool": null, "suggested_intent": "unintelligible_garble"},
+      {"index": 15, "speaker": "agent", "base_intent": "other", "keywords": [], "sentiment": null, "tool": null, "suggested_intent": "unintelligible_garble"},
+      {"index": 16, "speaker": "customer", "base_intent": "ask_question", "keywords": ["మిక ఒక లింకో చే సార్", "పెకేస్ ఇస్టోలే సార్"], "sentiment": "neutral", "tool": null},
+      {"index": 17, "speaker": "agent", "base_intent": "advise_improvement", "keywords": ["Normal message వాట్సాప్", "Approve changes", "concern గుడా పెడితం సర్", "Rating"], "sentiment": null, "tool": null}
+    ]
+  },
+  {
+    "call_id": "LCS-FPO5U0LA",
+    "turns": [
+      {"index": 0, "speaker": "agent", "base_intent": "greeting", "keywords": ["I am calling from JustDial.com customer service"], "sentiment": null, "tool": null},
+      {"index": 1, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "neutral", "tool": null, "suggested_intent": "unintelligible_garble"},
+      {"index": 2, "speaker": "agent", "base_intent": "other", "keywords": [], "sentiment": null, "tool": null, "suggested_intent": "unintelligible_garble"},
+      {"index": 3, "speaker": "agent", "base_intent": "advise_improvement", "keywords": ["callback area", "Remove the categories", "average response time is 4 hours", "check the ratings", "I have put the link in WhatsApp"], "sentiment": null, "tool": null}
+    ]
+  },
+  {
+    "call_id": "LCS-FWYG6YVW",
+    "turns": [
+      {"index": 0, "speaker": "agent", "base_intent": "greeting", "keywords": ["JustDial.com customer support team", "Complaint ஏதாவது write செய்திருக்கிறீர்களாம்", "notification மிகவும் late ஆகிவிட்டது"], "sentiment": null, "tool": null},
+      {"index": 1, "speaker": "customer", "base_intent": "ask_question", "keywords": ["எல்லா numberலே ஒவே timeல connect ஆக்கணும்", "late ஆகரத்துக்கு chances இருக்கு", "எல்லா lead ஆப்பிதா வருகிறேன்", "notifications பாருங்கள்"], "sentiment": "neutral", "tool": null},
+      {"index": 2, "speaker": "agent", "base_intent": "guide_customer_support", "keywords": ["Uninstall செய்து பார்க்கிறீர்களா", "new app link அனுப்புகிறேன்", "ticketல நீங்க attach பண்ணுங்க", "customer support option இருக்கு"], "sentiment": null, "tool": null}
     ]
   }
 ]

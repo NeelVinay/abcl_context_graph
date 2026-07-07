@@ -1,31 +1,31 @@
 # ABCL Call Context-Graph Report
 
-Calls analyzed: **113** · intents: **15** · transitions: **104**
+Calls analyzed: **115** · intents: **15** · transitions: **101**
 _(counts are per-turn occurrences across all calls, not number of calls)_
 
 ## 1. Keywords by intent (the signal words)
 
-- **agent_investigate_explain** (221x): देखिए, लगा, डबल, नाइन, फोर, बोलो
-- **customer_other** (186x): चेक, call, सब्सक्राइब, नंबर, देख, देखो
-- **agent_other** (155x): जान, जिसके, उन्होंने, com, जस्टाइल, पेर
-- **customer_complaint** (137x): कॉल, चेक, लीड, लाइन, जान, ऐसे
-- **customer_acknowledge** (112x): उन्होंने, दियो, कॉल, उनको, थैंक, right
-- **customer_ask_question** (66x): रिगार्डिंग, हफ्ता, नीम, लीड, सब्सक्राइब, उसको
-- **agent_greet** (61x): किरा, आपसे, जान, नाइन, सद्गुरू, हेलो
-- **agent_ask** (53x): लीड, कहने, नीड, चेक, नंबर, देखिए
-- **agent_acknowledge_complaint** (53x): प्रॉब्लम, कस्टमर, उन्होंने, सर्विस, सपोर्ट, लीड
-- **agent_raise_request** (41x): लीड, काम, request, check, issue, करूँगी
-- **agent_acknowledge** (40x): मिनट, चेक, ऐसा, कॉल, call, person
-- **customer_respond** (29x): customer, concern, support, option, application, नंबर
-- **customer_greet** (28x): हमको, वेलकम, कॉल, अल्लो, इन्दा, जेस्टर
+- **agent_investigate_explain** (255x): justdial, customer, com, support, good, call
+- **customer_acknowledge** (149x): justdial, दिये, थी।, करा, साथ।, see
+- **customer_complaint** (143x): customer, support, ticket, area, location, call
+- **customer_other** (123x): talking, machine, out, पाएं।, justdial, lead
+- **agent_other** (93x): justdial, lead, number, one, second, problem
+- **agent_greet** (82x): customer, good, service, department, day, name
+- **agent_acknowledge** (51x): दिये, साथ।, बड़, justdial, customer, call
+- **customer_greet** (48x): justdial, customer, com, support, good, service
+- **agent_acknowledge_complaint** (44x): forward, ऊपर, leave, area, definitely, बाहर
+- **customer_ask_question** (44x): लीड, चेक, ना।, इसको, ऐसा, number
+- **agent_raise_request** (43x): justdial, call, business, feedback, rating, lead
+- **agent_ask** (36x): बोला, just, tell, talking, ticket, department
+- **customer_respond** (31x): contract, request, share, चेक, search, customer
 
 ## 2. Customer sentiment by intent
 
-- **customer_other**: frustrated:3
-- **customer_complaint**: frustrated:8 · confused:1
-- **customer_acknowledge**: frustrated:2
+- **customer_acknowledge**: happy:2 · frustrated:1
+- **customer_complaint**: frustrated:8 · distrustful:3 · confused:1
+- **customer_other**: frustrated:2
 - **customer_ask_question**: confused:1
-- **customer_respond**: frustrated:2 · happy:1
+- **customer_respond**: frustrated:2 · confused:1
 
 ## 3. Tool / API calls detected
 

@@ -383,7 +383,9 @@ def _salient_tokens(text, n=2):
     return uniq[:n]
 
 
-_WORD_RE = re.compile(r"[a-zA-Zऀ-ॿ]+")
+# Devanagari LETTERS/matras only (ऀ-ॣ) — excludes the danda ।(।), double
+# danda, Devanagari digits and punctuation, so keywords like "करें" don't come out as "करें।".
+_WORD_RE = re.compile(r"[a-zA-Zऀ-ॣ]+")
 
 
 def build_keyword_vocab(texts, min_calls=2, min_len=3):

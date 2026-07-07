@@ -1,0 +1,153 @@
+{
+  "call_id": "LCS-H7J971ZW",
+  "language": "hi-en",
+  "outcome": "raised_request",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "justdial",
+        "customer",
+        "call",
+        "com",
+        "lead"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "क्राफ्टमेंसर मैं अली बात कर रहा हूँ JustDial.com के customer department से। आपका एक contract है। रिगार्डिंग हमने एक ticket रिसीव कर रहा है। Family nursing home care service की। ठीक है। तो उसके लिए मैंने आपको call किया था। अपने ticket रिसीव के less lead",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "पे।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "के रिगार्डिंग पे। एक तो उसके लिए नहीं आ रही है। म",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "उसमें",
+        "कीजिए",
+        "टाइम",
+        "की।",
+        "प्लीज।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "माफ़ी चाहिए क्या बोलना है। दो बार repeat कीजिए का प्लीज। शाइटिंग में जो होता है वो त्री टाइम्स में होती है। बाद में तो वन टाइम ही होती है सर हर मन्त की। एक मन्त में दो बार सो नहीं होती है। अगर ACS failed हो जाती है तो bounce हो जाती है। उसमें क",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "तो।",
+        "चाहता",
+        "अगले"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जैसे चीम में बातना चाहता हूँ कि अगले बात करवाना है तो।",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "lead",
+        "ticket",
+        "department",
+        "raise",
+        "होगा।"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है। स्टॉप करवाना है तो क्या करना होगा। जैसे आपने lead department में ticket raise करा हैं। इसलिए आपको ECS department में ticket raise करना होगा। अगर आपको वहाँ पर कोई error आता है, ticket raise नहीं होता है। तो आपको normally",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "बंद",
+        "चाहता",
+        "मना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "वो बंद करने के लिए मना चाहता है। वो बंद करने के लिए मना चाहता है।",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "मना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अगर वो आपको मना कर रहे हैं",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "तरीके"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तो इस तरीके",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "call",
+        "thank",
+        "हूँ।",
+        "time",
+        "चेक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "से नहीं होता है। क्योंकि जैसे मैं यहाँ पर चेक कर रहा हूँ। आपका जो स्टार्ट हुआ था, यह नवंबर में आपने स्टार्ट कराया था। तो अभी almost 3 महीने हो गए आपको। आप 3 महीने के बाद further क्या कर सकते हैं। अ Mail, आपकी ECS है वो stop करानी है। आवाज आ रही है सुन पा रहे है। सुन पा रहे हैं आवाज आ रही है sir आपके end से कोई respond नहीं आ रहा है sir सुन पा रहे हैं आवाज आ रही है। आवाज आ रही है तो respond कीजिएगा please सुन पा रहे हैं आवाज आ रही है sir sir आपके end से कोई respond नहीं सुन पा रहे हैं। आपकी call disconnect की जाती है। Thank you for calling. Thank you for available time.",
+      "entities": []
+    }
+  ]
+}

@@ -10,12 +10,15 @@
       "intent": "agent_greet",
       "base_intent": "open",
       "keywords": [
-        "चाहता",
-        "पंपी"
+        "justdial",
+        "customer",
+        "support",
+        "good",
+        "how"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "कर दो तो अगर मैंने पंपी चाहता हूँ, तो मैंने पंपी चाहता हूँ, तो मैंने पंपी चाहता हूँ, तो मैंने पंपी चाहता हूँ, तो मैंने पंपी चाहता हूँ,",
+      "text": "Hello, Hello, Good day sir. Good morning. Sir, I am JustDial's customer support. Good morning, how are you? I am customer support department. Good morning. Hello! లింగ్ రాన్ ఇదు సంల్లింగో? లింగ్ It's a nice process actually.",
       "entities": []
     }
   ]

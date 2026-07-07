@@ -1,0 +1,377 @@
+{
+  "call_id": "5a6351dc-d7b2-4338-bf12-8b7458b3f8e2-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello. Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "आदित्य",
+        "बोल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं जाकिर साकिर सोन ऑफ जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "बोलिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी ma'am बोलिए.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "pre-approved",
+        "loan offer",
+        "आदित्य",
+        "कैपिटल",
+        "बिरला"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है एक लाख पचास हजार रुपये का — मैं अभी इस call पर आपको इस loan को",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello. जी",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "apply",
+        "शुरू",
+        "मदद"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "apply करने में मदद कर सकती हूँ। क्या हम शुरू करें?",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello?",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_confirm",
+      "base_intent": "agree",
+      "keywords": [
+        "शुरू कर",
+        "शुरू"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ जी, मैं सुन रही हूँ। क्या हम शुरू करें?",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "शुरू कर",
+        "शुरू"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "शुरू कराऊं?",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "link",
+        "sms",
+        "click"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब आप SMS में जो link है उसे click करें।",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "कीजिए",
+        "माफ़",
+        "कहेंगे",
+        "दोबारा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "माफ़ कीजिए, क्या आप दोबारा कहेंगे?",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "link",
+        "sms",
+        "click"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब आप SMS में जो link है उसे click करें।",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_link_opened",
+      "base_intent": "open_link",
+      "keywords": [
+        "link",
+        "sms",
+        "देख"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ma'am देख रहा हूं मैं SMS में link.",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_apply",
+      "base_intent": "click_apply",
+      "keywords": [
+        "apply now",
+        "apply",
+        "click",
+        "now",
+        "screen"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप home screen पर आ गए हैं। आप नीचे एक 'Apply Now' button देख सकते हैं, उस पर click करें।",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_link_opened",
+      "base_intent": "open_link",
+      "keywords": [
+        "call",
+        "link",
+        "open"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Call करूं मैं open कर दिया link.",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "click",
+        "check",
+        "number",
+        "mobile"
+      ],
+      "sentiment": null,
+      "tool": "send_otp",
+      "text": "अपना mobile number enter करें। फिर Terms and Conditions checkbox को check करें और 'Get OTP' पर click करें।",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "open"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ma'am अभी यह open नहीं हुआ ma'am",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "link",
+        "check",
+        "try",
+        "connection",
+        "internet"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Internet connection check करें और link को एक बार फिर से try करें।",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "link",
+        "कृपया",
+        "connection",
+        "internet",
+        "चेक"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कृपया अपने internet connection को चेक करें और link को फिर से खोलने की कोशिश करें।",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "नहीं हो रहा",
+        "नहीं हो",
+        "connection",
+        "सही"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "Ma'am connection तो सही आ रहा ma'am यह नहीं हो रहा.",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "link",
+        "sms",
+        "open",
+        "पूरी",
+        "browser"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Browser tab को पूरी तरह close करें और SMS में जो link है उसे फिर से open करें।",
+      "entities": []
+    },
+    {
+      "index": 22,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "फिर से बता",
+        "कीजिए",
+        "माफ़"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "माफ़ कीजिए, क्या आप फिर से बता सकते हैं?",
+      "entities": []
+    }
+  ]
+}

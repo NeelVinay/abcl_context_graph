@@ -7,209 +7,109 @@
       "index": 0,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [],
+      "intent": "customer_greet",
+      "base_intent": "open",
+      "keywords": [
+        "बिजनेस"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "हो गया",
+      "text": "वगैरह बिजनेस की",
       "entities": []
     },
     {
       "index": 1,
-      "speaker": "agent",
+      "speaker": "customer",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
-      "keywords": [],
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "चेक",
+        "करें।"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "हो गया हो",
+      "text": "में चेक करें।",
       "entities": []
     },
     {
       "index": 2,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "गया हो",
-      "entities": []
-    },
-    {
-      "index": 3,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "शेयर",
-        "business",
-        "update",
-        "address",
-        "msme"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "गया हो गया आपने जो MSME शेयर किया है सर, क्या उसका business address यही है जो अभी आप update कर रहे हैं, मतलब जिस property, जिस land पर आपका business है?",
-      "entities": []
-    },
-    {
-      "index": 4,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
-      "keywords": [
-        "address"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "कौन सा address है?",
-      "entities": []
-    },
-    {
-      "index": 5,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "चेक",
-        "पड़ेगा",
-        "msme"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "एक साइकन, मैंने चेक करना पड़ेगा. इसमें MSME की अगर मैं चेक कर रहा हूँ तो इसमें",
-      "entities": []
-    },
-    {
-      "index": 6,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
-      "keywords": [
-        "दिखा",
-        "सिटी"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "सिटी मुझे दिखा रही है मुझे इसमें सिटी",
-      "entities": []
-    },
-    {
-      "index": 7,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "दिखा",
-        "नगर"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "जो है वो मुझाली दिखा रहा है एंडिस्टिक जो है सास नगर दिखा रहा है इसमें आपके",
-      "entities": []
-    },
-    {
-      "index": 8,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "question",
-      "keywords": [
-        "चेक",
-        "कोंटेक्ट"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "कोंटेक्ट मुझे चेक कर",
-      "entities": []
-    },
-    {
-      "index": 9,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_ask",
       "base_intent": "question",
       "keywords": [
         "ऐसा",
-        "लीज",
-        "प्रूफ",
-        "बिजनस",
-        "बिल"
+        "बिजनेस",
+        "license",
+        "trade",
+        "लीज"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "रही है ठीक है आपके बिजनस के कोई आपके पास ऐसा प्रूफ है था कोई लीज या कोई ट्रेड लाइसेंस या विजली का बिल या प्रमाइसिज",
+      "text": "आपके बिजनेस के लिए आपके पास ऐसा प्रूफ है था कोई लीज या कोई trade license या बिजली का बिल या प्रमाइसिस कोई बिल।",
       "entities": []
     },
     {
-      "index": 10,
+      "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "बिल"
+        "समझ"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "कोई बिल क्या दिया था? नहीं नहीं",
+      "text": "उद्ध्यम तो आपने दिया है, उद्ध्यम तो मैं समझ",
       "entities": []
     },
     {
-      "index": 11,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "ऑप्शन",
-        "समझ",
-        "लीज",
-        "पॉइंट",
-        "address"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "उद्यम तो आपने दिया है उद्यम तो मैं समझ पा रहा हूँ उद्यम का ना address mismatch हो रहा है उस यहां पर मेरे पास ऑप्शन है तो आप प्रेज लाइसेंस दे सकते हैं या लीज या रेंटल एग्रीमेंट दे सकते हैं या सेयर स्टैक रेजिस्टेशन दे सकते हैं आपने पॉइंट पीकर पर आपने आपने",
-      "entities": []
-    },
-    {
-      "index": 12,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "आपने आपने आपन",
-      "entities": []
-    },
-    {
-      "index": 13,
+      "index": 4,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_raise_request",
       "base_intent": "resolution",
       "keywords": [
-        "जाए",
-        "whatsapp",
+        "share",
+        "owner",
+        "option",
+        "raise",
+        "ऐसा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "पा रहा हूँ, उद्ध्यम का address mismatch हो रहा है। उसके उद्ध्यम के अलावा कोई ऐसा क यहाँ पर मेरे पास option है तो आप raise license दे सकते हैं। या lease या rental agreement दे सकते हैं। या sales tax registration दे सकते हैं। अगर owner property है तो बिल्डी का bill आप share कर सकते",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "हैं। ठीक है, तो",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
+      "keywords": [
+        "हूँ।",
         "ticket",
-        "provide",
+        "time",
+        "whatsapp",
         "same"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "ठीक है तो मैं आपको solution provide करता हूँ यह आपको ticket आपके whatsapp पर आएगा जैसे आपके पास available हो जाए बिजली का बिल आप same ticket को reopen करके tag कर दीजेगा बिजली का बिल के साथ में इसे resolve हो जाएगा ठीक है",
+      "text": "मैं आपका solution provide करता हूँ। यह आपको ticket आपके WhatsApp पर आएगा। जैसे ही आपके पास available हो जाए बिजली का बिल, आप same ticket को reopen करके tag कर दीजाएगा बिजली का बिल के साथ में। इसे resolve हो जाएगा, ठीक है। ठीक है, sounds available time, ठीक है। ठीक है, ठीक है।",
       "entities": []
     }
   ]

@@ -1,0 +1,140 @@
+{
+  "call_id": "9186775d-753a-4621-879a-b5377d0d6be6-transcript",
+  "language": "hi-en",
+  "outcome": "completed",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "available",
+        "person",
+        "see"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I'll see if this person is available.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello",
+        "speaking",
+        "yograj"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello, am I speaking with YOGRAJ SHARMA?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "line",
+        "stay",
+        "correct"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Correct. Please stay on the line.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "namaste",
+        "capital",
+        "aditya",
+        "birla",
+        "minutes"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Namaste, I am Priya calling from Aditya Birla Capital. May I speak with you for a few minutes?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "call",
+        "sorry",
+        "there",
+        "still"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Sorry, are you still there on the call?",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
+      "keywords": [
+        "since",
+        "responding"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Since you are not responding,",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "call",
+        "sorry",
+        "available",
+        "message",
+        "person"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I'm sorry, person is not available. If you would like to leave an additional message, please reply after the call.",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
+      "keywords": [
+        "time",
+        "thank",
+        "contact",
+        "later"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Okay, we will contact you later. Thank you for your time.<EOC/>",
+      "entities": []
+    }
+  ]
+}

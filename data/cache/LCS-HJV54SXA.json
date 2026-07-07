@@ -9,135 +9,126 @@
       "type": "action",
       "intent": "agent_greet",
       "base_intent": "open",
-      "keywords": [],
+      "keywords": [
+        "justdial",
+        "lead",
+        "check",
+        "details",
+        "example"
+      ],
       "sentiment": null,
       "tool": null,
-      "text": "वाइफ ग्रेक होते हैं अम्मा, केपड़ लोबल सेकरेटी",
+      "text": "JustDial వాస్ వేకావుతుంన్ అమ్మా కెప్పుర్ లోబల్ సెక్యరోటి ఆఉట్ సోర్సే సేర్ సేర్ JustDial ఉండి మాట్లరుతునన్ సర్ కస్టమర్ సర్విస్టున్ ఉండి కంట్రక్ట్ సిమిరు కంసన్ ఉండి కంప్లైంట్ రేస్ చేసారు సర్ చేప్పండి ఎంటి కంస Adi sir, lead ది, details ఉకట్టి, example ఇవండి, check జేస్తాము. Hello. Voice కట్టావుతుది, sir, మేది.",
       "entities": []
     },
     {
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "आउट"
-      ],
+      "intent": "customer_greet",
+      "base_intent": "open",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "आउट सॉर्स है,",
+      "text": "Hello. Yes, sir. Okay, sir.",
       "entities": []
     },
     {
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "आउट",
-        "कंप्लेंट",
-        "कंसन"
-      ],
+      "intent": "agent_greet",
+      "base_intent": "open",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "सर? आउट हैं अम्मा? कॉंट्राक्ट्स लेटिंग कंसन होते हैं अम्मा, कंप्लेंट पेटे हैं",
+      "text": "Sir, నా పేర్",
       "entities": []
     },
     {
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_greet",
+      "base_intent": "open",
       "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "सर, केपड़ लोबल सेकरेटी",
+      "text": "గితాంజులి, చెప్పండి Sir. కర్యా నానా,",
       "entities": []
     },
     {
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
       "keywords": [
-        "आउट",
-        "कंप्लेंट",
-        "कंसन",
-        "कंट्रेक्ट",
-        "एंटी"
+        "justdial"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "आउट सॉर्स है, सर? केपड़ लोबल सेकरेटी आउट सॉर्स है, कंट्रेक्ट से लिए कंसन उन्दी कंप्लेंट रेज चे सारे सर चेपटे ये एंटी कंसन",
+      "text": "నేర్ పేర్ గితాంజులి, నా పేర్ వెంగటేస్తో. మాకు ఉచ్చే లీడ్స్ అన్ని ఫేస్ లీడ్స్ ఉచ్� JustDial ಈ ಈ",
       "entities": []
     },
     {
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
-        "लीड्स",
-        "अन्य"
+        "requirement",
+        "market"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "अमा लीड्स अन्य पेक लीड्स होते हैं बापा",
+      "text": "Market requirement అన్నారు అన్నారు",
       "entities": []
     },
     {
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
-        "चेक",
-        "लीड",
-        "सब्सक्राइब",
-        "हेलो",
-        "डिटेल्स"
+        "response",
+        "block",
+        "based"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "कस्समर नमबर एक एक्जांपल दिवने सर पेक लीड्स होते हैं चेक जेस्तानो अभी सर लीड दे डिटेल्स एक एक्जांपल दिवन हेलो हेलो सब्सक्राइब",
+      "text": "Block based ఇంటే కొంచ్చం response తగ్గిపుతు తగ్గిన పరవాలేయు మీ blockchain ఇంటే ఒక వన వేక్ వర్కు చేస్తాను శూడా నీ response అల్కు ఉస్తుందీ అనే research లీచ్చాను అదు నానా �",
       "entities": []
     },
     {
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
-        "सब्सक्राइब",
-        "लीड्स"
+        "here",
+        "coming"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "करते हैं सब्सक्राइब करते हैं माक वच्चे लीड्स",
+      "text": "I am tagging you instead of coming here, sir. You are the",
       "entities": []
     },
     {
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask",
-      "base_intent": "question",
+      "intent": "agent_other",
+      "base_intent": "other",
       "keywords": [
-        "लीड्स",
-        "डीटेल्स",
-        "फेस",
-        "अल्ली"
+        "candidate"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "अल्ली फेस लीड्स वच्चने नामा? आ लीड्स दी डीटेल्स",
+      "text": "perfect candidate for",
       "entities": []
     },
     {
@@ -147,12 +138,15 @@
       "intent": "customer_respond",
       "base_intent": "agent_handle",
       "keywords": [
-        "रीसेंट",
-        "एक्जांपल"
+        "justdial",
+        "good",
+        "right",
+        "one",
+        "month"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "अकटी एक्जांपल लिबाइंडी सर रीसेंट",
+      "text": "me. I am a good candidate for at least one month. I should have seen your target, right? We can't filter that, sir. JustDial",
       "entities": []
     },
     {
@@ -162,174 +156,110 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "लीड्स",
-        "कारण",
-        "फेस",
-        "अल्ली",
-        "लाइंग"
+        "what",
+        "open",
+        "requirement",
+        "process",
+        "source"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "का माटलाइड अवी फेस लीड्स वच्चने अवी जनार्धन जनार्धन अल्ली वक़ती वच्चो सूच्छोड़ दी कारण मेरे लाइंग",
+      "text": "has an open source. What is the requirement of this process? మాట్లాడి requirement",
       "entities": []
     },
     {
       "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_complaint",
-      "base_intent": "complaint",
-      "keywords": [
-        "ओपन"
-      ],
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
-      "text": "ये चीज़ ओपन हो",
+      "text": "ఇంటి కనుక్కుని పంబిచ్చేది కాదు ప్రాసేస్ అనేది కనుక్కుని ప్రాసేస్ అనేది",
       "entities": []
     },
     {
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
       "keywords": [
-        "फिल्टर",
-        "कम्युनिकेशन"
+        "business",
+        "response",
+        "how",
+        "rating",
+        "link"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "रहते हैं ये उन्हें उन्हें अभी मैंने फिल्टर कर सकते हैं। अब मैंने कम्युनिकेशन नहीं है। अगर मैंने फिल्टर कर सकते हैं।",
+      "text": "Ok Sir, I am doing a blog. See how the response will be in one week. Increase the rating a little. I have put a link in your whatsapp. You can increase it by sending it to the family, friends, relatives, whoever you have. Business related, photos related, etc.",
       "entities": []
     },
     {
       "index": 13,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "मना",
-        "फिल्टर"
+        "what",
+        "there",
+        "just",
+        "people",
+        "ask"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "अगर मैंने फिल्टर कर सकते हैं। अगर मैंने फिल्टर कर सकते हैं। ये वो, मना की यहाँ ये, ये कार्यवेद्धवान के लिए कोई कोई",
+      "text": "There are people in our field office. They just asked. It came to us again. What did you ask? Who",
       "entities": []
     },
     {
       "index": 14,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "फिल्टर",
-        "अधि",
-        "अनेदी",
-        "सोर्स"
+        "justdial",
+        "what",
+        "process",
+        "ask"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "कोई कोई नहीं जाएँगड़ा? अधि मन्नम फिल्टर चेहिएलेम, सर, नेन आधे चेप्तुनाम। जस्टाइट अनेदी ओन्लाइन सोर्स उन्टेंगे,",
+      "text": "did you ask? What did you ask JustDial? What did you ask JustDial? Process ఇదే ఉంట్తాది Sir మనకి JustDial ఉంట్తాది Sir ఇదే ఉంట్తాది Sir",
       "entities": []
     },
     {
       "index": 15,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_respond",
+      "base_intent": "agent_handle",
       "keywords": [
-        "ओपन",
-        "देते",
-        "जरूर",
-        "सोर्स"
+        "service",
+        "payment"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "ओपन सोर्स उन्टेंगे, येकड़ा एक जरूर आज पूर्टिक पूर्टिक कर देते हैं इंड्रेस्टिंग पूर्टिक कर देते हैं जितंग में पलांग सैक्टिन",
+      "text": "ఇదే ఉంట్తాది Sir ఇదే ఉంట్త Payment ని పల్లా, Service",
       "entities": []
     },
     {
       "index": 16,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
       "keywords": [
-        "बिजनेस",
-        "यूज़",
-        "फोटोस",
-        "मात्रे",
-        "कार्ज"
+        "thank",
+        "calling"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "उन्हें मार्क टो कार्ज जावालने अपड़े मात्रे मात्रे यहोंने यूज़ टो आज यहोंने यहोंने बिजनेस विलेटर फोटोस विलेटर",
-      "entities": []
-    },
-    {
-      "index": 17,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "अधिक"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "ना अधिक विलेटर",
-      "entities": []
-    },
-    {
-      "index": 18,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_investigate_explain",
-      "base_intent": "agent_handle",
-      "keywords": [
-        "कॉल",
-        "सेंटर",
-        "सेर"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "ना आओने सेर वाली येवर होने येदी मनेकी सेट्पर कादा सर्पड़ून आपको कॉल सेंटर की कॉल होती",
-      "entities": []
-    },
-    {
-      "index": 19,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [
-        "वेरे",
-        "अदि"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "आप वाली येवर के लिए आदो वेरो वेरे एक जाते उन्हारो अदि इंडरेस्ट येला बेंकटेटा",
-      "entities": []
-    },
-    {
-      "index": 20,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_raise_request",
-      "base_intent": "resolution",
-      "keywords": [
-        "कॉल",
-        "सब्सक्राइब",
-        "सर्विस",
-        "रेटिंग",
-        "feedback"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "रमना लेकोंटे से प्रेया ना येवर तरुप पोकुना ने साम सब्सक्राइब करने के लिए कॉल कर रहता है, मैंने feedback link share होता है। मैंने कैसे बात करने के लिए रेटिंग दें। 6-10 पॉजिटी है। पॉजिटी रिस्पॉंस 10 दें। यह कॉल के सर्विस रिलेटेड नहीं है। अगर हमारे प्रभावित हैं, हमारे प्रभावित नहीं है। अगर हमारे प्रभावित हैं,",
+      "text": "ని పల్లా ఉక్కే నా? Thank you for calling us.",
       "entities": []
     }
   ]

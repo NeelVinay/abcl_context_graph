@@ -1,85 +1,333 @@
 {
   "call_id": "LCS-FICV2ZJF",
   "language": "hi-en",
-  "outcome": "incomplete",
+  "outcome": "raised_request",
   "turns": [
     {
       "index": 0,
-      "speaker": "customer",
-      "type": "action",
-      "intent": "customer_greet",
-      "base_intent": "open",
-      "keywords": [],
-      "sentiment": null,
-      "tool": null,
-      "text": "Hello. Hello.",
-      "entities": []
-    },
-    {
-      "index": 1,
       "speaker": "agent",
       "type": "action",
       "intent": "agent_greet",
       "base_intent": "open",
       "keywords": [
+        "justdial",
         "customer",
-        "service",
         "good",
-        "how",
-        "afternoon"
+        "service",
+        "help"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "Good afternoon, I am Pooja from Just Dial Customer Service. How",
+      "text": "Hello Hello Good afternoon, I am Pooja from JustDial customer service, how can I help you?",
       "entities": []
     },
     {
-      "index": 2,
+      "index": 1,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "लीड",
-        "नंबर",
-        "हलो",
-        "इसको",
-        "help"
+        "lead",
+        "getting",
+        "wrong"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "can I help you? इसको लीड गलत आ रहा है, गलत नंबर आ रहा है. Yes. लीड इन लीड मुझे आ रहा है मैं जो रॉंग नंबर दा रहा है, रॉंग नंबर हलो हलो",
+      "text": "I am getting a wrong lead,",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "number",
+        "wrong"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "wrong number Yes",
       "entities": []
     },
     {
       "index": 3,
-      "speaker": "agent",
-      "type": "action",
-      "intent": "agent_ask",
-      "base_intent": "question",
-      "keywords": [
-        "हलो",
-        "जैसा",
-        "आवाज",
-        "सेकंड"
-      ],
-      "sentiment": null,
-      "tool": null,
-      "text": "हाँ जी से बताओ नहीं चाहिए मतलब कॉबलम है आपको आवाजी आ रही है मेरी जैसा आवाज आ रही है एक सेकंड तो हलो हलो",
-      "entities": []
-    },
-    {
-      "index": 4,
       "speaker": "customer",
       "type": "action",
       "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "बोरो"
+        "lead",
+        "number",
+        "wrong",
+        "mujhe",
+        "aara"
       ],
       "sentiment": null,
       "tool": null,
-      "text": "बोरो ना जो अच्छा बोरो",
+      "text": "Lead in the lead. Mujhe aara hai na jo. Wrong number ka aara hai. Wrong number. Hello. Hello. Yes.",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask",
+      "base_intent": "question",
+      "keywords": [
+        "check",
+        "contract",
+        "issue",
+        "what",
+        "problem"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello. Yes, tell me everything, what is the problem? Can you hear me? Yes, I can hear you, one second. So, say hello, answer me. One minute, one minute, let me check, one second. Sorry sir. Yes, tell me, what is the issue with the contract? Hello. Yes, yes, tell me.",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "justdial",
+        "leads",
+        "लेकर",
+        "just",
+        "come"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Yes madam, see, just two leads have come to JustDial. Yes, yes. We have called both the leads, so they say that no, we have... JustDial को लेकर बात कर रहे हैं।",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "lead",
+        "मिल",
+        "wrong",
+        "received",
+        "means"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Okay, it means आपको मतलब सहने का मतलब है की जो lead आपको मिल रही है, received हो रही है, तो wrong lead हो",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [
+        "right"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "रही है, right? हाँ, जी,",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "lead",
+        "response",
+        "second",
+        "first",
+        "thing"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "वो fake lead आ रही है। Okay, fake lead आ रही है, जो की वो response नहीं कर रहे है, first thing. Second thing,",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "बोल",
+        "उन्होंने",
+        "requirement"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "वो क्रू उठाके भी बोल रहे है, उन्होंने कोई requirement",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [
+        "ऐसा",
+        "उन्होंने"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं है, ऐसा उन्होंने",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "time",
+        "right",
+        "search"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "search नहीं है, right? Yes. Ma'am, � 6-2-4 at time.",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "देखिये"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अभी देखिये, आप बताइये",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "check",
+        "provide"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अभी कुछ लिए आपने provide किया है। वही check कर",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "backchannel",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं कुछ एक।",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "call",
+        "check",
+        "minute",
+        "abhi",
+        "pehle"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Madhu sir, okay Madhu ma'am call 7 will be ready in a minute ma'am. Ma'am jaisi ki main ek tarikh se lekar pehle main check karna saunge, yeh minute ma'am. Abhi",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "lead",
+        "just",
+        "aaya"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "just jo aaya hai na lead wo desi",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_investigate_explain",
+      "base_intent": "agent_handle",
+      "keywords": [
+        "call",
+        "lead",
+        "check",
+        "team",
+        "day"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "aap. Just aaj aapko team aaya hua hai. और आपका 17 आया है। और आज के दिन में जो lead आयी है। तीनों भी जो आई है न, 80% की आयी है। 80% की lead है। तो मतलब वो person ने fake है। वो person ने हमारे पास से call किया है। कैसे किया हमें check कर लेती हैं। Client में खुद से आपकी profile से जाकर click किया है। आपकी profile को check किय और भी lead का कोई example जगा सकते हैं। जैसे की next day, कल के दिन Prachi नाम की lead आयी थी।",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_complaint",
+      "base_intent": "complaint",
+      "keywords": [
+        "fake",
+        "ऐसा",
+        "बोलना"
+      ],
+      "sentiment": "distrustful",
+      "tool": null,
+      "text": "Ma'am, पहले भी आया है। ऐसा ही fake आ रहा है। बस मेरा बोलना यह है। क्या थोड़ा",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_raise_request",
+      "base_intent": "resolution",
+      "keywords": [
+        "lead",
+        "thank",
+        "time",
+        "request",
+        "problem"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ध्यान दीखे। जरूर मैं एक काम करती हूँ ma'am। यह चीज़ों के लिए जैसे आपने मुझे बताया है। व तो में इस दर्शे आपका lead का मारी है। यह भी request दाल देती है। कहीं ना गई जादे सी गणा ले रहे हैं। तो आपको यह problem face नहीं करनी पड़ेगी। Thank you. Thank you so much. में request दाल देती है। जैसे में लाइजी। वैसे हम आपको भी से थोड़ा time दीजे। Lead का flow जो भी होगा। उसे स",
       "entities": []
     }
   ]
