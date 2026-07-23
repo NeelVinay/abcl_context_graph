@@ -40,6 +40,11 @@ NODES = {
     "ans_why":     ("Answer: Why this call\\n(pre-approved offer)", "step"),
     "ans_general": ("Answer: General FAQ", "step"),
     "handle_objection": ("Handle Objection\\n(fraud / trust — reassure)", "step"),
+    # split from the old single "already has loan / other lender" edge — real call data
+    # shows these are three distinct scenarios with different (though mostly continuing) outcomes
+    "obj_already_loan":   ("Already Has This Loan\\n(ABCL)", "step"),
+    "obj_loan_elsewhere": ("Has a Loan\\n(elsewhere / unspecified)", "step"),
+    "obj_prior_failed":   ("Prior Attempt\\nFailed / Rejected", "step"),
     "d_ready":     ("Ready to apply?", "decision"),
     "sms":         ("Send SMS\\n(application link)", "step"),
     "open_link":   ("Open Link / Web Journey", "step"),
@@ -85,7 +90,12 @@ EDGES = [
     ("offer", "d_interested", ""),
     ("d_interested", "callback", "callback requested"),
     ("d_interested", "closure", "not interested"),
-    ("d_interested", "handle_objection", "already has loan / other lender"),
+    ("d_interested", "obj_already_loan", "already has this loan (ABCL)"),
+    ("d_interested", "obj_loan_elsewhere", "has a loan (elsewhere)"),
+    ("d_interested", "obj_prior_failed", "prior attempt failed"),
+    ("obj_already_loan", "d_query", ""),
+    ("obj_loan_elsewhere", "d_query", ""),
+    ("obj_prior_failed", "d_query", ""),
     ("d_interested", "d_query", "yes / has questions"),
     # the query hub fans out to specific question types, then all feed back to "ready?"
     ("d_query", "ans_amount", "loan amount"),
@@ -207,7 +217,11 @@ def map_call_path(call) -> list[str]:
     if disp == "not_interested":
         return p + ["closure"]
     if disp == "already_has_loan":
-        p += ["handle_objection"]
+        p += ["obj_already_loan"]
+    elif disp == "has_loan_unspecified":
+        p += ["obj_loan_elsewhere"]
+    elif disp == "prior_attempt_failed":
+        p += ["obj_prior_failed"]
     p += ["d_query"]
     if disp == "security_concern" or "reassure_trust" in b:
         p += ["handle_objection"]
@@ -348,6 +362,9 @@ _DECISION_NODES = {
 _ANSWER_NODES = {"ans_amount", "ans_rate", "ans_fee", "ans_elig",
                  "ans_who", "ans_why", "ans_general"}
 
+# Objection fan-out nodes (existing loan / prior attempt) — same horizontal rank
+_OBJ_NODES = {"obj_already_loan", "obj_loan_elsewhere", "obj_prior_failed"}
+
 
 def render_exec(calls, out_path_no_ext: str) -> str | None:
     """C-suite exec view: collapsed form steps, zero-count branches hidden, percentages."""
@@ -407,6 +424,14 @@ def render_exec(calls, out_path_no_ext: str) -> str | None:
         with dot.subgraph() as s:
             s.attr(rank="same")
             for n in sorted(answer_present):
+                s.node(n)
+
+    # ── rank=same: parallel objection fan-out (existing loan / prior attempt) ──
+    obj_present = _OBJ_NODES & active_nodes
+    if len(obj_present) > 1:
+        with dot.subgraph() as s:
+            s.attr(rank="same")
+            for n in sorted(obj_present):
                 s.node(n)
 
     # ── rank=same: parallel employment-detail branches ───────────────────────

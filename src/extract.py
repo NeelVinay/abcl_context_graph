@@ -40,6 +40,10 @@ INTENT_LIBRARY = [
     ("click_apply", ["apply now"], ["apply now button पर click करें", "apply हो गया है"]),
     ("manual_review", ["manual review"], ["application manual review के लिए जाएगी"]),
     ("final_offer", ["final offer", "loan amount and", "cannot be changed", "final and"], ["ये final offer page है, loan amount और tenure दिख रहा है"]),
+    # Placed BEFORE address_error: "आवाज़"/"awaaz" is a distinctive audio-only trigger,
+    # checked first so a call-audio complaint doesn't fall into address_error's broader
+    # "error"/"नहीं हो रहा" keywords (first-hit-wins).
+    ("call_audio_issue", ["आवाज़ नहीं आ", "आवाज़ टूट", "आवाज़ clear नहीं", "line cut", "voice cut", "awaaz nahi", "awaaz clear nahi", "network issue"], ["आपकी आवाज़ टूट रही है थोड़ी", "network issue लग रहा है, आवाज़ साफ़ नहीं आ रही"]),
     ("address_error", ["red", "error", "नहीं हो रहा", "leading slash"], ["address red में आ रहा है, हो नहीं रहा", "error आ रहा है address में", "extra space या slash हटा दीजिए"]),
     ("enter_address", ["address", "pincode", "locality", "building", "house number", "flat", "आधार"], ["अपना address आधार के अनुसार भरें", "house number, building name, street भरिए", "pincode डाल दीजिए"]),
     ("recording_disclosure", ["record", "training", "quality"], ["ये call training और quality purpose के लिए record हो रही है"]),
@@ -76,6 +80,7 @@ ACTIONS = {
     "enter_email": {"agent": "agent_request_email", "customer": "customer_provide_email"},
     "enter_address": {"agent": "agent_request_address", "customer": "customer_provide_address"},
     "address_error": {"agent": "agent_help_address_error", "customer": "customer_report_address_error"},
+    "call_audio_issue": {"agent": "agent_acknowledge_audio_issue", "customer": "customer_report_audio_issue"},
     "employment_type": {"agent": "agent_ask_employment_type", "customer": "customer_state_employment_type"},
     "enter_income": {"agent": "agent_request_income", "customer": "customer_provide_income"},
     "business_details": {"agent": "agent_request_business_details", "customer": "customer_provide_business_details"},
@@ -123,6 +128,8 @@ INTENT_DESC = {
     "customer_provide_address": "Customer fills their address details",
     "agent_help_address_error": "Agent helps resolve an address field error",
     "customer_report_address_error": "Customer reports the address field is erroring",
+    "agent_acknowledge_audio_issue": "Agent acknowledges the phone line/voice is unclear",
+    "customer_report_audio_issue": "Customer reports the call audio/line is breaking or unclear",
     "agent_ask_employment_type": "Agent asks salaried vs self-employed",
     "customer_state_employment_type": "Customer states their employment type",
     "agent_request_income": "Agent asks the customer to enter monthly income",
