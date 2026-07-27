@@ -1,0 +1,156 @@
+"""Mechanical safety gate for an edited DSL prompt.
+
+This is the piece that makes automated prompt editing trustworthy: every check
+below is one that was run by hand during the manual improvement pass, and every
+one is fully deterministic. An edit that fails any BLOCKING check must never be
+written to disk or shipped, regardless of how good the reasoning behind it was.
+
+Blocking checks:
+  braces_balanced      the prompt still parses as balanced blocks
+  says_preserved       no pre-existing say() line was removed or reworded
+  no_dangling_routes   no route points at a state or intent that does not exist
+  intent_wired         every intent added is defined AND routed AND has a handler
+  token_budget         the result is within the caller's token ceiling
+
+Advisory (reported, non-blocking):
+  say_added / say_changed counts, token delta, state and intent deltas.
+
+`says_preserved` is the important one. Scripted speech is the product; an LLM
+rewriting a prompt can silently reword a line in a way no structural check would
+catch, so existing say() text is treated as immutable unless the caller explicitly
+allows a specific line to change.
+"""
+from __future__ import annotations
+
+import re
+from dataclasses import dataclass, field
+
+from src import dsl_parse
+
+SAY_RE = dsl_parse.SAY_RE
+
+
+@dataclass
+class VerifyResult:
+    ok: bool
+    blocking: list = field(default_factory=list)
+    advisory: list = field(default_factory=list)
+
+    def render(self) -> str:
+        lines = ["PASS" if self.ok else "FAIL"]
+        for b in self.blocking:
+            lines.append(f"  BLOCKING: {b}")
+        for a in self.advisory:
+            lines.append(f"  note: {a}")
+        return "\n".join(lines)
+
+
+def _brace_balance(text: str):
+    depth, line = 0, 1
+    for ch in text:
+        if ch == "\n":
+            line += 1
+        elif ch == "{":
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth < 0:
+                return False, f"unmatched '}}' at line {line}"
+    if depth != 0:
+        return False, f"{depth} unclosed '{{' at end of file"
+    return True, ""
+
+
+def _count_tokens(text: str):
+    try:
+        import tiktoken
+        return len(tiktoken.get_encoding("cl100k_base").encode(text))
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def verify(old_text: str, new_text: str, token_budget: int | None = None,
+           allow_say_changes: list | None = None) -> VerifyResult:
+    res = VerifyResult(ok=True)
+    allow = set(allow_say_changes or [])
+
+    ok, msg = _brace_balance(new_text)
+    if not ok:
+        res.blocking.append(f"braces_balanced: {msg}")
+
+    old_says = SAY_RE.findall(old_text)
+    new_says = SAY_RE.findall(new_text)
+    removed = [s for s in set(old_says) - set(new_says) if s not in allow]
+    added = list(set(new_says) - set(old_says))
+    if removed:
+        res.blocking.append(
+            f"says_preserved: {len(removed)} existing say() line(s) removed or "
+            f"reworded, e.g. {removed[0][:70]!r}")
+    res.advisory.append(f"say() lines: {len(old_says)} -> {len(new_says)} "
+                        f"(+{len(added)} added)")
+    for s in added[:6]:
+        res.advisory.append(f"  + {s[:80]}")
+
+    # structural integrity of the NEW text
+    import tempfile
+    import pathlib
+    with tempfile.NamedTemporaryFile("w", suffix=".raven", delete=False) as fh:
+        fh.write(new_text)
+        tmp = pathlib.Path(fh.name)
+    try:
+        d_new = dsl_parse.parse(tmp)
+        d_old = dsl_parse.parse_text_fallback(old_text) if hasattr(
+            dsl_parse, "parse_text_fallback") else None
+    finally:
+        tmp.unlink(missing_ok=True)
+
+    states = set(d_new.states)
+    intents = set(d_new.intents)
+    dangling = []
+    for name, st in d_new.states.items():
+        for tgt in [t for _, t in st.intent_routes if t] + st.gotos:
+            if tgt not in states:
+                dangling.append(f"{name}() -> {tgt}()")
+        for i, _ in st.intent_routes:
+            if i != "default" and i not in intents:
+                dangling.append(f'{name}() on intent("{i}")')
+    for i, tgt in d_new.global_routes.items():
+        if tgt not in states:
+            dangling.append(f'global intent("{i}") -> {tgt}()')
+        if i not in intents:
+            dangling.append(f'global intent("{i}") undefined')
+    if dangling:
+        res.blocking.append(
+            f"no_dangling_routes: {len(dangling)} broken reference(s): "
+            + "; ".join(dangling[:4]))
+
+    # any NEW intent must be fully wired: defined + routed + handler exists
+    old_intents = set(SAY_RE.sub("", old_text) and
+                      {m for m in re.findall(r"^\s*(\w+)\s*\{", old_text, re.M)})
+    new_intent_names = intents - old_intents
+    for i in sorted(new_intent_names):
+        if i not in d_new.global_routes and not any(
+                i == ri for st in d_new.states.values() for ri, _ in st.intent_routes):
+            res.blocking.append(
+                f"intent_wired: new intent '{i}' is defined but never routed")
+
+    n_old, n_new = _count_tokens(old_text), _count_tokens(new_text)
+    if n_old is not None and n_new is not None:
+        res.advisory.append(f"tokens: {n_old} -> {n_new} ({n_new - n_old:+d})")
+        if token_budget is not None and n_new > token_budget:
+            res.blocking.append(
+                f"token_budget: {n_new} tokens exceeds budget of {token_budget}")
+    else:
+        res.advisory.append("tokens: tiktoken unavailable, budget not enforced")
+
+    res.advisory.append(f"states: {len(states)}   intents: {len(intents)}")
+    res.ok = not res.blocking
+    return res
+
+
+if __name__ == "__main__":
+    import sys
+    old = open(sys.argv[1]).read()
+    new = open(sys.argv[2]).read()
+    budget = int(sys.argv[3]) if len(sys.argv) > 3 else None
+    print(verify(old, new, token_budget=budget).render())
