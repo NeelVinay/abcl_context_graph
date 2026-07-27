@@ -1,0 +1,121 @@
+[
+  {
+    "timestamp": "2026-07-27T05:46:07",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:22",
+    "speaker": "user",
+    "content": "Yeah, मैंने एक order किया कुर्ता अभी तक मुझको call आया मैंने rest अब मुझको delivery agent का contact detail बता सकते हैं क्या? तब तक product delivery होगा आज?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:22",
+    "speaker": "assistant",
+    "content": "जी, मै आपके order का status check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:27",
+    "speaker": "assistant",
+    "content": "मै देख पा रही हूँ कि आपका Indus Route Kurta अभी shipped है। यह आज शाम आठ बजे तक deliver हो जाएगा। अभी आपका order out for delivery नहीं है, इसलिए agent की details available नहीं हैं। जैसे ही यह out for delivery होगा, आप delivery agent की details मिंत्रा app में My Orders page पर देख सकते हैं। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:54",
+    "speaker": "user",
+    "content": "Ok. Like I mean कब तक delivery agent like update कब हो जाएगा? At what time, ऐसा कुछ idea है क्या",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:54",
+    "speaker": "assistant",
+    "content": "जी, exact time बताना मुश्किल है, लेकिन आमतौर पर order out for delivery होने पर app में update आ जाता है और delivery agent आपके location के पास पहुँचते ही आपको call करेंगे। आप थोड़ी देर बाद app में check कर सकते हैं। क्या इसके अलावा मैं आपकी कोई और help कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:16",
+    "speaker": "user",
+    "content": "अरे Puma slide का update मुझको अभी तक कुछ नहीं मिला है. तो उसका update बता सकते हैं क्या?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:16",
+    "speaker": "assistant",
+    "content": "ठीक है, मै आपके Puma slides की details check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:23",
+    "speaker": "assistant",
+    "content": "मै देख पा रही हूँ कि आपके Puma Slides की delivery में काफी delay हो गया है, इसके लिए मै आपसे माफी चाहती हूँ। आपकी complaint register हो चुकी है और हम इसे resolve करने की कोशिश कर रहे हैं। चूंकि यह order काफी delay हो गया है, क्या आप बेहतर assistance के लिए हमारे expert agent से बात करना चाहेंगे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:53",
+    "speaker": "user",
+    "content": "चलिए मैंने कल भी बात किया है. उन्होंने बोल रहा कि twenty four hours के बाद आपको update आ जाएगा. दो दिन से मैं try कर रही हूं update नहीं मिल रहा मुझको.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:53",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि आप काफी समय से wait कर रहे हैं और update न मिलना परेशान करने वाला है। आपका case priority पर है और हम इसे जल्द से जल्द resolve करने की पूरी कोशिश कर रहे हैं। मैं आपको सही जानकारी दिलाने के लिए अभी आपको हमारे expert agent से connect कर देती हूँ। क्या आप उनसे बात करना चाहेंगे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:22",
+    "speaker": "user",
+    "content": "नहीं नहीं मैं कल contact करूंगी करूंगी like आज मुझे कुछ update मिलेगा या नहीं देखूंगी? If not मैं पांच छह item बाहर purchase करूंगी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:22",
+    "speaker": "assistant",
+    "content": "जी, मैं आपकी नाराजगी समझ सकती हूँ। हम पूरी कोशिश कर रहे हैं कि आपका order जल्द से जल्द आप तक पहुँचे। आप आज update check कर लीजिए, और अगर आपको कोई भी समस्या आती है तो आप हमें फिर से contact कर सकती हैं। क्या मैं आपकी किसी और चीज़ में help कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:38",
+    "speaker": "user",
+    "content": "नहीं,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:40",
+    "speaker": "user",
+    "content": "ठीक है. Thank you.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:40",
+    "speaker": "assistant",
+    "content": "आपका बहुत-बहुत धन्यवाद। आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:05",
+    "speaker": "assistant",
+    "content": "आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।",
+    "feedback": null,
+    "agent_id": null
+  }
+]

@@ -8,10 +8,13 @@ imitate these labels. This module handles the I/O around that:
   emit_batches(tax) -> split that domain's cached calls into batch files to label
   assemble(tax)     -> validate labeler outputs and merge into <gold>/labels.jsonl
 
-Two domains are supported via a Taxonomy object (they share the same cache dir but
+Three domains are supported via a Taxonomy object (they share the same cache dir but
 own disjoint call sets):
-  abcl      -> loan-application calls  (src/extract.py taxonomy, data/gold)
-  justdial  -> lead-gen support calls  (src/justdial_taxonomy.py, data/gold_justdial)
+  abcl      -> loan-application calls   (src/extract.py taxonomy, data/gold)
+  justdial  -> lead-gen support calls   (src/justdial_taxonomy.py, data/gold_justdial)
+  generic   -> any new client, broad cross-client buckets (src/generic_taxonomy.py,
+               data/gold_generic) — see src/generic_taxonomy.py for how to onboard
+               a new client's transcripts into this domain.
 """
 from __future__ import annotations
 
@@ -21,7 +24,7 @@ from pathlib import Path
 from typing import Callable
 
 import config
-from src import extract, justdial_taxonomy
+from src import extract, generic_taxonomy, justdial_taxonomy
 
 
 @dataclass
@@ -56,7 +59,8 @@ ABCL = Taxonomy(
     intent_library=extract.INTENT_LIBRARY, actions=extract.ACTIONS,
     sentiment_lexicon=extract.SENTIMENT_LEXICON, tool_rules=extract.TOOL_RULES,
     gold_dir=config.DATA / "gold",
-    owns=lambda stem: not stem.startswith("LCS"),
+    # NOT just "not JustDial" — that would also swallow new-client (GEN-*) transcripts.
+    owns=lambda stem: not stem.startswith("LCS") and not stem.startswith("GEN-"),
 )
 JUSTDIAL = Taxonomy(
     name="JustDial lead-generation support calls",
@@ -65,7 +69,16 @@ JUSTDIAL = Taxonomy(
     gold_dir=config.DATA / "gold_justdial",
     owns=lambda stem: stem.startswith("LCS"),
 )
-TAXONOMIES = {"abcl": ABCL, "justdial": JUSTDIAL}
+GENERIC = Taxonomy(
+    name="Generic cross-client calls (broad buckets)",
+    intent_library=generic_taxonomy.INTENT_LIBRARY, actions=generic_taxonomy.ACTIONS,
+    sentiment_lexicon=extract.SENTIMENT_LEXICON, tool_rules=generic_taxonomy.TOOL_RULES,
+    gold_dir=config.DATA / "gold_generic",
+    # Any client dropped in under the GEN-<client>-<id> naming convention — see
+    # src/generic_taxonomy.py for onboarding a new client.
+    owns=lambda stem: stem.startswith("GEN-"),
+)
+TAXONOMIES = {"abcl": ABCL, "justdial": JUSTDIAL, "generic": GENERIC}
 
 
 def _dirs(tax: Taxonomy):
@@ -157,8 +170,19 @@ def _cache_text_index(tax: Taxonomy) -> dict:
 
 
 def assemble(tax: Taxonomy) -> tuple[int, list[str]]:
-    """Validate every labeled batch and merge into <gold>/labels.jsonl."""
+    """Validate every labeled batch and merge into <gold>/labels.jsonl.
+
+    MERGES with whatever is already at labels_path (keyed by call_id+index) rather
+    than overwriting it — the `generic` taxonomy's gold file also gets rows from
+    src/generic_bootstrap.py (existing ABCL/JustDial gold recoded into broad
+    buckets); a naive overwrite here would silently wipe those out every time a new
+    client's batches are assembled. New rows for an existing key win (re-labeling
+    a call replaces its old label)."""
     _, labeled_dir, labels_path, _ = _dirs(tax)
+    existing_rows = []
+    if labels_path.exists():
+        existing_rows = [json.loads(l) for l in labels_path.read_text().splitlines() if l.strip()]
+    rows_by_key = {(r["call_id"], r["index"]): r for r in existing_rows}
     rows, problems = [], []
     text_idx = _cache_text_index(tax)
     dropped_kw = 0
@@ -185,13 +209,16 @@ def assemble(tax: Taxonomy) -> tuple[int, list[str]]:
                         kws.append(k)
                     else:
                         dropped_kw += 1
-                rows.append({
+                row = {
                     "call_id": cid, "index": t["index"], "speaker": t["speaker"],
                     "base_intent": b, "keywords": kws,
                     "sentiment": t.get("sentiment"), "tool": t.get("tool"),
                     "suggested_intent": t.get("suggested_intent"),
-                })
-    labels_path.write_text("\n".join(json.dumps(r, ensure_ascii=False) for r in rows))
+                }
+                rows.append(row)
+                rows_by_key[(cid, t["index"])] = row
+    labels_path.write_text("\n".join(json.dumps(r, ensure_ascii=False)
+                                     for r in rows_by_key.values()))
     if dropped_kw:
         problems.append(f"(info) dropped {dropped_kw} non-verbatim keywords")
     return len(rows), problems

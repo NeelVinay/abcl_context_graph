@@ -1,0 +1,303 @@
+[
+  {
+    "timestamp": "2026-07-27T05:48:45",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:55",
+    "speaker": "assistant",
+    "content": "I noticed you're silent, are you still there?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:00",
+    "speaker": "user",
+    "content": "हां hello, आवाज़ आ रही है मेरी?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:00",
+    "speaker": "assistant",
+    "content": "जी, आपकी आवाज़ बिलकुल साफ़ आ रही है। बताइए, मैं आपकी कैसे मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:07",
+    "speaker": "user",
+    "content": "Hello. Hello. हां तो मैं बोल रही",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:07",
+    "speaker": "assistant",
+    "content": "जी, बताइए। आप क्या",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:09",
+    "speaker": "user",
+    "content": "मैंने एक बहुत order",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:09",
+    "speaker": "assistant",
+    "content": "जी, बताइए। आपने क्या order",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:13",
+    "speaker": "user",
+    "content": "किया था तो कल tomorrow delivery सीखा था next",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:13",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि आप अपने",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:15",
+    "speaker": "user",
+    "content": "delivery दिखा रहा था तो वह अभी तक",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:16",
+    "speaker": "user",
+    "content": "क्यों नहीं आया है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:16",
+    "speaker": "assistant",
+    "content": "मै समझ सकती हूँ कि आप अपने order का wait कर रहे हैं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:21",
+    "speaker": "user",
+    "content": "अगर मैं जब से order करती हूं तो उसका हारता है तो तुम्हारा तो मैं दिखा रहा था",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:21",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि आप",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:27",
+    "speaker": "user",
+    "content": "सकते हो आप जब का लिखते हो, आप लोग देखो ना तो डर दिलवा आया था.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:31",
+    "speaker": "user",
+    "content": "अगर मैं अर्जुन को order कर रहा हूं तो मैं तो क्या करती हूं मैं husband को तंग कर नहीं औरता.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:31",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि आप",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:36",
+    "speaker": "user",
+    "content": "और यह सात दिन बाद में खाना पीना ज़रूर दो दिन में करके का खाना खाया है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:36",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि आप काफी परेशान हैं। आपके JOKER & WITCH Watch Gift Set का status अभी shipped है और यह 29 July तक deliver हो जाएगा। कृपया थोड़ा wait करें, आपका order जल्द ही आप",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:47",
+    "speaker": "user",
+    "content": "May on thirtieth July",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:47",
+    "speaker": "assistant",
+    "content": "जी, आपका order 29 July तक deliver हो जाएगा।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:53",
+    "speaker": "user",
+    "content": "को हुआ. और अब फिर July क्यों हुआ जब दिखा रहा था कि घर doctor दे रहे हैं. भाई वह है तो",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:53",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि date change होने से आप परेशान हैं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:57",
+    "speaker": "user",
+    "content": "तो ज़बान से ticket हो और मिंत्रा आकर तो फिर वहां काम हो.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:58",
+    "speaker": "assistant",
+    "content": "जी, मैं आपकी बात पूरी तरह",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:02",
+    "speaker": "user",
+    "content": "हटा दो तो वह फिर जो July चुरा चुरा चुरा चुरा चुरा चुरा चुरा तुम December में कर दो.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:02",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:05",
+    "speaker": "user",
+    "content": "दिन ही agree का date.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:06",
+    "speaker": "user",
+    "content": "Mister जो दर्द है वह दर्द का गर्मी ज़्यादा नहीं है",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:06",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि आप",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:10",
+    "speaker": "user",
+    "content": "तो फिर वह admit में नहीं मिलता पहले जो मैं दूसरा कुछ भी होगा",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:10",
+    "speaker": "assistant",
+    "content": "जी, आपकी बात ठीक से समझ नहीं आई। क्या आप कृपया अपनी problem फिर से बता सकते हैं ताकि मैं आपकी सही",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:20",
+    "speaker": "user",
+    "content": "उनतीस तारीख को भी लिख दोगे कि नहीं देना है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:23",
+    "speaker": "user",
+    "content": "फिर उनतीस से तीस हो जाएगा, तीस से एक हो जाएगा, एक",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:23",
+    "speaker": "assistant",
+    "content": "जी,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:27",
+    "speaker": "user",
+    "content": "set up हो जाएगा. यही तो पढ़ते हो अमीर बार में. यही problem है इससे पहले भी",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:27",
+    "speaker": "assistant",
+    "content": "जी,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:30",
+    "speaker": "user",
+    "content": "मैंने बहुत order किया था यही करते करते खुद ही cancel किया गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:31",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:36",
+    "speaker": "user",
+    "content": "अगर all of the stock है तो फिर देने का क्या फ़र्क़",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:36",
+    "speaker": "user",
+    "content": "उसको लिख दो यार order तो stop.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:36",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि आप बार-बार date बदलने और पिछले orders के cancel होने की वजह से काफी परेशान हैं। मैं आपको assure करती हूँ कि आपका यह order priority पर है और 29 July तक आपको मिल जाएगा। क्या मैं आपकी किसी और चीज़ में मदद कर",
+    "feedback": null,
+    "agent_id": null
+  }
+]

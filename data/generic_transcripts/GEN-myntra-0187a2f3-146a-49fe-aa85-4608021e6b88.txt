@@ -1,0 +1,135 @@
+[
+  {
+    "timestamp": "2026-07-27T05:46:15",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:21",
+    "speaker": "user",
+    "content": "Actually मुझे अपने product का जाना है कि अभी तक shipping हो ही नहीं है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:21",
+    "speaker": "assistant",
+    "content": "मै समझ सकती हूँ कि shipping न होने की वजह से आप परेशान हैं, मै तुरंत आपके order का status check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:30",
+    "speaker": "assistant",
+    "content": "जी, आपका Xsole Top with Skirt अभी processing में है। मै देख पा रही हूँ कि delivery में delay हुआ है और इसके लिए complaint register हो चुकी है, इसलिए हम इसे priority पर देख रहे हैं। आपका order 30 July तक deliver हो जाएगा।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:55",
+    "speaker": "user",
+    "content": "Ma'am तीस बजे पहले भी ऐसे कहा था कि जल्दी order deliver हो जाएगा. अब आप रहे हैं तीस July तक order deliver हो जाएगा. आप ही तक तो ship हुआ नहीं है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:55",
+    "speaker": "assistant",
+    "content": "जी, मै समझती हूँ कि आप काफी समय से wait कर रहे हैं और shipping न होने की वजह से निराश हैं। आपके order के लिए complaint पहले से register है और हम इसे priority पर resolve करने की कोशिश कर रहे हैं। आपका order 30 July तक deliver हो जाएगा। हम पूरी कोशिश कर रहे हैं कि इस बार आपको और wait न करना पड़े।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:28",
+    "speaker": "user",
+    "content": "अब मैं कब से wait कर रही हूं जितने बार customer को call करो कहते हो कि deliver हो जाएगा, हो जाएगा, but अभी तक नहीं हुआ है और मुझे यह चाहिए first तक ma'am. यह मैंने कुछ birthday है मेरी बेटी का उसके लिए मैंने order किया है तब birthday तक अगर नहीं आएगा तो फिर फ़ायदा क्या है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:28",
+    "speaker": "assistant",
+    "content": "जी, आपकी परेशानी बिलकुल जायज़ है और बेटी के birthday के लिए यह order बहुत ज़रूरी है। मै आपकी स्थिति समझ सकती हूँ और इसके लिए मै आपसे माफी चाहती हूँ। आपका order priority पर है और हम पूरी कोशिश कर रहे हैं कि यह जल्द से जल्द आप तक पहुँच जाए। status के हिसाब से यह 30 July तक deliver हो जाएगा। हम इसे fast-track करने की पूरी कोशिश कर रहे हैं ताकि आपकी बेटी का birthday खास बन सके।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:01",
+    "speaker": "user",
+    "content": "आप please कोशिश कीजिए हां कि कम से कम तो इस तक यह पहुंच जा अभी तक इसमें दिखाया कि यह ship हुआ ही है. मुझे details भी नहीं दिख रही है इसमें कुछ भी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:01",
+    "speaker": "assistant",
+    "content": "जी, मै आपकी बात समझ रही हूँ और मै पूरी कोशिश करूँगी कि आपका order जल्द से जल्द आप तक पहुँच जाए। अभी आपका order processing stage पर है, इसलिए shipping details अभी show नहीं हो रही हैं। जैसे ही यह ship होगा, आपको app में सारी details मिल जाएँगी। आप निश्चिंत रहें, आपका order priority पर है और हम इसे जल्द से जल्द deliver करवाने की कोशिश कर रहे हैं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:27",
+    "speaker": "user",
+    "content": "ठीक है करवाइए आप जल्दी से देखो इसको.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:27",
+    "speaker": "assistant",
+    "content": "जी, बिलकुल। मै एक बार फिर से internal team को notify कर रही हूँ ताकि आपके order को priority दी जाए और यह जल्द से जल्द ship हो सके। हम इसे resolve करने की पूरी कोशिश कर रहे हैं। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:45",
+    "speaker": "user",
+    "content": "ठीक है. मेरी बस यही है कि यह जल्दी से deliver हो जाए. Main",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:45",
+    "speaker": "user",
+    "content": "issue यही है अभी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:45",
+    "speaker": "assistant",
+    "content": "जी, मैं आपकी बात पूरी तरह समझ रही हूँ। आपका order priority पर है और हम इसे जल्द से जल्द deliver करवाने के लिए पूरी कोशिश कर रहे हैं। आप निश्चिंत रहें, हम इस पर काम कर रहे हैं। क्या इसके अलावा मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:02",
+    "speaker": "user",
+    "content": "नहीं बस thank you so much यह concern बस.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:03",
+    "speaker": "assistant",
+    "content": "जी, आपका बहुत धन्यवाद। मुझे उम्मीद है कि आपका order जल्द से जल्द आप तक पहुँच जाएगा। आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:22",
+    "speaker": "user",
+    "content": "बिल्कुल बिल्कुल. हां जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:22",
+    "speaker": "assistant",
+    "content": "जी, बहुत शुक्रिया। आपका दिन शुभ हो।",
+    "feedback": null,
+    "agent_id": null
+  }
+]

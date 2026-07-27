@@ -1,0 +1,518 @@
+{
+  "call_id": "GEN-myntra-b1b8e93d-e177-4214-9926-85a34cc3a238",
+  "language": "hi-en",
+  "outcome": "raised_request",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "assistant",
+        "मिंत्रा",
+        "service",
+        "welcome"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello? Hello",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
+      "keywords": [
+        "order",
+        "चाहते",
+        "issue",
+        "किस"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप किस order के बारे में बात करना चाहते हैं, और क्या issue है?",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_pan",
+      "base_intent": "enter_pan",
+      "keywords": [
+        "fake",
+        "order",
+        "delivery",
+        "दिखा",
+        "twelve"
+      ],
+      "sentiment": "distrustful",
+      "tool": null,
+      "text": "breakfast order किया था, twelve का delivery दिखा है, पर अभी fake दिखा रहा है वह.",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "order",
+        "समझ",
+        "line",
+        "status",
+        "delivery"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मै समझ सकती हूँ कि delivery को लेकर आप परेशान हैं, मै आपके order का status check कर रही हूँ। कृपया line पर बने रहिए।",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "delivery",
+        "मिल",
+        "agent",
+        "पहुँच"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपके Crocs Clogs का order out for delivery है और यह अगले 24 hours में आपको मिल जाएगा। मै देख पा रही हूँ कि पहले एक delivery attempt fail हुआ था, लेकिन इस बार agent समय पर पहुँच",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok. बस but कोई entry में हुआ मैं हम. उसका",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "फिर से बता",
+        "समझ",
+        "कृपया",
+        "पाई"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मैं समझ नहीं पाई। क्या आप कृपया अपनी बात फिर से बता सकते हैं?",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "call",
+        "शाम",
+        "available",
+        "message",
+        "बोला"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Nap वाला ना मुझे call आया ना कोई message आया था कल शाम को मुझे message आया था कि आज eleven PM तक available हो गया मैंने yes बोला कुछ reply मैंने yes किया तभी भी मुझे कोई parcel नहीं आया, कुछ call नहीं आया फिर.",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "delivery",
+        "देख",
+        "चाहती",
+        "माफी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मैं देख पा रही हूँ कि पहले एक delivery attempt fail हुआ था, इसके लिए माफी चाहती हूँ। आपका order already out for delivery",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "कैसे",
+        "form",
+        "message"
+      ],
+      "sentiment": "confused",
+      "tool": null,
+      "text": "But मेरे पास कैसे हुआ? जब मेरे पास तो form में message आया तो फिर कैसे हुआ ma'am?",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "reason"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, कभी कभी technical reason या",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "attempt"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैंने attempt नहीं किया था तो फिर",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "समझ"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मै समझ सकती हूँ कि",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "बोल",
+        "fail"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैंने ना मैं क्या बोल रहा हूं जब महीने fail हो जाता है ना चीज़?",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "समझ",
+        "चाह"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मैं समझ सकती हूँ कि आप क्या कहना चाह रहे हैं। कभी-कभी technical",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "call",
+        "attempt"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैंने attempt नहीं किया मुझे call मुझे",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "deliver",
+        "call",
+        "बजे",
+        "message",
+        "बोला"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां मुझे कुछ call तो आया नहीं, बस मुझे availability का message आया था मैंने यह बोला उसके ऊपर मैंने यह answer किया तो मुझे कल रात तक ग्यारह बजे तक कोई message भी आया, call आया, deliver भी आया, तो उधर उतने attempt fail हुआ. At attempt कैसा fail हो गया फिर? At attempt किया ही नहीं तो fail कैसा हो गया फिर?",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "समझ",
+        "call",
+        "agent",
+        "परेशान",
+        "ऐसा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मैं समझ सकती हूँ कि बिना call आए attempt fail दिखना परेशान करने वाला है। कभी-कभी technical error या agent की गलती की वजह से ऐसा हो जाता है, इसके लिए मैं",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "error",
+        "मतलब क्या",
+        "attempt",
+        "fail"
+      ],
+      "sentiment": "confused",
+      "tool": null,
+      "text": "हां तो technical error आना चाहिए ना. Attend fail मतलब क्या है कि हमने attempt नहीं किया.",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "सही",
+        "बिलकुल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपकी बात बिलकुल सही है,",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "क्या होता है ma'am?",
+      "entities": []
+    },
+    {
+      "index": 22,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "actually"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, actually",
+      "entities": []
+    },
+    {
+      "index": 23,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "ऐसा",
+        "काम",
+        "attempt",
+        "attempts"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हमने attempt नहीं किया ऐसा होता है ना attempts पर एक काम करता.",
+      "entities": []
+    },
+    {
+      "index": 24,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "मतलब क्या",
+        "कैसे",
+        "call",
+        "delivery",
+        "ऐसा"
+      ],
+      "sentiment": "confused",
+      "tool": null,
+      "text": "Atem sell मतलब क्या है कि हमने attempt में किया तो हमारी delivery जो आया फिर हमने attempt नहीं किया ऐसा होता है पर मेरे पास ना delivery आया, ना ना call आया, ना message आया, तो attempt फिर कैसे हो गया फिर में?",
+      "entities": []
+    },
+    {
+      "index": 25,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "order",
+        "call",
+        "मदद",
+        "delivery",
+        "सही"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपकी बात बिलकुल सही है। जब delivery agent आपके location तक नहीं पहुँच पाता या किसी वजह से delivery नहीं कर पाता, तो system में उसे attempt fail mark कर दिया जाता है, भले ही आपको call न आया हो। इसके लिए मैं आपसे माफी चाहती हूँ। आपका order priority पर है और अगले 24 hours में आपको मिल जाएगा। क्या मैं इसके अलावा आपकी कोई और मदद कर सकती हूँ?",
+      "entities": []
+    },
+    {
+      "index": 26,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "deliver",
+        "देखो",
+        "हाथ"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "थोड़ा आपके हाथ deliver करके देखो ना फिर.",
+      "entities": []
+    },
+    {
+      "index": 27,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "order",
+        "deliver",
+        "कोशिश",
+        "जल्द",
+        "पूरी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मैं पूरी कोशिश करूँगी कि आपका order जल्द से जल्द deliver",
+      "entities": []
+    },
+    {
+      "index": 28,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "बजे",
+        "पांच"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आज पांच बजे तक.",
+      "entities": []
+    },
+    {
+      "index": 29,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "मिंत्रा",
+        "order",
+        "समझ",
+        "call",
+        "मदद"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मैं समझ सकती हूँ कि आपको जल्दी चाहिए, पर मैं exact time slot promise नहीं कर सकती। आपका order priority पर है और out for delivery है, इसलिए agent आपके location के पास पहुँचते ही आपको call करेगा। आप मिंत्रा app में My Orders page पर जाकर delivery agent की details भी check कर सकते हैं। क्या मैं आपकी कोई और मदद कर सकती हूँ?",
+      "entities": []
+    },
+    {
+      "index": 30,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "thank"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok, ma'am. Thank you.",
+      "entities": []
+    },
+    {
+      "index": 31,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_org_name",
+      "base_intent": "organization_name",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपका",
+      "entities": []
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "call_id": "GEN-myntra-6b9f462f-aaaf-490c-8d45-1129ef3b58d8",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "assistant",
+        "मिंत्रा",
+        "service",
+        "welcome"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "order",
+        "deliver",
+        "बजे",
+        "product",
+        "रात"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hi मेरा. मैंने कल रात को order किया था जो product आज सुबह नौ बजे तक deliver होने वाला था पर अभी तक आया नहीं है.",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "deliver",
+        "now",
+        "date",
+        "दिखा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "और मैंने order minutes of now से किया था right thirty minutes और one hour में वह deliver हो यह. यह. पर अभी भी वह deliver पूरे date में दिखा रहा है.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "order",
+        "समझ",
+        "line",
+        "status",
+        "check"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मै समझ सकती हूँ कि order अभी तक नहीं आया और आप इंतज़ार कर रहे हैं। मै तुरंत आपके order का status check कर रही हूँ। कृपया line पर बने रहिए।",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_pan",
+      "base_intent": "enter_pan",
+      "keywords": [
+        "मिंत्रा",
+        "help",
+        "deliver",
+        "delivery",
+        "shipped"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपका YK T-shirt and Shorts set अभी shipped है। यह आज शाम आठ बजे तक deliver हो जाएगा। आप delivery agent की details मिंत्रा app में My Orders page पर देख सकते हैं। क्या मै आपकी किसी और चीज़ में help कर सकती हूँ?",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "कब तक",
+        "order",
+        "sorry",
+        "repeat"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "Sorry can you repeat कब तक order आएगा?",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "order",
+        "deliver",
+        "मदद",
+        "अलावा",
+        "बजे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपका order आज शाम आठ बजे तक deliver हो जाएगा। क्या इसके अलावा मैं आपकी कोई और मदद कर सकती",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "कैसे",
+        "order",
+        "deliver",
+        "now",
+        "बजे"
+      ],
+      "sentiment": "confused",
+      "tool": null,
+      "text": "Madam मैं आपको वही बोल रही हूं मैं वही बोल रही हूं आपको अगर मैंने रात को किया है वह आधे घंटे में आना चाहिए तो वह सुबह नौ बजे तक आने वाला था बराबर अगर आप आठ बजे कर रहे मैं बाहर कैसे लेकर जाऊंगी मुझसे किसी को gift देना है इसलिए तो मैंने order किया था minutes of now से right. अगर आप आठ बजे तक deliver करोगे तो मैं बाहर कब जाऊंगी?",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "order",
+        "समझ",
+        "priority",
+        "बजे",
+        "परेशानी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मैं आपकी परेशानी समझ सकती हूँ कि आपको यह gift के लिए जल्दी चाहिए था। आपका order priority पर है और यह आज शाम आठ बजे तक",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "बजे",
+        "चार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां क्योंकि मुझे चार बजे",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "समझती"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मैं समझती हूँ कि आपको",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "order",
+        "deliver",
+        "delivery",
+        "जाए",
+        "now"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं आपको वही बोल रही हूं कि मैं अगर चार बजे मुझे बाहर जा है तो आप मुझे आठ बजे देकर मैं क्या करूंगी अगर वह delivery boy अगर late आ जाएगा तो मैं कब जाऊंगी बाहर कब मैं करूंगी? बाहर कब मैं करूंगी? तो आप minutes of now पर दिखाते हो कि वह product क्या आप time पर deliver नहीं कर सकते तो करातको में जब deliver order कर रही थी ना तभी नौ बजे सुबह मिलने वाला था. चलो नौ के बारिश है कुछ भी है जो भी obstacles है वह कर बारह बजे तक तो आ जाए. आप मुझे आठ बजे तक बोल रहे हो आपको deliver होगा.",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "order",
+        "deliver",
+        "now",
+        "बजे",
+        "time"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बोलिए. आप मुझे वही repeat sentences मत बताइए कि आप आठ बजे तक आ जाएगा आज नहीं आ सकता minutes of now से मैंने किया है मैंने कोई ऐसे order नहीं किया है. सोच समझकर ही order किया है right? And you also showing that product will be delivered उस time पर इसलिए आप वह भी deliver show कर रहे हो ना?",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "कोशिश",
+        "पहुँच",
+        "पूरी",
+        "परेशान"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मैं समझती हूँ कि आपको यह order जल्दी चाहिए और आप काफी परेशान हैं। आपका order fastest route पर है, लेकिन अभी यह transit में है और आज शाम आठ बजे तक पहुँच जाएगा। हम पूरी कोशिश कर रहे",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "minute"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "एक minute. ठीक है.",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, बताइए।",
+      "entities": []
+    }
+  ]
+}

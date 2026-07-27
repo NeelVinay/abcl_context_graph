@@ -1,0 +1,205 @@
+[
+  {
+    "timestamp": "2026-07-27T05:51:02",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:08",
+    "speaker": "user",
+    "content": "मेरे को मैंने order के बारे में पूछना था",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:13",
+    "speaker": "user",
+    "content": "मैंने दो बार आपके customer care service में support ने call किया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:20",
+    "speaker": "user",
+    "content": "दोनों बार मेरे को यही बोला गया कि your order is in your prior, is in our prior list. अभी तक वह order पहुंचा नहीं है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:27",
+    "speaker": "user",
+    "content": "ना delivery की कोई वह बता रहे हैं क्या आप लोग का कुछ अपने logistic department से कोई coordination नहीं है क्या?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:27",
+    "speaker": "assistant",
+    "content": "मै देख पा रही हूँ कि आपने पहले भी delivery delay के बारे में हमें contact किया था। मै आपसे माफी चाहती हूँ कि अभी तक delivery नहीं हो पाई है। मै तुरंत आपके order का latest status",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:42",
+    "speaker": "user",
+    "content": "तो कब होगी delivery आप मेरे को बताओ ना यह आप इतना frustrate क्यों कर रहे हो सामने वाले को?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:42",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि यह delay",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:47",
+    "speaker": "user",
+    "content": "This is, this is getting so irritating bro.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:47",
+    "speaker": "assistant",
+    "content": "बिलकुल सही, यह delay परेशान करने वाला है,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:53",
+    "speaker": "user",
+    "content": "मतलब तीन पांच दिन चार दिन हो गए हैं already.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:53",
+    "speaker": "assistant",
+    "content": "जी, मै देख पा रही हूँ कि आपका Nike T-Shirt अभी shipped है और रास्ते में है। यह 29 July तक deliver हो जाएगा। हमें आपकी problem पहले से पता है और आपका case priority पर है, इसलिए हम इसे जल्द से जल्द resolve करने की पूरी कोशिश कर रहे हैं। आपकी शिकायत",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:11",
+    "speaker": "user",
+    "content": "नहीं नहीं आप मेरे को आज ही deliver करवाओ. आप आज ही deliver करवाओगे यह चीज़.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:31",
+    "speaker": "user",
+    "content": "और अगर मेरे को cancel करना होगा यह order मैं क्या करूं मेरे को यह भी बताओ मेरे पैसे refund आऐंगे कि नहीं because मिंत्रा it stuck. मिंत्रा से कुछ नहीं हो पा रहे हैं ना अपने logistics department से वह अच्छे से coordinate कर पा रहा है अगर delivery मैंने पच्चीस तारीख की डाली है तो पच्चीस को क्यों नहीं हुआ मेरा order deliver?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:31",
+    "speaker": "assistant",
+    "content": "बिलकुल सही, यह delay परेशान करने वाला है और इसके लिए मै माफी चाहती हूँ। आपका order priority पर है और हम पूरी कोशिश कर रहे हैं कि यह जल्द से जल्द आप तक पहुँच जाए। जहाँ तक cancellation और refund की बात है, क्या आप इस बारे में बात करने के लिए हमारे",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:57",
+    "speaker": "user",
+    "content": "आप कितनी आप कल भी कल भी गई कल भी आप यही चीज़ बोल रहे थे आज भी same चीज़ बोल रहे हो कोई conclusion तो निकल ही नहीं रहा नहीं पा रहा है आपसे इस इस problem का. बस आप यही मेरे को दिलासा दे रहे हो कि priority list में है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:57",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि बार-बार एक ही बात सुनना निराशाजनक है। हम वाकई आपके order को priority पर रख रहे हैं और इस बार हम इसे resolve करने की पूरी कोशिश कर रहे हैं। आपका order 29 July तक deliver हो जाएगा और आपकी complaint भी register",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:10",
+    "speaker": "user",
+    "content": "यह कब होगा resolve आप मेरे को बताओ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:16",
+    "speaker": "user",
+    "content": "उनतीस July what's the date to date? Twenty seventh? दो दिन अभी और लगेंगे उसको deliver करने के लिए.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:17",
+    "speaker": "assistant",
+    "content": "जी, मै जानती हूँ कि आपको और इंतज़ार करना पड़ रहा है और यह वाकई मुश्किल है।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:24",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिये, क्या आप दोबारा कह सकते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:25",
+    "speaker": "user",
+    "content": "आपको इतना इतना time लगता है coordination करने के लिए अपने logistic department से.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:25",
+    "speaker": "assistant",
+    "content": "जी, मै जानती हूँ कि इसमें काफी समय लग रहा है और इसके लिए मै",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:32",
+    "speaker": "user",
+    "content": "दो दिन का time अभी भी आप मांग रहे हो अपने अपना बात करने के लिए logistic से.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:32",
+    "speaker": "assistant",
+    "content": "जी, मै समझती हूँ कि आप और इंतज़ार नहीं करना चाहते। हम वाकई आपके order को priority पर रख रहे हैं और इसके लिए पहले से actions लिए जा रहे हैं ताकि यह जल्द से जल्द आप तक पहुँच जाए। आपका order 29 July तक deliver हो जाएगा। क्या इस बारे में मैं आपकी कोई और मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:58",
+    "speaker": "user",
+    "content": "मेरे को cancellation का जानना है कि कैसे cancel मेरे को cancel का option आ रहा है but मेरे को refund चाहिए तो मेरे को cancel करने के बाद refund मिलेगा?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:58",
+    "speaker": "assistant",
+    "content": "जी, cancellation और refund के बारे में सही जानकारी देने के लिए क्या आप हमारे expert agent से बात करना चाहेंगे? वो आपकी बेहतर मदद कर पाएंगे।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:54:07",
+    "speaker": "user",
+    "content": "हां,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:54:10",
+    "speaker": "user",
+    "content": "हां जी बस भेज दीजिए उनको call.",
+    "feedback": null,
+    "agent_id": null
+  }
+]

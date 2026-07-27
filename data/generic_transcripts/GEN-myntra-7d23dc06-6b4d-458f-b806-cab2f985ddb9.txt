@@ -1,0 +1,107 @@
+[
+  {
+    "timestamp": "2026-07-27T05:40:33",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:40:40",
+    "speaker": "user",
+    "content": "यह मेरा order का वह deliver होगा थोड़ा urgent चाहिए मुझे.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:40:40",
+    "speaker": "assistant",
+    "content": "मै समझ सकती हूँ कि आपको अपने order की जल्दी है, मै status check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:40:47",
+    "speaker": "assistant",
+    "content": "जी, आपके BIRDE Shoes shipped हैं और आज शाम आठ बजे तक deliver हो जाएंगे। आपका order अभी GURUGRAM hub पर है और जल्द ही आपके पास पहुँच जाएगा। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:04",
+    "speaker": "user",
+    "content": "भेजो ना इसको अभी भेजो. अभी भेज दो ना.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:04",
+    "speaker": "assistant",
+    "content": "जी, आपका order fastest route पर है और आज शाम आठ बजे तक पहुँच जाएगा। हम अपनी तरफ से पूरी कोशिश कर रहे हैं कि यह आपको जल्द से जल्द मिल जाए। क्या मैं",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:16",
+    "speaker": "user",
+    "content": "अरे सुबह उससे पहले पहुंचा, उससे पहले पहुंचा देना तो दिक्कत हो गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:16",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि आपको यह जल्दी चाहिए। आपका order priority पर है और आज शाम आठ बजे तक deliver होने की पूरी उम्मीद है। delivery agent आपके location के पास पहुँचते ही आपको contact करेगा। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:35",
+    "speaker": "user",
+    "content": "हां बताइए यह f w d क्या होता है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:35",
+    "speaker": "assistant",
+    "content": "जी, मुझे इसके बारे में जानकारी नहीं है। क्या आप इसके बारे में थोड़ा और बता सकते हैं या फिर क्या आप किसी expert agent से बात करना चाहेंगे ताकि आपको सही information मिल सके?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:51",
+    "speaker": "user",
+    "content": "तो आप बोलो.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:51",
+    "speaker": "assistant",
+    "content": "जी, जैसा कि मैंने बताया, मुझे इस specific term के बारे में जानकारी नहीं है। बेहतर assistance के लिए क्या आप एक expert agent से बात करना चाहेंगे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:04",
+    "speaker": "user",
+    "content": "हां.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:05",
+    "speaker": "assistant",
+    "content": "ठीक है, मै आपको expert agent से connect कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:15",
+    "speaker": "assistant",
+    "content": "I will connect you with our specialized team. Transferring your call now, they will be with you immediately.",
+    "feedback": null,
+    "agent_id": null
+  }
+]

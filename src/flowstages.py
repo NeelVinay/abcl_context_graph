@@ -58,6 +58,16 @@ STAGE_OF = {
     "question": "qa",
     "open": "open",
     "backchannel": "ack",
+    # --- generic cross-client taxonomy (src/generic_taxonomy.py) buckets that don't
+    # already share a name with an ABCL/JustDial fine intent above. Without these, a
+    # turn labeled e.g. "irate_frustrated" falls through to "other" -> DROP_STAGES,
+    # silently vanishing from the tree — exactly the signal an exec chart most needs.
+    "irate_frustrated": "frustration",
+    "disagree": "decline",
+    "distrust_security": "objection",     # same trust/objection stage as reassure_trust
+    "confused_repeat": "wait",            # same wait/clarify stage as clarify_repeat
+    "callback_request": "callback",
+    "person_unavailable": "unavailable",
 }
 
 # stages filtered out of the trace entirely: pure back-channel ("ack") and unclassified
@@ -80,6 +90,11 @@ STAGE_LABEL = {
     "jd_complaint": "Customer complaint",
     "jd_handle": "Agent investigates / explains",
     "jd_resolution": "Raise request / transfer",
+    # generic cross-client stages
+    "frustration": "Frustration / escalation",
+    "decline": "Decline / refusal",
+    "callback": "Callback requested",
+    "unavailable": "Person unavailable",
 }
 
 

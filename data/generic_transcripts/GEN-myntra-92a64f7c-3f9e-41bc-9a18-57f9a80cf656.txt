@@ -1,0 +1,198 @@
+[
+  {
+    "timestamp": "2026-07-27T05:44:09",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:19",
+    "speaker": "user",
+    "content": "कल मैंने वह किया था वह courier के लिए तो आपने बोला था कि within twenty four hour हो जाएगा आज वह मैंने play का दिखा रहा है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:21",
+    "speaker": "user",
+    "content": "Even day को होगा.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:26",
+    "speaker": "user",
+    "content": "Deliver. आप बोल रहे हो twenty four hour में हो जाएगा. Solution तो कुछ मिला नहीं मुझे.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:26",
+    "speaker": "assistant",
+    "content": "मै देख पा रही हूँ कि आपने पहले भी delivery delay के बारे में हमें contact किया था। मै आपसे माफी चाहती हूँ कि अभी तक delivery नहीं हो पाई है। मै तुरंत आपके order का latest status check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:58",
+    "speaker": "user",
+    "content": "हां. नहीं status state status का वह उसमें ऐसा दिखा रहा है Wednesday को होगा but मैंने आपको कल ही बोला था कम से कम आज तो हो जाना चाहिए ना अब deliver. वह Wednesday का बोले तो ऐसा थोड़ी ना चलता है. कम से कम एक दिन delay चलता है. यह तीन चार दिन delay कर दे को emergency वाला हो कुछ तो उसका क्या",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:58",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि आपको इसकी emergency है और यह delay वाकई परेशान करने वाला है। आपका All About You Top अभी shipped है और Rajkot hub पर पहुँच चुका है। सिस्टम के हिसाब से यह 29 July तक deliver हो जाएगा। हमें आपकी problem पहले से पता है और आपका case priority पर है, हम",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:23",
+    "speaker": "user",
+    "content": "System के system के हिसाब से ऐसे priority पर है तो आज हो जाना चाहिए ना. रात को tub में आ चुका है तो आज deliver होने में इतना problem हो रहा है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:29",
+    "speaker": "user",
+    "content": "आप कल बोल रहे हो twenty four hour में हो जाएगा आज बोल रहे हो उनतीस तक हो जाएगा यह कोई बात हुई क्या?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:29",
+    "speaker": "assistant",
+    "content": "जी, आपकी नाराजगी बिलकुल सही है और मै इसके लिए",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:34",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिये, क्या आप एक बार फिर कह सकते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:47",
+    "speaker": "user",
+    "content": "नहीं deliver करना है तो direct अगर deliverable नहीं है मेरा address तो पहले ही मना कर दो ना. कि भाई नहीं आ पाएगा वहां पर. तो करें ही नहीं हम order ही इतना दिन करने के बाद आप बोल रहे हो कि इस दिन को होगा इस दिन को होगा, यह क्या बात हुई?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:53",
+    "speaker": "user",
+    "content": "कल आप बोल रहे हो twenty four hour में हो जाएगा. आज बोल रहे हो उनतीस तक हो जाएगा.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:53",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:57",
+    "speaker": "user",
+    "content": "तो क्या customer service ले है इसमें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:08",
+    "speaker": "user",
+    "content": "मुझे ना आज delivery चाहिए मुझे उन चीज़ तक नहीं चाहिए solution इसका निकालो आप अपने delivery partner जो कुछ भी है shipping वाले उससे बात करो. आज चाहिए मेरे हिसाब.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:08",
+    "speaker": "assistant",
+    "content": "जी, आपकी परेशानी बिलकुल जायज है और मै माफी चाहती हूँ कि आपको इतनी दिक्कत हो रही है। आपका order priority पर है और हम इसे जल्द से जल्द deliver कराने की पूरी कोशिश कर रहे हैं। क्या आप बेहतर assistance के लिए हमारे expert",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:33",
+    "speaker": "user",
+    "content": "Hello? जल्द नहीं आज की date में deliver करानी थी आप कोशिश करें. ऐसा नहीं है कि जल्द से जल्द जल्द से जल्द करवा के तो आपने तीन दिन तो और delay करवा दी है system में.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:33",
+    "speaker": "assistant",
+    "content": "जी, मै आपकी बात समझ रही हूँ और इस delay के लिए वाकई माफी चाहती हूँ। हम जानते हैं कि आपको यह आज ही चाहिए था और हम पूरी कोशिश कर रहे हैं कि इसे जल्द से जल्द आप तक पहुँचाया जाए। आपका case priority पर है और हम backend team",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:53",
+    "speaker": "user",
+    "content": "Order क्यों किया था क्योंकि छब्बीस तारीख उसमें date दिखा था. इक्कीस को order किया है छब्बीस का date दिख रहा था इसलिए order किया है वरना order ही नहीं करती ना मैं",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:02",
+    "speaker": "user",
+    "content": "पता होता है कि आपका इतना late होने वाला है मैंने कल भी बोला था कि emergency वाला है इसलिए आप उसको करवा दो तो आपने बोला कल करवा दूंगी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:02",
+    "speaker": "assistant",
+    "content": "जी, आपकी बात बिलकुल सही है, आपको 26 July तक delivery मिल जानी चाहिए थी और कल के वादे के बाद आज भी delay होना वाकई निराशाजनक है। इसके लिए मै आपसे दिल से माफी चाहती हूँ। हम पूरी तरह से aware हैं कि यह आपके लिए emergency है और आपका order priority पर है। मै एक बार फिर से internal team से coordinate कर रही हूँ ताकि इसे जल्द से जल्द resolve किया जा सके। क्या आप बेहतर assistance के लिए हमारे expert agent से",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:30",
+    "speaker": "user",
+    "content": "उसे resolve करके आज करके. आज कर दीजिए उसको. और कुछ नहीं चाहिए मेरे को.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:33",
+    "speaker": "user",
+    "content": "आज करवा दीजिए उसको. Delay.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:33",
+    "speaker": "assistant",
+    "content": "जी, मै आपकी urgency समझ रही हूँ और पूरी कोशिश करूँगी कि आपका order आज ही deliver हो जाए। हम पहले से ही इस पर actions ले रहे हैं और आपका case priority पर है। क्या आप बेहतर assistance के लिए हमारे expert agent से बात करना चाहेंगे जो इस matter को और गहराई से check कर सकें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:52",
+    "speaker": "user",
+    "content": "हां. हां अब करवा दीजिए बात.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:52",
+    "speaker": "assistant",
+    "content": "ठीक है, मै आपको expert agent से connect कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:02",
+    "speaker": "assistant",
+    "content": "I will connect you with our specialized team. Transferring your call now, they will be with you immediately.",
+    "feedback": null,
+    "agent_id": null
+  }
+]

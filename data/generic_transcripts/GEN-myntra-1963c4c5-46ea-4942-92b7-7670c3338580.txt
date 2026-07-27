@@ -1,0 +1,107 @@
+[
+  {
+    "timestamp": "2026-07-27T05:37:24",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:33",
+    "speaker": "user",
+    "content": "राजीव बोल रहा था दूसरा order किया था तो अभी कहां पर आया यह पुछ नहीं रहा था मैं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:33",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि आप अपने order का status जानना चाहते हैं। मै आपके order की details check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:41",
+    "speaker": "assistant",
+    "content": "आपका Red Tape Shoes shipped है और अभी उज्जैन hub पहुँच चुका है। आपको यह order आज शाम आठ बजे तक मिल जाएगा। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:53",
+    "speaker": "user",
+    "content": "दिन कब तक मिल जाएगा?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:53",
+    "speaker": "assistant",
+    "content": "जी, जैसा कि मै देख पा रही हूँ, आपका order आज शाम आठ बजे तक deliver हो जाएगा। क्या इसके अलावा मैं आपकी कोई और help कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:01",
+    "speaker": "user",
+    "content": "आठ",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:01",
+    "speaker": "assistant",
+    "content": "जी, आज शाम आठ बजे तक आपका order आपको मिल जाएगा। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:13",
+    "speaker": "user",
+    "content": "मतलब इसी के बारे में पूछना था order कहां आया है कब तक आया है मेरे साथ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:21",
+    "speaker": "user",
+    "content": "क्योंकि मैं अभी यहां class में बैठा हूं अंदर मतलब वह sir कभी बाहर हो तो उनसे बात हो जाती तो मतलब मैं बाहर आ जाता ऐसा कुछ.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:21",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ। आपका order आज शाम आठ बजे तक deliver हो जाएगा, तो आप अपनी class खत्म होने के बाद आराम से इसे receive कर सकते हैं। अगर आपको कोई और help चाहिए हो तो ज़रूर बताइएगा।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:36",
+    "speaker": "user",
+    "content": "Name मतलब जिस जो order करेगा उस sir के number मिल जाएंगे क्या?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:36",
+    "speaker": "assistant",
+    "content": "जी, अभी आपका order out for delivery नहीं है, इसलिए delivery agent की details available नहीं हैं। जैसे ही आपका order out for delivery होगा, आप delivery agent की details मिंत्रा app में My Orders page पर देख सकते हैं। क्या मैं आपकी कोई और help कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:54",
+    "speaker": "user",
+    "content": "क्या? हां?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:54",
+    "speaker": "assistant",
+    "content": "जी, मैं यह कह रही थी कि अभी आपका order out for delivery नहीं है, इसलिए agent",
+    "feedback": null,
+    "agent_id": null
+  }
+]

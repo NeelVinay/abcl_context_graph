@@ -1,0 +1,383 @@
+{
+  "call_id": "GEN-myntra-b407331b-ef3e-4634-aa37-8a22f479883b",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "assistant",
+        "मिंत्रा",
+        "service",
+        "welcome"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello",
+        "connect",
+        "customer",
+        "any"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello madam can you connect मलयालम any customer?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "agent",
+        "expert",
+        "sorry",
+        "want",
+        "assist"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Sorry, I can assist in Hindi or English only. Do you want to speak with an expert agent?",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "day",
+        "get",
+        "delayed",
+        "didn",
+        "extra"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Madam मैं यह package delayed expecting arrive extra day but I didn't get my package.",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "order",
+        "line",
+        "status",
+        "check",
+        "let"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I understand you haven't received your order yet, let me check the status for you. Please stay on the line.",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "shipped",
+        "delay",
+        "complaint",
+        "already"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I can see that your Eyejack Sunglasses are shipped and currently in transit. I'm sorry for the delay, but your order is expected to be delivered by tomorrow. I also see that a complaint has already been registered for this, and we are actively working to get it delivered to you.",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "when",
+        "कितना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok madam. When कितना है यह होगा?",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "deliver",
+        "मदद",
+        "delivery",
+        "agent"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपका order कल तक deliver हो जाएगा। जैसे ही order out for delivery होगा, delivery agent आपको contact करेंगे। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "understand",
+        "didn",
+        "हिंदी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कल? I didn't understand madam हिंदी.",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "help",
+        "delivery",
+        "agent",
+        "out"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I apologize. I meant that your order is expected to be delivered by tomorrow. Once it is out for delivery, the agent will contact you. Is there anything else I can help you with?",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "Madam, can you",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "deliver",
+        "today",
+        "also",
+        "free"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "can you deliver today also I have free today.",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "Your",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "tomorrow",
+        "free"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं setting tomorrow I will not free.",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "agent",
+        "receive",
+        "understand",
+        "available"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I understand you're not available tomorrow. If you're not home when the agent arrives, someone else at your home can receive the order, or you can give permission to leave it with your society security. Alternatively, you",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "there",
+        "nobody",
+        "home"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "No madam, in my home nobody, nobody pay, in my home nobody is there.",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "order",
+        "now",
+        "time",
+        "receive",
+        "want"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "So now want to receive my order at that time.",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "call",
+        "delivery",
+        "agent",
+        "day",
+        "time"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I understand that no one will be available at home tomorrow. In this case, you can coordinate with the delivery agent when they call you to reschedule the delivery for a time or day that works better for you. Is there anything",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "Madam, can you send, जनाब, can you send me",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "sorry"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I am sorry, could",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "order",
+        "delivery",
+        "agent",
+        "product",
+        "there"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "your delivery agent name? I think the my product is in my home town, right? Ok, then I am going to pick up my order there.",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "यार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "यार यार.",
+      "entities": []
+    },
+    {
+      "index": 22,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "help",
+        "delivery",
+        "already",
+        "hub"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I understand you'd like to pick up your order yourself. However, self pickup from the delivery hub is not supported. Your order is already on its way and will be delivered to your address. Once it reaches the final hub, it will be scheduled for delivery as soon as possible. Is there anything else I can help you with?",
+      "entities": []
+    }
+  ]
+}

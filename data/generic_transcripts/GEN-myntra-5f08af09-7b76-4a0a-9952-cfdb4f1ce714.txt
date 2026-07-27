@@ -1,0 +1,135 @@
+[
+  {
+    "timestamp": "2026-07-27T05:50:16",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:21",
+    "speaker": "user",
+    "content": "हां आज वह मेरा parcel आने वाला था तो वह कितने बजे तक आएगा?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:22",
+    "speaker": "assistant",
+    "content": "मै समझ सकती हूँ कि आप अपने order का इंतज़ार कर रहे हैं,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:25",
+    "speaker": "user",
+    "content": "एक minute मुझे.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:25",
+    "speaker": "assistant",
+    "content": "जी, कोई बात नहीं। आप समय ले लीजिए, मैं line पर हूँ।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:39",
+    "speaker": "user",
+    "content": "नहीं नहीं मुझे मैं इसलिए पुछ रही हूं exact timing क्योंकि मैं अभी घर पर नहीं हूं ना तो इसलिए मैं timing पुछ रही हूं कितने बजे तक आएगा?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:43",
+    "speaker": "user",
+    "content": "क्योंकि cash on delivery है ना तो payment मेरे से ही होगा.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:43",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि payment के लिए आपका घर पर होना ज़रूरी है। आपका THREAD BOX Midi Dress अभी packed है और आज deliver होने की उम्मीद है। अभी यह out for delivery नहीं हुआ है, इसलिए exact timing बताना मुश्किल है, लेकिन जैसे ही delivery agent आपके location के पास पहुँचेगा, वह आपको call कर लेगा।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:07",
+    "speaker": "user",
+    "content": "But अगर मैंने आपको request किया कि इस time पर भेजे तो आप भेज सकते हो?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:07",
+    "speaker": "assistant",
+    "content": "जी, मैं आपकी request समझ सकती हूँ, लेकिन delivery के लिए exact time slot select करने का option हमारे पास नहीं होता है। delivery agent अपने route के हिसाब से आते हैं, पर आप निश्चिंत रहें, वह पहुँचने से पहले आपको call ज़रूर करेंगे ताकि आप coordinate कर सकें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:33",
+    "speaker": "user",
+    "content": "क्योंकि इसके पहले call नहीं आए थे ना parcel के इसलिए direct आया था इसलिए पुछ रही हूं कि कब तक आ गया?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:33",
+    "speaker": "assistant",
+    "content": "जी, पिछली बार आपको call नहीं आया इसके लिए मैं माफी चाहती हूँ। इस बार मैं request डाल देती हूँ कि agent आपको call ज़रूर करे। आपका order आज deliver होने की उम्मीद है, और जैसे ही agent आपके पास पहुँचेंगे, वह",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:45",
+    "speaker": "user",
+    "content": "अच्छा. हां तो वही",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:45",
+    "speaker": "assistant",
+    "content": "जी, बिल्कुल। आप निश्चिंत रहें,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:50",
+    "speaker": "user",
+    "content": "हां तो call करने बोलो उनको पहले पहुंचने के पहले.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:50",
+    "speaker": "assistant",
+    "content": "जी, मैं आपकी यह request note कर लेती हूँ कि delivery agent आपको पहुँचने से पहले call ज़रूर करें ताकि आपको कोई परेशानी न हो। आपका order आज deliver होने की उम्मीद है। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:06",
+    "speaker": "user",
+    "content": "हां. ठीक. नहीं बस इतना ही पूछना था thank you.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:06",
+    "speaker": "assistant",
+    "content": "आपका स्वागत है। आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:22",
+    "speaker": "assistant",
+    "content": "Thank you for calling मिंत्रा. Have a great day.",
+    "feedback": null,
+    "agent_id": null
+  }
+]

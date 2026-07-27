@@ -1,0 +1,303 @@
+[
+  {
+    "timestamp": "2026-07-27T05:48:32",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:35",
+    "speaker": "user",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:35",
+    "speaker": "assistant",
+    "content": "आप किस order के बारे में बात करना चाहते हैं, और क्या issue है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:49",
+    "speaker": "user",
+    "content": "Hello यह मेरा जो एक order लाया था वह मैंने ले नहीं पाई थी. घर पर ही नहीं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:54",
+    "speaker": "user",
+    "content": "तो वह मुझे आज उसका number दे दीजिए agent का क्योंकि मुझे अभी फिर बच्चे school लेकर जाना है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:57",
+    "speaker": "user",
+    "content": "वह ऐसा ना हो फिर आए तो फिर मैं ना मिलूं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:57",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि आप समय को लेकर चिंतित हैं। आपका ARADHNA Kurta Set अभी out for delivery नहीं है, इसलिए अभी agent की details उपलब्ध नहीं हैं। जैसे ही यह out for delivery होगा, आप delivery agent की details मिंत्रा app में My Orders page पर देख सकते हैं। इसके अलावा, delivery agent आपके location के पास पहुंचते ही आपको contact करेगा।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:21",
+    "speaker": "user",
+    "content": "Ok,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:21",
+    "speaker": "assistant",
+    "content": "क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:33",
+    "speaker": "user",
+    "content": "एक और पूछता मेरा कल आया था वह भी मेरा मैं ले नहीं पाई है. मैं उसके बारे में बात कर रही थी यह लोग.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:33",
+    "speaker": "assistant",
+    "content": "जी, क्या आप मुझे बता सकते हैं कि यह कौन सा product है या इसका order ID क्या है ताकि मै check कर सकूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:42",
+    "speaker": "user",
+    "content": "Front है. Ok. Your shoulder.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:42",
+    "speaker": "assistant",
+    "content": "जी, मुझे माफ़ी चाहिए लेकिन मुझे समझ नहीं आया कि आप किस product की बात कर रहे हैं। क्या आप कृपया product का नाम बता सकते हैं या order list check करने के लिए मुझे एक second देंगे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:56",
+    "speaker": "user",
+    "content": "हां हां बिल्कुल.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:56",
+    "speaker": "assistant",
+    "content": "ठीक है, मै आपकी order list check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:01",
+    "speaker": "user",
+    "content": "हां नहीं तो मैं",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:01",
+    "speaker": "assistant",
+    "content": "जी, आपकी list में दो",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:06",
+    "speaker": "user",
+    "content": "जैसे मैं order order number आपको बता रही हूं एक minute रुकिए आप.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:06",
+    "speaker": "assistant",
+    "content": "जी, बिल्कुल। आप आराम से order number देख लीजिए, मैं line पर ही हूँ।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:13",
+    "speaker": "user",
+    "content": "हां, ok ok ok.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:14",
+    "speaker": "assistant",
+    "content": "जी, आप order number share कर सकते हैं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:24",
+    "speaker": "assistant",
+    "content": "मुझे लगा आप चुप हो गए, क्या आप वहाँ हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:36",
+    "speaker": "user",
+    "content": "हां order ID है one three three six five",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:37",
+    "speaker": "user",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:37",
+    "speaker": "assistant",
+    "content": "जी, आपने जो order ID बताया है वह अधूरा लग रहा है। क्या आप कृपया पूरा order ID फिर से बता सकते हैं या product का नाम",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:44",
+    "speaker": "user",
+    "content": "Hello. हां नहीं बता रहे.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:44",
+    "speaker": "assistant",
+    "content": "जी, कोई बात नहीं। आपकी order list में एक rarethread Kurta भी है, क्या आप उसी के",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:50",
+    "speaker": "user",
+    "content": "One three three six five one three",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:50",
+    "speaker": "assistant",
+    "content": "जी, यह order ID भी अधूरा लग रहा है। क्या आपकी problem rarethread Kurta से related है? अगर आप",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:56",
+    "speaker": "user",
+    "content": "Hello? मैं बता रही हूं ना?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:02",
+    "speaker": "user",
+    "content": "Zero five seven four five three six five six zero four seven zero three.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:02",
+    "speaker": "assistant",
+    "content": "जी, order ID share करने के लिए धन्यवाद। मै इस order की details check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:10",
+    "speaker": "user",
+    "content": "Ok.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:11",
+    "speaker": "assistant",
+    "content": "जी, आपका rarethread Kurta already out for delivery है और यह अगले 24 hours में deliver हो जाएगा। मै देख पा रही हूँ कि पहले एक delivery attempt किया गया था, लेकिन इस बार agent आपको call करके coordinate करेगा ताकि आप अपना order ले सकें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:30",
+    "speaker": "user",
+    "content": "Ok.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:30",
+    "speaker": "assistant",
+    "content": "क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:37",
+    "speaker": "user",
+    "content": "उस agent का number मिल जाएगा मुझे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:37",
+    "speaker": "assistant",
+    "content": "जी, आपका order out for delivery है, और आप delivery agent की details मिंत्रा app में My Orders page पर देख सकते हैं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:47",
+    "speaker": "user",
+    "content": "Ok,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:47",
+    "speaker": "assistant",
+    "content": "क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:53",
+    "speaker": "user",
+    "content": "No no no no no no no thank you.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:53",
+    "speaker": "assistant",
+    "content": "आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:09",
+    "speaker": "assistant",
+    "content": "आज हमारे call के बारे में आपको एसएमएस पर",
+    "feedback": null,
+    "agent_id": null
+  }
+]

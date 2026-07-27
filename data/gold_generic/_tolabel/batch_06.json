@@ -1,0 +1,482 @@
+[
+  {
+    "call_id": "GEN-myntra-e069ca08-7602-4558-9096-387753f33493",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?"
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "text": "Hello am I audible?"
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "text": "Yes, you are audible. How can I help you today?"
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "text": "Ok. Actually I ordered a pair of shoes in मिंत्रा for last week."
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "text": "I understand you haven't received your order yet, let me check the status for you. Please stay on the line."
+      },
+      {
+        "index": 5,
+        "speaker": "customer",
+        "text": "Yeah the pro?"
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "text": "Your COGS Sneakers have been shipped and are currently on their way to the Sholinganallur hub in Chennai. You can expect your order to be delivered by 29 July. Is there anything else I can help you with?"
+      },
+      {
+        "index": 7,
+        "speaker": "customer",
+        "text": "Actually, I want to be, I want it be delayed little bit faster because previously it was mentioned as twenty ninth July now it comes on to which means postponed to thirty one July. I want it at least on twenty nine or the thirtieth July, thirtieth July. Before Friday."
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "text": "I understand that you"
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "text": "Because I want to use"
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "text": "I understand you need your order urgently to use it. Your order is on the fastest available route and we are doing everything possible to get it to you. It is currently on track to be delivered by 29 July. Since it is already shipped, I cannot change the date, but it should reach you as planned. Is there anything else I can help you with?"
+      },
+      {
+        "index": 11,
+        "speaker": "customer",
+        "text": "Ok. Ok, what are the probability of getting my order before thirty first July?"
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "text": "Based on the current status, your order is on track to be delivered by 29 July, which is well before 31 July. Since it has already been shipped and is moving through our network, there is a very high probability that you will receive it by the 29th. Is there anything else I can assist you with?"
+      },
+      {
+        "index": 13,
+        "speaker": "customer",
+        "text": "Ok, thank you. I need any any more help, means I'll call you back."
+      },
+      {
+        "index": 14,
+        "speaker": "agent",
+        "text": "You are most welcome. Please feel free to call us back if you need any further assistance. You will receive a feedback form via SMS about our conversation today. If you felt I was helpful, your good rating would really mean a lot and help us improve. Thank you for calling."
+      },
+      {
+        "index": 15,
+        "speaker": "agent",
+        "text": "Thank you for calling मिंत्रा. Have"
+      },
+      {
+        "index": 16,
+        "speaker": "customer",
+        "text": "Ok. Ok, thank you."
+      },
+      {
+        "index": 17,
+        "speaker": "agent",
+        "text": "You are"
+      }
+    ]
+  },
+  {
+    "call_id": "GEN-myntra-ef8bbf95-26bb-49b9-a01f-13607bf985fd",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?"
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "text": "Hello."
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "text": "आप किस order के बारे में बात करना चाहते हैं, और क्या issue है?"
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "text": "Lole and sky animal print crop top."
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "text": "जी, क्या आपकी problem LULU & SKY Animal Print Crop Top से related है?"
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "text": "मै आपके order का status check कर रही हूँ। कृपया line पर बने रहिए।"
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "text": "आपका LULU & SKY Crop Top अभी shipped है और रास्ते में है। यह 12 August तक deliver हो"
+      },
+      {
+        "index": 7,
+        "speaker": "customer",
+        "text": "Ok. Animal print crop top. हां I want my order on twelve August. Because right now I am out of station."
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "text": "जी, आपका order 12 August तक पहुँच जाएगा,"
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "text": "For two weeks"
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "text": "जी, आपका order 12 August तक deliver हो जाएगा। चूंकि आप अभी out of station हैं, तो आप अपनी family या society security को इसे receive करने के लिए कह सकते हैं। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?"
+      },
+      {
+        "index": 11,
+        "speaker": "customer",
+        "text": "हां. है ही नहीं."
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "text": "जी, मैं समझ नहीं पाई। क्या"
+      },
+      {
+        "index": 13,
+        "speaker": "customer",
+        "text": "नहीं नहीं, मैं किसी और को भी नहीं कह सकती हूं. Receipt पड़ने तो I want my order मतलब जो Myntra पर लिखा हुआ है ten to twelve August के beach ही मेरा product आना चाहिए हमको उसी beach चाहिए ऐसा product."
+      },
+      {
+        "index": 14,
+        "speaker": "agent",
+        "text": "जी, आप बिल्कुल चिंता न करें। आपका order 12 August तक deliver हो जाएगा। हम पूरी कोशिश करेंगे कि यह उसी timeline के बीच"
+      },
+      {
+        "index": 15,
+        "speaker": "customer",
+        "text": "हां तो मतलब हमें पहले नहीं चाहिए."
+      },
+      {
+        "index": 16,
+        "speaker": "agent",
+        "text": "ठीक है, मैं आपकी बात समझ गई। आपका order 12 August तक deliver होने की उम्मीद है। delivery agent आमतौर पर delivery से पहले आपको call करते हैं, तो आप उनसे coordinate कर सकते हैं। क्या इसके अलावा मैं आपकी कोई और help कर सकती हूँ?"
+      },
+      {
+        "index": 17,
+        "speaker": "customer",
+        "text": "नहीं बस मैं चाहती हूं कि पहले order ना से क्योंकि मैं अभी नहीं हूं और मेरा कोई relative का जान पहचान भी नहीं है. जो pick कर पाएगा तो मैं चाहती हूं बारह August तक ही आया मेरा order ताकि मैं उसे receive कर पाऊं"
+      },
+      {
+        "index": 18,
+        "speaker": "agent",
+        "text": "जी, आपकी बात बिलकुल clear है। आपका order 12 August तक deliver होने की उम्मीद है, तो आप तब तक उसे receive कर पाएँगी। delivery agent आपके location के पास पहुँचने पर आपको call करेंगे, जिससे आप coordinate कर सकेंगी। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?"
+      },
+      {
+        "index": 19,
+        "speaker": "customer",
+        "text": "नहीं मुझे और कोई help नहीं चाहिए था बस मुझे बारह August को अपना product चाहिए था. ताकि मैं उसे ले पाऊं delivery agent से."
+      },
+      {
+        "index": 20,
+        "speaker": "agent",
+        "text": "जी, बिल्कुल। आपका order 12 August"
+      },
+      {
+        "index": 21,
+        "speaker": "customer",
+        "text": "दस August से पहले नहीं चाहिए था मुझे मेरा order."
+      },
+      {
+        "index": 22,
+        "speaker": "agent",
+        "text": "जी, आपकी बात मै समझ गई हूँ। आपका order 12 August तक deliver होने की उम्मीद है, तो आप उसे आराम से receive कर पाएँगी। आप बिल्कुल चिंता न करें। आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।"
+      },
+      {
+        "index": 23,
+        "speaker": "agent",
+        "text": "Thank you for calling मिंत्रा. Have a great day."
+      }
+    ]
+  },
+  {
+    "call_id": "GEN-myntra-f4a6b55f-cb72-4193-8cd0-4aeaa6a6cb34",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?"
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "text": "Hello ma'am."
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "text": "आप किस order के बारे में बात करना चाहते हैं, और क्या issue है?"
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "text": "Hello ma'am मैंने एक watch order किया हुआ है."
+      },
+      {
+        "index": 4,
+        "speaker": "customer",
+        "text": "वह कल order के लिए दिखा रहा था पर अभी तक आया नहीं है. तो मुझे उसका exact date चाहिए कि वह कब तक आ जाएगा?"
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "text": "मै समझ सकती हूँ कि आप अपने order का wait कर रहे हैं, मै status check कर रही हूँ। कृपया line पर बने रहिए।"
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "text": "जी, आपकी Fastrack Watch shipped है। मै देख पा रही हूँ कि delivery में थोड़ा delay हुआ है, इसके लिए मै माफी चाहती हूँ। आपका order कल तक deliver हो जाएगा। आप इसकी details मिंत्रा app में My Orders page पर भी check कर सकते हैं। क्या मै आपकी किसी और चीज़ में मदद कर सकती हूँ?"
+      },
+      {
+        "index": 7,
+        "speaker": "agent",
+        "text": "जी, क्या आप कुछ और पूछना चाहते"
+      },
+      {
+        "index": 8,
+        "speaker": "customer",
+        "text": "yes ma'am can you give me उसको"
+      },
+      {
+        "index": 9,
+        "speaker": "agent",
+        "text": "जी, आप क्या"
+      },
+      {
+        "index": 10,
+        "speaker": "customer",
+        "text": "हां ma'am उनका number मिल सकता है जो order लेकर आऐंगे"
+      },
+      {
+        "index": 11,
+        "speaker": "agent",
+        "text": "अभी आपका order out for delivery नहीं है। जैसे ही यह out for delivery होगा, आप delivery agent की details मिंत्रा app में My Orders page पर देख सकते हैं। क्या मै आपकी किसी और चीज़ में मदद कर सकती हूँ?"
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "text": "जी, क्या आप कुछ और पूछना चाहते हैं?"
+      },
+      {
+        "index": 13,
+        "speaker": "customer",
+        "text": "ma'am लेकिन यह sure है ना कि कल तक आ जाएगा क्योंकि नहीं नहीं ma'am कुछ और नहीं पूछना चाह रही हूं मैं यह पूछना चाह रही हूं कि कल तक मुझे order मिल जाएगा ना?"
+      },
+      {
+        "index": 14,
+        "speaker": "agent",
+        "text": "जी, बिलकुल। आपका order कल तक deliver हो जाएगा। आप निश्चिंत रहें, यह रास्ते में है और समय पर पहुँच जाएगा। क्या इसके अलावा मैं आपकी कोई और मदद कर सकती हूँ?"
+      },
+      {
+        "index": 15,
+        "speaker": "customer",
+        "text": "Ma'am मुझे कोई और आपकी help ही चाहिए ma'am बस यह assure कर दीजिए कि कल तक मुझे order मिल जाएगा क्योंकि परसों मुझे ऐसे gift करना है मतलब कल मुझे मिल जाए चाहे शाम तक ही पर कल मिल जाना चाहिए."
+      },
+      {
+        "index": 16,
+        "speaker": "agent",
+        "text": "जी, मैं आपकी बात समझ रही हूँ। आपका order shipped है और कल तक"
+      },
+      {
+        "index": 17,
+        "speaker": "customer",
+        "text": "ठीक है ma'am. थोड़ा कोशिश कीजिए कि जितनी जल्दी बोल सके उतनी जल्दी मुझे यह order मिल जाए."
+      },
+      {
+        "index": 18,
+        "speaker": "agent",
+        "text": "जी, बिलकुल। मै समझ सकती हूँ कि यह आपके लिए ज़रूरी है। आपका order fastest route पर है और हम पूरी कोशिश कर रहे हैं कि यह आपको कल तक मिल जाए। क्या इसके अलावा मैं आपकी कोई और मदद कर सकती हूँ?"
+      },
+      {
+        "index": 19,
+        "speaker": "customer",
+        "text": "Ma'am मुझे और कोई आपकी help नहीं चाहिए बस इतना ही चाहिए था कि order मेरा जल्दी से जल्दी मिल जाए."
+      },
+      {
+        "index": 20,
+        "speaker": "agent",
+        "text": "जी, बिलकुल। आपका order"
+      },
+      {
+        "index": 21,
+        "speaker": "customer",
+        "text": "ठीक है ma'am thank you ma'am."
+      },
+      {
+        "index": 22,
+        "speaker": "agent",
+        "text": "आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।"
+      }
+    ]
+  },
+  {
+    "call_id": "GEN-myntra-ff2fc8dc-de97-4e8d-bd94-90bf775061d8",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?"
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "text": "मेरा एक order, last order. वह तो उनतीस तारीख को delivery birth date दिखा रहा था. वह तो reschedule उनका कि इकत्तीस तारीख को कर दिया है."
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "text": "मै समझ सकती हूँ कि delivery date change होने से आपको परेशानी हो रही है, मै आपके order का status check कर रही हूँ। कृपया line पर बने रहिए।"
+      },
+      {
+        "index": 3,
+        "speaker": "agent",
+        "text": "जी, आपके Deflow Clogs का status shipped है और यह 29 July तक deliver हो जाएगा। आपका order अभी Nadia hub पर पहुँचा है और जल्द ही आपके पास होगा। क्या मै आपकी किसी और चीज़ में मदद कर सकती हूँ?"
+      },
+      {
+        "index": 4,
+        "speaker": "customer",
+        "text": "सत्ताईस तारीख है, उनतीस तारीख तक मिल जाएगा ना, लेकिन reschedule करके तो इक्कीस तारीख को कर दिया है order."
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "text": "जी, आप बिलकुल निश्चिंत रहें, आपका order 29 July तक आपको मिल जाएगा। मै देख पा रही हूँ कि system में अभी भी 29 July की ही date show हो रही है, इसलिए आपको चिंता करने की ज़रूरत नहीं है। क्या"
+      },
+      {
+        "index": 6,
+        "speaker": "customer",
+        "text": "नहीं नहीं मेरा app में तो"
+      },
+      {
+        "index": 7,
+        "speaker": "customer",
+        "text": "app में तो दिखा रहा है इक्कीस तारीख को deliver होगा. अभी message भी दिया है."
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "text": "जी, मै समझ सकती हूँ कि app और message में अलग date दिखने से confusion हो रहा है। मै एक बार फिर से check कर रही हूँ कि latest update"
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "text": "नहीं नहीं नहीं वैसे app में"
+      },
+      {
+        "index": 10,
+        "speaker": "customer",
+        "text": "app में भी दिखा रहा है एक चीज़ को message में दिया कह रहा है एक चीज़ तो आप लोगों का मेरे पास update ही नहीं है. श्रुति का."
+      },
+      {
+        "index": 11,
+        "speaker": "agent",
+        "text": "जी, मैं आपकी परेशानी समझ सकती हूँ कि app और message में अलग जानकारी मिल रही है। मेरे system में अभी भी 29 July की ही date show"
+      },
+      {
+        "index": 12,
+        "speaker": "customer",
+        "text": "अलग नहीं, अलग नहीं."
+      },
+      {
+        "index": 13,
+        "speaker": "agent",
+        "text": "जी, आप अपनी बात कहिए, मैं सुन रही हूँ। आप क्या बताना चाह रहे हैं?"
+      },
+      {
+        "index": 14,
+        "speaker": "customer",
+        "text": "Message, match message में और app में दोनों ही इक्कीस तारीख को दिखा रहा है, receipt करके इक्कीस तारीख को दिखा रहा है मेरे को. और आप लोगों के पास कोई update ही नहीं है उसका."
+      },
+      {
+        "index": 15,
+        "speaker": "agent",
+        "text": "जी, मै समझ सकती हूँ कि app और message में 31 July दिख रहा है और मेरे system में 29 July, जिससे आपको confusion हो रहा है। अक्सर system updates में थोड़ा समय लगता है, लेकिन आप निश्चिंत रहें, आपका order रास्ते में है और जल्द ही आप तक पहुँच जाएगा। क्या मै आपकी किसी और तरह से मदद कर सकती हूँ?"
+      },
+      {
+        "index": 16,
+        "speaker": "customer",
+        "text": "कब मिलेगा इकत्तीस सौ उनतीस सौ?"
+      },
+      {
+        "index": 17,
+        "speaker": "agent",
+        "text": "जी, मेरे system के हिसाब से आपका order 29 July तक deliver हो जाएगा, लेकिन अगर app और message में 31 July दिखा रहा है, तो हो सकता है कि update अभी process हो रहा हो। आप निश्चिंत रहें, आपका order priority पर है और जल्द ही आप तक"
+      },
+      {
+        "index": 18,
+        "speaker": "customer",
+        "text": "आप एक काम"
+      },
+      {
+        "index": 19,
+        "speaker": "agent",
+        "text": "जी, बताइए, आप क्या कहना चाहते"
+      },
+      {
+        "index": 20,
+        "speaker": "customer",
+        "text": "Hello, आप एक काम कीजिए आप एक काम कीजिए, आप एक काम कीजिए वही. वह delivery जो तीस तारीख को अलग अलग दिखा रहा है ना आप एक complaint लिख लीजिए."
+      },
+      {
+        "index": 21,
+        "speaker": "agent",
+        "text": "जी, बिलकुल। मैं आपकी परेशानी समझ सकती हूँ कि delivery date को लेकर confusion हो रहा है और आप चाहते हैं कि इसकी complaint दर्ज हो जाए। मैं अभी आपके लिए यह complaint register कर देती हूँ ताकि हमारी backend team इसे check करके जल्द से जल्द resolve कर दे। कृपया line पर बने रहिए।"
+      },
+      {
+        "index": 22,
+        "speaker": "customer",
+        "text": "हां, हां उनतीस उनतीस तारीख को ही चाहिए, ठीक है? नहीं तो मैं order cancel कर दूंगा. मेरा तो platform fee जो है तीस से ही issue हुआ है वह तो नहीं मिलेगा ना refund में?"
+      },
+      {
+        "index": 23,
+        "speaker": "agent",
+        "text": "जी, मैं आपकी बात समझ रही हूँ। जहाँ तक platform fee की बात है, उसके refund के लिए मुझे आपको हमारे expert agent से connect करना होगा क्योंकि वो आपको इसकी सही जानकारी दे पाएंगे। क्या आप expert agent से बात करना चाहेंगे ताकि आपकी platform fee और order cancellation के बारे में सही जानकारी मिल सके?"
+      },
+      {
+        "index": 24,
+        "speaker": "customer",
+        "text": "हां हां. हां लिखिए."
+      },
+      {
+        "index": 25,
+        "speaker": "agent",
+        "text": "ठीक है, मै आपको expert agent से connect कर रही हूँ। कृपया line पर बने रहिए।"
+      },
+      {
+        "index": 26,
+        "speaker": "agent",
+        "text": "I will connect you with our specialized team. Transferring your call now, they will be with you immediately."
+      }
+    ]
+  }
+]

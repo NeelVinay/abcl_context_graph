@@ -1,0 +1,128 @@
+[
+  {
+    "timestamp": "2026-07-27T05:47:53",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:58",
+    "speaker": "user",
+    "content": "Ma'am तीन actually मेरा exchange है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:07",
+    "speaker": "user",
+    "content": "जो रोज़ out for deliver हो रहा है पर मुझे मिल नहीं रहा और अभी भी इसमें आ रहा है कि delivery attempt fail we will deliver it soon.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:07",
+    "speaker": "assistant",
+    "content": "मै समझ सकती हूँ कि बार-बार delivery attempt fail होने से आप परेशान हैं। आपके Mast & Harbour Jeans का status shipped है और यह कल तक deliver हो जाएगा। मै देख पा रही हूँ कि आपकी complaint already register हो चुकी है और हम इसे priority पर resolve कर रहे हैं। shipping",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:31",
+    "speaker": "user",
+    "content": "नहीं तो message मेरे पास कल cut कल भी आया था कि आज कल मिल जाएगा आज आया था आज मिल जाएगा आज फिर आ रहा है कि आज नहीं मिलेगा. अब आप कह रहे हैं कि कल मिलेगा",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:31",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि बार-बार date बदलने से बहुत झुंझलाहट होती है। आपका order priority पर है और shipping delays की वजह से यह समय ले रहा है। जैसा कि मै देख पा रही हूँ, आपकी complaint register है और हम पूरी कोशिश कर रहे हैं कि यह कल तक आपको मिल जाए। कृपया थोड़ा भरोसा रखें, हम इसे जल्द से जल्द resolve कर देंगे।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:53",
+    "speaker": "user",
+    "content": "और कल तक मतलब",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:55",
+    "speaker": "user",
+    "content": "कल तक भी नहीं मिला तो",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:55",
+    "speaker": "assistant",
+    "content": "जी, अगर कल तक भी आपका order deliver नहीं होता है, तो आप हमें दोबारा contact कर सकते हैं और हम इसे immediately escalate कर देंगे। आपकी complaint register है और हम इसे priority पर track कर रहे हैं ताकि कल तक यह आपको मिल जाए। हम पूरी कोशिश कर रहे",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:12",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिये, क्या आप फिर से कह सकते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:17",
+    "speaker": "user",
+    "content": "नहीं पहले तो order delay delay नहीं होते थे आजकल मिंत्रा में order मतलब जो date होती है उसमें मिलते ही नहीं है delayed हो जाते हैं हमेशा.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:17",
+    "speaker": "assistant",
+    "content": "जी, आपकी बात सही है, यह delay वाकई परेशान करने वाला है और इसके लिए मै आपसे माफी चाहती हूँ। हम अपनी delivery services को बेहतर बनाने पर काम कर रहे हैं ताकि आपको आगे ऐसी problem न हो। आपका order अभी priority पर है और हम पूरी कोशिश कर रहे हैं कि यह कल तक आपको मिल जाए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:36",
+    "speaker": "user",
+    "content": "Ok, ठीक है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:36",
+    "speaker": "assistant",
+    "content": "जी, क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:43",
+    "speaker": "user",
+    "content": "नहीं ma'am बस यही था.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:43",
+    "speaker": "assistant",
+    "content": "ठीक है। आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:58",
+    "speaker": "user",
+    "content": "Ok. Ok. Ok.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:11",
+    "speaker": "assistant",
+    "content": "आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।",
+    "feedback": null,
+    "agent_id": null
+  }
+]

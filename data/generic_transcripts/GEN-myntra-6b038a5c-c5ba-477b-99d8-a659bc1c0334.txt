@@ -1,0 +1,128 @@
+[
+  {
+    "timestamp": "2026-07-27T05:46:02",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:08",
+    "speaker": "user",
+    "content": "Ma'am वह जो order आज का date दिखा रहा है वह कब तक पहुंचे ना?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:08",
+    "speaker": "assistant",
+    "content": "मै समझ सकती हूँ कि आप अपने order के बारे में जानना चाहते हैं, मै status check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:18",
+    "speaker": "assistant",
+    "content": "जी, आपका Roadster Shirt अभी shipped है और आज शाम आठ बजे तक आपको मिल जाएगा।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:27",
+    "speaker": "user",
+    "content": "शाम में आठ बजे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:27",
+    "speaker": "assistant",
+    "content": "जी, आपका order आज शाम आठ बजे तक deliver हो जाएगा।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:33",
+    "speaker": "user",
+    "content": "उससे पहले नहीं होगा.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:33",
+    "speaker": "assistant",
+    "content": "जी, आपका order fastest route पर है और आज शाम आठ बजे तक पहुँच जाएगा। हम पूरी कोशिश कर रहे हैं कि यह आपको जल्द से जल्द मिल जाए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:51",
+    "speaker": "user",
+    "content": "Ma'am वह पूछना था कि अभी आपने किसी और number पर call किया था क्या इस regarding में order के regarding में?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:51",
+    "speaker": "assistant",
+    "content": "जी, delivery agent आपके location के पास पहुंचते ही आपको contact करेगा। अभी मेरी तरफ से किसी और number पर call नहीं किया गया है।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:10",
+    "speaker": "user",
+    "content": "नहीं आप car अभी हो गया था दूसरे number पर जो जिसको order देना है उस number पर आप लग गया था तो उस पर आप call back आपका बात हुआ है क्या उधर?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:10",
+    "speaker": "assistant",
+    "content": "जी, मै आपको बता दूँ कि मै सिर्फ एक digital assistant हूँ और मै calls नहीं करती हूँ। delivery agent जब आपके location के पास पहुँचेंगे, तब वो सीधे आपसे contact करेंगे।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:26",
+    "speaker": "user",
+    "content": "धन्यवाद.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:26",
+    "speaker": "assistant",
+    "content": "जी, क्या मै आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:38",
+    "speaker": "user",
+    "content": "Ma'am मैं पुछ रही हूं कि अभी आपने दूसरे number पर किसी number पर इस order के regarding बात की है क्या?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:38",
+    "speaker": "assistant",
+    "content": "जी, जैसा कि मैने पहले बताया, मै एक digital assistant हूँ और मै calls नहीं करती हूँ। आपके order के regarding मेरी तरफ से किसी भी number पर कोई बात नहीं हुई है। delivery agent ही आपसे contact करेंगे।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:53",
+    "speaker": "user",
+    "content": "ठीक. Thanks.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:53",
+    "speaker": "assistant",
+    "content": "जी, आपका स्वागत है। आज हमारे",
+    "feedback": null,
+    "agent_id": null
+  }
+]

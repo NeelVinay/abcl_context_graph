@@ -1,0 +1,142 @@
+[
+  {
+    "timestamp": "2026-07-27T05:42:59",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:01",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:01",
+    "speaker": "assistant",
+    "content": "आप किस order के बारे में बात करना चाहते हैं, और क्या issue है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:12",
+    "speaker": "user",
+    "content": "Hello हां ma'am मेरे papa की एक watch थी वह twenty fourth को deliver होने वाली थी अभी तक उसका status नहीं update थी थोड़ा कुछ.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:12",
+    "speaker": "assistant",
+    "content": "मै समझ सकती हूँ कि order अभी तक नहीं मिला है, मै status check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:19",
+    "speaker": "assistant",
+    "content": "जी, आपके TAPOM Watch का status shipped है। यह 30 July तक deliver हो जाएगा। मै देख पा रही हूँ कि आपकी complaint पहले से registered है, इसलिए आप निश्चिंत रहें, हम इसे जल्द से जल्द पहुँचाने की कोशिश कर रहे हैं। क्या मै आपकी किसी और चीज़ में मदद कर",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:34",
+    "speaker": "user",
+    "content": "Ok. इसमें क्या निश्चय?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:34",
+    "speaker": "assistant",
+    "content": "जी, मेरा मतलब था",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:39",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिये, क्या आप फिर से कह सकते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:49",
+    "speaker": "user",
+    "content": "Ma'am इसमें क्या निश्चित रहा हूं आप मुझे एक बात बताओ? Twenty fourth को deliver होना था आज twenty seven था आज भी आप कह रहे हो thirtieth तक delivery भर even वह नेहरु place पहुंच चुका है ma'am उसको East तक तलाश आने में इतना time की वजह",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:49",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि 24 July की date निकल जाने के बाद अब 30 July तक का wait करना परेशान करने वाला है। shipping में कुछ delays की वजह से ऐसा हुआ है, जिसके लिए मै आपसे माफी चाहती हूँ। आपका order priority",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:14",
+    "speaker": "user",
+    "content": "है? Shipping में ma'am मेरा concern यह है आप मुझे बताओ मेरा सिर्फ app पर दिखा रहा है वह नेहरू place switch हो चुका है. जब वह नेहरू place switch हो चुका था नेहरू place से इस वक्त तलाश आने में इतना time क्यों लग रहा हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:14",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि नेहरू place पहुँचने के बाद भी delay",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:45",
+    "speaker": "user",
+    "content": "आप मुझे बस इतना सा बता दो. Twenty third को वह नेहरू place पहुंच चुका है आज twenty seventh है आज भी वह ईदक class नहीं आ पा इतना तो दूसरा state से आ जाता है आप एक एक एक metro station का आप समझो यह एक दो kilometer का भी रास्ता नहीं है उसके लिए आप लोग इतना time waste करवा रहे हो. किसी की urgency हो, किसी को gift देना हो. मैंने अपने किसी उसके लिए gift order किया था. अब आपने इसका इतना time waste कर दिया. Gift उसको time पर पहुंच ही नहीं पाएगा birthday उसका आज था.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:45",
+    "speaker": "assistant",
+    "content": "जी, birthday gift के लिए यह delay",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:49",
+    "speaker": "user",
+    "content": "ऐसे थोड़ी ना होता है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:49",
+    "speaker": "assistant",
+    "content": "जी, आप बिल्कुल सही कह रहे हैं, birthday gift का समय पर न पहुँचना वाकई बहुत दुखद है, इसके लिए मै आपसे दिल से माफ़ी चाहती हूँ। मै समझ सकती हूँ कि नेहरू place जैसे पास के location से भी इतना समय लगना बहुत निराशाजनक है। आपका order priority पर है और हम पूरी कोशिश कर रहे हैं कि यह जल्द से जल्द deliver हो जाए। क्या आप चाहेंगे कि मै आपको expert agent से connect कर दूँ जो इस delay की exact वजह बता सकें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:16",
+    "speaker": "user",
+    "content": "Please नहीं मुझे बज रहा नहीं जानी मुझे बस जल्दी से जल्दी से delay पता मत कीजिए मेरा.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:18",
+    "speaker": "user",
+    "content": "Thank you so much.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:18",
+    "speaker": "assistant",
+    "content": "जी, आपका बहुत बहुत",
+    "feedback": null,
+    "agent_id": null
+  }
+]

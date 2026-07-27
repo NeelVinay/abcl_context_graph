@@ -1,0 +1,335 @@
+{
+  "call_id": "GEN-myntra-3024d521-a430-49f2-9821-7f9f3b6b791a",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "assistant",
+        "मिंत्रा",
+        "service",
+        "welcome"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "order",
+        "one",
+        "two",
+        "regarding",
+        "here"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hi, मेरा. This is श्रवणजीत here. This is regarding one of my order, to two",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "check",
+        "delivered",
+        "which",
+        "when",
+        "where"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "which got delivered me almost by a week. You check where and when can I expect it?",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "line",
+        "status",
+        "check",
+        "let"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I understand you haven't received your order yet, let me check the status for you. Please stay on the line.",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_pan",
+      "base_intent": "enter_pan",
+      "keywords": [
+        "order",
+        "help",
+        "delivery",
+        "complaint",
+        "july"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Your Van Heusen Formal Shoes are currently processing. I can see that the delivery is delayed and a complaint has already been registered for this. Your order is expected to be delivered by 30 July. Please don't worry, we are working to get this sorted for you. Is there anything else I can help you with?",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "date",
+        "wait",
+        "what",
+        "when",
+        "expect"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हो गई wait when when can I expect what is the date?",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "deliver",
+        "मदद",
+        "july",
+        "उम्मीद"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, जैसा कि मैंने बताया, आपका order 30 July तक deliver होने की उम्मीद है। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "speak",
+        "english"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Can you speak in English please?",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "help",
+        "july",
+        "delivered",
+        "there"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Sure, I can speak in English. As I mentioned, your order is expected to be delivered by 30 July. Is there anything else I can help you with?",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "time",
+        "delivered",
+        "अरे",
+        "यार",
+        "know"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अरे यार, I know that it have to be delivered by this time, but it is not getting delivered.",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "completely"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I completely",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "problem",
+        "right",
+        "delayed",
+        "more",
+        "got"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "That is the problem, right? For the It's got delayed almost by more than a week.",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "deliver",
+        "status",
+        "date",
+        "delivered",
+        "what"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "What is the current status? Will that be getting delivered or not? I want the date with, by what date you can deliver?",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "help",
+        "delay",
+        "complaint",
+        "july"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I understand the delay is frustrating. Your order is currently in the processing stage and is expected to reach you by 30 July. Since a complaint is already registered, we are actively monitoring this to ensure it reaches you. Is there anything else I can help you with?",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "call",
+        "any"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Can you, can you transfer the call to any higher management?",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "agent",
+        "expert",
+        "assistance",
+        "better",
+        "want"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Do you want to speak with an expert agent for better assistance?",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "exactly"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Exactly,",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_transfer_to_rm",
+      "base_intent": "transfer_to_rm",
+      "keywords": [
+        "line",
+        "agent",
+        "now",
+        "expert",
+        "stay"
+      ],
+      "sentiment": null,
+      "tool": "transfer_to_rm",
+      "text": "Sure, I am connecting you to an expert agent now. Please stay on the line.",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_transfer_to_rm",
+      "base_intent": "transfer_to_rm",
+      "keywords": [
+        "call",
+        "now",
+        "connect",
+        "team",
+        "immediately"
+      ],
+      "sentiment": null,
+      "tool": "transfer_to_rm",
+      "text": "I will connect you with our specialized team. Transferring your call now, they will be with you immediately.",
+      "entities": []
+    }
+  ]
+}

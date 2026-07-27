@@ -1,0 +1,170 @@
+[
+  {
+    "timestamp": "2026-07-27T05:42:39",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:42",
+    "speaker": "assistant",
+    "content": "Sorry, could you say that again?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:45",
+    "speaker": "user",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:45",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं आपकी कैसे मदद कर सकती हूं? आप किस order के बारे में बात करना चाहते हैं, और क्या",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:57",
+    "speaker": "user",
+    "content": "Hello हां मेरा वो मेरा मेरा order North मिर्च exchange कुर्ता कहां पर है? मुझे अभी तक मिला receive नहीं हुआ है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:57",
+    "speaker": "assistant",
+    "content": "मै समझ सकती हूँ कि आपको अपना order receive नहीं हुआ है, मै status check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:04",
+    "speaker": "assistant",
+    "content": "जी, आपका अनूक Kurti अभी packed है। मै देख पा रही हूँ कि delivery में delay हुआ है, इसके लिए मै माफी चाहती हूँ। आपका order कल तक deliver हो जाएगा और आपकी complaint भी register हो चुकी है, जिस पर हम काम कर रहे हैं। क्या मैं आपकी किसी और तरह से मदद कर सकती",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:19",
+    "speaker": "user",
+    "content": "क्यों हुआ? यह तो Sunday",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:19",
+    "speaker": "assistant",
+    "content": "जी, shipping delays या high",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:23",
+    "speaker": "user",
+    "content": "नहीं मुझे भी जानना अभी तक जब Sunday का था",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:23",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि Sunday तक order न मिलना परेशान",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:27",
+    "speaker": "user",
+    "content": "Sunday को booking का time था",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:27",
+    "speaker": "assistant",
+    "content": "जी, मै देख पा रही हूँ कि delivery में delay हुआ है, इसके लिए माफी चाहती हूँ। shipping delays या high order volumes की वजह से ऐसा हो सकता है। आपका order priority पर है और कल तक deliver हो जाएगा। क्या इसके अलावा मैं आपकी कोई और help कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:50",
+    "speaker": "user",
+    "content": "तो कल तक order नहीं हुआ कल मुझे कब तक wait करना है? कल शाम तक wait करना है कल order नहीं हुआ उसके बाद यह connect step क्या लेना है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:50",
+    "speaker": "assistant",
+    "content": "जी, आपको कल तक wait करना होगा और आपका order कल तक deliver हो जाएगा। अगर कल भी order receive नहीं होता है, तो आप हमें दोबारा",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:01",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिये, क्या आप फिर से बता सकते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:06",
+    "speaker": "user",
+    "content": "अगर नहीं हुआ तो यह मैंने यह मेरी चौथी या पांचवी call है. मेरे पांच बार का complaint raise करी फिर मुझे मेरी कुर्ती भी सी नहीं हुई है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:06",
+    "speaker": "assistant",
+    "content": "जी, यह वाकई बहुत परेशान करने वाला है कि आपको इतनी बार call करना पड़ा, इसके लिए मैं आपसे माफी चाहती हूँ। मैं आपको भरोसा दिलाती हूँ कि आपका order priority पर है और कल तक deliver हो जाएगा। अगर कल भी आपको order receive नहीं होता है, तो आप हमें call कर सकते हैं और हम इसे तुरंत resolve करेंगे। क्या मैं आपकी किसी और तरह से help कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:33",
+    "speaker": "user",
+    "content": "मुझे नहीं call तो मैं आपको tight पड़ चुकी हूं ना उठ कर चुकी उसके बाद भी मेरी problem resolveी हुई ना. मुझे exchange अभी तक मेरा नहीं मिला.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:41",
+    "speaker": "user",
+    "content": "अब आप बार बार बोल रहे हो आप आज करिए आज wait करिए आप कल wait करिए परसों करिए ऐसा नहीं होता मुझे मेरी कौन सी चाहिए?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:46",
+    "speaker": "user",
+    "content": "या फिर आप order cancel करके मेरा refund मुझे refund कर दीजिए.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:46",
+    "speaker": "assistant",
+    "content": "बिलकुल सही, यह delay वाकई बहुत परेशान करने वाला है और मैं इसके लिए आपसे माफी चाहती हूँ। परेशान न हों, हमने आपकी problem note कर ली है और हम इसे जल्द से जल्द resolve करने की पूरी कोशिश करेंगे। आपका order priority पर है और कल तक deliver हो जाएगा। क्या मैं इस delivery के संबंध में आपकी कोई और help कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:07",
+    "speaker": "user",
+    "content": "ठीक है मैं कल आपको wait करूंगी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:07",
+    "speaker": "assistant",
+    "content": "ठीक है,",
+    "feedback": null,
+    "agent_id": null
+  }
+]

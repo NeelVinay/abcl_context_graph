@@ -56,12 +56,17 @@ def _node_meta(token: str) -> tuple[str, str]:
     return "stage", STAGE_LABEL.get(token, token)
 
 
-def build_flow_tree(calls: list[dict], top_k: int = 3, min_count: int = 1) -> nx.DiGraph:
+def build_flow_tree(calls: list[dict], top_k: int = 3, min_count: int = 1,
+                    with_disposition: bool = True) -> nx.DiGraph:
     """Build the flow tree. Each node id is the stage-path to it (unique per branch).
     Node attrs: stage, label, count (#calls through here), kind (root|stage|outcome|stub).
 
-      top_k     : keep at most this many real child branches per node
-      min_count : a child taken by fewer than this many calls is folded into the stub
+      top_k            : keep at most this many real child branches per node
+      min_count        : a child taken by fewer than this many calls is folded into the stub
+      with_disposition : prepend the call-level disposition branch. Set False for a
+                         domain with no disposition classifier of its own (e.g. a new
+                         generic-pipeline client) — leaving it True there would add a
+                         single uninformative "No clear disposition" node to every call.
     """
     g = nx.DiGraph()
     ROOT = "()"
@@ -69,7 +74,7 @@ def build_flow_tree(calls: list[dict], top_k: int = 3, min_count: int = 1) -> nx
 
     # child key = (parent_id, stage); value = list of call indices flowing into it
     for ci, call in enumerate(calls):
-        stages = call_to_stages(call)
+        stages = call_to_stages(call, with_disposition=with_disposition)
         outcome = call.get("outcome", "other")
         node = ROOT
         path: tuple[str, ...] = ()
@@ -131,6 +136,75 @@ def _remove_subtree(g: nx.DiGraph, node: str) -> None:
         _remove_subtree(g, child)
     if g.has_node(node):
         g.remove_node(node)
+
+
+def build_stage_dag(calls: list[dict], with_disposition: bool = True,
+                    min_count: int = 1) -> nx.DiGraph:
+    """A DAG over coarse STAGES, not a tree: each stage/disposition/outcome is ONE
+    node reused across every call that passes through it, so paths reconverge
+    (e.g. two different journeys that both hit "wait" share the same "wait" node)
+    instead of forking into new copies per branch. This is what gives a compact,
+    structured SOP-style diagram instead of a sprawling per-path tree — matching
+    src/sop_flow.py's fixed-skeleton diagram, but built from real data rather than
+    a hand-authored skeleton, so it works for any client.
+
+    min_count: edges taken by fewer than this many calls are dropped (decluttering;
+    there's no tree to fold into a stub here, so weak edges are just omitted).
+    """
+    g = nx.DiGraph()
+    ROOT = "__start__"
+    g.add_node(ROOT, stage="__start__", label="Call Start", count=len(calls), kind="root")
+
+    edge_counts: dict = {}
+    node_counts: dict = {}
+    node_kind_label: dict = {}
+    for call in calls:
+        seq = call_to_stages(call, with_disposition=with_disposition)
+        outcome = call.get("outcome", "other")
+        full = seq + ["=" + outcome]
+        prev = ROOT
+        for tok in seq + ["=" + outcome]:
+            if tok not in node_kind_label:
+                if tok.startswith("="):
+                    node_kind_label[tok] = ("outcome", tok[1:])
+                else:
+                    node_kind_label[tok] = _node_meta(tok)
+            node_counts[tok] = node_counts.get(tok, 0) + 1
+            edge_counts[(prev, tok)] = edge_counts.get((prev, tok), 0) + 1
+            prev = tok
+
+    for tok, (kind, label) in node_kind_label.items():
+        g.add_node(tok, stage=tok.lstrip("=@"), label=label,
+                   count=node_counts.get(tok, 0), kind=kind)
+    for (a, b), c in edge_counts.items():
+        if c < min_count:
+            continue
+        g.add_edge(a, b, count=c)
+    # min_count can strand a rare node with zero surviving edges (e.g. a bucket that
+    # only ever got 1-2 calls) — floating, edge-less nodes look broken, not "pruned",
+    # so drop them rather than render an unconnected box.
+    isolated = [n for n in g.nodes if n != ROOT and g.degree(n) == 0]
+    g.remove_nodes_from(isolated)
+    return g
+
+
+def greedy_main_path(g: nx.DiGraph) -> set:
+    """Cycle-safe greedy walk for a DAG (unlike main_flow_path, which assumes a
+    tree): from the root, follow the heaviest outgoing edge, stopping if it would
+    revisit an already-visited node (a real DAG can have back-edges/cycles)."""
+    root = next((n for n, d in g.nodes(data=True) if d.get("kind") == "root"), None)
+    if root is None:
+        return set()
+    edges, cur, visited = set(), root, {root}
+    while True:
+        kids = [c for c in g.successors(cur) if c not in visited]
+        if not kids:
+            break
+        nxt = max(kids, key=lambda c: g[cur][c]["count"])
+        edges.add((cur, nxt))
+        cur = nxt
+        visited.add(cur)
+    return edges
 
 
 def main_flow_path(g: nx.DiGraph) -> set:

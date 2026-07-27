@@ -1,0 +1,177 @@
+[
+  {
+    "timestamp": "2026-07-27T05:40:34",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:40:36",
+    "speaker": "user",
+    "content": "हां.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:40:38",
+    "speaker": "user",
+    "content": "तेरा बात क्यों जाए?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:40:38",
+    "speaker": "assistant",
+    "content": "आप किस order के बारे में बात करना चाहते हैं, और क्या issue",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:40:42",
+    "speaker": "user",
+    "content": "सभी इसका बताया",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:40:45",
+    "speaker": "user",
+    "content": "यह मैं आपको बताती हूं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:40:45",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि आप अपने order का status जानना चाहते हैं। आपका Roadster T-shirt अभी shipped है और कल तक deliver",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:40:52",
+    "speaker": "user",
+    "content": "एक minute madam को बोलता.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:40:52",
+    "speaker": "assistant",
+    "content": "जी, कोई बात नहीं। आप आराम से बात कर लीजिए, मैं line पर ही हूँ।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:01",
+    "speaker": "user",
+    "content": "यह road road हां roadीसारी woman teacher करना.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:01",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ गई कि आप अपने Roadster T-shirt के बारे में बात कर रहे हैं। आपका order अभी shipped है और कल तक deliver हो जाएगा। चूंकि इसमें थोडा delay हुआ है, इसलिए आपकी complaint register कर दी गई है और हम इसे जल्द से जल्द आप तक पहुँचाने की कोशिश कर रहे हैं। क्या मैं आपकी किसी और तरह से मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:20",
+    "speaker": "user",
+    "content": "हां.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:21",
+    "speaker": "user",
+    "content": "नहीं thank you madam.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:27",
+    "speaker": "user",
+    "content": "कल तक आ जाना चाहिए madam या फिर मैं निकल रही हूं जिस",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:28",
+    "speaker": "user",
+    "content": "order address पर दिया है ना वहां से.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:28",
+    "speaker": "assistant",
+    "content": "जी, आपका order आपके दिए हुए address पर ही deliver होगा। यह कल तक आप तक पहुँच जाएगा। क्या मैं आपकी किसी और तरह से मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:36",
+    "speaker": "user",
+    "content": "Ok.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:39",
+    "speaker": "user",
+    "content": "नहीं नहीं नहीं thank you madam.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:39",
+    "speaker": "assistant",
+    "content": "जी, आपका बहुत धन्यवाद। आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:57",
+    "speaker": "user",
+    "content": "Ok धन्यवाद. Ok ok madam.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:57",
+    "speaker": "user",
+    "content": "Thank you very most welcome.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:57",
+    "speaker": "assistant",
+    "content": "आपका बहुत धन्यवाद। आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:08",
+    "speaker": "user",
+    "content": "Ok madam भर देंगे.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:08",
+    "speaker": "assistant",
+    "content": "बहुत धन्यवाद। call के लिए धन्यवाद।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:13",
+    "speaker": "assistant",
+    "content": "Thank you for",
+    "feedback": null,
+    "agent_id": null
+  }
+]

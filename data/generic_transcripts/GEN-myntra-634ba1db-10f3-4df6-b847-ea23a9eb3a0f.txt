@@ -1,0 +1,142 @@
+[
+  {
+    "timestamp": "2026-07-27T05:46:53",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:56",
+    "speaker": "user",
+    "content": "Hello मेरा.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:59",
+    "speaker": "user",
+    "content": "Hello",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:59",
+    "speaker": "assistant",
+    "content": "आप किस order के बारे में बात करना चाहते हैं, और क्या issue है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:13",
+    "speaker": "user",
+    "content": "अभी तक मुझे मेरा order deliver नहीं हुआ है. और मैंने यह जो delivery date twenty first of July थी",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:13",
+    "speaker": "assistant",
+    "content": "मै समझ सकती हूँ कि आपका order अभी तक नहीं आया है, मै status",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:18",
+    "speaker": "user",
+    "content": "ठीक है? और",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:18",
+    "speaker": "assistant",
+    "content": "जी, मै आपके order का status check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:23",
+    "speaker": "assistant",
+    "content": "आपका uppercase Trolley Bag अभी shipped है, लेकिन मै देख पा रही हूँ कि इसकी delivery काफी delay हो गई है। इसके लिए मै आपसे माफी चाहती हूँ। अच्छी बात यह है कि आपकी complaint register हो चुकी है और हम इसे जल्द से जल्द resolve करने की कोशिश कर रहे हैं। चूंकि आपका order काफी delay हो गया है, क्या आप बेहतर",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:40",
+    "speaker": "user",
+    "content": "ठीक है. एक second एक second.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:40",
+    "speaker": "assistant",
+    "content": "जी, बिलकुल। आप समय ले लीजिए, मै line पर",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:45",
+    "speaker": "user",
+    "content": "मेरा order जो है, मैंने जो complaint",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:45",
+    "speaker": "assistant",
+    "content": "जी, आपकी complaint register",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:50",
+    "speaker": "user",
+    "content": "हां, मैंने twenty second को complaint raise किया था,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:50",
+    "speaker": "assistant",
+    "content": "जी, मै देख पा रही हूँ कि आपकी complaint register हो चुकी है और हम इसे priority पर resolve करने की कोशिश कर रहे हैं। जैसा कि मैने बताया, आपका uppercase Trolley Bag अभी shipped है। चूंकि",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:16",
+    "speaker": "user",
+    "content": "नहीं लेकिन twenty second को मैंने raise किया था मैंने twenty second को complaint raise किया था twenty fifth को resolution मिलने वाला था उसके बाद भी forty eight hours का उन्होंने जो है time मांगा था Forty eight hours होने के बाद आज twenty seven forty eight hours complete हो चुके हैं. अभी तक मुझे कोई resolution नहीं है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:16",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि resolution date निकल जाने के बाद भी कोई update न मिलना बहुत frustrating है, इसके लिए मै आपसे माफी चाहती हूँ। आपका order priority पर है और हम इसे जल्द से जल्द deliver कराने की पूरी कोशिश कर रहे हैं। चूंकि आपकी issue अभी तक resolve नहीं हुई है, क्या आप बेहतर assistance के लिए किसी expert agent से बात करना चाहेंगे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:38",
+    "speaker": "user",
+    "content": "Yes.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:38",
+    "speaker": "assistant",
+    "content": "ठीक है, मै आपको expert agent से connect कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:49",
+    "speaker": "assistant",
+    "content": "I will connect you with our specialized team. Transferring your call now, they will be with you immediately.",
+    "feedback": null,
+    "agent_id": null
+  }
+]

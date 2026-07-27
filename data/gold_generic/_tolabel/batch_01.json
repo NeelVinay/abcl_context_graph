@@ -1,0 +1,917 @@
+[
+  {
+    "call_id": "GEN-myntra-1963c4c5-46ea-4942-92b7-7670c3338580",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?"
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "text": "राजीव बोल रहा था दूसरा order किया था तो अभी कहां पर आया यह पुछ नहीं रहा था मैं."
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "text": "जी, मै समझ सकती हूँ कि आप अपने order का status जानना चाहते हैं। मै आपके order की details check कर रही हूँ। कृपया line पर बने रहिए।"
+      },
+      {
+        "index": 3,
+        "speaker": "agent",
+        "text": "आपका Red Tape Shoes shipped है और अभी उज्जैन hub पहुँच चुका है। आपको यह order आज शाम आठ बजे तक मिल जाएगा। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?"
+      },
+      {
+        "index": 4,
+        "speaker": "customer",
+        "text": "दिन कब तक मिल जाएगा?"
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "text": "जी, जैसा कि मै देख पा रही हूँ, आपका order आज शाम आठ बजे तक deliver हो जाएगा। क्या इसके अलावा मैं आपकी कोई और help कर सकती हूँ?"
+      },
+      {
+        "index": 6,
+        "speaker": "customer",
+        "text": "आठ"
+      },
+      {
+        "index": 7,
+        "speaker": "agent",
+        "text": "जी, आज शाम आठ बजे तक आपका order आपको मिल जाएगा। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?"
+      },
+      {
+        "index": 8,
+        "speaker": "customer",
+        "text": "मतलब इसी के बारे में पूछना था order कहां आया है कब तक आया है मेरे साथ?"
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "text": "क्योंकि मैं अभी यहां class में बैठा हूं अंदर मतलब वह sir कभी बाहर हो तो उनसे बात हो जाती तो मतलब मैं बाहर आ जाता ऐसा कुछ."
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "text": "जी, मैं समझ सकती हूँ। आपका order आज शाम आठ बजे तक deliver हो जाएगा, तो आप अपनी class खत्म होने के बाद आराम से इसे receive कर सकते हैं। अगर आपको कोई और help चाहिए हो तो ज़रूर बताइएगा।"
+      },
+      {
+        "index": 11,
+        "speaker": "customer",
+        "text": "Name मतलब जिस जो order करेगा उस sir के number मिल जाएंगे क्या?"
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "text": "जी, अभी आपका order out for delivery नहीं है, इसलिए delivery agent की details available नहीं हैं। जैसे ही आपका order out for delivery होगा, आप delivery agent की details मिंत्रा app में My Orders page पर देख सकते हैं। क्या मैं आपकी कोई और help कर सकती हूँ?"
+      },
+      {
+        "index": 13,
+        "speaker": "customer",
+        "text": "क्या? हां?"
+      },
+      {
+        "index": 14,
+        "speaker": "agent",
+        "text": "जी, मैं यह कह रही थी कि अभी आपका order out for delivery नहीं है, इसलिए agent"
+      }
+    ]
+  },
+  {
+    "call_id": "GEN-myntra-21691136-c5b5-478e-ab9b-91979993fb3a",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?"
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "text": "Yeah, hello मीरा? मीरा, I had ordered the class the shoes class sandal. Flip flop."
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "text": "I understand you are asking about your order. Let me"
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "text": "Costing around two seven nine nine. Yes, yeah exactly I am asking about my order Now every time there is this message कि we have attempted the delivery. There was nobody and that is a your life. Nobody has come to our place, nobody. In a building also, in a building premises also nobody is come."
+      },
+      {
+        "index": 4,
+        "speaker": "customer",
+        "text": "So this is a wrong information given to you people के they are what attempted the delivery which is a very false information. Twenty four seven we are at home and nobody has come."
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "text": "I can understand how frustrating"
+      },
+      {
+        "index": 6,
+        "speaker": "customer",
+        "text": "And I am waiting since I sing since four to five days if everyday I am receiving They were supposed to deliver this on twenty third of July. And today it is twenty seventh."
+      },
+      {
+        "index": 7,
+        "speaker": "agent",
+        "text": "I can see that your Clarks Sandals were supposed to be delivered by 23 July and I am sorry for the trouble caused by these false delivery attempts. I have checked and your order is shipped and is expected to reach you by tomorrow. I can see a complaint is already registered for this, and we are actively working to get it"
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "text": "Since a complaint is already registered, we are monitoring this closely to ensure your order reaches you. Is there anything else I can help you with today?"
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "text": "Ok, No, this is the only main issue because we are waiting for it and we need it very badly time right? So can it be delivered as soon as faster than what you've done? Tomorrow by tomorrow instead today can it be delivered by today?"
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "text": "Your order is already on the fastest available route and is expected to reach you by tomorrow. Since it is already shipped and in transit, we are doing everything possible to ensure it gets"
+      },
+      {
+        "index": 11,
+        "speaker": "agent",
+        "text": "Since there is nothing else you need help with, you will receive a feedback form via SMS about our"
+      },
+      {
+        "index": 12,
+        "speaker": "customer",
+        "text": "Ok fine. Yeah ना"
+      },
+      {
+        "index": 13,
+        "speaker": "agent",
+        "text": "You will receive a feedback"
+      },
+      {
+        "index": 14,
+        "speaker": "customer",
+        "text": "Ok fine. Yeah, no problem."
+      },
+      {
+        "index": 15,
+        "speaker": "agent",
+        "text": "You will receive a feedback form via SMS about our conversation today. If you felt I was helpful, your good rating would really mean a lot and help us improve. Thank you for calling."
+      },
+      {
+        "index": 16,
+        "speaker": "agent",
+        "text": "Thank you for calling मिंत्रा. Have a great"
+      },
+      {
+        "index": 17,
+        "speaker": "customer",
+        "text": "Yeah. Sure. Thank you."
+      },
+      {
+        "index": 18,
+        "speaker": "agent",
+        "text": "Thank you for calling मिंत्रा. Have a great day."
+      }
+    ]
+  },
+  {
+    "call_id": "GEN-myntra-222cf3fe-d661-4d60-9258-f189fd83638a",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?"
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "text": "Hello?"
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "text": "आप किस order के बारे में बात करना चाहते हैं, और क्या issue है?"
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "text": "Hello यह मेरा जो एक order लाया था वह मैंने ले नहीं पाई थी. घर पर ही नहीं."
+      },
+      {
+        "index": 4,
+        "speaker": "customer",
+        "text": "तो वह मुझे आज उसका number दे दीजिए agent का क्योंकि मुझे अभी फिर बच्चे school लेकर जाना है. वह ऐसा ना हो फिर आए तो फिर मैं ना मिलूं."
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "text": "जी, मै समझ सकती हूँ कि आप समय को लेकर चिंतित हैं। आपका ARADHNA Kurta Set अभी out for delivery नहीं है, इसलिए अभी agent की details उपलब्ध नहीं हैं। जैसे ही यह out for delivery होगा, आप delivery agent की details मिंत्रा app में My Orders page पर देख सकते हैं। इसके अलावा, delivery agent आपके location के पास पहुंचते ही आपको contact करेगा।"
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "text": "क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?"
+      },
+      {
+        "index": 7,
+        "speaker": "customer",
+        "text": "एक और पूछता मेरा कल आया था वह भी मेरा मैं ले नहीं पाई है. मैं उसके बारे में बात कर रही थी यह लोग."
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "text": "जी, क्या आप मुझे बता सकते हैं कि यह कौन सा product है या इसका order ID क्या है ताकि मै check कर सकूँ?"
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "text": "Front है. Ok. Your shoulder."
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "text": "जी, मुझे माफ़ी चाहिए लेकिन मुझे समझ नहीं आया कि आप किस product की बात कर रहे हैं। क्या आप कृपया product का नाम बता सकते हैं या order list check करने के लिए मुझे एक second देंगे?"
+      },
+      {
+        "index": 11,
+        "speaker": "customer",
+        "text": "हां हां बिल्कुल."
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "text": "ठीक है, मै आपकी order list check कर रही हूँ। कृपया line पर बने रहिए।"
+      },
+      {
+        "index": 13,
+        "speaker": "customer",
+        "text": "हां नहीं तो मैं"
+      },
+      {
+        "index": 14,
+        "speaker": "agent",
+        "text": "जी, आपकी list में दो"
+      },
+      {
+        "index": 15,
+        "speaker": "customer",
+        "text": "जैसे मैं order order number आपको बता रही हूं एक minute रुकिए आप."
+      },
+      {
+        "index": 16,
+        "speaker": "agent",
+        "text": "जी, बिल्कुल। आप आराम से order number देख लीजिए, मैं line पर ही हूँ।"
+      },
+      {
+        "index": 17,
+        "speaker": "customer",
+        "text": "हां, ok ok ok."
+      },
+      {
+        "index": 18,
+        "speaker": "agent",
+        "text": "जी, आप order number share कर सकते हैं।"
+      },
+      {
+        "index": 19,
+        "speaker": "agent",
+        "text": "मुझे लगा आप चुप हो गए, क्या आप वहाँ हैं?"
+      },
+      {
+        "index": 20,
+        "speaker": "customer",
+        "text": "हां order ID है one three three six five Hello?"
+      },
+      {
+        "index": 21,
+        "speaker": "agent",
+        "text": "जी, आपने जो order ID बताया है वह अधूरा लग रहा है। क्या आप कृपया पूरा order ID फिर से बता सकते हैं या product का नाम"
+      },
+      {
+        "index": 22,
+        "speaker": "customer",
+        "text": "Hello. हां नहीं बता रहे."
+      },
+      {
+        "index": 23,
+        "speaker": "agent",
+        "text": "जी, कोई बात नहीं। आपकी order list में एक rarethread Kurta भी है, क्या आप उसी के"
+      },
+      {
+        "index": 24,
+        "speaker": "customer",
+        "text": "One three three six five one three"
+      },
+      {
+        "index": 25,
+        "speaker": "agent",
+        "text": "जी, यह order ID भी अधूरा लग रहा है। क्या आपकी problem rarethread Kurta से related है? अगर आप"
+      },
+      {
+        "index": 26,
+        "speaker": "customer",
+        "text": "Hello? मैं बता रही हूं ना?"
+      },
+      {
+        "index": 27,
+        "speaker": "customer",
+        "text": "Zero five seven four five three six five six zero four seven zero three."
+      },
+      {
+        "index": 28,
+        "speaker": "agent",
+        "text": "जी, order ID share करने के लिए धन्यवाद। मै इस order की details check कर रही हूँ। कृपया line पर बने रहिए।"
+      },
+      {
+        "index": 29,
+        "speaker": "agent",
+        "text": "जी, आपका rarethread Kurta already out for delivery है और यह अगले 24 hours में deliver हो जाएगा। मै देख पा रही हूँ कि पहले एक delivery attempt किया गया था, लेकिन इस बार agent आपको call करके coordinate करेगा ताकि आप अपना order ले सकें।"
+      },
+      {
+        "index": 30,
+        "speaker": "agent",
+        "text": "क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?"
+      },
+      {
+        "index": 31,
+        "speaker": "customer",
+        "text": "उस agent का number मिल जाएगा मुझे?"
+      },
+      {
+        "index": 32,
+        "speaker": "agent",
+        "text": "जी, आपका order out for delivery है, और आप delivery agent की details मिंत्रा app में My Orders page पर देख सकते हैं।"
+      },
+      {
+        "index": 33,
+        "speaker": "agent",
+        "text": "क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?"
+      },
+      {
+        "index": 34,
+        "speaker": "customer",
+        "text": "No no no no no no no thank you."
+      },
+      {
+        "index": 35,
+        "speaker": "agent",
+        "text": "आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।"
+      },
+      {
+        "index": 36,
+        "speaker": "agent",
+        "text": "आज हमारे call के बारे में आपको एसएमएस पर"
+      }
+    ]
+  },
+  {
+    "call_id": "GEN-myntra-25e87c49-b0ae-48b5-832c-1e677bb951df",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?"
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "text": "Hello."
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "text": "आप किस order के बारे में बात करना चाहते हैं, और क्या issue है?"
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "text": "हां order हमारा कभी तक आ जाएगा उस पर थोड़ा जास पास तक करने. आ जाने वाला है क्या?"
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "text": "जी, आपका NYPA Kurta shipped है और आज शाम आठ बजे तक deliver"
+      },
+      {
+        "index": 5,
+        "speaker": "customer",
+        "text": "थोड़ा exact time बता सकते हो आप?"
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "text": "ठीक है, exact time slots पहले से share नहीं किए जाते हैं। delivery agent आपके location के पास पहुँचते ही आपको call करेंगे ताकि आप उनसे coordinate कर सकें।"
+      },
+      {
+        "index": 7,
+        "speaker": "customer",
+        "text": "अच्छा तो अभी आप बता सकते हो कितने बजे तक आएगा?"
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "text": "जी, आपका order आज शाम आठ बजे तक deliver हो जाएगा। exact time बता पाना possible नहीं है, पर agent"
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "text": "आज शाम आठ बजे तक."
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "text": "जी, बिल्कुल। आपका order आज शाम आठ बजे तक मिल"
+      },
+      {
+        "index": 11,
+        "speaker": "customer",
+        "text": "थोड़ा जल्दी चाहिए था आठ बजे तक नहीं"
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "text": "जी, मै समझ सकती हूँ कि आपको जल्दी चाहिए। आपका order fastest route पर है और हम पूरी कोशिश कर रहे हैं कि यह जल्द से जल्द आप तक पहुँच जाए। अभी यह shipped status में है और आज शाम"
+      },
+      {
+        "index": 13,
+        "speaker": "agent",
+        "text": "माफ़ कीजिये, क्या आप फिर से बोल सकते हैं?"
+      },
+      {
+        "index": 14,
+        "speaker": "customer",
+        "text": "Hello? नहीं वह थोड़ा project का जो है ना वह ना थोड़ा काम था इस store से ना हमें थोड़ा जल्दी चलेगा थोड़ा काम है store से फिर बाद में फिर late करोगे तो फिर उससे भी मतलब नहीं रहेगा."
+      },
+      {
+        "index": 15,
+        "speaker": "customer",
+        "text": "जल्द से जल्द कितना बजे तक हो पाएगा."
+      },
+      {
+        "index": 16,
+        "speaker": "agent",
+        "text": "जी, मै समझ सकती हूँ कि आपको यह order जल्दी चाहिए। आपका order fastest route पर है और हम पूरी कोशिश कर रहे हैं कि यह जल्द से जल्द आप तक पहुँच जाए। अभी यह shipped status में है और आज शाम आठ बजे तक deliver होने की उम्मीद है।"
+      },
+      {
+        "index": 17,
+        "speaker": "customer",
+        "text": "कम से कम चार पांच तो लो."
+      },
+      {
+        "index": 18,
+        "speaker": "agent",
+        "text": "जी, मै आपकी urgency समझ सकती हूँ, लेकिन exact time slot promise करना मेरे लिए possible नहीं है। आपका order fastest route पर है और delivery agent आपके location के पास पहुँचते ही आपको call करेंगे। आप बस आज शाम आठ बजे तक का wait करें।"
+      },
+      {
+        "index": 19,
+        "speaker": "customer",
+        "text": "ठीक है चलेगा."
+      },
+      {
+        "index": 20,
+        "speaker": "agent",
+        "text": "जी, धन्यवाद। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?"
+      },
+      {
+        "index": 21,
+        "speaker": "agent",
+        "text": "क्षमा करें, क्या आप एक बार फिर कह सकते हैं?"
+      }
+    ]
+  },
+  {
+    "call_id": "GEN-myntra-2633b770-5487-421c-9f84-01ee39c69eba",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?"
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "text": "Ma'am मेरा order आज आ सकता है क्या?"
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "text": "मै समझ सकती हूँ कि आप अपने order का इंतज़ार कर रहे हैं, मै अभी status check कर रही हूँ। कृपया line पर बने रहिए।"
+      },
+      {
+        "index": 3,
+        "speaker": "agent",
+        "text": "जी, आपका Cetaphil Moisturising Lotion shipped है और आज शाम आठ बजे तक मिल जाएगा। आप निश्चिंत रहें, आपका order समय पर पहुँच जाएगा। क्या मै आपकी किसी और चीज़ में मदद कर सकती हूँ?"
+      },
+      {
+        "index": 4,
+        "speaker": "customer",
+        "text": "नहीं आता है बार बार ऐसा ही होता पिछली बार भी order किया था तो नहीं आया था late delivery हुआ था तो hub पर जाकर लेना पड़ता है. वहां से delivery agent आता क्यों नहीं इधर यह बताइए पहले."
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "text": "जी, मै समझ सकती हूँ कि पिछली बार की वजह से आप परेशान हैं। असल में कभी-कभी high order volumes या shipping delays की वजह से ऐसा हो जाता है, जिसके लिए मै आपसे माफी चाहती हूँ। आपका order priority पर है और आज शाम आठ बजे तक आपके पास पहुँच जाएगा। इस बार delivery agent आपके address पर ही आएगा, आपको hub जाने की ज़रूरत नहीं पड़ेगी। क्या इसके अलावा मै आपकी कोई और help कर सकती हूँ?"
+      },
+      {
+        "index": 6,
+        "speaker": "customer",
+        "text": "Other नहीं आया तो?"
+      },
+      {
+        "index": 7,
+        "speaker": "agent",
+        "text": "जी, आप बिल्कुल फिक्र न करें। आपका order priority पर है और आज शाम आठ बजे तक पहुँच जाएगा। अगर किसी वजह से आज delivery नहीं होती है, तो आप हमें दोबारा contact कर सकते हैं और हम इसे तुरंत resolve करेंगे। क्या इसके अलावा मै आपकी कोई और help कर सकती हूँ?"
+      },
+      {
+        "index": 8,
+        "speaker": "customer",
+        "text": "मैंने दो order किया है एक पिता फेल का moisturizing है और एक पिता फेल का फिर gentle cleaner."
+      },
+      {
+        "index": 9,
+        "speaker": "agent",
+        "text": "जी, आपने दो product order किए हैं। अभी मै Cetaphil"
+      },
+      {
+        "index": 10,
+        "speaker": "customer",
+        "text": "दोनों आज ही आऐंगे क्या?"
+      },
+      {
+        "index": 11,
+        "speaker": "agent",
+        "text": "जी, मै check कर रही हूँ कि क्या आपके दोनों products आज ही पहुँचेंगे। कृपया line पर बने रहिए।"
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "text": "जी, आपके दोनों products, Cetaphil Moisturising Lotion और Cetaphil Gentle Cleanser, आज शाम आठ बजे तक deliver हो जाएंगे। आप निश्चिंत रहें, दोनों order आज ही आप तक पहुँच जाएंगे। क्या इसके अलावा मै आपकी कोई और help कर सकती हूँ?"
+      },
+      {
+        "index": 13,
+        "speaker": "customer",
+        "text": "नहीं, धन्यवाद."
+      },
+      {
+        "index": 14,
+        "speaker": "agent",
+        "text": "आपका बहुत धन्यवाद। आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।"
+      },
+      {
+        "index": 15,
+        "speaker": "agent",
+        "text": "आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।"
+      }
+    ]
+  },
+  {
+    "call_id": "GEN-myntra-3024d521-a430-49f2-9821-7f9f3b6b791a",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?"
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "text": "Hi, मेरा. This is श्रवणजीत here. This is regarding one of my order, to two"
+      },
+      {
+        "index": 2,
+        "speaker": "customer",
+        "text": "which got delivered me almost by a week. You check where and when can I expect it?"
+      },
+      {
+        "index": 3,
+        "speaker": "agent",
+        "text": "I understand you haven't received your order yet, let me check the status for you. Please stay on the line."
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "text": "Your Van Heusen Formal Shoes are currently processing. I can see that the delivery is delayed and a complaint has already been registered for this. Your order is expected to be delivered by 30 July. Please don't worry, we are working to get this sorted for you. Is there anything else I can help you with?"
+      },
+      {
+        "index": 5,
+        "speaker": "customer",
+        "text": "हो गई wait when when can I expect what is the date?"
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "text": "जी, जैसा कि मैंने बताया, आपका order 30 July तक deliver होने की उम्मीद है। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?"
+      },
+      {
+        "index": 7,
+        "speaker": "customer",
+        "text": "Can you speak in English please?"
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "text": "Sure, I can speak in English. As I mentioned, your order is expected to be delivered by 30 July. Is there anything else I can help you with?"
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "text": "अरे यार, I know that it have to be delivered by this time, but it is not getting delivered."
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "text": "I completely"
+      },
+      {
+        "index": 11,
+        "speaker": "customer",
+        "text": "That is the problem, right? For the It's got delayed almost by more than a week."
+      },
+      {
+        "index": 12,
+        "speaker": "customer",
+        "text": "What is the current status? Will that be getting delivered or not? I want the date with, by what date you can deliver?"
+      },
+      {
+        "index": 13,
+        "speaker": "agent",
+        "text": "I understand the delay is frustrating. Your order is currently in the processing stage and is expected to reach you by 30 July. Since a complaint is already registered, we are actively monitoring this to ensure it reaches you. Is there anything else I can help you with?"
+      },
+      {
+        "index": 14,
+        "speaker": "customer",
+        "text": "Can you, can you transfer the call to any higher management?"
+      },
+      {
+        "index": 15,
+        "speaker": "agent",
+        "text": "Do you want to speak with an expert agent for better assistance?"
+      },
+      {
+        "index": 16,
+        "speaker": "customer",
+        "text": "Exactly,"
+      },
+      {
+        "index": 17,
+        "speaker": "agent",
+        "text": "Sure, I am connecting you to an expert agent now. Please stay on the line."
+      },
+      {
+        "index": 18,
+        "speaker": "agent",
+        "text": "I will connect you with our specialized team. Transferring your call now, they will be with you immediately."
+      }
+    ]
+  },
+  {
+    "call_id": "GEN-myntra-37fe88c1-3d17-4239-ac0d-973fb9c7e6c3",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?"
+      },
+      {
+        "index": 1,
+        "speaker": "agent",
+        "text": "I noticed you're silent, are you still there?"
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "text": "Sorry, could you say that again?"
+      },
+      {
+        "index": 3,
+        "speaker": "agent",
+        "text": "Sorry, could you say that again?"
+      },
+      {
+        "index": 4,
+        "speaker": "customer",
+        "text": "हिंदी"
+      },
+      {
+        "index": 5,
+        "speaker": "agent",
+        "text": "नमस्ते, मैं आपकी कैसे मदद कर सकती हूं?"
+      },
+      {
+        "index": 6,
+        "speaker": "customer",
+        "text": "Ma'am मुझे मेरा father है वह select करना है अभी कहां है अभी? पच्चीस को अलग है. पच्चीस के लिए ले ले सत्ताईस को मैं क्या जो order नहीं रह रहा हूं."
+      },
+      {
+        "index": 7,
+        "speaker": "agent",
+        "text": "जी, मैं समझ सकती हूँ कि आप अपने order के बारे में जानना चाहते हैं। मैं status check कर रही हूँ। कृपया line पर बने रहिए।"
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "text": "जी, आपका Chanda Mama Kurta Set shipped है और आज शाम आठ बजे तक deliver हो जाएगा।"
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "text": "दोनों."
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "text": "जी, क्या आप किसी और order के बारे में भी जानना चाहते हैं? कृपया मुझे details बता दीजिए।"
+      },
+      {
+        "index": 11,
+        "speaker": "customer",
+        "text": "चंदा momma गुप्ता जी हैं वह show हुआ है. एक sixty nine to twelve month के लिए और एक three to four year के लिए और"
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "text": "ठीक है, मैं आपकी order list check कर रही हूँ। कृपया line पर बने रहिए।"
+      },
+      {
+        "index": 13,
+        "speaker": "agent",
+        "text": "I noticed you're silent, are you still there?"
+      },
+      {
+        "index": 14,
+        "speaker": "customer",
+        "text": "Hello?"
+      },
+      {
+        "index": 15,
+        "speaker": "agent",
+        "text": "जी, मैं यहीं हूँ। मुझे आपकी list में Chanda Mama के दो Kurta Sets दिख रहे हैं। क्या आपकी problem इन दोनों orders से related है?"
+      },
+      {
+        "index": 16,
+        "speaker": "customer",
+        "text": "हां तो वह order survey भी आऐंगे ना?"
+      },
+      {
+        "index": 17,
+        "speaker": "agent",
+        "text": "जी, मैं आपके orders का status check कर रही हूँ। कृपया line पर बने रहिए।"
+      },
+      {
+        "index": 18,
+        "speaker": "agent",
+        "text": "जी, आपके दोनों Chanda Mama Kurta Sets shipped हैं और आज शाम आठ बजे तक deliver हो जाएंगे।"
+      },
+      {
+        "index": 19,
+        "speaker": "customer",
+        "text": "तो वह कब price किया था?"
+      },
+      {
+        "index": 20,
+        "speaker": "agent",
+        "text": "जी, आपके दोनों orders 18 July को place किए गए थे। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?"
+      },
+      {
+        "index": 21,
+        "speaker": "customer",
+        "text": "दोनों का price क्या है अभी? जानना है मुझे?"
+      },
+      {
+        "index": 22,
+        "speaker": "agent",
+        "text": "जी, अभी मेरे पास orders के price की details नहीं हैं। आप मिंत्रा app में My Orders section में जाकर दोनों items का exact price check कर सकते हैं। क्या मैं आपकी किसी और चीज़ में मदद करूँ?"
+      }
+    ]
+  },
+  {
+    "call_id": "GEN-myntra-3b523c8e-1524-4598-a406-9c1da2a0b034",
+    "turns": [
+      {
+        "index": 0,
+        "speaker": "agent",
+        "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?"
+      },
+      {
+        "index": 1,
+        "speaker": "customer",
+        "text": "Hello."
+      },
+      {
+        "index": 2,
+        "speaker": "agent",
+        "text": "आप किस order के बारे में बात करना चाहते हैं, और क्या issue है?"
+      },
+      {
+        "index": 3,
+        "speaker": "customer",
+        "text": "Ok. Ma'am मैंने इंदिरा से ना fourteen July को एक order देखी जो food में ऐसा होता था."
+      },
+      {
+        "index": 4,
+        "speaker": "agent",
+        "text": "जी, क्या आप मुझे बता सकते हैं कि आपकी problem delivery"
+      },
+      {
+        "index": 5,
+        "speaker": "customer",
+        "text": "तो उसके बाद seventy"
+      },
+      {
+        "index": 6,
+        "speaker": "agent",
+        "text": "जी, क्या आप बता सकते हैं कि आपकी problem delivery से related है या return से?"
+      },
+      {
+        "index": 7,
+        "speaker": "customer",
+        "text": "hello दी नहीं वाली, क्या problem से?"
+      },
+      {
+        "index": 8,
+        "speaker": "agent",
+        "text": "जी, क्या आप बता सकते हैं कि आपकी problem delivery से related है या return"
+      },
+      {
+        "index": 9,
+        "speaker": "customer",
+        "text": "Fourteen days order किए अभी तक order नहीं हुई."
+      },
+      {
+        "index": 10,
+        "speaker": "agent",
+        "text": "ठीक है, मै आपकी order list check कर रही हूँ। कृपया"
+      },
+      {
+        "index": 11,
+        "speaker": "customer",
+        "text": "Delivery Hello"
+      },
+      {
+        "index": 12,
+        "speaker": "agent",
+        "text": "मै समझ सकती हूँ कि आपका order अभी तक नहीं आया है। आपके PENNEN Flats का status shipped है और यह कल तक deliver हो जाएगा। आपकी complaint already register हो चुकी है और हम इस पर काम कर रहे हैं। shipping delays की वजह से यह थोड़ा late हो गया है, इसके लिए माफी चाहती हूँ। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?"
+      },
+      {
+        "index": 13,
+        "speaker": "customer",
+        "text": "ma'am. नहीं आई तो मैं क्या करूं? कल कितने सारे कल आ चुके थे?"
+      },
+      {
+        "index": 14,
+        "speaker": "agent",
+        "text": "जी, आप बिल्कुल फिक्र न करें। आपका order priority पर है और कल तक आपको मिल जाएगा। अगर किसी वजह से कल भी delivery नहीं होती है, तो आप हमें फिर से contact कर सकते हैं और हम इसे तुरंत resolve करेंगे। क्या इसके अलावा मैं आपकी कोई और help कर सकती हूँ?"
+      },
+      {
+        "index": 15,
+        "speaker": "customer",
+        "text": "Hello? बस ठीक"
+      },
+      {
+        "index": 16,
+        "speaker": "agent",
+        "text": "जी, क्या मैं आपकी किसी और चीज़ में मदद कर"
+      },
+      {
+        "index": 17,
+        "speaker": "customer",
+        "text": "नहीं नहीं ठीक थी."
+      },
+      {
+        "index": 18,
+        "speaker": "agent",
+        "text": "ठीक है। आज हमारे call के बारे में आपको एसएमएस पर एक"
+      },
+      {
+        "index": 19,
+        "speaker": "customer",
+        "text": "नहीं ठीक ठीक नहीं था."
+      },
+      {
+        "index": 20,
+        "speaker": "agent",
+        "text": "जी, क्या आपको कुछ और पूछना है या कोई और problem है? मैं आपकी पूरी मदद करने की कोशिश करूँगी।"
+      },
+      {
+        "index": 21,
+        "speaker": "customer",
+        "text": "बस इतना ही problem था मैं."
+      },
+      {
+        "index": 22,
+        "speaker": "agent",
+        "text": "ठीक है। आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।"
+      },
+      {
+        "index": 23,
+        "speaker": "agent",
+        "text": "Thank you for calling मिंत्रा. Have a great day."
+      }
+    ]
+  }
+]

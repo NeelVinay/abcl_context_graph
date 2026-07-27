@@ -1,0 +1,86 @@
+[
+  {
+    "timestamp": "2026-07-27T05:50:18",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:22",
+    "speaker": "user",
+    "content": "Hello ma'am.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:22",
+    "speaker": "assistant",
+    "content": "आप किस order के बारे में बात करना चाहते हैं, और क्या issue है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:55",
+    "speaker": "user",
+    "content": "यह मैंने एक jeans order किया था वह मैंने seven after seven days पहले मैंने receive किया था और इसको मैंने exchange किया था फिर वह आज exchange होने वाली थी लेकिन मुझे accident नहीं हुआ क्योंकि वह जिनके side से उसका का नाम नहीं है तो इसीलिए दिल्ली भारी board means cancel करके गई तो मुझे कब मिलेगा यह action?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:55",
+    "speaker": "assistant",
+    "content": "मै समझ सकती हूँ कि exchange order न मिलने की वजह से आपको परेशानी हो रही है, मै आपके order का status check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:05",
+    "speaker": "assistant",
+    "content": "जी, आपका KASHIANXSTYLE Jeans का exchange order अभी shipped है और out for delivery है। यह आपको अगले 24 hours में मिल जाएगा। मै देख पा रही हूँ कि आपकी complaint register हो चुकी है और हम इसे resolve करने के लिए काम कर रहे हैं। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:29",
+    "speaker": "user",
+    "content": "जी. जी नहीं वह जो मैंने exchange किया है वह तो मिल जाएगा ना आज आशी?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:29",
+    "speaker": "assistant",
+    "content": "जी, आपका order out for delivery है और आपको अगले 24 hours में मिल जाएगा। आप निश्चिंत रहें, यह जल्द ही आपके पास पहुँच जाएगा। क्या इसके अलावा मैं आपकी कोई और help कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:42",
+    "speaker": "user",
+    "content": "जी नहीं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:43",
+    "speaker": "user",
+    "content": "Thank you.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:43",
+    "speaker": "assistant",
+    "content": "आपका स्वागत है। आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:59",
+    "speaker": "assistant",
+    "content": "Thank you for calling मिंत्रा. Have a great day.",
+    "feedback": null,
+    "agent_id": null
+  }
+]

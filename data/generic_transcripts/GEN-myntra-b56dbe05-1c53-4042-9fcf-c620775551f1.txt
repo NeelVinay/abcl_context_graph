@@ -1,0 +1,86 @@
+[
+  {
+    "timestamp": "2026-07-27T05:42:56",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:01",
+    "speaker": "user",
+    "content": "Ma'am मेरा order delay हो गया है कब तक आएगा?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:01",
+    "speaker": "assistant",
+    "content": "मै समझ सकती हूँ कि order delay होने से आपको परेशानी हो रही है, मै status check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:09",
+    "speaker": "assistant",
+    "content": "जी, आपका मास्ट एंड हार्बर Pyjama Set अभी processing में है। आपका order delay हुआ है, जिसके लिए मैं माफी चाहती हूँ। आपकी शिकायत register हो चुकी है और यह 30 July तक deliver हो जाएगा। हम इसे जल्द से जल्द आप तक पहुँचाने की पूरी कोशिश कर रहे हैं। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:32",
+    "speaker": "user",
+    "content": "Ma'am पहले आपने twenty five July बोला अब thirty बोल रहे हैं मुझे फिर बताइए कि कब आएगा?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:32",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि date change होने से आप परेशान हैं। असल में आपका order delay हो गया है, इसलिए updated status के हिसाब से अब यह 30 July तक deliver होगा। हमने आपकी शिकायत register कर ली है और हम इसे जल्द से जल्द पहुँचाने की पूरी कोशिश कर रहे हैं। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:52",
+    "speaker": "user",
+    "content": "हम delay होने का reason बताओ.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:52",
+    "speaker": "assistant",
+    "content": "जी, order delay होने की वजह high order volumes या shipping delays हो सकते हैं जिसकी वजह से इसमें थोड़ा समय लग रहा है। हम कोशिश कर रहे हैं कि आपका order जल्द से जल्द आप तक पहुँच जाए और यह 30 July तक deliver हो जाएगा। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:12",
+    "speaker": "user",
+    "content": "Ma'am app में तो मुझे show हो रहा है कि",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:12",
+    "speaker": "assistant",
+    "content": "जी, आप बता सकते हैं कि app में आपको क्या show हो रहा है? मैं check करके आपकी पूरी help कर दूँगी।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:24",
+    "speaker": "user",
+    "content": "Ma'am app में show, app में show हो रहा है your roll request will be confirmed in next twelve hours, यह दो दिन जैसा दिखा रहा है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:24",
+    "speaker": "assistant",
+    "content": "जी, app में दिख रही information के लिए मैं माफी चाहती हूँ। लेकिन मेरे system के हिसाब से आपका order अभी processing में है और यह 30 July तक deliver हो जाएगा। आपकी complaint register है और हम इसे",
+    "feedback": null,
+    "agent_id": null
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "timestamp": "2026-07-27T05:44:02",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:12",
+    "speaker": "assistant",
+    "content": "I noticed you're silent, are you still there?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:22",
+    "speaker": "assistant",
+    "content": "Sorry, could you say that again?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:29",
+    "speaker": "assistant",
+    "content": "Sorry, could you say that again?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:32",
+    "speaker": "user",
+    "content": "हिंदी",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:32",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं आपकी कैसे मदद कर सकती हूं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:48",
+    "speaker": "user",
+    "content": "Ma'am मुझे मेरा father है वह select करना है अभी कहां है अभी? पच्चीस को अलग है. पच्चीस के लिए ले ले सत्ताईस को मैं क्या जो order नहीं रह रहा हूं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:48",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि आप अपने order के बारे में जानना चाहते हैं। मैं status check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:56",
+    "speaker": "assistant",
+    "content": "जी, आपका Chanda Mama Kurta Set shipped है और आज शाम आठ बजे तक deliver हो जाएगा।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:05",
+    "speaker": "user",
+    "content": "दोनों.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:05",
+    "speaker": "assistant",
+    "content": "जी, क्या आप किसी और order के बारे में भी जानना चाहते हैं? कृपया मुझे details बता दीजिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:21",
+    "speaker": "user",
+    "content": "चंदा momma गुप्ता जी हैं वह show हुआ है. एक sixty nine to twelve month के लिए और एक",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:23",
+    "speaker": "user",
+    "content": "three to four year के लिए और",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:23",
+    "speaker": "assistant",
+    "content": "ठीक है, मैं आपकी order list check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:36",
+    "speaker": "assistant",
+    "content": "I noticed you're silent, are you still there?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:46",
+    "speaker": "user",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:46",
+    "speaker": "assistant",
+    "content": "जी, मैं यहीं हूँ। मुझे आपकी list में Chanda Mama के दो Kurta Sets दिख रहे हैं। क्या आपकी problem इन दोनों orders से related है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:59",
+    "speaker": "user",
+    "content": "हां तो वह order survey भी आऐंगे ना?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:59",
+    "speaker": "assistant",
+    "content": "जी, मैं आपके orders का status check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:04",
+    "speaker": "assistant",
+    "content": "जी, आपके दोनों Chanda Mama Kurta Sets shipped हैं और आज शाम आठ बजे तक deliver हो जाएंगे।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:14",
+    "speaker": "user",
+    "content": "तो वह कब price किया था?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:14",
+    "speaker": "assistant",
+    "content": "जी, आपके दोनों orders 18 July को place किए गए थे। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:26",
+    "speaker": "user",
+    "content": "दोनों का price क्या है अभी? जानना है मुझे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:26",
+    "speaker": "assistant",
+    "content": "जी, अभी मेरे पास orders के price की details नहीं हैं। आप मिंत्रा app में My Orders section में जाकर दोनों items का exact price check कर सकते हैं। क्या मैं आपकी किसी और चीज़ में मदद करूँ?",
+    "feedback": null,
+    "agent_id": null
+  }
+]

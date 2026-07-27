@@ -182,6 +182,70 @@ Each folder contains:
 
 ---
 
+## Generalizing to a new client (broad-category cross-client model)
+
+A third domain, **`generic`**, sits alongside `abcl` and `justdial`. Where those two
+each have their own fine-grained, hand-built taxonomy, `generic`
+(`src/generic_taxonomy.py`) uses one small set of broad, client-agnostic buckets
+(greeting / agree / disagree / ask_question / confused_repeat / callback_request /
+person_unavailable / distrust_security / irate_frustrated / wait_hold / acknowledge /
+end_call / other) so the SAME local model can be trained across multiple clients at
+once, instead of building a new fine taxonomy per client. There's already a precedent
+in this repo for "broad beats fine": `src/justdial_coarse.py` collapsed JustDial's
+24-intent taxonomy to ~7 buckets after the fine model only scored ~32% CV on noisy
+ASR — `generic` applies that lesson from the start, across clients.
+
+**Claude is only ever used offline here, to generate training labels — never in the
+production/inference path.** The classifier that actually runs is the local
+scikit-learn model in `data/models/`, same as `abcl` and `justdial` today.
+
+### What's needed to onboard a new client
+
+1. Transcripts — plain-text, one turn per line, `Agent:` / `Customer:` prefixes (the
+   same format `src/transcribe.py` already produces). No new taxonomy or code needed
+   per client.
+2. Files named `GEN-<client>-<call_id>.txt` and dropped into `data/generic_transcripts/`
+   (path: `config.GENERIC_TRANSCRIPTS_DIR`). The `GEN-` prefix is what routes them to
+   the `generic` domain instead of accidentally being swept into the ABCL gold set —
+   `labeling.ABCL.owns` was fixed to explicitly exclude this prefix.
+
+### Pipeline
+
+```bash
+# 1. Cache raw extraction (parse + segment turns; no labeling yet)
+python run.py --all --src data/generic_transcripts --out data/output/generic --graph flow
+
+# 2. Emit batches + labeling guide for the generic taxonomy
+python -m src.labeling emit generic
+
+# 3. Label each data/gold_generic/_tolabel/batch_*.json (Claude, offline) and write
+#    the labeled version to data/gold_generic/_labeled/ using the guide at
+#    data/gold_generic/LABELING_GUIDE.md
+
+# 4. Merge labeled batches into gold
+python -m src.labeling assemble generic
+
+# 5. Evaluate generalization: does the model actually learn broad buckets well?
+python -m src.distill eval generic
+
+# 6. Train the final cross-client model
+python -m src.distill train generic     # -> data/models/generic_clf.pkl
+```
+
+**Real generalization test:** don't just eval on a pool mixing all clients — that
+overstates how well a brand-new client will do. Hold one client's calls out entirely
+(filter `data/gold_generic/labels.jsonl` by call_id prefix before `cv_eval`), train on
+the rest, and score against the held-out client. That's the number that answers
+"will this work on a client we haven't seen yet."
+
+### Known limitation
+
+`src/labeling.build_guide()` currently hardcodes "the transcript is Hinglish" in the
+labeling instructions. Fine for every client onboarded so far; if a client's calls are
+in a different language, that line needs to become taxonomy-aware before labeling.
+
+---
+
 ## Security / PII
 
 - All processing is **local** — no data is sent to any API at runtime.

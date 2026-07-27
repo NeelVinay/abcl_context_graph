@@ -167,6 +167,108 @@ def visualize_flow(tree, out_path_no_ext: str) -> str | None:
         return None
 
 
+# ---------------------------------------------------------------------------------
+# UNIFIED exec-style chart — same visual grammar as the original ABCL sop_exec.png
+# (src/sop_flow.render_exec: title banner, ortho right-angle routing, oval
+# start/terminal nodes, rounded step boxes, bold green main path, percentages +
+# counts on every edge, 150 DPI) but driven by the domain-agnostic flow TREE
+# (src/flowtree.build_flow_tree) instead of ABCL's hand-authored fixed skeleton —
+# so it works for ANY client's calls, not just ABCL's loan-application DAG.
+# This is the ONLY chart style new client pipelines (generic domain) should use.
+_EXEC_STYLE = {
+    "start":    dict(shape="oval", style="filled", fillcolor="#1f3b5c", fontcolor="white"),
+    "step":     dict(shape="box", style="rounded,filled", fillcolor="#dbe7f3", color="#33628f"),
+    "stub":     dict(shape="box", style="rounded,filled,dashed", fillcolor="#eeeeee", color="#888888"),
+    "success":  dict(shape="oval", style="filled", fillcolor="#1f3b5c", fontcolor="white"),
+    "escalate": dict(shape="box", style="rounded,filled", fillcolor="#f8d7da", color="#b02a37"),
+}
+
+# outcome value -> which _EXEC_STYLE terminal look it gets (good/neutral vs. unresolved)
+_EXEC_OUTCOME_KIND = {
+    "transferred": "success", "completed": "success", "raised_request": "success",
+    "callback": "success",
+    "incomplete": "escalate", "dropped": "escalate", "not_interested": "escalate",
+    "other": "escalate",
+}
+
+
+def visualize_exec(tree, out_path_no_ext: str, title: str, main_edges: set | None = None) -> str | None:
+    """Render a flow graph — normally src.flowtree.build_stage_dag(), a compact
+    reconverging DAG over coarse stages (the structured, SOP-like look) — in the
+    sop_exec.png visual style. `title` is the chart heading, e.g. "Myntra — Call
+    Flow". Pass `main_edges` explicitly (e.g. from flowtree.greedy_main_path for a
+    DAG, or flowtree.main_flow_path for a tree); if omitted, assumes a cycle-free
+    tree and computes it via main_flow_path."""
+    import datetime
+    try:
+        from graphviz import Digraph
+    except Exception as e:  # noqa: BLE001
+        print(f"[viz] graphviz not available ({e})")
+        return None
+
+    if main_edges is None:
+        from src.flowtree import main_flow_path
+        main_edges = main_flow_path(tree)
+    main = main_edges
+    root = next(n for n, d in tree.nodes(data=True) if d.get("kind") == "root")
+    total = tree.nodes[root]["count"]
+    max_c = max((d["count"] for *_, d in tree.edges(data=True)), default=1)
+    month_year = datetime.date.today().strftime("%B %Y")
+
+    dot = Digraph("exec_flow", format="png")
+    dot.attr(
+        rankdir="TB",
+        splines="ortho",
+        nodesep="0.5",
+        ranksep="0.8",
+        ratio="compress",
+        size="16,100",
+        label=f"{title}\\n{total} calls  •  {month_year}",
+        labelloc="t", fontsize="22", fontname="Helvetica-Bold",
+        bgcolor="white",
+        pad="0.6",
+        dpi="150",
+    )
+    dot.attr("node", fontname="Helvetica", fontsize="13", margin="0.28,0.16",
+             width="2.6", penwidth="1.5")
+    dot.attr("edge", fontname="Helvetica", fontsize="9", arrowsize="0.9")
+
+    for n, d in tree.nodes(data=True):
+        kind = d.get("kind")
+        cnt = d.get("count", 0)
+        if kind == "root":
+            dot.node(_safe_id(n), f"Call Start\\n{cnt} calls", **_EXEC_STYLE["start"])
+            continue
+        pct = f"{100 * cnt / total:.0f}%" if total else ""
+        label = f"{d.get('label', n)}\\n{cnt} call{'s' if cnt != 1 else ''} ({pct})"
+        if kind == "stub":
+            style_kind = "stub"
+        elif kind == "outcome":
+            style_kind = _EXEC_OUTCOME_KIND.get(d.get("stage"), "escalate")
+        else:   # "stage" or "disposition" — same rounded step-box look
+            style_kind = "step"
+        dot.node(_safe_id(n), label, **_EXEC_STYLE[style_kind])
+
+    for a, b, d in tree.edges(data=True):
+        c = d["count"]
+        pct = f"{100 * c / total:.0f}%" if total else ""
+        lbl = f"{c} calls ({pct})"
+        if (a, b) in main:
+            dot.edge(_safe_id(a), _safe_id(b), label=lbl,
+                     penwidth="3.5", color="#1a6b2d", fontcolor="#1a6b2d")
+        else:
+            pw = 1.2 + 2.5 * math.log1p(c) / math.log1p(max_c)
+            dot.edge(_safe_id(a), _safe_id(b), label=lbl,
+                     penwidth=f"{pw:.2f}", color="#4a6b8a", fontcolor="#555555")
+
+    try:
+        dot.render(out_path_no_ext, cleanup=True)
+        return f"{out_path_no_ext}.png"
+    except Exception as e:  # noqa: BLE001
+        print(f"[viz] exec chart render failed ({e})")
+        return None
+
+
 def render_graphviz(g, out_path_no_ext: str, min_count: int = 2, top_k: int = 2,
                     shape: str = "ellipse", show_phrasings: bool = False) -> str | None:
     """Natural left-to-right layout: graphviz ranks by flow and minimises crossings,

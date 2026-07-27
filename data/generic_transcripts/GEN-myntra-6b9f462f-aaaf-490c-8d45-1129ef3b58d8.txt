@@ -1,0 +1,114 @@
+[
+  {
+    "timestamp": "2026-07-27T05:50:56",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:06",
+    "speaker": "user",
+    "content": "Hi मेरा. मैंने कल रात को order किया था जो product आज सुबह नौ बजे तक deliver होने वाला था पर अभी तक आया नहीं है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:15",
+    "speaker": "user",
+    "content": "और मैंने order minutes of now से किया था right thirty minutes और one hour में वह deliver हो यह. यह. पर अभी भी वह deliver पूरे date में दिखा रहा है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:15",
+    "speaker": "assistant",
+    "content": "मै समझ सकती हूँ कि order अभी तक नहीं आया और आप इंतज़ार कर रहे हैं। मै तुरंत आपके order का status check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:24",
+    "speaker": "assistant",
+    "content": "जी, आपका YK T-shirt and Shorts set अभी shipped है। यह आज शाम आठ बजे तक deliver हो जाएगा। आप delivery agent की details मिंत्रा app में My Orders page पर देख सकते हैं। क्या मै आपकी किसी और चीज़ में help कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:40",
+    "speaker": "user",
+    "content": "Sorry can you repeat कब तक order आएगा?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:40",
+    "speaker": "assistant",
+    "content": "जी, आपका order आज शाम आठ बजे तक deliver हो जाएगा। क्या इसके अलावा मैं आपकी कोई और मदद कर सकती",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:04",
+    "speaker": "user",
+    "content": "Madam मैं आपको वही बोल रही हूं मैं वही बोल रही हूं आपको अगर मैंने रात को किया है वह आधे घंटे में आना चाहिए तो वह सुबह नौ बजे तक आने वाला था बराबर अगर आप आठ बजे कर रहे मैं बाहर कैसे लेकर जाऊंगी मुझसे किसी को gift देना है इसलिए तो मैंने order किया था minutes of now से right. अगर आप आठ बजे तक deliver करोगे तो मैं बाहर कब जाऊंगी?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:04",
+    "speaker": "assistant",
+    "content": "जी, मैं आपकी परेशानी समझ सकती हूँ कि आपको यह gift के लिए जल्दी चाहिए था। आपका order priority पर है और यह आज शाम आठ बजे तक",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:13",
+    "speaker": "user",
+    "content": "हां क्योंकि मुझे चार बजे",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:13",
+    "speaker": "assistant",
+    "content": "जी, मैं समझती हूँ कि आपको",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:39",
+    "speaker": "user",
+    "content": "मैं आपको वही बोल रही हूं कि मैं अगर चार बजे मुझे बाहर जा है तो आप मुझे आठ बजे देकर मैं क्या करूंगी अगर वह delivery boy अगर late आ जाएगा तो मैं कब जाऊंगी बाहर कब मैं करूंगी? बाहर कब मैं करूंगी? तो आप minutes of now पर दिखाते हो कि वह product क्या आप time पर deliver नहीं कर सकते तो करातको में जब deliver order कर रही थी ना तभी नौ बजे सुबह मिलने वाला था. चलो नौ के बारिश है कुछ भी है जो भी obstacles है वह कर बारह बजे तक तो आ जाए. आप मुझे आठ बजे तक बोल रहे हो आपको deliver होगा.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:59",
+    "speaker": "user",
+    "content": "बोलिए. आप मुझे वही repeat sentences मत बताइए कि आप आठ बजे तक आ जाएगा आज नहीं आ सकता minutes of now से मैंने किया है मैंने कोई ऐसे order नहीं किया है. सोच समझकर ही order किया है right? And you also showing that product will be delivered उस time पर इसलिए आप वह भी deliver show कर रहे हो ना?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:59",
+    "speaker": "assistant",
+    "content": "जी, मैं समझती हूँ कि आपको यह order जल्दी चाहिए और आप काफी परेशान हैं। आपका order fastest route पर है, लेकिन अभी यह transit में है और आज शाम आठ बजे तक पहुँच जाएगा। हम पूरी कोशिश कर रहे",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:10",
+    "speaker": "user",
+    "content": "एक minute. ठीक है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:10",
+    "speaker": "assistant",
+    "content": "जी, बताइए।",
+    "feedback": null,
+    "agent_id": null
+  }
+]

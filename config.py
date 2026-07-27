@@ -12,6 +12,16 @@ OUTPUT_DIR = DATA / "output"             # master graph json + visuals
 AUDIO_SRC = Path.home() / "Downloads" / "leads_mp3_data"  # raw call recordings (.mp3)
 AUDIO_TRANSCRIPTS_DIR = DATA / "audio_transcripts"        # plain-text STT output (Agent:/Customer:)
 
+# --- Cross-client generalization pilot (src/generic_taxonomy.py) ---
+# Drop new-client transcripts here, named GEN-<client>-<call_id>.txt, same plain-text
+# Agent:/Customer: format as AUDIO_TRANSCRIPTS_DIR. See src/generic_taxonomy.py docstring.
+GENERIC_TRANSCRIPTS_DIR = DATA / "generic_transcripts"
+# Charts/reports for the generic (cross-client) pipeline go here — kept separate from
+# data/output/test_100_sop (ABCL) and data/output/mp3 (JustDial) so a client's flow
+# chart is never confused with ABCL's fixed SOP skeleton or JustDial's own output.
+# Use: python run.py --all --src data/generic_transcripts --out data/output/generic --graph flow
+GENERIC_OUTPUT_DIR = OUTPUT_DIR / "generic"
+
 # --- Models (confirm exact IDs against the claude-api reference when wiring extraction) ---
 EXTRACTION_MODEL = "claude-sonnet-4-6"   # per-call extraction (cost-efficient, high volume)
 REASONING_MODEL = "claude-opus-4-8"      # taxonomy discovery + canonical naming (harder reasoning)
@@ -27,5 +37,6 @@ MIN_EDGE_COUNT = 15          # prune edges below this count when visualizing (ra
 START = "__START__"
 END = "__END__"
 
-for _d in (TRANSCRIPTS_DIR, CACHE_DIR, OUTPUT_DIR, AUDIO_TRANSCRIPTS_DIR):
+for _d in (TRANSCRIPTS_DIR, CACHE_DIR, OUTPUT_DIR, AUDIO_TRANSCRIPTS_DIR,
+          GENERIC_TRANSCRIPTS_DIR, GENERIC_OUTPUT_DIR):
     _d.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,177 @@
+[
+  {
+    "timestamp": "2026-07-27T05:41:44",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:49",
+    "speaker": "user",
+    "content": "Hello madam can you connect मलयालम any customer?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:49",
+    "speaker": "assistant",
+    "content": "Sorry, I can assist in Hindi or English only. Do you want to speak with an expert agent?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:02",
+    "speaker": "user",
+    "content": "Madam मैं यह package delayed expecting arrive extra day but I didn't get my package.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:02",
+    "speaker": "assistant",
+    "content": "I understand you haven't received your order yet, let me check the status for you. Please stay on the line.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:10",
+    "speaker": "user",
+    "content": "Ok.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:10",
+    "speaker": "assistant",
+    "content": "I can see that your Eyejack Sunglasses are shipped and currently in transit. I'm sorry for the delay, but your order is expected to be delivered by tomorrow. I also see that a complaint has already been registered for this, and we are actively working to get it delivered to you.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:30",
+    "speaker": "user",
+    "content": "Ok madam. When कितना है यह होगा?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:30",
+    "speaker": "assistant",
+    "content": "जी, आपका order कल तक deliver हो जाएगा। जैसे ही order out for delivery होगा, delivery agent आपको contact करेंगे। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:46",
+    "speaker": "user",
+    "content": "कल? I didn't understand madam हिंदी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:46",
+    "speaker": "assistant",
+    "content": "I apologize. I meant that your order is expected to be delivered by tomorrow. Once it is out for delivery, the agent will contact you. Is there anything else I can help you with?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:00",
+    "speaker": "user",
+    "content": "Madam, can you",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:07",
+    "speaker": "user",
+    "content": "can you deliver today also I have free today.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:07",
+    "speaker": "assistant",
+    "content": "Your",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:08",
+    "speaker": "user",
+    "content": "मैं setting tomorrow I will not free.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:08",
+    "speaker": "assistant",
+    "content": "I understand you're not available tomorrow. If you're not home when the agent arrives, someone else at your home can receive the order, or you can give permission to leave it with your society security. Alternatively, you",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:23",
+    "speaker": "user",
+    "content": "No madam, in my home nobody, nobody pay, in my home nobody is there.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:28",
+    "speaker": "user",
+    "content": "So now want to receive my order at that time.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:28",
+    "speaker": "assistant",
+    "content": "I understand that no one will be available at home tomorrow. In this case, you can coordinate with the delivery agent when they call you to reschedule the delivery for a time or day that works better for you. Is there anything",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:45",
+    "speaker": "user",
+    "content": "Madam, can you send, जनाब, can you send me",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:45",
+    "speaker": "assistant",
+    "content": "I am sorry, could",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:52",
+    "speaker": "user",
+    "content": "your delivery agent name? I think the my product",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:56",
+    "speaker": "user",
+    "content": "is in my home town, right? Ok, then I am going to pick up my order there.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:01",
+    "speaker": "user",
+    "content": "यार यार.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:01",
+    "speaker": "assistant",
+    "content": "I understand you'd like to pick up your order yourself. However, self pickup from the delivery hub is not supported. Your order is already on its way and will be delivered to your address. Once it reaches the final hub, it will be scheduled for delivery as soon as possible. Is there anything else I can help you with?",
+    "feedback": null,
+    "agent_id": null
+  }
+]

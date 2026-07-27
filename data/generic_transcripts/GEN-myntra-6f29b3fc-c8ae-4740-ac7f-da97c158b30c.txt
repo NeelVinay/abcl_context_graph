@@ -1,0 +1,114 @@
+[
+  {
+    "timestamp": "2026-07-27T05:48:10",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:14",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:14",
+    "speaker": "assistant",
+    "content": "Which order would you like to talk about, and what is the issue you are facing?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:22",
+    "speaker": "user",
+    "content": "Is it the AI agent?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:22",
+    "speaker": "assistant",
+    "content": "Yes, I am an AI assistant here to help you with your orders and returns. Please tell me what issue you are facing so I can assist you.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:36",
+    "speaker": "user",
+    "content": "Can I can I get the orders that are supposed to come today? In another two hours please?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:36",
+    "speaker": "assistant",
+    "content": "I can certainly check that for you. Let me pull up your order list. Please stay on the line.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:41",
+    "speaker": "assistant",
+    "content": "I can see a few items in your order list, such as the CRUSSET Girls Textured Belt in Cream and the U.S. Polo Assn. Polo T-shirt in Blue. Is your issue regarding any of these products?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:01",
+    "speaker": "user",
+    "content": "I wanted all these products in another two hours is it possible?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:01",
+    "speaker": "assistant",
+    "content": "I understand you need your orders urgently. Let me check the current status of your items to see what is possible. Please stay on the line.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:08",
+    "speaker": "assistant",
+    "content": "Your CRUSSET belts and U.S. Polo Assn. T-shirt are all shipped and have reached the Kottayam hub. While I cannot guarantee a delivery within two hours, they are expected to be delivered by 8 PM today. Since they are not out for delivery yet, the delivery agent will contact you once they are near your location.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:33",
+    "speaker": "user",
+    "content": "Can I assist to customer care executive?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:33",
+    "speaker": "assistant",
+    "content": "Do you want to speak with an expert agent for better assistance?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:39",
+    "speaker": "user",
+    "content": "Yes please.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:39",
+    "speaker": "assistant",
+    "content": "ठीक है, मै आपको expert agent से connect कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:50",
+    "speaker": "assistant",
+    "content": "I will connect you with our specialized team. Transferring your call now, they will be with you immediately.",
+    "feedback": null,
+    "agent_id": null
+  }
+]

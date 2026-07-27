@@ -1,0 +1,163 @@
+[
+  {
+    "timestamp": "2026-07-27T05:37:12",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:16",
+    "speaker": "user",
+    "content": "मैं आप madam यह एक मेरा order था",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:16",
+    "speaker": "assistant",
+    "content": "जी, क्या आप मुझे बता सकते हैं कि आपकी problem delivery",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:19",
+    "speaker": "user",
+    "content": "यह not",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:19",
+    "speaker": "assistant",
+    "content": "जी, क्या आप बता सकते हैं कि आपकी problem delivery से related है या return से?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:43",
+    "speaker": "user",
+    "content": "जी बोलिए. नहीं नहीं delivery मुझे असल में जैसे delivery कल दिखा रहा है लेकिन मुझे आज चाहिए था. क्योंकि अभी मैं tracking पर देख रहा था तो वह nearest मेरे municipality पर आ चुका है. तो अगर possible हो तो आज deliver हो जाता है ज़्यादा बेहतर था. मुझे तो कह ही निकलना है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:43",
+    "speaker": "assistant",
+    "content": "मै समझ सकती हूँ कि आपको order की जल्दी है, मै status check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:50",
+    "speaker": "assistant",
+    "content": "जी, आपका नॉटिका Shirt अभी shipped है और यह लखनऊ के मुंशीपुलिया hub पर पहुँच चुका है। यह कल तक deliver हो जाएगा। मै जानता हूँ कि आपको",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:58",
+    "speaker": "user",
+    "content": "जी. जी जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:58",
+    "speaker": "assistant",
+    "content": "जी, आपका order fastest route पर है और कल तक पहुँच जाएगा। हम अपनी तरफ से पूरी कोशिश कर रहे हैं कि यह आपको",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:04",
+    "speaker": "user",
+    "content": "आज में? आज नहीं हूं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:04",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि आपको आज ही order चाहिए, लेकिन अभी यह shipped status में है और कल तक",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:10",
+    "speaker": "user",
+    "content": "आज जी जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:10",
+    "speaker": "assistant",
+    "content": "जी, मै जानती हूँ कि आपको आज ही delivery चाहिए, लेकिन अभी आपका order shipped status में है और कल तक deliver होने की उम्मीद है। हम इसे जल्द से जल्द पहुँचाने की पूरी कोशिश कर रहे हैं। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:28",
+    "speaker": "user",
+    "content": "नहीं, अगर possible हो तो आज मिल जाता ज़्यादा बेहतर था.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:28",
+    "speaker": "assistant",
+    "content": "जी, मै आपकी बात समझ रही हूँ, लेकिन अभी आपका order shipped status में है और कल तक deliver होने की उम्मीद है। हम इसे जल्द से जल्द पहुँचाने की पूरी कोशिश कर रहे हैं। क्या इसके अलावा मैं आपकी कोई और मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:47",
+    "speaker": "user",
+    "content": "Ma'am मैं बोल रहा हूं मुझे आज चाहिए तो आप कुछ बोली नहीं रही है. वही same repeat कर रहे हो.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:47",
+    "speaker": "assistant",
+    "content": "जी, मैं आपकी परेशानी समझ रही हूँ। आपका order अभी shipped status में है, इसलिए इसे आज deliver करवाना मेरे हाथ में नहीं है। लेकिन मैं आपकी request note कर लेती हूँ ताकि हमारी team इसे priority पर देख सके और यह जल्द से जल्द आप तक पहुँच जाए। क्या इसके अलावा मैं आपकी कोई और मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:39:06",
+    "speaker": "user",
+    "content": "मुंशी और मेरे यहां का distance करीब",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:39:10",
+    "speaker": "user",
+    "content": "four five kilometer हो गए, ज़्यादा दूर नहीं है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:39:10",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि distance बहुत कम है, लेकिन delivery process system के हिसाब से चलता है। आपका order अभी hub पर है और कल तक deliver हो जाएगा। मैं आपकी request note कर रही हूँ ताकि इसे priority दी जा सके। क्या इसके अलावा मैं आपकी कोई और मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:39:27",
+    "speaker": "user",
+    "content": "नहीं thank you.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:39:27",
+    "speaker": "assistant",
+    "content": "जी, आपका स्वागत है। आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे",
+    "feedback": null,
+    "agent_id": null
+  }
+]

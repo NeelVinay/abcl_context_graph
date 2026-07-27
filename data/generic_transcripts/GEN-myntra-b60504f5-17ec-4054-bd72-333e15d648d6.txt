@@ -1,0 +1,142 @@
+[
+  {
+    "timestamp": "2026-07-27T05:52:14",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:17",
+    "speaker": "assistant",
+    "content": "Sorry, could you say that again?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:17",
+    "speaker": "user",
+    "content": "Yeah order.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:17",
+    "speaker": "assistant",
+    "content": "जी, क्या आप मुझे बता सकते हैं कि",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:21",
+    "speaker": "user",
+    "content": "मेरा order अभी तक आया नहीं है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:21",
+    "speaker": "assistant",
+    "content": "मै समझ सकती हूँ कि आपका order अभी तक नहीं आया है, मै status check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:28",
+    "speaker": "assistant",
+    "content": "जी, आपका यू.एस. पोलो Shirt अभी shipped है। आपका order कल तक deliver हो जाएगा। मै देख पा रही हूँ कि इसके लिए complaint पहले से registered है और हम इसे जल्द से जल्द पहुँचाने की कोशिश कर रहे हैं। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:44",
+    "speaker": "user",
+    "content": "और एक दूसरा order भी है. और एक दूसरा order भी है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:44",
+    "speaker": "assistant",
+    "content": "जी, बिलकुल। क्या आप मुझे बता सकते हैं कि उस order में क्या issue है, ताकि मै आपकी सही मदद कर सकूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:54",
+    "speaker": "user",
+    "content": "वह भी ही delay हो चुका है. वह भी delay हो चुका है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:54",
+    "speaker": "assistant",
+    "content": "ठीक है, मै आपकी order list check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:59",
+    "speaker": "assistant",
+    "content": "जी, मुझे आपकी list में ग्लिचेज Grey T-shirt दिख रही है। क्या आपकी problem इसी order से related है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:07",
+    "speaker": "user",
+    "content": "Yes. Yes.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:08",
+    "speaker": "assistant",
+    "content": "ठीक है, मै status check कर रही हूँ। कृपया line पर बने रहिए।जी, आपका ग्लिचेज T-shirt भी shipped है और यह भी कल तक deliver हो जाएगा। इसके लिए भी complaint registered है और हम इसे priority पर deliver करवाने की कोशिश कर रहे हैं। क्या इसके अलावा मैं आपकी कोई और help कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:26",
+    "speaker": "user",
+    "content": "जी हां, No. Thank you.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:26",
+    "speaker": "assistant",
+    "content": "आपका बहुत धन्यवाद। आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:46",
+    "speaker": "assistant",
+    "content": "Thank you for calling मिंत्रा. Have a great",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:46",
+    "speaker": "user",
+    "content": "यार यह भी PI connected call है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:47",
+    "speaker": "user",
+    "content": "क्या यही CI connected call है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:47",
+    "speaker": "assistant",
+    "content": "जी, मैं आपकी बात समझ नहीं पाई। क्या आप अपने orders के बारे में कुछ और पूछना चाहते हैं या किसी और चीज़ में मेरी मदद चाहिए?",
+    "feedback": null,
+    "agent_id": null
+  }
+]

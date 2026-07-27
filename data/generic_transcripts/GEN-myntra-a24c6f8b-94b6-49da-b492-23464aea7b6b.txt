@@ -1,0 +1,107 @@
+[
+  {
+    "timestamp": "2026-07-27T05:40:48",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:03",
+    "speaker": "assistant",
+    "content": "Sorry, could you say that",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:04",
+    "speaker": "user",
+    "content": "मैं check करके बताइए कि वह कहां से?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:04",
+    "speaker": "assistant",
+    "content": "जी, मै आपके order का status check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:09",
+    "speaker": "assistant",
+    "content": "मै देख पा रही हूँ कि आपका Jockey Gym Vest अभी shipped है और Ahmedabad hub पहुँचने वाला है। यह आपको 1 August तक deliver हो जाएगा। क्या मै आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:24",
+    "speaker": "user",
+    "content": "वह तो मेरे को पता ही है कि",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:24",
+    "speaker": "assistant",
+    "content": "जी, आप क्या बताना चाह रहे हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:29",
+    "speaker": "user",
+    "content": "एक तारीख को आने वाला है लेकिन मुझे जानना है कि",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:36",
+    "speaker": "user",
+    "content": "आज twenty seventh आज twenty seven July है तो आज कहां पर है? Twenty three की आगे का update नहीं आ रहा है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:40",
+    "speaker": "user",
+    "content": "आज का जानना है मुझे. वह तो मुझे भी दिख रहा है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:46",
+    "speaker": "user",
+    "content": "कि तेईस तारीख को तेईस तारीख को अहमदाबाद वाले center वहां पर पहुंच चुका था.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:46",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि आप आज का exact update जानना चाहते हैं। आपका order अभी shipped है और Ahmedabad hub पहुँचने की प्रक्रिया में है। जैसे ही यह आपके शहर के local hub पर पहुँचेगा, आपको app में update मिल जाएगा और यह 1 August तक आपके पास पहुँच जाएगा। क्या इसके अलावा मैं आपकी कोई और help कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:06",
+    "speaker": "user",
+    "content": "जी. नहीं",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:06",
+    "speaker": "assistant",
+    "content": "ठीक है। आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:32",
+    "speaker": "assistant",
+    "content": "आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।",
+    "feedback": null,
+    "agent_id": null
+  }
+]

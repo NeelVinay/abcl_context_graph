@@ -1,0 +1,163 @@
+[
+  {
+    "timestamp": "2026-07-27T05:46:15",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:19",
+    "speaker": "user",
+    "content": "मीरा बात कर रही हैं, right?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:19",
+    "speaker": "assistant",
+    "content": "जी, मै मीरा बात कर रही हूँ। बताइए, मै आपकी कैसे मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:25",
+    "speaker": "user",
+    "content": "Hello. Ok ok.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:25",
+    "speaker": "assistant",
+    "content": "आप किस order के बारे में बात करना चाहते हैं,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:28",
+    "speaker": "user",
+    "content": "मेरी मतलब यह है कि Myntra है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:28",
+    "speaker": "assistant",
+    "content": "जी, यह मिंत्रा ही है।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:32",
+    "speaker": "user",
+    "content": "मिंत्रा app से मेरे orders होते हैं वह",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:35",
+    "speaker": "user",
+    "content": "वह मेरे cancel क्यों हो जाते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:35",
+    "speaker": "assistant",
+    "content": "मुझे खेद है कि आपके orders cancel हो रहे हैं। क्या आप मुझे बता सकते हैं कि यह किस product के साथ हुआ है ताकि मै check कर सकूँ, या फिर क्या आप इस बारे में किसी expert agent से बात करना चाहेंगे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:03",
+    "speaker": "user",
+    "content": "मेरी dress आप अगर solve कर पाएं तो आप ही कर दीजिए मेरी list की lip bomb हुआ ठीक है lip lineer हुआ मेरी drugs हुई वह क्यों cancel हो रही है मेरे address पर क्यों नहीं आ रहे आज भी कोई पांच साल है वह भी अभी तक नहीं आया है. अभी कुछ देर बाद उसको भी cancel कर देंगे यह लोग.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:03",
+    "speaker": "assistant",
+    "content": "मै समझ सकती हूँ कि orders cancel होने से आपको काफी परेशानी हो रही है। मै तुरंत check करती हूँ कि आपके orders के साथ क्या problem आ रही है। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:13",
+    "speaker": "user",
+    "content": "हां आते हैं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:13",
+    "speaker": "assistant",
+    "content": "जी, आपके Mary Jo K Lip Liner का status shipped है और यह आज शाम आठ बजे तक deliver हो जाएगा। यह अभी कानपुर के Azadnagar hub पर पहुँच चुका है, तो आप निश्चिंत रहें, यह cancel नहीं होगा। क्या मै आपकी किसी और चीज़ में",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:28",
+    "speaker": "user",
+    "content": "तो sir यह cancel तो नहीं होगा?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:28",
+    "speaker": "assistant",
+    "content": "जी, बिल्कुल नहीं। आपका order shipped है और रास्ते में है, इसलिए यह cancel नहीं होगा। यह आज शाम आठ बजे तक आपको मिल जाएगा। क्या इसके अलावा मै आपकी कोई और मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:49",
+    "speaker": "user",
+    "content": "और जो मेरे parcel जो वह cancel हुए उनके बारे में बताइए क्या reason रहा वह cancel होने का वह उन्नीस तीस चार था नहीं रहा उन पैसे भी cut दे सकते छत्तीस रुपए वह क्यों?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:49",
+    "speaker": "assistant",
+    "content": "मुझे खेद है कि आपके पिछले orders cancel हो गए और आपके पैसे भी cut गए। payment और refund से related details के लिए मुझे आपको हमारे expert agent से connect करना होगा। क्या आप बेहतर assistance के लिए expert agent से बात करना चाहेंगे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:08",
+    "speaker": "user",
+    "content": "आप ही बता दीजिए कि क्यों order cancel हुए हैं बस यही बता दीजिए.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:08",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि आप जानना चाहते हैं, लेकिन orders cancel होने के exact reason और payment की details सिर्फ हमारे specialized experts ही check कर सकते हैं। मैं नहीं चाहती कि आपको गलत information मिले, इसलिए क्या आप expert agent से बात करना चाहेंगे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:23",
+    "speaker": "user",
+    "content": "हां जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:23",
+    "speaker": "user",
+    "content": "ठीक है तो.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:31",
+    "speaker": "assistant",
+    "content": "I will connect you with our specialized team. Transferring your call now, they will be with you immediately.",
+    "feedback": null,
+    "agent_id": null
+  }
+]

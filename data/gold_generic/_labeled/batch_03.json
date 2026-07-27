@@ -1,0 +1,178 @@
+[
+  {
+    "call_id": "GEN-myntra-7d23dc06-6b4d-458f-b806-cab2f985ddb9",
+    "turns": [
+      {"index": 0, "speaker": "agent", "base_intent": "greeting", "keywords": ["नमस्ते", "Welcome to मिंत्रा"], "sentiment": null, "tool": null},
+      {"index": 1, "speaker": "customer", "base_intent": "ask_question", "keywords": ["deliver होगा", "urgent चाहिए"], "sentiment": "neutral", "tool": null},
+      {"index": 2, "speaker": "agent", "base_intent": "wait_hold", "keywords": ["status check कर रही हूँ", "line पर बने रहिए"], "sentiment": null, "tool": null},
+      {"index": 3, "speaker": "agent", "base_intent": "answer_query", "keywords": ["shipped हैं", "आज शाम आठ बजे तक deliver", "GURUGRAM hub"], "sentiment": null, "tool": null},
+      {"index": 4, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["अभी भेजो", "अभी भेज दो"], "sentiment": "frustrated", "tool": null},
+      {"index": 5, "speaker": "agent", "base_intent": "irate_frustrated", "keywords": ["fastest route पर है", "पूरी कोशिश कर रहे हैं"], "sentiment": null, "tool": null},
+      {"index": 6, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["दिक्कत हो गया"], "sentiment": "frustrated", "tool": null},
+      {"index": 7, "speaker": "agent", "base_intent": "irate_frustrated", "keywords": ["यह जल्दी चाहिए", "priority पर है"], "sentiment": null, "tool": null},
+      {"index": 8, "speaker": "customer", "base_intent": "ask_question", "keywords": ["f w d क्या होता है"], "sentiment": "neutral", "tool": null},
+      {"index": 9, "speaker": "agent", "base_intent": "ask_question", "keywords": ["जानकारी नहीं है", "expert agent से बात करना चाहेंगे"], "sentiment": null, "tool": null},
+      {"index": 10, "speaker": "customer", "base_intent": "ask_question", "keywords": ["तो आप बोलो"], "sentiment": "neutral", "tool": null},
+      {"index": 11, "speaker": "agent", "base_intent": "ask_question", "keywords": ["जानकारी नहीं है", "expert agent से बात करना चाहेंगे"], "sentiment": null, "tool": null},
+      {"index": 12, "speaker": "agent", "base_intent": "wait_hold", "keywords": ["expert agent से connect कर रही हूँ", "line पर बने रहिए"], "sentiment": null, "tool": null},
+      {"index": 13, "speaker": "agent", "base_intent": "wait_hold", "keywords": ["connect you with our specialized team", "Transferring your call now"], "sentiment": null, "tool": null}
+    ]
+  },
+  {
+    "call_id": "GEN-myntra-7dd623f2-054f-4ce9-b502-355df8252796",
+    "turns": [
+      {"index": 0, "speaker": "agent", "base_intent": "greeting", "keywords": ["नमस्ते", "Welcome to मिंत्रा"], "sentiment": null, "tool": null},
+      {"index": 1, "speaker": "customer", "base_intent": "ask_question", "keywords": ["delivered हो ही नहीं रहा"], "sentiment": "frustrated", "tool": null},
+      {"index": 2, "speaker": "agent", "base_intent": "wait_hold", "keywords": ["status check कर रही हूँ", "line पर बने रहिए"], "sentiment": null, "tool": null},
+      {"index": 3, "speaker": "agent", "base_intent": "answer_query", "keywords": ["shipped है", "out for delivery", "24 hours में"], "sentiment": null, "tool": null},
+      {"index": 4, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["पंद्रह दिन हो गया"], "sentiment": "frustrated", "tool": null},
+      {"index": 5, "speaker": "agent", "base_intent": "irate_frustrated", "keywords": ["15 days का wait", "out for delivery"], "sentiment": null, "tool": null},
+      {"index": 6, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["क्या ही help चाहिए"], "sentiment": "frustrated", "tool": null},
+      {"index": 7, "speaker": "agent", "base_intent": "irate_frustrated", "keywords": ["परेशान हैं", "wait कर लीजिए"], "sentiment": null, "tool": null},
+      {"index": 8, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["चौबीस hour के अंदर"], "sentiment": "frustrated", "tool": null},
+      {"index": 9, "speaker": "agent", "base_intent": "acknowledge", "keywords": ["मैं आपकी बात"], "sentiment": null, "tool": null},
+      {"index": 10, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "neutral", "tool": null, "suggested_intent": "unclear_fragment"},
+      {"index": 11, "speaker": "agent", "base_intent": "irate_frustrated", "keywords": ["बाहर जा रहे हैं", "out for delivery"], "sentiment": null, "tool": null},
+      {"index": 12, "speaker": "customer", "base_intent": "acknowledge", "keywords": ["हो गया"], "sentiment": "neutral", "tool": null},
+      {"index": 13, "speaker": "agent", "base_intent": "end_call", "keywords": ["feedback form", "call के लिए धन्यवाद"], "sentiment": null, "tool": null},
+      {"index": 14, "speaker": "agent", "base_intent": "end_call", "keywords": ["Thank you for calling", "Have a great day"], "sentiment": null, "tool": null}
+    ]
+  },
+  {
+    "call_id": "GEN-myntra-92a64f7c-3f9e-41bc-9a18-57f9a80cf656",
+    "turns": [
+      {"index": 0, "speaker": "agent", "base_intent": "greeting", "keywords": ["नमस्ते", "Welcome to मिंत्रा"], "sentiment": null, "tool": null},
+      {"index": 1, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["within twenty four hour", "Even day को होगा"], "sentiment": "frustrated", "tool": null},
+      {"index": 2, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["Solution तो कुछ मिला नहीं", "twenty four hour में हो जाएगा"], "sentiment": "frustrated", "tool": null},
+      {"index": 3, "speaker": "agent", "base_intent": "irate_frustrated", "keywords": ["माफी चाहती हूँ", "status check कर रही हूँ", "line पर बने रहिए"], "sentiment": null, "tool": null},
+      {"index": 4, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["Wednesday को होगा", "तीन चार दिन delay"], "sentiment": "frustrated", "tool": null},
+      {"index": 5, "speaker": "agent", "base_intent": "irate_frustrated", "keywords": ["Rajkot hub", "29 July तक deliver", "priority पर है"], "sentiment": null, "tool": null},
+      {"index": 6, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["आज हो जाना चाहिए", "इतना problem हो रहा है"], "sentiment": "frustrated", "tool": null},
+      {"index": 7, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["twenty four hour में हो जाएगा", "यह कोई बात हुई क्या"], "sentiment": "frustrated", "tool": null},
+      {"index": 8, "speaker": "agent", "base_intent": "irate_frustrated", "keywords": ["नाराजगी बिलकुल सही"], "sentiment": null, "tool": null},
+      {"index": 9, "speaker": "agent", "base_intent": "confused_repeat", "keywords": ["माफ़ कीजिये", "फिर कह सकते हैं"], "sentiment": null, "tool": null},
+      {"index": 10, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["deliverable नहीं है", "मना कर दो"], "sentiment": "frustrated", "tool": null},
+      {"index": 11, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["twenty four hour में हो जाएगा", "उनतीस तक हो जाएगा"], "sentiment": "frustrated", "tool": null},
+      {"index": 12, "speaker": "agent", "base_intent": "irate_frustrated", "keywords": ["समझ सकती हूँ"], "sentiment": null, "tool": null},
+      {"index": 13, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["customer service ले है"], "sentiment": "frustrated", "tool": null},
+      {"index": 14, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["आज delivery चाहिए", "solution इसका निकालो"], "sentiment": "frustrated", "tool": null},
+      {"index": 15, "speaker": "agent", "base_intent": "irate_frustrated", "keywords": ["परेशानी बिलकुल जायज", "माफी चाहती हूँ"], "sentiment": null, "tool": null},
+      {"index": 16, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["आज की date में deliver", "तीन दिन तो और delay"], "sentiment": "frustrated", "tool": null},
+      {"index": 17, "speaker": "agent", "base_intent": "irate_frustrated", "keywords": ["माफी चाहती हूँ", "आज ही चाहिए था"], "sentiment": null, "tool": null},
+      {"index": 18, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["छब्बीस तारीख", "इक्कीस को order किया"], "sentiment": "frustrated", "tool": null},
+      {"index": 19, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["इतना late होने वाला है", "emergency वाला है"], "sentiment": "frustrated", "tool": null},
+      {"index": 20, "speaker": "agent", "base_intent": "irate_frustrated", "keywords": ["26 July तक delivery", "निराशाजनक है", "दिल से माफी"], "sentiment": null, "tool": null},
+      {"index": 21, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["आज कर दीजिए", "resolve करके"], "sentiment": "frustrated", "tool": null},
+      {"index": 22, "speaker": "agent", "base_intent": "irate_frustrated", "keywords": ["urgency समझ रही हूँ", "आज ही deliver हो जाए"], "sentiment": null, "tool": null},
+      {"index": 23, "speaker": "customer", "base_intent": "agree", "keywords": ["हां", "करवा दीजिए"], "sentiment": "frustrated", "tool": null},
+      {"index": 24, "speaker": "agent", "base_intent": "wait_hold", "keywords": ["expert agent से connect", "line पर बने रहिए"], "sentiment": null, "tool": null},
+      {"index": 25, "speaker": "agent", "base_intent": "wait_hold", "keywords": ["specialized team", "Transferring your call now"], "sentiment": null, "tool": null}
+    ]
+  },
+  {
+    "call_id": "GEN-myntra-96535ab9-428d-439d-a023-128d8011062d",
+    "turns": [
+      {"index": 0, "speaker": "agent", "base_intent": "greeting", "keywords": ["नमस्ते", "Welcome to मिंत्रा"], "sentiment": null, "tool": null},
+      {"index": 1, "speaker": "customer", "base_intent": "ask_question", "keywords": ["seal का number", "match नहीं हो रहा"], "sentiment": "neutral", "tool": null},
+      {"index": 2, "speaker": "customer", "base_intent": "ask_question", "keywords": ["won't give the product"], "sentiment": "neutral", "tool": null},
+      {"index": 3, "speaker": "agent", "base_intent": "answer_query", "keywords": ["out for delivery", "My Orders page"], "sentiment": null, "tool": null},
+      {"index": 4, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["how how"], "sentiment": "frustrated", "tool": null},
+      {"index": 5, "speaker": "agent", "base_intent": "acknowledge", "keywords": ["आपकी बात सुन रही हूँ"], "sentiment": null, "tool": null},
+      {"index": 6, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["sun लो आप ढंग से"], "sentiment": "frustrated", "tool": null},
+      {"index": 7, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["सुनो पहले ढंग से", "Seal number नहीं हो रहा match"], "sentiment": "frustrated", "tool": null},
+      {"index": 8, "speaker": "agent", "base_intent": "answer_query", "keywords": ["My Orders page", "expert agent से बात करना चाहेंगे"], "sentiment": null, "tool": null},
+      {"index": 9, "speaker": "customer", "base_intent": "irate_frustrated", "keywords": ["expert agent को ही forward कीजिए", "समझ में नहीं आ रही"], "sentiment": "frustrated", "tool": null},
+      {"index": 10, "speaker": "agent", "base_intent": "wait_hold", "keywords": ["expert agent से connect", "line पर बने रहिए"], "sentiment": null, "tool": null},
+      {"index": 11, "speaker": "agent", "base_intent": "wait_hold", "keywords": ["specialized team", "Transferring your call now"], "sentiment": null, "tool": null}
+    ]
+  },
+  {
+    "call_id": "GEN-myntra-9d5249e0-9947-4f6f-88b1-ec6cd8b61437",
+    "turns": [
+      {"index": 0, "speaker": "agent", "base_intent": "greeting", "keywords": ["नमस्ते", "Welcome to मिंत्रा"], "sentiment": null, "tool": null},
+      {"index": 1, "speaker": "customer", "base_intent": "ask_question", "keywords": ["कितनी quantities", "कितने pieces"], "sentiment": "neutral", "tool": null},
+      {"index": 2, "speaker": "agent", "base_intent": "wait_hold", "keywords": ["order details check", "line पर बने रहिए"], "sentiment": null, "tool": null},
+      {"index": 3, "speaker": "agent", "base_intent": "ask_question", "keywords": ["MIRAGGIO Laptop Bag", "related है"], "sentiment": null, "tool": null},
+      {"index": 4, "speaker": "agent", "base_intent": "wait_hold", "keywords": ["status check", "line पर बने रहिए"], "sentiment": null, "tool": null},
+      {"index": 5, "speaker": "agent", "base_intent": "answer_query", "keywords": ["packed है", "आज deliver होने की उम्मीद"], "sentiment": null, "tool": null},
+      {"index": 6, "speaker": "customer", "base_intent": "ask_question", "keywords": ["कितने pieces", "deliver होने वाले हैं आज"], "sentiment": "neutral", "tool": null},
+      {"index": 7, "speaker": "agent", "base_intent": "answer_query", "keywords": ["एक piece है", "आज deliver होने वाला"], "sentiment": null, "tool": null},
+      {"index": 8, "speaker": "customer", "base_intent": "ask_question", "keywords": ["तेरह piece की quantity"], "sentiment": "skeptical", "tool": null},
+      {"index": 9, "speaker": "agent", "base_intent": "wait_hold", "keywords": ["details check कर लेती हूँ", "line पर बने रहिए"], "sentiment": null, "tool": null},
+      {"index": 10, "speaker": "agent", "base_intent": "answer_query", "keywords": ["कुल 13 pieces", "scheduled हैं"], "sentiment": null, "tool": null},
+      {"index": 11, "speaker": "customer", "base_intent": "acknowledge", "keywords": ["तेरा pieces", "आज ही deliver होंगे"], "sentiment": "neutral", "tool": null},
+      {"index": 12, "speaker": "agent", "base_intent": "answer_query", "keywords": ["सभी 13 pieces", "आज deliver होने की उम्मीद"], "sentiment": null, "tool": null},
+      {"index": 13, "speaker": "customer", "base_intent": "end_call", "keywords": ["thank you"], "sentiment": "happy", "tool": null},
+      {"index": 14, "speaker": "agent", "base_intent": "end_call", "keywords": ["feedback form", "call के लिए धन्यवाद"], "sentiment": null, "tool": null},
+      {"index": 15, "speaker": "agent", "base_intent": "end_call", "keywords": ["Thank you for calling", "Have a great day"], "sentiment": null, "tool": null}
+    ]
+  },
+  {
+    "call_id": "GEN-myntra-a24c6f8b-94b6-49da-b492-23464aea7b6b",
+    "turns": [
+      {"index": 0, "speaker": "agent", "base_intent": "greeting", "keywords": ["नमस्ते", "Welcome to मिंत्रा"], "sentiment": null, "tool": null},
+      {"index": 1, "speaker": "agent", "base_intent": "confused_repeat", "keywords": ["Sorry, could you say that"], "sentiment": null, "tool": null},
+      {"index": 2, "speaker": "customer", "base_intent": "ask_question", "keywords": ["check करके बताइए"], "sentiment": "neutral", "tool": null},
+      {"index": 3, "speaker": "agent", "base_intent": "wait_hold", "keywords": ["status check", "line पर बने रहिए"], "sentiment": null, "tool": null},
+      {"index": 4, "speaker": "agent", "base_intent": "answer_query", "keywords": ["shipped है", "Ahmedabad hub", "1 August तक"], "sentiment": null, "tool": null},
+      {"index": 5, "speaker": "customer", "base_intent": "ask_question", "keywords": ["मेरे को पता ही है"], "sentiment": "neutral", "tool": null},
+      {"index": 6, "speaker": "agent", "base_intent": "confused_repeat", "keywords": ["क्या बताना चाह रहे हैं"], "sentiment": null, "tool": null},
+      {"index": 7, "speaker": "customer", "base_intent": "ask_question", "keywords": ["एक तारीख को आने वाला"], "sentiment": "neutral", "tool": null},
+      {"index": 8, "speaker": "customer", "base_intent": "ask_question", "keywords": ["आज कहां पर है", "update नहीं आ रहा"], "sentiment": "neutral", "tool": null},
+      {"index": 9, "speaker": "customer", "base_intent": "ask_question", "keywords": ["तेईस तारीख को", "अहमदाबाद वाले center"], "sentiment": "neutral", "tool": null},
+      {"index": 10, "speaker": "agent", "base_intent": "answer_query", "keywords": ["exact update जानना चाहते", "1 August तक"], "sentiment": null, "tool": null},
+      {"index": 11, "speaker": "customer", "base_intent": "acknowledge", "keywords": ["नहीं"], "sentiment": "neutral", "tool": null},
+      {"index": 12, "speaker": "agent", "base_intent": "end_call", "keywords": ["feedback form", "call के लिए धन्यवाद"], "sentiment": null, "tool": null},
+      {"index": 13, "speaker": "agent", "base_intent": "end_call", "keywords": ["feedback form", "call के लिए धन्यवाद"], "sentiment": null, "tool": null}
+    ]
+  },
+  {
+    "call_id": "GEN-myntra-a3b10246-7b04-4685-9119-370d58691460",
+    "turns": [
+      {"index": 0, "speaker": "agent", "base_intent": "greeting", "keywords": ["नमस्ते", "Welcome to मिंत्रा"], "sentiment": null, "tool": null},
+      {"index": 1, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "confused", "tool": null, "suggested_intent": "asr_garble"},
+      {"index": 2, "speaker": "agent", "base_intent": "ask_question", "keywords": ["किस order के बारे में", "क्या issue"], "sentiment": null, "tool": null},
+      {"index": 3, "speaker": "customer", "base_intent": "answer_query", "keywords": ["मैं आपको बताती हूं"], "sentiment": "neutral", "tool": null},
+      {"index": 4, "speaker": "agent", "base_intent": "answer_query", "keywords": ["Roadster T-shirt", "shipped है"], "sentiment": null, "tool": null},
+      {"index": 5, "speaker": "customer", "base_intent": "wait_hold", "keywords": ["एक minute"], "sentiment": "neutral", "tool": null},
+      {"index": 6, "speaker": "agent", "base_intent": "wait_hold", "keywords": ["आराम से बात कर लीजिए", "line पर ही हूँ"], "sentiment": null, "tool": null},
+      {"index": 7, "speaker": "customer", "base_intent": "other", "keywords": [], "sentiment": "confused", "tool": null, "suggested_intent": "asr_garble"},
+      {"index": 8, "speaker": "agent", "base_intent": "answer_query", "keywords": ["Roadster T-shirt", "complaint register", "कल तक deliver"], "sentiment": null, "tool": null},
+      {"index": 9, "speaker": "customer", "base_intent": "end_call", "keywords": ["thank you madam"], "sentiment": "happy", "tool": null},
+      {"index": 10, "speaker": "customer", "base_intent": "ask_question", "keywords": ["कल तक आ जाना चाहिए", "निकल रही हूं"], "sentiment": "neutral", "tool": null},
+      {"index": 11, "speaker": "agent", "base_intent": "answer_query", "keywords": ["दिए हुए address पर", "कल तक आप तक पहुँच"], "sentiment": null, "tool": null},
+      {"index": 12, "speaker": "customer", "base_intent": "end_call", "keywords": ["thank you madam"], "sentiment": "happy", "tool": null},
+      {"index": 13, "speaker": "agent", "base_intent": "end_call", "keywords": ["feedback form", "call के लिए धन्यवाद"], "sentiment": null, "tool": null},
+      {"index": 14, "speaker": "customer", "base_intent": "end_call", "keywords": ["धन्यवाद", "Thank you"], "sentiment": "happy", "tool": null},
+      {"index": 15, "speaker": "agent", "base_intent": "end_call", "keywords": ["feedback form", "अच्छी रेटिंग"], "sentiment": null, "tool": null},
+      {"index": 16, "speaker": "customer", "base_intent": "acknowledge", "keywords": ["भर देंगे"], "sentiment": "happy", "tool": null},
+      {"index": 17, "speaker": "agent", "base_intent": "end_call", "keywords": ["बहुत धन्यवाद", "call के लिए धन्यवाद"], "sentiment": null, "tool": null},
+      {"index": 18, "speaker": "agent", "base_intent": "end_call", "keywords": ["Thank you for"], "sentiment": null, "tool": null}
+    ]
+  },
+  {
+    "call_id": "GEN-myntra-a8100583-8ac8-460e-9d8a-644b6e195b19",
+    "turns": [
+      {"index": 0, "speaker": "agent", "base_intent": "greeting", "keywords": ["नमस्ते", "Welcome to मिंत्रा"], "sentiment": null, "tool": null},
+      {"index": 1, "speaker": "customer", "base_intent": "greeting", "keywords": ["Hello"], "sentiment": "neutral", "tool": null},
+      {"index": 2, "speaker": "agent", "base_intent": "ask_question", "keywords": ["किस order के बारे में", "क्या issue है"], "sentiment": null, "tool": null},
+      {"index": 3, "speaker": "customer", "base_intent": "answer_query", "keywords": ["Safari", "Forty five liter"], "sentiment": "neutral", "tool": null},
+      {"index": 4, "speaker": "agent", "base_intent": "answer_query", "keywords": ["processing में है", "29 July तक deliver"], "sentiment": null, "tool": null},
+      {"index": 5, "speaker": "customer", "base_intent": "ask_question", "keywords": ["पहले मतलब मेरे को चाहिए था"], "sentiment": "neutral", "tool": null},
+      {"index": 6, "speaker": "agent", "base_intent": "answer_query", "keywords": ["fastest route पर है", "29 July तक पहुँच जाएगा"], "sentiment": null, "tool": null},
+      {"index": 7, "speaker": "customer", "base_intent": "ask_question", "keywords": ["कल तक ही मेरे को चाहिए", "fast job करके"], "sentiment": "neutral", "tool": null},
+      {"index": 8, "speaker": "agent", "base_intent": "answer_query", "keywords": ["urgency समझ रही हूँ", "priority पर है"], "sentiment": null, "tool": null},
+      {"index": 9, "speaker": "customer", "base_intent": "ask_question", "keywords": ["twenty eight तक नहीं आ पाएगा"], "sentiment": "neutral", "tool": null},
+      {"index": 10, "speaker": "agent", "base_intent": "wait_hold", "keywords": ["फिर से check कर रही हूँ", "line पर बने रहिए"], "sentiment": null, "tool": null},
+      {"index": 11, "speaker": "agent", "base_intent": "answer_query", "keywords": ["processing में है", "29 July तक ही deliver"], "sentiment": null, "tool": null},
+      {"index": 12, "speaker": "customer", "base_intent": "ask_question", "keywords": ["confirmation दे दीजिए", "twenty eight July"], "sentiment": "neutral", "tool": null},
+      {"index": 13, "speaker": "customer", "base_intent": "ask_question", "keywords": ["ship करवाने का try करिए", "Twenty eight को"], "sentiment": "neutral", "tool": null},
+      {"index": 14, "speaker": "agent", "base_intent": "answer_query", "keywords": ["परेशानी बिलकुल सही", "29 July की ही date"], "sentiment": null, "tool": null},
+      {"index": 15, "speaker": "customer", "base_intent": "ask_question", "keywords": ["chances हैं", "कल भी यह मिल सकता है"], "sentiment": "neutral", "tool": null},
+      {"index": 16, "speaker": "agent", "base_intent": "answer_query", "keywords": ["29 July की ही date confirm", "status check करते रहिएगा"], "sentiment": null, "tool": null},
+      {"index": 17, "speaker": "customer", "base_intent": "acknowledge", "keywords": ["नहीं"], "sentiment": "neutral", "tool": null},
+      {"index": 18, "speaker": "agent", "base_intent": "end_call", "keywords": ["feedback form", "call के लिए धन्यवाद"], "sentiment": null, "tool": null},
+      {"index": 19, "speaker": "agent", "base_intent": "end_call", "keywords": ["Thank you for calling", "Have a great day"], "sentiment": null, "tool": null}
+    ]
+  }
+]

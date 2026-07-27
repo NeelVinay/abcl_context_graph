@@ -1,0 +1,471 @@
+[
+  {
+    "timestamp": "2026-07-27T05:43:57",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:03",
+    "speaker": "user",
+    "content": "Hello hello",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:05",
+    "speaker": "user",
+    "content": "hello",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:05",
+    "speaker": "assistant",
+    "content": "आप किस order के बारे में बात करना चाहते हैं, और क्या issue है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:09",
+    "speaker": "user",
+    "content": "hello",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:09",
+    "speaker": "assistant",
+    "content": "जी, आप किस order के बारे में बात करना चाहते हैं, और क्या issue",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:15",
+    "speaker": "user",
+    "content": "आशुतोष? अशोक fan नाम से order",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:15",
+    "speaker": "assistant",
+    "content": "जी, आप किस order के बारे में बात",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:19",
+    "speaker": "user",
+    "content": "अशोक fan. यह बापू बापू बापू",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:19",
+    "speaker": "assistant",
+    "content": "जी, क्या",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:23",
+    "speaker": "user",
+    "content": "बापूनगर दहला मंद.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:25",
+    "speaker": "user",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:25",
+    "speaker": "assistant",
+    "content": "जी, क्या आप मुझे बता सकते हैं कि आपकी problem delivery से related है या return से?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:40",
+    "speaker": "user",
+    "content": "Hello मेरे को call call नहीं किया जा रहा है जो order आया है वह लेकर भाग गया यहां से रुका ही नहीं है वह एक minute भी नहीं रुका सीधा निकल गया वह.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:40",
+    "speaker": "assistant",
+    "content": "मै समझ सकती हूँ कि यह काफी परेशान करने वाला है कि delivery agent बिना रुके चला गया। मै तुरंत आपके order का status check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:49",
+    "speaker": "assistant",
+    "content": "जी, आपके Roadster Jeans का",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:54",
+    "speaker": "user",
+    "content": "Location हां, बिल्कुल call call me.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:54",
+    "speaker": "assistant",
+    "content": "जी, आपके Roadster Jeans का status",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:58",
+    "speaker": "user",
+    "content": "उसको call करने का बोल लोग मेरे को, मेरा number दो उनको.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:58",
+    "speaker": "assistant",
+    "content": "जी, अभी आपका order out for delivery नहीं है, इसलिए delivery agent की details उपलब्ध नहीं हैं। जैसे ही order out for delivery होगा, delivery agent आपके location के पास पहुंचते ही आपको contact करेगा। आपका order कल तक deliver होने की उम्मीद है और मै देख पा रही हूँ कि इसके लिए complaint भी register है, तो आप निश्चिंत रहें। क्या मै आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:19",
+    "speaker": "user",
+    "content": "Hello? मैंने अभी call कर अभी",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:25",
+    "speaker": "user",
+    "content": "अभी call करवाए जाए मेरे को अभी call करवाए जाए उनको वह भी निकला है यहां से वह निकल गया सीधा",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:25",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि आप परेशान हैं,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:30",
+    "speaker": "user",
+    "content": "मेरे number पर call करवाए थे उनसे.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:30",
+    "speaker": "assistant",
+    "content": "जी, जैसा कि मैंने बताया, अभी आपका order out for delivery नहीं है, इसलिए अभी delivery agent से contact करना possible नहीं है। आपका order कल तक deliver हो जाएगा और आपकी complaint register है, इसलिए यह priority पर है। आप निश्चिंत",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:50",
+    "speaker": "user",
+    "content": "कल मेरे को time नहीं कल मेरे को time नहीं है आज मिलना तो यह मेरे को आज ही",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:53",
+    "speaker": "user",
+    "content": "time है मेरे को, कल मैं छोटी पर नहीं हूं. कल on duty रहूंगा.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:53",
+    "speaker": "assistant",
+    "content": "जी, मैं आपकी परेशानी समझ सकती हूँ कि आपको आज ही order चाहिए। आपका order अभी रास्ते में है और कल तक deliver होने की उम्मीद है। हम अपनी पूरी कोशिश कर रहे हैं कि यह जल्द से जल्द आप तक पहुँच जाए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:13",
+    "speaker": "user",
+    "content": "बिल्कुल. रास्ते में, रास्ते में नहीं अभी मेरे location में मेरी location में ही है, order मेरी location में ही है, मेरे home से अभी वह आगे निकला है सीधा कहीं नहीं बिल्कुल बिना इस परत किए हुए.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:13",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि आप परेशान हैं कि agent",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:18",
+    "speaker": "user",
+    "content": "वह. Call किए गए उनको call location",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:18",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि आप चाहते हैं कि agent आपको अभी call करे। लेकिन system में आपका order अभी out for delivery नहीं दिख रहा है, इसलिए मै अभी delivery agent से contact नहीं करवा सकती। आपका order कल तक deliver हो जाएगा और आपकी complaint register है, इसलिए हम इसे priority पर resolve करने की कोशिश कर रहे हैं। क्या मै इसके अलावा आपकी कोई और मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:43",
+    "speaker": "user",
+    "content": "बिल्कुल बिल्कुल. बिल्कुल बिल्कुल.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:44",
+    "speaker": "user",
+    "content": "बिल्कुल आज ही होना चाहिए मेरे को तो order आज ही मिलना चाहिए.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:44",
+    "speaker": "assistant",
+    "content": "जी, मै आपकी urgency समझ सकती हूँ। आपका",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:48",
+    "speaker": "user",
+    "content": "आज ही order मिलना चाहिए मेरे को.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:48",
+    "speaker": "assistant",
+    "content": "जी, मै आपकी urgency समझ सकती हूँ। आपका order अभी रास्ते में है और कल तक deliver होने की उम्मीद है। मै जानती हूँ कि आपको आज ही order चाहिए, लेकिन अभी यह out for delivery नहीं है।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:59",
+    "speaker": "user",
+    "content": "कल कल तक नहीं deliver?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:00",
+    "speaker": "user",
+    "content": "कल",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:00",
+    "speaker": "assistant",
+    "content": "जी, आपके order का latest status कल तक का ही दिखा रहा है। मै समझ सकती हूँ कि आपको यह आज ही चाहिए था, लेकिन अभी यह out for delivery नहीं है। आपकी शिकायत register है, इसलिए हमारी टीम इसे priority पर देख रही है। क्या मैं",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:22",
+    "speaker": "user",
+    "content": "बिल्कुल, Register नहीं है जो लेकर चला गया या जो जो जो delivery boy लेकर चला गया बिना रुके उसके ऊपर कुछ charge दे धोना चाहिए वह. उसको call करके बोला जाए",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:22",
+    "speaker": "assistant",
+    "content": "जी, मैं आपकी नाराजगी समझ सकती हूँ कि",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:26",
+    "speaker": "user",
+    "content": "Plantty लगनी चाहिए उसके ऊपर.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:26",
+    "speaker": "assistant",
+    "content": "जी, आपकी नाराजगी बिल्कुल सही है कि delivery agent को रुकना चाहिए था।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:41",
+    "speaker": "user",
+    "content": "क्या मतलब हुआ फिर? मैं क्या मतलब हुआ? मेरा order मिलने पच्चीस तारीख को मिलना चाहिए था. नहीं मिल रहा है, lock बता रहा है, lock बता रहा है, lock. मैं घर पर बैठा हूं lock कैसे बता रहा है? Out of delivery कैसे हो गया वह?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:41",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि यह बहुत निराशाजनक है",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:45",
+    "speaker": "user",
+    "content": "हैं? उसका कोई reason है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:45",
+    "speaker": "assistant",
+    "content": "जी, delivery में delay के कई reason हो सकते हैं जैसे कि high order volume या shipping में कुछ दिक्कतें। इसके लिए मैं आपसे माफी चाहती हूँ। आपका order",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:54",
+    "speaker": "user",
+    "content": "तो फिर बिल्कुल.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:59",
+    "speaker": "user",
+    "content": "और call कर call किया जाए ना, call call पर ही contact करके call किया जाए ना मेरे को.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:59",
+    "speaker": "assistant",
+    "content": "जी, मैं आपकी बात समझ रही हूँ, लेकिन system",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:04",
+    "speaker": "user",
+    "content": "Call नहीं किया है उन्होंने मेरे को.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:04",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि बिना call आए",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:09",
+    "speaker": "user",
+    "content": "अभी उसकी location को पता करके मेरे को numbers है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:09",
+    "speaker": "assistant",
+    "content": "जी, मैं आपकी परेशानी समझ सकती हूँ, लेकिन security",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:14",
+    "speaker": "user",
+    "content": "Call करके मेरे को location बता करके मैं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:14",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि आप चाहते हैं कि agent अभी आपसे contact करे, लेकिन security reasons की वजह से मै delivery agent का number share नहीं कर सकती। अभी आपका order out for",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:26",
+    "speaker": "user",
+    "content": "बिल्कुल बिल्कुल, क्यों?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:26",
+    "speaker": "assistant",
+    "content": "जी, security reasons की वजह से हम delivery agent की personal details share नहीं कर सकते। अभी आपका order out for delivery नहीं है, इसलिए agent का number उपलब्ध नहीं है। जैसे ही order out for delivery होगा, आप मिंत्रा app के My Orders page पर agent की details देख पाएंगे। आपका order कल तक deliver हो जाएगा, कृपया थोड़ा wait करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:58",
+    "speaker": "user",
+    "content": "उसको नहीं नहीं ऐसे मेरे संतुष्ट नहीं आज ही मिलना चाहिए तो आज ही order मिलना चाहिए इतने दिन से pending बता रहा है यह हो ही नहीं रहा है क्या दिक्कत क्या है? परेशानी हो रही है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:02",
+    "speaker": "user",
+    "content": "क्या मतलब हुआ इसकी report गलत हो रही है ना आपकी report.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:02",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि इतने दिनों का delay बहुत परेशान करने वाला है और आप बिल्कुल सही कह रहे हैं कि यह समय पर होना चाहिए था। आपका order priority पर है और कल तक deliver होने की उम्मीद है। मैं आपकी पूरी समस्या note कर रही हूँ",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:27",
+    "speaker": "user",
+    "content": "तो फिर priority किस चीज़ की आज ही हो, आज ही हो, आज ही होना चाहिए आज ही उनको बोलो आज ही देकर आए. आज ही order वापस किया था यह. Deliver वापस, deliver किया जाए उनको, redliver में डालो वापस. Order को.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:27",
+    "speaker": "assistant",
+    "content": "जी, मै आपकी परेशानी समझ सकती हूँ और आपकी urgency भी। लेकिन system में order को manually redeliver के लिए डालना मेरे control में नहीं है। आपका order priority पर है और कल तक deliver होने की उम्मीद है। क्या आप expert agent से बात करना चाहेंगे जो इस मामले में आपकी बेहतर सहायता कर सकें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:47",
+    "speaker": "user",
+    "content": "बिल्कुल बात कराइए.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:47",
+    "speaker": "assistant",
+    "content": "ठीक है, मै आपको expert agent से connect कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:57",
+    "speaker": "assistant",
+    "content": "I will connect you with our specialized team. Transferring your call now, they will be with you immediately.",
+    "feedback": null,
+    "agent_id": null
+  }
+]

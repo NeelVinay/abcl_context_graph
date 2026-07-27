@@ -1,0 +1,247 @@
+[
+  {
+    "timestamp": "2026-07-27T05:48:10",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:16",
+    "speaker": "user",
+    "content": "I have ordered some headphones on twenty fourth",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:20",
+    "speaker": "user",
+    "content": "It's showing still it's delay on twenty nine May.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:20",
+    "speaker": "assistant",
+    "content": "जी, मै देख पा रही हूँ कि आपके Noise Headphones अभी out for delivery हैं और आपको आज शाम आठ बजे तक मिल जाएंगे। कृपया थोड़ा wait करें, यह जल्द ही आप तक पहुँच जाएगा। क्या मै आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:42",
+    "speaker": "user",
+    "content": "पहले भी एक order था इसी चीज़ से problem हुआ था वह फिर भी deliver नहीं हो और तो cancel करके दूसरी भी order करें हम लोग.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:47",
+    "speaker": "user",
+    "content": "Still showing that it will be delivered on twenty nine.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:01",
+    "speaker": "user",
+    "content": "There is no update about it and there is no contact details of agent who is delivering us Can you share some details about them? So we can take that directly?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:01",
+    "speaker": "assistant",
+    "content": "आपका order out for delivery है, और आप delivery agent की details मिंत्रा app में My Orders page पर देख सकते हैं। वहीं से आप उनसे coordinate कर",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:10",
+    "speaker": "user",
+    "content": "It's not",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:15",
+    "speaker": "user",
+    "content": "वह नहीं दिखा रहा. आप एक बार check करके बोलो मुझे वह नहीं दिखा रहा.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:15",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:21",
+    "speaker": "user",
+    "content": "Daily message आ रहा, out for deliverable के. फिर भी नहीं आ रहा order,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:24",
+    "speaker": "user",
+    "content": "It's been happening from ten days.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:24",
+    "speaker": "assistant",
+    "content": "मै समझ सकती हूँ कि दस दिनों से",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:28",
+    "speaker": "user",
+    "content": "Is issue with my account or",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:28",
+    "speaker": "assistant",
+    "content": "जी, यह आपके account की problem नहीं है। मै देख",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:32",
+    "speaker": "user",
+    "content": "everything is a first",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:32",
+    "speaker": "assistant",
+    "content": "जी, यह आपके account की problem",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:37",
+    "speaker": "user",
+    "content": "payment payment करने के बाद भी यह भी",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:39",
+    "speaker": "user",
+    "content": "यह हो रहा payment करने के बाद भी",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:39",
+    "speaker": "assistant",
+    "content": "जी, यह आपके account या payment की कोई problem नहीं है। आपका Noise Headphones का order already out for delivery है और आज शाम आठ बजे तक आप तक पहुँच जाएगा। मै समझ सकती हूँ कि दस दिनों से wait करना काफी परेशान करने वाला है, इसके लिए मै",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:52",
+    "speaker": "user",
+    "content": "आज आज delivery नहीं हुए तो?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:55",
+    "speaker": "user",
+    "content": "अभी delivery नहीं हुए तो?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:55",
+    "speaker": "assistant",
+    "content": "जी, अगर आज delivery नहीं",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:59",
+    "speaker": "user",
+    "content": "What should I do? Previous?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:59",
+    "speaker": "assistant",
+    "content": "जी, आप बिल्कुल फिक्र न करें। आपका order priority",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:04",
+    "speaker": "user",
+    "content": "Previously भी ICU हुआ था.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:04",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि पहले भी आपको ऐसी problem हुई है, इसके लिए मै आपसे माफी चाहती हूँ। आपका order priority पर है और आज शाम आठ बजे तक deliver हो जाएगा। अगर किसी वजह से आज delivery नहीं होती है, तो आप",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:17",
+    "speaker": "user",
+    "content": "इतना क्या कर रहा हूं",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:17",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि आप काफी परेशान हैं। आपका order priority पर है और आज शाम आठ बजे तक deliver हो जाएगा। आप बस थोड़ा सा wait कर लीजिए। क्या मै आपकी किसी और तरह से मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:45",
+    "speaker": "user",
+    "content": "हां, If not क्या करना order के बारे में? वह order में platform fees twenty twenty three rupees cut हो रहे हैं फिर भी वह credit नहीं हो रहे. यह second है में फिर twenty five twenty five अभी fifty rupees charge कराओ मेरे ऊपर.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:45",
+    "speaker": "assistant",
+    "content": "मै क्षमा चाहती हूँ, लेकिन payment या charges से जुड़ी समस्या के लिए मुझे आपको हमारे expert agent से connect करना होगा। क्या आप बेहतर सहायता के लिए expert agent से बात करना चाहते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:58",
+    "speaker": "user",
+    "content": "हां,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:58",
+    "speaker": "assistant",
+    "content": "ठीक है, मै आपको expert agent से connect कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:08",
+    "speaker": "assistant",
+    "content": "I will connect you with our specialized team. Transferring your call now, they will be with you immediately.",
+    "feedback": null,
+    "agent_id": null
+  }
+]

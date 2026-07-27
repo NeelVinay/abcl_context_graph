@@ -1,0 +1,128 @@
+[
+  {
+    "timestamp": "2026-07-27T05:37:09",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:12",
+    "speaker": "user",
+    "content": "कब तक?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:12",
+    "speaker": "assistant",
+    "content": "मै देख पा रही हू कि आपने पहले भी delivery delay के बारे में हमें contact किया था। मै आपसे माफी चाहती हू कि अभी तक delivery नहीं हो पाई है। मै तुरंत आपके order का latest status check कर रही हू। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:24",
+    "speaker": "assistant",
+    "content": "जी, आपका Mark View Jeans अभी shipped है और कल तक deliver हो जाएगा। मै देख पा रही हूँ कि इसके लिए complaint registered है और हम इसे resolve करने की पूरी कोशिश कर रहे हैं। आपका case priority पर है और हमें उम्मीद है कि यह जल्द से जल्द आप तक पहुँच जाएगा। क्या मै आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:49",
+    "speaker": "assistant",
+    "content": "मुझे लगा आप शांत हैं, क्या आप अभी भी वहां हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:57",
+    "speaker": "user",
+    "content": "अच्छा. हां हां बोल गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:37:57",
+    "speaker": "assistant",
+    "content": "जी, क्या आप कुछ और पूछना चाहते हैं या मैं आपकी किसी और तरह से मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:05",
+    "speaker": "user",
+    "content": "नहीं नहीं, मतलब कल तक आ जाएगा ना?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:05",
+    "speaker": "assistant",
+    "content": "जी, आपका order कल तक deliver हो जाएगा। हमें आपकी problem पहले से पता है और हम इसे resolve करने की पूरी कोशिश कर रहे",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:14",
+    "speaker": "user",
+    "content": "उसमें? M a x Max.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:14",
+    "speaker": "assistant",
+    "content": "जी, माफ़ कीजियेगा, मै समझ नहीं पाई कि आप",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:24",
+    "speaker": "user",
+    "content": "ठीक है thank you. तो देर में कितना",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:24",
+    "speaker": "assistant",
+    "content": "जी, जैसा कि मैंने बताया आपका order कल तक deliver हो जाएगा। हम इसे priority पर रख रहे हैं ताकि आपको और इंतज़ार न करना पड़े। क्या इसके अलावा मैं आपकी कोई और मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:37",
+    "speaker": "user",
+    "content": "गुस्सा नहीं नहीं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:37",
+    "speaker": "assistant",
+    "content": "जी, कोई बात नहीं। क्या आप कुछ और पूछना चाहते हैं या मैं आपकी किसी और तरह से मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:47",
+    "speaker": "user",
+    "content": "नहीं नहीं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:38:47",
+    "speaker": "assistant",
+    "content": "ठीक है। आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:39:05",
+    "speaker": "assistant",
+    "content": "Thank you for calling मिंत्रा. Have a great day.",
+    "feedback": null,
+    "agent_id": null
+  }
+]

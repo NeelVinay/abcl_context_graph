@@ -1,0 +1,226 @@
+[
+  {
+    "timestamp": "2026-07-27T05:41:05",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:10",
+    "speaker": "user",
+    "content": "Hello, नमस्ते madam.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:10",
+    "speaker": "assistant",
+    "content": "नमस्ते, आप किस order के बारे में बात करना चाहते हैं, और क्या issue है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:28",
+    "speaker": "user",
+    "content": "हां madam वह order किस order क्या है? एक order है वही deliver का जो pickup किए कभी तक आएगा order वह. Stay free.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:34",
+    "speaker": "user",
+    "content": "किसी को emergency और आप लोग ऐसा delay कर रहे हैं ना timing दे रहे हैं उस पर ना कुछ दे रहे रात तक रखेंगे क्या?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:34",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि आपको इसकी emergency है। आपका Stayfree Sanitary Napkins का order अभी shipped है और आज शाम आठ बजे तक deliver हो जाएगा। आप निश्चिंत रहें, यह आपको आज मिल जाएगा।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:46",
+    "speaker": "user",
+    "content": "आज शाम ही, आज",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:52",
+    "speaker": "user",
+    "content": "आज शाम आठ बजे तक क्यों सो ma'am मैं हूं नहीं घर पर तो आज शाम आठ बजे तक क्यों? जल्दी कीजिए.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:41:52",
+    "speaker": "assistant",
+    "content": "जी, मै आपकी परेशानी समझ सकती हूँ। आपका order रास्ते में है और आज शाम आठ बजे तक पहुँच जाएगा। delivery agent आपके location के पास पहुँचते ही आपको call करेगा,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:04",
+    "speaker": "user",
+    "content": "आठ बजे तक नहीं चाहिए madam मेरे को अभी का अभी चाहिए या तो",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:05",
+    "speaker": "assistant",
+    "content": "जी, मैं आपकी urgency समझ सकती हूँ। आपका",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:08",
+    "speaker": "user",
+    "content": "paid back खरीदा.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:09",
+    "speaker": "assistant",
+    "content": "जी, मुझे माफ़ कीजियेगा, मै आपकी बात ठीक से समझ नहीं पाई। क्या आप कृपया अपनी बात फिर से बता सकते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:18",
+    "speaker": "user",
+    "content": "नहीं ma'am मैं mask नहीं कर सकता आपको.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:18",
+    "speaker": "assistant",
+    "content": "जी, कोई बात नहीं। आपका order रास्ते में है और आज शाम आठ बजे तक पहुँच जाएगा। delivery",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:25",
+    "speaker": "user",
+    "content": "Emergency है मेरे को emergency है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:30",
+    "speaker": "user",
+    "content": "आठ बजे तक नहीं चाहिए मुझे ऐसा सोने possible अभी का अभी चाहिए madam.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:30",
+    "speaker": "assistant",
+    "content": "जी, आपकी urgency बिलकुल जायज़ है और मैं समझ सकती हूँ कि आपको इसकी तुरंत ज़रूरत है। आपका order fastest route पर है और आज शाम आठ बजे तक पहुँच जाएगा। हम अपनी तरफ से पूरी कोशिश कर रहे हैं कि यह आपको जल्द से जल्द मिल जाए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:48",
+    "speaker": "user",
+    "content": "अरे फिर. पहला मेरा ही order drop करना चाहिए madam कुछ भी हो.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:48",
+    "speaker": "assistant",
+    "content": "जी, मैं आपकी बात समझ रही हूँ। आपका",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:54",
+    "speaker": "user",
+    "content": "आठ बजे तक नहीं चाहिए मुझे आठ बजे तक आएगा तो फिर देख लेना मैं क्या होएगा फिर?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:42:54",
+    "speaker": "assistant",
+    "content": "जी, मैं आपकी परेशानी समझ सकती हूँ। आपका order priority पर है और आज शाम आठ बजे तक पहुँच जाएगा। delivery agent आपके location के पास पहुँचते ही आपको call करेगा",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:09",
+    "speaker": "user",
+    "content": "Yes ma'am हमारा priority पर मैं as soon as possible आठ बजे तक नहीं ma'am comment कीजिए अभी का अभी चाहिए मुझे. दोपहर के पहले.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:09",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि आपको दोपहर तक ही order चाहिए। आपका order fastest route पर है और हम इसे जल्द से जल्द deliver करने की पूरी कोशिश कर रहे हैं। delivery agent जैसे ही आपके area में पहुँचेंगे, वो आपको call करेंगे।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:28",
+    "speaker": "user",
+    "content": "Yes ma'am. वह contact को डाल दीजिए दिल्ली agent का अभी का भी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:28",
+    "speaker": "assistant",
+    "content": "अभी आपका order out for delivery नहीं है। जैसे ही यह out for delivery होगा, आप delivery agent की details मिंत्रा app में My Orders page पर देख सकते हैं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:44",
+    "speaker": "user",
+    "content": "क्या फ़ायदा फिर customer care go for phone ना कि आप अच्छी service नहीं दे सकते तो.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:43:44",
+    "speaker": "assistant",
+    "content": "जी, मैं आपकी निराशा समझ सकती हूँ और इसके लिए माफी चाहती हूँ। हम पूरी कोशिश कर रहे हैं कि आपका order आपको जल्द से जल्द मिल जाए। क्या आप चाहते हैं कि मैं आपको better assistance के लिए हमारे expert agent से connect कर दूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:00",
+    "speaker": "user",
+    "content": "Yes कीजिए.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:00",
+    "speaker": "assistant",
+    "content": "ठीक है, मै आपको expert agent से connect कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:10",
+    "speaker": "user",
+    "content": "एक तो लाएंगे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:44:10",
+    "speaker": "assistant",
+    "content": "I will connect you with our specialized team. Transferring your call now, they",
+    "feedback": null,
+    "agent_id": null
+  }
+]

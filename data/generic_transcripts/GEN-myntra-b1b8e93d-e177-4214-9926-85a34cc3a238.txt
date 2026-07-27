@@ -1,0 +1,240 @@
+[
+  {
+    "timestamp": "2026-07-27T05:45:44",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:46",
+    "speaker": "user",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:48",
+    "speaker": "user",
+    "content": "Hello",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:48",
+    "speaker": "assistant",
+    "content": "आप किस order के बारे में बात करना चाहते हैं, और क्या issue है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:55",
+    "speaker": "user",
+    "content": "breakfast order किया था,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:59",
+    "speaker": "user",
+    "content": "twelve का delivery दिखा है, पर अभी fake दिखा रहा है वह.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:45:59",
+    "speaker": "assistant",
+    "content": "मै समझ सकती हूँ कि delivery को लेकर आप परेशान हैं, मै आपके order का status check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:06",
+    "speaker": "assistant",
+    "content": "जी, आपके Crocs Clogs का order out for delivery है और यह अगले 24 hours में आपको मिल जाएगा। मै देख पा रही हूँ कि पहले एक delivery attempt fail हुआ था, लेकिन इस बार agent समय पर पहुँच",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:20",
+    "speaker": "user",
+    "content": "Ok. बस but कोई entry में हुआ मैं हम. उसका",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:20",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ नहीं पाई। क्या आप कृपया अपनी बात फिर से बता सकते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:37",
+    "speaker": "user",
+    "content": "Nap वाला ना मुझे call आया ना कोई message आया था कल शाम को मुझे message आया था कि आज eleven PM तक available हो गया मैंने yes बोला कुछ reply मैंने yes किया तभी भी मुझे कोई parcel नहीं आया, कुछ call नहीं आया फिर.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:37",
+    "speaker": "assistant",
+    "content": "जी, मैं देख पा रही हूँ कि पहले एक delivery attempt fail हुआ था, इसके लिए माफी चाहती हूँ। आपका order already out for delivery",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:50",
+    "speaker": "user",
+    "content": "But मेरे पास कैसे हुआ? जब मेरे पास तो form में message आया तो फिर कैसे हुआ ma'am?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:50",
+    "speaker": "assistant",
+    "content": "जी, कभी कभी technical reason या",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:54",
+    "speaker": "user",
+    "content": "मैंने attempt नहीं किया था तो फिर",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:46:54",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:00",
+    "speaker": "user",
+    "content": "मैंने ना मैं क्या बोल रहा हूं जब महीने fail हो जाता है ना चीज़?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:00",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि आप क्या कहना चाह रहे हैं। कभी-कभी technical",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:06",
+    "speaker": "user",
+    "content": "मैंने attempt नहीं किया मुझे call मुझे",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:27",
+    "speaker": "user",
+    "content": "हां मुझे कुछ call तो आया नहीं, बस मुझे availability का message आया था मैंने यह बोला उसके ऊपर मैंने यह answer किया तो मुझे कल रात तक ग्यारह बजे तक कोई message भी आया, call आया, deliver भी आया, तो उधर उतने attempt fail हुआ. At attempt कैसा fail हो गया फिर? At attempt किया ही नहीं तो fail कैसा हो गया फिर?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:27",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि बिना call आए attempt fail दिखना परेशान करने वाला है। कभी-कभी technical error या agent की गलती की वजह से ऐसा हो जाता है, इसके लिए मैं",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:42",
+    "speaker": "user",
+    "content": "हां तो technical error आना चाहिए ना. Attend fail मतलब क्या है कि हमने attempt नहीं किया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:42",
+    "speaker": "assistant",
+    "content": "जी, आपकी बात बिलकुल सही है,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:45",
+    "speaker": "user",
+    "content": "क्या होता है ma'am?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:45",
+    "speaker": "assistant",
+    "content": "जी, actually",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:47:50",
+    "speaker": "user",
+    "content": "हमने attempt नहीं किया ऐसा होता है ना attempts पर एक काम करता.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:03",
+    "speaker": "user",
+    "content": "Atem sell मतलब क्या है कि हमने attempt में किया तो हमारी delivery जो आया फिर हमने attempt नहीं किया ऐसा होता है पर मेरे पास ना delivery आया, ना ना call आया, ना message आया, तो attempt फिर कैसे हो गया फिर में?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:03",
+    "speaker": "assistant",
+    "content": "जी, आपकी बात बिलकुल सही है। जब delivery agent आपके location तक नहीं पहुँच पाता या किसी वजह से delivery नहीं कर पाता, तो system में उसे attempt fail mark कर दिया जाता है, भले ही आपको call न आया हो। इसके लिए मैं आपसे माफी चाहती हूँ। आपका order priority पर है और अगले 24 hours में आपको मिल जाएगा। क्या मैं इसके अलावा आपकी कोई और मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:28",
+    "speaker": "user",
+    "content": "थोड़ा आपके हाथ deliver करके देखो ना फिर.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:28",
+    "speaker": "assistant",
+    "content": "जी, मैं पूरी कोशिश करूँगी कि आपका order जल्द से जल्द deliver",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:32",
+    "speaker": "user",
+    "content": "आज पांच बजे तक.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:32",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ कि आपको जल्दी चाहिए, पर मैं exact time slot promise नहीं कर सकती। आपका order priority पर है और out for delivery है, इसलिए agent आपके location के पास पहुँचते ही आपको call करेगा। आप मिंत्रा app में My Orders page पर जाकर delivery agent की details भी check कर सकते हैं। क्या मैं आपकी कोई और मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:53",
+    "speaker": "user",
+    "content": "Ok, ma'am. Thank you.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:48:53",
+    "speaker": "assistant",
+    "content": "आपका",
+    "feedback": null,
+    "agent_id": null
+  }
+]

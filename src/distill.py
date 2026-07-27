@@ -27,23 +27,50 @@ from src.extract import EMBED_MODEL
 MODELS_DIR = config.CACHE_DIR.parent / "models"
 MODEL_PATH = MODELS_DIR / "intent_clf.pkl"
 
+# intfloat/multilingual-e5-* models were trained expecting a "query: " prefix on
+# every encoded text (both sides — there's no asymmetric query/passage split for a
+# classification-style use like this). Measured in scripts/_generic_embed_model_eval.py:
+# a genuinely different/more modern embedder (not just a bigger one — a same-family
+# bigger model showed no gain) gave a real cross-domain accuracy jump (+6 to +9 points)
+# on the `generic` domain. Applied ONLY there — ABCL/JustDial keep their existing
+# MiniLM model rather than force a retrain of something already working.
+def embed_prefix_for(embed_model: str) -> str:
+    return "query: " if embed_model.startswith("intfloat/multilingual-e5") else ""
+
+
+GENERIC_EMBED_MODEL = "intfloat/multilingual-e5-base"
+
 # Domain -> (gold labels path, model output path). ABCL is the default/back-compat.
 DOMAINS = {
-    "abcl": {"gold": GOLD_PATH, "model": MODEL_PATH},
+    "abcl": {"gold": GOLD_PATH, "model": MODEL_PATH, "embed_model": EMBED_MODEL},
     "justdial": {"gold": config.DATA / "gold_justdial" / "labels.jsonl",
-                 "model": MODELS_DIR / "justdial_clf.pkl"},
+                 "model": MODELS_DIR / "justdial_clf.pkl", "embed_model": EMBED_MODEL},
     "justdial_coarse": {"gold": config.DATA / "gold_justdial" / "labels_coarse.jsonl",
-                        "model": MODELS_DIR / "justdial_clf.pkl"},
+                        "model": MODELS_DIR / "justdial_clf.pkl", "embed_model": EMBED_MODEL},
+    # Cross-client broad-bucket model — trained on whatever clients have been dropped
+    # into data/generic_transcripts/ (GEN-<client>-<id> naming) and labeled via
+    # src/generic_taxonomy.py. This is the model that tests generalization.
+    "generic": {"gold": config.DATA / "gold_generic" / "labels.jsonl",
+                "model": MODELS_DIR / "generic_clf.pkl", "embed_model": GENERIC_EMBED_MODEL},
 }
 
 
 def load_dataset(gold_path=None) -> list[dict]:
     """Join gold labels with the cached turn text; add previous-turn context.
-    Only calls present in the gold set are used, so mixing ABCL + JD caches is safe."""
+    Only calls present in the gold set are used, so mixing ABCL + JD caches is safe.
+
+    Some calls were cached twice under different filenames (e.g. a full-uuid
+    "...-transcript.json" and a short-hash "<hex8>.json" from separate extraction
+    runs) with identical content — `seen_call_ids` keeps the first and skips the
+    duplicate so those calls aren't double-counted in the eval/training set."""
     gold = load_gold(gold_path)
     samples = []
+    seen_call_ids: set = set()
     for f in sorted(config.CACHE_DIR.glob("*.json")):
         c = json.loads(f.read_text())
+        if c["call_id"] in seen_call_ids:
+            continue
+        seen_call_ids.add(c["call_id"])
         turns = c["turns"]
         n = len(turns)
         for i, t in enumerate(turns):
@@ -60,14 +87,16 @@ def load_dataset(gold_path=None) -> list[dict]:
     return samples
 
 
-def _embed(texts, model):
+def _embed(texts, model, prefix=""):
+    if prefix:
+        texts = [prefix + t for t in texts]
     return model.encode(texts, normalize_embeddings=True, batch_size=64,
                         show_progress_bar=False)
 
 
-def featurize(samples, model):
-    cur = _embed([s["text"] for s in samples], model)
-    prev = _embed([s["prev_text"] or "" for s in samples], model)
+def featurize(samples, model, prefix=""):
+    cur = _embed([s["text"] for s in samples], model, prefix)
+    prev = _embed([s["prev_text"] or "" for s in samples], model, prefix)
     spk = np.array([[1.0 if s["speaker"] == "agent" else 0.0] for s in samples])
     pos = np.array([[s["pos"]] for s in samples])
     X = np.hstack([cur, prev, spk, pos])
@@ -132,13 +161,15 @@ def _call_groups(samples, indices):
     return g
 
 
-def cv_eval(gold_path=None):
+def cv_eval(gold_path=None, embed_model=None):
     from sklearn.model_selection import GroupKFold
     from sentence_transformers import SentenceTransformer
-    print("loading embedding model + dataset ...")
-    model = SentenceTransformer(EMBED_MODEL)
+    embed_model = embed_model or EMBED_MODEL
+    prefix = embed_prefix_for(embed_model)
+    print(f"loading embedding model ({embed_model}) + dataset ...")
+    model = SentenceTransformer(embed_model)
     samples = load_dataset(gold_path)
-    X, y, groups = featurize(samples, model)
+    X, y, groups = featurize(samples, model, prefix)
     print(f"{len(samples)} samples, {X.shape[1]} features, {len(set(y))} classes")
 
     alphas = [0.3, 0.5, 0.8, 1.0]
@@ -188,18 +219,20 @@ def cv_eval(gold_path=None):
     return best_a
 
 
-def train_final(gold_path=None, model_path=None):
+def train_final(gold_path=None, model_path=None, embed_model=None):
     from sentence_transformers import SentenceTransformer
     MODELS_DIR.mkdir(parents=True, exist_ok=True)
-    model = SentenceTransformer(EMBED_MODEL)
+    embed_model = embed_model or EMBED_MODEL
+    prefix = embed_prefix_for(embed_model)
+    model = SentenceTransformer(embed_model)
     samples = load_dataset(gold_path)
-    X, y, _ = featurize(samples, model)
+    X, y, _ = featurize(samples, model, prefix)
     clf = _make_clf()
     clf.fit(X, y)
     out = model_path or MODEL_PATH
     with open(out, "wb") as fh:
-        pickle.dump({"clf": clf, "embed_model": EMBED_MODEL}, fh)
-    print(f"trained on {len(samples)} samples -> saved {out}")
+        pickle.dump({"clf": clf, "embed_model": embed_model, "embed_prefix": prefix}, fh)
+    print(f"trained on {len(samples)} samples (embed_model={embed_model}) -> saved {out}")
 
 
 # ---------- inference (used by extract.py as the classification backend) ----------
@@ -208,7 +241,10 @@ _PRED: dict = {}   # keyed by model path -> {clf, model}
 
 def load_predictor(model_path=None):
     """Load (and cache) a distilled model. Defaults to the ABCL model; pass a path
-    (e.g. the JustDial model) to use a different one. Embedder is shared across models."""
+    (e.g. the JustDial or generic model) to use a different one. Embedder is shared
+    across models trained on the SAME embed_model id. embed_prefix (e.g. e5's
+    "query: ") is read back from the pickle so inference matches training exactly —
+    defaults to "" for older pickles saved before this field existed."""
     from sentence_transformers import SentenceTransformer
     path = model_path or MODEL_PATH
     key = str(path)
@@ -219,7 +255,8 @@ def load_predictor(model_path=None):
         emb = next((p["model"] for p in _PRED.values()
                     if p.get("embed_id") == d["embed_model"]), None)
         emb = emb or SentenceTransformer(d["embed_model"])
-        _PRED[key] = {"clf": d["clf"], "model": emb, "embed_id": d["embed_model"]}
+        _PRED[key] = {"clf": d["clf"], "model": emb, "embed_id": d["embed_model"],
+                      "embed_prefix": d.get("embed_prefix", "")}
     return _PRED[key]
 
 
@@ -229,10 +266,10 @@ def predict_bases(turns: list[dict], model_path=None) -> list[str]:
     if not turns:
         return []
     p = load_predictor(model_path)
-    model, clf = p["model"], p["clf"]
+    model, clf, prefix = p["model"], p["clf"], p.get("embed_prefix", "")
     n = len(turns)
-    cur = _embed([t["text"] for t in turns], model)
-    prev = _embed([turns[i - 1]["text"] if i > 0 else "" for i in range(n)], model)
+    cur = _embed([t["text"] for t in turns], model, prefix)
+    prev = _embed([turns[i - 1]["text"] if i > 0 else "" for i in range(n)], model, prefix)
     spk = np.array([[1.0 if t["speaker"] == "agent" else 0.0] for t in turns])
     pos = np.array([[i / max(n - 1, 1)] for i in range(n)])
     X = np.hstack([cur, prev, spk, pos])
@@ -244,8 +281,9 @@ if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "eval"
     dom = sys.argv[2] if len(sys.argv) > 2 else "abcl"
     d = DOMAINS[dom]
-    print(f"[domain: {dom}]  gold={d['gold'].name}  model={d['model'].name}")
+    print(f"[domain: {dom}]  gold={d['gold'].name}  model={d['model'].name}  "
+          f"embed_model={d['embed_model']}")
     if cmd == "eval":
-        cv_eval(d["gold"])
+        cv_eval(d["gold"], d["embed_model"])
     elif cmd == "train":
-        train_final(d["gold"], d["model"])
+        train_final(d["gold"], d["model"], d["embed_model"])

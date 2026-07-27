@@ -1,0 +1,317 @@
+[
+  {
+    "timestamp": "2026-07-27T05:49:20",
+    "speaker": "assistant",
+    "content": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:26",
+    "speaker": "user",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:26",
+    "speaker": "assistant",
+    "content": "आप किस order के बारे में बात करना चाहते हैं, और क्या issue है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:32",
+    "speaker": "user",
+    "content": "Hello. Red tips. Red tape shoes.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:32",
+    "speaker": "assistant",
+    "content": "जी, आप Red Tape shoes के बारे में बात कर रहे हैं। क्या आप मुझे बता सकते हैं कि आपको इनके साथ क्या issue आ रहा है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:49",
+    "speaker": "user",
+    "content": "Car से order कहां से पहुंचे? नहीं order कहां से पहुंचे? मतलब मेरे को ऐसा exact location नहीं पता चल रही कि कहां सिर्फ बता रहे हैं कि यहां तक यहां तक आया है. Exact location चाहिए मेरे को कहां तक आया?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:49",
+    "speaker": "assistant",
+    "content": "मै समझ सकती हूँ कि आप अपने order की exact location जानना चाहते हैं, मै status check कर रही हूँ।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:56",
+    "speaker": "user",
+    "content": "Hello क्या mumma?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:49:57",
+    "speaker": "assistant",
+    "content": "Continuing from where we left off, मै आपके order का status check कर रही हूँ। कृपया line पर बने रहिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:03",
+    "speaker": "assistant",
+    "content": "जी, आपके Red Tape",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:06",
+    "speaker": "user",
+    "content": "Ok ok. Ok.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:06",
+    "speaker": "assistant",
+    "content": "जी, आपके Red Tape Sneakers अभी shipped हैं और आपके nearest delivery center के लिए निकल चुके हैं। यह order आपको 7 August तक मिल जाएगा। क्या मै आपकी किसी और तरह से मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:25",
+    "speaker": "user",
+    "content": "मेरे नहीं exact location कहां है? मतलब को नागपुर में है. पुणे में है, करार में है ऐसा exact location",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:25",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि आप शहर का नाम जानना चाहते हैं। अभी आपका order nearest delivery center के लिए shipped है, इसलिए exact शहर की details अभी available नहीं हैं। लेकिन आप निश्चिंत रहें, आपका order 7 August तक आपके पास पहुँच जाएगा। क्या इसके अलावा मै आपकी कोई",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:50:56",
+    "speaker": "user",
+    "content": "Yes? अच्छा अगर जैसे जैसे जैसे just नहीं ma'am अभी जैसे दूसरा देखोगे application जैसे नीचे देखो Flipkart देखा था मतलब वहां पर address proper दिखा दिखाओ होता है कि यहां तक है यहां तक पहुंचा हुआ है बस. हर delivery address यहां पर सीधा कहां से pickup किया वह भी नहीं लिखा हुआ.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:03",
+    "speaker": "user",
+    "content": "किधर से मतलब gate tech के official website से लिया है. या किसी shop से लिया है ऐसा कुछ भी नहीं लिखा हुआ था यहां पर.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:03",
+    "speaker": "assistant",
+    "content": "जी, मै आपकी बात समझ रही हूँ। मिंत्रा पर tracking",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:09",
+    "speaker": "user",
+    "content": "अभी मैं देख रहा हूं ना.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:09",
+    "speaker": "assistant",
+    "content": "जी, आप check कर लीजिए। मिंत्रा app में tracking details अपडेट",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:15",
+    "speaker": "user",
+    "content": "सिर्फ ऐसा लिखा है item at in dispatch",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:17",
+    "speaker": "user",
+    "content": "बोलो.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:17",
+    "speaker": "assistant",
+    "content": "जी, item in dispatch का मतलब है कि आपका order warehouse से निकल चुका है और रास्ते में है। जैसे ही यह आपके शहर के delivery center पर पहुँचेगा, आपको app में और भी clear updates मिल जाएंगे। आपका order 7 August तक deliver हो जाएगा। क्या इसके",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:31",
+    "speaker": "user",
+    "content": "Ma'am अभी मैं आपको बताता हूं ना",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:47",
+    "speaker": "user",
+    "content": "twenty two July को क्या लिखा है पता है आपको? Item ship to nearest delivery center और वही message तेईस July को भी लिखा है item ship to nearest delivery center यह कहां पर है nearest? कुछ भी नहीं पता. Exact location तो बताना चाहिए ना.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:48",
+    "speaker": "user",
+    "content": "Customer को.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:48",
+    "speaker": "assistant",
+    "content": "जी, आपकी परेशानी बिलकुल सही है और मै समझ सकती",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:55",
+    "speaker": "user",
+    "content": "यहां से यहां पर delivery हो गया मतलब full हां. बोलो.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:55",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि एक ही",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:58",
+    "speaker": "user",
+    "content": "हां बोलो ना.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:51:58",
+    "speaker": "assistant",
+    "content": "जी, मै समझ सकती हूँ कि एक ही message बार-बार आने से confusion होता है। दरअसल जब order एक बड़े hub से दूसरे hub की तरफ जा रहा होता है, तो status में समय लग सकता है। आपका order 7 August तक पहुँच जाएगा, आप बस थोड़ा wait करें। क्या इसके अलावा मै आपकी कोई और help कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:18",
+    "speaker": "user",
+    "content": "Yes, Ok. नहीं नहीं नहीं. Thank you.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:18",
+    "speaker": "assistant",
+    "content": "आपका स्वागत है। आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:31",
+    "speaker": "user",
+    "content": "Ok. आपका नाम क्या है ma'am?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:31",
+    "speaker": "assistant",
+    "content": "मेरा नाम मीरा है। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:36",
+    "speaker": "user",
+    "content": "मेरा?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:36",
+    "speaker": "assistant",
+    "content": "जी, मेरा नाम मीरा है। क्या आप कुछ और",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:39",
+    "speaker": "user",
+    "content": "AI तो है ना कोई?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:39",
+    "speaker": "assistant",
+    "content": "जी, मैं एक AI assistant हूँ। क्या मैं आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:46",
+    "speaker": "user",
+    "content": "Ok. गरीबों लगा sun.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:46",
+    "speaker": "assistant",
+    "content": "जी, मुझे आपकी बात समझ नहीं आई। क्या आप कृपया दोबारा बता सकते हैं कि आप क्या कहना चाह रहे हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:56",
+    "speaker": "user",
+    "content": "नहीं ma'am thank you, thank you. आपका दिन शुभ लिया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:52:56",
+    "speaker": "assistant",
+    "content": "धन्यवाद। आपका दिन भी शुभ हो। आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:04",
+    "speaker": "user",
+    "content": "Ok ma'am मैं back भर दूंगा.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:04",
+    "speaker": "assistant",
+    "content": "बहुत शुक्रिया। आपका दिन शुभ हो।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-27T05:53:10",
+    "speaker": "assistant",
+    "content": "Thank you for calling मिंत्रा. Have a great day.",
+    "feedback": null,
+    "agent_id": null
+  }
+]
