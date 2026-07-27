@@ -94,6 +94,10 @@ def run(dsl_path: str, client_key: str, budget: int | None, apply_to_disk: bool,
     accepted_edits = []
     if accept_ids:
         queue_now = dsl_mine.build_queue(d, calls, client_key)
+        accepted_gaps = []   # collected, then batched per-intent below — see
+                             # dsl_fix.make_add_anchors_edits_batch: applying more
+                             # than one accepted anchor for the SAME intent as
+                             # separate edits silently drops all but the last one
         for idx in accept_ids:
             if not (1 <= idx <= len(queue_now)):
                 print(f"  ! [{idx}] out of range (queue currently has {len(queue_now)} items), skipped")
@@ -101,13 +105,12 @@ def run(dsl_path: str, client_key: str, budget: int | None, apply_to_disk: bool,
             item = queue_now[idx - 1]
             dsl_mine.save_decision(client_key, item.decision_key, accepted=True)
             if isinstance(item, dsl_mine.AnchorGap):
-                e = dsl_fix.make_add_anchors_edit(d, item)
-                if e:
-                    accepted_edits.append(e)
+                accepted_gaps.append(item)
             else:
                 print(f"  ! [{idx}] uncovered cluster accepted for tracking (won't be "
                       f"re-proposed), but produces no edit — write a name + say() answer "
                       f"by hand, then add it to the prompt directly")
+        accepted_edits = dsl_fix.make_add_anchors_edits_batch(d, accepted_gaps)
         if accepted_edits:
             print(f"\nACCEPTED THIS RUN ({len(accepted_edits)})")
             for e in accepted_edits:

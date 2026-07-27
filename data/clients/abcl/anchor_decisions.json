@@ -1,0 +1,19 @@
+{
+  "accepted": [
+    "anchor_gap:affirm:बोलिए",
+    "uncovered:57d7d9dc61",
+    "uncovered:b414de9bc6",
+    "uncovered:916e955d10",
+    "uncovered:41d954cc81",
+    "anchor_gap:query_fee:कितना",
+    "uncovered:568b299183",
+    "anchor_gap:query_fee:fees",
+    "anchor_gap:query_fee:कितने",
+    "anchor_gap:address_error:address",
+    "anchor_gap:address_error:problem",
+    "anchor_gap:address_error:space",
+    "anchor_gap:affirm:ज़रूर",
+    "anchor_gap:affirm:चलिए"
+  ],
+  "rejected": []
+}

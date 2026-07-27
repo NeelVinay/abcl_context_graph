@@ -88,7 +88,7 @@ agent priya {
       affirm {
         | Positive answer to the exact pending question: agrees to start/proceed, or confirms the asked step is done/filled/opened/verified.
         | Does NOT fire at the greeting to confirm identity -> identity_confirm.
-        | Anchors: "हाँ", "जी", "ok", "ठीक है", "हो गया", "हो गया verify", "भर दिया", "खुल गया", "go ahead", "done", "bolo", "karo", "arre karo", "theek hai bhai", "acha", "correct", "sun raha hoon", "kar do", "haan haan", "batao", "ji bataiye", "kar lijiye"
+        | Anchors: "हाँ", "जी", "ok", "ठीक है", "हो गया", "हो गया verify", "भर दिया", "खुल गया", "go ahead", "done", "bolo", "karo", "arre karo", "theek hai bhai", "acha", "correct", "sun raha hoon", "kar do", "haan haan", "batao", "ji bataiye", "kar lijiye", "बोलिए", "ज़रूर", "चलिए"
       }
       disagree {
         | Declines / not now / not interested / asks not to be called again (the persuade states decide first vs final refusal).
@@ -147,7 +147,7 @@ agent priya {
       address_error {
         | Address field is erroring — pincode/building/proceed-button validation failure. NOT a general app crash or page-load failure.
         | Does NOT fire for a general app crash/blank screen/loading fault -> tech_issue.
-        | Anchors: "enter valid pin code", "invalid pincode", "pincode error", "proceed nahi ho raha", "laal button aa raha hai", "building name error", "city nahi aa rahi", "validation error"
+        | Anchors: "enter valid pin code", "invalid pincode", "pincode error", "proceed nahi ho raha", "laal button aa raha hai", "building name error", "city nahi aa rahi", "validation error", "address", "problem", "space"
       }
       callback_request {
         | Wants a callback / reschedule.
@@ -225,7 +225,7 @@ agent priya {
       }
       query_fee {
         | Fires when the customer asks about interest rate, EMI, processing fee, or overall loan cost at any point in the call.
-        | Anchors: "interest rate kya hai", "kitna byaj lagega", "EMI kitni hogi", "processing fee hai kya", "rate kya hai", "kitna percent hai", "interest bahut hai kya", "charges bahut hain"
+        | Anchors: "interest rate kya hai", "kitna byaj lagega", "EMI kitni hogi", "processing fee hai kya", "rate kya hai", "kitna percent hai", "interest bahut hai kya", "charges bahut hain", "कितना", "fees", "कितने"
       }
     }
 

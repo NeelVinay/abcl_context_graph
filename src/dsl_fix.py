@@ -54,7 +54,47 @@ def _find_anchor_line(d: dsl_parse.DSL, intent_name: str) -> int | None:
 
 
 def make_add_anchors_edit(d: dsl_parse.DSL, gap: "dsl_mine.AnchorGap") -> Edit | None:
-    line_idx = _find_anchor_line(d, gap.intent)
+    """Single-gap version — safe ONLY when at most one accepted gap targets a given
+    intent in the same run. See make_add_anchors_edits_batch for why: two edits
+    computed independently both read the SAME original Anchors line and each
+    write a full replacement line, so applying both means the second silently
+    overwrites the first (apply_edits does blind line replacement, and multiple
+    edits sharing one anchor_line is exactly the case it doesn't merge). Kept for
+    single-accept callers and tests; run_improve.py must use the batch version
+    whenever more than one gap could land on the same intent in one run — which
+    is the normal case for "accept several at once"."""
+    return _add_anchors_edit_for(d, gap.intent, [gap.word],
+                                 [f'"{gap.word}" ({gap.call_count} calls, {gap.lift:.2f}x)'],
+                                 gap.examples, gap.decision_key)
+
+
+def make_add_anchors_edits_batch(d: dsl_parse.DSL, gaps: list) -> list:
+    """Group accepted AnchorGap items by intent and emit ONE edit per intent,
+    adding all their words together. This is the correct way to apply more than
+    one accepted anchor gap in a single run — see make_add_anchors_edit's
+    docstring for the bug this avoids (verified: it was real, not hypothetical —
+    accepting 3 words each for affirm/query_fee/address_error in one run silently
+    kept only the last word per intent until this existed)."""
+    from collections import defaultdict
+    by_intent = defaultdict(list)
+    for g in gaps:
+        by_intent[g.intent].append(g)
+
+    out = []
+    for intent, group in by_intent.items():
+        words = [g.word for g in group]
+        rationale_bits = [f'"{g.word}" ({g.call_count} calls, {g.lift:.2f}x)' for g in group]
+        evidence = [ex for g in group for ex in g.examples]
+        ref = "+".join(g.decision_key for g in group)
+        e = _add_anchors_edit_for(d, intent, words, rationale_bits, evidence, ref)
+        if e:
+            out.append(e)
+    return out
+
+
+def _add_anchors_edit_for(d: dsl_parse.DSL, intent: str, words: list,
+                          rationale_bits: list, evidence: list, ref: str) -> Edit | None:
+    line_idx = _find_anchor_line(d, intent)
     if line_idx is None:
         return None
     original = d.lines[line_idx]
@@ -62,18 +102,18 @@ def make_add_anchors_edit(d: dsl_parse.DSL, gap: "dsl_mine.AnchorGap") -> Edit |
     if not m:
         return None
     existing = dsl_parse.ANCHOR_ITEM_RE.findall(m.group(1))
-    if gap.word in existing:
-        return None   # already there — idempotent no-op
+    new_words = [w for w in words if w not in existing]
+    if not new_words:
+        return None   # all already there — idempotent no-op
     indent = original[:len(original) - len(original.lstrip())]
-    new_list = existing + [gap.word]
+    new_list = existing + new_words
     quoted = ", ".join(f'"{a}"' for a in new_list)
     new_line = f"{indent}| Anchors: {quoted}"
     return Edit(
-        kind="ADD_ANCHORS", ref=gap.decision_key, anchor_line=line_idx,
+        kind="ADD_ANCHORS", ref=ref, anchor_line=line_idx,
         mode="replace_line", new_text=new_line,
-        rationale=f'"{gap.word}" appears in {gap.call_count} real calls for '
-                  f'{gap.intent} (lift {gap.lift:.2f}x, {gap.confidence} confidence)',
-        evidence=gap.examples,
+        rationale=f"{intent}: " + ", ".join(rationale_bits),
+        evidence=evidence,
     )
 
 
@@ -163,8 +203,30 @@ def make_add_global_route_edit(d: dsl_parse.DSL, intent_name: str) -> Edit | Non
 
 
 # --------------------------------------------------------------------- application --
+class ConflictingEditsError(Exception):
+    """Two or more edits target the same replace_line — blind line replacement
+    would silently keep only one and drop the rest. Found this exact way: three
+    accepted anchor-gap edits for the same intent each independently overwrote
+    the previous one, and every earlier test happened to accept only one item
+    per intent, so nothing caught it until a real multi-accept run. Callers that
+    might legitimately produce more than one edit for one intent (e.g. accepting
+    several anchor gaps at once) must pre-merge them — see
+    dsl_fix.make_add_anchors_edits_batch — rather than rely on apply_edits to
+    reconcile conflicting edits, which it deliberately refuses to do."""
+
+
 def apply_edits(text: str, edits: list) -> str:
     """Bottom-up (descending anchor_line) so earlier line numbers stay valid."""
+    replace_lines = [e.anchor_line for e in edits if e.mode == "replace_line"]
+    dupes = {ln for ln in replace_lines if replace_lines.count(ln) > 1}
+    if dupes:
+        conflicting = [e.ref for e in edits if e.mode == "replace_line" and e.anchor_line in dupes]
+        raise ConflictingEditsError(
+            f"{len(dupes)} line(s) targeted by more than one edit — refusing to "
+            f"silently drop any of them: {conflicting}. Merge same-target edits "
+            f"before calling apply_edits (e.g. dsl_fix.make_add_anchors_edits_batch "
+            f"for anchor additions).")
+
     lines = text.splitlines()
     for e in sorted(edits, key=lambda e: -e.anchor_line):
         if e.mode == "replace_line":
