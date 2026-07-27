@@ -15,20 +15,17 @@ What it extracts:
 
 Not a validator: parse() reports what IS there. src/dsl_audit.py decides what's wrong.
 
-KNOWN LIMITATION — transitions are collected FLAT, without nesting depth. A route
-written inside a nested block, e.g.
-
-    on intent("default") {
-        say("...");
-        on intent("affirm") -> sms_send();     <- nested one level down
-    }
-
-is recorded on the enclosing state as if it were top-level. This produces real
-false positives: the `default_equals_affirm` check reports loan_intro() even after
-that state was fixed precisely by nesting its routes. Any consumer acting on
-transition data automatically must treat it as approximate; it is a strong reason
-the patch step proposes diffs for review rather than applying them blind.
-Fixing this properly means tracking brace depth per route line.
+Routes are depth-aware: `State.intent_routes` holds only routes at the state's own
+top level (depth 1 — directly inside the state's braces); anything nested one level
+deeper (inside a `step {}` or an inline `on intent("x") { ... }` block) goes into
+`State.nested_routes` instead. This is what lets `default_equals_affirm` (see
+dsl_audit.py) tell apart a real defect — `default` and `affirm` routed to the same
+target at the SAME level — from a state that was already fixed by nesting a
+clarifier, where the top-level `default` has no target at all (it opens a block)
+and the nested `default` inside that block is a different, later decision.
+Referential-integrity checks (does this route point at a real state/intent) should
+still scan `intent_routes + nested_routes` combined — nesting doesn't make a
+dangling reference valid.
 """
 from __future__ import annotations
 
@@ -60,8 +57,12 @@ class State:
     is_objection: bool = False
     says: list = field(default_factory=list)
     step_count: int = 0
-    # (intent_name | "default", target_state_or_None) — None target = inline block
+    # (intent_name | "default", target_state_or_None) — None target = inline block.
+    # TOP-LEVEL ONLY (depth 1, directly inside the state) — see module docstring.
     intent_routes: list = field(default_factory=list)
+    # same shape as intent_routes, but for anything nested one level deeper
+    # (inside step{} or an inline on-intent block)
+    nested_routes: list = field(default_factory=list)
     gotos: list = field(default_factory=list)     # unconditional -> target()
     tool_calls: list = field(default_factory=list)
     line_start: int = 0
@@ -186,15 +187,31 @@ def _parse_states(lines: list, start: int, end: int) -> tuple:
         st.says = SAY_RE.findall(body)
         st.step_count = len(re.findall(r"^\s*step\s*\{", body, flags=re.M))
         st.tool_calls = TOOL_CALL_RE.findall(body)
-        for line in body.splitlines()[1:]:
-            om = ON_INTENT_RE.search(line)
-            if om:
-                st.intent_routes.append((om.group(1), om.group(2)))
-                continue
-            # unconditional goto not attached to an on-intent line
-            if "on intent" not in line:
-                for tgt in GOTO_RE.findall(line):
-                    st.gotos.append(tgt)
+
+        # Depth-aware route collection. `depth` counts braces seen so far in the
+        # state; a line's OWN route pattern is attributed to the depth in effect
+        # BEFORE that line's braces are counted, so the line "on intent("default") {"
+        # itself is depth 1 (it belongs to the state's top level — it's the one
+        # that OPENS depth 2), while everything inside that block is depth 2.
+        depth = 0
+        for line in body.splitlines():
+            line_depth = depth
+            if line_depth == 1:
+                om = ON_INTENT_RE.search(line)
+                if om:
+                    st.intent_routes.append((om.group(1), om.group(2)))
+                elif "on intent" not in line:
+                    for tgt in GOTO_RE.findall(line):
+                        st.gotos.append(tgt)
+            elif line_depth > 1:
+                om = ON_INTENT_RE.search(line)
+                if om:
+                    st.nested_routes.append((om.group(1), om.group(2)))
+                elif "on intent" not in line:
+                    for tgt in GOTO_RE.findall(line):
+                        st.gotos.append(tgt)   # nested gotos still tracked flat (unchanged behaviour)
+            code = line.split("//", 1)[0]
+            depth += code.count("{") - code.count("}")
         states[name] = st
         i = close + 1
     return states, global_routes

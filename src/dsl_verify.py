@@ -22,7 +22,6 @@ allows a specific line to change.
 """
 from __future__ import annotations
 
-import re
 from dataclasses import dataclass, field
 
 from src import dsl_parse
@@ -91,27 +90,37 @@ def verify(old_text: str, new_text: str, token_budget: int | None = None,
     for s in added[:6]:
         res.advisory.append(f"  + {s[:80]}")
 
-    # structural integrity of the NEW text
+    # structural integrity of the NEW text, and of the OLD text (to know which
+    # intents are genuinely new). Both parsed properly via dsl_parse — this used
+    # to call a function (`parse_text_fallback`) that never existed, so d_old was
+    # always None and unused, and separately computed "old intents" with a
+    # confused expression (`SAY_RE.sub(...) and {...}`) that happened to work by
+    # accident but let say() BODIES leak into the old-intent name set, which could
+    # make the intent_wired check below miss a genuinely unwired new intent.
     import tempfile
     import pathlib
-    with tempfile.NamedTemporaryFile("w", suffix=".raven", delete=False) as fh:
-        fh.write(new_text)
-        tmp = pathlib.Path(fh.name)
-    try:
-        d_new = dsl_parse.parse(tmp)
-        d_old = dsl_parse.parse_text_fallback(old_text) if hasattr(
-            dsl_parse, "parse_text_fallback") else None
-    finally:
-        tmp.unlink(missing_ok=True)
+
+    def _parse_text(text):
+        with tempfile.NamedTemporaryFile("w", suffix=".raven", delete=False) as fh:
+            fh.write(text)
+            tmp = pathlib.Path(fh.name)
+        try:
+            return dsl_parse.parse(tmp)
+        finally:
+            tmp.unlink(missing_ok=True)
+
+    d_new = _parse_text(new_text)
+    d_old = _parse_text(old_text)
 
     states = set(d_new.states)
     intents = set(d_new.intents)
     dangling = []
     for name, st in d_new.states.items():
-        for tgt in [t for _, t in st.intent_routes if t] + st.gotos:
+        all_routes = st.intent_routes + st.nested_routes
+        for tgt in [t for _, t in all_routes if t] + st.gotos:
             if tgt not in states:
                 dangling.append(f"{name}() -> {tgt}()")
-        for i, _ in st.intent_routes:
+        for i, _ in all_routes:
             if i != "default" and i not in intents:
                 dangling.append(f'{name}() on intent("{i}")')
     for i, tgt in d_new.global_routes.items():
@@ -125,12 +134,13 @@ def verify(old_text: str, new_text: str, token_budget: int | None = None,
             + "; ".join(dangling[:4]))
 
     # any NEW intent must be fully wired: defined + routed + handler exists
-    old_intents = set(SAY_RE.sub("", old_text) and
-                      {m for m in re.findall(r"^\s*(\w+)\s*\{", old_text, re.M)})
+    old_intents = set(d_old.intents)
     new_intent_names = intents - old_intents
     for i in sorted(new_intent_names):
-        if i not in d_new.global_routes and not any(
-                i == ri for st in d_new.states.values() for ri, _ in st.intent_routes):
+        routed = i in d_new.global_routes or any(
+            i == ri for st in d_new.states.values()
+            for ri, _ in st.intent_routes + st.nested_routes)
+        if not routed:
             res.blocking.append(
                 f"intent_wired: new intent '{i}' is defined but never routed")
 

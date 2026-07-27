@@ -1,0 +1,374 @@
+"""Find real customer phrases the DSL prompt currently handles poorly, and rank
+them for human review. This is the "identify commonly-said words and phrases"
+half of the automated improvement loop — src/dsl_fix.py turns an ACCEPTED item
+into an actual edit; nothing here writes to the prompt.
+
+Two genuinely different mechanisms, kept separate because they were validated
+separately and have different reliability:
+
+  mine_anchor_gaps()        Corpus-frequency words missing from an EXISTING
+                             intent's anchors. Reuses extract.build_keyword_vocab
+                             (the same >=2-call document-frequency PII guard used
+                             everywhere else in this pipeline) plus a cross-intent
+                             lift filter so a domain-generic word ("number",
+                             "loan") doesn't qualify just because it's frequent.
+                             Only runs against dsl_audit.INTENT_ALIASES entries —
+                             i.e. only intents already verified (by reading real
+                             samples, not assumed) to correspond to one real
+                             observed label. High confidence; auto-eligible.
+
+  mine_uncovered_clusters()  Real customer turns that don't confidently match ANY
+                             existing intent — margin-gated (best score AND the
+                             gap to the runner-up), then clustered. This is what
+                             a genuinely new intent looks like in the data.
+                             Always propose-only: naming the intent and writing
+                             its answer needs a person.
+
+Both were measured, not assumed. See src/dsl_audit.py's module docstring and the
+plan for the calibration evidence (argmax alone is 6/12 on real data; the margin
+gate is what makes it usable at high precision / lower recall).
+"""
+from __future__ import annotations
+
+import hashlib
+import json
+import re
+from dataclasses import dataclass, field
+from pathlib import Path
+
+import config
+from src import dsl_audit, dsl_parse
+
+_WORD_RE = re.compile(r"[a-zA-Zऀ-ॣ]+")
+MARGIN_DELTA = 0.10     # best-vs-runner-up gap required to trust an assignment
+MATCH_FLOOR = 0.45      # below this, even an unopposed match isn't trusted
+
+# A candidate word's rate INSIDE the target intent's calls vs. the overall corpus.
+# Deliberately a light sanity floor (>=1.0, "at least as common in-bucket as
+# everywhere else"), not a strict discriminativeness bar. Measured directly on
+# real data: for a genuinely rare/specialized intent (query_fee), a 2.0x+ bar is
+# right and achievable. For a DOMINANT, pervasive intent like `affirm` it is not —
+# words like "बोलिए"/"बोलो" are affirm's natural vocabulary AND are also common
+# throughout the whole corpus, because affirm-type language (yes/go ahead/ok) is
+# woven through nearly every call regardless of topic. Tested directly: "बोलो"
+# scored 0.83x (25/168 calls in-bucket vs 41/229 overall) — BELOW baseline, a
+# real reason to distrust it as an affirm-specific signal despite being frequent
+# in absolute terms. A 2.0x requirement would silently return zero candidates for
+# every dominant intent, not because there's nothing to find, but because the
+# bar doesn't fit that shape of intent. 1.1 filters genuinely anti-correlated
+# words while still surfacing real candidates for both intent shapes.
+MIN_LIFT = 1.1
+
+# Spelled-out numbers, English and Hinglish, both scripts. The digit-run filter in
+# _shape_ok only blocks numeric digits; a word like "four" or "चार" passes it
+# cleanly and is a near-miss for anchor gaps specifically — caught on a real run
+# ("Four? जी बोलिए." got flagged as a repeat_request anchor candidate purely from
+# co-occurring near "जी बोलिए" a couple of times). Spelled numbers are almost
+# always a misheard digit (phone number, OTP, amount), never genuine intent
+# signal, so they're excluded from anchor-gap candidates specifically (not from
+# uncovered-cluster mining, which is human-reviewed anyway).
+_NUMBER_WORDS = {
+    "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
+    "zero", "hundred", "thousand", "lakh", "crore",
+    "ek", "do", "teen", "char", "paanch", "panch", "chhe", "che", "saat", "aath",
+    "nau", "das", "sau", "hazar", "hazaar",
+    "एक", "दो", "तीन", "चार", "पांच", "छह", "सात", "आठ", "नौ", "दस", "सौ", "हज़ार", "हजार",
+}
+
+
+@dataclass
+class AnchorGap:
+    intent: str
+    word: str
+    call_count: int
+    lift: float
+    examples: list = field(default_factory=list)   # verbatim turn texts
+
+    @property
+    def decision_key(self) -> str:
+        return f"anchor_gap:{self.intent}:{self.word.lower()}"
+
+    @property
+    def volume(self) -> int:
+        return self.call_count
+
+    @property
+    def confidence(self) -> str:
+        # >=2x: genuinely more common in this intent's calls than elsewhere —
+        # true for rare/specialized intents (query_fee, address_error).
+        # <2x: still passes the light sanity floor (not anti-correlated) but is
+        # common for the WRONG reason on a dominant/pervasive intent (affirm) —
+        # still worth surfacing, but the human should weigh the lift number.
+        return "high" if self.lift >= 2.0 else "low"
+
+
+@dataclass
+class UncoveredCluster:
+    cluster_id: int
+    size: int
+    call_count: int
+    medoid_text: str
+    samples: list = field(default_factory=list)     # (call_id, text)
+    best_guess: str = ""
+    best_score: float = 0.0
+    runner_up: str = ""
+    runner_score: float = 0.0
+
+    @property
+    def decision_key(self) -> str:
+        h = hashlib.sha1(self.medoid_text.encode("utf-8")).hexdigest()[:10]
+        return f"uncovered:{h}"
+
+    @property
+    def volume(self) -> int:
+        return self.size
+
+
+# ---------------------------------------------------------------- anchor gaps --
+def _turns_by_call(calls: list, predicate) -> dict:
+    """{call_id: joined text} for customer turns matching `predicate(turn)`."""
+    out: dict = {}
+    for c in calls:
+        matched = [t["text"] for t in c["turns"]
+                  if t.get("speaker") == "customer" and predicate(t)]
+        if matched:
+            out[c["call_id"]] = " ".join(matched)
+    return out
+
+
+def mine_anchor_gaps(d: dsl_parse.DSL, calls: list, client_key: str,
+                     max_per_intent: int = 3) -> list:
+    from src.extract import build_keyword_vocab
+
+    aliases = dsl_audit.INTENT_ALIASES.get(client_key, {})
+    if not aliases or not calls:
+        return []
+
+    all_call_texts = _turns_by_call(calls, lambda t: True)
+    n_total_calls = len(all_call_texts) or 1
+    baseline_vocab = build_keyword_vocab(all_call_texts.values(), min_calls=2)
+
+    out = []
+    for intent, observed_names in aliases.items():
+        if intent not in d.intents:
+            continue
+        existing_anchors = [a.lower() for a in d.intents[intent].anchors]
+
+        target_texts = _turns_by_call(
+            calls, lambda t, names=set(observed_names): t.get("intent") in names)
+        if not target_texts:
+            continue
+        n_target = len(target_texts)
+        target_vocab = build_keyword_vocab(target_texts.values(), min_calls=2)
+
+        candidates = []
+        for word, n_calls in target_vocab.items():
+            if word in _NUMBER_WORDS:
+                continue
+            # already covered — an existing anchor contains this word (either direction)
+            if any(word in a or a in word for a in existing_anchors):
+                continue
+            base_rate = baseline_vocab.get(word, 1) / n_total_calls
+            target_rate = n_calls / n_target
+            lift = target_rate / max(base_rate, 1e-6)
+            if lift < MIN_LIFT:
+                continue
+            examples = []
+            for cid, text in target_texts.items():
+                if word in text.lower() and len(examples) < 3:
+                    examples.append(text[:100])
+            candidates.append(AnchorGap(intent, word, n_calls, lift, examples))
+
+        candidates.sort(key=lambda g: -g.call_count)
+        out.extend(candidates[:max_per_intent])
+    return out
+
+
+# ----------------------------------------------------------- uncovered clusters --
+def _shape_ok(text: str) -> bool:
+    from src.stopwords import STOPWORDS
+    from src.extract import _FILLERS
+    toks = _WORD_RE.findall(text)
+    if not (2 <= len(toks) <= 12):
+        return False
+    if re.search(r"\d{4,}", text):
+        return False
+    lo = [t.lower() for t in toks]
+    if lo.count(max(set(lo), key=lo.count)) >= 3:
+        return False   # repetition garble
+    stop_frac = sum(1 for t in lo if t in STOPWORDS or t in _FILLERS) / len(lo)
+    if stop_frac > 0.6:
+        return False
+    return True
+
+
+def _all_intent_anchor_embeddings(d: dsl_parse.DSL, model):
+    import numpy as np
+    names, embs = [], []
+    for name, it in d.intents.items():
+        if it.anchors:
+            e = model.encode(it.anchors, normalize_embeddings=True, show_progress_bar=False)
+            names.append(name)
+            embs.append(np.asarray(e))
+    return names, embs
+
+
+def mine_uncovered_clusters(d: dsl_parse.DSL, calls: list,
+                            margin: float = MARGIN_DELTA, floor: float = MATCH_FLOOR,
+                            min_cluster_size: int = 5, max_clusters: int = 5) -> list:
+    import numpy as np
+    from sentence_transformers import SentenceTransformer
+    from src.extract import EMBED_MODEL
+    from src.subcluster import discover_subclusters
+
+    if not calls:
+        return []
+
+    turns = []   # (call_id, index, text)
+    for c in calls:
+        for t in c["turns"]:
+            if t.get("speaker") == "customer" and _shape_ok(t.get("text", "")):
+                turns.append((c["call_id"], t["index"], t["text"]))
+    if len(turns) < min_cluster_size * 2:
+        return []
+
+    model = SentenceTransformer(EMBED_MODEL)
+    names, anchor_embs = _all_intent_anchor_embeddings(d, model)
+    texts = [t[2] for t in turns]
+    T = np.asarray(model.encode(texts, normalize_embeddings=True, show_progress_bar=False))
+
+    uncovered_idx = []
+    for i in range(len(turns)):
+        scores = sorted(
+            ((float(np.max(T[i] @ e.T)), n) for n, e in zip(names, anchor_embs)),
+            reverse=True)
+        if not scores:
+            uncovered_idx.append(i)
+            continue
+        best_score, best_name = scores[0]
+        runner_score, runner_name = scores[1] if len(scores) > 1 else (0.0, "")
+        if best_score < floor or (best_score - runner_score) < margin:
+            uncovered_idx.append(i)
+
+    if len(uncovered_idx) < min_cluster_size * 2:
+        return []
+
+    u_texts = [texts[i] for i in uncovered_idx]
+    u_emb = T[uncovered_idx]
+    cluster_ids = discover_subclusters(u_texts, model, min_cluster_size=min_cluster_size)
+
+    from collections import defaultdict
+    groups = defaultdict(list)
+    for pos, cid in enumerate(cluster_ids):
+        if cid == -1:
+            continue
+        groups[cid].append(pos)
+
+    out = []
+    for cid, positions in groups.items():
+        call_ids = {turns[uncovered_idx[p]][0] for p in positions}
+        if len(call_ids) < 2:      # PII / robustness guard: real recurring pattern, not one call
+            continue
+        sub_emb = u_emb[positions]
+        centroid = sub_emb.mean(axis=0)
+        sims_to_centroid = sub_emb @ centroid
+        medoid_pos = positions[int(np.argmax(sims_to_centroid))]
+        medoid_text = texts[uncovered_idx[medoid_pos]]
+        samples = [(turns[uncovered_idx[p]][0], texts[uncovered_idx[p]]) for p in positions[:5]]
+
+        best_score, best_name, runner_score, runner_name = 0.0, "", 0.0, ""
+        if names:
+            scores = sorted(
+                ((float(np.max(centroid @ e.T)), n) for n, e in zip(names, anchor_embs)),
+                reverse=True)
+            (best_score, best_name) = scores[0]
+            if len(scores) > 1:
+                (runner_score, runner_name) = scores[1]
+
+        out.append(UncoveredCluster(
+            cluster_id=cid, size=len(positions), call_count=len(call_ids),
+            medoid_text=medoid_text, samples=samples,
+            best_guess=best_name, best_score=best_score,
+            runner_up=runner_name, runner_score=runner_score,
+        ))
+    out.sort(key=lambda c: -c.size)
+    return out[:max_clusters]
+
+
+# --------------------------------------------------------- decision persistence --
+def _decisions_path(client_key: str) -> Path:
+    return config.CLIENTS_DIR / client_key / "anchor_decisions.json"
+
+
+def load_decisions(client_key: str) -> dict:
+    p = _decisions_path(client_key)
+    if not p.exists():
+        return {"accepted": [], "rejected": []}
+    return json.loads(p.read_text())
+
+
+def save_decision(client_key: str, decision_key: str, accepted: bool) -> None:
+    d = load_decisions(client_key)
+    bucket = "accepted" if accepted else "rejected"
+    other = "rejected" if accepted else "accepted"
+    if decision_key not in d[bucket]:
+        d[bucket].append(decision_key)
+    if decision_key in d[other]:
+        d[other].remove(decision_key)
+    p = _decisions_path(client_key)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(d, indent=2, ensure_ascii=False))
+
+
+# --------------------------------------------------------------------- queue --
+def build_queue(d: dsl_parse.DSL, calls: list, client_key: str) -> list:
+    """Combined, ranked, decision-filtered queue. Each item is either an
+    AnchorGap (auto-eligible) or an UncoveredCluster (always propose-only),
+    sorted by real volume — the phrases customers say most, that the prompt
+    currently handles worst, float to the top."""
+    decisions = load_decisions(client_key)
+    seen = set(decisions["accepted"]) | set(decisions["rejected"])
+
+    items = mine_anchor_gaps(d, calls, client_key) + mine_uncovered_clusters(d, calls)
+    items = [it for it in items if it.decision_key not in seen]
+    items.sort(key=lambda it: -it.volume)
+    return items
+
+
+def render_queue(items: list) -> str:
+    if not items:
+        return "No new candidates — everything found so far has already been reviewed."
+    out = []
+    for n, it in enumerate(items, start=1):
+        if isinstance(it, AnchorGap):
+            tag = "" if it.confidence == "high" else "  [common corpus-wide too — weigh the lift before accepting]"
+            out.append(f"[{n}]  anchor gap ({it.confidence} confidence) · intent \"{it.intent}\" · "
+                       f"\"{it.word}\" appears in {it.call_count} calls "
+                       f"(lift {it.lift:.2f}x vs. overall corpus){tag}")
+            for ex in it.examples:
+                out.append(f"       · {ex}")
+            out.append(f"     auto-eligible on accept -> adds \"{it.word}\" to {it.intent}'s anchors")
+        else:
+            out.append(f"[{n}]  uncovered cluster · {it.size} turns · {it.call_count} calls")
+            for cid, text in it.samples:
+                out.append(f"       · {text[:80]}")
+            if it.best_guess:
+                out.append(f"     best guess: {it.best_guess} ({it.best_score:.2f})  "
+                           f"runner-up: {it.runner_up} ({it.runner_score:.2f})  "
+                           f"margin: {it.best_score - it.runner_score:.2f}")
+            out.append("     review only -> needs a human to name the intent and write the answer")
+        out.append("")
+    return "\n".join(out)
+
+
+if __name__ == "__main__":
+    import sys
+    import warnings
+    warnings.filterwarnings("ignore")
+    dsl_path = sys.argv[1]
+    client_key = sys.argv[2] if len(sys.argv) > 2 else "abcl"
+    d = dsl_parse.parse(dsl_path)
+    calls = dsl_audit._client_calls(client_key)
+    items = build_queue(d, calls, client_key)
+    print(f"{len(items)} candidate(s) for review\n")
+    print(render_queue(items))

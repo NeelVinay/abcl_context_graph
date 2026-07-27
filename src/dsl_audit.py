@@ -34,16 +34,38 @@ ORDINALS = {"first": 1, "second": 2, "third": 3, "fourth": 4, "fifth": 5}
 # guessed: a wrong alias silently produces a wrong frequency, and a wrong frequency is
 # what drives (or suppresses) an escalation_burn finding. Anything absent here is
 # reported as "frequency unknown" instead of being approximated.
+#
+# Each entry below was verified by reading a real sample of the observed intent's
+# turns, not assumed from the names looking similar. Five candidate aliases were
+# tested and REJECTED — kept here, not silently dropped, so the same mistake isn't
+# re-made on a future edit:
+#   sms_not_received -> customer_report_sms_received   SYSTEMATICALLY INVERTED.
+#       Sampled turns ("अभी आ गया", "message आ गया madam") mean the SMS ARRIVED —
+#       the opposite of what sms_not_received means. Using this would report
+#       sms_not_received's frequency as high specifically WHEN it's rare.
+#   already_applied -> customer_report_done   WRONG CONCEPT, not just imprecise.
+#       538 occurrences; sampled turns ("हो गया", "click किया मैं", "लिख दिया")
+#       mean "I completed this form FIELD", not "I already completed this entire
+#       application before this call." Using it would report already_applied at
+#       roughly a 15x inflated, meaningless frequency.
+#   security_concern -> customer_express_distrust   WRONG CONCEPT for a meaningful
+#       share of the bucket. Read all 42 sampled turns: a real chunk ("आप AI हो या
+#       real person हो", "क्या आप एक AI हो या इंसान") is actually is_bot_query
+#       traffic — a DIFFERENT intent this DSL already distinguishes — not fraud/
+#       security doubt. Conflating them would silently merge two intents the
+#       prompt author deliberately kept separate.
+#   salaried / self_employed -> customer_state_employment_type   UNDISTINGUISHABLE.
+#       Both DSL intents map to the SAME single observed label, so both would
+#       report the identical count — not imprecise, actively misleading, since it
+#       implies a distinction the data can't actually support.
 INTENT_ALIASES = {
     "abcl": {
         "repeat_request": ["customer_unclear"],
-        "security_concern": ["customer_express_distrust"],
         "query_fee": ["customer_query_fee"],
         "address_error": ["customer_report_address_error"],
-        "sms_not_received": ["customer_report_sms_received"],
-        "already_applied": ["customer_report_done"],
-        "salaried": ["customer_state_employment_type"],
-        "self_employed": ["customer_state_employment_type"],
+        # Verified by reading 15 real samples ("बोलिए", "कर दो", "आगे बढ़कर") —
+        # genuinely on-topic agreement/proceed phrases, no mixed signal found.
+        "affirm": ["customer_agree"],
     },
 }
 
@@ -67,8 +89,14 @@ def audit_structure(d: dsl_parse.DSL) -> list:
     referenced_intents = set(d.global_routes)
     targeted_states = set(d.global_routes.values())
 
+    # Referential-integrity checks (does this reference point at something real)
+    # combine intent_routes + nested_routes: nesting changes what a route MEANS
+    # (see dsl_parse's default_equals_affirm distinction) but doesn't make a
+    # dangling reference valid, so a route to a bogus intent/state is a bug at
+    # any depth.
     for name, st in d.states.items():
-        for intent, target in st.intent_routes:
+        all_routes = st.intent_routes + st.nested_routes
+        for intent, target in all_routes:
             if intent != "default":
                 referenced_intents.add(intent)
             if target:
@@ -77,7 +105,7 @@ def audit_structure(d: dsl_parse.DSL) -> list:
 
     # 1. route to an intent that was never defined
     for name, st in d.states.items():
-        for intent, _ in st.intent_routes:
+        for intent, _ in st.intent_routes + st.nested_routes:
             if intent != "default" and intent not in intent_names:
                 out.append(Finding(
                     "undefined_intent_ref", "bug", name,
@@ -91,7 +119,8 @@ def audit_structure(d: dsl_parse.DSL) -> list:
 
     # 2. route to a state that does not exist
     for name, st in d.states.items():
-        for tgt in [t for _, t in st.intent_routes if t] + st.gotos:
+        all_routes = st.intent_routes + st.nested_routes
+        for tgt in [t for _, t in all_routes if t] + st.gotos:
             if tgt not in state_names:
                 out.append(Finding(
                     "missing_state", "bug", name,
@@ -330,6 +359,45 @@ def audit_against_data(d: dsl_parse.DSL, calls: list, min_dropoff: int = 3,
                     f"{n} of {len(incomplete)} incomplete calls ended on a customer "
                     f"'{intent}' turn",
                     evidence=samples[:5]))
+
+    # 11. Universal-intent coverage gap. Different from #3 (unrouted_intent) — the
+    # intent tested here IS routed somewhere, just not broadly enough. A customer
+    # can decline to continue at almost ANY point in a multi-step form journey, so
+    # 'disagree' (or any similarly universal intent) needs either a global route
+    # or broad local coverage across the states that route on intent at all. If
+    # neither holds, an off-script decline mid-journey has no defined behaviour —
+    # which directly contradicts a NEVER IMPROVISE-style guardrail, if the prompt
+    # has one (checked generically, not by exact string).
+    routing_states = [n for n, st in d.states.items() if st.intent_routes]
+    if routing_states:
+        for candidate in ("disagree",):
+            if candidate not in d.intents or candidate in d.global_routes:
+                continue
+            handled_in = [n for n, st in d.states.items()
+                         if any(i == candidate for i, _ in st.intent_routes)]
+            coverage = len(handled_in) / len(routing_states)
+            if coverage < 0.25:
+                dead_ends = [n for n in routing_states
+                            if not any(i == "default" for i, _ in d.states[n].intent_routes)
+                            and not d.states[n].gotos]
+                samples = []
+                for c in calls:
+                    for t in c["turns"]:
+                        if t.get("speaker") == "customer" and t.get("base_intent") == candidate:
+                            samples.append(t["text"][:90])
+                        if len(samples) >= 4:
+                            break
+                    if len(samples) >= 4:
+                        break
+                out.append(Finding(
+                    "no_fallback_dead_end", "gap", candidate,
+                    f'intent("{candidate}") can plausibly occur at almost any point '
+                    f"in the flow, but is not globally routed and is only explicitly "
+                    f"handled in {len(handled_in)}/{len(routing_states)} states that "
+                    f"route on intent at all ({len(dead_ends)} states have no "
+                    f"default/fallthrough of any kind) — a decline mid-journey has "
+                    f"no defined behaviour",
+                    evidence=[f"handled only in: {', '.join(sorted(handled_in))}"] + samples))
     return out
 
 
