@@ -361,6 +361,93 @@ def render_queue(items: list) -> str:
     return "\n".join(out)
 
 
+def render_queue_markdown(items: list, client_key: str, prompt_name: str) -> str:
+    """The same queue as render_queue(), as a markdown file meant to live in the
+    repo (see run_improve.py, which writes this to
+    data/clients/<client>/review_queue.md every run) — so the findings are
+    something to open in an editor, not just terminal output that scrolls away.
+    Regenerated fresh each run; always reflects current file + data state."""
+    import datetime
+    gaps = [it for it in items if isinstance(it, AnchorGap)]
+    clusters = [it for it in items if isinstance(it, UncoveredCluster)]
+
+    out = [
+        f"# Review queue — {prompt_name}",
+        "",
+        f"_Generated {datetime.date.today().isoformat()} · client `{client_key}` · "
+        f"{len(items)} candidate(s), none applied yet_",
+        "",
+        "Every quote below is verbatim from a real call — nothing here is generated. "
+        "Apply an item with:",
+        "",
+        "```",
+        f"python run_improve.py <prompt.raven> --client {client_key} --accept N,M,K",
+        "```",
+        "",
+        f"| | count |",
+        f"|---|---|",
+        f"| Anchor gaps (word missing from an existing intent) | {len(gaps)} |",
+        f"| Uncovered clusters (no existing intent fits — needs a person) | {len(clusters)} |",
+        f"| — high confidence | {sum(1 for g in gaps if g.confidence == 'high')} |",
+        f"| — low confidence | {sum(1 for g in gaps if g.confidence == 'low')} |",
+        "",
+        "---",
+        "",
+    ]
+
+    if not items:
+        out.append("Nothing pending — everything found so far has already been reviewed.")
+        return "\n".join(out)
+
+    for n, it in enumerate(items, start=1):
+        if isinstance(it, AnchorGap):
+            conf_tag = "🟢 high confidence" if it.confidence == "high" else "🟡 low confidence"
+            out.append(f"## [{n}] Add `\"{it.word}\"` to `{it.intent}`'s recognized phrases")
+            out.append("")
+            out.append(f"{conf_tag} · anchor gap · **{it.call_count} calls** · "
+                       f"**{it.lift:.2f}x** lift vs. overall corpus")
+            out.append("")
+            if it.confidence == "low":
+                out.append("> Common corpus-wide too, not just in this intent's calls — weigh "
+                           "the lift number before accepting.")
+                out.append("")
+            out.append("Real customer turns:")
+            out.append("")
+            for ex in it.examples:
+                out.append(f"> {ex}")
+                out.append(">")
+            if out[-1] == ">":
+                out.pop()
+            out.append("")
+            out.append(f"**Accept:** `--accept {n}`")
+        else:
+            out.append(f"## [{n}] Uncovered cluster — {it.size} turns, {it.call_count} calls")
+            out.append("")
+            out.append("🔵 uncovered cluster · always needs a person — naming the intent and "
+                       "writing its answer can't be automated")
+            out.append("")
+            if it.best_guess:
+                margin = it.best_score - it.runner_score
+                out.append(f"Best guess: `{it.best_guess}` ({it.best_score:.2f})  ·  "
+                           f"runner-up: `{it.runner_up}` ({it.runner_score:.2f})  ·  "
+                           f"margin: **{margin:.2f}**")
+                out.append("")
+            out.append("Sample turns:")
+            out.append("")
+            for cid, text in it.samples:
+                out.append(f"> {text}  \n> <sub>`{cid}`</sub>")
+                out.append(">")
+            if out[-1] == ">":
+                out.pop()
+            out.append("")
+            out.append(f"**Track (no automatic edit possible):** `--accept {n}` or `--reject {n}`")
+        out.append("")
+        out.append("---")
+        out.append("")
+
+    return "\n".join(out)
+
+
 if __name__ == "__main__":
     import sys
     import warnings

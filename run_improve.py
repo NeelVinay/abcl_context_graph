@@ -119,6 +119,14 @@ def run(dsl_path: str, client_key: str, budget: int | None, apply_to_disk: bool,
     print(f"PROPOSED — review ({len(remaining)})")
     print(dsl_mine.render_queue(remaining))
 
+    # Written EVERY run, unconditionally — this is the thing meant to live in the
+    # repo and be opened in an editor, not just scroll past in a terminal. Always
+    # reflects the current file + data state, same folder as the prompt and
+    # anchor_decisions.json.
+    queue_md_path = dsl_path.parent / "review_queue.md"
+    queue_md_path.write_text(dsl_mine.render_queue_markdown(remaining, client_key, dsl_path.name))
+    print(f"\nWrote {queue_md_path}")
+
     all_edits = auto_edits + accepted_edits
     if not all_edits:
         print("Nothing to write this run.")
