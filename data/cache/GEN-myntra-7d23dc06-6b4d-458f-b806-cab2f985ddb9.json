@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "order",
         "deliver"
@@ -58,8 +58,8 @@
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_pan",
-      "base_intent": "enter_pan",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "deliver",
@@ -76,8 +76,8 @@
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_agree",
-      "base_intent": "agree",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "इसको",
         "भेज"
@@ -91,8 +91,8 @@
       "index": 5,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "कोशिश",
@@ -109,8 +109,8 @@
       "index": 6,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "अरे",
         "उससे",
@@ -127,8 +127,8 @@
       "index": 7,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "deliver",
@@ -157,8 +157,8 @@
       "index": 9,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
       "keywords": [
         "सही",
         "मिल",
@@ -188,9 +188,9 @@
     {
       "index": 11,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
       "keywords": [
         "बेहतर",
         "agent",
@@ -199,16 +199,16 @@
         "assistance"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "जी, जैसा कि मैंने बताया, मुझे इस specific term के बारे में जानकारी नहीं है। बेहतर assistance के लिए क्या आप एक expert agent से बात करना चाहेंगे?",
       "entities": []
     },
     {
       "index": 12,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "line",
         "कृपया",
@@ -217,16 +217,16 @@
         "agent"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "ठीक है, मै आपको expert agent से connect कर रही हूँ। कृपया line पर बने रहिए।",
       "entities": []
     },
     {
       "index": 13,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "call",
         "now",
@@ -235,7 +235,7 @@
         "immediately"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "I will connect you with our specialized team. Transferring your call now, they will be with you immediately.",
       "entities": []
     }

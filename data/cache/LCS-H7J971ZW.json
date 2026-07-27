@@ -27,9 +27,7 @@
       "type": "action",
       "intent": "customer_complaint",
       "base_intent": "complaint",
-      "keywords": [
-        "पे।"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "के रिगार्डिंग पे। एक तो उसके लिए नहीं आ रही है। म",
@@ -45,8 +43,8 @@
         "उसमें",
         "कीजिए",
         "टाइम",
-        "की।",
-        "प्लीज।"
+        "प्लीज",
+        "बोलना"
       ],
       "sentiment": null,
       "tool": null,
@@ -60,7 +58,6 @@
       "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "तो।",
         "चाहता",
         "अगले"
       ],
@@ -80,7 +77,7 @@
         "ticket",
         "department",
         "raise",
-        "होगा।"
+        "करा"
       ],
       "sentiment": null,
       "tool": null,
@@ -140,9 +137,9 @@
       "keywords": [
         "call",
         "thank",
-        "हूँ।",
         "time",
-        "चेक"
+        "चेक",
+        "calling"
       ],
       "sentiment": null,
       "tool": null,

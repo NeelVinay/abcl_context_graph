@@ -82,9 +82,9 @@
       "base_intent": "agent_handle",
       "keywords": [
         "check",
-        "से।",
         "application",
         "open",
+        "question",
         "nice"
       ],
       "sentiment": null,
@@ -117,9 +117,9 @@
       "keywords": [
         "justdial",
         "call",
-        "हूँ।",
         "right",
-        "what"
+        "what",
+        "share"
       ],
       "sentiment": null,
       "tool": null,

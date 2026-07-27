@@ -175,9 +175,7 @@
       "type": "action",
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
-      "keywords": [
-        "ले।"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "ले। ठीक है",

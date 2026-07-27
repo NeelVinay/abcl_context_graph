@@ -1,5 +1,5 @@
 {
-  "call_id": "292a5872",
+  "call_id": "292a5872-838c-4846-8950-d3294c64492b-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -88,9 +88,9 @@
       "keywords": [
         "sms",
         "loan",
-        "करें।",
         "कृपया",
-        "application"
+        "application",
+        "process"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -156,9 +156,9 @@
       "keywords": [
         "apply now",
         "apply",
+        "बताएं",
         "now",
-        "कृपया",
-        "नीचे"
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -186,7 +186,7 @@
       "keywords": [
         "otp",
         "apply",
-        "करें।",
+        "बताएं",
         "now",
         "कृपया"
       ],
@@ -218,9 +218,9 @@
       "keywords": [
         "salaried",
         "self-employ",
+        "बताएं",
         "कृपया",
-        "जाएगा।",
-        "self"
+        "employed"
       ],
       "sentiment": null,
       "tool": null,
@@ -235,8 +235,8 @@
       "base_intent": "employment_type",
       "keywords": [
         "self employ",
-        "self",
-        "employed"
+        "employed",
+        "self"
       ],
       "sentiment": null,
       "tool": null,
@@ -251,8 +251,8 @@
       "base_intent": "enter_income",
       "keywords": [
         "income",
+        "बताएं",
         "कृपया",
-        "बताएं।",
         "जाए",
         "monthly"
       ],
@@ -285,8 +285,8 @@
       "intent": "agent_request_org_name",
       "base_intent": "organization_name",
       "keywords": [
-        "कृपया",
         "बताएं",
+        "कृपया",
         "समझ",
         "business",
         "टाइप"
@@ -380,10 +380,10 @@
       "base_intent": "personal_details",
       "keywords": [
         "marital",
+        "बताएं",
+        "जाए",
         "personal",
-        "आगे",
-        "email",
-        "address"
+        "आगे"
       ],
       "sentiment": null,
       "tool": null,
@@ -399,8 +399,8 @@
       "keywords": [
         "self employ",
         "proceed",
-        "self",
         "employed",
+        "self",
         "पता"
       ],
       "sentiment": null,
@@ -416,10 +416,10 @@
       "base_intent": "enter_income",
       "keywords": [
         "income",
+        "बताएं",
         "कृपया",
-        "बताएं।",
         "monthly",
-        "self"
+        "employed"
       ],
       "sentiment": null,
       "tool": null,
@@ -446,10 +446,10 @@
       "base_intent": "business_details",
       "keywords": [
         "business",
-        "करें।",
+        "बताएं",
         "कृपया",
-        "बताएं।",
-        "proceed"
+        "proceed",
+        "address"
       ],
       "sentiment": null,
       "tool": null,
@@ -480,10 +480,10 @@
       "base_intent": "udyam_verification",
       "keywords": [
         "udyam",
-        "करें।",
+        "बताएं",
         "कृपया",
-        "number",
-        "नीचे"
+        "जाए",
+        "number"
       ],
       "sentiment": null,
       "tool": null,
@@ -529,7 +529,7 @@
         "udyam",
         "loan",
         "offer",
-        "करें।",
+        "बताएं",
         "otp"
       ],
       "sentiment": null,
@@ -575,7 +575,7 @@
       "keywords": [
         "loan",
         "offer",
-        "हूँ।",
+        "बताएं",
         "otp",
         "मदद"
       ],
@@ -634,10 +634,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "हूँ।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

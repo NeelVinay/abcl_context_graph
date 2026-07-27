@@ -1,5 +1,5 @@
 {
-  "call_id": "f8d9819a",
+  "call_id": "f8d9819a-fb67-4963-bfc0-6605221e8279-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -23,9 +23,7 @@
       "type": "action",
       "intent": "agent_other",
       "base_intent": "other",
-      "keywords": [
-        "chd"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "| <CHD/>",
@@ -139,8 +137,8 @@
         "loan",
         "sms",
         "amount",
-        "करें।",
-        "हूँ।"
+        "देख",
+        "application"
       ],
       "sentiment": null,
       "tool": null,
@@ -169,10 +167,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
         "application",
         "process",
-        "रखें"
+        "रखें",
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -187,7 +185,6 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
         "link",
         "click"
       ],
@@ -234,9 +231,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "देख"
+        "देख",
+        "नीचे"
       ],
       "sentiment": null,
       "tool": null,
@@ -265,10 +262,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "number",
         "get",
-        "terms"
+        "terms",
+        "mobile"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -283,10 +280,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "verify",
         "screen",
-        "click"
+        "click",
+        "enter"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -347,9 +344,9 @@
       "base_intent": "enter_pan",
       "keywords": [
         "पैन",
-        "number",
-        "बताएं।",
+        "बताएं",
         "जाए",
+        "number",
         "fill"
       ],
       "sentiment": null,
@@ -532,7 +529,7 @@
       "base_intent": "organization_name",
       "keywords": [
         "organization",
-        "बताएं।",
+        "बताएं",
         "जाए",
         "enter"
       ],
@@ -549,7 +546,7 @@
       "base_intent": "organization_name",
       "keywords": [
         "organization",
-        "बताएं।",
+        "बताएं",
         "जाए",
         "enter"
       ],
@@ -580,7 +577,7 @@
       "base_intent": "enter_email",
       "keywords": [
         "email",
-        "बताएं।",
+        "बताएं",
         "जाए",
         "enter",
         "official"
@@ -926,8 +923,8 @@
       "base_intent": "final_offer",
       "keywords": [
         "final offer",
-        "apply",
         "offer",
+        "apply",
         "final",
         "lakh"
       ],
@@ -963,9 +960,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "देख"
+        "देख",
+        "नीचे"
       ],
       "sentiment": null,
       "tool": null,
@@ -994,10 +991,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "number",
         "get",
-        "terms"
+        "terms",
+        "mobile"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -1012,10 +1009,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "verify",
         "screen",
-        "click"
+        "click",
+        "enter"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -1046,9 +1043,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "देख"
+        "देख",
+        "नीचे"
       ],
       "sentiment": null,
       "tool": null,
@@ -1373,8 +1370,8 @@
         "verify",
         "process",
         "आगे",
-        "upload",
-        "बढ़ेगा।"
+        "बढ़ेगा",
+        "upload"
       ],
       "sentiment": null,
       "tool": null,
@@ -1438,10 +1435,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "specialist से connect",
-        "करें।",
-        "हूँ।",
         "कृपया",
-        "समय"
+        "समय",
+        "connect",
+        "इंतज़ार"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

@@ -10,11 +10,11 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "हूँ।",
         "contract",
         "issue",
         "time",
-        "request"
+        "request",
+        "right"
       ],
       "sentiment": null,
       "tool": null,

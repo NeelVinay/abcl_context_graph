@@ -57,10 +57,10 @@
       "base_intent": "question",
       "keywords": [
         "call",
-        "हूँ।",
         "inquiry",
         "share",
-        "message"
+        "message",
+        "whatsapp"
       ],
       "sentiment": null,
       "tool": null,
@@ -112,7 +112,6 @@
       "keywords": [
         "call",
         "option",
-        "आपको।",
         "देते"
       ],
       "sentiment": null,
@@ -176,7 +175,6 @@
       "keywords": [
         "whatsapp",
         "notification",
-        "आएगी।",
         "चलिए"
       ],
       "sentiment": null,
@@ -193,7 +191,6 @@
       "keywords": [
         "inquiry",
         "whatsapp",
-        "सर।",
         "notification",
         "आपसे"
       ],
@@ -221,11 +218,9 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "था।",
-        "लिए।",
         "notification",
-        "आएगा।",
-        "setting"
+        "setting",
+        "चाह"
       ],
       "sentiment": null,
       "tool": null,
@@ -240,7 +235,6 @@
       "base_intent": "other",
       "keywords": [
         "inquiry",
-        "जी।",
         "अलग"
       ],
       "sentiment": null,
@@ -257,9 +251,9 @@
       "keywords": [
         "inquiry",
         "मिल",
+        "मिलेगा",
         "अलग",
-        "possible",
-        "जाए"
+        "possible"
       ],
       "sentiment": null,
       "tool": null,
@@ -274,7 +268,8 @@
       "base_intent": "complaint",
       "keywords": [
         "justdial",
-        "app"
+        "app",
+        "तुझे"
       ],
       "sentiment": null,
       "tool": null,
@@ -290,9 +285,9 @@
       "keywords": [
         "justdial",
         "check",
-        "होगा।",
         "app",
-        "जी।"
+        "जाके",
+        "refresh"
       ],
       "sentiment": null,
       "tool": null,

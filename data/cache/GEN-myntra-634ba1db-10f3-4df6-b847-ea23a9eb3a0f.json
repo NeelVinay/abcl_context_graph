@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -56,8 +56,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "deliver",
@@ -74,8 +74,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_send_sms_link",
-      "base_intent": "send_sms_link",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "समझ",
@@ -120,8 +120,8 @@
       "index": 7,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "delivery",
@@ -169,8 +169,8 @@
       "index": 10,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "order",
         "complaint"
@@ -184,8 +184,8 @@
       "index": 11,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_org_name",
-      "base_intent": "organization_name",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "complaint",
         "register"
@@ -199,8 +199,8 @@
       "index": 12,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "complaint",
         "twenty",
@@ -216,8 +216,8 @@
       "index": 13,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_reassure_trust",
-      "base_intent": "reassure_trust",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "shipped",
         "कोशिश",
@@ -234,8 +234,8 @@
       "index": 14,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "complaint",
         "twenty",
@@ -252,8 +252,8 @@
       "index": 15,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "deliver",
@@ -269,9 +269,9 @@
     {
       "index": 16,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "line",
         "कृपया",
@@ -280,16 +280,16 @@
         "agent"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "ठीक है, मै आपको expert agent से connect कर रही हूँ। कृपया line पर बने रहिए।",
       "entities": []
     },
     {
       "index": 17,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "call",
         "now",
@@ -298,7 +298,7 @@
         "immediately"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "I will connect you with our specialized team. Transferring your call now, they will be with you immediately.",
       "entities": []
     }

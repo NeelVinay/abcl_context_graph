@@ -1,5 +1,5 @@
 {
-  "call_id": "d99d6949",
+  "call_id": "d99d6949-805a-47ae-a7f5-97bad94ca9f8-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -92,9 +92,9 @@
       "keywords": [
         "sms",
         "loan",
-        "करें।",
         "कृपया",
-        "application"
+        "application",
+        "रखें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -109,10 +109,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
+        "बताएं",
         "कृपया",
         "रखें",
-        "speaker",
-        "बताएं"
+        "speaker"
       ],
       "sentiment": null,
       "tool": null,
@@ -144,8 +144,8 @@
         "sms",
         "जिसमें",
         "मिल",
-        "लिंक",
-        "धन्यवाद"
+        "धन्यवाद",
+        "लिंक"
       ],
       "sentiment": null,
       "tool": null,
@@ -178,7 +178,7 @@
         "खुल गई",
         "लिंक पर क्लिक",
         "sms",
-        "कृपया"
+        "बताएं"
       ],
       "sentiment": null,
       "tool": null,
@@ -209,9 +209,9 @@
       "keywords": [
         "apply now",
         "apply",
+        "बताएं",
         "now",
-        "कृपया",
-        "नीचे"
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -240,7 +240,7 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "बताएं",
         "कृपया",
         "verify",
         "नीचे"
@@ -275,7 +275,7 @@
         "आगे",
         "पूरा",
         "ताकि",
-        "बढ़"
+        "सकें"
       ],
       "sentiment": null,
       "tool": null,
@@ -304,10 +304,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "बताएं",
         "कृपया",
         "verify",
-        "नीचे"
+        "जाए"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -339,10 +339,10 @@
       "base_intent": "enter_income",
       "keywords": [
         "income",
+        "बताएं",
         "कृपया",
         "home",
-        "आगे",
-        "monthly"
+        "आगे"
       ],
       "sentiment": null,
       "tool": null,
@@ -371,11 +371,11 @@
       "intent": "agent_request_org_name",
       "base_intent": "organization_name",
       "keywords": [
-        "करें।",
+        "बताएं",
         "कृपया",
         "आगे",
         "registered",
-        "बताएं"
+        "समझ"
       ],
       "sentiment": null,
       "tool": null,
@@ -424,10 +424,10 @@
       "base_intent": "enter_address",
       "keywords": [
         "address",
-        "करें।",
+        "बताएं",
         "कृपया",
-        "बताएं।",
-        "proceed"
+        "proceed",
+        "सही"
       ],
       "sentiment": null,
       "tool": null,
@@ -471,11 +471,11 @@
       "intent": "agent_request_business_details",
       "base_intent": "business_details",
       "keywords": [
+        "बताएं",
         "मदद",
         "कृपया",
         "details",
-        "proceed",
-        "आगे"
+        "proceed"
       ],
       "sentiment": null,
       "tool": null,
@@ -508,9 +508,9 @@
       "keywords": [
         "loan",
         "offer",
-        "हूँ।",
         "मदद",
-        "final"
+        "final",
+        "समय"
       ],
       "sentiment": null,
       "tool": null,
@@ -526,8 +526,8 @@
       "keywords": [
         "final offer",
         "offer",
+        "बताएं",
         "मदद",
-        "final",
         "कृपया"
       ],
       "sentiment": null,
@@ -559,7 +559,7 @@
         "loan",
         "offer",
         "बोल",
-        "final",
+        "बताएं",
         "कृपया"
       ],
       "sentiment": null,
@@ -591,11 +591,11 @@
       "intent": "agent_help_address_error",
       "base_intent": "address_error",
       "keywords": [
-        "हूँ।",
+        "बताएं",
         "मदद",
         "कृपया",
-        "बताएं",
-        "समझ"
+        "समझ",
+        "सही"
       ],
       "sentiment": null,
       "tool": null,
@@ -625,9 +625,7 @@
       "type": "action",
       "intent": "agent_acknowledge",
       "base_intent": "acknowledge",
-      "keywords": [
-        "जी।"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "ठीक है, विकास सैनी जी।",
@@ -656,9 +654,9 @@
       "keywords": [
         "loan",
         "offer",
+        "बताएं",
         "कृपया",
-        "जिसमें",
-        "समय"
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": null,
@@ -737,10 +735,10 @@
       "base_intent": "skip_udyam",
       "keywords": [
         "skip",
-        "करें।",
-        "कृपया",
         "बताएं",
-        "क्लिक"
+        "कृपया",
+        "क्लिक",
+        "लें"
       ],
       "sentiment": null,
       "tool": null,
@@ -769,10 +767,10 @@
       "base_intent": "skip_udyam",
       "keywords": [
         "skip",
+        "बताएं",
         "कृपया",
         "application",
-        "आगे",
-        "बताएं"
+        "जाए"
       ],
       "sentiment": null,
       "tool": null,
@@ -852,10 +850,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "मदद",
         "कृपया",
-        "process"
+        "process",
+        "relationship"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

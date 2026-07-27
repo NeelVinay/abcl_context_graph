@@ -1,5 +1,5 @@
 {
-  "call_id": "0aed797d",
+  "call_id": "0aed797d-2304-4c38-b3f8-7c8cb18aa900-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -105,9 +105,9 @@
       "keywords": [
         "sms",
         "offer",
-        "करें।",
+        "कृपया",
         "final",
-        "कृपया"
+        "शुरू"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -136,7 +136,6 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
         "link",
         "click"
       ],
@@ -181,9 +180,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "देख"
+        "देख",
+        "नीचे"
       ],
       "sentiment": null,
       "tool": null,
@@ -211,11 +210,11 @@
       "intent": "agent_guide_open_link",
       "base_intent": "open_link",
       "keywords": [
-        "करें।",
+        "बताएं",
         "कृपया",
         "link",
         "check",
-        "बताएं"
+        "try"
       ],
       "sentiment": null,
       "tool": null,
@@ -299,11 +298,11 @@
       "intent": "agent_reassure_trust",
       "base_intent": "reassure_trust",
       "keywords": [
-        "हूँ।",
         "process",
         "समझ",
         "continue",
-        "step"
+        "step",
+        "simple"
       ],
       "sentiment": null,
       "tool": null,
@@ -336,10 +335,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
         "कृपया",
         "application",
-        "process"
+        "process",
+        "रखें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -383,7 +382,6 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
         "link",
         "click"
       ],
@@ -415,10 +413,10 @@
       "base_intent": "other",
       "keywords": [
         "call",
-        "करें।",
-        "हूँ।",
         "कृपया",
-        "देर"
+        "देर",
+        "ज़रूर",
+        "receive"
       ],
       "sentiment": null,
       "tool": null,
@@ -504,7 +502,7 @@
         "आदित्य",
         "बिरला",
         "कैपिटल",
-        "से।"
+        "साफ़"
       ],
       "sentiment": null,
       "tool": null,
@@ -532,7 +530,6 @@
       "intent": "agent_ask_to_repeat",
       "base_intent": "clarify_repeat",
       "keywords": [
-        "हूँ।",
         "मदद",
         "कृपया",
         "सुन"
@@ -567,11 +564,11 @@
       "intent": "agent_request_otp",
       "base_intent": "mobile_otp",
       "keywords": [
-        "करें।",
         "number",
         "mobile",
         "आगे",
-        "enter"
+        "enter",
+        "बढ़"
       ],
       "sentiment": null,
       "tool": null,
@@ -628,9 +625,7 @@
       "type": "action",
       "intent": "agent_acknowledge",
       "base_intent": "acknowledge",
-      "keywords": [
-        "अच्छा।"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "बहुत अच्छा। अब",
@@ -681,9 +676,9 @@
       "keywords": [
         "relationship manager",
         "offer",
-        "करें।",
+        "कृपया",
         "final",
-        "कृपया"
+        "शुरू"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

@@ -10,9 +10,6 @@
       "intent": "agent_greet",
       "base_intent": "open",
       "keywords": [
-        "करें।",
-        "kumar",
-        "बोलिये।",
         "बोलिये"
       ],
       "sentiment": null,
@@ -29,9 +26,9 @@
       "keywords": [
         "complaint",
         "करा",
+        "बोलिये",
         "मोबाइल",
-        "लीज",
-        "through"
+        "लीज"
       ],
       "sentiment": null,
       "tool": null,
@@ -65,7 +62,6 @@
       "keywords": [
         "सही",
         "दिखा",
-        "का।",
         "मतल"
       ],
       "sentiment": null,
@@ -94,9 +90,7 @@
       "type": "action",
       "intent": "customer_complaint",
       "base_intent": "complaint",
-      "keywords": [
-        "चाहिए।"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "आपने क्या कर रहा है नहीं चाहिए।",
@@ -110,10 +104,10 @@
       "base_intent": "agent_handle",
       "keywords": [
         "लगता",
-        "ना।",
-        "साल",
         "दीजिये",
-        "पूरे"
+        "साल",
+        "बाकी",
+        "रुपए"
       ],
       "sentiment": null,
       "tool": null,
@@ -128,7 +122,6 @@
       "base_intent": "complaint",
       "keywords": [
         "area",
-        "ना।",
         "प्रॉब्लम",
         "बिल्कुल"
       ],
@@ -144,7 +137,6 @@
       "intent": "agent_raise_request",
       "base_intent": "resolution",
       "keywords": [
-        "हूँ।",
         "leads",
         "काम",
         "notification"
@@ -162,10 +154,10 @@
       "base_intent": "complaint",
       "keywords": [
         "नहीं हो",
-        "हूँ।",
         "option",
         "notification",
-        "महीने"
+        "महीने",
+        "tone"
       ],
       "sentiment": "frustrated",
       "tool": null,
@@ -196,10 +188,10 @@
       "intent": "customer_ask_question",
       "base_intent": "question",
       "keywords": [
-        "हूँ।",
         "number",
         "mail",
-        "चालू"
+        "चालू",
+        "थ्रू"
       ],
       "sentiment": null,
       "tool": null,

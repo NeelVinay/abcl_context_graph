@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order"
       ],
@@ -39,8 +39,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -51,8 +51,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order"
       ],
@@ -83,8 +83,8 @@
       "index": 5,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_pan",
-      "base_intent": "enter_pan",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "deliver",
@@ -101,8 +101,8 @@
       "index": 6,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "order",
         "दूसरा"
@@ -116,8 +116,8 @@
       "index": 7,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_terms_accept",
-      "base_intent": "accept_terms",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
       "keywords": [
         "order",
         "मदद",
@@ -134,8 +134,8 @@
       "index": 8,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "delay",
         "चुका"
@@ -167,8 +167,8 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "problem",
@@ -185,8 +185,8 @@
       "index": 11,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_address",
-      "base_intent": "enter_address",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "help",
         "deliver",
@@ -203,8 +203,8 @@
       "index": 12,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_agree",
-      "base_intent": "agree",
+      "intent": "customer_end",
+      "base_intent": "end_call",
       "keywords": [
         "thank"
       ],
@@ -235,8 +235,8 @@
       "index": 14,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
       "keywords": [
         "मिंत्रा",
         "thank",
@@ -267,8 +267,8 @@
       "index": 16,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "confused_repeat",
       "keywords": [
         "समझ",
         "मदद",

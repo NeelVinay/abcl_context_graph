@@ -1,5 +1,5 @@
 {
-  "call_id": "c44d3103",
+  "call_id": "c44d3103-74bc-41e5-8d1a-be2e8342c14a-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -59,10 +59,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
         "कृपया",
         "application",
-        "process"
+        "process",
+        "रखें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -111,8 +111,8 @@
         "खुल गया",
         "लिंक पर क्लिक",
         "sms",
-        "कृपया",
-        "बताएं"
+        "बताएं",
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -176,7 +176,7 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
+        "बताएं",
         "now",
         "कृपया"
       ],
@@ -204,11 +204,11 @@
       "intent": "agent_request_otp",
       "base_intent": "mobile_otp",
       "keywords": [
+        "बताएं",
         "कृपया",
-        "बताएं।",
         "आगे",
         "ताकि",
-        "होगा।"
+        "सकें"
       ],
       "sentiment": null,
       "tool": null,
@@ -223,10 +223,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "बताएं",
         "कृपया",
         "verify",
-        "नीचे"
+        "जाए"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -254,11 +254,11 @@
       "intent": "agent_clarify",
       "base_intent": "ask_question",
       "keywords": [
+        "बताएं",
         "मदद",
         "कृपया",
         "आगे",
-        "बताएं",
-        "दिख"
+        "बढ़िया"
       ],
       "sentiment": null,
       "tool": null,

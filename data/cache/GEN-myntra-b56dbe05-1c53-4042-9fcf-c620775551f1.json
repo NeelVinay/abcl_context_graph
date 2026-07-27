@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -41,8 +41,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "order",
         "समझ",
@@ -59,8 +59,8 @@
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_pan",
-      "base_intent": "enter_pan",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "deliver",
@@ -77,8 +77,8 @@
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "july",
         "twenty",
@@ -113,8 +113,8 @@
       "index": 6,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "delay",
         "reason"
@@ -146,8 +146,8 @@
       "index": 8,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_done",
-      "base_intent": "report_done",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "app",
         "show"
@@ -161,8 +161,8 @@
       "index": 9,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_reassure_trust",
+      "base_intent": "distrust_security",
       "keywords": [
         "help",
         "check",
@@ -179,12 +179,12 @@
       "index": 10,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_query",
-      "base_intent": "answer_query",
+      "intent": "customer_express_distrust",
+      "base_intent": "distrust_security",
       "keywords": [
         "app",
-        "जैसा",
         "दिखा",
+        "जैसा",
         "hours",
         "show"
       ],
@@ -197,8 +197,8 @@
       "index": 11,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_reassure_trust",
+      "base_intent": "distrust_security",
       "keywords": [
         "order",
         "deliver",

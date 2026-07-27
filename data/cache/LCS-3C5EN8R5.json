@@ -47,10 +47,10 @@
       "base_intent": "agent_handle",
       "keywords": [
         "lead",
-        "हूँ।",
-        "check",
         "leads",
-        "issue"
+        "check",
+        "issue",
+        "number"
       ],
       "sentiment": null,
       "tool": null,

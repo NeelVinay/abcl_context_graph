@@ -25,8 +25,8 @@
         "justdial",
         "customer",
         "com",
-        "हूँ।",
-        "service"
+        "service",
+        "contract"
       ],
       "sentiment": null,
       "tool": null,
@@ -41,7 +41,6 @@
       "base_intent": "question",
       "keywords": [
         "call",
-        "था।",
         "back",
         "arrange"
       ],
@@ -59,8 +58,7 @@
       "keywords": [
         "काम",
         "दिखा",
-        "मुझसे",
-        "पर।"
+        "मुझसे"
       ],
       "sentiment": null,
       "tool": null,
@@ -91,9 +89,9 @@
       "keywords": [
         "call",
         "thank",
-        "हूँ।",
         "complaint",
-        "much"
+        "much",
+        "proper"
       ],
       "sentiment": null,
       "tool": null,

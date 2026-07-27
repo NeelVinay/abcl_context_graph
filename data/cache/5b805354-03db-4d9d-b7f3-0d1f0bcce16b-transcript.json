@@ -1,5 +1,5 @@
 {
-  "call_id": "5b805354",
+  "call_id": "5b805354-03db-4d9d-b7f3-0d1f0bcce16b-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -169,7 +169,7 @@
         "sms",
         "approved",
         "amount",
-        "हूँ।"
+        "final"
       ],
       "sentiment": null,
       "tool": null,
@@ -184,10 +184,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
+        "बताएं",
         "कृपया",
         "application",
-        "process",
-        "रखें"
+        "process"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -218,9 +218,9 @@
       "keywords": [
         "खुल गया",
         "लिंक पर क्लिक",
-        "करें।",
         "कृपया",
-        "खुल"
+        "खुल",
+        "बढ़िया"
       ],
       "sentiment": null,
       "tool": null,
@@ -252,7 +252,7 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
+        "बताएं",
         "now",
         "मदद"
       ],
@@ -286,7 +286,7 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "बताएं",
         "कृपया",
         "verify",
         "process"
@@ -324,8 +324,8 @@
         "gender",
         "date of birth",
         "marital",
-        "कृपया",
-        "page"
+        "बताएं",
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -340,10 +340,10 @@
       "base_intent": "enter_email",
       "keywords": [
         "email",
+        "बताएं",
         "कृपया",
-        "complete",
-        "personal",
-        "details"
+        "जाए",
+        "complete"
       ],
       "sentiment": null,
       "tool": null,
@@ -377,9 +377,9 @@
       "keywords": [
         "terms and condition",
         "terms",
+        "बताएं",
         "कृपया",
-        "complete",
-        "proceed"
+        "जाए"
       ],
       "sentiment": null,
       "tool": null,
@@ -409,9 +409,9 @@
       "keywords": [
         "terms and condition",
         "terms",
+        "बताएं",
         "कृपया",
-        "proceed",
-        "आगे"
+        "proceed"
       ],
       "sentiment": null,
       "tool": null,
@@ -471,7 +471,6 @@
       "intent": "agent_acknowledge",
       "base_intent": "acknowledge",
       "keywords": [
-        "हूँ।",
         "सुन"
       ],
       "sentiment": null,
@@ -488,9 +487,9 @@
       "keywords": [
         "terms and condition",
         "terms",
+        "बताएं",
         "कृपया",
-        "conditions",
-        "proceed"
+        "conditions"
       ],
       "sentiment": null,
       "tool": null,
@@ -533,11 +532,11 @@
       "intent": "agent_request_terms_accept",
       "base_intent": "accept_terms",
       "keywords": [
-        "कृपया",
-        "proceed",
-        "आगे",
         "बताएं",
-        "ताकि"
+        "कृपया",
+        "जाए",
+        "proceed",
+        "आगे"
       ],
       "sentiment": null,
       "tool": null,
@@ -568,11 +567,11 @@
       "intent": "agent_ask_employment_type",
       "base_intent": "employment_type",
       "keywords": [
+        "बताएं",
         "मदद",
         "कृपया",
         "page",
-        "details",
-        "employment"
+        "details"
       ],
       "sentiment": null,
       "tool": null,
@@ -604,9 +603,9 @@
       "keywords": [
         "salaried",
         "self-employ",
+        "बताएं",
         "कृपया",
-        "page",
-        "details"
+        "page"
       ],
       "sentiment": null,
       "tool": null,
@@ -635,7 +634,7 @@
       "base_intent": "enter_income",
       "keywords": [
         "income",
-        "करें।",
+        "बताएं",
         "कृपया",
         "details",
         "आगे"
@@ -652,11 +651,11 @@
       "intent": "agent_request_business_details",
       "base_intent": "business_details",
       "keywords": [
-        "करें।",
+        "बताएं",
         "शुरू",
+        "जाए",
         "नीचे",
-        "terms",
-        "जाए"
+        "terms"
       ],
       "sentiment": null,
       "tool": null,
@@ -671,9 +670,9 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
+        "बताएं",
         "कृपया",
         "verify",
-        "बताएं।",
         "check"
       ],
       "sentiment": null,
@@ -706,9 +705,9 @@
       "intent": "agent_answer_query",
       "base_intent": "answer_query",
       "keywords": [
+        "बताएं",
         "मदद",
         "email",
-        "बताएं",
         "ताकि",
         "official"
       ],
@@ -737,8 +736,8 @@
       "base_intent": "enter_email",
       "keywords": [
         "email",
+        "बताएं",
         "कृपया",
-        "बताएं।",
         "आगे",
         "official"
       ],
@@ -754,11 +753,11 @@
       "intent": "agent_request_business_details",
       "base_intent": "business_details",
       "keywords": [
-        "करें।",
+        "बताएं",
         "आगे",
         "address",
-        "बताएं",
-        "सही"
+        "सही",
+        "पूरा"
       ],
       "sentiment": null,
       "tool": null,
@@ -807,11 +806,11 @@
       "intent": "agent_help_address_error",
       "base_intent": "address_error",
       "keywords": [
+        "बताएं",
         "कृपया",
-        "complete",
         "जाए",
-        "आगे",
-        "बताएं"
+        "complete",
+        "आगे"
       ],
       "sentiment": null,
       "tool": null,
@@ -840,11 +839,11 @@
       "intent": "agent_request_terms_accept",
       "base_intent": "accept_terms",
       "keywords": [
-        "कृपया",
-        "proceed",
-        "आगे",
         "बताएं",
-        "ताकि"
+        "कृपया",
+        "जाए",
+        "proceed",
+        "आगे"
       ],
       "sentiment": null,
       "tool": null,
@@ -860,8 +859,8 @@
       "keywords": [
         "loan",
         "offer",
+        "बताएं",
         "कृपया",
-        "बताएं।",
         "इंतज़ार"
       ],
       "sentiment": null,

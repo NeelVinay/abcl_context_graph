@@ -42,11 +42,11 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "हूँ।",
         "check",
         "business",
         "what",
-        "link"
+        "link",
+        "message"
       ],
       "sentiment": null,
       "tool": null,
@@ -75,8 +75,8 @@
         "complaint",
         "actually",
         "लाइन",
-        "तो।",
-        "review"
+        "review",
+        "लिये"
       ],
       "sentiment": null,
       "tool": null,
@@ -104,11 +104,11 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "हूँ।",
         "business",
         "details",
-        "था।",
-        "company"
+        "company",
+        "update",
+        "उन्होंने"
       ],
       "sentiment": null,
       "tool": null,
@@ -214,8 +214,7 @@
       "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "change",
-        "मैंने।"
+        "change"
       ],
       "sentiment": null,
       "tool": null,
@@ -248,7 +247,7 @@
         "any",
         "option",
         "there",
-        "just"
+        "second"
       ],
       "sentiment": null,
       "tool": null,
@@ -309,9 +308,7 @@
       "type": "action",
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
-      "keywords": [
-        "हूँ।"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "आपको अभी वेल से भेल रहा हूँ।",

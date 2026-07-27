@@ -28,11 +28,11 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "से।",
         "renewal",
         "किस",
         "पैसा",
-        "डाल"
+        "डाल",
+        "कहीं"
       ],
       "sentiment": null,
       "tool": null,
@@ -46,7 +46,6 @@
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "सर।",
         "upload",
         "करनी"
       ],
@@ -65,8 +64,8 @@
         "company",
         "payment",
         "तरफ",
-        "ना।",
-        "duty"
+        "duty",
+        "आदमी"
       ],
       "sentiment": null,
       "tool": null,
@@ -98,7 +97,6 @@
       "base_intent": "agent_handle",
       "keywords": [
         "मतलब क्या",
-        "हूँ।",
         "तारिक"
       ],
       "sentiment": "confused",
@@ -117,7 +115,7 @@
         "बोला",
         "जानना",
         "अरेंज",
-        "विजिट"
+        "दूँगा"
       ],
       "sentiment": null,
       "tool": null,
@@ -133,7 +131,6 @@
       "keywords": [
         "complaint",
         "किस",
-        "सर।",
         "पैसा"
       ],
       "sentiment": null,
@@ -168,9 +165,9 @@
       "keywords": [
         "नहीं हो रहा",
         "नहीं हो",
-        "हूँ।",
         "business",
-        "arrange"
+        "arrange",
+        "देखा"
       ],
       "sentiment": "frustrated",
       "tool": null,

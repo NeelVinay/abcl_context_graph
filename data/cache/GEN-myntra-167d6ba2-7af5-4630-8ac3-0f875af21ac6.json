@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "order"
       ],
@@ -39,8 +39,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_help_address_error",
-      "base_intent": "address_error",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
       "keywords": [
         "delivery",
         "problem"
@@ -66,8 +66,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_help_address_error",
-      "base_intent": "address_error",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
       "keywords": [
         "delivery",
         "problem",
@@ -83,8 +83,8 @@
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
       "keywords": [
         "deliver",
         "delivery",
@@ -119,8 +119,8 @@
       "index": 7,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_pan",
-      "base_intent": "enter_pan",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "deliver",
         "shipped",
@@ -137,8 +137,8 @@
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "कोशिश",
@@ -155,8 +155,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -196,8 +196,8 @@
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_send_sms_link",
-      "base_intent": "send_sms_link",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "deliver",
@@ -214,8 +214,8 @@
       "index": 13,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "मिल",
         "बेहतर",
@@ -248,8 +248,8 @@
       "index": 15,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "बोल",
         "repeat",
@@ -264,8 +264,8 @@
       "index": 16,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_org_name",
-      "base_intent": "organization_name",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "deliver",
@@ -282,8 +282,8 @@
       "index": 17,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "four",
         "five",
@@ -316,8 +316,8 @@
       "index": 19,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_agree",
-      "base_intent": "agree",
+      "intent": "customer_end",
+      "base_intent": "end_call",
       "keywords": [
         "thank"
       ],

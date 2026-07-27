@@ -4,23 +4,20 @@ from pathlib import Path
 # --- Paths ---
 ROOT = Path(__file__).parent
 DATA = ROOT / "data"
-TRANSCRIPTS_DIR = DATA / "transcripts"   # drop raw transcripts here
-CACHE_DIR = DATA / "cache"               # cached per-call LLM extractions
-OUTPUT_DIR = DATA / "output"             # master graph json + visuals
+CACHE_DIR = DATA / "cache"               # cached per-call extractions (all clients, keyed by call_id)
+OUTPUT_DIR = DATA / "output"             # <client>_output/ folders live here
+ARCHIVE_DIR = DATA / "archive"           # superseded / legacy data, kept for provenance only
 
-# --- Speech-to-text (Stage: mp3 recordings -> plain-text transcripts) ---
+# --- Per-client persistent transcript stores (see src/clients.py) ---
+# CLIENTS_DIR/<client_key>/transcripts/ holds the CURRENT full transcript set for
+# that client. python run_client.py is the normal way to populate/update this;
+# see its --append flag for adding to a client's set instead of replacing it.
+CLIENTS_DIR = DATA / "clients"
+
+# --- Legacy paths, kept only for src/transcribe.py and run.py's low-level flags ---
+TRANSCRIPTS_DIR = CLIENTS_DIR / "abcl" / "transcripts"
 AUDIO_SRC = Path.home() / "Downloads" / "leads_mp3_data"  # raw call recordings (.mp3)
-AUDIO_TRANSCRIPTS_DIR = DATA / "audio_transcripts"        # plain-text STT output (Agent:/Customer:)
-
-# --- Cross-client generalization pilot (src/generic_taxonomy.py) ---
-# Drop new-client transcripts here, named GEN-<client>-<call_id>.txt, same plain-text
-# Agent:/Customer: format as AUDIO_TRANSCRIPTS_DIR. See src/generic_taxonomy.py docstring.
-GENERIC_TRANSCRIPTS_DIR = DATA / "generic_transcripts"
-# Charts/reports for the generic (cross-client) pipeline go here — kept separate from
-# data/output/test_100_sop (ABCL) and data/output/mp3 (JustDial) so a client's flow
-# chart is never confused with ABCL's fixed SOP skeleton or JustDial's own output.
-# Use: python run.py --all --src data/generic_transcripts --out data/output/generic --graph flow
-GENERIC_OUTPUT_DIR = OUTPUT_DIR / "generic"
+AUDIO_TRANSCRIPTS_DIR = CLIENTS_DIR / "justdial" / "transcripts"  # plain-text STT output
 
 # --- Models (confirm exact IDs against the claude-api reference when wiring extraction) ---
 EXTRACTION_MODEL = "claude-sonnet-4-6"   # per-call extraction (cost-efficient, high volume)
@@ -37,6 +34,5 @@ MIN_EDGE_COUNT = 15          # prune edges below this count when visualizing (ra
 START = "__START__"
 END = "__END__"
 
-for _d in (TRANSCRIPTS_DIR, CACHE_DIR, OUTPUT_DIR, AUDIO_TRANSCRIPTS_DIR,
-          GENERIC_TRANSCRIPTS_DIR, GENERIC_OUTPUT_DIR):
+for _d in (CACHE_DIR, OUTPUT_DIR, ARCHIVE_DIR, CLIENTS_DIR, TRANSCRIPTS_DIR, AUDIO_TRANSCRIPTS_DIR):
     _d.mkdir(parents=True, exist_ok=True)

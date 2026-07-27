@@ -1,5 +1,5 @@
 {
-  "call_id": "d9aaa177",
+  "call_id": "d9aaa177-7896-44c9-9624-89f214e8cfcf-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -134,10 +134,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
+        "बताएं",
         "कृपया",
         "रखें",
-        "जिसमें",
-        "बताएं"
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -186,8 +186,8 @@
         "खुल गया",
         "लिंक पर क्लिक",
         "sms",
-        "कृपया",
-        "बताएं"
+        "बताएं",
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -265,10 +265,10 @@
       "base_intent": "open_link",
       "keywords": [
         "लिंक पर क्लिक",
-        "करें।",
-        "हूँ।",
         "मदद",
-        "कृपया"
+        "कृपया",
+        "application",
+        "शुरू"
       ],
       "sentiment": null,
       "tool": null,
@@ -332,8 +332,8 @@
       "intent": "agent_guide_open_link",
       "base_intent": "open_link",
       "keywords": [
-        "कृपया",
         "बताएं",
+        "कृपया",
         "लिंक",
         "खोल",
         "सुन"
@@ -402,7 +402,7 @@
         "loan",
         "offer",
         "amount",
-        "final",
+        "बताएं",
         "कृपया"
       ],
       "sentiment": null,
@@ -433,10 +433,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "हूँ।",
         "मदद",
         "कृपया",
-        "process"
+        "process",
+        "relationship"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

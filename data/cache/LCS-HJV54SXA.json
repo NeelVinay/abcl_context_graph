@@ -157,8 +157,8 @@
       "base_intent": "agent_handle",
       "keywords": [
         "what",
-        "open",
         "requirement",
+        "open",
         "process",
         "source"
       ],

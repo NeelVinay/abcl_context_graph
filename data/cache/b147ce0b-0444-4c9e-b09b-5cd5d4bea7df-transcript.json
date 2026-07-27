@@ -1,5 +1,5 @@
 {
-  "call_id": "b147ce0b",
+  "call_id": "b147ce0b-0444-4c9e-b09b-5cd5d4bea7df-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -149,8 +149,8 @@
         "खुल गया",
         "लिंक पर क्लिक",
         "sms",
-        "कृपया",
-        "जाए"
+        "बताएं",
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -182,7 +182,7 @@
       "keywords": [
         "sms",
         "बोल",
-        "हूँ।",
+        "बताएं",
         "मदद",
         "capital"
       ],
@@ -200,9 +200,9 @@
       "keywords": [
         "apply now",
         "apply",
+        "बताएं",
         "now",
-        "कृपया",
-        "नीचे"
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -232,7 +232,7 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "बताएं",
         "कृपया",
         "verify",
         "नीचे"
@@ -264,10 +264,10 @@
       "base_intent": "enter_pan",
       "keywords": [
         "पैन",
+        "बताएं",
         "कृपया",
-        "personal",
-        "details",
-        "सबसे"
+        "जाए",
+        "personal"
       ],
       "sentiment": null,
       "tool": null,
@@ -318,9 +318,9 @@
       "base_intent": "enter_pan",
       "keywords": [
         "पैन",
+        "बताएं",
         "कृपया",
         "आगे",
-        "बताएं",
         "पूरा"
       ],
       "sentiment": null,
@@ -335,11 +335,11 @@
       "intent": "agent_end_call",
       "base_intent": "end_call",
       "keywords": [
-        "हूँ।",
         "कॉल",
         "धन्यवाद",
         "चूंकि",
-        "समाप्त"
+        "समाप्त",
+        "प्रतिक्रिया"
       ],
       "sentiment": null,
       "tool": null,
@@ -354,10 +354,10 @@
       "base_intent": "enter_pan",
       "keywords": [
         "पैन",
+        "बताएं",
         "मदद",
         "कृपया",
-        "आगे",
-        "बताएं"
+        "आगे"
       ],
       "sentiment": null,
       "tool": null,
@@ -387,7 +387,6 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
-        "हूँ।",
         "समय",
         "इंतज़ार",
         "बिल्कुल",
@@ -406,10 +405,10 @@
       "base_intent": "enter_pan",
       "keywords": [
         "पैन",
-        "आगे",
         "बताएं",
+        "आगे",
         "ताकि",
-        "बढ़"
+        "सकें"
       ],
       "sentiment": null,
       "tool": null,
@@ -424,10 +423,10 @@
       "base_intent": "enter_pan",
       "keywords": [
         "पैन",
+        "बताएं",
         "मदद",
         "कृपया",
-        "जाए",
-        "बताएं"
+        "जाए"
       ],
       "sentiment": null,
       "tool": null,
@@ -459,11 +458,11 @@
       "intent": "agent_help_address_error",
       "base_intent": "address_error",
       "keywords": [
-        "करें।",
-        "हूँ।",
+        "बताएं",
         "मदद",
         "कृपया",
-        "समय"
+        "समय",
+        "समझती"
       ],
       "sentiment": null,
       "tool": null,
@@ -523,7 +522,7 @@
         "कृपया",
         "समय",
         "इंतज़ार",
-        "लें।"
+        "लें"
       ],
       "sentiment": null,
       "tool": null,
@@ -537,11 +536,11 @@
       "intent": "agent_help_address_error",
       "base_intent": "address_error",
       "keywords": [
-        "हूँ।",
-        "मदद",
         "बताएं",
+        "मदद",
         "सही",
-        "बढ़िया"
+        "बढ़िया",
+        "दिक्कत"
       ],
       "sentiment": null,
       "tool": null,
@@ -571,11 +570,11 @@
       "intent": "agent_help_address_error",
       "base_intent": "address_error",
       "keywords": [
-        "करें।",
-        "हूँ।",
+        "बताएं",
         "मदद",
         "कृपया",
-        "बताएं"
+        "समझती",
+        "दिक्कत"
       ],
       "sentiment": null,
       "tool": null,
@@ -605,11 +604,11 @@
       "intent": "agent_answer_query",
       "base_intent": "answer_query",
       "keywords": [
-        "करें।",
-        "हूँ।",
+        "बताएं",
         "मदद",
         "details",
-        "आगे"
+        "आगे",
+        "fill"
       ],
       "sentiment": null,
       "tool": null,
@@ -635,11 +634,11 @@
       "intent": "agent_help_address_error",
       "base_intent": "address_error",
       "keywords": [
-        "हूँ।",
+        "बताएं",
         "मदद",
         "कृपया",
         "आगे",
-        "बताएं"
+        "धन्यवाद"
       ],
       "sentiment": null,
       "tool": null,
@@ -668,11 +667,11 @@
       "intent": "agent_acknowledge",
       "base_intent": "acknowledge",
       "keywords": [
-        "हूँ।",
         "मदद",
         "कृपया",
         "details",
-        "दिक्कत"
+        "दिक्कत",
+        "भरें"
       ],
       "sentiment": null,
       "tool": null,
@@ -720,10 +719,10 @@
       "base_intent": "enter_email",
       "keywords": [
         "email",
-        "हूँ।",
+        "बताएं",
         "मदद",
         "कृपया",
-        "बताएं।"
+        "समझ"
       ],
       "sentiment": null,
       "tool": null,
@@ -739,8 +738,8 @@
       "keywords": [
         "address",
         "pincode",
+        "बताएं",
         "कृपया",
-        "बताएं।",
         "पूरा"
       ],
       "sentiment": null,
@@ -769,9 +768,9 @@
       "keywords": [
         "address",
         "pincode",
+        "बताएं",
         "कृपया",
-        "जाए",
-        "आगे"
+        "जाए"
       ],
       "sentiment": null,
       "tool": null,
@@ -801,10 +800,10 @@
       "base_intent": "answer_query",
       "keywords": [
         "loan",
-        "हूँ।",
-        "मदद",
         "बताएं",
-        "अनुसार"
+        "मदद",
+        "अनुसार",
+        "close"
       ],
       "sentiment": null,
       "tool": null,
@@ -821,8 +820,8 @@
         "emi",
         "first",
         "close",
-        "after",
-        "month"
+        "month",
+        "after"
       ],
       "sentiment": null,
       "tool": null,
@@ -837,10 +836,10 @@
       "base_intent": "answer_query",
       "keywords": [
         "loan",
-        "हूँ।",
         "मदद",
         "कृपया",
-        "details"
+        "details",
+        "आगे"
       ],
       "sentiment": null,
       "tool": null,
@@ -905,11 +904,11 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
-        "हूँ।",
         "मदद",
         "कृपया",
         "process",
-        "इंतज़ार"
+        "इंतज़ार",
+        "बिल्कुल"
       ],
       "sentiment": null,
       "tool": null,
@@ -938,7 +937,7 @@
         "relationship manager",
         "loan",
         "amount",
-        "करें।",
+        "कृपया",
         "final"
       ],
       "sentiment": null,

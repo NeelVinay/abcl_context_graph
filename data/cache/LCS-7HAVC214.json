@@ -31,7 +31,7 @@
         "inquiry",
         "उन्होंने",
         "समझ",
-        "जी।",
+        "आगे",
         "पता"
       ],
       "sentiment": null,
@@ -72,11 +72,11 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "हूँ।",
         "contract",
         "business",
         "लेकर",
-        "लीड"
+        "लीड",
+        "review"
       ],
       "sentiment": null,
       "tool": null,
@@ -93,8 +93,7 @@
         "rating",
         "find",
         "गूगल",
-        "देखूं",
-        "करना।"
+        "देखूं"
       ],
       "sentiment": null,
       "tool": null,

@@ -1,5 +1,5 @@
 {
-  "call_id": "0139490a",
+  "call_id": "0139490a-e09f-4efe-bdb1-c91775067e5f-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -100,8 +100,9 @@
       "intent": "customer_request_wait",
       "base_intent": "wait_hold",
       "keywords": [
+        "काम",
         "इधर",
-        "काम"
+        "work"
       ],
       "sentiment": null,
       "tool": null,
@@ -116,10 +117,10 @@
       "base_intent": "wait_hold",
       "keywords": [
         "मदद",
-        "ready",
+        "आगे",
         "समझ",
-        "हों",
-        "आगे"
+        "दिक्कत",
+        "हों"
       ],
       "sentiment": null,
       "tool": null,
@@ -161,9 +162,11 @@
       "intent": "agent_confirm",
       "base_intent": "agree",
       "keywords": [
-        "हूँ।",
         "apply",
-        "आगे"
+        "आगे",
+        "guide",
+        "तैयार",
+        "steps"
       ],
       "sentiment": null,
       "tool": null,
@@ -177,7 +180,11 @@
       "intent": "agent_end_call",
       "base_intent": "end_call",
       "keywords": [
-        "हूँ।"
+        "कॉल",
+        "धन्यवाद",
+        "चूंकि",
+        "समाप्त",
+        "प्रतिक्रिया"
       ],
       "sentiment": null,
       "tool": null,
@@ -190,7 +197,10 @@
       "type": "action",
       "intent": "customer_acknowledge",
       "base_intent": "acknowledge",
-      "keywords": [],
+      "keywords": [
+        "बोलने",
+        "पढ़ते"
+      ],
       "sentiment": null,
       "tool": null,
       "text": "यह बोलने के लिए पढ़ते यार.",
@@ -205,9 +215,9 @@
       "keywords": [
         "sms",
         "लिंक भेज",
+        "मदद",
         "application",
-        "हूँ।",
-        "मदद"
+        "समझ"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -220,7 +230,10 @@
       "type": "action",
       "intent": "customer_agree",
       "base_intent": "agree",
-      "keywords": [],
+      "keywords": [
+        "देखते",
+        "रहो"
+      ],
       "sentiment": null,
       "tool": null,
       "text": "देखते रहो. ठीक है. भिजवा क्या",
@@ -234,10 +247,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "जिसमें",
+        "apply",
         "कृपया",
-        "करें।",
-        "रखें"
+        "रखें",
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -265,8 +278,9 @@
       "keywords": [
         "खुल गया",
         "लिंक पर क्लिक",
-        "कृपया",
-        "sms"
+        "sms",
+        "बताएं",
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -279,7 +293,11 @@
       "type": "action",
       "intent": "customer_report_sms_received",
       "base_intent": "send_sms_link",
-      "keywords": [],
+      "keywords": [
+        "message",
+        "whatsapp",
+        "दूसरा"
+      ],
       "sentiment": null,
       "tool": null,
       "text": "Sir वह message नहीं है दूसरा है. यह WhatsApp पर आ गया तो",
@@ -292,11 +310,11 @@
       "intent": "agent_reassure_trust",
       "base_intent": "reassure_trust",
       "keywords": [
-        "कृपया",
         "sms",
+        "बताएं",
+        "कृपया",
         "तरफ",
-        "capital",
-        "aditya"
+        "आगे"
       ],
       "sentiment": null,
       "tool": null,
@@ -312,9 +330,9 @@
       "keywords": [
         "sms",
         "कृपया",
-        "हूँ।",
         "रखें",
-        "भेज"
+        "भेज",
+        "देर"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -330,9 +348,9 @@
       "keywords": [
         "sms",
         "कृपया",
-        "करें।",
         "रखें",
-        "भेज"
+        "भेज",
+        "मिल"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -345,7 +363,9 @@
       "type": "action",
       "intent": "customer_report_sms_received",
       "base_intent": "send_sms_link",
-      "keywords": [],
+      "keywords": [
+        "message"
+      ],
       "sentiment": null,
       "tool": null,
       "text": "Madam message आ गया madam.",
@@ -360,8 +380,9 @@
       "keywords": [
         "खुल गया",
         "लिंक पर क्लिक",
-        "कृपया",
-        "sms"
+        "sms",
+        "बताएं",
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -375,7 +396,8 @@
       "intent": "customer_request_wait",
       "base_intent": "wait_hold",
       "keywords": [
-        "minute"
+        "minute",
+        "open"
       ],
       "sentiment": null,
       "tool": null,
@@ -389,7 +411,11 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
-        "मदद"
+        "मदद",
+        "लिंक",
+        "दिक्कत",
+        "आराम",
+        "बिलकुल"
       ],
       "sentiment": null,
       "tool": null,
@@ -404,7 +430,9 @@
       "base_intent": "final_offer",
       "keywords": [
         "loan",
-        "दिखा"
+        "दिखा",
+        "उसमें",
+        "pay"
       ],
       "sentiment": null,
       "tool": null,
@@ -419,10 +447,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "relationship",
-        "process",
-        "connect",
-        "manager"
+        "loan",
+        "offer",
+        "amount",
+        "मदद"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

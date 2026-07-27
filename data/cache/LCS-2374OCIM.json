@@ -45,8 +45,8 @@
         "call",
         "category",
         "inquiry",
-        "काम",
-        "लीड"
+        "लीड",
+        "काम"
       ],
       "sentiment": null,
       "tool": null,
@@ -104,8 +104,8 @@
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "लीजिए।",
-        "रदी"
+        "रदी",
+        "लिखे"
       ],
       "sentiment": null,
       "tool": null,

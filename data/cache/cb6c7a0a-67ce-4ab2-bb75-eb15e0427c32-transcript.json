@@ -1,5 +1,5 @@
 {
-  "call_id": "cb6c7a0a",
+  "call_id": "cb6c7a0a-67ce-4ab2-bb75-eb15e0427c32-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -122,9 +122,9 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
+        "बताएं",
         "कृपया",
         "इंतज़ार",
-        "बताएं",
         "तैयार",
         "हों"
       ],
@@ -169,10 +169,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
         "कृपया",
         "application",
-        "रखें"
+        "रखें",
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -221,8 +221,8 @@
         "खुल गया",
         "लिंक पर क्लिक",
         "sms",
-        "करें।",
-        "कृपया"
+        "कृपया",
+        "खुल"
       ],
       "sentiment": null,
       "tool": null,
@@ -251,8 +251,8 @@
       "base_intent": "open_link",
       "keywords": [
         "खुल गया",
-        "कृपया",
         "बताएं",
+        "कृपया",
         "ताकि",
         "खुल"
       ],
@@ -286,8 +286,7 @@
         "कृपया",
         "नंबर",
         "टाइप",
-        "मोबाइल",
-        "जी।"
+        "मोबाइल"
       ],
       "sentiment": null,
       "tool": null,
@@ -315,11 +314,11 @@
       "intent": "agent_request_otp",
       "base_intent": "mobile_otp",
       "keywords": [
-        "करें।",
-        "हूँ।",
+        "बताएं",
         "मदद",
         "कृपया",
-        "बताएं"
+        "समझ",
+        "सही"
       ],
       "sentiment": null,
       "tool": null,
@@ -365,10 +364,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
+        "बताएं",
         "कृपया",
         "verify",
-        "complete",
-        "बताएं"
+        "जाए"
       ],
       "sentiment": null,
       "tool": null,
@@ -383,9 +382,9 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
+        "बताएं",
         "कृपया",
         "verify",
-        "complete",
         "जाए"
       ],
       "sentiment": null,
@@ -416,8 +415,8 @@
       "keywords": [
         "loan",
         "offer",
-        "मदद",
         "otp",
+        "मदद",
         "समय"
       ],
       "sentiment": null,

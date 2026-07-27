@@ -1,6 +1,11 @@
-"""Entry point for the ABCL context-graph pipeline.
+"""Low-level entry point for the context-graph pipeline. For normal use — point at
+a folder of transcripts and get one output folder for that client — use
+`python run_client.py <folder>` instead; it auto-detects the client and handles
+this file's flags for you. Use this file directly when you need fine-grained
+control (a specific --graph mode, --min-count/--top-k tuning, or --mock/--taxonomy
+for demos with no real transcripts).
 
-  python run.py --all            process all transcripts in data/transcripts/
+  python run.py --all --src DIR --out DIR --graph {flow,dfg,both,sop,sop-exec}
   python run.py --extract PATH   process one transcript
   python run.py --mock           demo on fake data (no transcripts)
   python run.py --taxonomy       discover the intent taxonomy from mock

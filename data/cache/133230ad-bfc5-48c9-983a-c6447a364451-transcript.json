@@ -1,5 +1,5 @@
 {
-  "call_id": "133230ad",
+  "call_id": "133230ad-bfc5-48c9-983a-c6447a364451-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -57,10 +57,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
         "application",
         "process",
-        "रखें"
+        "रखें",
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -75,7 +75,6 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
         "link",
         "click"
       ],
@@ -93,7 +92,7 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
+        "बताएं",
         "now",
         "कृपया"
       ],
@@ -123,11 +122,11 @@
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "करें।",
         "link",
         "check",
         "try",
-        "internet"
+        "internet",
+        "connection"
       ],
       "sentiment": null,
       "tool": null,
@@ -201,10 +200,10 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
-        "हूँ।",
         "link",
-        "click"
+        "click",
+        "तरीके",
+        "simple"
       ],
       "sentiment": null,
       "tool": null,
@@ -233,9 +232,9 @@
       "base_intent": "wait_hold",
       "keywords": [
         "wait",
+        "बताएं",
         "otp",
         "कृपया",
-        "बताएं।",
         "जाए"
       ],
       "sentiment": null,
@@ -253,8 +252,8 @@
         "otp",
         "loan",
         "offer",
-        "कृपया",
-        "verify"
+        "बताएं",
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -283,10 +282,10 @@
       "base_intent": "wait_hold",
       "keywords": [
         "wait",
-        "करें।",
         "otp",
         "कृपया",
-        "जाएगा।"
+        "जल्दी",
+        "minutes"
       ],
       "sentiment": null,
       "tool": null,
@@ -301,10 +300,10 @@
       "base_intent": "wait_hold",
       "keywords": [
         "wait",
-        "करें।",
+        "बताएं",
         "otp",
         "कृपया",
-        "बताएं।"
+        "जाए"
       ],
       "sentiment": null,
       "tool": null,
@@ -382,10 +381,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

@@ -91,8 +91,7 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "देंगे।",
-        "पाएगा।"
+        "पाएगा"
       ],
       "sentiment": null,
       "tool": null,
@@ -106,7 +105,7 @@
       "intent": "agent_acknowledge_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "पाएगा।"
+        "पाएगा"
       ],
       "sentiment": null,
       "tool": null,
@@ -122,9 +121,9 @@
       "keywords": [
         "customer",
         "call",
-        "चाहिए।",
         "मिनट",
-        "आगे"
+        "आगे",
+        "कितना"
       ],
       "sentiment": null,
       "tool": null,
@@ -172,7 +171,7 @@
         "category",
         "number",
         "request",
-        "था।"
+        "पूरा"
       ],
       "sentiment": null,
       "tool": null,
@@ -186,8 +185,7 @@
       "intent": "customer_ask_question",
       "base_intent": "question",
       "keywords": [
-        "pincode",
-        "था।"
+        "pincode"
       ],
       "sentiment": null,
       "tool": null,

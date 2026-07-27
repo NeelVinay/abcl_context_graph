@@ -1,5 +1,5 @@
 {
-  "call_id": "8e975c75",
+  "call_id": "8e975c75-3a2a-4f41-9f3d-090901653cee-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -69,10 +69,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
         "application",
         "process",
-        "रखें"
+        "रखें",
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -87,7 +87,6 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
         "link",
         "click"
       ],
@@ -130,10 +129,10 @@
       "base_intent": "greeting",
       "keywords": [
         "बोल",
-        "हूँ।",
         "तरफ",
         "capital",
-        "aditya"
+        "aditya",
+        "birla"
       ],
       "sentiment": null,
       "tool": null,
@@ -193,10 +192,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
         "application",
         "process",
-        "रखें"
+        "रखें",
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -211,7 +210,6 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
         "link",
         "click"
       ],
@@ -260,9 +258,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "देख"
+        "देख",
+        "नीचे"
       ],
       "sentiment": null,
       "tool": null,
@@ -291,10 +289,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "बताएं",
         "verify",
-        "बताएं।",
-        "जाए"
+        "जाए",
+        "details"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -323,9 +321,9 @@
       "base_intent": "wait_hold",
       "keywords": [
         "wait",
+        "बताएं",
         "otp",
         "कृपया",
-        "बताएं।",
         "जाए"
       ],
       "sentiment": null,
@@ -389,10 +387,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
+        "बताएं",
         "मदद",
         "कृपया",
-        "verify",
-        "आगे"
+        "verify"
       ],
       "sentiment": null,
       "tool": null,
@@ -439,10 +437,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

@@ -1,5 +1,5 @@
 {
-  "call_id": "78dbd7a8",
+  "call_id": "78dbd7a8-fedd-475d-b39e-65bc37617f12-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -24,8 +24,7 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
-        "इंतज़ार",
-        "chd"
+        "इंतज़ार"
       ],
       "sentiment": null,
       "tool": null,
@@ -119,7 +118,6 @@
       "intent": "agent_guide_open_link",
       "base_intent": "open_link",
       "keywords": [
-        "करें।",
         "link",
         "click"
       ],
@@ -212,9 +210,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "देख"
+        "देख",
+        "नीचे"
       ],
       "sentiment": null,
       "tool": null,
@@ -243,10 +241,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "number",
         "get",
-        "terms"
+        "terms",
+        "mobile"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -340,10 +338,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
+        "बताएं",
         "verify",
-        "number",
-        "बताएं।",
-        "mobile"
+        "जाए",
+        "number"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -358,9 +356,9 @@
       "base_intent": "wait_hold",
       "keywords": [
         "wait",
+        "बताएं",
         "otp",
         "कृपया",
-        "बताएं।",
         "जाए"
       ],
       "sentiment": null,
@@ -460,9 +458,9 @@
       "keywords": [
         "relationship manager",
         "offer",
-        "हूँ।",
         "final",
-        "शुरू"
+        "शुरू",
+        "relationship"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -489,10 +487,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -507,10 +505,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -557,10 +555,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "specialist से connect",
-        "करें।",
-        "हूँ।",
         "कृपया",
-        "समय"
+        "समय",
+        "connect",
+        "इंतज़ार"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -591,10 +589,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -637,10 +635,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "हूँ।",
         "relationship",
         "manager",
-        "connect"
+        "connect",
+        "सही"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -670,10 +668,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -728,10 +726,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -747,8 +745,8 @@
       "keywords": [
         "हज़ार",
         "सत्तर",
-        "score",
         "total",
+        "score",
         "कितनी"
       ],
       "sentiment": null,
@@ -765,9 +763,9 @@
       "keywords": [
         "relationship manager",
         "offer",
-        "हूँ।",
         "final",
-        "शुरू"
+        "शुरू",
+        "relationship"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -797,10 +795,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "हूँ।",
         "relationship",
         "manager",
-        "connect"
+        "connect",
+        "सही"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -862,7 +860,6 @@
       "intent": "agent_acknowledge",
       "base_intent": "acknowledge",
       "keywords": [
-        "हूँ।",
         "समझती"
       ],
       "sentiment": null,
@@ -879,8 +876,8 @@
       "keywords": [
         "हज़ार",
         "कितना",
-        "time",
         "रुपए",
+        "time",
         "अरे"
       ],
       "sentiment": null,
@@ -896,10 +893,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -944,10 +941,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -994,10 +991,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -1055,10 +1052,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -1152,10 +1149,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
-        "हूँ।",
         "मदद",
-        "कृपया"
+        "कृपया",
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -1182,10 +1179,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -1200,9 +1197,9 @@
       "base_intent": "ask_question",
       "keywords": [
         "connect",
+        "लगेगा",
         "कितना",
         "time",
-        "लगेगा",
         "कराओ"
       ],
       "sentiment": null,
@@ -1218,10 +1215,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "हूँ।",
         "मदद",
         "कृपया",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -1252,10 +1249,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "हूँ।",
         "मदद",
         "कृपया",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -1285,10 +1282,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "हूँ।",
         "मदद",
         "कृपया",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -1303,10 +1300,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -1335,10 +1332,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
-        "हूँ।",
         "मदद",
-        "कृपया"
+        "कृपया",
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -1369,10 +1366,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
-        "हूँ।",
         "मदद",
-        "कृपया"
+        "कृपया",
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -1405,10 +1402,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -1601,8 +1598,8 @@
         "interest rate",
         "offer",
         "sms",
-        "करें।",
-        "final"
+        "final",
+        "शुरू"
       ],
       "sentiment": null,
       "tool": null,

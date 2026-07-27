@@ -1,5 +1,5 @@
 {
-  "call_id": "28eeeb54",
+  "call_id": "28eeeb54-cc91-4b36-b1df-d1a196e801f4-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -116,10 +116,10 @@
       "base_intent": "ask_question",
       "keywords": [
         "process",
+        "लगेगा",
         "दिए",
         "time",
-        "कितने",
-        "बोला"
+        "कितने"
       ],
       "sentiment": null,
       "tool": null,
@@ -296,7 +296,7 @@
         "interest rate",
         "offer",
         "sms",
-        "final"
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -375,8 +375,8 @@
         "वेबसाइट",
         "लिंक पर क्लिक",
         "sms",
-        "कृपया",
-        "बताएं"
+        "बताएं",
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -488,9 +488,9 @@
       "keywords": [
         "apply now",
         "apply",
+        "बताएं",
         "now",
-        "कृपया",
-        "button"
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -550,8 +550,8 @@
         "कृपया",
         "number",
         "mobile",
-        "था।",
-        "टाइप"
+        "टाइप",
+        "इस्तेमाल"
       ],
       "sentiment": null,
       "tool": null,
@@ -613,10 +613,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "हूँ।",
         "मदद",
         "कृपया",
-        "application"
+        "application",
+        "भेज"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -735,7 +735,7 @@
       "keywords": [
         "otp",
         "sms",
-        "करें।",
+        "बताएं",
         "मदद",
         "कृपया"
       ],
@@ -801,10 +801,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "हूँ।",
         "मदद",
         "कृपया",
-        "process"
+        "process",
+        "relationship"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

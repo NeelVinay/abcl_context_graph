@@ -1,5 +1,5 @@
 {
-  "call_id": "814513e5",
+  "call_id": "814513e5-585b-4d5a-8d3f-c8e09a71be01-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -183,9 +183,9 @@
       "keywords": [
         "sms",
         "link भेज",
-        "हूँ।",
         "मदद",
-        "application"
+        "application",
+        "process"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -218,8 +218,8 @@
         "खुल गया",
         "लिंक पर क्लिक",
         "sms",
-        "करें।",
-        "कृपया"
+        "कृपया",
+        "रखें"
       ],
       "sentiment": null,
       "tool": null,
@@ -245,10 +245,10 @@
       "intent": "agent_guide_open_link",
       "base_intent": "open_link",
       "keywords": [
-        "हूँ।",
-        "कृपया",
-        "समय",
         "बताएं",
+        "कृपया",
+        "जाए",
+        "समय",
         "खुल"
       ],
       "sentiment": null,
@@ -311,11 +311,11 @@
       "intent": "agent_request_otp",
       "base_intent": "mobile_otp",
       "keywords": [
+        "बताएं",
         "कृपया",
         "number",
         "mobile",
-        "screen",
-        "आगे"
+        "screen"
       ],
       "sentiment": null,
       "tool": null,
@@ -346,10 +346,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "बताएं",
         "कृपया",
         "verify",
-        "नीचे"
+        "जाए"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -452,9 +452,9 @@
       "keywords": [
         "salaried",
         "self-employ",
+        "बताएं",
         "कृपया",
-        "details",
-        "आगे"
+        "details"
       ],
       "sentiment": null,
       "tool": null,

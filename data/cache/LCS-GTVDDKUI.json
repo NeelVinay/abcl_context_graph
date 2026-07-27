@@ -28,8 +28,7 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "check",
-        "था।"
+        "check"
       ],
       "sentiment": null,
       "tool": null,
@@ -45,9 +44,9 @@
       "keywords": [
         "share",
         "out",
-        "था।",
         "second",
-        "per"
+        "per",
+        "उसने"
       ],
       "sentiment": null,
       "tool": null,
@@ -76,9 +75,7 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "में।",
-        "normal",
-        "okay।"
+        "normal"
       ],
       "sentiment": null,
       "tool": null,
@@ -207,10 +204,10 @@
       "base_intent": "question",
       "keywords": [
         "message",
-        "था।",
+        "process",
         "show",
         "आगे",
-        "okay।"
+        "इतनी"
       ],
       "sentiment": null,
       "tool": null,
@@ -227,7 +224,8 @@
         "response",
         "लिये",
         "बढ़ेगा",
-        "offer"
+        "offer",
+        "लाओ"
       ],
       "sentiment": null,
       "tool": null,
@@ -241,11 +239,9 @@
       "intent": "agent_raise_request",
       "base_intent": "resolution",
       "keywords": [
-        "हूँ।",
         "feedback",
         "share",
-        "agent",
-        "हो।"
+        "agent"
       ],
       "sentiment": null,
       "tool": null,

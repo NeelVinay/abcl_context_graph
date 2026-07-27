@@ -47,8 +47,8 @@
       "base_intent": "agent_handle",
       "keywords": [
         "service",
-        "check",
         "leads",
+        "check",
         "contract",
         "business"
       ],

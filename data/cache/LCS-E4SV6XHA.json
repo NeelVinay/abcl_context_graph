@@ -77,8 +77,8 @@
       "keywords": [
         "lead",
         "any",
-        "much",
         "related",
+        "much",
         "issues"
       ],
       "sentiment": null,
@@ -126,7 +126,6 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "हूँ।",
         "अलग",
         "पूर्ण"
       ],

@@ -1,5 +1,5 @@
 {
-  "call_id": "190be58f",
+  "call_id": "190be58f-719d-4ca9-b480-4eb4012abdda-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -98,10 +98,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
         "application",
         "process",
-        "रखें"
+        "रखें",
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -149,7 +149,7 @@
         "offer",
         "sms",
         "amount",
-        "करें।"
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -209,9 +209,9 @@
       "keywords": [
         "खुल गया",
         "sms",
+        "बताएं",
         "कृपया",
-        "page",
-        "link"
+        "page"
       ],
       "sentiment": null,
       "tool": null,
@@ -258,9 +258,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "देख"
+        "देख",
+        "नीचे"
       ],
       "sentiment": null,
       "tool": null,
@@ -318,10 +318,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
-        "हूँ।",
         "कृपया",
-        "भेज"
+        "भेज",
+        "check",
+        "मिला"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -350,7 +350,6 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
         "link",
         "click"
       ],
@@ -385,10 +384,10 @@
       "base_intent": "open_link",
       "keywords": [
         "apply",
-        "करें।",
         "now",
         "कृपया",
-        "देख"
+        "देख",
+        "नीचे"
       ],
       "sentiment": null,
       "tool": null,
@@ -419,8 +418,8 @@
       "base_intent": "other",
       "keywords": [
         "sms",
-        "link",
         "जाए",
+        "link",
         "आगे",
         "समझ"
       ],
@@ -532,8 +531,8 @@
         "तैयार",
         "हों",
         "आराम",
-        "बताइए।",
-        "रहिए।"
+        "रहिए",
+        "पढ़ते"
       ],
       "sentiment": null,
       "tool": null,
@@ -564,9 +563,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "देख"
+        "देख",
+        "नीचे"
       ],
       "sentiment": null,
       "tool": null,
@@ -634,10 +633,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -666,10 +665,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

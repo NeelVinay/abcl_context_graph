@@ -27,9 +27,7 @@
       "type": "action",
       "intent": "customer_other",
       "base_intent": "other",
-      "keywords": [
-        "से।"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "से। ठीक है ma'am,",
@@ -44,9 +42,9 @@
       "keywords": [
         "call",
         "thank",
-        "हूँ।",
         "category",
-        "ticket"
+        "ticket",
+        "number"
       ],
       "sentiment": null,
       "tool": null,

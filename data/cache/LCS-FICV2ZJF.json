@@ -210,7 +210,8 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "देखिये"
+        "देखिये",
+        "बताइये"
       ],
       "sentiment": null,
       "tool": null,

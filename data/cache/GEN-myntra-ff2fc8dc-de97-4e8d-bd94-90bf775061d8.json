@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_query",
-      "base_intent": "answer_query",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "order",
         "delivery",
@@ -43,8 +43,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "order",
         "समझ",
@@ -61,8 +61,8 @@
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_pan",
-      "base_intent": "enter_pan",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "deliver",
@@ -79,8 +79,8 @@
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "order",
         "मिल",
@@ -115,8 +115,8 @@
       "index": 6,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
       "keywords": [
         "app"
       ],
@@ -129,8 +129,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
       "keywords": [
         "deliver",
         "app",
@@ -165,8 +165,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_disagree",
+      "base_intent": "disagree",
       "keywords": [
         "app"
       ],
@@ -180,7 +180,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "base_intent": "distrust_security",
       "keywords": [
         "app",
         "दिखा",
@@ -214,8 +214,8 @@
       "index": 12,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_disagree",
+      "base_intent": "disagree",
       "keywords": [
         "अलग"
       ],
@@ -228,8 +228,8 @@
       "index": 13,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
       "keywords": [
         "चाह",
         "सुन"
@@ -243,8 +243,8 @@
       "index": 14,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "app",
         "दिखा",
@@ -279,8 +279,8 @@
       "index": 16,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_query_fee",
-      "base_intent": "processing_fee",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "मिलेगा",
         "उनतीस"
@@ -312,8 +312,8 @@
       "index": 18,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_state_employment_type",
-      "base_intent": "employment_type",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "काम"
       ],
@@ -326,8 +326,8 @@
       "index": 19,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "confused_repeat",
       "keywords": [
         "चाहते"
       ],
@@ -340,14 +340,14 @@
       "index": 20,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "delivery",
         "complaint",
         "दिखा",
         "काम",
-        "कीजिए"
+        "तारीख"
       ],
       "sentiment": null,
       "tool": null,
@@ -357,9 +357,9 @@
     {
       "index": 21,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "समझ",
         "line",
@@ -368,7 +368,7 @@
         "कृपया"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "जी, बिलकुल। मैं आपकी परेशानी समझ सकती हूँ कि delivery date को लेकर confusion हो रहा है और आप चाहते हैं कि इसकी complaint दर्ज हो जाए। मैं अभी आपके लिए यह complaint register कर देती हूँ ताकि हमारी backend team इसे check करके जल्द से जल्द resolve कर दे। कृपया line पर बने रहिए।",
       "entities": []
     },
@@ -376,8 +376,8 @@
       "index": 22,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "मिलेगा",
@@ -423,9 +423,9 @@
     {
       "index": 25,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "line",
         "कृपया",
@@ -434,16 +434,16 @@
         "agent"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "ठीक है, मै आपको expert agent से connect कर रही हूँ। कृपया line पर बने रहिए।",
       "entities": []
     },
     {
       "index": 26,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "call",
         "now",
@@ -452,7 +452,7 @@
         "immediately"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "I will connect you with our specialized team. Transferring your call now, they will be with you immediately.",
       "entities": []
     }

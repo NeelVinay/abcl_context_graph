@@ -1,5 +1,5 @@
 {
-  "call_id": "2352c059",
+  "call_id": "2352c059-e526-4cfa-9262-2c8ec1ee69fc-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -211,10 +211,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
-        "हूँ।",
         "कृपया",
-        "application"
+        "application",
+        "रखें",
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -338,9 +338,9 @@
       "base_intent": "reassure_trust",
       "keywords": [
         "sms",
+        "बताएं",
         "कृपया",
         "capital",
-        "बताएं",
         "aditya"
       ],
       "sentiment": null,
@@ -371,9 +371,9 @@
       "keywords": [
         "apply now",
         "apply",
+        "बताएं",
         "now",
-        "कृपया",
-        "नीचे"
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -405,10 +405,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "बताएं",
         "कृपया",
         "verify",
-        "नीचे"
+        "जाए"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -437,11 +437,11 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
+        "बताएं",
         "इंतज़ार",
         "आगे",
-        "बताएं",
         "ताकि",
-        "बढ़"
+        "सकें"
       ],
       "sentiment": null,
       "tool": null,
@@ -469,9 +469,9 @@
       "intent": "agent_reassure_trust",
       "base_intent": "reassure_trust",
       "keywords": [
-        "हूँ।",
-        "मदद",
+        "बताएं",
         "otp",
+        "मदद",
         "कृपया",
         "आगे"
       ],
@@ -499,9 +499,9 @@
       "intent": "agent_reassure_trust",
       "base_intent": "reassure_trust",
       "keywords": [
-        "हूँ।",
-        "मदद",
+        "बताएं",
         "otp",
+        "मदद",
         "कृपया",
         "आगे"
       ],
@@ -529,9 +529,9 @@
       "intent": "agent_reassure_trust",
       "base_intent": "reassure_trust",
       "keywords": [
-        "हूँ।",
-        "मदद",
+        "बताएं",
         "otp",
+        "मदद",
         "कृपया",
         "आगे"
       ],
@@ -563,10 +563,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
+        "बताएं",
         "कृपया",
         "verify",
-        "जाए",
-        "आगे"
+        "जाए"
       ],
       "sentiment": null,
       "tool": null,
@@ -597,9 +597,9 @@
       "keywords": [
         "salaried",
         "self-employ",
+        "बताएं",
         "कृपया",
-        "self",
-        "employment"
+        "employed"
       ],
       "sentiment": null,
       "tool": null,
@@ -614,8 +614,8 @@
       "base_intent": "employment_type",
       "keywords": [
         "self employ",
-        "self",
-        "employed"
+        "employed",
+        "self"
       ],
       "sentiment": null,
       "tool": null,
@@ -698,11 +698,11 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
-        "हूँ।",
+        "बताएं",
         "कृपया",
         "इंतज़ार",
         "आगे",
-        "बताएं"
+        "ताकि"
       ],
       "sentiment": null,
       "tool": null,
@@ -730,11 +730,11 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
+        "बताएं",
         "मदद",
         "आगे",
-        "बताएं",
         "ताकि",
-        "सकें।"
+        "सकें"
       ],
       "sentiment": null,
       "tool": null,
@@ -794,9 +794,9 @@
       "keywords": [
         "income",
         "लाख",
+        "employed",
         "self",
-        "type",
-        "net"
+        "type"
       ],
       "sentiment": null,
       "tool": null,
@@ -811,8 +811,8 @@
       "base_intent": "business_details",
       "keywords": [
         "business",
+        "बताएं",
         "कृपया",
-        "बताएं।",
         "proceed",
         "address"
       ],
@@ -905,10 +905,10 @@
       "base_intent": "skip_udyam",
       "keywords": [
         "skip",
-        "करें।",
         "कृपया",
         "आगे",
-        "समझ"
+        "समझ",
+        "नंबर"
       ],
       "sentiment": null,
       "tool": null,
@@ -938,11 +938,11 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
+        "बताएं",
         "इंतज़ार",
         "आगे",
-        "बताएं",
         "ताकि",
-        "बढ़"
+        "सकें"
       ],
       "sentiment": null,
       "tool": null,
@@ -970,10 +970,10 @@
       "intent": "agent_acknowledge",
       "base_intent": "acknowledge",
       "keywords": [
+        "बताएं",
         "मदद",
         "कृपया",
         "आगे",
-        "बताएं",
         "ताकि"
       ],
       "sentiment": null,
@@ -1089,11 +1089,11 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
+        "बताएं",
         "इंतज़ार",
         "आगे",
-        "बताएं",
         "ताकि",
-        "बढ़"
+        "सकें"
       ],
       "sentiment": null,
       "tool": null,
@@ -1122,10 +1122,10 @@
       "base_intent": "answer_query",
       "keywords": [
         "sms",
-        "हूँ।",
+        "बताएं",
         "मदद",
         "कृपया",
-        "बताएं"
+        "समझती"
       ],
       "sentiment": null,
       "tool": null,
@@ -1152,10 +1152,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
+        "बताएं",
         "कृपया",
         "verify",
-        "जाए",
-        "आगे"
+        "जाए"
       ],
       "sentiment": null,
       "tool": null,
@@ -1183,9 +1183,9 @@
       "intent": "agent_request_otp",
       "base_intent": "mobile_otp",
       "keywords": [
+        "बताएं",
         "कृपया",
         "आगे",
-        "बताएं",
         "पूरा",
         "ताकि"
       ],
@@ -1273,7 +1273,7 @@
         "loan",
         "call",
         "amount",
-        "हूँ।"
+        "कृपया"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

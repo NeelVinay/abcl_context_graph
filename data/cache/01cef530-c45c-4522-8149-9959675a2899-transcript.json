@@ -1,5 +1,5 @@
 {
-  "call_id": "01cef530",
+  "call_id": "01cef530-c45c-4522-8149-9959675a2899-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -58,9 +58,9 @@
       "keywords": [
         "pre-approved",
         "loan offer",
-        "approved",
+        "loan",
         "offer",
-        "loan"
+        "approved"
       ],
       "sentiment": null,
       "tool": null,
@@ -131,10 +131,10 @@
       "intent": "agent_answer_query",
       "base_intent": "answer_query",
       "keywords": [
-        "हूँ।",
         "बोल",
         "तरफ",
         "आदित्य",
+        "बिरला",
         "कैपिटल"
       ],
       "sentiment": null,
@@ -165,9 +165,9 @@
       "keywords": [
         "pre-approved",
         "loan offer",
-        "approved",
+        "loan",
         "offer",
-        "loan"
+        "approved"
       ],
       "sentiment": null,
       "tool": null,
@@ -198,8 +198,8 @@
         "sms",
         "application",
         "process",
-        "जिसमें",
-        "करें।"
+        "रखें",
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -230,10 +230,10 @@
       "base_intent": "final_offer",
       "keywords": [
         "final offer",
-        "amount",
+        "loan",
         "offer",
-        "final",
-        "loan"
+        "amount",
+        "final"
       ],
       "sentiment": null,
       "tool": null,
@@ -247,7 +247,9 @@
       "intent": "customer_react_to_final_offer",
       "base_intent": "final_offer",
       "keywords": [
-        "दिखा"
+        "lakh",
+        "दिखा",
+        "two"
       ],
       "sentiment": null,
       "tool": null,
@@ -262,10 +264,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "relationship",
+        "कृपया",
         "process",
-        "manager",
-        "connect"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -279,7 +281,8 @@
       "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "kyc"
+        "kyc",
+        "चुका"
       ],
       "sentiment": null,
       "tool": null,
@@ -297,7 +300,7 @@
         "relationship",
         "manager",
         "connect",
-        "हूँ।"
+        "सही"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -311,11 +314,11 @@
       "intent": "customer_acknowledge",
       "base_intent": "manual_review",
       "keywords": [
-        "application",
         "loan",
+        "application",
         "check",
-        "दिखा",
-        "इधर"
+        "देर",
+        "दिखा"
       ],
       "sentiment": null,
       "tool": null,
@@ -329,10 +332,10 @@
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
+        "call",
         "relationship",
         "manager",
-        "call",
-        "ready",
+        "दूँ",
         "हों"
       ],
       "sentiment": null,
@@ -346,7 +349,9 @@
       "type": "action",
       "intent": "customer_other",
       "base_intent": "other",
-      "keywords": [],
+      "keywords": [
+        "करिए"
+      ],
       "sentiment": null,
       "tool": null,
       "text": "अभी तो नहीं. अभी reschedule reschedule मत करिए.",
@@ -360,7 +365,6 @@
       "base_intent": "acknowledge",
       "keywords": [
         "process",
-        "करें।",
         "complete",
         "चाहें"
       ],
@@ -391,9 +395,11 @@
       "intent": "agent_confirm",
       "base_intent": "agree",
       "keywords": [
-        "application",
         "मदद",
-        "आगे"
+        "application",
+        "आगे",
+        "चाहेंगे",
+        "पूछना"
       ],
       "sentiment": null,
       "tool": null,
@@ -410,7 +416,8 @@
         "process",
         "kyc",
         "complete",
-        "काम"
+        "पूरा",
+        "review"
       ],
       "sentiment": null,
       "tool": null,
@@ -424,9 +431,10 @@
       "intent": "customer_acknowledge",
       "base_intent": "manual_review",
       "keywords": [
-        "application",
         "loan",
+        "application",
         "check",
+        "लाख",
         "देर"
       ],
       "sentiment": null,
@@ -484,7 +492,10 @@
       "type": "action",
       "intent": "customer_express_distrust",
       "base_intent": "reassure_trust",
-      "keywords": [],
+      "keywords": [
+        "person",
+        "real"
+      ],
       "sentiment": null,
       "tool": null,
       "text": "आप AI हो या real real person हो?",
@@ -497,11 +508,11 @@
       "intent": "agent_answer_query",
       "base_intent": "answer_query",
       "keywords": [
-        "हूँ।",
         "बोल",
         "तरफ",
         "capital",
-        "aditya"
+        "aditya",
+        "birla"
       ],
       "sentiment": null,
       "tool": null,
@@ -514,7 +525,9 @@
       "type": "action",
       "intent": "customer_ask_question",
       "base_intent": "ask_question",
-      "keywords": [],
+      "keywords": [
+        "air"
+      ],
       "sentiment": null,
       "tool": null,
       "text": "आप air ही हो?",
@@ -527,11 +540,11 @@
       "intent": "agent_answer_query",
       "base_intent": "answer_query",
       "keywords": [
-        "हूँ।",
         "बोल",
         "तरफ",
         "capital",
-        "aditya"
+        "aditya",
+        "birla"
       ],
       "sentiment": null,
       "tool": null,
@@ -544,7 +557,10 @@
       "type": "action",
       "intent": "customer_ask_question",
       "base_intent": "ask_question",
-      "keywords": [],
+      "keywords": [
+        "person",
+        "real"
+      ],
       "sentiment": null,
       "tool": null,
       "text": "आप AIO या real person?",
@@ -557,11 +573,11 @@
       "intent": "agent_answer_query",
       "base_intent": "answer_query",
       "keywords": [
-        "हूँ।",
         "बोल",
         "तरफ",
         "capital",
-        "aditya"
+        "aditya",
+        "birla"
       ],
       "sentiment": null,
       "tool": null,
@@ -574,7 +590,9 @@
       "type": "action",
       "intent": "customer_ask_question",
       "base_intent": "ask_question",
-      "keywords": [],
+      "keywords": [
+        "bot"
+      ],
       "sentiment": null,
       "tool": null,
       "text": "आप तो यही जैसे लग रहे हो? Bot?",
@@ -587,11 +605,11 @@
       "intent": "agent_answer_query",
       "base_intent": "answer_query",
       "keywords": [
-        "हूँ।",
         "बोल",
         "तरफ",
         "capital",
-        "aditya"
+        "aditya",
+        "birla"
       ],
       "sentiment": null,
       "tool": null,
@@ -630,7 +648,9 @@
       "base_intent": "ask_question",
       "keywords": [
         "कब तक",
-        "application"
+        "application",
+        "review",
+        "under"
       ],
       "sentiment": "frustrated",
       "tool": null,
@@ -647,7 +667,8 @@
         "application",
         "process",
         "complete",
-        "मिल"
+        "मिल",
+        "review"
       ],
       "sentiment": null,
       "tool": null,
@@ -672,7 +693,9 @@
       "type": "action",
       "intent": "customer_other",
       "base_intent": "other",
-      "keywords": [],
+      "keywords": [
+        "normal"
+      ],
       "sentiment": null,
       "tool": null,
       "text": "Normal. Normal. ज़्यादा ठंडा नहीं.",
@@ -689,7 +712,7 @@
         "process",
         "complete",
         "इंतज़ार",
-        "जाएगा।"
+        "review"
       ],
       "sentiment": null,
       "tool": "push_to_crm",
@@ -703,9 +726,11 @@
       "intent": "customer_ask_question",
       "base_intent": "ask_question",
       "keywords": [
-        "पाएंगे",
+        "मिल",
         "minute",
-        "मिल"
+        "पाएंगे",
+        "पांच",
+        "अंदर"
       ],
       "sentiment": null,
       "tool": null,
@@ -719,11 +744,11 @@
       "intent": "agent_answer_query",
       "base_intent": "answer_query",
       "keywords": [
+        "call",
         "application",
         "process",
-        "हूँ।",
-        "call",
-        "ताकि"
+        "जाए",
+        "समय"
       ],
       "sentiment": null,
       "tool": null,
@@ -737,9 +762,11 @@
       "intent": "customer_acknowledge",
       "base_intent": "manual_review",
       "keywords": [
+        "loan",
         "application",
         "process",
-        "loan"
+        "पूरा",
+        "पता"
       ],
       "sentiment": null,
       "tool": null,
@@ -753,11 +780,11 @@
       "intent": "agent_answer_query",
       "base_intent": "answer_query",
       "keywords": [
-        "process",
-        "कृपया",
         "loan",
-        "ज़रूरी",
-        "समझ"
+        "कृपया",
+        "process",
+        "रखें",
+        "जाए"
       ],
       "sentiment": null,
       "tool": null,
@@ -783,11 +810,11 @@
       "intent": "agent_answer_query",
       "base_intent": "answer_query",
       "keywords": [
-        "हूँ।",
         "बोल",
         "तरफ",
         "capital",
-        "aditya"
+        "aditya",
+        "birla"
       ],
       "sentiment": null,
       "tool": null,
@@ -801,7 +828,10 @@
       "intent": "customer_express_distrust",
       "base_intent": "reassure_trust",
       "keywords": [
-        "बोल"
+        "बोल",
+        "पता",
+        "computer",
+        "झूठ"
       ],
       "sentiment": null,
       "tool": null,
@@ -816,8 +846,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "connect",
-        "हूँ।",
-        "समझ"
+        "समझ",
+        "बिल्कुल",
+        "देखेंगे",
+        "खेद"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -843,11 +875,11 @@
       "intent": "agent_answer_query",
       "base_intent": "answer_query",
       "keywords": [
-        "हूँ।",
         "बोल",
         "तरफ",
         "capital",
-        "aditya"
+        "aditya",
+        "birla"
       ],
       "sentiment": null,
       "tool": null,
@@ -860,7 +892,11 @@
       "type": "action",
       "intent": "customer_express_distrust",
       "base_intent": "reassure_trust",
-      "keywords": [],
+      "keywords": [
+        "पता",
+        "चुका",
+        "computer"
+      ],
       "sentiment": null,
       "tool": null,
       "text": "AIO AI AI AI AI AI AI, AI, AI, AI, AI, AI, computer computer तुम computer हो मुझे पता लग चुका है.",
@@ -873,8 +909,11 @@
       "intent": "agent_transfer_to_rm",
       "base_intent": "transfer_to_rm",
       "keywords": [
-        "हूँ।",
-        "समझ"
+        "समझ",
+        "बिल्कुल",
+        "खेद",
+        "inconvenience",
+        "frustration"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

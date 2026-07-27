@@ -1,7 +1,7 @@
 {
   "call_id": "GEN-myntra-f4a6b55f-cb72-4193-8cd0-4aeaa6a6cb34",
   "language": "hi-en",
-  "outcome": "transferred",
+  "outcome": "completed",
   "turns": [
     {
       "index": 0,
@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -56,8 +56,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "manual_review",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "watch"
@@ -107,8 +107,8 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_pan",
-      "base_intent": "enter_pan",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "मिंत्रा",
         "order",
@@ -125,8 +125,8 @@
       "index": 7,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
       "keywords": [
         "चाहते",
         "पूछना"
@@ -155,8 +155,8 @@
       "index": 9,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_confirm",
-      "base_intent": "agree",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "confused_repeat",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -167,8 +167,8 @@
       "index": 10,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "order",
         "मिल",
@@ -204,7 +204,7 @@
       "speaker": "agent",
       "type": "action",
       "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "base_intent": "confused_repeat",
       "keywords": [
         "चाहते",
         "पूछना"
@@ -254,14 +254,14 @@
       "index": 15,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
       "keywords": [
-        "मतलब",
         "order",
         "help",
         "मिल",
-        "जाए"
+        "जाए",
+        "शाम"
       ],
       "sentiment": null,
       "tool": null,
@@ -272,8 +272,8 @@
       "index": 16,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "समझ",
@@ -288,8 +288,8 @@
       "index": 17,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "कोशिश",
@@ -306,8 +306,8 @@
       "index": 18,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_help_address_error",
-      "base_intent": "address_error",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "समझ",
@@ -324,8 +324,8 @@
       "index": 19,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "help",
@@ -357,8 +357,8 @@
       "index": 21,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_end",
+      "base_intent": "end_call",
       "keywords": [
         "thank"
       ],
@@ -371,8 +371,8 @@
       "index": 22,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_org_name",
-      "base_intent": "organization_name",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
       "keywords": [
         "call",
         "मदद",

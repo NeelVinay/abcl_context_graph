@@ -1,5 +1,5 @@
 {
-  "call_id": "f5019156",
+  "call_id": "f5019156-f263-48a6-9a0a-587a603987d6-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -142,10 +142,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
         "कृपया",
         "application",
-        "रखें"
+        "रखें",
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -195,8 +195,8 @@
         "वेबसाइट",
         "खुल गई",
         "लिंक पर क्लिक",
-        "कृपया",
-        "बताएं"
+        "बताएं",
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -245,9 +245,9 @@
       "keywords": [
         "apply now",
         "apply",
+        "बताएं",
         "now",
-        "कृपया",
-        "देख"
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -280,7 +280,7 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "बताएं",
         "कृपया",
         "नीचे",
         "get"
@@ -298,10 +298,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "बताएं",
         "कृपया",
         "verify",
-        "बताएं।"
+        "get"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -334,10 +334,10 @@
       "base_intent": "enter_pan",
       "keywords": [
         "पैन",
+        "बताएं",
         "कृपया",
         "personal",
-        "details",
-        "बताएं"
+        "details"
       ],
       "sentiment": null,
       "tool": null,
@@ -365,7 +365,7 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
-        "बताएं।",
+        "बताएं",
         "इंतज़ार",
         "पैन",
         "नंबर",
@@ -386,8 +386,8 @@
         "gender",
         "date of birth",
         "marital",
-        "कृपया",
-        "बताएं।"
+        "बताएं",
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -436,8 +436,8 @@
       "keywords": [
         "address",
         "आधार",
-        "कृपया",
         "बताएं",
+        "कृपया",
         "सही"
       ],
       "sentiment": null,
@@ -453,9 +453,9 @@
       "base_intent": "enter_email",
       "keywords": [
         "email",
+        "बताएं",
         "कृपया",
         "address",
-        "बताएं",
         "पूरा"
       ],
       "sentiment": null,
@@ -472,8 +472,8 @@
       "keywords": [
         "address",
         "locality",
+        "बताएं",
         "कृपया",
-        "बताएं।",
         "सही"
       ],
       "sentiment": null,
@@ -505,10 +505,10 @@
       "base_intent": "enter_address",
       "keywords": [
         "address",
-        "कृपया",
         "बताएं",
+        "कृपया",
         "पूरा",
-        "ध्यान"
+        "लें"
       ],
       "sentiment": null,
       "tool": null,
@@ -526,7 +526,7 @@
         "terms",
         "कृपया",
         "दोनों",
-        "चेक"
+        "बढ़िया"
       ],
       "sentiment": null,
       "tool": null,
@@ -560,7 +560,7 @@
         "जैसा",
         "official",
         "डालें",
-        "भरें।"
+        "भरें"
       ],
       "sentiment": null,
       "tool": null,
@@ -593,7 +593,7 @@
       "base_intent": "address_error",
       "keywords": [
         "error",
-        "हूँ।",
+        "बताएं",
         "मदद",
         "कृपया",
         "address"
@@ -685,11 +685,11 @@
       "intent": "agent_help_address_error",
       "base_intent": "address_error",
       "keywords": [
-        "करें।",
-        "हूँ।",
+        "बताएं",
         "मदद",
         "कृपया",
-        "check"
+        "check",
+        "address"
       ],
       "sentiment": null,
       "tool": null,
@@ -731,11 +731,11 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
-        "हूँ।",
+        "बताएं",
         "कृपया",
-        "बताएं।",
         "इंतज़ार",
-        "समझ"
+        "समझ",
+        "दिक्कत"
       ],
       "sentiment": null,
       "tool": null,
@@ -770,8 +770,8 @@
         "terms and condition",
         "terms",
         "बॉक्स चेक",
-        "करें।",
-        "कृपया"
+        "कृपया",
+        "proceed"
       ],
       "sentiment": null,
       "tool": null,
@@ -801,7 +801,7 @@
       "intent": "agent_help_address_error",
       "base_intent": "address_error",
       "keywords": [
-        "हूँ।",
+        "बताएं",
         "मदद",
         "कृपया",
         "रखें",
@@ -840,8 +840,8 @@
         "address",
         "locality",
         "building",
-        "मदद",
-        "कृपया"
+        "बताएं",
+        "मदद"
       ],
       "sentiment": null,
       "tool": null,
@@ -867,9 +867,8 @@
       "intent": "agent_acknowledge",
       "base_intent": "acknowledge",
       "keywords": [
-        "हूँ।",
-        "कृपया",
         "बताएं",
+        "कृपया",
         "सुन"
       ],
       "sentiment": null,
@@ -952,8 +951,8 @@
         "self employ",
         "self employee",
         "monthly",
-        "self",
-        "income"
+        "employed",
+        "self"
       ],
       "sentiment": null,
       "tool": null,
@@ -968,8 +967,8 @@
       "base_intent": "enter_income",
       "keywords": [
         "income",
+        "बताएं",
         "कृपया",
-        "बताएं।",
         "monthly",
         "net"
       ],
@@ -986,8 +985,8 @@
       "base_intent": "business_details",
       "keywords": [
         "business",
+        "बताएं",
         "कृपया",
-        "बताएं।",
         "registered",
         "टाइप"
       ],
@@ -1005,8 +1004,8 @@
       "keywords": [
         "business",
         "shop",
+        "बताएं",
         "कृपया",
-        "बताएं।",
         "address"
       ],
       "sentiment": null,
@@ -1036,10 +1035,10 @@
       "base_intent": "business_details",
       "keywords": [
         "business",
+        "बताएं",
         "कृपया",
-        "बताएं।",
-        "address",
-        "बताएं"
+        "जाए",
+        "address"
       ],
       "sentiment": null,
       "tool": null,
@@ -1053,7 +1052,7 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
-        "बताएं।",
+        "बताएं",
         "इंतज़ार",
         "address",
         "लें"
@@ -1070,11 +1069,11 @@
       "intent": "agent_request_address",
       "base_intent": "enter_address",
       "keywords": [
+        "बताएं",
         "कृपया",
-        "बताएं।",
         "सही",
         "business",
-        "चेक"
+        "बढ़िया"
       ],
       "sentiment": null,
       "tool": null,
@@ -1089,10 +1088,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "बताएं",
         "कृपया",
-        "बताएं।",
-        "proceed"
+        "proceed",
+        "email"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -1125,10 +1124,10 @@
       "base_intent": "udyam_verification",
       "keywords": [
         "udyam",
-        "करें।",
         "कृपया",
         "page",
-        "number"
+        "number",
+        "mobile"
       ],
       "sentiment": null,
       "tool": null,
@@ -1256,9 +1255,9 @@
       "keywords": [
         "loan",
         "offer",
+        "बताएं",
         "कृपया",
-        "समय",
-        "बताएं।"
+        "रखें"
       ],
       "sentiment": null,
       "tool": null,
@@ -1312,7 +1311,7 @@
         "loan",
         "offer",
         "amount",
-        "करें।"
+        "मदद"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

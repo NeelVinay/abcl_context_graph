@@ -6,9 +6,10 @@ from __future__ import annotations
 import config
 from src.extract import ACTIONS, INTENT_DESC, SENTIMENT_LEXICON, TOOL_RULES
 from src.justdial_coarse import INTENT_DESC as JD_INTENT_DESC
+from src.generic_taxonomy import INTENT_DESC as GENERIC_INTENT_DESC
 
-# merged description lookup across both domains (JD names don't collide with ABCL)
-_ALL_DESC = {**INTENT_DESC, **JD_INTENT_DESC}
+# merged description lookup across all domains (names don't collide across them)
+_ALL_DESC = {**INTENT_DESC, **JD_INTENT_DESC, **GENERIC_INTENT_DESC}
 
 SENTIMENT_DESC = {
     "distrustful": "Customer suspects a scam / fraud, reluctant to share info ('access nahi dena')",

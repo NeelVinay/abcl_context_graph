@@ -78,11 +78,11 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "हूँ।",
         "category",
         "contact",
-        "से।",
-        "देने"
+        "देने",
+        "solution",
+        "reason"
       ],
       "sentiment": null,
       "tool": null,
@@ -112,9 +112,7 @@
       "base_intent": "agent_handle",
       "keywords": [
         "लीड",
-        "दो।",
         "लास्ट",
-        "का।",
         "रिसीव"
       ],
       "sentiment": null,
@@ -161,9 +159,7 @@
       "type": "action",
       "intent": "customer_other",
       "base_intent": "other",
-      "keywords": [
-        "हो।"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "हमारी जैसे, IR हो।",
@@ -176,9 +172,7 @@
       "intent": "agent_raise_request",
       "base_intent": "resolution",
       "keywords": [
-        "हूँ।",
-        "बना",
-        "क्या।"
+        "बना"
       ],
       "sentiment": null,
       "tool": null,
@@ -203,11 +197,7 @@
       "type": "action",
       "intent": "agent_other",
       "base_intent": "other",
-      "keywords": [
-        "हूँ।",
-        "में।",
-        "सकते।"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "सकते। तो मैं यहाँ से भी एस्केलेशन लगाता हूँ। आपके नियर बाय में। आप सोर्स बन नहीं कर रहे हैं। आप सोर्स बन नहीं कर रहे हैं।",
@@ -234,11 +224,11 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "हूँ।",
         "category",
-        "लिए।",
         "phone",
-        "समझ"
+        "समझ",
+        "work",
+        "understand"
       ],
       "sentiment": null,
       "tool": null,
@@ -255,7 +245,6 @@
         "customer",
         "call",
         "total",
-        "लीजिए।",
         "remove"
       ],
       "sentiment": null,
@@ -273,8 +262,8 @@
         "customer",
         "call",
         "support",
-        "में।",
-        "connect"
+        "connect",
+        "direct"
       ],
       "sentiment": null,
       "tool": null,
@@ -302,7 +291,6 @@
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "हूँ।",
         "लोगों"
       ],
       "sentiment": null,
@@ -330,10 +318,10 @@
       "base_intent": "resolution",
       "keywords": [
         "lead",
-        "हूँ।",
         "time",
         "share",
-        "link"
+        "link",
+        "update"
       ],
       "sentiment": null,
       "tool": null,
@@ -448,9 +436,7 @@
       "type": "action",
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
-      "keywords": [
-        "में।"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "आपके इस बारे में।",
@@ -463,11 +449,11 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "करें।",
         "phone",
+        "सब्सक्राइब",
         "remove",
-        "use",
-        "प्लीज"
+        "प्लीज",
+        "use"
       ],
       "sentiment": null,
       "tool": null,

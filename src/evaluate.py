@@ -30,15 +30,23 @@ def load_gold(path=None) -> dict:
 
 
 def load_cache_predictions() -> dict:
-    """The current local extractor's base_intent per turn (the baseline)."""
+    """The current local extractor's base_intent per turn (the baseline).
+
+    Registered under BOTH the cache's own call_id and its first-8-character form:
+    ABCL's gold set was built against the short 8-char convention, while
+    extract_call() has always written the full filename stem as call_id — see
+    src/distill.load_dataset's docstring for the full explanation. Keying both ways
+    here means score_intents' `gold ∩ pred` still matches regardless of which
+    convention a given client's gold file uses."""
     preds = {}
     for f in config.CACHE_DIR.glob("*.json"):
         c = json.loads(f.read_text())
+        cid = c["call_id"]
         for t in c["turns"]:
-            preds[(c["call_id"], t["index"])] = {
-                "base_intent": t.get("base_intent"),
-                "keywords": t.get("keywords", []),
-            }
+            entry = {"base_intent": t.get("base_intent"), "keywords": t.get("keywords", [])}
+            preds[(cid, t["index"])] = entry
+            if cid[:8] != cid:
+                preds[(cid[:8], t["index"])] = entry
     return preds
 
 

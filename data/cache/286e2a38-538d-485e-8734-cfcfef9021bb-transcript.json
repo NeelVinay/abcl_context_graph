@@ -1,5 +1,5 @@
 {
-  "call_id": "286e2a38",
+  "call_id": "286e2a38-538d-485e-8734-cfcfef9021bb-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -151,7 +151,7 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "हूँ।",
+        "बताएं",
         "कृपया",
         "application",
         "रखें"
@@ -221,8 +221,8 @@
         "खुल गया",
         "लिंक पर क्लिक",
         "sms",
-        "कृपया",
-        "बताएं"
+        "बताएं",
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -253,9 +253,9 @@
       "keywords": [
         "apply now",
         "apply",
+        "बताएं",
         "now",
-        "कृपया",
-        "नीचे"
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -284,11 +284,11 @@
       "intent": "agent_request_otp",
       "base_intent": "mobile_otp",
       "keywords": [
-        "करें।",
+        "बताएं",
         "कृपया",
         "process",
-        "बताएं।",
-        "जाए"
+        "जाए",
+        "आगे"
       ],
       "sentiment": null,
       "tool": null,
@@ -303,10 +303,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
-        "हूँ।",
+        "बताएं",
         "मदद",
-        "कृपया"
+        "कृपया",
+        "verify"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -335,10 +335,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
+        "बताएं",
         "कृपया",
         "verify",
-        "आगे",
-        "बताएं"
+        "आगे"
       ],
       "sentiment": null,
       "tool": null,
@@ -368,10 +368,10 @@
       "intent": "agent_request_otp",
       "base_intent": "mobile_otp",
       "keywords": [
+        "बताएं",
         "मदद",
         "कृपया",
         "आगे",
-        "बताएं",
         "पूरा"
       ],
       "sentiment": null,
@@ -403,9 +403,9 @@
       "keywords": [
         "loan",
         "offer",
-        "हूँ।",
         "मदद",
-        "कृपया"
+        "कृपया",
+        "रखें"
       ],
       "sentiment": null,
       "tool": null,
@@ -435,7 +435,7 @@
       "keywords": [
         "loan",
         "offer",
-        "करें।",
+        "बताएं",
         "कृपया",
         "application"
       ],
@@ -519,10 +519,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "हूँ।",
         "मदद",
         "कृपया",
-        "process"
+        "process",
+        "relationship"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

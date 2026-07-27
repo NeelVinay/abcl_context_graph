@@ -26,10 +26,10 @@ def _collapse(seq):
     return out
 
 
-def write_report(g, calls, path=None):
+def write_report(g, calls, path=None, title="ABCL Call Context-Graph Report"):
     path = path or (config.OUTPUT_DIR / "report.md")
     out = []
-    out.append("# ABCL Call Context-Graph Report\n")
+    out.append(f"# {title}\n")
     out.append(f"Calls analyzed: **{len(calls)}** · intents: **{g.number_of_nodes()}** · "
                f"transitions: **{g.number_of_edges()}**")
     out.append("_(counts are per-turn occurrences across all calls, not number of calls)_\n")

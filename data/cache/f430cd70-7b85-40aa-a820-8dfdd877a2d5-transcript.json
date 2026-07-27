@@ -1,5 +1,5 @@
 {
-  "call_id": "f430cd70",
+  "call_id": "f430cd70-7b85-40aa-a820-8dfdd877a2d5-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -24,8 +24,7 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
-        "इंतज़ार",
-        "chd"
+        "इंतज़ार"
       ],
       "sentiment": null,
       "tool": null,
@@ -98,10 +97,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
         "application",
         "process",
-        "रखें"
+        "रखें",
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -116,7 +115,6 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
         "link",
         "click"
       ],
@@ -146,9 +144,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "देख"
+        "देख",
+        "नीचे"
       ],
       "sentiment": null,
       "tool": null,
@@ -180,10 +178,10 @@
       "base_intent": "enter_pan",
       "keywords": [
         "पैन",
+        "बताएं",
+        "जाए",
         "page",
-        "number",
-        "बताएं।",
-        "जाए"
+        "number"
       ],
       "sentiment": null,
       "tool": null,
@@ -214,9 +212,9 @@
       "base_intent": "enter_pan",
       "keywords": [
         "पैन",
+        "बताएं",
         "कृपया",
         "number",
-        "बताएं।",
         "fill"
       ],
       "sentiment": null,
@@ -248,8 +246,8 @@
         "gender",
         "date of birth",
         "marital",
-        "करें।",
-        "बताएं।"
+        "बताएं",
+        "जाए"
       ],
       "sentiment": null,
       "tool": null,
@@ -278,7 +276,7 @@
       "base_intent": "enter_email",
       "keywords": [
         "email",
-        "बताएं।",
+        "बताएं",
         "जाए",
         "personal",
         "enter"
@@ -346,9 +344,9 @@
       "keywords": [
         "terms and condition",
         "terms",
-        "करें।",
         "button",
-        "check"
+        "check",
+        "conditions"
       ],
       "sentiment": null,
       "tool": null,
@@ -380,9 +378,9 @@
       "keywords": [
         "terms and condition",
         "terms",
-        "करें।",
         "कृपया",
-        "check"
+        "check",
+        "conditions"
       ],
       "sentiment": null,
       "tool": null,
@@ -429,8 +427,8 @@
       "base_intent": "employment_type",
       "keywords": [
         "self employ",
-        "self",
-        "employed"
+        "employed",
+        "self"
       ],
       "sentiment": null,
       "tool": null,
@@ -675,10 +673,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

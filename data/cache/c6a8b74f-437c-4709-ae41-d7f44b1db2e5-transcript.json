@@ -1,5 +1,5 @@
 {
-  "call_id": "c6a8b74f",
+  "call_id": "c6a8b74f-437c-4709-ae41-d7f44b1db2e5-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -167,8 +167,7 @@
         "बोल",
         "aditya",
         "birla",
-        "बिल्कुल",
-        "जी।"
+        "बिल्कुल"
       ],
       "sentiment": null,
       "tool": null,
@@ -279,11 +278,11 @@
       "intent": "agent_end_call",
       "base_intent": "end_call",
       "keywords": [
-        "हूँ।",
         "कॉल",
         "धन्यवाद",
         "चूंकि",
-        "समाप्त"
+        "समाप्त",
+        "प्रतिक्रिया"
       ],
       "sentiment": null,
       "tool": null,
@@ -373,7 +372,7 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
+        "बताएं",
         "now",
         "मदद"
       ],
@@ -403,7 +402,7 @@
       "keywords": [
         "otp",
         "apply",
-        "करें।",
+        "बताएं",
         "now",
         "कृपया"
       ],
@@ -434,7 +433,7 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "बताएं",
         "मदद",
         "कृपया",
         "verify"
@@ -464,10 +463,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
+        "बताएं",
         "कृपया",
         "verify",
-        "जाए",
-        "आगे"
+        "जाए"
       ],
       "sentiment": null,
       "tool": null,

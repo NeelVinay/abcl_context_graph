@@ -11,10 +11,10 @@
       "base_intent": "open",
       "keywords": [
         "देख",
-        "हाँ।",
         "लाइन",
-        "जी।",
-        "मिनट"
+        "मिनट",
+        "कॉल",
+        "बंद"
       ],
       "sentiment": null,
       "tool": null,
@@ -47,10 +47,10 @@
       "base_intent": "agent_handle",
       "keywords": [
         "lead",
-        "हूँ।",
         "check",
         "contract",
-        "category"
+        "category",
+        "inquiry"
       ],
       "sentiment": null,
       "tool": null,

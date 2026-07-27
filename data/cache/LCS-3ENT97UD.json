@@ -59,10 +59,10 @@
       "base_intent": "complaint",
       "keywords": [
         "justdial",
-        "हूँ।",
         "check",
         "लेकर",
-        "one"
+        "one",
+        "today"
       ],
       "sentiment": null,
       "tool": null,
@@ -161,10 +161,10 @@
       "base_intent": "complaint",
       "keywords": [
         "नहीं हो",
-        "हूँ।",
         "leads",
         "contact",
-        "all"
+        "all",
+        "profile"
       ],
       "sentiment": "frustrated",
       "tool": null,
@@ -181,8 +181,8 @@
         "justdial",
         "customer",
         "lead",
-        "check",
-        "leads"
+        "leads",
+        "check"
       ],
       "sentiment": null,
       "tool": null,
@@ -276,8 +276,7 @@
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "area",
-        "आपको।"
+        "area"
       ],
       "sentiment": null,
       "tool": null,
@@ -305,9 +304,9 @@
       "keywords": [
         "area",
         "add",
+        "question",
         "new",
-        "mumbai",
-        "इन्हां"
+        "mumbai"
       ],
       "sentiment": null,
       "tool": null,
@@ -334,7 +333,6 @@
       "base_intent": "agent_handle",
       "keywords": [
         "पूरा",
-        "गया।",
         "cover"
       ],
       "sentiment": null,
@@ -367,8 +365,7 @@
         "pincode",
         "पूरा",
         "पता",
-        "लेके",
-        "तक।"
+        "लेके"
       ],
       "sentiment": null,
       "tool": null,
@@ -383,9 +380,7 @@
       "base_intent": "other",
       "keywords": [
         "नहीं हो",
-        "leads",
-        "आपको।",
-        "हो।"
+        "leads"
       ],
       "sentiment": "frustrated",
       "tool": null,
@@ -402,8 +397,8 @@
         "justdial",
         "call",
         "lead",
-        "हूँ।",
-        "service"
+        "service",
+        "check"
       ],
       "sentiment": null,
       "tool": null,
@@ -542,9 +537,7 @@
       "type": "action",
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
-      "keywords": [
-        "गया।"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "अच्छन है सर अच्छन है नहीं गया।",

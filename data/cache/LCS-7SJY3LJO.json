@@ -93,8 +93,6 @@
       "base_intent": "backchannel",
       "keywords": [
         "contact",
-        "आपको।",
-        "हाँ।",
         "जान",
         "बंद"
       ],
@@ -222,9 +220,8 @@
       "base_intent": "resolution",
       "keywords": [
         "call",
-        "हूँ।",
         "team",
-        "आपको।",
+        "आगे",
         "forward"
       ],
       "sentiment": null,

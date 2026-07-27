@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "नहीं हो रहा",
         "नहीं हो",
@@ -43,8 +43,8 @@
       "index": 2,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "complaint",
         "बोल",
@@ -79,8 +79,8 @@
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "how",
         "अरे"
@@ -122,8 +122,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_provide_pan",
-      "base_intent": "enter_pan",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "नहीं हो रहा",
         "नहीं हो",
@@ -158,8 +158,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "समझ",
         "agent",
@@ -175,8 +175,8 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_help_address_error",
-      "base_intent": "address_error",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "समझ",
         "line",
@@ -192,9 +192,9 @@
     {
       "index": 11,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "call",
         "now",
@@ -203,7 +203,7 @@
         "immediately"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "I will connect you with our specialized team. Transferring your call now, they will be with you immediately.",
       "entities": []
     }

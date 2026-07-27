@@ -20,6 +20,8 @@ from collections import Counter
 from datetime import datetime
 from pathlib import Path
 
+from src import generic_taxonomy
+
 EMBED_MODEL = "paraphrase-multilingual-MiniLM-L12-v2"  # multilingual: handles Hindi/Hinglish
 EMBED_THRESHOLD = 0.45
 MERGE_GAP_SEC = 4.0
@@ -341,8 +343,15 @@ def detect_sentiment(text):
     return "neutral"
 
 
-def action_intent(speaker, base):
-    if base in ACTIONS:
+def action_intent(speaker, base, client=None):
+    """actor-aware intent name for this base_intent. `client` (src.clients.Client)
+    supplies the taxonomy this base_intent was actually classified under — without
+    it, a non-ABCL/JustDial base_intent (e.g. Myntra's) would silently fall through
+    ABCL's ACTIONS then JustDial's COARSE ACTIONS and rarely match either."""
+    actions = client.actions if client is not None else ACTIONS
+    if base in actions:
+        return actions[base].get(speaker, f"{speaker}_{base}")
+    if base in ACTIONS:      # backward-compat fallback for callers with no client
         return ACTIONS[base].get(speaker, f"{speaker}_{base}")
     from src.justdial_coarse import ACTIONS as JD_ACTIONS   # coarse JustDial buckets
     if base in JD_ACTIONS:
@@ -350,14 +359,15 @@ def action_intent(speaker, base):
     return f"{speaker}_{base}"
 
 
-def tool_for(speaker, base, text):
+def tool_for(speaker, base, text, client=None):
     """Infer a tool/API call from the AGENT's speech, strictly. The tool must be
     OWNED by this turn's base intent (no wrong-node attachment) and, for send
     tools, a do/send verb must be present (no mere mentions). Returns None for
     customer turns. This is a PROXY from speech, not an observed tool event."""
     if speaker != "agent":
         return None
-    rule = TOOL_RULES.get(base)
+    tool_rules = client.tool_rules if client is not None else TOOL_RULES
+    rule = tool_rules.get(base)
     if not rule:
         return None
     tool, verbs = rule
@@ -437,8 +447,17 @@ def extract_keywords(text, base, sentiment, entities, vocab=None):
     return out[:MAX_KEYWORDS]
 
 
+# Generic, client-agnostic phrases indicating a hand-off to a human/specialist agent.
+# Used ONLY as a fallback for clients (like Myntra's broad taxonomy) whose base_intent
+# set has no fine intent that already means "transferred" (e.g. ABCL's
+# transfer_to_rm/final_offer). See src/generic_taxonomy.py: the broad taxonomy has no
+# equivalent bucket for this, so it must be detected from raw text instead.
+_TRANSFER_PHRASES = ["specialized team", "expert agent", "connect कर", "connect कर रही",
+                     "transferring your call", "relationship manager", "connect to a specialist"]
+
+
 # ---------- outcome ----------
-def _outcome(base_intents, text=""):
+def _outcome(base_intents, text="", client=None):
     """How the call resolved. Order = priority.
       transferred     - handed to an RM / escalated
       completed       - clean close (goodbye)
@@ -447,7 +466,12 @@ def _outcome(base_intents, text=""):
       incomplete      - none of the above (dropped without resolution)
     """
     s = set(base_intents)
-    if "transfer_to_rm" in s or "final_offer" in s or "manual_review" in s:
+    if "transfer_to_rm" in s or "final_offer" in s or "manual_review" in s or "transfer_to_team" in s:
+        return "transferred"
+    if client is not None and client.intent_library is generic_taxonomy.INTENT_LIBRARY \
+            and any(p.lower() in text.lower() for p in _TRANSFER_PHRASES):
+        # only the broad generic taxonomy (e.g. Myntra) has no fine intent that
+        # already means "transferred" — ABCL/JustDial are covered by the check above.
         return "transferred"
     if "end_call" in s:
         return "completed"
@@ -459,23 +483,29 @@ def _outcome(base_intents, text=""):
 
 
 # ---------- public API ----------
-def extract_call(path, drop_noise=True, bundle=None, use_model=True, vocab=None):
+def extract_call(path, drop_noise=True, bundle=None, use_model=True, vocab=None, client=None):
+    """`client` (src.clients.Client): which taxonomy/model this transcript should be
+    classified under. If not given, auto-detected from the file itself (filename
+    prefix, then content signature — see src.clients.detect_client_for_path), so
+    existing callers that don't pass one still get correct per-client routing
+    instead of always defaulting to ABCL's model."""
     path = Path(path)
+    if client is None:
+        from src import clients as _clients
+        client = (_clients.detect_client_for_path(path)
+                 or _clients.make_generic_client(path.parent.name or "unknown"))
     raw = _load_turns(path)
     merged = _merge_fragments(raw)
     turns_in = [t for t in merged if not _is_noise(t["text"])] if drop_noise else merged
 
-    # Prefer the distilled student model (trained on Claude's labels); fall back to
-    # the keyword/embedding rules if no model is present. Route by domain: JustDial
-    # transcripts (LCS-* names) use the JustDial model, everything else the ABCL model.
+    # Prefer the distilled student model (trained on Claude's labels) for THIS
+    # client; fall back to the keyword/embedding rules if it has no trained model yet.
     model_bases = None
     if use_model:
         try:
             from src import distill
-            is_justdial = path.stem.startswith("LCS")
-            model_path = distill.DOMAINS["justdial"]["model"] if is_justdial else distill.MODEL_PATH
-            if model_path.exists():
-                model_bases = distill.predict_bases(turns_in, model_path=model_path)
+            if client.model_path.exists():
+                model_bases = distill.predict_bases(turns_in, model_path=client.model_path)
         except Exception:  # noqa: BLE001
             model_bases = None
     if model_bases is None and bundle is None:
@@ -487,13 +517,13 @@ def extract_call(path, drop_noise=True, bundle=None, use_model=True, vocab=None)
         base = model_bases[i] if model_bases is not None else base_intent(text, bundle)
         bases.append(base)
         sentiment = detect_sentiment(text) if speaker == "customer" else None
-        tool = tool_for(speaker, base, text)
+        tool = tool_for(speaker, base, text, client=client)
         ents = _entities(text)
         out_turns.append({
             "index": i,
             "speaker": speaker,
             "type": "tool_call" if tool else "action",
-            "intent": action_intent(speaker, base),
+            "intent": action_intent(speaker, base, client=client),
             "base_intent": base,
             "keywords": extract_keywords(text, base, sentiment or "neutral", ents, vocab),
             "sentiment": sentiment if sentiment and sentiment != "neutral" else None,
@@ -504,7 +534,7 @@ def extract_call(path, drop_noise=True, bundle=None, use_model=True, vocab=None)
     return {
         "call_id": path.stem,   # full stem: unique (stem[:8] collided for LCS-* names)
         "language": "hi-en",
-        "outcome": _outcome(bases, " ".join(t["text"] for t in turns_in)),
+        "outcome": _outcome(bases, " ".join(t["text"] for t in turns_in), client=client),
         "turns": out_turns,
     }
 

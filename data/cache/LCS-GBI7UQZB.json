@@ -130,11 +130,10 @@
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "से।",
         "लाइन",
         "लास्ट",
-        "फोटोस",
-        "प्लीज।"
+        "प्लीज",
+        "फोटोस"
       ],
       "sentiment": null,
       "tool": null,
@@ -160,9 +159,7 @@
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "करें।",
         "फोटोस",
-        "ओके।",
         "याद"
       ],
       "sentiment": null,

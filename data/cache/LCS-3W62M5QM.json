@@ -11,8 +11,8 @@
       "base_intent": "agent_handle",
       "keywords": [
         "com",
-        "check",
         "leads",
+        "check",
         "message",
         "complaint"
       ],
@@ -90,7 +90,7 @@
         "उसमें",
         "mobile",
         "solve",
-        "सेट"
+        "दीजिये"
       ],
       "sentiment": null,
       "tool": null,
@@ -107,8 +107,8 @@
         "काम",
         "complaint",
         "open",
-        "हाँ।",
-        "sir।"
+        "resolution",
+        "भेज"
       ],
       "sentiment": null,
       "tool": null,

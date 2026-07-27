@@ -1,5 +1,5 @@
 {
-  "call_id": "1ea57f23",
+  "call_id": "1ea57f23-69de-49d3-85bf-14ba27500c3c-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -86,7 +86,6 @@
       "keywords": [
         "बात कर रही",
         "से बात",
-        "हूँ।",
         "चाहती",
         "माफ़ी"
       ],
@@ -231,10 +230,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
+        "बताएं",
         "कृपया",
         "रखें",
-        "जिसमें"
+        "जाए"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -279,8 +278,7 @@
       "base_intent": "open_link",
       "keywords": [
         "कृपया",
-        "बढ़िया",
-        "जी।"
+        "बढ़िया"
       ],
       "sentiment": null,
       "tool": null,
@@ -311,9 +309,9 @@
       "keywords": [
         "खुल गया",
         "sms",
+        "बताएं",
         "कृपया",
-        "link",
-        "बताएं"
+        "link"
       ],
       "sentiment": null,
       "tool": null,
@@ -345,9 +343,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "कृपया"
+        "कृपया",
+        "तरफ"
       ],
       "sentiment": null,
       "tool": null,
@@ -394,7 +392,7 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "बताएं",
         "कृपया",
         "verify",
         "नीचे"
@@ -430,10 +428,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
+        "बताएं",
         "कृपया",
         "verify",
-        "screen",
-        "आगे"
+        "screen"
       ],
       "sentiment": null,
       "tool": null,
@@ -462,10 +460,10 @@
       "base_intent": "enter_pan",
       "keywords": [
         "पैन",
+        "बताएं",
         "complete",
         "personal",
-        "details",
-        "सबसे"
+        "details"
       ],
       "sentiment": null,
       "tool": null,
@@ -492,10 +490,10 @@
       "base_intent": "enter_pan",
       "keywords": [
         "पैन",
-        "complete",
         "बताएं",
-        "नंबर",
-        "जाए।"
+        "जाए",
+        "complete",
+        "नंबर"
       ],
       "sentiment": null,
       "tool": null,
@@ -540,10 +538,10 @@
       "base_intent": "enter_pan",
       "keywords": [
         "पैन",
-        "आगे",
         "बताएं",
+        "आगे",
         "ताकि",
-        "सकें।"
+        "सकें"
       ],
       "sentiment": null,
       "tool": null,
@@ -558,7 +556,7 @@
       "base_intent": "agree",
       "keywords": [
         "आगे बढ़",
-        "हूँ।",
+        "बताएं",
         "complete",
         "details",
         "आगे"
@@ -685,9 +683,9 @@
       "keywords": [
         "salaried",
         "self-employ",
+        "बताएं",
         "कृपया",
-        "page",
-        "details"
+        "page"
       ],
       "sentiment": null,
       "tool": null,
@@ -702,8 +700,8 @@
       "base_intent": "employment_type",
       "keywords": [
         "self employ",
-        "self",
-        "employed"
+        "employed",
+        "self"
       ],
       "sentiment": null,
       "tool": null,
@@ -718,10 +716,10 @@
       "base_intent": "enter_income",
       "keywords": [
         "income",
+        "बताएं",
         "कृपया",
-        "complete",
-        "monthly",
-        "net"
+        "जाए",
+        "complete"
       ],
       "sentiment": null,
       "tool": null,
@@ -735,11 +733,11 @@
       "intent": "agent_request_org_name",
       "base_intent": "organization_name",
       "keywords": [
-        "कृपया",
         "बताएं",
+        "कृपया",
+        "जाए",
         "पूरा",
-        "बढ़िया",
-        "जाए।"
+        "बढ़िया"
       ],
       "sentiment": null,
       "tool": null,
@@ -789,8 +787,7 @@
         "proceed",
         "पूरा",
         "बिल्कुल",
-        "जी।",
-        "दें।"
+        "दें"
       ],
       "sentiment": null,
       "tool": null,
@@ -815,9 +812,7 @@
       "type": "action",
       "intent": "agent_acknowledge",
       "base_intent": "acknowledge",
-      "keywords": [
-        "जी।"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "बहुत अच्छा, CHAKI जी। अब",
@@ -848,7 +843,7 @@
         "page",
         "नीचे",
         "registered",
-        "होगा।"
+        "नंबर"
       ],
       "sentiment": null,
       "tool": null,
@@ -907,10 +902,10 @@
       "base_intent": "udyam_verification",
       "keywords": [
         "उद्यम",
-        "करें।",
+        "बताएं",
         "कृपया",
-        "बताएं।",
-        "registered"
+        "registered",
+        "समझ"
       ],
       "sentiment": null,
       "tool": null,
@@ -937,10 +932,10 @@
       "base_intent": "udyam_verification",
       "keywords": [
         "उद्यम",
+        "बताएं",
         "मदद",
         "कृपया",
-        "आगे",
-        "बताएं"
+        "आगे"
       ],
       "sentiment": null,
       "tool": null,
@@ -955,10 +950,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
+        "बताएं",
         "कृपया",
         "verify",
-        "registered",
-        "बताएं"
+        "registered"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -1017,9 +1012,9 @@
       "base_intent": "udyam_verification",
       "keywords": [
         "उद्यम",
+        "बताएं",
         "कृपया",
         "page",
-        "बताएं",
         "नंबर"
       ],
       "sentiment": null,
@@ -1046,9 +1041,9 @@
       "intent": "agent_request_udyam",
       "base_intent": "udyam_verification",
       "keywords": [
+        "बताएं",
         "कृपया",
         "आगे",
-        "बताएं",
         "ताकि",
         "नंबर"
       ],
@@ -1065,10 +1060,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
+        "बताएं",
         "कृपया",
         "verify",
-        "complete",
-        "registered"
+        "जाए"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -1086,7 +1081,7 @@
         "offer",
         "मदद",
         "कृपया",
-        "समय"
+        "रखें"
       ],
       "sentiment": null,
       "tool": null,

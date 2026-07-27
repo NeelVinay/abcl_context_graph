@@ -114,8 +114,8 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "check",
         "leads",
+        "check",
         "business",
         "category",
         "regarding"
@@ -132,7 +132,6 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "सर।",
         "understand",
         "totally"
       ],
@@ -193,7 +192,6 @@
       "intent": "customer_respond",
       "base_intent": "agent_handle",
       "keywords": [
-        "हूँ।",
         "address",
         "manager"
       ],
@@ -230,8 +228,8 @@
         "ticket",
         "raise",
         "उसको",
-        "पता",
-        "date"
+        "आगे",
+        "पता"
       ],
       "sentiment": null,
       "tool": null,
@@ -283,9 +281,9 @@
       "keywords": [
         "call",
         "option",
-        "थी।",
-        "हो।",
-        "सर।"
+        "किस",
+        "close",
+        "करी"
       ],
       "sentiment": null,
       "tool": null,
@@ -319,7 +317,6 @@
       "keywords": [
         "कॉल",
         "पड़ेगा",
-        "वो।",
         "अरेंज"
       ],
       "sentiment": null,

@@ -11,10 +11,10 @@
       "base_intent": "agent_handle",
       "keywords": [
         "lead",
-        "हूँ।",
         "category",
         "issue",
-        "share"
+        "share",
+        "contact"
       ],
       "sentiment": null,
       "tool": null,

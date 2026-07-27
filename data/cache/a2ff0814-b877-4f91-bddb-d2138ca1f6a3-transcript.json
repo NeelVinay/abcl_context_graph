@@ -1,5 +1,5 @@
 {
-  "call_id": "a2ff0814",
+  "call_id": "a2ff0814-b877-4f91-bddb-d2138ca1f6a3-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -85,10 +85,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
-        "हूँ।",
         "कृपया",
-        "application"
+        "application",
+        "रखें",
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -133,10 +133,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
         "कृपया",
         "मिल",
-        "क्लिक"
+        "क्लिक",
+        "लिंक"
       ],
       "sentiment": null,
       "tool": null,
@@ -194,10 +194,10 @@
       "base_intent": "open_link",
       "keywords": [
         "लिंक पर क्लिक",
-        "हूँ।",
         "मदद",
         "कृपया",
-        "आगे"
+        "आगे",
+        "क्लिक"
       ],
       "sentiment": null,
       "tool": null,
@@ -228,9 +228,9 @@
       "keywords": [
         "apply now",
         "apply",
+        "बताएं",
         "now",
-        "कृपया",
-        "आगे"
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -260,8 +260,8 @@
       "keywords": [
         "apply now",
         "apply",
+        "बताएं",
         "now",
-        "हूँ।",
         "मदद"
       ],
       "sentiment": null,
@@ -291,7 +291,7 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "बताएं",
         "कृपया",
         "verify",
         "नीचे"
@@ -355,8 +355,7 @@
       "intent": "agent_acknowledge",
       "base_intent": "acknowledge",
       "keywords": [
-        "समझ",
-        "गई।"
+        "समझ"
       ],
       "sentiment": null,
       "tool": null,
@@ -440,7 +439,6 @@
       "intent": "agent_answer_query",
       "base_intent": "answer_query",
       "keywords": [
-        "हूँ।",
         "समझ",
         "लेकर",
         "journey"
@@ -472,9 +470,9 @@
       "intent": "agent_clarify",
       "base_intent": "ask_question",
       "keywords": [
+        "बताएं",
         "मदद",
         "कृपया",
-        "बताएं",
         "समझ",
         "ताकि"
       ],
@@ -507,9 +505,9 @@
       "intent": "agent_answer_query",
       "base_intent": "answer_query",
       "keywords": [
+        "बताएं",
         "कृपया",
         "शुरू",
-        "बताएं।",
         "आगे",
         "ताकि"
       ],
@@ -608,10 +606,10 @@
       "base_intent": "answer_query",
       "keywords": [
         "loan",
-        "हूँ।",
         "मदद",
         "लाख",
-        "रुपये"
+        "रुपये",
+        "आगे"
       ],
       "sentiment": null,
       "tool": null,
@@ -644,10 +642,10 @@
       "base_intent": "answer_query",
       "keywords": [
         "loan",
-        "हूँ।",
         "interest",
         "rate",
-        "चाहें"
+        "चाहें",
+        "सवाल"
       ],
       "sentiment": null,
       "tool": null,
@@ -744,10 +742,10 @@
       "base_intent": "answer_query",
       "keywords": [
         "loan",
-        "हूँ।",
         "मदद",
         "लाख",
-        "समझ"
+        "समझ",
+        "दोनों"
       ],
       "sentiment": null,
       "tool": null,
@@ -777,9 +775,9 @@
       "keywords": [
         "loan",
         "amount",
-        "हूँ।",
         "मदद",
-        "process"
+        "process",
+        "समय"
       ],
       "sentiment": null,
       "tool": null,
@@ -806,10 +804,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "मदद",
         "कृपया",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

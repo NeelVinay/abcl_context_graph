@@ -1,5 +1,5 @@
 {
-  "call_id": "93a25fd6",
+  "call_id": "93a25fd6-6b60-4475-bea3-1991b4dc4f9c-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -120,10 +120,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
         "application",
         "process",
-        "रखें"
+        "रखें",
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -138,7 +138,6 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
         "link",
         "click"
       ],
@@ -168,9 +167,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "देख"
+        "देख",
+        "नीचे"
       ],
       "sentiment": null,
       "tool": null,
@@ -200,9 +199,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "देख"
+        "देख",
+        "नीचे"
       ],
       "sentiment": null,
       "tool": null,
@@ -218,9 +217,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "देख"
+        "देख",
+        "नीचे"
       ],
       "sentiment": null,
       "tool": null,
@@ -246,7 +245,6 @@
       "intent": "agent_request_otp",
       "base_intent": "mobile_otp",
       "keywords": [
-        "करें।",
         "number",
         "mobile",
         "enter"
@@ -279,10 +277,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "number",
         "get",
-        "terms"
+        "terms",
+        "mobile"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -297,10 +295,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "verify",
         "screen",
-        "click"
+        "click",
+        "enter"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -344,10 +342,10 @@
       "base_intent": "wait_hold",
       "keywords": [
         "wait",
-        "करें।",
         "otp",
         "कृपया",
-        "जाएगा।"
+        "जल्दी",
+        "minutes"
       ],
       "sentiment": null,
       "tool": null,
@@ -362,9 +360,9 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "कृपया",
         "verify",
+        "जाए",
         "इंतज़ार"
       ],
       "sentiment": null,
@@ -393,11 +391,11 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
+        "बताएं",
         "otp",
         "कृपया",
-        "बताएं।",
-        "इंतज़ार",
-        "जाए"
+        "जाए",
+        "इंतज़ार"
       ],
       "sentiment": null,
       "tool": null,
@@ -413,9 +411,9 @@
       "keywords": [
         "loan",
         "offer",
-        "करें।",
         "कृपया",
-        "fetch"
+        "fetch",
+        "इंतजार"
       ],
       "sentiment": null,
       "tool": null,
@@ -476,10 +474,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

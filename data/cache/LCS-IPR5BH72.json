@@ -40,7 +40,6 @@
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "ना।",
         "वीडियो"
       ],
       "sentiment": null,
@@ -55,7 +54,6 @@
       "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "ना।",
         "लेट"
       ],
       "sentiment": null,
@@ -201,7 +199,8 @@
       "keywords": [
         "लगता",
         "एक्शन",
-        "पूछे"
+        "पूछे",
+        "लाओ"
       ],
       "sentiment": null,
       "tool": null,

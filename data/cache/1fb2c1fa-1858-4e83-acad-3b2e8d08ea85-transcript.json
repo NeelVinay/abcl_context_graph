@@ -1,5 +1,5 @@
 {
-  "call_id": "1fb2c1fa",
+  "call_id": "1fb2c1fa-1858-4e83-acad-3b2e8d08ea85-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -179,7 +179,7 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "हूँ।",
+        "बताएं",
         "मदद",
         "कृपया",
         "आगे"
@@ -312,7 +312,7 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "बताएं",
         "कृपया",
         "नीचे",
         "get"
@@ -347,10 +347,10 @@
       "base_intent": "enter_pan",
       "keywords": [
         "पैन",
+        "बताएं",
+        "जाए",
         "personal",
-        "details",
-        "सबसे",
-        "बताएं"
+        "details"
       ],
       "sentiment": null,
       "tool": null,
@@ -376,11 +376,11 @@
       "intent": "agent_request_personal_details",
       "base_intent": "personal_details",
       "keywords": [
+        "बताएं",
         "कृपया",
-        "बताएं।",
         "पैन",
         "पूरा",
-        "अनुसार"
+        "भरें"
       ],
       "sentiment": null,
       "tool": null,
@@ -409,10 +409,10 @@
       "base_intent": "enter_email",
       "keywords": [
         "email",
+        "बताएं",
         "कृपया",
-        "personal",
-        "address",
-        "बताएं"
+        "जाए",
+        "personal"
       ],
       "sentiment": null,
       "tool": null,
@@ -444,7 +444,7 @@
         "सही",
         "पूरा",
         "नंबर",
-        "भरने"
+        "भरें"
       ],
       "sentiment": null,
       "tool": null,
@@ -475,9 +475,9 @@
       "keywords": [
         "terms and condition",
         "terms",
+        "बताएं",
         "कृपया",
-        "देख",
-        "conditions"
+        "देख"
       ],
       "sentiment": null,
       "tool": null,
@@ -539,8 +539,8 @@
       "base_intent": "agree",
       "keywords": [
         "proceed",
-        "क्लिक",
-        "बढ़िया"
+        "बढ़िया",
+        "क्लिक"
       ],
       "sentiment": null,
       "tool": null,
@@ -601,10 +601,10 @@
       "base_intent": "enter_income",
       "keywords": [
         "income",
+        "बताएं",
         "details",
         "आगे",
-        "monthly",
-        "employment"
+        "monthly"
       ],
       "sentiment": null,
       "tool": null,
@@ -633,9 +633,9 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
+        "बताएं",
         "इंतज़ार",
         "आगे",
-        "बताएं",
         "ताकि",
         "बिल्कुल"
       ],
@@ -667,10 +667,10 @@
       "base_intent": "organization_name",
       "keywords": [
         "organization",
-        "हूँ।",
         "मदद",
         "business",
-        "टाइप"
+        "टाइप",
+        "काम"
       ],
       "sentiment": null,
       "tool": null,
@@ -698,7 +698,7 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
-        "बताएं।",
+        "बताएं",
         "इंतज़ार",
         "तैयार",
         "हों"
@@ -730,11 +730,11 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
+        "बताएं",
         "इंतज़ार",
         "आगे",
-        "बताएं",
         "ताकि",
-        "बढ़"
+        "सकें"
       ],
       "sentiment": null,
       "tool": null,
@@ -794,9 +794,9 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
+        "बताएं",
         "मदद",
         "इंतज़ार",
-        "बताएं",
         "ताकि",
         "तैयार"
       ],
@@ -841,7 +841,7 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
-        "बताएं।",
+        "बताएं",
         "इंतज़ार",
         "तैयार",
         "हों"
@@ -873,11 +873,11 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
+        "बताएं",
         "इंतज़ार",
         "आगे",
-        "बताएं",
         "ताकि",
-        "बढ़"
+        "सकें"
       ],
       "sentiment": null,
       "tool": null,
@@ -934,7 +934,7 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
-        "बताएं।",
+        "बताएं",
         "इंतज़ार",
         "तैयार",
         "हों"
@@ -964,10 +964,10 @@
       "base_intent": "enter_income",
       "keywords": [
         "income",
+        "बताएं",
         "कृपया",
         "जाए",
-        "आगे",
-        "monthly"
+        "आगे"
       ],
       "sentiment": null,
       "tool": null,

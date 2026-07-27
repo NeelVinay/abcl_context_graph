@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -76,8 +76,8 @@
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "delay",
         "ऐसा",
@@ -94,8 +94,8 @@
       "index": 5,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_send_sms_link",
-      "base_intent": "send_sms_link",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "deliver",
@@ -112,8 +112,8 @@
       "index": 6,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "शाम"
       ],
@@ -126,8 +126,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "बजे",
         "शाम",
@@ -161,8 +161,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "बजे"
       ],
@@ -175,8 +175,8 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_wait",
-      "base_intent": "wait_hold",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "समझ",
         "urgency"
@@ -205,13 +205,13 @@
       "speaker": "agent",
       "type": "action",
       "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "base_intent": "confused_repeat",
       "keywords": [
-        "फिर से बता",
         "समझ",
         "कृपया",
         "पाई",
-        "माफ़"
+        "माफ़",
+        "कीजियेगा"
       ],
       "sentiment": null,
       "tool": null,
@@ -222,8 +222,8 @@
       "index": 13,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -252,8 +252,8 @@
       "index": 15,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_address_error",
-      "base_intent": "address_error",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "emergency"
       ],
@@ -266,8 +266,8 @@
       "index": 16,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_react_to_offer",
-      "base_intent": "present_offer",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "बजे",
         "ऐसा",
@@ -282,8 +282,8 @@
       "index": 17,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_wait",
-      "base_intent": "wait_hold",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "समझ",
@@ -300,8 +300,8 @@
       "index": 18,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "अरे"
@@ -329,8 +329,8 @@
       "index": 20,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "देख",
         "बजे"
@@ -362,8 +362,8 @@
       "index": 22,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "priority",
         "बजे",
@@ -451,8 +451,8 @@
       "index": 27,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "समझ",
@@ -469,8 +469,8 @@
       "index": 28,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_agree",
+      "base_intent": "agree",
       "keywords": [
         "कीजिए"
       ],
@@ -482,9 +482,9 @@
     {
       "index": 29,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "line",
         "कृपया",
@@ -493,7 +493,7 @@
         "agent"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "ठीक है, मै आपको expert agent से connect कर रही हूँ। कृपया line पर बने रहिए।",
       "entities": []
     },
@@ -512,9 +512,9 @@
     {
       "index": 31,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "call",
         "now",
@@ -523,7 +523,7 @@
         "transferring"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "I will connect you with our specialized team. Transferring your call now, they",
       "entities": []
     }

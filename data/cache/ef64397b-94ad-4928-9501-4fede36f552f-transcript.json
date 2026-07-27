@@ -1,5 +1,5 @@
 {
-  "call_id": "ef64397b",
+  "call_id": "ef64397b-94ad-4928-9501-4fede36f552f-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -23,9 +23,7 @@
       "type": "action",
       "intent": "agent_other",
       "base_intent": "other",
-      "keywords": [
-        "chd"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "<CHD/>",
@@ -136,8 +134,8 @@
         "now",
         "application",
         "process",
-        "shall",
-        "begin"
+        "begin",
+        "shall"
       ],
       "sentiment": null,
       "tool": null,
@@ -615,8 +613,8 @@
         "salaried",
         "self-employ",
         "monthly",
-        "self",
-        "select"
+        "employed",
+        "self"
       ],
       "sentiment": null,
       "tool": null,
@@ -675,8 +673,8 @@
         "salaried",
         "self-employ",
         "monthly",
-        "self",
-        "employed"
+        "employed",
+        "self"
       ],
       "sentiment": null,
       "tool": null,
@@ -821,7 +819,6 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
-        "chd",
         "sure"
       ],
       "sentiment": null,

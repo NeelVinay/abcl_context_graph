@@ -1,7 +1,7 @@
 {
   "call_id": "GEN-myntra-21691136-c5b5-478e-ab9b-91979993fb3a",
   "language": "hi-en",
-  "outcome": "transferred",
+  "outcome": "completed",
   "turns": [
     {
       "index": 0,
@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_link_opened",
-      "base_intent": "open_link",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
       "keywords": [
         "मीरा",
         "shoes",
@@ -42,8 +42,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "let",
@@ -60,8 +60,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "delivery",
@@ -78,8 +78,8 @@
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "delivery",
         "twenty",
@@ -96,8 +96,8 @@
       "index": 5,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "how",
         "understand",
@@ -112,8 +112,8 @@
       "index": 6,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "deliver",
         "july",
@@ -148,14 +148,14 @@
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_help_address_error",
-      "base_intent": "address_error",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
-        "red",
         "order",
         "help",
         "complaint",
-        "already"
+        "already",
+        "there"
       ],
       "sentiment": null,
       "tool": null,
@@ -166,8 +166,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "issue",
         "time",
@@ -202,14 +202,14 @@
       "index": 11,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_send_sms_link",
-      "base_intent": "send_sms_link",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
       "keywords": [
-        "sms",
         "help",
         "form",
         "feedback",
-        "there"
+        "there",
+        "receive"
       ],
       "sentiment": null,
       "tool": null,
@@ -232,8 +232,8 @@
       "index": 13,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_present_offer",
-      "base_intent": "present_offer",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
       "keywords": [
         "feedback",
         "receive"
@@ -260,9 +260,9 @@
     {
       "index": 15,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
       "keywords": [
         "help",
         "form",
@@ -271,7 +271,7 @@
         "helpful"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "You will receive a feedback form via SMS about our conversation today. If you felt I was helpful, your good rating would really mean a lot and help us improve. Thank you for calling.",
       "entities": []
     },
@@ -279,8 +279,8 @@
       "index": 16,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
       "keywords": [
         "मिंत्रा",
         "thank",
@@ -296,8 +296,8 @@
       "index": 17,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_agree",
-      "base_intent": "agree",
+      "intent": "customer_end",
+      "base_intent": "end_call",
       "keywords": [
         "thank",
         "sure"

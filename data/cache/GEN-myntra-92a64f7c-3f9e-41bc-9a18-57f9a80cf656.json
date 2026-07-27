@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
       "keywords": [
         "day",
         "twenty",
@@ -43,8 +43,8 @@
       "index": 2,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "deliver",
         "twenty",
@@ -61,8 +61,8 @@
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "line",
@@ -79,8 +79,8 @@
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "deliver",
         "status",
@@ -97,8 +97,8 @@
       "index": 5,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "deliver",
         "समझ",
@@ -115,8 +115,8 @@
       "index": 6,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "deliver",
         "priority",
@@ -133,8 +133,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "twenty",
         "बोल",
@@ -151,8 +151,8 @@
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "सही",
         "बिलकुल",
@@ -168,9 +168,8 @@
       "speaker": "agent",
       "type": "action",
       "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "base_intent": "confused_repeat",
       "keywords": [
-        "एक बार फिर",
         "कीजिये",
         "माफ़"
       ],
@@ -183,8 +182,8 @@
       "index": 10,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_address_error",
-      "base_intent": "address_error",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "deliver",
@@ -201,8 +200,8 @@
       "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "twenty",
         "बोल",
@@ -248,8 +247,8 @@
       "index": 14,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "delivery",
         "shipping",
@@ -265,8 +264,8 @@
       "index": 15,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_reassure_trust",
-      "base_intent": "reassure_trust",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "deliver",
@@ -283,8 +282,8 @@
       "index": 16,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "deliver",
         "कोशिश",
@@ -301,8 +300,8 @@
       "index": 17,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_wait",
-      "base_intent": "wait_hold",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "समझ",
         "कोशिश",
@@ -319,8 +318,8 @@
       "index": 18,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "date",
@@ -337,14 +336,14 @@
       "index": 19,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "उसको",
         "पता",
         "इतना",
         "बोला",
-        "करवा"
+        "late"
       ],
       "sentiment": null,
       "tool": null,
@@ -355,8 +354,8 @@
       "index": 20,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_reassure_trust",
-      "base_intent": "reassure_trust",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "delivery",
@@ -373,8 +372,8 @@
       "index": 21,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "delay",
         "resolve",
@@ -389,9 +388,9 @@
     {
       "index": 22,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_inform_manual_review",
-      "base_intent": "manual_review",
+      "type": "action",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "deliver",
@@ -400,7 +399,7 @@
         "कोशिश"
       ],
       "sentiment": null,
-      "tool": "push_to_crm",
+      "tool": null,
       "text": "जी, मै आपकी urgency समझ रही हूँ और पूरी कोशिश करूँगी कि आपका order आज ही deliver हो जाए। हम पहले से ही इस पर actions ले रहे हैं और आपका case priority पर है। क्या आप बेहतर assistance के लिए हमारे expert agent से बात करना चाहेंगे जो इस matter को और गहराई से check कर सकें।",
       "entities": []
     },
@@ -421,9 +420,9 @@
     {
       "index": 24,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "line",
         "कृपया",
@@ -432,16 +431,16 @@
         "agent"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "ठीक है, मै आपको expert agent से connect कर रही हूँ। कृपया line पर बने रहिए।",
       "entities": []
     },
     {
       "index": 25,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "call",
         "now",
@@ -450,7 +449,7 @@
         "immediately"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "I will connect you with our specialized team. Transferring your call now, they will be with you immediately.",
       "entities": []
     }

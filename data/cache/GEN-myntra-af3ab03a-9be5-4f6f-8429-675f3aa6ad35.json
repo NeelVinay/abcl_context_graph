@@ -1,7 +1,7 @@
 {
   "call_id": "GEN-myntra-af3ab03a-9be5-4f6f-8429-675f3aa6ad35",
   "language": "hi-en",
-  "outcome": "transferred",
+  "outcome": "completed",
   "turns": [
     {
       "index": 0,
@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_query_fee",
-      "base_intent": "processing_fee",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "delivery",
         "पांच"
@@ -58,8 +58,8 @@
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_pan",
-      "base_intent": "enter_pan",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "deliver",
@@ -76,8 +76,8 @@
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "day",
         "twenty",
@@ -112,8 +112,8 @@
       "index": 6,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_agree",
-      "base_intent": "agree",
+      "intent": "customer_disagree",
+      "base_intent": "disagree",
       "keywords": [
         "request"
       ],
@@ -126,8 +126,8 @@
       "index": 7,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_clarify",
-      "base_intent": "ask_question",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "help",
@@ -158,8 +158,8 @@
       "index": 9,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "ऐसा"
       ],
@@ -204,8 +204,8 @@
       "index": 12,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_agree",
-      "base_intent": "agree",
+      "intent": "customer_end",
+      "base_intent": "end_call",
       "keywords": [
         "thank"
       ],
@@ -217,9 +217,9 @@
     {
       "index": 13,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
       "keywords": [
         "call",
         "मदद",
@@ -228,7 +228,7 @@
         "मिलेगा"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "जी, आपका बहुत धन्यवाद। आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।",
       "entities": []
     },
@@ -236,8 +236,8 @@
       "index": 14,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
       "keywords": [
         "मिंत्रा",
         "thank",

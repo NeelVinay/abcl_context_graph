@@ -111,9 +111,9 @@
       "keywords": [
         "link",
         "message",
-        "चाहिए।",
         "देखो",
-        "दो।"
+        "approve",
+        "text"
       ],
       "sentiment": null,
       "tool": null,
@@ -127,7 +127,6 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "जाएगा।",
         "मिलेगा",
         "text"
       ],

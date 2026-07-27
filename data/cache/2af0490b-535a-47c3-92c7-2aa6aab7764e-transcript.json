@@ -1,5 +1,5 @@
 {
-  "call_id": "2af0490b",
+  "call_id": "2af0490b-535a-47c3-92c7-2aa6aab7764e-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -74,9 +74,9 @@
       "keywords": [
         "interest rate",
         "offer",
-        "हूँ।",
         "final",
-        "शुरू"
+        "शुरू",
+        "interest"
       ],
       "sentiment": null,
       "tool": null,
@@ -127,7 +127,7 @@
         "point",
         "ten",
         "nine",
-        "last"
+        "हमको"
       ],
       "sentiment": null,
       "tool": null,
@@ -191,9 +191,9 @@
       "keywords": [
         "interest rate",
         "sms",
-        "करें।",
         "final",
-        "application"
+        "application",
+        "process"
       ],
       "sentiment": null,
       "tool": null,
@@ -222,10 +222,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
         "application",
         "process",
-        "रखें"
+        "रखें",
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -271,7 +271,7 @@
       "base_intent": "enter_email",
       "keywords": [
         "email",
-        "बताएं।",
+        "बताएं",
         "जाए",
         "personal",
         "enter"
@@ -355,9 +355,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "link"
+        "link",
+        "screen"
       ],
       "sentiment": null,
       "tool": null,
@@ -389,10 +389,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "number",
         "get",
-        "terms"
+        "terms",
+        "mobile"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -421,7 +421,7 @@
       "base_intent": "enter_email",
       "keywords": [
         "email",
-        "बताएं।",
+        "बताएं",
         "जाए",
         "personal",
         "enter"
@@ -454,8 +454,8 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
+        "बताएं",
         "verify",
-        "बताएं।",
         "जाए",
         "email"
       ],
@@ -488,10 +488,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "बताएं",
         "कृपया",
         "verify",
-        "number"
+        "जाए"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -523,7 +523,7 @@
         "loan",
         "offer",
         "amount",
-        "हूँ।"
+        "मदद"
       ],
       "sentiment": null,
       "tool": null,
@@ -574,10 +574,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "मदद",
         "कृपया",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

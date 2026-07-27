@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_link_opened",
-      "base_intent": "open_link",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "shoes"
@@ -40,8 +40,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_pan",
-      "base_intent": "enter_pan",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "order",
         "समझ",
@@ -58,8 +58,8 @@
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_pan",
-      "base_intent": "enter_pan",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "deliver",
@@ -76,9 +76,11 @@
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_agree",
-      "base_intent": "agree",
-      "keywords": [],
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
       "sentiment": null,
       "tool": null,
       "text": "Ma'am ma'am ma'am hello.",
@@ -88,8 +90,8 @@
       "index": 5,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_clarify",
-      "base_intent": "ask_question",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
       "keywords": [
         "मदद",
         "चाहते",
@@ -105,8 +107,8 @@
       "index": 6,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "order",
         "deliver",
@@ -140,8 +142,8 @@
       "index": 8,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_request_wait",
-      "base_intent": "wait_hold",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "बजे",
         "ज़रूर"
@@ -155,8 +157,8 @@
       "index": 9,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_disclose_recording",
-      "base_intent": "recording_disclosure",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "समझ",
         "urgency",
@@ -171,8 +173,8 @@
       "index": 10,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_request_wait",
-      "base_intent": "wait_hold",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "बजे"
       ],
@@ -203,8 +205,8 @@
       "index": 12,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "बजे",
         "shoes",
@@ -237,8 +239,8 @@
       "index": 14,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -249,8 +251,8 @@
       "index": 15,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_confirm",
-      "base_intent": "agree",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -279,8 +281,8 @@
       "index": 17,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_present_offer",
-      "base_intent": "present_offer",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "deliver",
@@ -297,8 +299,8 @@
       "index": 18,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_unclear",
-      "base_intent": "clarify_repeat",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "बजे",
         "अरे"
@@ -312,8 +314,8 @@
       "index": 19,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_agree",
-      "base_intent": "agree",
+      "intent": "customer_express_distrust",
+      "base_intent": "distrust_security",
       "keywords": [
         "अरे",
         "यार"
@@ -327,8 +329,8 @@
       "index": 20,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_reassure_trust",
+      "base_intent": "distrust_security",
       "keywords": [
         "assistant",
         "order",
@@ -360,7 +362,7 @@
       "speaker": "agent",
       "type": "action",
       "intent": "agent_reassure_trust",
-      "base_intent": "reassure_trust",
+      "base_intent": "distrust_security",
       "keywords": [
         "agent",
         "expert"
@@ -375,7 +377,7 @@
       "speaker": "customer",
       "type": "action",
       "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "base_intent": "distrust_security",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -386,13 +388,13 @@
       "index": 24,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_reassure_trust",
+      "base_intent": "distrust_security",
       "keywords": [
         "assistant",
         "मदद",
-        "चाहते",
         "बेहतर",
+        "चाहते",
         "agent"
       ],
       "sentiment": null,
@@ -404,8 +406,8 @@
       "index": 25,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_unclear",
+      "base_intent": "confused_repeat",
       "keywords": [
         "अरे",
         "यार"
@@ -418,9 +420,9 @@
     {
       "index": 26,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "distrust_security",
       "keywords": [
         "help",
         "मदद",
@@ -429,7 +431,7 @@
         "agent"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "माफी चाहती हूँ कि आपको परेशानी हुई। मैं बस आपकी मदद करने की कोशिश कर रही हूँ। क्या आप चाहते हैं कि मैं आपको किसी expert agent से connect कर दूँ ताकि वो आपकी better help कर सकें?",
       "entities": []
     },
@@ -437,8 +439,8 @@
       "index": 27,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_agree",
+      "base_intent": "agree",
       "keywords": [
         "order",
         "बजे",
@@ -453,9 +455,9 @@
     {
       "index": 28,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "समझ",
@@ -464,7 +466,7 @@
         "expert"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "जी, मैं समझ सकती हूँ कि आपको order जल्दी चाहिए। क्या आप better assistance के लिए expert agent से बात करना चाहते हैं?",
       "entities": []
     },
@@ -483,15 +485,15 @@
     {
       "index": 30,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_confirm",
+      "base_intent": "agree",
       "keywords": [
         "agent",
         "expert"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "ठीक है, मै आपको expert agent",
       "entities": []
     },
@@ -499,8 +501,8 @@
       "index": 31,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -511,8 +513,8 @@
       "index": 32,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
       "keywords": [
         "call",
         "now",

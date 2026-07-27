@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "deliver",
@@ -43,8 +43,8 @@
       "index": 2,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_query",
-      "base_intent": "answer_query",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "deliver",
@@ -79,8 +79,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_pan",
-      "base_intent": "enter_pan",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "मिंत्रा",
         "help",
@@ -97,8 +97,8 @@
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_unclear",
+      "base_intent": "confused_repeat",
       "keywords": [
         "कब तक",
         "order",
@@ -114,8 +114,8 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "deliver",
@@ -132,8 +132,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "कैसे",
         "order",
@@ -150,8 +150,8 @@
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_present_offer",
-      "base_intent": "present_offer",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "समझ",
@@ -168,8 +168,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "बजे",
         "चार"
@@ -183,8 +183,8 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "समझती"
       ],
@@ -197,8 +197,8 @@
       "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "deliver",
@@ -215,8 +215,8 @@
       "index": 12,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "deliver",
@@ -233,8 +233,8 @@
       "index": 13,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "कोशिश",
@@ -265,8 +265,8 @@
       "index": 15,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_confirm",
+      "base_intent": "agree",
       "keywords": [],
       "sentiment": null,
       "tool": null,

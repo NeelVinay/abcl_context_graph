@@ -1,5 +1,5 @@
 {
-  "call_id": "30f7f2d2",
+  "call_id": "30f7f2d2-2282-44ac-9b96-2b1a364b4575-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -105,7 +105,7 @@
         "offer",
         "approved",
         "pre",
-        "हूँ।"
+        "मदद"
       ],
       "sentiment": null,
       "tool": null,
@@ -168,10 +168,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "हूँ।",
         "application",
         "शुरू",
-        "process"
+        "process",
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -231,7 +231,6 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
         "link",
         "click"
       ],
@@ -261,9 +260,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "नीचे"
+        "नीचे",
+        "screen"
       ],
       "sentiment": null,
       "tool": null,
@@ -290,10 +289,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "number",
         "get",
-        "terms"
+        "terms",
+        "mobile"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -322,10 +321,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "verify",
         "personal",
-        "details"
+        "details",
+        "screen"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -387,7 +386,7 @@
       "base_intent": "enter_email",
       "keywords": [
         "email",
-        "बताएं।",
+        "बताएं",
         "जाए",
         "personal",
         "enter"
@@ -448,9 +447,9 @@
       "keywords": [
         "terms and condition",
         "terms",
-        "करें।",
         "button",
-        "check"
+        "check",
+        "conditions"
       ],
       "sentiment": null,
       "tool": null,
@@ -497,7 +496,7 @@
       "base_intent": "enter_income",
       "keywords": [
         "income",
-        "बताएं।",
+        "बताएं",
         "जाए",
         "home",
         "fill"
@@ -529,7 +528,7 @@
       "base_intent": "organization_name",
       "keywords": [
         "organization",
-        "बताएं।",
+        "बताएं",
         "जाए",
         "enter"
       ],
@@ -546,7 +545,7 @@
       "base_intent": "enter_email",
       "keywords": [
         "email",
-        "बताएं।",
+        "बताएं",
         "जाए",
         "enter",
         "official"
@@ -563,7 +562,7 @@
       "intent": "agent_request_business_details",
       "base_intent": "business_details",
       "keywords": [
-        "बताएं।",
+        "बताएं",
         "जाए",
         "address",
         "fill",
@@ -593,11 +592,11 @@
       "intent": "agent_guide_apply",
       "base_intent": "click_apply",
       "keywords": [
-        "करें।",
         "details",
         "button",
         "proceed",
-        "click"
+        "click",
+        "fill"
       ],
       "sentiment": null,
       "tool": null,
@@ -612,8 +611,8 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
+        "बताएं",
         "verify",
-        "बताएं।",
         "जाए",
         "email"
       ],
@@ -632,8 +631,7 @@
         "फिर से कह",
         "कृपया",
         "कहेंगे",
-        "साफ़",
-        "आया।"
+        "साफ़"
       ],
       "sentiment": null,
       "tool": null,
@@ -664,8 +662,7 @@
         "otp",
         "verify",
         "आगे",
-        "नहीं।",
-        "बढ़ेंगे।"
+        "बढ़ेंगे"
       ],
       "sentiment": null,
       "tool": null,
@@ -727,10 +724,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

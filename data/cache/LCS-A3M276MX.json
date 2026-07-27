@@ -24,8 +24,7 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "चेक",
-        "करें।"
+        "चेक"
       ],
       "sentiment": null,
       "tool": null,
@@ -101,11 +100,11 @@
       "intent": "agent_raise_request",
       "base_intent": "resolution",
       "keywords": [
-        "हूँ।",
         "ticket",
         "time",
         "whatsapp",
-        "same"
+        "same",
+        "provide"
       ],
       "sentiment": null,
       "tool": null,

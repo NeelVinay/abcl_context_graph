@@ -1,5 +1,5 @@
 {
-  "call_id": "77bb4be2",
+  "call_id": "77bb4be2-8172-4e5b-9467-caee7d76c8fb-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -101,9 +101,9 @@
       "keywords": [
         "sms",
         "loan",
+        "बताएं",
         "कृपया",
-        "application",
-        "process"
+        "application"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -134,8 +134,8 @@
         "खुल गया",
         "लिंक पर क्लिक",
         "sms",
-        "कृपया",
-        "बताएं"
+        "बताएं",
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -151,9 +151,9 @@
       "keywords": [
         "apply",
         "sms",
+        "बताएं",
         "now",
-        "कृपया",
-        "देख"
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,
@@ -249,11 +249,11 @@
       "intent": "agent_answer_query",
       "base_intent": "answer_query",
       "keywords": [
-        "हूँ।",
+        "बताएं",
         "मदद",
         "कृपया",
-        "बताएं",
-        "किस"
+        "किस",
+        "सुन"
       ],
       "sentiment": null,
       "tool": null,
@@ -301,9 +301,9 @@
       "keywords": [
         "loan",
         "amount",
+        "बताएं",
         "मदद",
-        "कृपया",
-        "process"
+        "कृपया"
       ],
       "sentiment": null,
       "tool": null,

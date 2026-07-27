@@ -14,7 +14,7 @@
         "issue",
         "request",
         "problem",
-        "से।"
+        "receive"
       ],
       "sentiment": null,
       "tool": null,
@@ -97,9 +97,9 @@
       "keywords": [
         "justdial",
         "lead",
-        "हूँ।",
         "inquiry",
-        "देख"
+        "देख",
+        "उन्होंने"
       ],
       "sentiment": null,
       "tool": null,
@@ -131,7 +131,7 @@
       "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "पाएं।"
+        "पाएं"
       ],
       "sentiment": null,
       "tool": null,
@@ -163,7 +163,6 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "सर।",
         "upload",
         "सेक्षन"
       ],

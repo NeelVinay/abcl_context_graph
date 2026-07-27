@@ -30,7 +30,6 @@
       "keywords": [
         "leads",
         "बोल",
-        "था।",
         "बोला"
       ],
       "sentiment": null,
@@ -81,7 +80,7 @@
         "call",
         "support",
         "lead",
-        "हूँ।"
+        "leads"
       ],
       "sentiment": null,
       "tool": null,
@@ -95,8 +94,8 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "शेयर",
-        "कीजिएगा"
+        "कीजिएगा",
+        "शेयर"
       ],
       "sentiment": null,
       "tool": null,

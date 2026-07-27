@@ -98,7 +98,6 @@
       "keywords": [
         "justdial",
         "lead",
-        "आपको।",
         "शायद"
       ],
       "sentiment": null,
@@ -131,8 +130,7 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "lead",
-        "लिए।"
+        "lead"
       ],
       "sentiment": null,
       "tool": null,

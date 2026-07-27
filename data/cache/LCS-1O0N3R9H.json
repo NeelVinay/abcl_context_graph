@@ -13,8 +13,8 @@
         "right",
         "contact",
         "all",
-        "करें।",
-        "send"
+        "send",
+        "student"
       ],
       "sentiment": null,
       "tool": null,
@@ -46,9 +46,8 @@
       "intent": "customer_ask_question",
       "base_intent": "question",
       "keywords": [
-        "लीड",
         "चेक",
-        "ना।",
+        "लीड",
         "इसको"
       ],
       "sentiment": null,

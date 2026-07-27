@@ -58,7 +58,6 @@
       "keywords": [
         "right",
         "registered",
-        "kumar",
         "professional",
         "digital"
       ],
@@ -333,8 +332,7 @@
       "intent": "agent_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "there",
-        "jain"
+        "there"
       ],
       "sentiment": null,
       "tool": null,

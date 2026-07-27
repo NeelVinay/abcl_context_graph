@@ -80,7 +80,7 @@
         "check",
         "inquiry",
         "चाहते",
-        "आप।"
+        "दोनों"
       ],
       "sentiment": null,
       "tool": null,
@@ -96,8 +96,8 @@
       "keywords": [
         "message",
         "proper",
-        "phone",
         "requirement",
+        "phone",
         "उसको"
       ],
       "sentiment": null,
@@ -221,11 +221,11 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "हूँ।",
         "check",
         "right",
         "share",
-        "काम"
+        "काम",
+        "company"
       ],
       "sentiment": null,
       "tool": null,
@@ -240,8 +240,7 @@
       "base_intent": "question",
       "keywords": [
         "समझ",
-        "जरूरत",
-        "गई।"
+        "जरूरत"
       ],
       "sentiment": null,
       "tool": null,
@@ -255,7 +254,6 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "को।",
         "लाइज"
       ],
       "sentiment": null,
@@ -285,7 +283,6 @@
       "base_intent": "backchannel",
       "keywords": [
         "बोल",
-        "आपको।",
         "देखा",
         "agree",
         "देखेंगे"
@@ -306,7 +303,7 @@
         "देख",
         "proper",
         "application",
-        "तो।"
+        "देते"
       ],
       "sentiment": null,
       "tool": null,
@@ -336,8 +333,8 @@
       "base_intent": "other",
       "keywords": [
         "देने",
-        "देंगे।",
-        "समय"
+        "समय",
+        "happening"
       ],
       "sentiment": null,
       "tool": null,

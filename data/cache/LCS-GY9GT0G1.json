@@ -95,7 +95,6 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "हाँ।",
         "कहीं"
       ],
       "sentiment": null,
@@ -207,9 +206,9 @@
       "keywords": [
         "justdial",
         "call",
-        "हूँ।",
         "service",
-        "check"
+        "check",
+        "category"
       ],
       "sentiment": null,
       "tool": null,
@@ -261,7 +260,7 @@
         "one",
         "proper",
         "month",
-        "total"
+        "doing"
       ],
       "sentiment": null,
       "tool": null,
@@ -428,7 +427,6 @@
       "intent": "customer_acknowledge",
       "base_intent": "resolution",
       "keywords": [
-        "हाँ।",
         "address",
         "down",
         "कीज़े",
@@ -462,8 +460,7 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "actually",
-        "हो।"
+        "actually"
       ],
       "sentiment": null,
       "tool": null,
@@ -493,7 +490,6 @@
       "keywords": [
         "बोल",
         "wait",
-        "थे।",
         "कीज़"
       ],
       "sentiment": null,
@@ -508,8 +504,8 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "wait",
         "changes",
+        "wait",
         "रिक्वेस्ट",
         "करूँगी",
         "observe"
@@ -543,8 +539,7 @@
         "leads",
         "ऐसा",
         "flow",
-        "market",
-        "आएगी।"
+        "market"
       ],
       "sentiment": null,
       "tool": null,

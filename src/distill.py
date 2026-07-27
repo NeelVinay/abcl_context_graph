@@ -57,13 +57,32 @@ DOMAINS = {
 
 def load_dataset(gold_path=None) -> list[dict]:
     """Join gold labels with the cached turn text; add previous-turn context.
-    Only calls present in the gold set are used, so mixing ABCL + JD caches is safe.
+    Only calls present in the gold set are used, so mixing calls from multiple
+    clients' caches is safe.
 
     Some calls were cached twice under different filenames (e.g. a full-uuid
     "...-transcript.json" and a short-hash "<hex8>.json" from separate extraction
     runs) with identical content — `seen_call_ids` keeps the first and skips the
-    duplicate so those calls aren't double-counted in the eval/training set."""
+    duplicate so those calls aren't double-counted in the eval/training set.
+
+    ABCL's gold set (data/gold/labels.jsonl) was built against the short 8-char
+    call_id convention, while extract_call() has always written the full filename
+    stem as call_id ("<uuid>-transcript", not "<hex8>") — a pre-existing mismatch
+    between how gold was keyed and what fresh extraction produces, invisible until
+    the cache is regenerated. `_gold_key_for` tries the cache's own call_id first
+    and falls back to its first 8 characters, so re-extracting ABCL never silently
+    drops its gold labels. JustDial and every generic-taxonomy client (Myntra and
+    beyond) already key gold on the full stem, so the fallback is a no-op for them."""
     gold = load_gold(gold_path)
+
+    def _gold_key_for(call_id, index):
+        if (call_id, index) in gold:
+            return (call_id, index)
+        short = call_id[:8]
+        if (short, index) in gold:
+            return (short, index)
+        return None
+
     samples = []
     seen_call_ids: set = set()
     for f in sorted(config.CACHE_DIR.glob("*.json")):
@@ -74,11 +93,16 @@ def load_dataset(gold_path=None) -> list[dict]:
         turns = c["turns"]
         n = len(turns)
         for i, t in enumerate(turns):
-            key = (c["call_id"], t["index"])
-            if key not in gold:
+            key = _gold_key_for(c["call_id"], t["index"])
+            if key is None:
                 continue
+            # store the call_id form that actually matched gold (may be the short
+            # 8-char form for ABCL), not the cache's own raw call_id — downstream
+            # code (cv_eval's out-of-fold prediction dict, keyed the same way) must
+            # use the SAME convention gold itself uses, or the join silently misses
+            # on every lookup and scores 0 accuracy despite loading real samples.
             samples.append({
-                "call_id": c["call_id"], "index": t["index"],
+                "call_id": key[0], "index": t["index"],
                 "speaker": t["speaker"], "text": t["text"],
                 "prev_text": turns[i - 1]["text"] if i > 0 else "",
                 "pos": t["index"] / max(n - 1, 1),

@@ -1,5 +1,5 @@
 {
-  "call_id": "dc0ddbd3",
+  "call_id": "dc0ddbd3-d2b6-4367-9f4c-eb6455045733-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -77,10 +77,10 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
+        "बताएं",
         "कृपया",
-        "page",
-        "link"
+        "जाए",
+        "page"
       ],
       "sentiment": null,
       "tool": null,
@@ -218,10 +218,10 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
+        "बताएं",
         "process",
-        "बताएं।",
-        "link"
+        "link",
+        "click"
       ],
       "sentiment": null,
       "tool": null,
@@ -325,8 +325,8 @@
         "apply now",
         "apply",
         "sms",
-        "now",
-        "कृपया"
+        "बताएं",
+        "now"
       ],
       "sentiment": null,
       "tool": null,
@@ -360,9 +360,9 @@
       "keywords": [
         "otp",
         "sms",
-        "करें।",
         "verify",
-        "number"
+        "number",
+        "get"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -427,7 +427,7 @@
       "intent": "agent_guide_apply",
       "base_intent": "click_apply",
       "keywords": [
-        "करें।",
+        "बताएं",
         "कृपया",
         "details",
         "button",
@@ -460,10 +460,10 @@
       "base_intent": "acknowledge",
       "keywords": [
         "कृपया",
+        "रखें",
         "आपसे",
         "थोड़ा",
-        "धैर्य",
-        "रखें।"
+        "धैर्य"
       ],
       "sentiment": null,
       "tool": null,
@@ -492,11 +492,11 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
-        "करें।",
-        "हूँ।",
         "कृपया",
         "connect",
-        "इंतज़ार"
+        "इंतज़ार",
+        "समझ",
+        "आपसे"
       ],
       "sentiment": null,
       "tool": null,
@@ -606,7 +606,7 @@
         "amount",
         "कृपया",
         "शुरू",
-        "connect"
+        "रखें"
       ],
       "sentiment": null,
       "tool": null,
@@ -640,7 +640,7 @@
         "आपसे",
         "जल्दी",
         "लाइन",
-        "करेगी।"
+        "रहें"
       ],
       "sentiment": null,
       "tool": null,
@@ -670,10 +670,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "specialist से connect",
-        "करें।",
-        "हूँ।",
         "कृपया",
-        "समय"
+        "समय",
+        "connect",
+        "इंतज़ार"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

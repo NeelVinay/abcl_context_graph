@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -26,7 +26,7 @@
       "speaker": "agent",
       "type": "action",
       "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "base_intent": "confused_repeat",
       "keywords": [
         "there",
         "still",
@@ -42,9 +42,11 @@
       "index": 2,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
-      "keywords": [],
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
       "sentiment": null,
       "tool": null,
       "text": "हां hello, आवाज़ आ रही है मेरी?",
@@ -54,8 +56,8 @@
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_confirm",
-      "base_intent": "agree",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "मदद",
         "बिलकुल"
@@ -84,8 +86,8 @@
       "index": 5,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_confirm",
-      "base_intent": "agree",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -110,8 +112,8 @@
       "index": 7,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
       "keywords": [
         "order"
       ],
@@ -124,8 +126,8 @@
       "index": 8,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
       "keywords": [
         "delivery",
         "tomorrow",
@@ -140,8 +142,8 @@
       "index": 9,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "समझ"
       ],
@@ -200,8 +202,8 @@
       "index": 13,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "समझ"
       ],
@@ -214,8 +216,8 @@
       "index": 14,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "देखो"
@@ -229,8 +231,8 @@
       "index": 15,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "समझ"
       ],
@@ -275,8 +277,8 @@
       "index": 18,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "july",
         "thirtieth"
@@ -322,8 +324,8 @@
       "index": 21,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "समझ",
         "परेशान",
@@ -368,8 +370,8 @@
       "index": 24,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "july"
       ],
@@ -424,8 +426,8 @@
       "index": 28,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "दूसरा",
         "मिलता"
@@ -439,8 +441,8 @@
       "index": 29,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_reassure_trust",
-      "base_intent": "reassure_trust",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "confused_repeat",
       "keywords": [
         "समझ",
         "कृपया",
@@ -474,8 +476,8 @@
       "index": 31,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "problem",
         "set"
@@ -489,8 +491,8 @@
       "index": 32,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_query",
-      "base_intent": "answer_query",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "cancel"
@@ -518,8 +520,8 @@
       "index": 34,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "उसको",

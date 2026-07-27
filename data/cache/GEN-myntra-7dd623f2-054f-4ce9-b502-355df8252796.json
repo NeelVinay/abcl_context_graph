@@ -1,7 +1,7 @@
 {
   "call_id": "GEN-myntra-7dd623f2-054f-4ce9-b502-355df8252796",
   "language": "hi-en",
-  "outcome": "raised_request",
+  "outcome": "completed",
   "turns": [
     {
       "index": 0,
@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -25,8 +25,8 @@
       "index": 1,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_query",
-      "base_intent": "answer_query",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "order",
         "delivery",
@@ -78,8 +78,8 @@
       "index": 4,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_query",
-      "base_intent": "answer_query",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "पता",
@@ -145,8 +145,8 @@
       "index": 8,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "product",
         "hour",
@@ -174,8 +174,8 @@
       "index": 10,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_other",
+      "base_intent": "other",
       "keywords": [
         "problem"
       ],
@@ -188,8 +188,8 @@
       "index": 11,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "help",
@@ -206,11 +206,9 @@
       "index": 12,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_done",
-      "base_intent": "report_done",
-      "keywords": [
-        "हो गया"
-      ],
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "नहीं नहीं, हो गया, हो गया.",
@@ -220,8 +218,8 @@
       "index": 13,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
       "keywords": [
         "call",
         "मदद",
@@ -238,8 +236,8 @@
       "index": 14,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
       "keywords": [
         "मिंत्रा",
         "thank",

@@ -28,7 +28,6 @@
       "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "से।",
         "टीम"
       ],
       "sentiment": null,
@@ -145,10 +144,10 @@
       "base_intent": "agent_handle",
       "keywords": [
         "lead",
-        "हूँ।",
         "check",
         "category",
-        "issue"
+        "issue",
+        "feedback"
       ],
       "sentiment": null,
       "tool": null,
@@ -190,8 +189,7 @@
       "base_intent": "backchannel",
       "keywords": [
         "मिलेगा",
-        "अलावा",
-        "अभी।"
+        "अलावा"
       ],
       "sentiment": null,
       "tool": null,

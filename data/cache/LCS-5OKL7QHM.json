@@ -78,7 +78,6 @@
       "intent": "agent_acknowledge_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "नहीं।",
         "सही"
       ],
       "sentiment": null,
@@ -96,8 +95,8 @@
         "कैसे",
         "lead",
         "inquiry",
-        "आपको।",
-        "में।"
+        "मिलेगी",
+        "दिक्कत"
       ],
       "sentiment": "confused",
       "tool": null,
@@ -113,7 +112,8 @@
       "keywords": [
         "business",
         "inquiry",
-        "उसमें"
+        "उसमें",
+        "इसको"
       ],
       "sentiment": null,
       "tool": null,
@@ -209,8 +209,7 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "लीड",
-        "आपको।"
+        "लीड"
       ],
       "sentiment": null,
       "tool": null,
@@ -227,7 +226,7 @@
         "leads",
         "filter",
         "data",
-        "तक।",
+        "march",
         "तारिक"
       ],
       "sentiment": null,

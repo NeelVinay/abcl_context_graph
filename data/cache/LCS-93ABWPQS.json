@@ -403,10 +403,9 @@
       "intent": "agent_ask",
       "base_intent": "question",
       "keywords": [
-        "था।",
         "account",
         "मिले",
-        "जगह।"
+        "जगह"
       ],
       "sentiment": null,
       "tool": null,
@@ -420,7 +419,6 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "sir।",
         "दिख",
         "list",
         "फिलाल"
@@ -505,11 +503,11 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "था।",
         "today",
         "doing",
         "currently",
-        "office"
+        "office",
+        "sign"
       ],
       "sentiment": null,
       "tool": null,
@@ -537,10 +535,8 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "लिए।",
         "phone",
-        "कीज़े",
-        "सा।"
+        "कीज़े"
       ],
       "sentiment": null,
       "tool": null,
@@ -557,7 +553,6 @@
         "message",
         "phone",
         "करे",
-        "मेरा।",
         "reply"
       ],
       "sentiment": null,
@@ -595,9 +590,7 @@
       "type": "action",
       "intent": "agent_raise_request",
       "base_intent": "resolution",
-      "keywords": [
-        "हूँ।"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "बात करती हूँ।",

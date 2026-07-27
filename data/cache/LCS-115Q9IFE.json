@@ -158,7 +158,6 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "में।",
         "अंदर",
         "side",
         "washing"
@@ -222,8 +221,7 @@
       "intent": "agent_other",
       "base_intent": "other",
       "keywords": [
-        "साथ।",
-        "दें।"
+        "दें"
       ],
       "sentiment": null,
       "tool": null,
@@ -252,7 +250,6 @@
       "base_intent": "backchannel",
       "keywords": [
         "दिये",
-        "साथ।",
         "बड़"
       ],
       "sentiment": null,
@@ -267,10 +264,8 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "थी।",
         "करा",
-        "दिये",
-        "साथ।"
+        "दिये"
       ],
       "sentiment": null,
       "tool": null,

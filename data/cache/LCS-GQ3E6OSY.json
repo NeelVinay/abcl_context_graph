@@ -79,7 +79,7 @@
       "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "बताये।"
+        "बताये"
       ],
       "sentiment": null,
       "tool": null,
@@ -177,10 +177,9 @@
       "base_intent": "agent_handle",
       "keywords": [
         "lead",
-        "हूँ।",
+        "देखिए",
         "सही",
-        "use",
-        "देखिए।"
+        "use"
       ],
       "sentiment": null,
       "tool": null,
@@ -196,9 +195,9 @@
       "keywords": [
         "lead",
         "message",
+        "देखिए",
         "सही",
-        "दुबारा",
-        "देखिए।"
+        "दुबारा"
       ],
       "sentiment": null,
       "tool": null,
@@ -213,10 +212,10 @@
       "base_intent": "complaint",
       "keywords": [
         "out",
-        "करें।",
         "देने",
         "filter",
-        "वेट"
+        "वेट",
+        "महिना"
       ],
       "sentiment": null,
       "tool": null,
@@ -230,7 +229,6 @@
       "intent": "customer_other",
       "base_intent": "other",
       "keywords": [
-        "करें।",
         "पैसा"
       ],
       "sentiment": null,
@@ -278,7 +276,6 @@
       "base_intent": "question",
       "keywords": [
         "profile",
-        "थी।",
         "photo",
         "डालने"
       ],
@@ -296,9 +293,9 @@
       "keywords": [
         "rating",
         "problem",
-        "सर।",
         "forward",
-        "डाल"
+        "डाल",
+        "दीजिये"
       ],
       "sentiment": null,
       "tool": null,
@@ -314,7 +311,6 @@
       "keywords": [
         "problem",
         "face",
-        "सर।",
         "आशा"
       ],
       "sentiment": null,
@@ -328,7 +324,9 @@
       "type": "action",
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
-      "keywords": [],
+      "keywords": [
+        "अलावा"
+      ],
       "sentiment": null,
       "tool": null,
       "text": "इसके अलावा। नहीं ह आप बेटी कर रहे हैं। ठीक है। कोई",
@@ -342,8 +340,7 @@
       "base_intent": "agent_handle",
       "keywords": [
         "problem",
-        "profile",
-        "जाएगी।"
+        "profile"
       ],
       "sentiment": null,
       "tool": null,
@@ -376,7 +373,6 @@
         "काम",
         "definitely",
         "इसको",
-        "बताया।",
         "लाभ"
       ],
       "sentiment": null,
@@ -436,8 +432,8 @@
         "already",
         "again",
         "validate",
-        "sent",
-        "many"
+        "many",
+        "sent"
       ],
       "sentiment": null,
       "tool": null,
@@ -469,10 +465,10 @@
       "base_intent": "backchannel",
       "keywords": [
         "take",
-        "था।",
         "get",
         "like",
-        "back"
+        "back",
+        "other"
       ],
       "sentiment": null,
       "tool": null,

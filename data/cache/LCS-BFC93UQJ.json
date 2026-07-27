@@ -134,11 +134,11 @@
       "intent": "customer_respond",
       "base_intent": "agent_handle",
       "keywords": [
-        "हूँ।",
-        "लिए।",
         "direct",
         "करा",
-        "address"
+        "address",
+        "change",
+        "personal"
       ],
       "sentiment": null,
       "tool": null,
@@ -169,9 +169,9 @@
       "keywords": [
         "नहीं हो",
         "call",
-        "हूँ।",
         "response",
-        "help"
+        "help",
+        "request"
       ],
       "sentiment": "frustrated",
       "tool": null,

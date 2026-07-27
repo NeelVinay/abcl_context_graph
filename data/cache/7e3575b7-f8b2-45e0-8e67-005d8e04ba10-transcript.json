@@ -1,5 +1,5 @@
 {
-  "call_id": "7e3575b7",
+  "call_id": "7e3575b7-f8b2-45e0-8e67-005d8e04ba10-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -109,10 +109,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
         "application",
         "process",
-        "रखें"
+        "रखें",
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -127,7 +127,6 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
         "link",
         "click"
       ],
@@ -218,9 +217,9 @@
       "keywords": [
         "wait",
         "sms",
-        "करें।",
         "कृपया",
-        "जाएगा।"
+        "जल्दी",
+        "मिनट"
       ],
       "sentiment": null,
       "tool": null,
@@ -345,10 +344,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
-        "हूँ।",
         "कृपया",
-        "भेज"
+        "भेज",
+        "check",
+        "phone"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -378,7 +377,6 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "हूँ।",
         "कृपया",
         "भेज",
         "देर"
@@ -397,9 +395,9 @@
       "keywords": [
         "apply",
         "sms",
-        "करें।",
         "now",
-        "link"
+        "link",
+        "button"
       ],
       "sentiment": null,
       "tool": null,
@@ -466,10 +464,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
+        "जाए",
         "number",
         "get",
-        "terms",
-        "mobile"
+        "terms"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -496,10 +494,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
+        "जाए",
         "number",
         "get",
-        "terms",
-        "mobile"
+        "terms"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -514,10 +512,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
+        "जाए",
         "number",
         "get",
-        "terms",
-        "mobile"
+        "terms"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -544,10 +542,10 @@
       "base_intent": "enter_email",
       "keywords": [
         "email",
+        "बताएं",
         "कृपया",
-        "personal",
-        "check",
-        "enter"
+        "जाए",
+        "personal"
       ],
       "sentiment": null,
       "tool": null,
@@ -577,10 +575,10 @@
       "base_intent": "enter_email",
       "keywords": [
         "email",
+        "बताएं",
         "कृपया",
-        "personal",
-        "check",
-        "enter"
+        "जाए",
+        "personal"
       ],
       "sentiment": null,
       "tool": null,
@@ -658,7 +656,7 @@
       "keywords": [
         "terms and condition",
         "terms",
-        "करें।",
+        "जाए",
         "button",
         "check"
       ],
@@ -709,11 +707,11 @@
       "intent": "agent_request_otp",
       "base_intent": "mobile_otp",
       "keywords": [
+        "बताएं",
         "कृपया",
+        "जाए",
         "number",
-        "mobile",
-        "enter",
-        "बताएं"
+        "mobile"
       ],
       "sentiment": null,
       "tool": null,
@@ -728,7 +726,7 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "जाए",
         "number",
         "get",
         "terms"
@@ -746,8 +744,8 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "verify",
+        "जाए",
         "click",
         "enter"
       ],
@@ -764,8 +762,8 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "verify",
+        "जाए",
         "click",
         "enter"
       ],
@@ -812,10 +810,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

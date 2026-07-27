@@ -1,5 +1,5 @@
 {
-  "call_id": "b10463b7",
+  "call_id": "b10463b7-a49a-4041-9269-37f356be22e9-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -259,10 +259,10 @@
       "base_intent": "reassure_trust",
       "keywords": [
         "sms",
-        "करें।",
         "कृपया",
         "verify",
-        "page"
+        "page",
+        "capital"
       ],
       "sentiment": null,
       "tool": null,
@@ -292,9 +292,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "नीचे"
+        "नीचे",
+        "screen"
       ],
       "sentiment": null,
       "tool": null,
@@ -309,10 +309,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "number",
         "get",
-        "terms"
+        "terms",
+        "mobile"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -341,10 +341,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "बताएं",
         "verify",
-        "बताएं।",
-        "जाए"
+        "जाए",
+        "screen"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -386,8 +386,8 @@
       "base_intent": "enter_pan",
       "keywords": [
         "पैन",
+        "बताएं",
         "कृपया",
-        "बताएं।",
         "जाए",
         "details"
       ],
@@ -421,8 +421,8 @@
         "gender",
         "date of birth",
         "marital",
-        "करें।",
-        "बताएं।"
+        "बताएं",
+        "जाए"
       ],
       "sentiment": null,
       "tool": null,
@@ -454,7 +454,7 @@
       "base_intent": "enter_email",
       "keywords": [
         "email",
-        "बताएं।",
+        "बताएं",
         "जाए",
         "personal",
         "enter"
@@ -522,9 +522,9 @@
       "keywords": [
         "terms and condition",
         "terms",
-        "करें।",
         "button",
-        "check"
+        "check",
+        "conditions"
       ],
       "sentiment": null,
       "tool": null,
@@ -586,9 +586,9 @@
       "keywords": [
         "salaried",
         "self-employ",
+        "बताएं",
         "कृपया",
-        "बताएं।",
-        "self"
+        "employed"
       ],
       "sentiment": null,
       "tool": null,
@@ -604,9 +604,9 @@
       "keywords": [
         "salaried",
         "self-employ",
-        "self",
-        "employment",
-        "type"
+        "बताएं",
+        "employed",
+        "self"
       ],
       "sentiment": null,
       "tool": null,
@@ -674,10 +674,10 @@
       "base_intent": "organization_name",
       "keywords": [
         "organization",
-        "करें।",
-        "बताएं।",
+        "बताएं",
         "जाए",
-        "enter"
+        "enter",
+        "type"
       ],
       "sentiment": null,
       "tool": null,
@@ -706,10 +706,10 @@
       "base_intent": "enter_email",
       "keywords": [
         "email",
-        "करें।",
-        "बताएं।",
+        "बताएं",
         "जाए",
-        "enter"
+        "enter",
+        "type"
       ],
       "sentiment": null,
       "tool": null,
@@ -738,7 +738,7 @@
       "intent": "agent_request_business_details",
       "base_intent": "business_details",
       "keywords": [
-        "बताएं।",
+        "बताएं",
         "जाए",
         "address",
         "fill",
@@ -770,11 +770,11 @@
       "intent": "agent_guide_apply",
       "base_intent": "click_apply",
       "keywords": [
-        "करें।",
         "details",
         "button",
         "proceed",
-        "click"
+        "click",
+        "fill"
       ],
       "sentiment": null,
       "tool": null,
@@ -803,8 +803,8 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
+        "बताएं",
         "verify",
-        "बताएं।",
         "जाए",
         "email"
       ],
@@ -867,10 +867,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

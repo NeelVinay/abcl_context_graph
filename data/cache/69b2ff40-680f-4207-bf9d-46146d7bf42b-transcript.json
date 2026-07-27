@@ -1,5 +1,5 @@
 {
-  "call_id": "69b2ff40",
+  "call_id": "69b2ff40-680f-4207-bf9d-46146d7bf42b-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -115,8 +115,8 @@
       "intent": "customer_ask_question",
       "base_intent": "ask_question",
       "keywords": [
-        "उसमें",
-        "दिखेगा"
+        "दिखेगा",
+        "उसमें"
       ],
       "sentiment": null,
       "tool": null,
@@ -134,7 +134,7 @@
         "loan",
         "offer",
         "amount",
-        "final"
+        "कृपया"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -199,9 +199,9 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
+        "बताएं",
         "कृपया",
         "भेज",
-        "बताएं",
         "चेक"
       ],
       "sentiment": null,
@@ -286,7 +286,6 @@
       "intent": "agent_wait",
       "base_intent": "wait_hold",
       "keywords": [
-        "हूँ।",
         "बताएं",
         "तैयार",
         "हों",
@@ -352,9 +351,9 @@
       "keywords": [
         "लिंक पर क्लिक",
         "sms",
-        "करें।",
         "मदद",
-        "कृपया"
+        "कृपया",
+        "जाए"
       ],
       "sentiment": null,
       "tool": null,
@@ -417,8 +416,8 @@
         "relationship manager",
         "loan",
         "offer",
-        "हूँ।",
-        "मदद"
+        "मदद",
+        "कृपया"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",

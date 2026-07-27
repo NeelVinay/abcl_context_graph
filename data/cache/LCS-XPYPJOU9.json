@@ -145,11 +145,9 @@
       "intent": "customer_acknowledge",
       "base_intent": "resolution",
       "keywords": [
-        "हूँ।",
-        "काम",
         "लीड",
-        "इन्हां",
-        "ओके।"
+        "काम",
+        "इन्हां"
       ],
       "sentiment": null,
       "tool": null,
@@ -223,9 +221,9 @@
       "keywords": [
         "पैसा",
         "टाइम",
-        "करो।",
         "महिना",
-        "जवाब"
+        "जवाब",
+        "नया"
       ],
       "sentiment": null,
       "tool": null,

@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -58,8 +58,8 @@
       "index": 3,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_other",
-      "base_intent": "other",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "shipped",
         "jeans"
@@ -73,8 +73,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_clarify",
-      "base_intent": "ask_question",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "deliver",
         "मदद",
@@ -91,8 +91,8 @@
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_query_fee",
-      "base_intent": "processing_fee",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "मिल",
         "twenty",
@@ -127,8 +127,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "अलावा",
         "जल्दी",
@@ -226,8 +226,8 @@
       "index": 13,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
       "keywords": [
         "order",
         "call",
@@ -262,8 +262,8 @@
       "index": 15,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
       "keywords": [
         "thank"
       ],
@@ -290,8 +290,8 @@
       "index": 17,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_org_name",
-      "base_intent": "organization_name",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
       "keywords": [
         "call",
         "मदद",
@@ -308,8 +308,8 @@
       "index": 18,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
       "keywords": [
         "मिंत्रा",
         "thank",

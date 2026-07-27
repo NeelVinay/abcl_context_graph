@@ -1,5 +1,5 @@
 {
-  "call_id": "696e940c",
+  "call_id": "696e940c-7aaf-4c7e-930a-2e0f3fc4763c-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -54,9 +54,9 @@
       "intent": "agent_request_personal_details",
       "base_intent": "personal_details",
       "keywords": [
+        "बताएं",
         "कृपया",
         "पैन",
-        "बताएं",
         "पूरा",
         "जैसा"
       ],
@@ -222,9 +222,9 @@
       "keywords": [
         "sms",
         "application",
+        "जाए",
         "link",
-        "complete",
-        "सही"
+        "complete"
       ],
       "sentiment": null,
       "tool": null,
@@ -253,7 +253,6 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
         "link",
         "click"
       ],
@@ -270,10 +269,10 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
-        "हूँ।",
         "application",
-        "शुरू"
+        "शुरू",
+        "process",
+        "link"
       ],
       "sentiment": null,
       "tool": null,
@@ -303,10 +302,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
         "कृपया",
         "process",
-        "link"
+        "link",
+        "check"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -335,10 +334,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "हूँ।",
         "कृपया",
         "समय",
-        "भेज"
+        "भेज",
+        "देर"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -366,9 +365,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "देख"
+        "देख",
+        "नीचे"
       ],
       "sentiment": null,
       "tool": null,
@@ -395,10 +394,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "number",
         "get",
-        "terms"
+        "terms",
+        "mobile"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -427,10 +426,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "verify",
         "screen",
-        "click"
+        "click",
+        "enter"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -480,10 +479,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
-        "हूँ।",
+        "बताएं",
         "मदद",
-        "number"
+        "number",
+        "get"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -514,10 +513,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "number",
         "get",
-        "terms"
+        "terms",
+        "mobile"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -549,10 +548,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "बताएं",
         "verify",
-        "बताएं।",
-        "जाए"
+        "जाए",
+        "click"
       ],
       "sentiment": null,
       "tool": null,
@@ -631,10 +630,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -649,10 +648,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
-        "हूँ।",
         "कृपया",
-        "process"
+        "process",
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -667,10 +666,10 @@
       "base_intent": "transfer_to_rm",
       "keywords": [
         "relationship manager",
-        "करें।",
         "कृपया",
         "process",
-        "relationship"
+        "relationship",
+        "manager"
       ],
       "sentiment": null,
       "tool": "transfer_to_rm",
@@ -697,10 +696,10 @@
       "base_intent": "greeting",
       "keywords": [
         "बोल",
-        "हूँ।",
         "तरफ",
         "capital",
-        "aditya"
+        "aditya",
+        "birla"
       ],
       "sentiment": null,
       "tool": null,
@@ -729,10 +728,10 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
-        "हूँ।",
         "application",
-        "शुरू"
+        "शुरू",
+        "process",
+        "link"
       ],
       "sentiment": null,
       "tool": null,
@@ -761,10 +760,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
         "कृपया",
         "process",
-        "link"
+        "link",
+        "check"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -778,11 +777,11 @@
       "intent": "agent_end_call",
       "base_intent": "end_call",
       "keywords": [
-        "हूँ।",
         "कॉल",
         "धन्यवाद",
         "चूंकि",
-        "समाप्त"
+        "समाप्त",
+        "जवाब"
       ],
       "sentiment": null,
       "tool": null,

@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -57,8 +57,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "agent"
       ],
@@ -71,8 +71,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_reassure_trust",
-      "base_intent": "reassure_trust",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "assistant",
         "help",
@@ -107,14 +107,14 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "order",
         "line",
         "check",
         "let",
-        "stay"
+        "list"
       ],
       "sentiment": null,
       "tool": null,
@@ -125,14 +125,14 @@
       "index": 7,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_clarify",
-      "base_intent": "ask_question",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "issue",
         "shirt",
         "list",
-        "any"
+        "see"
       ],
       "sentiment": null,
       "tool": null,
@@ -212,9 +212,9 @@
     {
       "index": 12,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
       "keywords": [
         "agent",
         "expert",
@@ -223,7 +223,7 @@
         "want"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "Do you want to speak with an expert agent for better assistance?",
       "entities": []
     },
@@ -242,9 +242,9 @@
     {
       "index": 14,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "line",
         "कृपया",
@@ -253,16 +253,16 @@
         "agent"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "ठीक है, मै आपको expert agent से connect कर रही हूँ। कृपया line पर बने रहिए।",
       "entities": []
     },
     {
       "index": 15,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "call",
         "now",
@@ -271,7 +271,7 @@
         "immediately"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "I will connect you with our specialized team. Transferring your call now, they will be with you immediately.",
       "entities": []
     }

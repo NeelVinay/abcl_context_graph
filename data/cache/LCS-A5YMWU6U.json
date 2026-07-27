@@ -29,8 +29,7 @@
       "base_intent": "open",
       "keywords": [
         "department",
-        "अली",
-        "अभी।"
+        "अली"
       ],
       "sentiment": null,
       "tool": null,
@@ -45,10 +44,10 @@
       "base_intent": "complaint",
       "keywords": [
         "call",
-        "हूँ।",
         "contact",
         "regarding",
-        "error"
+        "error",
+        "date"
       ],
       "sentiment": null,
       "tool": null,
@@ -94,8 +93,8 @@
         "category",
         "लीड",
         "regarding",
-        "पैसे",
-        "साइज"
+        "पड़ेगा",
+        "पैसे"
       ],
       "sentiment": null,
       "tool": null,
@@ -169,7 +168,6 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "हूँ।",
         "समझा"
       ],
       "sentiment": null,

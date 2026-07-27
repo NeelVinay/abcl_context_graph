@@ -1,5 +1,5 @@
 {
-  "call_id": "16a9075f",
+  "call_id": "16a9075f-33f9-4566-a6fe-4a673bd96d67-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -107,10 +107,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
         "application",
         "process",
-        "रखें"
+        "रखें",
+        "जिसमें"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -125,7 +125,6 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
         "link",
         "click"
       ],
@@ -159,9 +158,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "देख"
+        "देख",
+        "नीचे"
       ],
       "sentiment": null,
       "tool": null,
@@ -191,10 +190,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "number",
         "get",
-        "terms"
+        "terms",
+        "mobile"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -224,10 +223,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "get",
         "terms",
-        "check"
+        "check",
+        "conditions"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -258,10 +257,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "verify",
         "screen",
-        "click"
+        "click",
+        "enter"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -292,10 +291,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
+        "बताएं",
         "verify",
-        "भेज",
-        "बताएं।"
+        "जाए",
+        "भेज"
       ],
       "sentiment": null,
       "tool": "send_otp",

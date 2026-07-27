@@ -13,8 +13,8 @@
         "call",
         "lead",
         "thank",
-        "check",
-        "leads"
+        "leads",
+        "check"
       ],
       "sentiment": null,
       "tool": null,

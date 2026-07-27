@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -39,8 +39,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
       "keywords": [
         "order",
         "चाहते",
@@ -154,8 +154,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "बजे",
         "शाम"
@@ -169,8 +169,8 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_present_offer",
-      "base_intent": "present_offer",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "मिल",
@@ -187,8 +187,8 @@
       "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "बजे",
         "जल्दी"
@@ -202,8 +202,8 @@
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_wait",
-      "base_intent": "wait_hold",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "समझ",
@@ -221,7 +221,7 @@
       "speaker": "agent",
       "type": "action",
       "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "base_intent": "confused_repeat",
       "keywords": [
         "बोल",
         "कीजिये",
@@ -236,8 +236,8 @@
       "index": 14,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "जल्दी",
         "काम",
@@ -254,8 +254,8 @@
       "index": 15,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_request_wait",
-      "base_intent": "wait_hold",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "जल्द",
         "बजे",
@@ -289,8 +289,8 @@
       "index": 17,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_query_fee",
-      "base_intent": "processing_fee",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "पांच",
         "चार"
@@ -304,14 +304,14 @@
       "index": 18,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_wait",
-      "base_intent": "wait_hold",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
-        "wait",
         "order",
         "समझ",
         "call",
-        "delivery"
+        "delivery",
+        "agent"
       ],
       "sentiment": null,
       "tool": null,
@@ -334,8 +334,8 @@
       "index": 20,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_clarify",
-      "base_intent": "ask_question",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
       "keywords": [
         "मदद",
         "धन्यवाद"
@@ -350,9 +350,8 @@
       "speaker": "agent",
       "type": "action",
       "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "base_intent": "confused_repeat",
       "keywords": [
-        "एक बार फिर",
         "क्षमा"
       ],
       "sentiment": null,

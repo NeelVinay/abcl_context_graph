@@ -31,8 +31,8 @@
         "customer",
         "call",
         "lead",
-        "check",
-        "leads"
+        "leads",
+        "check"
       ],
       "sentiment": null,
       "tool": null,

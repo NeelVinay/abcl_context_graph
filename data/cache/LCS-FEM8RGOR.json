@@ -99,10 +99,10 @@
       "base_intent": "complaint",
       "keywords": [
         "बार बार",
-        "हूँ।",
         "देखिये",
         "बोलता",
-        "फोन"
+        "फोन",
+        "किसने"
       ],
       "sentiment": "frustrated",
       "tool": null,
@@ -117,7 +117,6 @@
       "base_intent": "question",
       "keywords": [
         "lead",
-        "थी।",
         "recent"
       ],
       "sentiment": null,
@@ -132,7 +131,6 @@
       "intent": "customer_complaint",
       "base_intent": "complaint",
       "keywords": [
-        "नहीं।",
         "ऑफिस"
       ],
       "sentiment": null,
@@ -196,8 +194,8 @@
       "base_intent": "question",
       "keywords": [
         "उसको",
-        "देखिये",
         "उसने",
+        "देखिये",
         "पूछते"
       ],
       "sentiment": null,
@@ -231,10 +229,8 @@
       "base_intent": "complaint",
       "keywords": [
         "उसमें",
-        "चाहिए।",
-        "नहीं।",
-        "आएगा।",
-        "ऊपर"
+        "ऊपर",
+        "प्रेस"
       ],
       "sentiment": null,
       "tool": null,
@@ -247,9 +243,7 @@
       "type": "action",
       "intent": "agent_ask",
       "base_intent": "question",
-      "keywords": [
-        "तो।"
-      ],
+      "keywords": [],
       "sentiment": null,
       "tool": null,
       "text": "की रह से क्यों आ रहा है। पहले तो बढ़ियां आता था तो गंगा रफ़ांडे था तो। चाहिए",
@@ -263,7 +257,6 @@
       "base_intent": "question",
       "keywords": [
         "कैसे",
-        "करूँ।",
         "explain",
         "बोलिये",
         "बाती"

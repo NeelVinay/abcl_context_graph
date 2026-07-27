@@ -1,7 +1,7 @@
 {
   "call_id": "GEN-myntra-1624f301-ebc7-475c-9b05-4573cc4a69a7",
   "language": "hi-en",
-  "outcome": "transferred",
+  "outcome": "completed",
   "turns": [
     {
       "index": 0,
@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -61,8 +61,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_express_distrust",
-      "base_intent": "reassure_trust",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "call",
@@ -79,8 +79,8 @@
       "index": 4,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "delivery",
@@ -97,8 +97,8 @@
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "problem",
@@ -133,8 +133,8 @@
       "index": 7,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_ask_to_repeat",
-      "base_intent": "clarify_repeat",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
       "keywords": [
         "मदद"
       ],
@@ -147,8 +147,8 @@
       "index": 8,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "delivery",
@@ -209,14 +209,14 @@
       "index": 12,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "delivery",
         "out",
         "there",
         "only",
-        "know"
+        "come"
       ],
       "sentiment": null,
       "tool": null,
@@ -245,8 +245,8 @@
       "index": 14,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_request_callback",
+      "base_intent": "callback_request",
       "keywords": [
         "contact",
         "let",
@@ -261,8 +261,8 @@
       "index": 15,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_present_final_offer",
-      "base_intent": "final_offer",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "order",
         "delivery",
@@ -279,8 +279,8 @@
       "index": 16,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_end",
+      "base_intent": "end_call",
       "keywords": [
         "thank"
       ],
@@ -293,8 +293,8 @@
       "index": 17,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_present_offer",
-      "base_intent": "present_offer",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
       "keywords": [
         "call",
         "धन्यवाद"
@@ -308,8 +308,8 @@
       "index": 18,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_request_callback",
+      "base_intent": "callback_request",
       "keywords": [
         "call",
         "thank",

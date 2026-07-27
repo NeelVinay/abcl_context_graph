@@ -220,8 +220,8 @@
       "intent": "agent_investigate_explain",
       "base_intent": "agent_handle",
       "keywords": [
-        "searches",
         "requirement",
+        "searches",
         "user"
       ],
       "sentiment": null,

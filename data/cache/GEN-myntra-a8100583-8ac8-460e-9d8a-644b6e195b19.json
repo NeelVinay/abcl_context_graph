@@ -1,7 +1,7 @@
 {
   "call_id": "GEN-myntra-a8100583-8ac8-460e-9d8a-644b6e195b19",
   "language": "hi-en",
-  "outcome": "incomplete",
+  "outcome": "completed",
   "turns": [
     {
       "index": 0,
@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -39,8 +39,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
       "keywords": [
         "order",
         "चाहते",
@@ -56,8 +56,8 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_provide_pan",
-      "base_intent": "enter_pan",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "five",
@@ -91,9 +91,11 @@
       "index": 5,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_unclear",
-      "base_intent": "clarify_repeat",
-      "keywords": [],
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "मतलब"
+      ],
       "sentiment": null,
       "tool": null,
       "text": "Hello? नहीं मेरे को थोड़ा मतलब पहले मतलब मेरे को चाहिए था.",
@@ -121,8 +123,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_query_fee",
-      "base_intent": "processing_fee",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
       "keywords": [
         "मिल",
         "out",
@@ -211,8 +213,8 @@
       "index": 12,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_unclear",
-      "base_intent": "clarify_repeat",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "july",
         "twenty",
@@ -229,8 +231,8 @@
       "index": 13,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "नहीं हो",
         "twenty",
@@ -265,9 +267,10 @@
       "index": 15,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
+        "मतलब",
         "order",
         "मिल"
       ],
@@ -298,8 +301,8 @@
       "index": 17,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_disagree",
+      "base_intent": "disagree",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -310,8 +313,8 @@
       "index": 18,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
       "keywords": [
         "call",
         "मदद",
@@ -328,8 +331,8 @@
       "index": 19,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
       "keywords": [
         "मिंत्रा",
         "thank",

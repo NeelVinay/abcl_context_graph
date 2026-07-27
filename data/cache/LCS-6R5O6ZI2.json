@@ -89,8 +89,7 @@
       "intent": "customer_acknowledge",
       "base_intent": "backchannel",
       "keywords": [
-        "check",
-        "लीजिए।"
+        "check"
       ],
       "sentiment": null,
       "tool": null,

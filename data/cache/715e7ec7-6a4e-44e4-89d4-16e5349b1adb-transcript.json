@@ -1,5 +1,5 @@
 {
-  "call_id": "715e7ec7",
+  "call_id": "715e7ec7-6a4e-44e4-89d4-16e5349b1adb-transcript",
   "language": "hi-en",
   "outcome": "transferred",
   "turns": [
@@ -154,10 +154,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "हूँ।",
         "जिसमें",
         "भेज",
-        "link"
+        "link",
+        "आगे"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -218,7 +218,6 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
         "रखें",
         "check"
       ],
@@ -250,7 +249,6 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
         "link",
         "click"
       ],
@@ -283,9 +281,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "देख"
+        "देख",
+        "नीचे"
       ],
       "sentiment": null,
       "tool": null,
@@ -334,10 +332,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "number",
         "get",
-        "terms"
+        "terms",
+        "mobile"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -364,10 +362,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "verify",
         "screen",
-        "click"
+        "click",
+        "enter"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -425,9 +423,9 @@
       "base_intent": "enter_pan",
       "keywords": [
         "पैन",
-        "number",
-        "बताएं।",
+        "बताएं",
         "जाए",
+        "number",
         "fill"
       ],
       "sentiment": null,
@@ -457,8 +455,8 @@
         "gender",
         "date of birth",
         "marital",
-        "करें।",
-        "बताएं।"
+        "बताएं",
+        "जाए"
       ],
       "sentiment": null,
       "tool": null,
@@ -473,7 +471,7 @@
       "base_intent": "enter_email",
       "keywords": [
         "email",
-        "बताएं।",
+        "बताएं",
         "जाए",
         "personal",
         "enter"
@@ -538,10 +536,10 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
         "process",
         "link",
-        "complete"
+        "complete",
+        "mobile"
       ],
       "sentiment": null,
       "tool": null,
@@ -571,10 +569,10 @@
       "base_intent": "greeting",
       "keywords": [
         "बोल",
-        "हूँ।",
         "तरफ",
         "capital",
-        "aditya"
+        "aditya",
+        "birla"
       ],
       "sentiment": null,
       "tool": null,
@@ -628,10 +626,10 @@
       "base_intent": "greeting",
       "keywords": [
         "बोल",
-        "हूँ।",
         "तरफ",
         "capital",
-        "aditya"
+        "aditya",
+        "birla"
       ],
       "sentiment": null,
       "tool": null,
@@ -774,10 +772,10 @@
       "base_intent": "send_sms_link",
       "keywords": [
         "sms",
-        "करें।",
         "कृपया",
         "रखें",
-        "भेज"
+        "भेज",
+        "speaker"
       ],
       "sentiment": null,
       "tool": "send_sms",
@@ -806,7 +804,6 @@
       "base_intent": "open_link",
       "keywords": [
         "sms",
-        "करें।",
         "link",
         "click"
       ],
@@ -842,9 +839,9 @@
       "keywords": [
         "apply now",
         "apply",
-        "करें।",
         "now",
-        "button"
+        "button",
+        "click"
       ],
       "sentiment": null,
       "tool": null,
@@ -871,10 +868,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "number",
         "get",
-        "terms"
+        "terms",
+        "mobile"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -901,10 +898,10 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
-        "करें।",
         "verify",
         "screen",
-        "click"
+        "click",
+        "enter"
       ],
       "sentiment": null,
       "tool": "send_otp",
@@ -931,9 +928,9 @@
       "base_intent": "mobile_otp",
       "keywords": [
         "otp",
+        "बताएं",
         "कृपया",
-        "verify",
-        "बताएं।"
+        "verify"
       ],
       "sentiment": null,
       "tool": null,

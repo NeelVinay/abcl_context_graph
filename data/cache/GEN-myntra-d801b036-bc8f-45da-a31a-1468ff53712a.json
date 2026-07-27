@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -148,9 +148,9 @@
     {
       "index": 8,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "order",
         "delivery",
@@ -159,7 +159,7 @@
         "agent"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "मै देख पा रही हूँ कि आपके Puma Slides की delivery में काफी delay हो गया है, इसके लिए मै आपसे माफी चाहती हूँ। आपकी complaint register हो चुकी है और हम इसे resolve करने की कोशिश कर रहे हैं। चूंकि यह order काफी delay हो गया है, क्या आप बेहतर assistance के लिए हमारे expert agent से बात करना चाहेंगे?",
       "entities": []
     },
@@ -167,8 +167,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_other",
-      "base_intent": "other",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "मिल",
         "twenty",
@@ -184,9 +184,9 @@
     {
       "index": 10,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "समझ",
         "सही",
@@ -195,7 +195,7 @@
         "agent"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "जी, मै समझ सकती हूँ कि आप काफी समय से wait कर रहे हैं और update न मिलना परेशान करने वाला है। आपका case priority पर है और हम इसे जल्द से जल्द resolve करने की पूरी कोशिश कर रहे हैं। मैं आपको सही जानकारी दिलाने के लिए अभी आपको हमारे expert agent से connect कर देती हूँ। क्या आप उनसे बात करना चाहेंगे?",
       "entities": []
     },
@@ -203,8 +203,8 @@
       "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_disagree",
+      "base_intent": "disagree",
       "keywords": [
         "मिलेगा",
         "contact",
@@ -221,8 +221,8 @@
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_help_address_error",
-      "base_intent": "address_error",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "order",
         "help",
@@ -239,8 +239,8 @@
       "index": 13,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_agree",
-      "base_intent": "agree",
+      "intent": "customer_end",
+      "base_intent": "end_call",
       "keywords": [
         "thank"
       ],
@@ -252,9 +252,9 @@
     {
       "index": 14,
       "speaker": "agent",
-      "type": "tool_call",
-      "intent": "agent_transfer_to_rm",
-      "base_intent": "transfer_to_rm",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
       "keywords": [
         "call",
         "मदद",
@@ -263,7 +263,7 @@
         "मिलेगा"
       ],
       "sentiment": null,
-      "tool": "transfer_to_rm",
+      "tool": null,
       "text": "आपका बहुत-बहुत धन्यवाद। आज हमारे call के बारे में आपको एसएमएस पर एक feedback form मिलेगा। अगर आपको लगा कि मैने आपको सही मदद दी है, तो आपकी अच्छी रेटिंग मेरे लिए बहुत helpful रहेगी और हमे बेहतर बनने मे मदद करेगी। call के लिए धन्यवाद।",
       "entities": []
     },
@@ -271,8 +271,8 @@
       "index": 15,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
       "keywords": [
         "call",
         "मदद",

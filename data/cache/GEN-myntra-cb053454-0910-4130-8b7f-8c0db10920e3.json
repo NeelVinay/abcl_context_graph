@@ -13,8 +13,8 @@
         "नमस्ते",
         "assistant",
         "मिंत्रा",
-        "service",
-        "welcome"
+        "welcome",
+        "service"
       ],
       "sentiment": null,
       "tool": null,
@@ -40,8 +40,8 @@
       "index": 2,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_confirm",
-      "base_intent": "agree",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "मीरा",
         "मदद"
@@ -55,9 +55,11 @@
       "index": 3,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
-      "keywords": [],
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
       "sentiment": null,
       "tool": null,
       "text": "Hello. Ok ok.",
@@ -97,8 +99,8 @@
       "index": 6,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "मिंत्रा"
       ],
@@ -111,8 +113,8 @@
       "index": 7,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_query",
-      "base_intent": "answer_query",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "मिंत्रा",
         "app",
@@ -128,8 +130,8 @@
       "index": 8,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
       "keywords": [
         "check",
         "agent",
@@ -146,8 +148,8 @@
       "index": 9,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_ask_question",
-      "base_intent": "ask_question",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
       "keywords": [
         "उसको",
         "cancel",
@@ -164,8 +166,8 @@
       "index": 10,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_answer_query",
-      "base_intent": "answer_query",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "समझ",
         "line",
@@ -182,8 +184,8 @@
       "index": 11,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_done",
-      "base_intent": "report_done",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -194,8 +196,8 @@
       "index": 12,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_send_sms_link",
-      "base_intent": "send_sms_link",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
       "keywords": [
         "deliver",
         "status",
@@ -245,8 +247,8 @@
       "index": 15,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_report_address_error",
-      "base_intent": "address_error",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "cancel",
         "चार",
@@ -281,8 +283,8 @@
       "index": 17,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "manual_review",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
       "keywords": [
         "order",
         "cancel"
@@ -314,8 +316,8 @@
       "index": 19,
       "speaker": "customer",
       "type": "action",
-      "intent": "customer_acknowledge",
-      "base_intent": "acknowledge",
+      "intent": "customer_agree",
+      "base_intent": "agree",
       "keywords": [],
       "sentiment": null,
       "tool": null,
@@ -326,8 +328,8 @@
       "index": 20,
       "speaker": "agent",
       "type": "action",
-      "intent": "agent_request_org_name",
-      "base_intent": "organization_name",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
       "keywords": [
         "call",
         "now",
