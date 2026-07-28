@@ -1,11 +1,24 @@
 # Call Context Graphs
 
-This project turns call center recordings into visual analytics: an executive flow
-chart, a keyword and sentiment report, a per-turn breakdown, and an intent glossary,
-for any client. The pipeline runs entirely locally. Customer audio and transcripts
-never leave the machine, and the only component that ever touches an external model
-is an offline labeling step used when onboarding a new client, which never runs in
+This project does two things with call center recordings:
+
+1. **Analytics** — an executive flow chart, a keyword and sentiment report, a
+   per-turn breakdown, and an intent glossary, for any client. Fully local.
+2. **Prompt improvement** — reads a client's transcripts plus the `.raven` prompt
+   their voice agent runs on, and writes an improved prompt. See
+   [Automated prompt improvement](#automated-prompt-improvement).
+
+**Where data goes.** The analytics pipeline runs entirely locally: customer audio
+and transcripts never leave the machine, and the only external-model component is
+an offline labeling step used when onboarding a new client, which never runs in
 production.
+
+The prompt improver is different, and this is the one thing to know before using
+it. Its `--auto` mode **sends verbatim customer speech to the Anthropic API** —
+roughly 97 real customer turns per run, with their call IDs, inside the evidence
+pack and the candidate examples. Everything else about it is local. If that is not
+acceptable for a given client, run it without `--auto`: the mechanical mining and
+review queue work with no API access at all.
 
 ## Quick start
 
@@ -70,6 +83,7 @@ Each run writes four files into `data/output/<client>_output/`:
 
 ```
 run_client.py       The one command described above.
+run_improve.py       Prompt improvement (see "Automated prompt improvement").
 run.py               Lower level entry point behind it (see "Advanced usage").
 run_transcribe.py    Transcribe raw .mp3 recordings into plain text (optional).
 config.py            Paths and pipeline settings.
@@ -91,6 +105,21 @@ src/                 All pipeline logic.
   sop_flow.py             ABCL's fixed, hand authored procedure skeleton.
   ...                     see individual file docstrings for the rest.
 
+  --- prompt improvement (run_improve.py) ---
+  dsl_parse.py            Parses .raven into intents/states/routes, with line
+                           spans so edits can be applied surgically.
+  dsl_audit.py            Structural and data-driven defect checks.
+  dsl_mine.py             Mines candidate words and particles from transcripts.
+  dsl_evidence.py         Assembles the factual pack: real context-graph
+                           drop-off edges, transitions, sentiment, and verbatim
+                           customer speech by theme.
+  dsl_auto.py             The LLM decision points and their prompts.
+  dsl_guard.py            Compliance and style enforcement on generated copy.
+  dsl_fix.py              Turns decisions into line-anchored edits.
+  dsl_verify.py           The final gate. Nothing is written unless it passes.
+  llm.py                  The only place this project calls an LLM. Cached,
+                           logged, and fails loudly without a key.
+
 scripts/
   eval/                Scripts that measure the generic pipeline's accuracy,
                         including honest held out, cross client tests.
@@ -107,6 +136,8 @@ data/
                         and the assembled gold label files.
   models/               Trained classifiers.
   output/<name>_output/ Where each client's four output files land.
+  clients/<name>/autorun/  Committed worked example of a prompt-improvement run:
+                            the input prompt, the improved output, the changelog.
   archive/              Superseded data kept for provenance only. Not part of
                         the active pipeline. See "What moved to archive" below.
 ```
@@ -252,6 +283,81 @@ language, that assumption needs to become taxonomy aware before labeling.
 
 ---
 
+## Automated prompt improvement
+
+`run_improve.py` takes a client's transcripts plus the `.raven` prompt their voice
+agent runs on, and improves the prompt. Three things, all mined from the same
+context graph:
+
+| | what it changes | how it decides |
+|---|---|---|
+| **Recognition** | adds real customer words to an intent's `Anchors:` list, so the agent understands more of what callers say | corpus frequency + cross-intent lift, then an LLM judges each word |
+| **Delivery** | adds natural acknowledgement particles (जी, हां) as lead-ins to scripted lines | mechanical candidates, LLM judges fit per line |
+| **Persuasion** | writes new `say()` lines answering what callers repeatedly ask | LLM, and every line must cite the verbatim quotes it answers |
+
+```bash
+# fully autonomous: transcripts + prompt in, improved prompt out
+export ANTHROPIC_API_KEY=sk-ant-...
+python run_improve.py data/clients/abcl/prompt.raven --client abcl --auto
+
+# no API key needed: mine mechanically and write a review queue instead
+python run_improve.py data/clients/abcl/prompt.raven --client abcl
+python run_improve.py data/clients/abcl/prompt.raven --client abcl --accept 1,3,7
+```
+
+`--auto` writes the prompt in place after taking a timestamped `.bak`, and writes
+`CHANGES-<prompt>.md` next to the client's data with every change, its rationale,
+the real quotes behind it, and everything the guards rejected. Six or seven LLM
+calls per run, batched; responses are cached on the prompt hash, so a re-run is
+free. Runtime is ~2-4 minutes, almost entirely API latency.
+
+A worked example — the original colleague prompt, the improved output, and the
+changelog — is committed at `data/clients/abcl/autorun/`.
+
+### The LLM decides, the code enforces
+
+Nothing the model returns is trusted. Every generated line passes mechanical checks
+before it can be written, and a rejected item is listed in the changelog rather
+than silently dropped:
+
+- **compliance** (`src/dsl_guard.py`) — no digits in any script, currency,
+  percentages, spelled-out quantities, or outcome promises, in Devanagari *or*
+  romanised Hinglish. Generated copy may motivate and reframe; it may not assert
+  loan terms.
+- **style** — the prompt's own `language{}` rules: female verb forms, `आप` address,
+  the Roman-script term list, no unresolved `<<placeholder>>`.
+- **grounding** — every quote a proposal cites must appear verbatim in the
+  transcripts, whole, not just a 60-character prefix.
+- **structure** (`src/dsl_verify.py`) — braces balanced, no newly dangling routes,
+  no speech placed after a terminal transition where it could never be spoken, no
+  existing `say()` reworded unless this run intended it, token budget respected.
+- **redundancy** — a new line may not restate a line already in that state, across
+  script and transliteration variants.
+- states whose own prose says they must not speak (`ACTION-ONLY`, `Speak ONLY this
+  line`) are refused outright.
+
+If verification fails, nothing is written and the reason is printed. A pre-existing
+defect in the input (the shipped ABCL prompt routes `intent("silence")` to an
+undefined state) is reported but does not block — otherwise someone else's old bug
+would mean the tool can never improve anything.
+
+### Honest limitations
+
+- **Recognition coverage is limited by corpus size, not by code.** Turns are
+  bucketed per intent by similarity to that intent's own anchors, then each bucket
+  is validated by the LLM — necessary because embedding similarity cannot see
+  negation ("I got the OTP" lands in `otp_not_received`). On 229 calls, 6 of 15
+  buckets survive validation and only 3 hold enough calls to mine words from. More
+  transcripts, not looser thresholds: the recurrence guard being relaxed for volume
+  is what would let a customer's name become an anchor.
+- **No claim about conversion.** Success here means "more defects found and fixed,
+  more customer language covered", not "better outcomes". That needs live calls —
+  roughly 350-700 split by lead, measured on reaching the OTP stage.
+- **Temporal triggers are not possible.** No call record carries a timestamp, so
+  nothing seasonal, time-of-day, or salary-cycle can be detected or gated on.
+- **Nobody has read the generated customer-facing copy.** It passes the automated
+  checks; for a regulated product that is not the same as approved.
+
 ## Advanced usage
 
 `run_client.py` covers normal use. For finer control, `run.py` is the pipeline it
@@ -334,7 +440,14 @@ also has the original locations if needed.
 
 ## Security and PII
 
-- All processing is local. No data is sent to any API at runtime.
+- The analytics pipeline (`run_client.py`) is fully local. No data leaves the machine.
+- **`run_improve.py --auto` does send data to the Anthropic API**: ~97 verbatim
+  customer turns per run, with call IDs, in the evidence pack and candidate
+  examples. Without `--auto` nothing is sent. Decide per client whether that is
+  acceptable before enabling it.
+- Generated copy is checked in code before it can be written: no digits, currency,
+  percentages, spelled-out quantities, or outcome promises (`src/dsl_guard.py`).
+  This is a compliance boundary for a regulated lending product, not a style rule.
 - `data/clients/*/transcripts/` contain real customer transcripts and should be
   treated as confidential. Do not share or upload them.
 - The HuggingFace token lives at `~/.cache/huggingface/token`. Never echo or commit
