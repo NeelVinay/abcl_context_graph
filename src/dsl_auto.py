@@ -311,6 +311,79 @@ Respond with ONLY this JSON:
     return out
 
 
+def validate_buckets(buckets: dict, dsl, client_key: str,
+                     samples_per_bucket: int = 6) -> dict:
+    """Keep only the anchor-similarity buckets that genuinely represent their intent.
+
+    This is the precision half of the alias fix. bucket_turns_by_anchors() gives
+    good recall (13 previously-unminable intents on the ABCL corpus) but poor
+    precision (~3 of 13 correct), and the errors are systematic rather than random:
+
+      * POLARITY — "जी OTP मिल गया है" ("I GOT the OTP") lands in
+        otp_not_received, because the negated and affirmative forms share almost
+        every token. Cosine similarity structurally cannot see the flip.
+      * TOPIC vs INTENT — "Two lakh का दिखा रहा है" (reporting an amount) lands
+        in wants_more_amount; same subject, different act.
+
+    Both are trivial for a model to spot and impossible for the embedding to, so
+    one call gates all buckets at once. A rejected bucket is dropped entirely —
+    mining words from a wrong bucket poisons that intent silently, which is worse
+    than mining nothing for it."""
+    if not buckets:
+        return {}
+    items = []
+    for intent, by_call in buckets.items():
+        it = dsl.intents.get(intent)
+        texts = [t for t in by_call.values()][:samples_per_bucket]
+        items.append({
+            "intent": intent,
+            "intent_means": (it.prose[0] if it and it.prose else ""),
+            "intent_anchors": (it.anchors[:8] if it else []),
+            "calls_in_bucket": len(by_call),
+            "sample_turns": [t[:160] for t in texts],
+        })
+
+    prompt = f"""A mechanical step grouped real customer turns from call transcripts \
+into buckets, one per intent, by embedding-similarity against each intent's own \
+anchor phrases. Similarity matching is unreliable in two specific ways and your job \
+is to catch them.
+
+For each bucket, decide whether the sample turns REALLY are instances of that intent.
+
+Reject a bucket when:
+1. POLARITY IS INVERTED — the turns say the opposite of the intent. This is the
+   most common failure. Example: an intent meaning "OTP did not arrive" whose
+   samples say "OTP मिल गया है" ("I got the OTP"). Same words, opposite meaning.
+   Check every bucket for this specifically.
+2. SAME TOPIC, WRONG ACT — the turns are about the right subject but are not that
+   intent. Example: an intent meaning "wants a higher amount" whose samples merely
+   report the amount on screen ("Two lakh का दिखा रहा है").
+3. The turns are ASR garble, or a mixed bag with no consistent meaning.
+
+Accept only if most sample turns are genuinely that intent. Be strict — a wrong
+bucket silently corrupts every word later mined from it, so rejecting a real
+bucket is far cheaper than accepting a wrong one.
+
+BUCKETS:
+{json.dumps(items, ensure_ascii=False, indent=1)}
+
+Respond with ONLY this JSON:
+{{"verdicts": [{{"intent": "...", "verdict": "accept|reject",
+  "reason": "<=12 words"}}]}}"""
+
+    try:
+        out = llm.ask_json(prompt, client_key, purpose="validate_buckets",
+                           max_tokens=2000)
+    except llm.LLMBadResponse:
+        return {}          # drop them all rather than mine from unvalidated buckets
+    keep = {v.get("intent") for v in out.get("verdicts", [])
+            if v.get("verdict") == "accept"}
+    rejected = [(v.get("intent"), v.get("reason", ""))
+                for v in out.get("verdicts", []) if v.get("verdict") != "accept"]
+    return {"accepted": {k: v for k, v in buckets.items() if k in keep},
+            "rejected": rejected}
+
+
 def verify_grounding(proposal: dict, calls: list) -> list:
     """Confirm the quotes a proposal claims to answer are REAL customer speech
     from this corpus, not paraphrases the model invented. Returns problems.

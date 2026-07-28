@@ -329,8 +329,23 @@ def run_auto(dsl_path: str, client_key: str, budget: int | None) -> None:
     discarded = []
 
     # ---- feature 1: intent recognition words ----
-    gaps = dsl_mine.mine_anchor_gaps(d, calls, client_key)
-    print(f"[1/3] anchors: {len(gaps)} mined candidates -> asking LLM to judge")
+    # INTENT_ALIASES only bridges a handful of the DSL's intents to classifier
+    # labels (the two taxonomies were built for different purposes). Bucketing by
+    # each intent's own anchors covers the rest — but embedding similarity can't
+    # see negation, so every bucket is gated by the LLM before anything is mined
+    # from it. See dsl_mine.bucket_turns_by_anchors for the measured failure modes.
+    print("[1/3] anchors: bucketing turns by intent anchors "
+          "(covers intents no classifier label maps to)")
+    raw_buckets = dsl_mine.bucket_turns_by_anchors(d, calls)
+    validated = dsl_auto.validate_buckets(raw_buckets, d, client_key)
+    extra = validated.get("accepted", {}) if validated else {}
+    for intent, reason in (validated.get("rejected", []) if validated else []):
+        discarded.append((f"anchor bucket for {intent!r}",
+                          [reason or "bucket rejected by LLM as not this intent"]))
+    print(f"      {len(raw_buckets)} bucket(s) found, {len(extra)} passed validation")
+
+    gaps = dsl_mine.mine_anchor_gaps(d, calls, client_key, extra_buckets=extra)
+    print(f"      {len(gaps)} mined candidates -> asking LLM to judge each word")
     decisions = dsl_auto.decide_anchors(gaps, d, client_key)
     keep, reassigned = [], 0
     for g in gaps:

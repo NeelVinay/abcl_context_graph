@@ -309,6 +309,72 @@ def mine_natural_openers(d: dsl_parse.DSL, calls: list) -> list:
     return out
 
 
+# ------------------------------------------------------- anchor-based buckets --
+def bucket_turns_by_anchors(d: dsl_parse.DSL, calls: list,
+                            margin: float = MARGIN_DELTA,
+                            floor: float = MATCH_FLOOR,
+                            min_calls: int = 3) -> dict:
+    """{intent: {call_id: joined_text}} — which real customer turns look like each
+    intent, matched against that intent's OWN anchors instead of a classifier label.
+
+    Why this exists: dsl_audit.INTENT_ALIASES bridges the classifier's ~30
+    form-journey labels (customer_do_otp, customer_report_done) to the DSL's 28
+    conversational intents (irate, security_concern), and only 5 map cleanly —
+    the two taxonomies were built for different purposes. Every intent DOES carry
+    hand-written anchors though, so matching turns against those needs no bridge
+    and covers all 28.
+
+    IMPORTANT — the output of this function is NOT trustworthy on its own.
+    Embedding similarity cannot see negation: measured on real data, "जी OTP मिल
+    गया है" ("I GOT the OTP") lands in otp_not_received, and "हां मिल गया SMS" in
+    sms_not_received, because the negated and affirmative forms share nearly every
+    token. Roughly 3 of 13 buckets were correct unvalidated. Callers MUST pass
+    these through src.dsl_auto.validate_buckets() before mining words from them —
+    a wrong bucket silently poisons every word mined for that intent, which is
+    worse than having no bucket at all.
+
+    Returns the same {intent: {call_id: text}} shape as _turns_by_call, so
+    mine_anchor_gaps can consume either source interchangeably."""
+    from collections import defaultdict
+    try:
+        import numpy as np
+        from sentence_transformers import SentenceTransformer
+    except ImportError:
+        return {}
+
+    model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
+    names, embs = _all_intent_anchor_embeddings(d, model)
+    if not names:
+        return {}
+
+    turns = [(c["call_id"], t["text"]) for c in calls for t in c["turns"]
+             if t.get("speaker") == "customer" and _shape_ok(t.get("text", ""))]
+    if not turns:
+        return {}
+    T = model.encode([t for _, t in turns], normalize_embeddings=True,
+                     show_progress_bar=False)
+
+    grouped: dict = defaultdict(list)
+    for i, (cid, txt) in enumerate(turns):
+        scores = sorted(((float(np.max(T[i] @ e.T)), n) for n, e in zip(names, embs)),
+                        reverse=True)
+        if len(scores) < 2:
+            continue
+        # same margin discipline as mine_uncovered_clusters: a confident winner
+        # must also clearly beat the runner-up, or the assignment is a coin flip
+        if scores[0][0] >= floor and (scores[0][0] - scores[1][0]) >= margin:
+            grouped[scores[0][1]].append((cid, txt))
+
+    out: dict = {}
+    for intent, items in grouped.items():
+        by_call: dict = defaultdict(list)
+        for cid, txt in items:
+            by_call[cid].append(txt)
+        if len(by_call) >= min_calls:      # recurrence guard, doubles as PII guard
+            out[intent] = {cid: " ".join(v) for cid, v in by_call.items()}
+    return out
+
+
 # ---------------------------------------------------------------- anchor gaps --
 def _turns_by_call(calls: list, predicate) -> dict:
     """{call_id: joined text} for customer turns matching `predicate(turn)`."""
@@ -322,25 +388,36 @@ def _turns_by_call(calls: list, predicate) -> dict:
 
 
 def mine_anchor_gaps(d: dsl_parse.DSL, calls: list, client_key: str,
-                     max_per_intent: int | None = None) -> list:
+                     max_per_intent: int | None = None,
+                     extra_buckets: dict | None = None) -> list:
+    """extra_buckets: {intent: {call_id: text}} from bucket_turns_by_anchors(),
+    ALREADY validated by dsl_auto.validate_buckets(). These extend coverage beyond
+    the handful of intents INTENT_ALIASES can bridge; passing unvalidated buckets
+    here is a correctness bug (see bucket_turns_by_anchors' docstring)."""
     from src.extract import build_keyword_vocab
 
     aliases = dsl_audit.INTENT_ALIASES.get(client_key, {})
-    if not aliases or not calls:
+    if not calls:
         return []
 
     all_call_texts = _turns_by_call(calls, lambda t: True)
     n_total_calls = len(all_call_texts) or 1
     baseline_vocab = build_keyword_vocab(all_call_texts.values(), min_calls=2)
 
-    out = []
+    # {intent: {call_id: text}} from both sources. Aliases win where they exist —
+    # they were verified by reading real samples, so they're the stronger signal.
+    sources: dict = {}
     for intent, observed_names in aliases.items():
+        sources[intent] = _turns_by_call(
+            calls, lambda t, names=set(observed_names): t.get("intent") in names)
+    for intent, bucket in (extra_buckets or {}).items():
+        sources.setdefault(intent, bucket)
+
+    out = []
+    for intent, target_texts in sources.items():
         if intent not in d.intents:
             continue
         existing_anchors = [a.lower() for a in d.intents[intent].anchors]
-
-        target_texts = _turns_by_call(
-            calls, lambda t, names=set(observed_names): t.get("intent") in names)
         if not target_texts:
             continue
         n_target = len(target_texts)
