@@ -34,11 +34,60 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 SAY_RE = re.compile(r'say\("((?:[^"\\]|\\.)*)"')
+
+
+def escape_dsl_string(s: str) -> str:
+    """Make `s` safe to embed inside a DSL double-quoted literal.
+
+    Required because generated text goes into `say("...")` / `| Anchors: "..."`
+    verbatim. An unescaped `"` truncates the literal: a model writing
+    `यह आपका "pre-approved" offer है।` (ordinary emphasis, not adversarial)
+    produced a line whose spoken text silently became just `यह आपका `, and every
+    mechanical check passed it. Backslash must be escaped first or it would
+    double-escape the quotes added after it. Newlines and CRs are collapsed —
+    one say() is one physical line in this dialect."""
+    return (s.replace("\\", "\\\\")
+             .replace('"', '\\"')
+             .replace("\r", " ")
+             .replace("\n", " "))
+
+
+def unescape_dsl_string(s: str) -> str:
+    """Inverse of escape_dsl_string — turn the raw file text back into the logical
+    value. Needed so parse->edit->emit is a fixed point: without it, reading
+    `she said \\"ok\\"` and re-emitting escapes the backslashes again, and the
+    escaping grows on every run (verified: `\\"` became `\\\\\\"` after one cycle)."""
+    out, i = [], 0
+    while i < len(s):
+        if s[i] == "\\" and i + 1 < len(s):
+            out.append(s[i + 1])
+            i += 2
+        else:
+            out.append(s[i])
+            i += 1
+    return "".join(out)
 ON_INTENT_RE = re.compile(r'on\s+intent\("([^"]+)"\)\s*(?:->\s*(\w+)\s*\(\s*\))?')
 GOTO_RE = re.compile(r'->\s*(\w+)\s*\(\s*\)')
+TOOL_ARGS_RE = re.compile(r'tool\.\w+\s*\((?:[^()]|\([^()]*\))*\)')
+
+
+def strip_tool_args(code: str) -> str:
+    """Blank out `tool.foo(...)` argument lists before scanning for transitions.
+
+    `on_error: -> state()` is legitimate, documented syntax INSIDE a tool call —
+    it is an error handler, not the state's own control flow. GOTO_RE matches any
+    `-> word()` substring, so without this the handler target was read as a
+    terminal transition. Real consequences, both reproduced on the shipped ABCL
+    prompt (which uses this in 4 places): dsl_fix inserted speech into
+    sms_dispatch(), a state documented "ACTION-ONLY, produce ZERO spoken text",
+    and dsl_verify's unreachable_say check false-positived on valid edits."""
+    return TOOL_ARGS_RE.sub(lambda m: " " * len(m.group(0)), code)
 TOOL_CALL_RE = re.compile(r'tool\.(\w+)\s*\(')
 ANCHOR_LINE_RE = re.compile(r'\|\s*Anchors?:\s*(.+)$')
-ANCHOR_ITEM_RE = re.compile(r'"([^"]*)"')
+# Escape-aware, matching SAY_RE's own grammar. A naive r'"([^"]*)"' splits
+# `"she said \"ok\""` into ['she said \\', '', ...] — garbage that ADD_ANCHORS
+# then writes back to the file, destroying the phrase and emitting invalid DSL.
+ANCHOR_ITEM_RE = re.compile(r'"((?:[^"\\]|\\.)*)"')
 
 
 @dataclass
@@ -135,7 +184,10 @@ def _parse_intents(lines: list, start: int, end: int) -> dict:
             raw = lines[j].strip()
             am = ANCHOR_LINE_RE.search(raw)
             if am:
-                it.anchors = ANCHOR_ITEM_RE.findall(am.group(1))
+                # unescape on read so anchors hold logical phrases; dsl_fix
+                # re-escapes on write, making the round-trip a fixed point
+                it.anchors = [unescape_dsl_string(a)
+                              for a in ANCHOR_ITEM_RE.findall(am.group(1))]
             elif raw.startswith("|"):
                 it.prose.append(raw.lstrip("| ").strip())
         intents[name] = it
@@ -194,7 +246,10 @@ def _parse_states(lines: list, start: int, end: int) -> tuple:
         # itself is depth 1 (it belongs to the state's top level — it's the one
         # that OPENS depth 2), while everything inside that block is depth 2.
         depth = 0
-        for line in body.splitlines():
+        for raw_line in body.splitlines():
+            # tool-call argument lists are blanked so `on_error: -> x()` inside
+            # them is never mistaken for the state's own transition
+            line = strip_tool_args(raw_line)
             line_depth = depth
             if line_depth == 1:
                 om = ON_INTENT_RE.search(line)

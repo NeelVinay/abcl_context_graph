@@ -38,6 +38,18 @@ from src import dsl_audit, dsl_mine, dsl_parse, dsl_verify
 
 ANCHOR_LINE_RE = dsl_parse.ANCHOR_LINE_RE
 ON_INTENT_RE = dsl_parse.ON_INTENT_RE
+class SpeechForbiddenError(Exception):
+    """The target state's own prose forbids adding speech. Raised rather than
+    returning None so the caller can report the real reason — a bare None was
+    reported as "unknown state, undefined intent, or unknown session var", which
+    sent whoever read CHANGES.md looking for a nonexistent typo."""
+
+
+# a state's prose declaring it must stay silent (action-only / tool-only turns)
+SILENT_STATE_RE = re.compile(
+    r"ACTION-ONLY|action-only|ZERO spoken|no speech|speak only|"
+    r"produce no spoken|silently|action only",
+    re.IGNORECASE)
 
 
 @dataclass
@@ -114,13 +126,16 @@ def _add_anchors_edit_for(d: dsl_parse.DSL, intent: str, words: list,
     m = ANCHOR_LINE_RE.search(original)
     if not m:
         return None
-    existing = dsl_parse.ANCHOR_ITEM_RE.findall(m.group(1))
+    # unescape on read / re-escape on write, same as dsl_parse._parse_intents, so
+    # an anchor containing a quote doesn't gain a backslash on every run
+    existing = [dsl_parse.unescape_dsl_string(a)
+                for a in dsl_parse.ANCHOR_ITEM_RE.findall(m.group(1))]
     new_words = [w for w in words if w not in existing]
     if not new_words:
         return None   # all already there — idempotent no-op
     indent = original[:len(original) - len(original.lstrip())]
     new_list = existing + new_words
-    quoted = ", ".join(f'"{a}"' for a in new_list)
+    quoted = ", ".join(f'"{dsl_parse.escape_dsl_string(a)}"' for a in new_list)
     new_line = f"{indent}| Anchors: {quoted}"
     return Edit(
         kind="ADD_ANCHORS", ref=ref, anchor_line=line_idx,
@@ -162,7 +177,25 @@ def make_usecase_edit(d: dsl_parse.DSL, proposal: dict) -> Edit | None:
     st = d.states.get(state_name)
     if st is None:
         return None
-    lines = [l for l in proposal.get("lines", []) if l and l.strip()]
+    # Some states declare in their own prose that they must not speak — e.g.
+    # sms_dispatch(): "ACTION-ONLY state ... produce ZERO spoken text". Adding a
+    # say() there is a content-policy violation the structural checks can't see,
+    # because the line is perfectly valid and reachable. Honour the directive.
+    if SILENT_STATE_RE.search(st.body):
+        raise SpeechForbiddenError(
+            f"{state_name}() declares in its own prose that it must not add "
+            f"speech (matched {SILENT_STATE_RE.search(st.body).group(0)!r})")
+    # `lines` MUST be a list. A bare string is a plausible model slip for a
+    # single-line proposal, and Python would iterate it character by character:
+    # verified to produce 19 one-character say() statements ("y", "e", "h", ...),
+    # each of which passes compliance (no digits), redundancy (needs >=3-char
+    # tokens) and dsl_verify, and would be spoken to real customers.
+    raw = proposal.get("lines")
+    if isinstance(raw, str):
+        raw = [raw]
+    if not isinstance(raw, (list, tuple)):
+        return None
+    lines = [l for l in raw if isinstance(l, str) and l.strip()]
     if not lines:
         return None
 
@@ -185,7 +218,9 @@ def make_usecase_edit(d: dsl_parse.DSL, proposal: dict) -> Edit | None:
     depth = 0
     for i in range(st.line_start, close_idx):
         line = d.lines[i]
-        code = line.split("//", 1)[0]
+        # blank tool-call args so `on_error: -> x()` isn't read as this state's
+        # own terminal transition (see dsl_parse.strip_tool_args)
+        code = dsl_parse.strip_tool_args(line.split("//", 1)[0])
         if depth == 1 and i > st.line_start:
             stripped = code.strip()
             if ON_INTENT_RE.search(stripped) or dsl_parse.GOTO_RE.search(stripped):
@@ -205,19 +240,21 @@ def make_usecase_edit(d: dsl_parse.DSL, proposal: dict) -> Edit | None:
                 break
 
     trigger = (proposal.get("trigger") or "existing").strip()
-    say_stmts = [f'{body_indent}say("{l}");' for l in lines]
+    # every generated line is escaped before entering a DSL string literal
+    esc = [dsl_parse.escape_dsl_string(l) for l in lines]
+    say_stmts = [f'{body_indent}say("{l}");' for l in esc]
 
     if trigger.startswith("on_intent:"):
         intent = trigger.split(":", 1)[1].strip()
         if intent not in d.intents:
             return None          # never emit a route to an undefined intent
-        inner = [f'{body_indent}  say("{l}");' for l in lines]
+        inner = [f'{body_indent}  say("{l}");' for l in esc]
         block = [f'{body_indent}on intent("{intent}") {{'] + inner + [f"{body_indent}}}"]
     elif trigger.startswith("if:"):
         var = trigger.split(":", 1)[1].strip()
         if var not in _session_vars(d):
             return None          # never gate on a variable that doesn't exist
-        inner = [f'{body_indent}  say("{l}");' for l in lines]
+        inner = [f'{body_indent}  say("{l}");' for l in esc]
         block = [f"{body_indent}if ({var}) {{"] + inner + [f"{body_indent}}}"]
     else:
         block = say_stmts
@@ -353,6 +390,15 @@ def apply_edits(text: str, edits: list) -> str:
             f"for anchor additions).")
 
     lines = text.splitlines()
+    # Range-validate before touching anything. anchor_line=-1 silently overwrote
+    # the LAST line (Python negative indexing) instead of erroring, and a
+    # too-large index behaved differently per mode (IndexError vs silent append).
+    # A wrong-line write to a production prompt must be loud, not silent.
+    for e in edits:
+        if not isinstance(e.anchor_line, int) or not (0 <= e.anchor_line < len(lines)):
+            raise ConflictingEditsError(
+                f"edit {e.ref!r} targets line {e.anchor_line}, outside the file "
+                f"(0..{len(lines) - 1}) — refusing to guess where it belongs")
     for e in sorted(edits, key=lambda e: -e.anchor_line):
         if e.mode == "replace_line":
             lines[e.anchor_line] = e.new_text

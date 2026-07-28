@@ -323,6 +323,19 @@ def run_auto(dsl_path: str, client_key: str, budget: int | None) -> None:
     print(f"Client: {client_key}")
     print(f"Prompt: {dsl_path}  ({len(d.intents)} intents, {len(d.states)} states)")
     print(f"Corpus: {len(calls)} calls")
+    # A wrong --client silently mines ANOTHER client's transcripts into this
+    # prompt (verified: `input.raven --client justdial` loaded 115 JustDial calls
+    # and produced 83 candidates). The path is only a hint, but a mismatch is
+    # nearly always a typo, so say so loudly rather than emit plausible junk.
+    parts = {p.lower() for p in dsl_path.resolve().parts}
+    if not calls:
+        print(f"\n  !! No calls loaded for client {client_key!r} — nothing to mine. "
+              f"Check the --client key.")
+        return
+    if "clients" in parts and client_key.lower() not in parts:
+        print(f"\n  !! WARNING: this prompt sits under a different client directory "
+              f"than --client {client_key!r}. That client's transcripts will be mined "
+              f"into it. Ctrl-C now if that is not intended.")
     print()
 
     all_edits = []
@@ -392,7 +405,7 @@ def run_auto(dsl_path: str, client_key: str, budget: int | None) -> None:
     pack_text = dsl_evidence.render_pack(pack)
     relevant = _relevant_states_text(d, pack)
     out = dsl_auto.propose_improvements(pack_text, d, client_key, relevant)
-    proposals = out.get("proposals", []) if isinstance(out, dict) else []
+    proposals = llm.as_list(out, "proposals")
     if isinstance(out, dict) and out.get("analysis"):
         print(f"\n      LLM analysis: {out['analysis']}\n")
     usecase_edits = []
@@ -429,7 +442,11 @@ def run_auto(dsl_path: str, client_key: str, budget: int | None) -> None:
             continue
         accepted_lines_by_state.setdefault(p.get("target_state"), []).extend(kept)
         p["lines"] = kept
-        e = dsl_fix.make_usecase_edit(d, p)
+        try:
+            e = dsl_fix.make_usecase_edit(d, p)
+        except dsl_fix.SpeechForbiddenError as ex:
+            discarded.append((f"proposal for {p.get('target_state')!r}", [str(ex)]))
+            continue
         if e:
             usecase_edits.append(e)
         else:
@@ -499,7 +516,24 @@ def main() -> None:
     if args.auto:
         from src import llm
         try:
-            run_auto(args.dsl_path, args.client, args.budget)
+            # --auto with no --budget skipped the token check entirely, so
+            # repeated runs could grow the prompt without bound (~+1000 tokens
+            # each, and there is no convergence check). Default to 25% headroom.
+            budget = args.budget
+            if budget is None:
+                try:
+                    from src import dsl_verify as _dv
+                    # measured, not len/4 — that heuristic is ASCII-centric and
+                    # underestimates Devanagari badly (13,276 real tokens came out
+                    # as 10,689), producing a default ceiling BELOW the input.
+                    cur = _dv._count_tokens(Path(args.dsl_path).read_text())
+                    if cur:
+                        budget = int(cur * 1.25)
+                        print(f"(no --budget given; capping at {budget} tokens, "
+                              f"25% over the current {cur})")
+                except OSError:
+                    budget = None
+            run_auto(args.dsl_path, args.client, budget)
         except llm.LLMUnavailable as e:
             # A missing key is a setup step, not a crash — show what to do, not a
             # stack trace. Still exits non-zero so CI/scripts notice.

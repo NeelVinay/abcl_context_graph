@@ -78,9 +78,25 @@ def _load_cache(client_key: str) -> dict:
 
 
 def _save_cache(client_key: str, cache: dict) -> None:
+    """Atomic write. A plain write_text can be interrupted mid-flush, and
+    _load_cache treats an unparseable file as EMPTY — silently turning every
+    previously-cached decision back into a paid API call with no warning.
+    Temp-file + os.replace makes the swap all-or-nothing."""
+    import os
+    import tempfile
     p = _cache_path(client_key)
     p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(json.dumps(cache, indent=2, ensure_ascii=False))
+    fd, tmp = tempfile.mkstemp(dir=str(p.parent), suffix=".tmp")
+    try:
+        with os.fdopen(fd, "w") as fh:
+            json.dump(cache, fh, indent=2, ensure_ascii=False)
+        os.replace(tmp, p)
+    except Exception:
+        try:
+            os.unlink(tmp)
+        except OSError:
+            pass
+        raise
 
 
 def _log(client_key: str, record: dict) -> None:
@@ -136,7 +152,8 @@ def _extract_json(text: str):
 
 
 def ask_json(prompt: str, client_key: str, purpose: str,
-             *, max_tokens: int = 4000, use_cache: bool = True):
+             *, max_tokens: int = 4000, use_cache: bool = True,
+             expect: type = dict):
     """Send `prompt`, expect JSON back. Returns the parsed object.
 
     Raises LLMUnavailable (no key/SDK) or LLMBadResponse (unparseable twice).
@@ -144,9 +161,14 @@ def ask_json(prompt: str, client_key: str, purpose: str,
     h = hashlib.sha1(prompt.encode("utf-8")).hexdigest()
     cache = _load_cache(client_key) if use_cache else {}
     if use_cache and h in cache:
-        _log(client_key, {"ts": time.time(), "purpose": purpose, "hash": h,
-                          "cached": True})
-        return cache[h]
+        cached = cache[h]
+        # A cache written before the shape check existed, hand-edited, or
+        # half-written by a crash can hold the wrong type. Treat it as a miss
+        # rather than handing a caller something it will crash on.
+        if isinstance(cached, expect):
+            _log(client_key, {"ts": time.time(), "purpose": purpose, "hash": h,
+                              "cached": True})
+            return cached
 
     client = _client()
     attempt_prompt = prompt
@@ -173,6 +195,16 @@ def ask_json(prompt: str, client_key: str, purpose: str,
         })
         try:
             parsed = _extract_json(text)
+            # Shape check BEFORE caching. Two reasons this is not optional:
+            #  * _extract_json falls back to bracket-matching, so prose containing
+            #    an unrelated brace pair ("Sure, {as requested} here is...") makes
+            #    it return a LIST where every caller does .get() — an
+            #    AttributeError that took down the whole run.
+            #  * without it, a wrong-shaped response gets written to llm_cache.json
+            #    and poisons that prompt hash permanently.
+            if not isinstance(parsed, expect):
+                raise LLMBadResponse(
+                    f"expected JSON {expect.__name__}, got {type(parsed).__name__}")
         except LLMBadResponse as e:  # noqa: BLE001
             last_err = e
             attempt_prompt = (
@@ -185,6 +217,22 @@ def ask_json(prompt: str, client_key: str, purpose: str,
         return parsed
 
     raise LLMBadResponse(f"unparseable after {_MAX_RETRIES + 1} attempts: {last_err}")
+
+
+def as_list(obj, key: str) -> list:
+    """Read `obj[key]` as a list of dicts, tolerating anything the model emits.
+
+    The outer response can be a valid dict while a field inside it is the wrong
+    type — `{"decisions": null}` is a natural way for a model to express an empty
+    batch, and `{"proposals": "none this time"}` is a plausible slip. Both used to
+    raise AttributeError mid-run (iterating a string yields characters, then
+    .get() fails on each one)."""
+    if not isinstance(obj, dict):
+        return []
+    v = obj.get(key)
+    if not isinstance(v, (list, tuple)):
+        return []
+    return [x for x in v if isinstance(x, dict)]
 
 
 def call_count(client_key: str) -> dict:

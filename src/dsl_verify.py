@@ -102,7 +102,7 @@ def _dead_says(d) -> list:
         depth = 0
         seen_transition = False
         for i in range(st.line_start, min(st.line_end + 1, len(d.lines))):
-            code = d.lines[i].split("//", 1)[0]
+            code = dsl_parse.strip_tool_args(d.lines[i].split("//", 1)[0])
             stripped = code.strip()
             if depth == 1 and i > st.line_start:
                 if seen_transition:
@@ -129,8 +129,16 @@ def verify(old_text: str, new_text: str, token_budget: int | None = None,
 
     old_says = SAY_RE.findall(old_text)
     new_says = SAY_RE.findall(new_text)
-    removed = [s for s in set(old_says) - set(new_says) if s not in allow]
-    added = list(set(new_says) - set(old_says))
+    # Multiset, not set. With sets, deleting one of two IDENTICAL say() lines is
+    # invisible because the string still exists elsewhere — and the shipped ABCL
+    # prompt has 2 such duplicated strings (the preamble variant has 3), so a real
+    # removal of scripted speech passed this check. Counter subtraction catches a
+    # dropped occurrence even when a twin survives.
+    from collections import Counter
+    old_c, new_c = Counter(old_says), Counter(new_says)
+    removed = [s for s, n in (old_c - new_c).items() for _ in range(n)
+               if s not in allow]
+    added = [s for s, n in (new_c - old_c).items() for _ in range(n)]
     if removed:
         res.blocking.append(
             f"says_preserved: {len(removed)} existing say() line(s) removed or "

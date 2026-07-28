@@ -148,10 +148,10 @@ Respond with ONLY this JSON:
             out = llm.ask_json(prompt, client_key, purpose="decide_anchors")
         except llm.LLMBadResponse:
             continue   # drop this batch rather than guess — see module docstring
-        for dcn in out.get("decisions", []):
+        for dcn in llm.as_list(out, "decisions"):
             if dcn.get("key"):
                 results[dcn["key"]] = dcn
-        suggestions.extend(out.get("suggestions", []))
+        suggestions.extend(llm.as_list(out, "suggestions"))
     results["_suggestions"] = suggestions
     return results
 
@@ -213,7 +213,7 @@ Respond with ONLY this JSON:
             out = llm.ask_json(prompt, client_key, purpose="decide_openers")
         except llm.LLMBadResponse:
             continue
-        for dcn in out.get("decisions", []):
+        for dcn in llm.as_list(out, "decisions"):
             key = dcn.get("chosen_key")
             if key:
                 results[key] = {"verdict": "use", "reason": dcn.get("reason", "")}
@@ -376,10 +376,11 @@ Respond with ONLY this JSON:
                            max_tokens=2000)
     except llm.LLMBadResponse:
         return {}          # drop them all rather than mine from unvalidated buckets
-    keep = {v.get("intent") for v in out.get("verdicts", [])
+    verdicts = llm.as_list(out, "verdicts")
+    keep = {v.get("intent") for v in verdicts
             if v.get("verdict") == "accept"}
     rejected = [(v.get("intent"), v.get("reason", ""))
-                for v in out.get("verdicts", []) if v.get("verdict") != "accept"]
+                for v in verdicts if v.get("verdict") != "accept"]
     return {"accepted": {k: v for k, v in buckets.items() if k in keep},
             "rejected": rejected}
 
@@ -399,20 +400,40 @@ def verify_grounding(proposal: dict, calls: list) -> list:
         if t.get("speaker") == "customer")
     problems = []
     for q in quotes:
-        probe = (q or "").strip()[:60]
+        probe = (q or "").strip()
         if len(probe) < 8:
+            # Too short to verify meaningfully AND too short to justify a line —
+            # previously these were skipped silently, so a fragment counted as
+            # grounding. Now they don't count as a citation at all.
+            problems.append(f"cited quote too short to verify: {probe!r}")
             continue
+        # Match the WHOLE quote. A 60-char prefix probe meant a model could copy
+        # 60 real characters and fabricate the rest, and since the evidence pack
+        # shows quotes up to 180 chars, over-60 was the common case. The pack
+        # truncates what it shows, so allow the cited quote to be a prefix of a
+        # real turn — but every character cited must be real.
         if probe not in haystack:
-            problems.append(f"cited quote not found verbatim in customer speech: {probe!r}")
+            problems.append(f"cited quote not found verbatim in customer speech: {probe[:70]!r}")
     return problems
 
 
 # ------------------------------------------------------------ guard wrapper --
-def screen_lines(lines: list, known_placeholders: set) -> tuple:
+def screen_lines(lines, known_placeholders: set) -> tuple:
     """Run every generated line through the mechanical guard.
-    Returns (accepted_lines, rejections) where rejections are (line, problems)."""
+    Returns (accepted_lines, rejections) where rejections are (line, problems).
+
+    Coerces a bare string to a single-element list first: iterating a string
+    yields characters, and one-character "lines" pass every content check
+    trivially (see make_usecase_edit for the reproduced 19-say() case)."""
+    if isinstance(lines, str):
+        lines = [lines]
+    if not isinstance(lines, (list, tuple)):
+        return [], [(repr(lines)[:60], ["'lines' was not a list of strings"])]
     ok, bad = [], []
     for ln in lines:
+        if not isinstance(ln, str):
+            bad.append((repr(ln)[:60], ["not a string"]))
+            continue
         problems = dsl_guard.check_line(ln, known_placeholders)
         if problems:
             bad.append((ln, problems))

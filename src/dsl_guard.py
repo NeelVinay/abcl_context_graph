@@ -31,6 +31,14 @@ import re
 # The hand-written lines that legitimately quote a rate stay untouched; this only
 # constrains what the LLM may ADD.
 _DIGITS = re.compile(r"[0-9०-९]")
+
+
+def _has_any_digit(s: str) -> bool:
+    """Any Unicode decimal digit, not just ASCII + Devanagari. A hardcoded class
+    missed fullwidth (５) and Arabic-Indic (٥) forms, which let a bare EMI figure
+    through. unicodedata covers every script's digits without enumeration."""
+    import unicodedata
+    return any(unicodedata.category(ch) == "Nd" for ch in s)
 _CURRENCY = re.compile(r"[₹$]|\brs\.?\b|\brupees?\b|रुपए|रुपये", re.IGNORECASE)
 _PERCENT = re.compile(r"%|\bpercent\b|प्रतिशत|फीसदी", re.IGNORECASE)
 # spelled-out quantities that dodge a pure digit check
@@ -41,7 +49,13 @@ _PERCENT = re.compile(r"%|\bpercent\b|प्रतिशत|फीसदी", re
 #      quantity. Flagging it rejects ordinary sentences. Only flag a number when
 #      it is actually attached to a money/tenure unit — which is where the
 #      compliance risk genuinely lives ("एक लाख", "दो साल", "तीन महीने").
-_DEV_NUM = r"एक|दो|तीन|चार|पांच|पाँच|छह|सात|आठ|नौ|दस|बीस|तीस|चालीस|पचास|सौ"
+# Hindi numerals are NOT compositional — every value 11-99 is its own word, so
+# each must be listed. 11-19 and 60-90 were missing, which let real tenure
+# claims through: "बारह महीने" (12 months), "साठ महीने की EMI", "इक्कीस दिन".
+_DEV_NUM = (r"एक|दो|तीन|चार|पांच|पाँच|छह|सात|आठ|नौ|दस|"
+            r"ग्यारह|बारह|तेरह|चौदह|पंद्रह|पन्द्रह|सोलह|सत्रह|अठारह|उन्नीस|"
+            r"बीस|इक्कीस|पच्चीस|तीस|पैंतीस|चालीस|पैंतालीस|पचास|पचपन|"
+            r"साठ|पैंसठ|सत्तर|पचहत्तर|अस्सी|नब्बे|सौ")
 _UNIT = (r"लाख|करोड़|हज़ार|हजार|percent|प्रतिशत|महीने|महीना|साल|दिन|हफ़्ते|हफ्ते|"
          r"रुपए|रुपये|lakh|crore|thousand|month|months|year|years|day|days")
 _NUMBER_WORDS = re.compile(
@@ -68,7 +82,12 @@ _SAFE_COUNTING = re.compile(
 _PREAPPROVED = re.compile(r"pre[- ]?approved", re.IGNORECASE)
 _PROMISE = re.compile(
     r"\bguarantee|\bguaranteed|\bapprov(al|ed)\b|\binstant\b|\bimmediate\b|"
-    r"\bsure\s+shot\b|गारंटी|ज़रूर मिलेगा|जरूर मिलेगा|मिल ही जाएगा|पक्का",
+    r"\bsure\s+shot\b|गारंटी|ज़रूर मिलेगा|जरूर मिलेगा|मिल ही जाएगा|पक्का"
+    # Romanised Hinglish promises were entirely absent — this is a Hinglish
+    # product, so "pakka ho jayega" / "turant mil jayega" are as likely as
+    # the Devanagari forms and were sailing through.
+    r"|\bpakka\b|\bzaroor\b|\bturant\b|\bmil jayega\b|\bho jayega\b|"
+    r"\bconfirm hai\b|\bguarantee\b|\bgaranti\b|\bpass ho\b",
     re.IGNORECASE)
 
 # ------------------------------------------------------------------- style --
@@ -87,7 +106,7 @@ _LITERARY = {
 def check_compliance(line: str) -> list:
     """Hard failures. Non-empty result = never apply this line."""
     problems = []
-    if _DIGITS.search(line):
+    if _has_any_digit(line):
         problems.append("contains a digit — generated copy must not state rates, "
                         "amounts, fees, or timelines")
     if _CURRENCY.search(line):

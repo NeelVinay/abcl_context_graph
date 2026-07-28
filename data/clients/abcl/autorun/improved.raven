@@ -103,7 +103,7 @@ agent priya {
       }
       self_employed {
         | Employment type self-employed.
-        | Anchors: "self employed", "business", "freelance", "apna business"
+        | Anchors: "self employed", "business", "freelance", "apna business", "employee", "उद्यम"
       }
       sms_not_received {
         | SMS has not arrived.
@@ -299,8 +299,6 @@ $$entry
       sms_send() {
         | Speak ONLY this line. Recording notice (post-intent, per guardrails) plus the SMS announcement.
         say("आगे बढ़ने से पहले बता दूँ — यह call quality और training purpose के लिए record हो रही है। अब मैं आपको एक SMS भेज रही हूँ जिसमें एक link होगा जो आपको आपकी application पर ले जाएगा — phone को speaker पर रखें और SMS check करें।");
-        say("उस page पर जो rate of interest और EMI दिखेगा, वह पूरी तरह आपकी profile के हिसाब से personalized है — यह सिर्फ़ आपकी जानकारी के लिए है, अभी कोई payment या commitment नहीं करना।");
-        say("SMS खुलते ही link पर टैप करें, फिर 'Apply Now' दबाएं — उसके बाद जो भी step आए, वही मुझे बताते रहें, मैं आगे guide करती रहूंगी।");
         -> sms_dispatch();
       }
 

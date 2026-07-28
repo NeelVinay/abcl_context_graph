@@ -582,9 +582,23 @@ def save_decision(client_key: str, decision_key: str, accepted: bool) -> None:
         d[bucket].append(decision_key)
     if decision_key in d[other]:
         d[other].remove(decision_key)
+    # atomic, for the same reason as the LLM cache: a half-written decisions file
+    # loses every prior accept/reject and the queue silently re-proposes them
+    import os
+    import tempfile
     p = _decisions_path(client_key)
     p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(json.dumps(d, indent=2, ensure_ascii=False))
+    fd, tmp = tempfile.mkstemp(dir=str(p.parent), suffix=".tmp")
+    try:
+        with os.fdopen(fd, "w") as fh:
+            json.dump(d, fh, indent=2, ensure_ascii=False)
+        os.replace(tmp, p)
+    except Exception:
+        try:
+            os.unlink(tmp)
+        except OSError:
+            pass
+        raise
 
 
 # --------------------------------------------------------------------- queue --

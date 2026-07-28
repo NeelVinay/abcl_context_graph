@@ -33,8 +33,9 @@ def call_stage(call: dict) -> str:
     """How far into the journey did this call actually get? Derived from the
     tool calls and intent labels already on the turns (validated by hand against
     the real corpus during planning)."""
-    tools = [t.get("tool") for t in call["turns"] if t.get("tool")]
-    intents = [t.get("intent", "") or "" for t in call["turns"]]
+    turns = call.get("turns", [])
+    tools = [t.get("tool") for t in turns if t.get("tool")]
+    intents = [t.get("intent", "") or "" for t in turns]
     if any("udyam" in i or "employment" in i or "profession" in i for i in intents):
         return "form_deep"
     if any("otp" in i for i in intents):
@@ -62,7 +63,7 @@ def stage_breakdown(calls: list) -> list:
         sub = [c for c in calls if call_stage(c) == stage]
         if not sub:
             continue
-        inc = sum(1 for c in sub if c["outcome"] == "incomplete")
+        inc = sum(1 for c in sub if c.get("outcome") == "incomplete")
         rows.append({
             "stage": stage, "calls": len(sub), "incomplete": inc,
             "incomplete_rate": round(inc / len(sub), 3),
@@ -75,11 +76,11 @@ def dropoff_quotes(calls: list, stage: str, limit: int = 15) -> list:
     stage. Verbatim — this is the raw material for understanding *why*."""
     out = []
     for c in calls:
-        if c["outcome"] != "incomplete" or call_stage(c) != stage:
+        if c.get("outcome") != "incomplete" or call_stage(c) != stage:
             continue
-        cust = [t for t in c["turns"] if t.get("speaker") == "customer"]
+        cust = [t for t in c.get("turns", []) if t.get("speaker") == "customer"]
         if cust:
-            out.append({"call_id": c["call_id"], "text": cust[-1]["text"][:200],
+            out.append({"call_id": c.get("call_id","?"), "text": cust[-1]["text"][:200],
                         "intent": cust[-1].get("intent", "")})
         if len(out) >= limit:
             break
@@ -90,16 +91,16 @@ def theme_prevalence(calls: list, themes: dict) -> list:
     """For each theme regex: how many calls mention it, their incomplete rate vs
     baseline, and the Fisher p-value. p is what separates signal from the traps."""
     n_all = len(calls)
-    base_inc = sum(1 for c in calls if c["outcome"] == "incomplete")
+    base_inc = sum(1 for c in calls if c.get("outcome") == "incomplete")
     rows = []
     for name, pattern in themes.items():
         p = re.compile(pattern, re.IGNORECASE)
         sub = [c for c in calls
                if any(t.get("speaker") == "customer" and p.search(t.get("text", ""))
-                      for t in c["turns"])]
+                      for t in c.get("turns", []))]
         if not sub:
             continue
-        inc = sum(1 for c in sub if c["outcome"] == "incomplete")
+        inc = sum(1 for c in sub if c.get("outcome") == "incomplete")
         pv = _fisher(inc, len(sub), base_inc - inc, n_all - len(sub))
         rows.append({
             "theme": name, "calls": len(sub), "incomplete": inc,
@@ -164,7 +165,7 @@ def customer_voice(calls: list, min_calls: int = 3, per_theme: int = 8) -> list:
         quotes, call_ids = [], set()
         for c in calls:
             hit = None
-            for t in c["turns"]:
+            for t in c.get("turns", []):
                 if t.get("speaker") != "customer":
                     continue
                 text = t.get("text", "")
@@ -175,9 +176,9 @@ def customer_voice(calls: list, min_calls: int = 3, per_theme: int = 8) -> list:
                     hit = text
                     break
             if hit:
-                call_ids.add(c["call_id"])
+                call_ids.add(c.get("call_id","?"))
                 if len(quotes) < per_theme:
-                    quotes.append({"call_id": c["call_id"], "text": hit[:180]})
+                    quotes.append({"call_id": c.get("call_id","?"), "text": hit[:180]})
         if len(call_ids) >= min_calls:
             out.append({
                 "theme": theme, "calls": len(call_ids),
@@ -202,7 +203,13 @@ def graph_facts(calls: list, top: int = 10) -> dict:
         import config as _cfg
     except Exception:  # noqa: BLE001
         return {}
-    g = merge.build_master(calls)
+    try:
+        g = merge.build_master(calls)
+    except Exception:  # noqa: BLE001
+        # a turn missing "intent" (plausible from the STT/diarization stage) used
+        # to raise KeyError here and kill feature 3 before any LLM call. The graph
+        # is enrichment, not a requirement — degrade instead of crashing.
+        return {}
 
     drop = analyze.drop_off_nodes(g, top)
     # for each drop-off node, what typically LED here — the turn before the call died
@@ -237,12 +244,12 @@ def graph_facts(calls: list, top: int = 10) -> dict:
 def build_pack(calls: list, dsl, client_key: str) -> dict:
     """The full factual picture handed to the model."""
     n = len(calls)
-    outcomes = Counter(c["outcome"] for c in calls)
+    outcomes = Counter(c.get("outcome","unknown") for c in calls)
     stages = stage_breakdown(calls)
     worst = sorted(stages, key=lambda r: -r["incomplete_rate"])[:3]
 
-    med_inc = sorted(len(c["turns"]) for c in calls if c["outcome"] == "incomplete")
-    med_ok = sorted(len(c["turns"]) for c in calls if c["outcome"] != "incomplete")
+    med_inc = sorted(len(c.get("turns", [])) for c in calls if c.get("outcome") == "incomplete")
+    med_ok = sorted(len(c.get("turns", [])) for c in calls if c.get("outcome") != "incomplete")
 
     return {
         "corpus": {

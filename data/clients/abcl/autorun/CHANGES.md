@@ -1,4 +1,4 @@
-# What changed in e2e.raven
+# What changed in final.raven
 
 Every change below was derived from real call transcripts. Quotes are verbatim.
 
@@ -6,14 +6,14 @@ Every change below was derived from real call transcripts. Quotes are verbatim.
 
 | Change type | Count | What it does |
 |---|---|---|
-| Recognition phrases | 2 | The agent now understands more of what callers actually say, so these turns route to the right handler instead of falling through to the generic default. |
+| Recognition phrases | 3 | The agent now understands more of what callers actually say, so these turns route to the right handler instead of falling through to the generic default. |
 | Conversational delivery | 34 | A short acknowledgement particle real callers use, added as a lead-in. The wording of the line itself is unchanged — this only affects how scripted the agent sounds. |
-| New agent speech | 8 | A new line answering something callers repeatedly say. The agent had no response for this before. |
-| _Rejected by safety checks_ | 19 | Proposed but blocked — see the end of this file |
+| New agent speech | 6 | A new line answering something callers repeatedly say. The agent had no response for this before. |
+| _Rejected by safety checks_ | 33 | Proposed but blocked — see the end of this file |
 
 ---
 
-# Recognition phrases  (2)
+# Recognition phrases  (3)
 
 _The agent now understands more of what callers actually say, so these turns route to the right handler instead of falling through to the generic default._
 
@@ -33,6 +33,15 @@ _The agent now understands more of what callers actually say, so these turns rou
 > हां हां ma'am wait. Ma'am open अभी मतलब open हो रहा है. Wait wait. hello. हां ma'am एक minute एक min
 > Sir waiting please आ रहा है please waiting.
 > Something wait weight patience.
+
+### 3. `self_employed` now also recognises: **employee**, **उद्यम**
+
+**Why:** self_employed: "employee" (4 calls, 4.40x), "उद्यम" (4 calls, 1.76x)
+
+**Heard on real calls:**
+> Self employee.
+> Self employee.
+> जी. हमारा self employee.
 
 ---
 
@@ -94,7 +103,7 @@ Real callers open turns with "हां" in 579 calls. Only the lead-in is added
 
 ---
 
-# New agent speech  (8)
+# New agent speech  (6)
 
 _A new line answering something callers repeatedly say. The agent had no response for this before._
 
@@ -122,23 +131,7 @@ _A new line answering something callers repeatedly say. The agent had no respons
 
 **Why:** wants_time (14 calls, 6%) includes real worry about what happens after committing and whether terms lock in permanently. Not causally significant (p=0.5376 for the broader busy_or_later theme) but recurring and currently unaddressed in loan_intro_persuade, which only reassures on the 'daily needs' angle, not on the 'nothing is locked in yet' angle.
 
-### 4. New line in `sms_send()`
-
-**The agent will now say:**
-
-> SMS खुलते ही link पर टैप करें, फिर 'Apply Now' दबाएं — उसके बाद जो भी step आए, वही मुझे बताते रहें, मैं आगे guide करती रहूंगी।
-
-**Why:** process_mechanics is the second-largest theme (31 calls, 14%) and sms_stage/link_opened together account for a large share of incomplete calls (51.9% and 50.0% incomplete respectively). Customers are repeatedly lost simply because they don't know the next physical action after the SMS. sms_send currently only tells them to check the SMS and put the phone on speaker — it never previews the steps after opening it, so add that before the link is sent.
-
-### 5. New line in `sms_send()`
-
-**The agent will now say:**
-
-> उस page पर जो rate of interest और EMI दिखेगा, वह पूरी तरह आपकी profile के हिसाब से personalized है — यह सिर्फ़ आपकी जानकारी के लिए है, अभी कोई payment या commitment नहीं करना।
-
-**Why:** The same cost_and_terms theme (58 calls, 25%) recurs specifically once the link is opened and rate/EMI actually renders on screen (per the verbatim quotes, customers are already reading numbers off the page themselves). sms_send is the natural place to pre-frame that number before they react to it, without the agent itself stating any figure — compliant since no rate/amount is asserted, only that a personalized figure will appear.
-
-### 6. New line in `handle_has_loan_unspecified()`
+### 4. New line in `handle_has_loan_unspecified()`
 
 **The agent will now say:**
 
@@ -146,7 +139,7 @@ _A new line answering something callers repeatedly say. The agent had no respons
 
 **Why:** already_engaged (14 calls, 6%) is customers worried this call duplicates something already in progress elsewhere (app, PhonePe, branch). handle_has_loan_unspecified already asks if they still want to hear the offer, but never reassures that this specific process is separate and won't conflict with or repeat anything already done — that's the missing angle.
 
-### 7. New line in `handle_security_concern()`
+### 5. New line in `handle_security_concern()`
 
 **The agent will now say:**
 
@@ -154,7 +147,7 @@ _A new line answering something callers repeatedly say. The agent had no respons
 
 **Why:** trust_or_fraud (7 calls, 3%; not causally significant, p=0.1799, trust_doubt actually does better than baseline) is currently only answered from the SMS-link angle ('https lock, ABCL domain verify करें') — but several quotes show the doubt is about the call/agent itself, not the link. Add the missing angle: reassurance that the call itself rides on an existing ABCL relationship and never asks for sensitive data beyond OTP.
 
-### 8. New line in `handle_agent_query()`
+### 6. New line in `handle_agent_query()`
 
 **The agent will now say:**
 
@@ -164,10 +157,19 @@ _A new line answering something callers repeatedly say. The agent had no respons
 
 ---
 
-# Rejected by safety checks  (19)
+# Rejected by safety checks  (33)
 
 _These were proposed and then blocked automatically. Nothing here reached the prompt._
 
+- **anchor bucket for 'wants_more_amount'** — Samples report shown amount, don't demand higher; one inverted
+- **anchor bucket for 'identity_confirm'** — "बोलिए/बोलो" means go ahead, not confirming identity
+- **anchor bucket for 'salaried'** — Mostly questions asking about salary, not stating employment
+- **anchor bucket for 'prior_attempt_failed'** — Unrelated/garbled turns, no consistent prior-attempt meaning
+- **anchor bucket for 'security_concern'** — About link not opening, not fraud/scam suspicion
+- **anchor bucket for 'sms_not_received'** — Polarity inverted: SMS arrived, not missing
+- **anchor bucket for 'otp_not_received'** — Polarity inverted: OTP received, not missing
+- **anchor bucket for 'identity_deny'** — Mixed bag; turns don't say wrong number/not the lead
+- **anchor bucket for 'has_loan_unspecified'** — Turns don't state already having an existing loan
 - **anchor 'बोलिए' -> affirm** — Generic filler meaning 'go on/tell me', low lift
 - **anchor 'ज़रूर' -> affirm** — Weak evidence, likely substring match of ज़रूरी/ज़रूरत
 - **anchor 'welcome' -> affirm** — Means 'you're welcome', not an affirmation
@@ -186,5 +188,10 @@ _These were proposed and then blocked automatically. Nothing here reached the pr
 - **anchor 'hit' -> hold** — Generic, 'hit button' risks tech_issue misroute
 - **anchor 'उन्होंने' -> hold** — Generic pronoun, no intent-specific meaning
 - **anchor 'almost' -> hold** — Generic word, IVR-script co-occurrence artifact
-- **anchor 'जाइए' -> hold** — Generic 'go' verb form, ambiguous, high misroute risk
+- **anchor 'जाइए' -> hold** — Standalone जाइए means 'go', opposite of hold
+- **anchor 'private' -> self_employed** — Ambiguous: 'private job' actually means salaried
+- **anchor 'दूं' -> self_employed** — Generic verb ending, co-occurrence artifact
+- **anchor 'open' -> tech_issue** — Too generic, used across countless unrelated contexts
+- **proposal for 'sms_send'** — sms_send() declares in its own prose that it must not add speech (matched 'Speak ONLY')
+- **proposal for 'sms_send'** — sms_send() declares in its own prose that it must not add speech (matched 'Speak ONLY')
 
