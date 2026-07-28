@@ -68,6 +68,56 @@ def _count_tokens(text: str):
         return None
 
 
+def _dangling_refs(d) -> list:
+    """Routes/gotos pointing at a state or intent that doesn't exist."""
+    if d is None:
+        return []
+    states = set(d.states)
+    intents = set(d.intents)
+    out = []
+    for name, st in d.states.items():
+        all_routes = st.intent_routes + st.nested_routes
+        for tgt in [t for _, t in all_routes if t] + st.gotos:
+            if tgt not in states:
+                out.append(f"{name}() -> {tgt}()")
+        for i, _ in all_routes:
+            if i != "default" and i not in intents:
+                out.append(f'{name}() on intent("{i}")')
+    for i, tgt in d.global_routes.items():
+        if tgt not in states:
+            out.append(f'global intent("{i}") -> {tgt}()')
+        if i not in intents:
+            out.append(f'global intent("{i}") undefined')
+    return out
+
+
+def _dead_says(d) -> list:
+    """say() texts sitting after a state's first top-level terminal transition.
+    Only depth-1 transitions end the state — one inside an `on intent(...) { }`
+    block or a `step { }` belongs to that inner scope, not the state itself."""
+    if d is None:
+        return []
+    out = []
+    for st in d.states.values():
+        depth = 0
+        seen_transition = False
+        for i in range(st.line_start, min(st.line_end + 1, len(d.lines))):
+            code = d.lines[i].split("//", 1)[0]
+            stripped = code.strip()
+            if depth == 1 and i > st.line_start:
+                if seen_transition:
+                    for s in dsl_parse.SAY_RE.findall(stripped):
+                        out.append(s)
+                elif (dsl_parse.ON_INTENT_RE.search(stripped)
+                      or dsl_parse.GOTO_RE.search(stripped)):
+                    # an inline `on intent(...) {` opens a block rather than
+                    # jumping, so it does not end the state
+                    if not stripped.endswith("{"):
+                        seen_transition = True
+            depth += code.count("{") - code.count("}")
+    return out
+
+
 def verify(old_text: str, new_text: str, token_budget: int | None = None,
            allow_say_changes: list | None = None) -> VerifyResult:
     res = VerifyResult(ok=True)
@@ -114,24 +164,24 @@ def verify(old_text: str, new_text: str, token_budget: int | None = None,
 
     states = set(d_new.states)
     intents = set(d_new.intents)
-    dangling = []
-    for name, st in d_new.states.items():
-        all_routes = st.intent_routes + st.nested_routes
-        for tgt in [t for _, t in all_routes if t] + st.gotos:
-            if tgt not in states:
-                dangling.append(f"{name}() -> {tgt}()")
-        for i, _ in all_routes:
-            if i != "default" and i not in intents:
-                dangling.append(f'{name}() on intent("{i}")')
-    for i, tgt in d_new.global_routes.items():
-        if tgt not in states:
-            dangling.append(f'global intent("{i}") -> {tgt}()')
-        if i not in intents:
-            dangling.append(f'global intent("{i}") undefined')
-    if dangling:
+    dangling = _dangling_refs(d_new)
+    # Only NEWLY-introduced breakage blocks. A defect that was already in the
+    # caller's file (the real ABCL original ships a global route to an undefined
+    # silence_check()) must not permanently wedge an autonomous run — otherwise
+    # someone else's old bug means the tool can never improve anything. Same
+    # rule already applied to unreachable_say. Pre-existing breakage is still
+    # REPORTED, just as advisory.
+    pre_existing = _dangling_refs(d_old)
+    introduced = [x for x in dangling if x not in pre_existing]
+    if introduced:
         res.blocking.append(
-            f"no_dangling_routes: {len(dangling)} broken reference(s): "
-            + "; ".join(dangling[:4]))
+            f"no_dangling_routes: {len(introduced)} NEW broken reference(s): "
+            + "; ".join(introduced[:4]))
+    still_broken = [x for x in dangling if x in pre_existing]
+    if still_broken:
+        res.advisory.append(
+            f"pre-existing broken reference(s) left untouched ({len(still_broken)}): "
+            + "; ".join(still_broken[:3]))
 
     # any NEW intent must be fully wired: defined + routed + handler exists
     old_intents = set(d_old.intents)
@@ -143,6 +193,19 @@ def verify(old_text: str, new_text: str, token_budget: int | None = None,
         if not routed:
             res.blocking.append(
                 f"intent_wired: new intent '{i}' is defined but never routed")
+
+    # unreachable speech: a say() placed after a state's first terminal transition
+    # can never run. Found the hard way — three well-written generated lines were
+    # applied, passed every other check here, and were dead code. Only NEW
+    # occurrences block, so a pre-existing quirk in a client's file doesn't
+    # permanently wedge the pipeline.
+    old_dead = _dead_says(d_old)
+    new_dead = _dead_says(d_new)
+    introduced = [s for s in new_dead if s not in old_dead]
+    if introduced:
+        res.blocking.append(
+            f"unreachable_say: {len(introduced)} new say() line(s) placed after a "
+            f"terminal transition and can never be spoken, e.g. {introduced[0][:60]!r}")
 
     n_old, n_new = _count_tokens(old_text), _count_tokens(new_text)
     if n_old is not None and n_new is not None:

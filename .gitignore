@@ -2,3 +2,10 @@
 .DS_Store
 **/.DS_Store
 .scratch/
+
+# LLM response cache + call log: machine-local derived data, never source.
+# Committing the cache would be actively harmful — src/llm.py keys it on
+# sha1(prompt), so a checked-in cache silently serves someone else's stale
+# answers instead of calling the API, and the run would look like it worked.
+data/clients/*/llm_cache.json
+data/clients/*/llm_calls.jsonl

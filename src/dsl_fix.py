@@ -4,12 +4,21 @@ dsl_verify before ever returning the result. Nothing here is written to disk by
 this module itself — see run_improve.py for the CLI that does that, gated on
 verify() passing.
 
-Three strategies, matching exactly what was proven safe to auto-apply (see the
-plan and dsl_audit.py's module docstring for why the rest — new intents, retry
-steps, splitting an ambiguous default — stay propose-only forever):
+Four strategies. The first three only ever ADD text (a new anchor, a corrected
+ordinal, a new route) and never touch existing say() lines. NATURAL_OPENER is
+the first strategy that reworks existing speech, and is scoped narrowly because
+of that — see src/dsl_mine.py's module docstring for what was tested and
+rejected before landing on this shape (full vocabulary substitution, unrestricted
+reduplication mining), and why it stays propose-only forever, same as new
+intents / retry steps / splitting an ambiguous default:
 
   ADD_ANCHORS       an accepted src.dsl_mine.AnchorGap -> append the word to that
                      intent's existing `| Anchors:` line, exact file formatting.
+  NATURAL_OPENER    an accepted src.dsl_mine.NaturalOpener -> prepend or double a
+                     real customer particle (जी/हां/...) as a say() line's
+                     leading word. Never mid-sentence, never a verb, never a
+                     compliance-adjacent line, never a bot-initiated line (see
+                     dsl_parse.containing_state). Always propose-only.
   REWRITE_ORDINAL    a guardrail_count_mismatch finding -> substitute the ordinal
                      word in custom_guardrails{} prose to match the real step count.
   ADD_GLOBAL_ROUTE   an unrouted_intent finding where handle_<intent>() already
@@ -40,6 +49,10 @@ class Edit:
     new_text: str            # exact full line(s) of new content, no trailing \n
     rationale: str = ""
     evidence: list = field(default_factory=list)
+    old_say_text: str | None = None   # set only for edits that reword an existing
+                                       # say() line — passed through to
+                                       # dsl_verify.verify's allow_say_changes so
+                                       # says_preserved permits exactly this line
 
 
 # --------------------------------------------------------------------- ADD_ANCHORS --
@@ -115,6 +128,118 @@ def _add_anchors_edit_for(d: dsl_parse.DSL, intent: str, words: list,
         rationale=f"{intent}: " + ", ".join(rationale_bits),
         evidence=evidence,
     )
+
+
+# ------------------------------------------------------------------ NATURAL_OPENER --
+def make_opener_edit(d: dsl_parse.DSL, cand: "dsl_mine.NaturalOpener") -> Edit:
+    """One edit per accepted NaturalOpener candidate — deliberately NOT batched
+    like make_add_anchors_edits_batch. Two candidates can legitimately target the
+    same line (e.g. "जी" vs "हां" as the opener); accepting both in one run must
+    conflict, not silently combine into "जी हां, ..." — apply_edits' existing
+    ConflictingEditsError (built for the anchor same-line bug) already catches
+    this correctly as long as these stay unmerged, one Edit per candidate."""
+    return Edit(
+        kind="NATURAL_OPENER", ref=cand.decision_key,
+        anchor_line=cand.line_idx, mode="replace_line",
+        new_text=d.lines[cand.line_idx].replace(cand.old_line, cand.new_line, 1),
+        rationale=f'"{cand.particle}" {cand.mechanism} ({cand.call_count} calls, '
+                  f"real customer opener frequency)",
+        evidence=cand.examples,
+        old_say_text=cand.old_line,
+    )
+
+
+# ------------------------------------------------------------------ USECASE --
+def make_usecase_edit(d: dsl_parse.DSL, proposal: dict) -> Edit | None:
+    """An LLM improvement proposal -> an Edit inserting one or more say() lines
+    into the target state, optionally wrapped in an on-intent or if() branch.
+
+    Purely additive: this never rewrites existing speech, so says_preserved stays
+    intact without needing allow_say_changes. Multi-line works because
+    apply_edits' insert_after puts the whole block in as one element and the
+    final "\\n".join expands it correctly."""
+    state_name = proposal.get("target_state")
+    st = d.states.get(state_name)
+    if st is None:
+        return None
+    lines = [l for l in proposal.get("lines", []) if l and l.strip()]
+    if not lines:
+        return None
+
+    # Insert BEFORE the state's first transition, not before its closing brace.
+    # In this dialect a state's routing (`on intent(...) -> x();`) and its
+    # unconditional gotos (`-> y();`) are terminal: once one runs, control has
+    # left the state. Anything appended after them is dead code that can never
+    # be spoken. Found by simulation — the first version inserted at line_end and
+    # produced three perfectly good, completely unreachable lines, which
+    # dsl_verify passed because it checks structure, not reachability.
+    close_idx = st.line_end
+    body_indent = "        "   # states open at 6, bodies at 8 (see dsl_parse docstring)
+    for i in range(st.line_start + 1, close_idx):
+        stripped = d.lines[i].strip()
+        if stripped and not stripped.startswith("//"):
+            body_indent = d.lines[i][:len(d.lines[i]) - len(d.lines[i].lstrip())]
+            break
+
+    insert_after_idx = close_idx - 1
+    depth = 0
+    for i in range(st.line_start, close_idx):
+        line = d.lines[i]
+        code = line.split("//", 1)[0]
+        if depth == 1 and i > st.line_start:
+            stripped = code.strip()
+            if ON_INTENT_RE.search(stripped) or dsl_parse.GOTO_RE.search(stripped):
+                insert_after_idx = i - 1   # sits ahead of the first transition
+                break
+        depth += code.count("{") - code.count("}")
+
+    # "state_start" puts it ahead of all existing speech; the default
+    # "before_transitions" keeps it after the existing say() lines. Either way it
+    # lands before the first transition — a placement past one is never honoured,
+    # because that speech could not be reached.
+    if (proposal.get("placement") or "").strip() == "state_start":
+        for i in range(st.line_start + 1, close_idx):
+            stripped = d.lines[i].split("//", 1)[0].strip()
+            if stripped and not stripped.startswith("|"):
+                insert_after_idx = min(i - 1, insert_after_idx)
+                break
+
+    trigger = (proposal.get("trigger") or "existing").strip()
+    say_stmts = [f'{body_indent}say("{l}");' for l in lines]
+
+    if trigger.startswith("on_intent:"):
+        intent = trigger.split(":", 1)[1].strip()
+        if intent not in d.intents:
+            return None          # never emit a route to an undefined intent
+        inner = [f'{body_indent}  say("{l}");' for l in lines]
+        block = [f'{body_indent}on intent("{intent}") {{'] + inner + [f"{body_indent}}}"]
+    elif trigger.startswith("if:"):
+        var = trigger.split(":", 1)[1].strip()
+        if var not in _session_vars(d):
+            return None          # never gate on a variable that doesn't exist
+        inner = [f'{body_indent}  say("{l}");' for l in lines]
+        block = [f"{body_indent}if ({var}) {{"] + inner + [f"{body_indent}}}"]
+    else:
+        block = say_stmts
+
+    return Edit(
+        kind="USECASE", ref=f"usecase:{state_name}",
+        anchor_line=insert_after_idx, mode="insert_after",
+        new_text="\n".join(block),
+        # NOT truncated. The rationale is the audit trail for a change to
+        # customer-facing copy — it cites the specific numbers and quotes behind
+        # the decision, and it runs ~1000 chars. An earlier [:300] cap silently
+        # cut ~70% of it, leaving mid-sentence fragments in CHANGES.md.
+        rationale=proposal.get("rationale", ""),
+        evidence=lines,
+    )
+
+
+def _session_vars(d: dsl_parse.DSL) -> set:
+    m = re.search(r"session\s*\{(.*?)\n\s*\}", d.text, re.S)
+    if not m:
+        return set()
+    return set(re.findall(r"^\s*(\w+)\s*:", m.group(1), re.M))
 
 
 # ------------------------------------------------------------------ REWRITE_ORDINAL --
@@ -241,9 +366,14 @@ def apply_edits(text: str, edits: list) -> str:
 
 def apply_and_verify(dsl_path, edits: list, token_budget: int | None = None):
     """Returns (new_text, VerifyResult). Caller decides whether to write it —
-    this never touches disk."""
+    this never touches disk. allow_say_changes for dsl_verify is derived
+    automatically from the edits themselves (Edit.old_say_text) — only the exact
+    lines a run's own accepted edits intentionally reword are ever permitted to
+    change; says_preserved stays maximally strict for everything else."""
     d = dsl_parse.parse(dsl_path)
     old_text = d.text
     new_text = apply_edits(old_text, edits)
-    result = dsl_verify.verify(old_text, new_text, token_budget=token_budget)
+    allow_say_changes = [e.old_say_text for e in edits if e.old_say_text]
+    result = dsl_verify.verify(old_text, new_text, token_budget=token_budget,
+                               allow_say_changes=allow_say_changes)
     return new_text, result

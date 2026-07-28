@@ -106,11 +106,17 @@ def run(dsl_path: str, client_key: str, budget: int | None, apply_to_disk: bool,
             dsl_mine.save_decision(client_key, item.decision_key, accepted=True)
             if isinstance(item, dsl_mine.AnchorGap):
                 accepted_gaps.append(item)
+            elif isinstance(item, dsl_mine.NaturalOpener):
+                # one edit per candidate, deliberately not batched — two
+                # candidates can legitimately target the same line (e.g. जी vs
+                # हां as the opener); accepting both in one run must conflict via
+                # apply_edits' ConflictingEditsError, not silently combine
+                accepted_edits.append(dsl_fix.make_opener_edit(d, item))
             else:
                 print(f"  ! [{idx}] uncovered cluster accepted for tracking (won't be "
                       f"re-proposed), but produces no edit — write a name + say() answer "
                       f"by hand, then add it to the prompt directly")
-        accepted_edits = dsl_fix.make_add_anchors_edits_batch(d, accepted_gaps)
+        accepted_edits = dsl_fix.make_add_anchors_edits_batch(d, accepted_gaps) + accepted_edits
         if accepted_edits:
             print(f"\nACCEPTED THIS RUN ({len(accepted_edits)})")
             for e in accepted_edits:
@@ -154,19 +160,312 @@ def run(dsl_path: str, client_key: str, budget: int | None, apply_to_disk: bool,
     _write_changes_md(dsl_path, all_edits, out_path)
 
 
-def _write_changes_md(dsl_path: Path, edits: list, out_path: Path) -> None:
-    lines = [f"# Changes — {dsl_path.name}\n"]
+def _edit_headline(e) -> str:
+    """A human-readable one-liner for a change, so the reader knows what they're
+    looking at before reading any rationale."""
+    import re as _re
+    if e.kind == "ADD_ANCHORS":
+        m = _re.match(r"(\w+):", e.rationale or "")
+        intent = m.group(1) if m else "intent"
+        words = _re.findall(r'"([^"]+)"', e.rationale or "")
+        return f"`{intent}` now also recognises: " + ", ".join(f"**{w}**" for w in words)
+    if e.kind == "NATURAL_OPENER":
+        m = _re.match(r'"([^"]+)"\s+(\w+)', e.rationale or "")
+        p = m.group(1) if m else "particle"
+        how = "doubled" if m and m.group(2) == "reduplicate" else "added as a lead-in"
+        return f"**{p}** {how}"
+    if e.kind == "USECASE":
+        return f"New line in `{e.ref.split(':', 1)[-1]}()`"
+    return e.kind
+
+
+_KIND_INFO = {
+    "ADD_ANCHORS": (
+        "Recognition phrases",
+        "The agent now understands more of what callers actually say, so these "
+        "turns route to the right handler instead of falling through to the "
+        "generic default."),
+    "NATURAL_OPENER": (
+        "Conversational delivery",
+        "A short acknowledgement particle real callers use, added as a lead-in. "
+        "The wording of the line itself is unchanged — this only affects how "
+        "scripted the agent sounds."),
+    "USECASE": (
+        "New agent speech",
+        "A new line answering something callers repeatedly say. The agent had no "
+        "response for this before."),
+}
+
+
+def _write_changes_md(dsl_path: Path, edits: list, out_path: Path,
+                      discarded: list | None = None) -> None:
+    from collections import defaultdict
+    by_kind = defaultdict(list)
     for e in edits:
-        lines.append(f"## {e.kind}")
-        lines.append(f"- {e.rationale}")
-        if e.evidence:
-            lines.append("- evidence:")
-            for ev in e.evidence:
-                lines.append(f"  - {ev}")
+        by_kind[e.kind].append(e)
+
+    lines = [f"# What changed in {dsl_path.name}", ""]
+    lines.append("Every change below was derived from real call transcripts. "
+                 "Quotes are verbatim.")
+    lines.append("")
+    lines.append("## Summary")
+    lines.append("")
+    lines.append("| Change type | Count | What it does |")
+    lines.append("|---|---|---|")
+    for kind, group in sorted(by_kind.items()):
+        title, why = _KIND_INFO.get(kind, (kind, ""))
+        lines.append(f"| {title} | {len(group)} | {why} |")
+    if discarded:
+        lines.append(f"| _Rejected by safety checks_ | {len(discarded)} | "
+                     f"Proposed but blocked — see the end of this file |")
+    lines.append("")
+
+    for kind, group in sorted(by_kind.items()):
+        title, why = _KIND_INFO.get(kind, (kind, ""))
+        lines.append("---")
+        lines.append("")
+        lines.append(f"# {title}  ({len(group)})")
+        lines.append("")
+        lines.append(f"_{why}_")
+        lines.append("")
+        if kind == "NATURAL_OPENER":
+            # One Edit per line is required by the applier (each targets a
+            # different line number, and same-line edits must conflict rather
+            # than merge). But 33 near-identical entries is unreadable, so
+            # collapse the REPORT by particle — the edits themselves are
+            # untouched.
+            import re as _re
+            from collections import defaultdict as _dd
+            by_particle = _dd(list)
+            for e in group:
+                m = _re.match(r'"([^"]+)"\s+(\w+)', e.rationale or "")
+                by_particle[(m.group(1) if m else "?",
+                             m.group(2) if m else "insert")].append(e)
+            for (particle, mech), es in sorted(by_particle.items(),
+                                               key=lambda kv: -len(kv[1])):
+                how = ("doubled (callers repeat it)" if mech == "reduplicate"
+                       else "added as a lead-in")
+                lines.append(f"### **{particle}** {how} — in {len(es)} place(s)")
+                lines.append("")
+                n_calls = _re.search(r"\((\d+) calls", es[0].rationale or "")
+                if n_calls:
+                    lines.append(f"Real callers open turns with \"{particle}\" in "
+                                 f"{n_calls.group(1)} calls. Only the lead-in is "
+                                 f"added; no existing wording changed.")
+                    lines.append("")
+                lines.append("<details><summary>the lines it was added to</summary>")
+                lines.append("")
+                for e in es:
+                    lines.append(f"- `{e.new_text.strip()[:110]}`")
+                lines.append("")
+                lines.append("</details>")
+                lines.append("")
+            continue
+
+        for i, e in enumerate(group, 1):
+            lines.append(f"### {i}. {_edit_headline(e)}")
+            lines.append("")
+            if e.kind == "USECASE":
+                lines.append("**The agent will now say:**")
+                lines.append("")
+                for ev in e.evidence:
+                    lines.append(f"> {ev}")
+                lines.append("")
+                lines.append("**Why:** " + (e.rationale or "—"))
+            elif e.kind == "NATURAL_OPENER":
+                lines.append(f"**Why:** {e.rationale}")
+                if e.evidence:
+                    lines.append("")
+                    lines.append("**Callers who talk this way:**")
+                    for ev in e.evidence[:2]:
+                        lines.append(f"> {ev}")
+            else:
+                lines.append(f"**Why:** {e.rationale}")
+                if e.evidence:
+                    lines.append("")
+                    lines.append("**Heard on real calls:**")
+                    for ev in e.evidence[:3]:
+                        lines.append(f"> {ev}")
+            lines.append("")
+    if discarded:
+        # Failures are shown, never silently swallowed: if the model is
+        # systematically producing non-compliant copy, that must be visible.
+        lines.append("---")
+        lines.append("")
+        lines.append(f"# Rejected by safety checks  ({len(discarded)})")
+        lines.append("")
+        lines.append("_These were proposed and then blocked automatically. Nothing "
+                     "here reached the prompt._")
+        lines.append("")
+        for what, problems in discarded:
+            lines.append(f"- **{what}** — {'; '.join(problems)}")
         lines.append("")
     changes_path = out_path.parent / "CHANGES.md"
+    lines.append("")
     changes_path.write_text("\n".join(lines))
     print(f"Wrote {changes_path}")
+
+
+def run_auto(dsl_path: str, client_key: str, budget: int | None) -> None:
+    """Fully autonomous: transcripts + prompt in, improved prompt out. The LLM
+    makes every judgment call; the code enforces correctness and compliance.
+
+    No human gates. What remains is mechanical self-checking — a generated line
+    that breaks the client's language{} rules or asserts a loan term is discarded
+    by src/dsl_guard.py before it can be applied, and the whole run is gated on
+    dsl_verify passing so a bad generation can never write a broken prompt."""
+    from src import dsl_auto, dsl_evidence, dsl_guard, llm
+
+    dsl_path = Path(dsl_path)
+    d, calls, findings = dsl_audit.audit(dsl_path, client_key)
+    known_placeholders = dsl_fix._session_vars(d)
+
+    print(f"Client: {client_key}")
+    print(f"Prompt: {dsl_path}  ({len(d.intents)} intents, {len(d.states)} states)")
+    print(f"Corpus: {len(calls)} calls")
+    print()
+
+    all_edits = []
+    discarded = []
+
+    # ---- feature 1: intent recognition words ----
+    gaps = dsl_mine.mine_anchor_gaps(d, calls, client_key)
+    print(f"[1/3] anchors: {len(gaps)} mined candidates -> asking LLM to judge")
+    decisions = dsl_auto.decide_anchors(gaps, d, client_key)
+    keep, reassigned = [], 0
+    for g in gaps:
+        dcn = decisions.get(g.decision_key)
+        if not dcn:
+            continue
+        if dcn.get("verdict") == "keep":
+            keep.append(g)
+        elif dcn.get("verdict") == "reassign" and dcn.get("target") in d.intents:
+            g.intent = dcn["target"]
+            keep.append(g)
+            reassigned += 1
+        else:
+            discarded.append((f"anchor {g.word!r} -> {g.intent}",
+                              [dcn.get("reason", "dropped by LLM")]))
+    anchor_edits = dsl_fix.make_add_anchors_edits_batch(d, keep)
+    all_edits += anchor_edits
+    print(f"      kept {len(keep)} ({reassigned} reassigned), "
+          f"dropped {len(gaps) - len(keep)} -> {len(anchor_edits)} edit(s)")
+
+    # ---- feature 2: natural particles ----
+    openers = dsl_mine.mine_natural_openers(d, calls)
+    print(f"[2/3] particles: {len(openers)} mined candidates -> asking LLM for fit")
+    odecisions = dsl_auto.decide_openers(openers, d, client_key)
+    chosen = [o for o in openers if o.decision_key in odecisions]
+    # one edit per line max — the LLM picks at most one option per line, but guard
+    # against a malformed response proposing two for the same line
+    seen_lines, opener_edits = set(), []
+    for o in chosen:
+        if o.line_idx in seen_lines:
+            continue
+        problems = dsl_guard.check_structure(o.old_line, o.new_line)
+        if problems:
+            discarded.append((f"particle {o.particle!r} on line {o.line_idx}", problems))
+            continue
+        seen_lines.add(o.line_idx)
+        opener_edits.append(dsl_fix.make_opener_edit(d, o))
+    all_edits += opener_edits
+    print(f"      LLM chose {len(chosen)} of {len(openers)} -> {len(opener_edits)} edit(s)")
+
+    # ---- feature 3: contextual persuasion ----
+    print("[3/3] persuasion: building evidence pack -> open analytical brief")
+    pack = dsl_evidence.build_pack(calls, d, client_key)
+    pack_text = dsl_evidence.render_pack(pack)
+    relevant = _relevant_states_text(d, pack)
+    out = dsl_auto.propose_improvements(pack_text, d, client_key, relevant)
+    proposals = out.get("proposals", []) if isinstance(out, dict) else []
+    if isinstance(out, dict) and out.get("analysis"):
+        print(f"\n      LLM analysis: {out['analysis']}\n")
+    usecase_edits = []
+    accepted_lines_by_state: dict = {}
+    for p in proposals:
+        ungrounded = dsl_auto.verify_grounding(p, calls)
+        if ungrounded:
+            # surfaced, not silently dropped — a fabricated citation is exactly
+            # the failure mode that would make this system untrustworthy
+            discarded.append((f"proposal for {p.get('target_state')!r}", ungrounded))
+            continue
+        good, bad = dsl_auto.screen_lines(p.get("lines", []), known_placeholders)
+        for ln, probs in bad:
+            discarded.append((f"generated line {ln[:60]!r}", probs))
+        if not good:
+            continue
+
+        # Redundancy: compare against speech ALREADY in the target state, plus
+        # anything an earlier proposal this run already added there. Without the
+        # second part, two proposals targeting one state can each be fine alone
+        # and still make the agent say the same thing twice.
+        st = d.states.get(p.get("target_state"))
+        existing = list(st.says) if st else []
+        existing += accepted_lines_by_state.get(p.get("target_state"), [])
+        kept = []
+        for ln in good:
+            probs = dsl_guard.check_redundancy(ln, existing)
+            if probs:
+                discarded.append((f"generated line {ln[:60]!r}", probs))
+                continue
+            kept.append(ln)
+            existing.append(ln)
+        if not kept:
+            continue
+        accepted_lines_by_state.setdefault(p.get("target_state"), []).extend(kept)
+        p["lines"] = kept
+        e = dsl_fix.make_usecase_edit(d, p)
+        if e:
+            usecase_edits.append(e)
+        else:
+            discarded.append((f"proposal for {p.get('target_state')!r}",
+                              ["unknown state, undefined intent, or unknown session var"]))
+    all_edits += usecase_edits
+    print(f"      {len(proposals)} proposal(s) -> {len(usecase_edits)} edit(s) after guard")
+
+    # ---- apply ----
+    print()
+    if not all_edits:
+        print("No changes to apply.")
+        _report_cost(client_key, llm)
+        return
+
+    backup = dsl_path.with_suffix(dsl_path.suffix + ".bak")
+    backup.write_text(d.text)
+    print(f"Backup: {backup}")
+
+    new_text, result = dsl_fix.apply_and_verify(dsl_path, all_edits, token_budget=budget)
+    print(result.render())
+    if not result.ok:
+        print("\nVerification FAILED — nothing written.")
+        _report_cost(client_key, llm)
+        return
+
+    dsl_path.write_text(new_text)
+    print(f"\nApplied {len(all_edits)} edit(s) in place: {dsl_path}")
+    _write_changes_md(dsl_path, all_edits, dsl_path, discarded=discarded)
+    _report_cost(client_key, llm)
+
+
+def _relevant_states_text(d, pack, max_chars: int = 6000) -> str:
+    """The states worth showing the model: the pitch/early-funnel ones where the
+    evidence says calls actually die, plus the objection handlers."""
+    wanted = ["start", "self_intro", "loan_intro", "loan_intro_persuade", "sms_send",
+              "handle_fee_query", "handle_security_concern", "handle_agent_query",
+              "handle_prior_attempt_failed", "handle_has_loan_unspecified"]
+    out = []
+    for name in wanted:
+        st = d.states.get(name)
+        if st:
+            out.append(st.body)
+    text = "\n\n".join(out)
+    return text[:max_chars]
+
+
+def _report_cost(client_key: str, llm) -> None:
+    stats = llm.call_count(client_key)
+    print(f"\nLLM usage: {stats['calls']} live call(s), {stats['cached']} cached, "
+          f"{stats['in_tokens']} in / {stats['out_tokens']} out tokens")
 
 
 def main() -> None:
@@ -178,8 +477,33 @@ def main() -> None:
     ap.add_argument("--apply", action="store_true", help="write in place (default: dry run)")
     ap.add_argument("--accept", default=None, help="comma-separated queue item numbers to accept")
     ap.add_argument("--reject", default=None, help="comma-separated queue item numbers to reject")
+    ap.add_argument("--auto", action="store_true",
+                    help="fully autonomous LLM run: decides and applies all three "
+                         "features with no human review")
     args = ap.parse_args()
-    run(args.dsl_path, args.client, args.budget, args.apply, args.accept, args.reject)
+    if args.auto:
+        from src import llm
+        try:
+            run_auto(args.dsl_path, args.client, args.budget)
+        except llm.LLMUnavailable as e:
+            # A missing key is a setup step, not a crash — show what to do, not a
+            # stack trace. Still exits non-zero so CI/scripts notice.
+            print(f"\n{'=' * 68}")
+            print("Cannot run --auto: no LLM access configured.")
+            print("=" * 68)
+            print(f"\n{e}\n")
+            print("To enable it:")
+            print("    export ANTHROPIC_API_KEY=sk-ant-...")
+            print(f"    python3 {Path(__file__).name} {args.dsl_path} "
+                  f"--client {args.client} --auto\n")
+            print("Everything except the three LLM judgment calls works without a "
+                  "key. To see the mechanical half (mining + audit + review queue),\n"
+                  "drop --auto:")
+            print(f"    python3 {Path(__file__).name} {args.dsl_path} "
+                  f"--client {args.client}\n")
+            raise SystemExit(2)
+    else:
+        run(args.dsl_path, args.client, args.budget, args.apply, args.accept, args.reject)
 
 
 if __name__ == "__main__":

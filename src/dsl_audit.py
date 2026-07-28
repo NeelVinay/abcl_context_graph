@@ -66,8 +66,31 @@ INTENT_ALIASES = {
         # Verified by reading 15 real samples ("बोलिए", "कर दो", "आगे बढ़कर") —
         # genuinely on-topic agreement/proceed phrases, no mixed signal found.
         "affirm": ["customer_agree"],
+        # Verified by reading 8 real samples — all "एक minute ma'am open कर रहा
+        # है" / "wait wait" / "मुझे दो minute दीजिए". Matches the intent's own
+        # description ("Brief pause, staying on the line") exactly. 195 turns.
+        "hold": ["customer_request_wait"],
     },
 }
+
+# Candidates examined and DELIBERATELY REJECTED. Recorded so nobody re-adds them
+# from name similarity — every one of these looked plausible until real samples
+# were read. The rule this whole table follows: a number that's wrong is worse
+# than no number, because it silently drives findings and mined anchors.
+#
+#   security_concern / is_bot_query <- customer_express_distrust
+#       42 turns, but a mixed bucket: only 17% are AI/bot questions, ~35% are
+#       genuine fraud worry ("यह कोई fraud तो नहीं है?"), and the rest is network
+#       trouble, CIBIL doubts and link failures. Too impure for either intent.
+#   already_applied <- customer_report_applied
+#       36 turns, all clean — but they mean "I just clicked Apply Now", i.e. form
+#       progress, NOT "I already have an application with you". Opposite meaning.
+#   wants_more_amount <- customer_react_to_final_offer / customer_ask_query
+#       Both mostly narrate what's on screen or ask payment questions; only ~2 in
+#       7 sampled turns actually ask for a higher amount.
+#   salaried / self_employed <- customer_state_employment_type
+#       One label covers BOTH, so it cannot map to either without inventing a
+#       split the classifier never made.
 
 
 @dataclass

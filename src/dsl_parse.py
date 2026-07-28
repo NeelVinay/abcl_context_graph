@@ -248,6 +248,17 @@ def parse(path) -> DSL:
     return dsl
 
 
+def containing_state(d: DSL, line_idx: int) -> str | None:
+    """Which state's body textually contains this line, or None (e.g. a line in
+    intents{}/global{}/guardrails, or between states). States don't nest inside
+    each other in this dialect, so a direct line_start/line_end lookup is exact —
+    no need to re-walk brace depth."""
+    for name, st in d.states.items():
+        if st.line_start <= line_idx <= st.line_end:
+            return name
+    return None
+
+
 if __name__ == "__main__":
     import sys
     d = parse(sys.argv[1])
