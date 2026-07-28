@@ -9,3 +9,10 @@
 # answers instead of calling the API, and the run would look like it worked.
 data/clients/*/llm_cache.json
 data/clients/*/llm_calls.jsonl
+
+# Per-run generated reports. Derived output, regenerated every run, and naming
+# them per-prompt means an unbounded set of files — the committed worked example
+# lives in data/clients/<client>/autorun/ instead.
+data/clients/*/CHANGES-*.md
+data/clients/*/review_queue-*.md
+data/clients/*/*.bak

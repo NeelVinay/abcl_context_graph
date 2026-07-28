@@ -1,4 +1,4 @@
-# What changed in final.raven
+# What changed in input.raven
 
 Every change below was derived from real call transcripts. Quotes are verbatim.
 
@@ -9,7 +9,7 @@ Every change below was derived from real call transcripts. Quotes are verbatim.
 | Recognition phrases | 3 | The agent now understands more of what callers actually say, so these turns route to the right handler instead of falling through to the generic default. |
 | Conversational delivery | 34 | A short acknowledgement particle real callers use, added as a lead-in. The wording of the line itself is unchanged — this only affects how scripted the agent sounds. |
 | New agent speech | 6 | A new line answering something callers repeatedly say. The agent had no response for this before. |
-| _Rejected by safety checks_ | 33 | Proposed but blocked — see the end of this file |
+| _Rejected by safety checks_ | 31 | Proposed but blocked — see the end of this file |
 
 ---
 
@@ -17,31 +17,32 @@ Every change below was derived from real call transcripts. Quotes are verbatim.
 
 _The agent now understands more of what callers actually say, so these turns route to the right handler instead of falling through to the generic default._
 
-### 1. `affirm` now also recognises: **तैयार**
+### 1. `affirm` now also recognises: **ज़रूर**, **तैयार**
 
-**Why:** affirm: "तैयार" (2 calls, 1.36x)
+**Why:** affirm: "ज़रूर" (4 calls, 1.36x), "तैयार" (2 calls, 1.36x)
 
 **Heard on real calls:**
-> हां ठीक है बताओ कैसे करना है? हां हां तैयार हूं एकदम.
+> शुक्रिया, मेरा नाम ठीक से लेने के लिए. जी हां, आप मुझसे थोड़ी देर के लिए वार्तालाप कर सकते हैं. बताइ
+> बात कर सकते हैं. हां ज़रूर कर सकते हैं.
 > बोलो. हां हां शुरू ticket का. हां. हमको लोगों के ज़रूरी आए तब बोलता आए तो ले लेगा. हां भेज दियो हमें
 
-### 2. `hold` now also recognises: **wait**, **रुकिए**, **second**, **stay**, **रुको**, **waiting**, **रुक**
+### 2. `hold` now also recognises: **wait**, **line**, **रुकिए**, **second**, **stay**, **रुको**, **waiting**, **जाइए**, **रुक**
 
-**Why:** hold: "wait" (24 calls, 2.61x), "रुकिए" (11 calls, 2.69x), "second" (9 calls, 2.20x), "stay" (5 calls, 2.10x), "रुको" (4 calls, 1.96x), "waiting" (2 calls, 1.96x), "रुक" (2 calls, 1.96x)
+**Why:** hold: "wait" (24 calls, 2.61x), "line" (14 calls, 1.52x), "रुकिए" (11 calls, 2.69x), "second" (9 calls, 2.20x), "stay" (5 calls, 2.10x), "रुको" (4 calls, 1.96x), "waiting" (2 calls, 1.96x), "जाइए" (2 calls, 2.94x), "रुक" (2 calls, 1.96x)
 
 **Heard on real calls:**
 > हां हां ma'am wait. Ma'am open अभी मतलब open हो रहा है. Wait wait. hello. हां ma'am एक minute एक min
 > Sir waiting please आ रहा है please waiting.
 > Something wait weight patience.
 
-### 3. `self_employed` now also recognises: **employee**, **उद्यम**
+### 3. `self_employed` now also recognises: **उद्यम**
 
-**Why:** self_employed: "employee" (4 calls, 4.40x), "उद्यम" (4 calls, 1.76x)
+**Why:** self_employed: "उद्यम" (4 calls, 1.76x)
 
 **Heard on real calls:**
-> Self employee.
-> Self employee.
-> जी. हमारा self employee.
+> हां. Self employed है madam. उद्यम में उद्यम लिखना पड़ेगा या direct number डाल दूं?
+> Self employed. Proceed, proceed पता करें. Self employed. हां किधर उद्यम पुछ रहा है उद्यम.
+> Self employed. उद्यम है उद्यम.
 
 ---
 
@@ -157,7 +158,7 @@ _A new line answering something callers repeatedly say. The agent had no respons
 
 ---
 
-# Rejected by safety checks  (33)
+# Rejected by safety checks  (31)
 
 _These were proposed and then blocked automatically. Nothing here reached the prompt._
 
@@ -170,28 +171,26 @@ _These were proposed and then blocked automatically. Nothing here reached the pr
 - **anchor bucket for 'otp_not_received'** — Polarity inverted: OTP received, not missing
 - **anchor bucket for 'identity_deny'** — Mixed bag; turns don't say wrong number/not the lead
 - **anchor bucket for 'has_loan_unspecified'** — Turns don't state already having an existing loan
-- **anchor 'बोलिए' -> affirm** — Generic filler meaning 'go on/tell me', low lift
-- **anchor 'ज़रूर' -> affirm** — Weak evidence, likely substring match of ज़रूरी/ज़रूरत
-- **anchor 'welcome' -> affirm** — Means 'you're welcome', not an affirmation
-- **anchor 'चलिए' -> affirm** — Weak evidence, ambiguous discourse filler word
-- **anchor 'line' -> hold** — Weak lift, ambiguous with 'on the line' presence
-- **anchor 'just' -> hold** — Generic filler word, high cross-intent misroute risk
-- **anchor 'बने' -> hold** — Fragment of fixed IVR script, generic verb form
-- **anchor 'कृपया' -> hold** — Generic 'please', appears across all intents
-- **anchor 'रखा' -> hold** — Generic verb 'kept', IVR-script co-occurrence artifact
-- **anchor 'रहें' -> hold** — Generic verb ending, common outside hold context
-- **anchor 'close' -> hold** — Generic, risks misrouting to tech/app-issue speech
-- **anchor 'put' -> hold** — Generic English verb, IVR-script artifact
-- **anchor 'speaking' -> hold** — Generic word, IVR-script co-occurrence artifact
-- **anchor 'व्यक्ति' -> hold** — Generic noun 'person', IVR-script artifact
-- **anchor 'back' -> hold** — Generic, 'back button' risks tech_issue misroute
-- **anchor 'hit' -> hold** — Generic, 'hit button' risks tech_issue misroute
-- **anchor 'उन्होंने' -> hold** — Generic pronoun, no intent-specific meaning
-- **anchor 'almost' -> hold** — Generic word, IVR-script co-occurrence artifact
-- **anchor 'जाइए' -> hold** — Standalone जाइए means 'go', opposite of hold
-- **anchor 'private' -> self_employed** — Ambiguous: 'private job' actually means salaried
-- **anchor 'दूं' -> self_employed** — Generic verb ending, co-occurrence artifact
-- **anchor 'open' -> tech_issue** — Too generic, used across countless unrelated contexts
+- **anchor 'बोलिए' -> affirm** — generic phone-answering filler, not a real confirmation
+- **anchor 'welcome' -> affirm** — politeness reply, not confirming pending question
+- **anchor 'चलिए' -> affirm** — generic transition filler, ambiguous, weak examples
+- **anchor 'just' -> hold** — generic filler word, too ambiguous alone
+- **anchor 'बने' -> hold** — fragment of boilerplate sentence, too generic alone
+- **anchor 'कृपया' -> hold** — generic please, used across nearly all intents
+- **anchor 'रखा' -> hold** — generic verb placed, ambiguous co-occurrence artifact
+- **anchor 'रहें' -> hold** — generic verb form, too common, boilerplate fragment
+- **anchor 'close' -> hold** — generic, ambiguous with loan/app close meanings
+- **anchor 'put' -> hold** — generic English verb, high misrouting risk
+- **anchor 'speaking' -> hold** — generic word, boilerplate fragment, not hold-specific
+- **anchor 'व्यक्ति' -> hold** — generic noun person, no hold-specific meaning
+- **anchor 'back' -> hold** — too generic, overlaps app navigation and callback
+- **anchor 'hit' -> hold** — generic verb, ambiguous across many contexts
+- **anchor 'उन्होंने' -> hold** — generic pronoun, no semantic tie to hold
+- **anchor 'almost' -> hold** — generic, ambiguous with done/affirm meaning
+- **anchor 'employee' -> self_employed** — alone signals salaried, misroutes
+- **anchor 'private' -> self_employed** — private job usually means salaried, ambiguous
+- **anchor 'दूं' -> self_employed** — generic verb, no intent signal
+- **anchor 'open' -> tech_issue** — too generic, overlaps link_not_opened
 - **proposal for 'sms_send'** — sms_send() declares in its own prose that it must not add speech (matched 'Speak ONLY')
 - **proposal for 'sms_send'** — sms_send() declares in its own prose that it must not add speech (matched 'Speak ONLY')
 

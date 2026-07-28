@@ -399,7 +399,12 @@ def apply_edits(text: str, edits: list) -> str:
             raise ConflictingEditsError(
                 f"edit {e.ref!r} targets line {e.anchor_line}, outside the file "
                 f"(0..{len(lines) - 1}) — refusing to guess where it belongs")
-    for e in sorted(edits, key=lambda e: -e.anchor_line):
+    # Descending line order keeps earlier indices valid. But two insert_after
+    # edits on the SAME line would then land reversed relative to the order they
+    # were generated (verified: FIRST ended up below SECOND), so within one line
+    # the original sequence is preserved by inserting them back-to-front.
+    ordered = sorted(enumerate(edits), key=lambda p: (-p[1].anchor_line, -p[0]))
+    for _, e in ordered:
         if e.mode == "replace_line":
             lines[e.anchor_line] = e.new_text
         elif e.mode == "insert_after":

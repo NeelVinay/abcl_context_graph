@@ -58,6 +58,8 @@ def run(dsl_path: str, client_key: str, budget: int | None, apply_to_disk: bool,
         by_sev[f.severity] = by_sev.get(f.severity, 0) + 1
     sev_str = "  ".join(f"{n} {s}" for s, n in by_sev.items()) or "none"
     print(f"Audit: {len(findings)} finding(s) — {sev_str}")
+    if _warn_client_mismatch(dsl_path, client_key, calls):
+        return
     print()
 
     # ---- fully-mechanical auto fixes: no human judgment needed at all ----
@@ -132,7 +134,8 @@ def run(dsl_path: str, client_key: str, budget: int | None, apply_to_disk: bool,
     # repo and be opened in an editor, not just scroll past in a terminal. Always
     # reflects the current file + data state, same folder as the prompt and
     # anchor_decisions.json.
-    queue_md_path = dsl_path.parent / "review_queue.md"
+    queue_md_path = (_out_dir(client_key, dsl_path)
+                     / f"review_queue-{dsl_path.stem}.md")
     queue_md_path.write_text(dsl_mine.render_queue_markdown(remaining, client_key, dsl_path.name))
     print(f"\nWrote {queue_md_path}")
 
@@ -157,7 +160,35 @@ def run(dsl_path: str, client_key: str, budget: int | None, apply_to_disk: bool,
         out_path.write_text(new_text)
         print(f"\nWrote {out_path} (dry run — pass --apply to write in place)")
 
-    _write_changes_md(dsl_path, all_edits, out_path)
+    _write_changes_md(dsl_path, all_edits, _out_dir(client_key, dsl_path))
+
+
+def _out_dir(client_key: str, dsl_path: Path) -> Path:
+    """Where side outputs (review_queue.md, CHANGES.md) go.
+
+    The client's own data directory — NOT dsl_path.parent. Deriving it from the
+    input meant pointing the tool at any file scattered reports next to it, and
+    in one real incident overwrote a pristine reference prompt kept beside them.
+    Falls back to the input's directory only if the client dir doesn't exist."""
+    import config
+    d = config.CLIENTS_DIR / client_key
+    return d if d.is_dir() else dsl_path.parent
+
+
+def _warn_client_mismatch(dsl_path: Path, client_key: str, calls: list) -> bool:
+    """True if the caller should stop. A wrong --client silently mines another
+    client's transcripts into this prompt (verified: 115 JustDial calls, 83
+    candidates, no warning). Shared by both entry points."""
+    if not calls:
+        print(f"\n  !! No calls loaded for client {client_key!r} — nothing to mine. "
+              f"Check the --client key.")
+        return True
+    parts = {p.lower() for p in dsl_path.resolve().parts}
+    if "clients" in parts and client_key.lower() not in parts:
+        print(f"\n  !! WARNING: this prompt sits under a different client directory "
+              f"than --client {client_key!r}. That client's transcripts will be mined "
+              f"into it. Ctrl-C now if that is not intended.")
+    return False
 
 
 def _edit_headline(e) -> str:
@@ -197,7 +228,7 @@ _KIND_INFO = {
 }
 
 
-def _write_changes_md(dsl_path: Path, edits: list, out_path: Path,
+def _write_changes_md(dsl_path: Path, edits: list, out_dir: Path,
                       discarded: list | None = None) -> None:
     from collections import defaultdict
     by_kind = defaultdict(list)
@@ -300,7 +331,11 @@ def _write_changes_md(dsl_path: Path, edits: list, out_path: Path,
         for what, problems in discarded:
             lines.append(f"- **{what}** — {'; '.join(problems)}")
         lines.append("")
-    changes_path = out_path.parent / "CHANGES.md"
+    # Named per prompt, not a single shared CHANGES.md. Routing side outputs
+    # to the client dir (correct — see _out_dir) otherwise means any run,
+    # including a throwaway test on a scratch copy, overwrites the record of
+    # the last real run for that client.
+    changes_path = out_dir / f"CHANGES-{dsl_path.stem}.md"
     lines.append("")
     changes_path.write_text("\n".join(lines))
     print(f"Wrote {changes_path}")
@@ -323,19 +358,8 @@ def run_auto(dsl_path: str, client_key: str, budget: int | None) -> None:
     print(f"Client: {client_key}")
     print(f"Prompt: {dsl_path}  ({len(d.intents)} intents, {len(d.states)} states)")
     print(f"Corpus: {len(calls)} calls")
-    # A wrong --client silently mines ANOTHER client's transcripts into this
-    # prompt (verified: `input.raven --client justdial` loaded 115 JustDial calls
-    # and produced 83 candidates). The path is only a hint, but a mismatch is
-    # nearly always a typo, so say so loudly rather than emit plausible junk.
-    parts = {p.lower() for p in dsl_path.resolve().parts}
-    if not calls:
-        print(f"\n  !! No calls loaded for client {client_key!r} — nothing to mine. "
-              f"Check the --client key.")
+    if _warn_client_mismatch(dsl_path, client_key, calls):
         return
-    if "clients" in parts and client_key.lower() not in parts:
-        print(f"\n  !! WARNING: this prompt sits under a different client directory "
-              f"than --client {client_key!r}. That client's transcripts will be mined "
-              f"into it. Ctrl-C now if that is not intended.")
     print()
 
     all_edits = []
@@ -458,11 +482,21 @@ def run_auto(dsl_path: str, client_key: str, budget: int | None) -> None:
     # ---- apply ----
     print()
     if not all_edits:
-        print("No changes to apply.")
+        # Convergence, stated explicitly. Each run adds speech and there is no
+        # ceiling other than --budget, so "no changes" is the signal that the
+        # prompt has absorbed what this corpus can offer — worth saying plainly
+        # rather than leaving the operator to infer it from a silent run.
+        print("No changes to apply — this prompt has converged against the current "
+              f"{len(calls)} transcripts. Re-running will not add more until new "
+              f"calls arrive.")
         _report_cost(client_key, llm)
         return
 
-    backup = dsl_path.with_suffix(dsl_path.suffix + ".bak")
+    # Timestamped: a fixed ".bak" meant a second run overwrote the backup
+    # with the first run's OUTPUT, losing the pristine original entirely.
+    import datetime as _dt
+    stamp = _dt.datetime.now().strftime("%Y%m%d-%H%M%S")
+    backup = dsl_path.with_suffix(dsl_path.suffix + f".{stamp}.bak")
     backup.write_text(d.text)
     print(f"Backup: {backup}")
 
@@ -475,7 +509,8 @@ def run_auto(dsl_path: str, client_key: str, budget: int | None) -> None:
 
     dsl_path.write_text(new_text)
     print(f"\nApplied {len(all_edits)} edit(s) in place: {dsl_path}")
-    _write_changes_md(dsl_path, all_edits, dsl_path, discarded=discarded)
+    _write_changes_md(dsl_path, all_edits, _out_dir(client_key, dsl_path),
+                      discarded=discarded)
     _report_cost(client_key, llm)
 
 

@@ -4,8 +4,7 @@ The mechanical miners (dsl_mine) find CANDIDATES cheaply and safely. This module
 is where the judgment happens — the decisions that previously went to a human
 review queue. Three call sites, batched:
 
-  decide_anchors()    feature 1 — keep/drop/reassign each mined intent word, and
-                       propose additional phrasings
+  decide_anchors()    feature 1 — keep/drop/reassign each mined intent word
   decide_openers()    feature 2 — which natural particle fits which say() line,
                        and where (including "none")
   propose_improvements()  feature 3 — open analytical brief over the evidence
@@ -98,9 +97,13 @@ def _batched(seq, n):
 # --------------------------------------------------------------- feature 1 --
 def decide_anchors(gaps: list, dsl, client_key: str, batch_size: int = 25) -> dict:
     """{decision_key: {"verdict": keep|drop|reassign, "target": intent|None,
-    "reason": str}} plus a "_suggestions" key with LLM-originated phrasings."""
+    "reason": str}}
+
+    Deliberately does NOT ask for extra invented phrasings. An earlier version did,
+    collected them into a "_suggestions" key, and nothing ever read it — paying
+    output tokens every run for a feature that didn't exist. If evidence-free
+    phrasings are wanted later, they need their own surfaced, reviewable path."""
     results = {}
-    suggestions = []
     for batch in _batched(gaps, batch_size):
         items = []
         for g in batch:
@@ -131,9 +134,6 @@ Be strict. A wrong anchor causes real misrouting on live calls — e.g. adding a
 generic negation to an error-handling intent makes the bot give error instructions
 to someone who merely said "no".
 
-You may also suggest additional natural phrasings customers plausibly say for any
-of these intents. Mark them separately; they are not evidence-backed.
-
 CANDIDATES:
 {json.dumps(items, ensure_ascii=False, indent=1)}
 
@@ -141,8 +141,7 @@ EXISTING INTENTS you may reassign to: {', '.join(sorted(dsl.intents.keys()))}
 
 Respond with ONLY this JSON:
 {{"decisions": [{{"key": "...", "verdict": "keep|drop|reassign",
-  "target": "intent_name or null", "reason": "<=10 words"}}],
- "suggestions": [{{"intent": "...", "phrase": "...", "why": "<=10 words"}}]}}"""
+  "target": "intent_name or null", "reason": "<=10 words"}}]}}"""
 
         try:
             out = llm.ask_json(prompt, client_key, purpose="decide_anchors")
@@ -151,8 +150,6 @@ Respond with ONLY this JSON:
         for dcn in llm.as_list(out, "decisions"):
             if dcn.get("key"):
                 results[dcn["key"]] = dcn
-        suggestions.extend(llm.as_list(out, "suggestions"))
-    results["_suggestions"] = suggestions
     return results
 
 

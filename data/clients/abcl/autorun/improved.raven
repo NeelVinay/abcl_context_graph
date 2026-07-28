@@ -71,7 +71,7 @@ agent priya {
       affirm {
         | Positive answer to the exact pending question: agrees to start/proceed, or confirms the asked step is done/filled/opened/verified.
         | Does NOT fire at the greeting to confirm identity -> identity_confirm.
-        | Anchors: "हाँ", "जी", "ok", "ठीक है", "हो गया", "हो गया verify", "भर दिया", "खुल गया", "go ahead", "done", "तैयार"
+        | Anchors: "हाँ", "जी", "ok", "ठीक है", "हो गया", "हो गया verify", "भर दिया", "खुल गया", "go ahead", "done", "ज़रूर", "तैयार"
       }
       disagree {
         | Declines / not now / not interested (the persuade states decide first vs final refusal).
@@ -103,7 +103,7 @@ agent priya {
       }
       self_employed {
         | Employment type self-employed.
-        | Anchors: "self employed", "business", "freelance", "apna business", "employee", "उद्यम"
+        | Anchors: "self employed", "business", "freelance", "apna business", "उद्यम"
       }
       sms_not_received {
         | SMS has not arrived.
@@ -133,7 +133,7 @@ agent priya {
       }
       hold {
         | Brief pause, staying on the line.
-        | Anchors: "एक मिनट", "ruko", "hold on", "ek minute", "wait", "रुकिए", "second", "stay", "रुको", "waiting", "रुक"
+        | Anchors: "एक मिनट", "ruko", "hold on", "ek minute", "wait", "line", "रुकिए", "second", "stay", "रुको", "waiting", "जाइए", "रुक"
       }
       wants_to_go_alone {
         | Will complete the form themselves; wants to end assistance.
@@ -288,8 +288,8 @@ $$entry
 
       loan_intro_persuade() {
         say("जी, समझ सकती हूँ कि अभी interested नहीं हैं। बस बताना चाहूँगी — यह loan अक्सर daily ज़रूरतों या urgent expenses में काम आ जाता है। चाहें तो मैं अभी application करवा दूँ। क्या हम proceed करें?");
-        say("अभी सिर्फ़ eligibility check हो रहा है, कोई final decision अभी नहीं लेना — पूरी जानकारी देखने के बाद ही आगे बढ़ें।");
         say("अगर rate को लेकर सोच रहे हैं — यह पूरी तरह personalized offer है, actual details उसी page पर दिखेंगे, अभी कोई final commitment नहीं करना।");
+        say("अभी सिर्फ़ eligibility check हो रहा है, कोई final decision अभी नहीं लेना — पूरी जानकारी देखने के बाद ही आगे बढ़ें।");
         on intent("affirm")   -> sms_send();
         on intent("default") {
           say("हां, कोई बात नहीं, अपना ख़याल रखियेगा। Goodbye.<EOC/>");
