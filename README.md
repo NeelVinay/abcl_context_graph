@@ -314,6 +314,25 @@ free. Runtime is ~2-4 minutes, almost entirely API latency.
 A worked example — the original colleague prompt, the improved output, and the
 changelog — is committed at `data/clients/abcl/autorun/`.
 
+### Seeing exactly what was sent to the LLM
+
+The prompt *templates* are Python f-strings in `src/dsl_auto.py`: `_DSL_PRIMER`
+(the .raven grammar), `_STYLE_RULES` (the client's language and compliance rules),
+and one per call site — `decide_anchors`, `decide_openers`, `validate_buckets`,
+`propose_improvements`.
+
+The *fully rendered* prompts, with the real transcript data spliced in and the
+model's response appended, are written on every run to:
+
+```
+data/clients/<client>/prompts_sent/<purpose>-<hash>.txt
+```
+
+Open those to see verbatim what left the machine. They are gitignored, because
+they contain real customer speech and call IDs — the same reason
+`data/clients/*/transcripts/` is. `llm_calls.jsonl` records the hash, purpose and
+token counts for each call; `llm_cache.json` is keyed on the prompt hash.
+
 ### The LLM decides, the code enforces
 
 Nothing the model returns is trusted. Every generated line passes mechanical checks

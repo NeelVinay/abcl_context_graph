@@ -16,3 +16,8 @@ data/clients/*/llm_calls.jsonl
 data/clients/*/CHANGES-*.md
 data/clients/*/review_queue-*.md
 data/clients/*/*.bak
+
+# Fully-rendered prompts sent to the API, with the responses. Written for
+# auditability (they carry ~97 verbatim customer turns and their call IDs), and
+# gitignored for exactly that reason — same treatment as transcripts/.
+data/clients/*/prompts_sent/

@@ -99,6 +99,31 @@ def _save_cache(client_key: str, cache: dict) -> None:
         raise
 
 
+def _prompts_dir(client_key: str) -> Path:
+    return config.CLIENTS_DIR / client_key / "prompts_sent"
+
+
+def _save_prompt(client_key: str, purpose: str, h: str, prompt: str,
+                 response: str | None = None) -> Path:
+    """Write the fully-rendered prompt (and the response) to disk.
+
+    Only the sha1 was recorded before, which made the single most important thing
+    about this pipeline unauditable: these prompts carry ~97 verbatim customer
+    turns with their call IDs, and there was no way to review what had actually
+    been sent. Written on every call, cached or live.
+
+    Contains real customer speech, so it is gitignored — same treatment as
+    data/clients/*/transcripts/."""
+    p = _prompts_dir(client_key)
+    p.mkdir(parents=True, exist_ok=True)
+    f = p / f"{purpose}-{h[:10]}.txt"
+    body = prompt
+    if response is not None:
+        body += ("\n\n" + "=" * 70 + "\nRESPONSE\n" + "=" * 70 + "\n" + response)
+    f.write_text(body)
+    return f
+
+
 def _log(client_key: str, record: dict) -> None:
     p = _log_path(client_key)
     p.parent.mkdir(parents=True, exist_ok=True)
@@ -166,6 +191,8 @@ def ask_json(prompt: str, client_key: str, purpose: str,
         # half-written by a crash can hold the wrong type. Treat it as a miss
         # rather than handing a caller something it will crash on.
         if isinstance(cached, expect):
+            _save_prompt(client_key, purpose, h, prompt,
+                         json.dumps(cached, ensure_ascii=False, indent=1))
             _log(client_key, {"ts": time.time(), "purpose": purpose, "hash": h,
                               "cached": True})
             return cached
@@ -187,6 +214,7 @@ def ask_json(prompt: str, client_key: str, purpose: str,
                     f"key is correct, active, and has access to {MODEL}.") from e
             raise
         text = "".join(b.text for b in resp.content if getattr(b, "type", "") == "text")
+        _save_prompt(client_key, purpose, h, attempt_prompt, text)
         _log(client_key, {
             "ts": time.time(), "purpose": purpose, "hash": h, "cached": False,
             "attempt": attempt, "model": MODEL,
