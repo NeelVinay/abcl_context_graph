@@ -20,12 +20,28 @@ cd "$(dirname "$0")"
 BOLD=$'\033[1m'; GREEN=$'\033[1;32m'; RED=$'\033[1;31m'; DIM=$'\033[2m'; OFF=$'\033[0m'
 die() { printf '\n%s✗ %s%s\n\n' "$RED" "$1" "$OFF" >&2; exit 1; }
 
-[ $# -eq 1 ] || die "usage: ./reset <client-key>   e.g. ./reset abcl"
+FORCE=0
+[ "${2:-}" = "--force" ] && FORCE=1
+[ $# -ge 1 ] || die "usage: ./reset <client-key> [--force]   e.g. ./reset abcl"
 CLIENT="$1"
 CDIR="data/clients/$CLIENT"
 [ -d "$CDIR" ] || die "no such client: $CDIR does not exist"
 
 [ -d .venv ] && . .venv/bin/activate
+
+# A completed run within the last hour is very likely someone's live demo
+# output, not stale debris — this exact mistake happened once already: a
+# reset run "to get a clean baseline" silently archived a run someone had
+# just finished. Archiving is reversible, but "did you mean to do that" is
+# cheap to ask and expensive to skip.
+if [ -f OUTPUT/2-IMPROVED_PROMPT.raven ] && [ "$FORCE" -ne 1 ]; then
+  AGE_MIN=$(( ($(date +%s) - $(stat -f %m OUTPUT/2-IMPROVED_PROMPT.raven)) / 60 ))
+  if [ "$AGE_MIN" -lt 60 ]; then
+    die "OUTPUT/ has a completed run from ${AGE_MIN} minute(s) ago — this looks
+  live, not stale. If you're sure, re-run with --force:
+      ./reset $CLIENT --force"
+  fi
+fi
 
 STAMP=$(date +%Y%m%d-%H%M%S)
 ARCHIVE="data/.reset-archive/${CLIENT}-${STAMP}"
