@@ -1,0 +1,178 @@
+{
+  "call_id": "9c439be1-d5ac-40a6-895b-432192152ede-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "करूंगा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं बात करूंगा? बात करूंगा अभी तो मेरे यहां से तो तुम भी कर सकते हो.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "बात कर रही",
+        "से बात",
+        "बोल",
+        "आदित्य",
+        "बिरला"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ जी, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं Gajendra Singh जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello? हां madam बात हो रही है.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "हज़ार",
+        "रुपए",
+        "सत्तर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैंने इसमें से ना सत्तर हज़ार रुपए",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "amount",
+        "minute",
+        "account",
+        "hold",
+        "credit"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "था. मेरे account में अभी तक balance नहीं आया है. एक minute hold रखिएगा. यह मेरे में amount नहीं आया अभी credit नहीं हुआ है.",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "इंतज़ार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ जी, मैं इंतज़ार कर रही हूँ...",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "amount",
+        "account",
+        "credit"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अभी amount credit नहीं हुआ है मेरे account में.",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "समझ",
+        "continue"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मैं समझ सकती हूँ। क्या हम continue करें?",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "call",
+        "भेज",
+        "amount"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "यह बताइए madam मेरे पास ना तीन बार call आ गई. वह screenshot बनाकर मैं भेज देता हूं. तक amount क्यों नहीं आ रहा है?",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "loan",
+        "मदद",
+        "शुरू",
+        "application",
+        "process"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, यह loan amount आपकी eligibility और documents के आधार पर decide होता है — मैं अभी आपकी application process में मदद कर सकती हूँ। क्या हम शुरू करें?",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "रुको"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं रहेंगे तो अब रुको.",
+      "entities": []
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "timestamp": "2026-07-06T09:21:29",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:21:29",
+    "speaker": "assistant",
+    "content": "<CHD/>",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:21:32",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:21:32",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं पंकज कुमार यादव जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:21:43",
+    "speaker": "user",
+    "content": "हां जी ma'am जी पंकज कुमार से बात कर रही हूं आप बताओ?",
+    "feedback": null,
+    "agent_id": null
+  }
+]

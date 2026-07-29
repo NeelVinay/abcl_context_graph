@@ -1,0 +1,51 @@
+[
+  {
+    "timestamp": "2026-07-06T09:27:14",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:27:15",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं बृजेश कुमार जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:27:26",
+    "speaker": "user",
+    "content": "नहीं उनसे तो शाम को बात हो पाएगी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:27:26",
+    "speaker": "assistant",
+    "content": "ठीक है, क्या मैं बाद में कॉल कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:27:33",
+    "speaker": "user",
+    "content": "हां शाम को साढ़े सात बजे हो है बात.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:27:33",
+    "speaker": "assistant",
+    "content": "आपका callback शाम को साढ़े सात बजे के लिए confirm कर दिया गया है। मैं अभी इसे schedule कर देती हूँ। कृपया थोड़ा इंतज़ार करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T09:27:42",
+    "speaker": "assistant",
+    "content": "आपका callback समय हमारे available समय से थोड़ा बाहर है। मैंने इसे अगले उपलब्ध समय, यानी कल सुबह 10 बजे के लिए schedule कर दिया है। हमारी टीम जल्द ही आपसे संपर्क करेगी।",
+    "feedback": null,
+    "agent_id": null
+  }
+]

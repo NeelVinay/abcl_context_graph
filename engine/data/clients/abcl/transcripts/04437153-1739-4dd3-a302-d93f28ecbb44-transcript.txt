@@ -1,0 +1,170 @@
+[
+  {
+    "timestamp": "2026-07-06T07:33:18",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:33:18",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं शैख जाफरुद्दीन जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:33:31",
+    "speaker": "user",
+    "content": "बोलिए madam बोलिए madam मैं एक दो मैं भी कभी busy रहता हूं ऐसे please phone मत किया करो वहां पर.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:33:38",
+    "speaker": "user",
+    "content": "क्योंकि कुछ गलत होगा तो मैं कर लेता हूं. अभी कल से मुझे लगातार phone आया कल तीन चार बार आया मैं गाड़ी driving में था.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:33:38",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ। यह Aditya Birla Capital की तरफ से आपके लिए एक pre-approved loan offer है जो आपकी जरूरत में काम आ सकता है। क्या हम शुरू करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:33:51",
+    "speaker": "user",
+    "content": "उसको interest कितना पड़ रहा है उसका?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:33:51",
+    "speaker": "assistant",
+    "content": "Interest rate ten point nine nine percent से शुरू होती है और आपके final offer पर depend करती है। जी, आपको आदित्य बिरला कैपिटल की",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:34:13",
+    "speaker": "user",
+    "content": "Interest Correct madam वह बात correct है. लेकिन मैं interest पूरा जानता हूं आ रहा है कितना है check करके मुझे बता सकते हैं मेरी detail देखकर तो पूरा मालूम पड़ा होगा ना offer के बारे में भी. Detail देखकर थे offer का मालूम पड़ा होगा ना?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:34:13",
+    "speaker": "assistant",
+    "content": "जी, आपकी profile के हिसाब से final offer page पर आपको पूरा loan amount और interest rate पता चल जाएगा। अभी मैं आपको application process में guide कर रही हूँ ताकि आप अपना offer देख सकें। क्या हम शुरू करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:34:29",
+    "speaker": "user",
+    "content": "Hello? हां कर दो शुरू कर दो.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:34:30",
+    "speaker": "user",
+    "content": "देख लेता हूं मैं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:34:30",
+    "speaker": "assistant",
+    "content": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है 10 लाख रुपये तक का — मैं अभी इस call पर आपको इस loan को apply करने में मदद कर सकती हूँ। क्या हम शुरू करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:34:44",
+    "speaker": "user",
+    "content": "Ok.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:34:46",
+    "speaker": "user",
+    "content": "ठीक है कर दो.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:34:46",
+    "speaker": "assistant",
+    "content": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:34:58",
+    "speaker": "assistant",
+    "content": "अब आप SMS में जो link है उसे click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:35:10",
+    "speaker": "user",
+    "content": "ठीक है मतलब अभी इतना तो समय नहीं है madam मुझे अभी तो मैं कहीं busy में हूं अभी मैं बाद में फिर करता हूं मैं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:35:14",
+    "speaker": "user",
+    "content": "आप link भेज दो मैं कर लूंगा एक automatic कर देता",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:35:18",
+    "speaker": "user",
+    "content": "हूं. Link भेज दो खाली. Link send कर दो आप.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:35:18",
+    "speaker": "assistant",
+    "content": "मैं अभी आपको SMS भेज चुकी हूँ जिसमें link है। आप जब भी free हों, उस link पर click करके अपना process complete कर सकते हैं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:35:29",
+    "speaker": "user",
+    "content": "Ok ok ok ok ok",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:35:30",
+    "speaker": "user",
+    "content": "ok madam.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:35:32",
+    "speaker": "user",
+    "content": "Ok. Thank you.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:35:32",
+    "speaker": "assistant",
+    "content": "Thank you for your",
+    "feedback": null,
+    "agent_id": null
+  }
+]

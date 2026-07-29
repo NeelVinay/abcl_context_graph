@@ -1,0 +1,121 @@
+[
+  {
+    "timestamp": "2026-07-06T08:22:34",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:22:35",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं सिद्धिक पाशा जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:22:44",
+    "speaker": "user",
+    "content": "हां जी बोलिए जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:22:44",
+    "speaker": "assistant",
+    "content": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है पचास हज़ार रुपये का — मैं अभी इस call पर आपको इस loan को apply करने में मदद कर सकती हूँ। क्या हम शुरू करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:23:03",
+    "speaker": "user",
+    "content": "अभी लेकर मैं बीस पच्चीस ही नहीं रहा ना मतलब fifty four thousand",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:23:03",
+    "speaker": "assistant",
+    "content": "जी हाँ, आपको पचास हज़ार रुपये का loan मिल सकता है —",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:23:08",
+    "speaker": "user",
+    "content": "four Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:23:08",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं सिद्धिक पाशा जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:23:18",
+    "speaker": "user",
+    "content": "हां madam बात कर रहे हैं बोलिए.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:23:18",
+    "speaker": "assistant",
+    "content": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है पचास हज़ार रुपये का — मैं अभी इस call पर आपको इस loan को apply करने में मदद कर सकती हूँ। क्या हम शुरू करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:23:39",
+    "speaker": "user",
+    "content": "मतलब अभी मैं कुछ भी नहीं हुआ madam एक और loan लिया था मैं अभी तक बिना",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:23:39",
+    "speaker": "assistant",
+    "content": "जी, आपको और amount का loan मिल सकता है — एक बार आप process complete करेंगे तो आपको आपकी profile के हिसाब से loan offer दिख जाएगा, आप उसमें से choose कर सकते हैं। क्या हम आगे बढ़ें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:23:52",
+    "speaker": "user",
+    "content": "मेरा मनसू है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:23:55",
+    "speaker": "user",
+    "content": "अभी मैं drive कर रहा हूं madam मैं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:23:55",
+    "speaker": "assistant",
+    "content": "हाँ जी, मैं इंतज़ार कर रही हूँ...",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:24:02",
+    "speaker": "user",
+    "content": "मैं drive कर रहा हूं madam अभी मैं customer के साथ drive कर रहा हूं मैं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:24:02",
+    "speaker": "assistant",
+    "content": "हाँ जी, मैं इंतज़ार कर रही हूँ...",
+    "feedback": null,
+    "agent_id": null
+  }
+]

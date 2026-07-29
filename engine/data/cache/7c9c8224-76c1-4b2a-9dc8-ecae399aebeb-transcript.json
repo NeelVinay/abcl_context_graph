@@ -1,0 +1,281 @@
+{
+  "call_id": "7c9c8224-76c1-4b2a-9dc8-ecae399aebeb-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं report है.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "बात कर रही",
+        "से बात",
+        "बोल",
+        "आदित्य",
+        "बिरला"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "क्या मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं <<devanagari_name>> जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "get",
+        "english",
+        "speak"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Can't get you, can you speak in english?",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello",
+        "capital",
+        "aditya",
+        "birla",
+        "name"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello, I am Priya from Aditya Birla Capital. May I speak with <<devanagari_name>>?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_unclear",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "get"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello. Can I get you?",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello",
+        "name",
+        "devanagari"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello, <<devanagari_name>>.",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "tell"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Yeah tell me?",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello,",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello",
+        "tell"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आया ma'am? Tell me. Hello.",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "pre-approved",
+        "loan offer",
+        "loan",
+        "offer",
+        "approved"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello, I am Priya from Aditya Birla Capital. You have an exciting pre-approved loan offer. Shall we begin the application process?",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "loan",
+        "application",
+        "get",
+        "how"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello. How did get my loan application?",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "pre-approved",
+        "loan",
+        "offer",
+        "approved",
+        "pre"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "This is a pre-approved offer from Aditya Birla Capital based on your eligibility. I can help you apply for the loan now. Shall we continue?",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "loan",
+        "much",
+        "how",
+        "preapproved"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Pardon? How much loan has preapproved?",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "pre-approved",
+        "loan offer",
+        "loan",
+        "offer",
+        "approved"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "You have an exciting pre-approved loan offer for up to ten lakh rupees from Aditya Birla Capital. Shall we begin the application process?",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "call",
+        "sorry",
+        "there",
+        "still"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Sorry, are you still there on the call?",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "actually"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ma'am actually",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "pre-approved",
+        "loan offer",
+        "loan",
+        "offer",
+        "approved"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello, I am Priya from Aditya Birla Capital. You have an exciting pre-approved loan offer for up to ten lakh",
+      "entities": []
+    }
+  ]
+}

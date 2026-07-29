@@ -1,32 +1,33 @@
 .venv/
 .DS_Store
 **/.DS_Store
-.scratch/
 
 # LLM response cache + call log: machine-local derived data, never source.
 # Committing the cache would be actively harmful — src/llm.py keys it on
 # sha1(prompt), so a checked-in cache silently serves someone else's stale
 # answers instead of calling the API, and the run would look like it worked.
-data/clients/*/llm_cache.json
-data/clients/*/llm_calls.jsonl
+engine/data/clients/*/llm_cache.json
+engine/data/clients/*/llm_calls.jsonl
 
 # Per-run generated reports. Derived output, regenerated every run, and naming
 # them per-prompt means an unbounded set of files — the committed worked example
-# lives in data/clients/<client>/autorun/ instead.
-data/clients/*/CHANGES-*.md
-data/clients/*/review_queue-*.md
-data/clients/*/*.bak
+# lives in engine/data/clients/<client>/autorun/ instead.
+engine/data/clients/*/CHANGES-*.md
+engine/data/clients/*/review_queue-*.md
+engine/data/clients/*/*.bak
 
 # Fully-rendered prompts sent to the API, with the responses. Written for
 # auditability (they carry ~97 verbatim customer turns and their call IDs), and
 # gitignored for exactly that reason — same treatment as transcripts/.
-data/clients/*/prompts_sent/
+engine/data/clients/*/prompts_sent/
 
-# ./improve's per-run output (numbered 1-5, always rebuilt fresh) and its
-# scratch working dir. Nothing here is source — see ./improve and DEMO.md.
+# ./run-pipeline's output — always fully rebuilt, never source. See commands.md.
 OUTPUT/
-data/clients/*/.work/
+engine/data/clients/*/.work/
 
-# ./reset's archive of whatever it wiped. Local safety net, not a fixture —
-# potentially contains real transcripts, so must never be pushed.
-data/.reset-archive/
+# ./engine/improve's own throwaway test output (advanced/testing tool only).
+engine/test-output/
+
+# ./engine/reset's archive of whatever it wiped. Local safety net, not a
+# fixture — potentially contains real transcripts, so must never be pushed.
+engine/data/.reset-archive/

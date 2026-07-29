@@ -1,0 +1,198 @@
+[
+  {
+    "timestamp": "2026-07-06T07:26:29",
+    "speaker": "user",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:26:30",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं मनhtesa satppa Madik जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:26:39",
+    "speaker": "user",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:26:39",
+    "speaker": "assistant",
+    "content": "जी, मैं मनhtesa satppa Madik जी से बात कर रही हूँ। क्या हम शुरू करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:26:46",
+    "speaker": "user",
+    "content": "हां.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:26:49",
+    "speaker": "user",
+    "content": "तो आपका message में आ रहा है ना",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:26:49",
+    "speaker": "assistant",
+    "content": "जी, आपको आदित्य बिरला कैपिटल",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:26:53",
+    "speaker": "user",
+    "content": "Hello? Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:26:59",
+    "speaker": "user",
+    "content": "आपका वह link नहीं आ रहा ना तभी इसने call किया था ना",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:26:59",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ। मैं अभी आपको SMS भेजती हूँ जिसमें एक link होगा, उससे आप अपने application को complete कर सकते हैं। क्या मैं SMS भेज दूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:27:15",
+    "speaker": "user",
+    "content": "दो",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:27:15",
+    "speaker": "assistant",
+    "content": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:27:29",
+    "speaker": "user",
+    "content": "ok Ok.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:27:29",
+    "speaker": "assistant",
+    "content": "अब आप SMS में जो link है उसे click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:27:35",
+    "speaker": "user",
+    "content": "भेज दिया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:27:35",
+    "speaker": "assistant",
+    "content": "आप home screen पर आ गए हैं। आप नीचे एक",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:27:37",
+    "speaker": "user",
+    "content": "भेज दिया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:27:37",
+    "speaker": "assistant",
+    "content": "आप home screen पर आ गए हैं। आप नीचे एक 'Apply Now' button देख सकते हैं, उस पर click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:27:50",
+    "speaker": "user",
+    "content": "आया नहीं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:27:50",
+    "speaker": "assistant",
+    "content": "Internet connection check करें और link को एक बार फिर से try करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:27:56",
+    "speaker": "user",
+    "content": "हां?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:27:57",
+    "speaker": "assistant",
+    "content": "क्या link open हो गया या फिर से try करना है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:28:05",
+    "speaker": "user",
+    "content": "उससे try करने का वह message आया ना",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:28:10",
+    "speaker": "user",
+    "content": "Link नहीं आया",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:28:10",
+    "speaker": "assistant",
+    "content": "Internet connection check करें और link को एक बार फिर से try करें। कृपया थोड़ी देर में बताएं अगर फिर भी समस्या हो।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:28:20",
+    "speaker": "user",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:28:20",
+    "speaker": "assistant",
+    "content": "कुछ technical issue लग रहा है। हमारी team जल्दी आपसे connect करेगी।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:28:27",
+    "speaker": "user",
+    "content": "नहीं ना वह link",
+    "feedback": null,
+    "agent_id": null
+  }
+]

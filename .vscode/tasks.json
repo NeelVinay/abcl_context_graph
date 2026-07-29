@@ -2,10 +2,37 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Demo: full pipeline (transcripts → improved prompt)",
-      "detail": "End-to-end. Builds the context graph, then lets the LLM improve the .raven prompt. Uses the local Claude Code CLI — no API key needed.",
+      "label": "1. Load transcripts (from a folder)",
+      "detail": "Pulls transcripts from a folder anywhere on disk into INPUT/transcripts/ and registers them. Does not build the graph or touch the prompt.",
       "type": "shell",
-      "command": "./scripts/demo_e2e.sh",
+      "command": "./load-transcripts '${input:transcriptsPath}'",
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "1b. Re-register INPUT/transcripts/ (no pull)",
+      "detail": "Registers whatever is already sitting in INPUT/transcripts/, without pulling from anywhere else.",
+      "type": "shell",
+      "command": "./load-transcripts",
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "2. Load prompt (from a file)",
+      "detail": "Pulls a prompt file anywhere on disk into INPUT/prompt/, validates it, and confirms its transcripts are loaded.",
+      "type": "shell",
+      "command": "./load-prompt '${input:promptPath}'",
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "3. Run pipeline (full run)",
+      "detail": "Context graph -> analysis -> improved prompt, start to finish. Uses the local Claude Code CLI — no API key needed. Writes OUTPUT/.",
+      "type": "shell",
+      "command": "./run-pipeline",
       "options": { "cwd": "${workspaceFolder}" },
       "presentation": {
         "reveal": "always",
@@ -17,56 +44,28 @@
       "group": { "kind": "build", "isDefault": true }
     },
     {
-      "label": "Improve THIS prompt (the file I have open)",
-      "detail": "Runs the improver on whichever .raven / prompt file is open in the editor. Reuses the existing context graph, so it takes ~10s plus model time. Your file is copied first and never modified.",
+      "label": "Advanced: improve a prompt file directly (bypasses INPUT/OUTPUT)",
+      "detail": "Testing tool. Improves any prompt file without touching INPUT/ or the real OUTPUT/ — writes to engine/test-output/ instead.",
       "type": "shell",
-      "command": "SKIP_GRAPH=1 PROMPT='${file}' ./scripts/demo_e2e.sh",
-      "options": { "cwd": "${workspaceFolder}" },
-      "presentation": {
-        "reveal": "always",
-        "panel": "dedicated",
-        "clear": true,
-        "focus": true
-      },
-      "problemMatcher": []
-    },
-    {
-      "label": "Improve a prompt (ask me for the path)",
-      "detail": "Prompts for a path to any prompt file, anywhere on disk, then improves it.",
-      "type": "shell",
-      "command": "SKIP_GRAPH=1 PROMPT='${input:promptPath}' ./scripts/demo_e2e.sh",
-      "options": { "cwd": "${workspaceFolder}" },
-      "presentation": {
-        "reveal": "always",
-        "panel": "dedicated",
-        "clear": true,
-        "focus": true
-      },
-      "problemMatcher": []
-    },
-    {
-      "label": "Demo: context graph only",
-      "detail": "Stage 1 alone — transcripts to flow chart, report, per-turn capture, glossary. No LLM.",
-      "type": "shell",
-      "command": "source .venv/bin/activate 2>/dev/null; python run_client.py data/clients/abcl/transcripts --client abcl",
+      "command": "./engine/improve '${input:advancedPromptPath}'",
       "options": { "cwd": "${workspaceFolder}" },
       "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
       "problemMatcher": []
     },
     {
-      "label": "Demo: improve prompt only",
-      "detail": "Stage 2 alone — assumes the context graph is already built.",
+      "label": "Advanced: reset a client to zero",
+      "detail": "Wipes a client's loaded transcripts/cache/output back to zero (archived, never deleted) — for proving run-pipeline regenerates everything from scratch.",
       "type": "shell",
-      "command": "source .venv/bin/activate 2>/dev/null; cp data/clients/abcl/autorun/input.raven data/clients/abcl/demo/demo.raven && python run_improve.py data/clients/abcl/demo/demo.raven --client abcl --auto",
+      "command": "./engine/reset '${input:resetClient}'",
       "options": { "cwd": "${workspaceFolder}" },
       "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
       "problemMatcher": []
     },
     {
-      "label": "Demo: show last diff",
-      "detail": "The before/after patch from the most recent demo run.",
+      "label": "Show last diff",
+      "detail": "The before/after patch from the most recent ./run-pipeline run.",
       "type": "shell",
-      "command": "cat data/clients/abcl/demo/diff.patch",
+      "command": "cat OUTPUT/Changes.diff",
       "options": { "cwd": "${workspaceFolder}" },
       "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
       "problemMatcher": []
@@ -74,10 +73,28 @@
   ],
   "inputs": [
     {
+      "id": "transcriptsPath",
+      "type": "promptString",
+      "description": "Folder of transcripts to load (leave as-is to just re-register INPUT/transcripts/)",
+      "default": "~/Downloads"
+    },
+    {
       "id": "promptPath",
       "type": "promptString",
-      "description": "Path to the prompt file to improve",
-      "default": "data/clients/abcl/autorun/input.raven"
+      "description": "Path to the prompt file to load",
+      "default": "~/Downloads"
+    },
+    {
+      "id": "advancedPromptPath",
+      "type": "promptString",
+      "description": "Path to any prompt file to test-improve directly",
+      "default": "INPUT/prompt/"
+    },
+    {
+      "id": "resetClient",
+      "type": "promptString",
+      "description": "Client key to reset to zero",
+      "default": "abcl"
     }
   ]
 }

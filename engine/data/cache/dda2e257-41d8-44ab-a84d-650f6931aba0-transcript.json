@@ -1,0 +1,169 @@
+{
+  "call_id": "dda2e257-41d8-44ab-a84d-650f6931aba0-transcript",
+  "language": "hi-en",
+  "outcome": "completed",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "बोल",
+        "आदित्य"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं आपसे बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "Madam मैं student हूं.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "loan",
+        "शुरू",
+        "application",
+        "idea"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, पढ़ाई के लिए loan लेना एक बहुत अच्छा idea है। क्या हम अभी आपका application शुरू करें?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "call",
+        "पांच",
+        "बजे",
+        "बाहर",
+        "शाम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अभी नहीं शाम को पांच बजे. Call करना मेरे document घर पर है और मैं बाहर हूं.",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "समय",
+        "time",
+        "ज़रूर",
+        "available",
+        "prefer"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ज़रूर। आप कौन सा दिन और समय prefer करेंगे? हम 10 AM से 7 PM, साथों दिन इस time available रहते हैं.",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "पांच",
+        "बजे",
+        "शाम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आज ही शाम पांच पांच बजे.",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "पाँच",
+        "callback",
+        "बजे",
+        "शाम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपका callback आज शाम पाँच बजे",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "five"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Five PM.",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
+      "keywords": [
+        "call",
+        "धन्यवाद",
+        "perfect",
+        "scheduled",
+        "today"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Perfect! I have scheduled your call for today at 5:00 PM. धन्यवाद।",
+      "entities": []
+    }
+  ]
+}

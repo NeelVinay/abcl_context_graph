@@ -1,0 +1,107 @@
+[
+  {
+    "timestamp": "2026-07-06T07:13:02",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:13:02",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं MR PRASHANT VISHWAKARMA जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:13:13",
+    "speaker": "user",
+    "content": "Hello. हां?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:13:13",
+    "speaker": "assistant",
+    "content": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है 10 लाख रुपये तक का — मैं अभी इस call पर आपको इस loan को apply करने में मदद कर सकती हूँ। क्या हम शुरू करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:13:28",
+    "speaker": "user",
+    "content": "नहीं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:13:30",
+    "speaker": "user",
+    "content": "आप मुझे link भेज दो मैं कर लूंगा.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:13:30",
+    "speaker": "assistant",
+    "content": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:13:42",
+    "speaker": "assistant",
+    "content": "अब आप SMS में जो link है उसे click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:13:53",
+    "speaker": "assistant",
+    "content": "क्या आप अभी भी लाइन पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:14:02",
+    "speaker": "user",
+    "content": "मैं बाद में कर लूंगा.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:14:02",
+    "speaker": "assistant",
+    "content": "ज़रूर। आप कौन सा दिन और समय prefer करेंगे? हम 10 AM से 7 PM, साथों दिन इस time available रहते हैं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:14:16",
+    "speaker": "user",
+    "content": "कल morning.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:14:16",
+    "speaker": "assistant",
+    "content": "आपका callback कल सुबह के लिए schedule कर दिया गया है। हमारी team आपसे उस समय connect करेगी। धन्यवाद।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:14:32",
+    "speaker": "user",
+    "content": "Call disconnect कर दो.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:14:32",
+    "speaker": "assistant",
+    "content": "आपके time के लिए thank you जी। Goodbye.<EOC/>",
+    "feedback": null,
+    "agent_id": null
+  }
+]

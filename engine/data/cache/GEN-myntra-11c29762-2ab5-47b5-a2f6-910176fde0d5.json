@@ -1,0 +1,319 @@
+{
+  "call_id": "GEN-myntra-11c29762-2ab5-47b5-a2f6-910176fde0d5",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "assistant",
+        "welcome",
+        "मिंत्रा",
+        "service"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
+      "keywords": [
+        "order",
+        "चाहते",
+        "issue",
+        "किस"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप किस order के बारे में बात करना चाहते हैं, और क्या issue है?",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "deliver",
+        "status",
+        "twenty",
+        "update",
+        "fourth"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello हां ma'am मेरे papa की एक watch थी वह twenty fourth को deliver होने वाली थी अभी तक उसका status नहीं update थी थोड़ा कुछ.",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "order",
+        "समझ",
+        "line",
+        "status",
+        "check"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मै समझ सकती हूँ कि order अभी तक नहीं मिला है, मै status check कर रही हूँ। कृपया line पर बने रहिए।",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "deliver",
+        "status",
+        "मदद",
+        "shipped",
+        "कोशिश"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपके TAPOM Watch का status shipped है। यह 30 July तक deliver हो जाएगा। मै देख पा रही हूँ कि आपकी complaint पहले से registered है, इसलिए आप निश्चिंत रहें, हम इसे जल्द से जल्द पहुँचाने की कोशिश कर रहे हैं। क्या मै आपकी किसी और चीज़ में मदद कर",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "निश्चय"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok. इसमें क्या निश्चय?",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मेरा मतलब था",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "confused_repeat",
+      "keywords": [
+        "कीजिये",
+        "माफ़"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "माफ़ कीजिये, क्या आप फिर से कह सकते हैं?",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
+      "keywords": [
+        "deliver",
+        "delivery",
+        "twenty",
+        "time",
+        "वजह"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ma'am इसमें क्या निश्चित रहा हूं आप मुझे एक बात बताओ? Twenty fourth को deliver होना था आज twenty seven था आज भी आप कह रहे हो thirtieth तक delivery भर even वह नेहरु place पहुंच चुका है ma'am उसको East तक तलाश आने में इतना time की वजह",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
+      "keywords": [
+        "order",
+        "समझ",
+        "priority",
+        "चाहती",
+        "माफी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मै समझ सकती हूँ कि 24 July की date निकल जाने के बाद अब 30 July तक का wait करना परेशान करने वाला है। shipping में कुछ delays की वजह से ऐसा हुआ है, जिसके लिए मै आपसे माफी चाहती हूँ। आपका order priority",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
+      "keywords": [
+        "app",
+        "time",
+        "दिखा",
+        "shipping",
+        "चुका"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "है? Shipping में ma'am मेरा concern यह है आप मुझे बताओ मेरा सिर्फ app पर दिखा रहा है वह नेहरू place switch हो चुका है. जब वह नेहरू place switch हो चुका था नेहरू place से इस वक्त तलाश आने में इतना time क्यों लग रहा हैं?",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
+      "keywords": [
+        "समझ",
+        "delay",
+        "पहुँचने",
+        "place",
+        "नेहरू"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मै समझ सकती हूँ कि नेहरू place पहुँचने के बाद भी delay",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
+      "keywords": [
+        "order",
+        "twenty",
+        "time",
+        "चुका",
+        "उसको"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप मुझे बस इतना सा बता दो. Twenty third को वह नेहरू place पहुंच चुका है आज twenty seventh है आज भी वह ईदक class नहीं आ पा इतना तो दूसरा state से आ जाता है आप एक एक एक metro station का आप समझो यह एक दो kilometer का भी रास्ता नहीं है उसके लिए आप लोग इतना time waste करवा रहे हो. किसी की urgency हो, किसी को gift देना हो. मैंने अपने किसी उसके लिए gift order किया था. अब आपने इसका इतना time waste कर दिया. Gift उसको time पर पहुंच ही नहीं पाएगा birthday उसका आज था.",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
+      "keywords": [
+        "delay",
+        "gift",
+        "birthday"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, birthday gift के लिए यह delay",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
+      "keywords": [
+        "ऐसे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ऐसे थोड़ी ना होता है.",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
+      "keywords": [
+        "order",
+        "deliver",
+        "समझ",
+        "सही",
+        "कोशिश"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आप बिल्कुल सही कह रहे हैं, birthday gift का समय पर न पहुँचना वाकई बहुत दुखद है, इसके लिए मै आपसे दिल से माफ़ी चाहती हूँ। मै समझ सकती हूँ कि नेहरू place जैसे पास के location से भी इतना समय लगना बहुत निराशाजनक है। आपका order priority पर है और हम पूरी कोशिश कर रहे हैं कि यह जल्द से जल्द deliver हो जाए। क्या आप चाहेंगे कि मै आपको expert agent से connect कर दूँ जो इस delay की exact वजह बता सकें?",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_end",
+      "base_intent": "end_call",
+      "keywords": [
+        "thank you so much",
+        "thank",
+        "delay",
+        "जल्दी",
+        "पता"
+      ],
+      "sentiment": "happy",
+      "tool": null,
+      "text": "Please नहीं मुझे बज रहा नहीं जानी मुझे बस जल्दी से जल्दी से delay पता मत कीजिए मेरा. Thank you so much.",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपका बहुत बहुत",
+      "entities": []
+    }
+  ]
+}

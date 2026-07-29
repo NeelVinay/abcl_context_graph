@@ -1,0 +1,306 @@
+{
+  "call_id": "GEN-myntra-634ba1db-10f3-4df6-b847-ea23a9eb3a0f",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "assistant",
+        "welcome",
+        "मिंत्रा",
+        "service"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello मेरा. Hello",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
+      "keywords": [
+        "order",
+        "चाहते",
+        "issue",
+        "किस"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप किस order के बारे में बात करना चाहते हैं, और क्या issue है?",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "deliver",
+        "delivery",
+        "july",
+        "date"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अभी तक मुझे मेरा order deliver नहीं हुआ है. और मैंने यह जो delivery date twenty first of July थी",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
+      "keywords": [
+        "order",
+        "समझ",
+        "status"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मै समझ सकती हूँ कि आपका order अभी तक नहीं आया है, मै status",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है? और",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "order",
+        "line",
+        "status",
+        "check",
+        "कृपया"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मै आपके order का status check कर रही हूँ। कृपया line पर बने रहिए।",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "delivery",
+        "shipped",
+        "कोशिश",
+        "बेहतर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपका uppercase Trolley Bag अभी shipped है, लेकिन मै देख पा रही हूँ कि इसकी delivery काफी delay हो गई है। इसके लिए मै आपसे माफी चाहती हूँ। अच्छी बात यह है कि आपकी complaint register हो चुकी है और हम इसे जल्द से जल्द resolve करने की कोशिश कर रहे हैं। चूंकि आपका order काफी delay हो गया है, क्या आप बेहतर",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "एक second",
+        "second"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है. एक second एक second.",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "line",
+        "समय",
+        "बिलकुल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, बिलकुल। आप समय ले लीजिए, मै line पर",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "order",
+        "complaint"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मेरा order जो है, मैंने जो complaint",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "complaint",
+        "register"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपकी complaint register",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
+      "keywords": [
+        "complaint",
+        "twenty",
+        "second",
+        "raise"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां, मैंने twenty second को complaint raise किया था,",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "shipped",
+        "कोशिश",
+        "priority",
+        "देख",
+        "complaint"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मै देख पा रही हूँ कि आपकी complaint register हो चुकी है और हम इसे priority पर resolve करने की कोशिश कर रहे हैं। जैसा कि मैने बताया, आपका uppercase Trolley Bag अभी shipped है। चूंकि",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
+      "keywords": [
+        "complaint",
+        "twenty",
+        "time",
+        "hours",
+        "seven"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं लेकिन twenty second को मैंने raise किया था मैंने twenty second को complaint raise किया था twenty fifth को resolution मिलने वाला था उसके बाद भी forty eight hours का उन्होंने जो है time मांगा था Forty eight hours होने के बाद आज twenty seven forty eight hours complete हो चुके हैं. अभी तक मुझे कोई resolution नहीं है.",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_de_escalate",
+      "base_intent": "irate_frustrated",
+      "keywords": [
+        "order",
+        "deliver",
+        "समझ",
+        "कोशिश",
+        "बेहतर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मै समझ सकती हूँ कि resolution date निकल जाने के बाद भी कोई update न मिलना बहुत frustrating है, इसके लिए मै आपसे माफी चाहती हूँ। आपका order priority पर है और हम इसे जल्द से जल्द deliver कराने की पूरी कोशिश कर रहे हैं। चूंकि आपकी issue अभी तक resolve नहीं हुई है, क्या आप बेहतर assistance के लिए किसी expert agent से बात करना चाहेंगे?",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "line",
+        "कृपया",
+        "रहिए",
+        "बने",
+        "agent"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है, मै आपको expert agent से connect कर रही हूँ। कृपया line पर बने रहिए।",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "call",
+        "now",
+        "connect",
+        "team",
+        "immediately"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I will connect you with our specialized team. Transferring your call now, they will be with you immediately.",
+      "entities": []
+    }
+  ]
+}

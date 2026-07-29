@@ -1,0 +1,44 @@
+[
+  {
+    "timestamp": "2026-07-06T08:55:16",
+    "speaker": "user",
+    "content": "कौन?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:55:17",
+    "speaker": "assistant",
+    "content": "मैं प्रिया हूँ, आदित्य बिरला कैपिटल की तरफ से। क्या मैं <<devanagari_name>> जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:55:27",
+    "speaker": "user",
+    "content": "Ma'am, तेलुगु madam.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:55:27",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिए, मैं इस call पर सिर्फ Hindi या English में ही help कर सकती हूँ।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:55:35",
+    "speaker": "user",
+    "content": "Hello? No madam, only तेलुगू madam.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:55:35",
+    "speaker": "assistant",
+    "content": "Sorry पर, मैं इस language में help नहीं कर सकती। आपके time के लिए धन्यवाद।\n<EOC source=\"voicemail\"/>",
+    "feedback": null,
+    "agent_id": null
+  }
+]

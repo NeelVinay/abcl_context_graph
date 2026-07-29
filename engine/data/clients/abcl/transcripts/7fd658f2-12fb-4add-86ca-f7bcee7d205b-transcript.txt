@@ -1,0 +1,632 @@
+[
+  {
+    "timestamp": "2026-04-05T09:01:32",
+    "speaker": "user",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:01:32",
+    "speaker": "assistant",
+    "content": "नमस्ते… क्या मैं DAVINDER SINGH जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:01:39",
+    "speaker": "user",
+    "content": "Yes.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:01:39",
+    "speaker": "assistant",
+    "content": "बिल्कुल, DAVINDER SINGH जी, मैं प्रिया बोल रही हूँ Aditya Birla Capital से। क्या मैं आपसे अभी कुछ देर बात कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:01:50",
+    "speaker": "assistant",
+    "content": "Sorry, could you please repeat that?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:01:55",
+    "speaker": "user",
+    "content": "बोलिए.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:01:55",
+    "speaker": "assistant",
+    "content": "जी, सबसे पहले मैं बता दूँ कि ये call training और quality purpose के लिए record की जा रही है। तो मुझे आपको ये बताना था कि Aditya Birla Capital की तरफ से आपके लिए ₹378000 का pre approved personal loan offer है। अगर आप चाहें तो मैं अभी इसी call पर आपको apply करने में मदद कर सकती हूँ, ज़्यादा समय नहीं लगेगा। तो क्या हम शुरू कर सकते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:02:18",
+    "speaker": "user",
+    "content": "हां ok.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:02:18",
+    "speaker": "assistant",
+    "content": "अच्छा... मैं अभी आपके मोबाइल नंबर 9478378414 पर",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:02:23",
+    "speaker": "user",
+    "content": "ठीक है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:02:27",
+    "speaker": "assistant",
+    "content": "जी, मैंने आपके मोबाइल नंबर पर SMS भेज दिया है जिसमें एक लिंक होगा। कृपया अपना फोन स्पीकर पर रखें और देखिए कि आपको SMS मिला है या नहीं। क्या आपको SMS मिल गया है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:02:47",
+    "speaker": "assistant",
+    "content": "क्षमा करें, क्या आप अभी भी कॉल पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:02:53",
+    "speaker": "user",
+    "content": "हां हां हां.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:02:53",
+    "speaker": "assistant",
+    "content": "अच्छा, धन्यवाद। कृपया बताएं, क्या आपको SMS में भेजा गया लिंक मिल गया है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:03:02",
+    "speaker": "user",
+    "content": "लगी है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:03:02",
+    "speaker": "assistant",
+    "content": "बहुत बढ़िया... अब कृपया उस लिंक पर क्लिक करें। क्या लिंक खुल गया है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:03:10",
+    "speaker": "user",
+    "content": "खुल गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:03:10",
+    "speaker": "assistant",
+    "content": "बहुत अच्छा, अब आप homepage पर हैं जहाँ नीचे की तरफ \"Apply Now\" का बटन दिखेगा। कृपया उस बटन पर क्लिक करें। जब आप कर लें तो मुझे बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:03:22",
+    "speaker": "user",
+    "content": "Apply now.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:03:22",
+    "speaker": "assistant",
+    "content": "बहुत बढ़िया। अब आप login page पर पहुँच गए हैं। कृपया यहाँ अपना मोबाइल नंबर टाइप करें, जो आपने पहले इस्तेमाल किया था। फिर नीचे टर्म्स और कंडीशंस वाला बॉक्स चेक करें और \"Get OTP\" पर क्लिक करें। OTP आने के बाद उसे verify करें और मुझे बताएं जब आप आगे बढ़ जाएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:03:47",
+    "speaker": "assistant",
+    "content": "क्षमा करें, क्या आप अभी भी कॉल पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:03:52",
+    "speaker": "user",
+    "content": "हां.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:03:53",
+    "speaker": "user",
+    "content": "Verify हो गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:03:53",
+    "speaker": "assistant",
+    "content": "बहुत अच्छा... अब आपकी प्रोफाइल के हिसाब से अगला पेज खुल गया होगा। मैं आपकी मदद के लिए यहाँ हूँ, तो कृपया बताएं कि आप कौन से पेज पर हैं या आपसे क्या पूछना है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:04:07",
+    "speaker": "user",
+    "content": "PAN card full name.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:04:07",
+    "speaker": "assistant",
+    "content": "जी हाँ, ठीक है। इस पेज पर आपको सबसे पहले अपनी पैन कार्ड की जानकारी भरनी होगी। कृपया अपना पैन नंबर भरें और बताएं जब पूरा हो जाए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:04:22",
+    "speaker": "user",
+    "content": "Ten number पूरा हो गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:04:22",
+    "speaker": "assistant",
+    "content": "बहुत बढ़िया, अब कृपया अपना पूरा नाम पैन कार्ड के अनुसार भरें, फिर जेंडर सेलेक्ट करें, उसके बाद डेट ऑफ बर्थ और मैरिटल स्टेटस भरें। ये सब पूरा होने के बाद मुझे बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:04:37",
+    "speaker": "user",
+    "content": "हो गया",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:04:37",
+    "speaker": "assistant",
+    "content": "अच्छा... अब कृपया अपना personal email address भरें और मुझे बताएं जब पूरा हो जाए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:04:46",
+    "speaker": "user",
+    "content": "हो गया है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:04:46",
+    "speaker": "assistant",
+    "content": "ठीक है, अब कृपया अपना पता सही ढंग से भरें — जैसे फ्लैट या हाउस नंबर, बिल्डिंग का नाम, स्ट्रीट और लोकेशन का नाम, और अंत में पिनकोड डालें। पूरा होने के बाद मुझे बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:05:05",
+    "speaker": "assistant",
+    "content": "क्या आप अभी भी कॉल पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:05:10",
+    "speaker": "assistant",
+    "content": "चूंकि आप जवाब नहीं दे रहे हैं, मैं अब कॉल समाप्त कर रही हूँ। धन्यवाद!",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:05:16",
+    "speaker": "user",
+    "content": "Ok. हो गया, हो गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:05:17",
+    "speaker": "user",
+    "content": "हो गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:05:17",
+    "speaker": "assistant",
+    "content": "बहुत अच्छा... अब आप दो terms and condition के बॉक्स देखेंगे, कृपया उन्हें चेक करें क्योंकि ये जरूरी हैं। उसके बाद आप \"Proceed\" पर क्लिक करें और मुझे बताएं जब आप आगे बढ़ जाएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:05:32",
+    "speaker": "user",
+    "content": "नहीं आगे वह आ गया ना हां हो गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:05:32",
+    "speaker": "assistant",
+    "content": "समझ गई, अब आप प्रोफेशनल या employment details वाले पेज पर हैं। कृपया बताएं, आप कौन सा employment type चुनेंगे — salaried या self-employed?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:05:41",
+    "speaker": "user",
+    "content": "हां.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:05:41",
+    "speaker": "assistant",
+    "content": "अच्छा, कृपया बताएं कि आप salaried हैं या self-employed? इससे मैं आपको सही तरीके से",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:05:49",
+    "speaker": "user",
+    "content": "Salary. Salaried.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:05:49",
+    "speaker": "assistant",
+    "content": "ठीक है, अब कृपया अपना monthly income भरें, जो कि आपका net या take-home salary होना चाहिए। आप इसे टाइप करें और",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:05:57",
+    "speaker": "user",
+    "content": "हो गई.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:05:59",
+    "speaker": "user",
+    "content": "हो गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:05:59",
+    "speaker": "assistant",
+    "content": "बहुत बढ़िया... अब कृपया अपने organization का नाम टाइप करें और बताएं जब भर लें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:06:08",
+    "speaker": "user",
+    "content": "Organization मतलब?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:06:08",
+    "speaker": "assistant",
+    "content": "अच्छा सवाल है... organization से मतलब है आपकी कंपनी या जहां आप काम करते हैं, उसका नाम। कृपया वही नाम टाइप करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:06:19",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिए, क्या आप फिर से बता सकते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:06:23",
+    "speaker": "user",
+    "content": "Army.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:06:23",
+    "speaker": "assistant",
+    "content": "जी, धन्यवाद। अब कृपया अपना ऑफिसियल email ID टाइप करें और मुझे बताएं जब पूरा हो जाए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:06:34",
+    "speaker": "user",
+    "content": "Madam उसमें",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:06:34",
+    "speaker": "assistant",
+    "content": "मैं समझती हूँ कि",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:06:38",
+    "speaker": "user",
+    "content": "उसमें आ नहीं रहा कुछ.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:06:38",
+    "speaker": "assistant",
+    "content": "मैं समझती हूँ, कभी-कभी official email ID नहीं होती। आप उस फील्ड को खाली छोड़ सकते हैं और आगे बढ़ सकते हैं। क्या आप आगे बढ़ना चाहेंगे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:06:52",
+    "speaker": "user",
+    "content": "हां official email address हो गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:06:52",
+    "speaker": "assistant",
+    "content": "बहुत अच्छा, अब कृपया अपने office address को सही ढंग से टाइप करें जैसे वेबसाइट पर दिख रहा है, और बताएं जब पूरा हो जाए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:07:10",
+    "speaker": "user",
+    "content": "Company name पर नहीं हो रहा.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:07:12",
+    "speaker": "user",
+    "content": "Company में क्या भरें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:07:12",
+    "speaker": "assistant",
+    "content": "अच्छा सवाल है... कृपया अपनी कंपनी का नाम टाइप करें, यानी जहां आप काम करते हैं। अगर आप army में हैं तो आप \"Army\" टाइप कर सकते हैं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:07:26",
+    "speaker": "user",
+    "content": "कर दिए.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:07:26",
+    "speaker": "assistant",
+    "content": "बहुत बढ़िया... अब कृपया ऑफिस पिनकोड टाइप करें और देखें कि शहर और राज्य सही से भर गए हैं या नहीं। अगर सही हैं तो बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:07:36",
+    "speaker": "user",
+    "content": "हो गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:07:36",
+    "speaker": "assistant",
+    "content": "बहुत अच्छा... अब कृपया नीचे \"Proceed\" बटन पर क्लिक करें। उसके बाद आपको अपना registered email पर OTP मिलेगा, कृपया उसे verify करें और मुझे बताएं जब पूरा हो जाए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:07:50",
+    "speaker": "user",
+    "content": "Ok.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:07:50",
+    "speaker": "assistant",
+    "content": "ठीक है, कृपया OTP verify करने के बाद मुझे बताएं ताकि हम आगे बढ़ सकें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:08:01",
+    "speaker": "user",
+    "content": "OTP भी आया नहीं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:08:01",
+    "speaker": "assistant",
+    "content": "मैं समझती हूँ कि OTP नहीं आया है। कृपया दो मिनट तक इंतज़ार करें, कभी-कभी थोड़ा समय लग सकता है। अगर फिर भी नहीं आया तो बताएं, मैं आपकी मदद करूंगी।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:08:13",
+    "speaker": "user",
+    "content": "Ok.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:08:13",
+    "speaker": "assistant",
+    "content": "जी, धन्यवाद। कृपया OTP आने तक इंतज़ार",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:08:16",
+    "speaker": "user",
+    "content": "यह आगे",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:08:16",
+    "speaker": "assistant",
+    "content": "जी, मैं समझती हूँ...",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:08:19",
+    "speaker": "user",
+    "content": "यह",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:08:23",
+    "speaker": "user",
+    "content": "one lakh sixty thousand eight three two.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:08:23",
+    "speaker": "assistant",
+    "content": "ध्यान से सुनिए... क्या आप बता सकते हैं कि आप अभी किस पेज पर हैं या आपको किस चीज़ में मदद चाहिए? ताकि मैं आपकी सहायता कर सकूँ।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:08:36",
+    "speaker": "user",
+    "content": "अभी अभी मैं select your loan amount पर.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:08:36",
+    "speaker": "assistant",
+    "content": "बिल्कुल... आप अभी \"Select your loan amount\" पेज पर हैं, जहाँ से आप अपनी जरूरत के अनुसार loan amount चुन सकते हैं। क्या आपने अपनी पसंद का amount चुन लिया है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:08:50",
+    "speaker": "user",
+    "content": "चुन दिए.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:08:50",
+    "speaker": "assistant",
+    "content": "बहुत बढ़िया... अब क्या आप अगले स्टेप पर जा पाए हैं या कोई दिक्कत आ रही है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:08:57",
+    "speaker": "user",
+    "content": "एक minute.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:08:57",
+    "speaker": "assistant",
+    "content": "हाँ जी, मैं इंतज़ार",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:09:00",
+    "speaker": "user",
+    "content": "Select amount",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:09:00",
+    "speaker": "assistant",
+    "content": "जी, आप loan amount select कर चुके हैं, अब कृपया आगे बढ़ें और बताएं कि अगला पेज खुल रहा है या कोई दिक्कत हो रही है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:09:10",
+    "speaker": "user",
+    "content": "एक minute.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:09:13",
+    "speaker": "user",
+    "content": "Select amount कितना मेरा हो गया?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:09:13",
+    "speaker": "assistant",
+    "content": "जी, आपके लिए pre approved personal loan का amount ₹378000 है। क्या आप इस amount के साथ आगे बढ़ना चाहेंगे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:09:26",
+    "speaker": "user",
+    "content": "Ma'am one sixty है. One sixty eight three two.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:09:26",
+    "speaker": "assistant",
+    "content": "मैं समझती हूँ, लेकिन आपके profile के हिसाब से आपका pre approved loan amount ₹378000 ही है। क्या आप इसी amount के साथ आगे",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:09:36",
+    "speaker": "user",
+    "content": "हां मैंने",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-05T09:09:38",
+    "speaker": "user",
+    "content": "हां मैंने चुन लिया",
+    "feedback": null,
+    "agent_id": null
+  }
+]

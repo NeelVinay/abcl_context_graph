@@ -1,0 +1,93 @@
+[
+  {
+    "timestamp": "2026-07-06T08:50:23",
+    "speaker": "user",
+    "content": "मैं बात करूंगा? बात करूंगा अभी तो मेरे यहां से तो तुम भी कर सकते हो.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:50:23",
+    "speaker": "assistant",
+    "content": "हाँ जी, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं Gajendra Singh जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:50:35",
+    "speaker": "user",
+    "content": "Hello? हां madam बात हो रही है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:50:35",
+    "speaker": "assistant",
+    "content": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है 10 लाख रुपये तक का — मैं अभी इस call पर आपको इस loan को apply करने में मदद कर सकती हूँ। क्या हम शुरू करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:51:01",
+    "speaker": "user",
+    "content": "मैंने इसमें से ना सत्तर हज़ार रुपए",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:51:06",
+    "speaker": "user",
+    "content": "था. मेरे account में अभी तक balance नहीं आया है. एक minute hold रखिएगा.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:51:07",
+    "speaker": "user",
+    "content": "यह मेरे में amount नहीं आया अभी credit नहीं हुआ है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:51:07",
+    "speaker": "assistant",
+    "content": "हाँ जी, मैं इंतज़ार कर रही हूँ...",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:51:15",
+    "speaker": "user",
+    "content": "अभी amount credit नहीं हुआ है मेरे account में.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:51:15",
+    "speaker": "assistant",
+    "content": "जी, मैं समझ सकती हूँ। क्या हम continue करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:51:28",
+    "speaker": "user",
+    "content": "यह बताइए madam मेरे पास ना तीन बार call आ गई. वह screenshot बनाकर मैं भेज देता हूं. तक amount क्यों नहीं आ रहा है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:51:29",
+    "speaker": "assistant",
+    "content": "जी, यह loan amount आपकी eligibility और documents के आधार पर decide होता है — मैं अभी आपकी application process में मदद कर सकती हूँ। क्या हम शुरू करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:51:42",
+    "speaker": "user",
+    "content": "नहीं रहेंगे तो अब रुको.",
+    "feedback": null,
+    "agent_id": null
+  }
+]

@@ -1,0 +1,302 @@
+{
+  "call_id": "a31c0e51-4ddb-40a1-8a2f-49dd28585f89-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "<CHD/>",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "बोल",
+        "आदित्य"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं रोहित कुमार जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "बात कर रही",
+        "से बात"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां जी ma'am रोहित जी से बात कर रही हैं",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "शुरू",
+        "लाख",
+        "approval",
+        "लूंगा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां ma'am शुरू करो दस लाख का अगर approval हो रहा है तो मैं ले लूंगा",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms",
+        "application",
+        "process",
+        "link",
+        "जिसमें"
+      ],
+      "sentiment": null,
+      "tool": "send_sms",
+      "text": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_sms_received",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "whatsapp",
+        "भेजो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "WhatsApp भेजो.",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms",
+        "application",
+        "link",
+        "कृपया",
+        "पूरा"
+      ],
+      "sentiment": null,
+      "tool": "send_sms",
+      "text": "जी, अभी मैं WhatsApp भेजने में सक्षम नहीं हूँ। कृपया SMS में आए link को खोलकर अपना application पूरा करें।",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "भेज",
+        "message",
+        "whatsapp",
+        "भेजो",
+        "जाऊंगा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं नहीं, मैं text message पर नहीं जाऊंगा. WhatsApp पर भेज सकती हूं तो भेजो.",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "loan",
+        "offer",
+        "sms",
+        "process",
+        "link"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी हाँ, आपको और amount का loan मिल सकता है — एक बार आप process complete करेंगे तो आपको आपकी profile के हिसाब से loan offer दिख जाएगा, आप उसमें से choose कर सकते हैं। अब मैं SMS भेज चुकी हूँ, कृपया SMS में आए link को click करके process complete करें।",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "message",
+        "whatsapp",
+        "जाऊंगा",
+        "text"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं text message पर नहीं जाऊंगा. WhatsApp पर message करो मैं उस पर जाऊंगा.",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms",
+        "application",
+        "link",
+        "कृपया",
+        "पूरा"
+      ],
+      "sentiment": null,
+      "tool": "send_sms",
+      "text": "जी, मैं अभी WhatsApp पर भेजने में सक्षम नहीं हूँ। कृपया SMS में आए link को खोलकर अपना application पूरा करें।",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "link",
+        "open",
+        "message",
+        "करूंगा",
+        "कितनी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कितनी बार बोलूं मैं text message को link को मैं open नहीं करूंगा. फर्जीवाड़ा बहुत चल रहा है मैं नहीं करूंगा.",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "sms",
+        "verify",
+        "page",
+        "capital",
+        "aditya"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "यह Aditya Birla Capital का official SMS है — page पर https lock और ABCL domain verify",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "इसको",
+        "आकर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां मैं अभी इसको घर आकर करती हूं",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "फिर से कह",
+        "complete",
+        "कृपया",
+        "कीजिए",
+        "माफ़"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "माफ़ कीजिए, क्या आप फिर से कहेंगे? बिल्कुल! कृपया जल्दी से complete कर दें।",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "भेजो"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप पर भेजो",
+      "entities": []
+    }
+  ]
+}

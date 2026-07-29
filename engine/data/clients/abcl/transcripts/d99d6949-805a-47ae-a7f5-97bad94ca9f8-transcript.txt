@@ -1,0 +1,443 @@
+[
+  {
+    "timestamp": "2026-04-08T08:56:12",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:56:12",
+    "speaker": "assistant",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:56:16",
+    "speaker": "user",
+    "content": "हां जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:56:16",
+    "speaker": "assistant",
+    "content": "नमस्ते… क्या मैं विकास सैनी जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:56:22",
+    "speaker": "user",
+    "content": "हां जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:56:22",
+    "speaker": "assistant",
+    "content": "विकास सैनी जी, मैं प्रिया बोल रही हूँ Aditya Birla Capital से। क्या मैं आपसे अभी कुछ देर बात कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:56:32",
+    "speaker": "user",
+    "content": "हां",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:56:32",
+    "speaker": "assistant",
+    "content": "बिल्कुल, विकास सैनी जी। जी, सबसे पहले मैं बता दूँ कि ये call training और quality purpose के लिए record की जा रही है। तो मुझे आपको ये बताना था कि Aditya Birla",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:56:42",
+    "speaker": "user",
+    "content": "हां जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:56:42",
+    "speaker": "assistant",
+    "content": "ठीक है, विकास सैनी जी। मैं अभी आपको एक SMS भेजती हूँ, जिसमें एक लिंक होगा। उस लिंक पर क्लिक करके आप अपनी loan application वहीं से continue कर पाएंगे जहाँ आपने छोड़ा था। कृपया अपना फोन speaker पर रखें और SMS आने का इंतजार करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:57:02",
+    "speaker": "assistant",
+    "content": "ठीक है, विकास सैनी जी। कृपया अपना फोन speaker पर रखें और बताएं क्या आपको SMS मिल गया है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:57:18",
+    "speaker": "assistant",
+    "content": "माफ़ करें, क्या आप अभी भी कॉल पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:57:24",
+    "speaker": "user",
+    "content": "हां जी call free है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:57:24",
+    "speaker": "assistant",
+    "content": "धन्यवाद, विकास सैनी जी। क्या आपको SMS मिल गया है जिसमें लिंक है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:57:32",
+    "speaker": "user",
+    "content": "हां SMS मिल गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:57:32",
+    "speaker": "assistant",
+    "content": "बहुत बढ़िया, विकास सैनी जी। कृपया SMS में दिए गए लिंक पर क्लिक करें और बताएं क्या वेबसाइट खुल गई है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:57:46",
+    "speaker": "user",
+    "content": "खुल गई.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:57:46",
+    "speaker": "assistant",
+    "content": "ठीक है, विकास सैनी जी। अब आप उस पेज पर हैं जहाँ नीचे \"Apply Now\" का बटन दिख रहा होगा। कृपया उस पर क्लिक करें और मुझे बताएं जब आप आगे बढ़ जाएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:57:59",
+    "speaker": "user",
+    "content": "हां दबा दिया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:57:59",
+    "speaker": "assistant",
+    "content": "बहुत बढ़िया, विकास सैनी जी। अब आपके सामने login screen आ गया होगा जहाँ आपको अपना मोबाइल नंबर टाइप करना है। कृपया वही नंबर टाइप करें जो आपने पहले उपयोग किया था। इसके बाद नीचे terms and conditions का बॉक्स होगा, कृपया उसे जरूर चेक करें और फिर \"Get OTP\" पर क्लिक करें। OTP मिलने के बाद उसे भरकर verify करें। अगर कोई दिक्कत हो तो बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:58:26",
+    "speaker": "user",
+    "content": "बीस.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:58:26",
+    "speaker": "assistant",
+    "content": "जी, विकास सैनी जी, कृपया पूरा मोबाइल नंबर टाइप करें ताकि आगे बढ़ सकें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:58:35",
+    "speaker": "user",
+    "content": "हां.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:58:38",
+    "speaker": "user",
+    "content": "कर दिया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:58:38",
+    "speaker": "assistant",
+    "content": "ठीक है, विकास सैनी जी। अब कृपया नीचे terms and conditions वाला बॉक्स चेक करें और फिर \"Get OTP\" पर क्लिक करें। OTP आने पर उसे भरकर verify करें। कृपया बताएं जब ये पूरा हो जाए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:58:56",
+    "speaker": "user",
+    "content": "What मैं में monthly income online.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:58:56",
+    "speaker": "assistant",
+    "content": "अच्छा सवाल है, विकास सैनी जी। कृपया अपनी net monthly income टाइप करें, जो आपके take-home salary के बराबर हो। इसे आप अपने latest salary slip या salary credit देखकर भर सकते हैं। अगर आप self-employed हैं तो अपने business की approximate monthly income डालें। कृपया ये जानकारी भरकर बताएं ताकि हम आगे बढ़ सकें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:59:24",
+    "speaker": "user",
+    "content": "Business ma'am company का है क्या करूं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:59:24",
+    "speaker": "assistant",
+    "content": "समझ गई, विकास सैनी जी। अगर आपका business registered company के तहत आता है तो कृपया उस company का registered नाम टाइप करें। अगर कोई confusion हो तो आप अपने business के official documents या बैंक statements देखकर नाम डाल सकते हैं। कृपया ये जानकारी भरकर बताएं ताकि हम आगे बढ़ सकें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:59:46",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिए, कृपया दोबारा कहेंगे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:59:52",
+    "speaker": "user",
+    "content": "कर दिया है मैंने लिख के आराम.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T08:59:52",
+    "speaker": "assistant",
+    "content": "बहुत बढ़िया, विकास सैनी जी। अब कृपया business address और उसका पिनकोड सही से भरें, फिर \"Proceed\" पर क्लिक करें। अगर कोई सवाल हो तो बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:00:07",
+    "speaker": "assistant",
+    "content": "माफ़ करें, कृपया फिर से दोहरा सकते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:00:14",
+    "speaker": "user",
+    "content": "लगा रहा हूं",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:00:14",
+    "speaker": "assistant",
+    "content": "ठीक है, विकास सैनी जी। कृपया ध्यान से सभी details भरें और जैसे ही आप \"Proceed\" पर क्लिक कर लेंगे, मुझे बताएं ताकि मैं आगे आपकी मदद कर सकूँ।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:00:32",
+    "speaker": "user",
+    "content": "record. इसमें आगे की जानकारी फिर बाद मिलेगी क्या interest वगैरह की?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:00:32",
+    "speaker": "assistant",
+    "content": "जी, विकास सैनी जी, जैसे ही आप \"Proceed\" पर क्लिक करेंगे और आगे बढ़ेंगे, आपको interest rate और final loan offer की जानकारी आखिरी पेज पर दिखाई देगी। अगर आप चाहें तो मैं उसी समय आपकी मदद कर सकती हूँ। क्या आप आगे बढ़ना चाहेंगे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:00:51",
+    "speaker": "user",
+    "content": "हां.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:00:51",
+    "speaker": "assistant",
+    "content": "बहुत बढ़िया, विकास सैनी जी। कृपया आगे बढ़ें और जैसे ही final offer पेज दिखे, मुझे बताएं ताकि मैं आपकी मदद कर सकूँ।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:01:02",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:01:02",
+    "speaker": "assistant",
+    "content": "जी, विकास सैनी जी, मैं प्रिया बोल रही हूँ Aditya Birla Capital से। कृपया बताएं, क्या आपने final loan offer पेज देख लिया है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:01:16",
+    "speaker": "user",
+    "content": "नहीं finally भी नहीं आया वह मैं apply कर रहा हूं PIN code लगा रहा हूं",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:01:16",
+    "speaker": "assistant",
+    "content": "समझ गई, विकास सैनी जी। कृपया ध्यान से अपना पिनकोड सही से डालें। अगर पिनकोड डालने में कोई दिक्कत हो रही हो तो बताएं, मैं मदद करती हूँ।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:01:32",
+    "speaker": "user",
+    "content": "अच्छा. इसमें आगे pro",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:01:34",
+    "speaker": "user",
+    "content": "नहीं हो रहा क्या मतलब?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:01:36",
+    "speaker": "user",
+    "content": "सब कुछ भर दिया जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:01:36",
+    "speaker": "assistant",
+    "content": "ठीक है, विकास सैनी जी।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:01:41",
+    "speaker": "user",
+    "content": "Business order",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:01:41",
+    "speaker": "assistant",
+    "content": "समझ गई, विकास सैनी जी। अगर आपने सभी details भर दी हैं और \"Proceed\" button दबा दिया है, तो अब अगला step loading का होगा जिसमें आपका loan offer तैयार होगा। कृपया थोड़ा इंतजार करें, यह प्रक्रिया कुछ समय ले सकती है। अगर कोई issue आए तो मुझे जरूर बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:02:01",
+    "speaker": "user",
+    "content": "इसमें क्या है उद्यम",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:02:03",
+    "speaker": "user",
+    "content": "उद्यम में क्या लगवाए?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:02:03",
+    "speaker": "assistant",
+    "content": "जी, विकास सैनी जी, उद्यम नंबर वो होता है जो आपके business का Udyam registration number होता है। अगर आपके पास यह नंबर है तो कृपया वह भरें। अगर नहीं है या आप इसे भरना नहीं चाहते तो आप \"Skip\" भी कर सकते हैं। लेकिन ध्यान रखें कि Skip करने पर आपकी application manual review के लिए जाएगी। क्या आप उद्यम नंबर भरना चाहेंगे या Skip करना पसंद करेंगे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:02:28",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिए, कृपया फिर से कहेंगे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:02:34",
+    "speaker": "user",
+    "content": "Skip करना",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:02:34",
+    "speaker": "assistant",
+    "content": "ठीक है, विकास सैनी जी। आप \"Skip\" पर क्लिक कर सकते हैं। इसके बाद आपको एक पेज दिखाई देगा जहाँ आपको \"Skip anyway\" या \"Cancel\" का विकल्प मिलेगा। अगर आप manual review के लिए जाना चाहते हैं तो \"Skip anyway\" पर क्लिक करें। कृपया बताएं जब आप यह कर लें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:02:58",
+    "speaker": "user",
+    "content": "सात सौ तिरासी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:02:58",
+    "speaker": "assistant",
+    "content": "जी, विकास सैनी जी, कृपया ध्यान से \"Skip anyway\" विकल्प पर क्लिक करें ताकि आपकी application manual review के लिए आगे बढ़ सके। इसके बाद प्रक्रिया आगे बढ़ेगी। कृपया बताएं जब यह हो जाए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:03:19",
+    "speaker": "user",
+    "content": "यह तो ठीक है हम इसके लिए month अठारह month कम ज़्यादा करना हो तो.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:03:19",
+    "speaker": "assistant",
+    "content": "समझ गई, विकास सैनी जी। जो loan term होता है, जैसे अठारह महीने या उससे कम ज़्यादा, वो final offer पेज पर ही दिखेगा और वहीं से आप इसे customize कर पाएंगे। फिलहाल आप आवेदन पूरा करें,",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:03:36",
+    "speaker": "user",
+    "content": "दिखा रहा है",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:03:36",
+    "speaker": "assistant",
+    "content": "बहुत अच्छा, विकास सैनी जी। क्या आप final offer और loan amount देख पा रहे हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:03:44",
+    "speaker": "user",
+    "content": "हां.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-04-08T09:03:44",
+    "speaker": "assistant",
+    "content": "बहुत बढ़िया, विकास सैनी जी। अब मैं आपको हमारे Relationship Manager से connect कर रही हूँ ताकि वे आपकी KYC process में मदद कर सकें। कृपया कुछ देर इंतजार करें।",
+    "feedback": null,
+    "agent_id": null
+  }
+]

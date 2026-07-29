@@ -1,0 +1,244 @@
+{
+  "call_id": "8ce44222-9ee7-46c7-b734-873d8b87280e-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "बोल",
+        "आदित्य"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं प्रकाशा मराडी जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "nine"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Nine",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "क्या",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "दिख",
+        "हमको"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok ma'am, अभी हमको दिख रहा है",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_apply",
+      "base_intent": "click_apply",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब आप",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "thousand",
+        "four",
+        "ninety"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ninety four thousand है.",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "sms",
+        "link",
+        "click"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब आप SMS में जो link है उसे click करें।",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_link_opened",
+      "base_intent": "open_link",
+      "keywords": [
+        "open",
+        "eligibility",
+        "app",
+        "already"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Eligibility. Already app में open है ना?",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_explain_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "interest rate",
+        "offer",
+        "sms",
+        "link",
+        "now"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "The interest rate starts from 10.99 percent and depends on your final offer. Now, please click the link in the SMS.",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "कॉल",
+        "कीजिए",
+        "माफ़"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "माफ़ कीजिए, क्या आप अभी कॉल पर हैं?",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_do_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "call",
+        "number",
+        "phone",
+        "net",
+        "उसको"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Yes madam. थोड़ा दूसरा number से call कर सकते हैं ma'am? और एक number है उसको phone किया तो उसको है net आएगा नहीं तो नहीं है.",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "call",
+        "रखें",
+        "समय",
+        "समझ",
+        "इसी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं समझ सकती हूँ। इस समय मैं इसी नंबर से ही call कर रही हूँ। क्या हम अभी इसी नंबर पर बात जारी रखें?",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_respond_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "number",
+        "दूसरा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं ma'am, दूसरा number से हो जाएगा. अच्छा",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "रखें",
+        "कॉल",
+        "नंबर",
+        "जारी",
+        "चाहे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मैं अभी सिर्फ इस नंबर से ही कॉल कर सकती हूँ। आप चाहे तो इस नंबर पर बात जारी रखें।",
+      "entities": []
+    }
+  ]
+}

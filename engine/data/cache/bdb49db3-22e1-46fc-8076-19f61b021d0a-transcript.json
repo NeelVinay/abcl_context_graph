@@ -1,0 +1,275 @@
+{
+  "call_id": "bdb49db3-22e1-46fc-8076-19f61b021d0a-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello hello",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "hello",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "इंतज़ार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ जी, मैं इंतज़ार कर रही हूँ... <CHD/>",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "hello hello",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "बोल",
+        "आदित्य"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं कृष्णा गुम्पेना जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "regarding"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Regarding?",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "आदित्य",
+        "बिरला",
+        "कैपिटल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं प्रिया हूँ, आदित्य बिरला कैपिटल की",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "what",
+        "regarding"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello hello. Yeah, regarding regarding ma'am, what?",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "capital",
+        "aditya",
+        "birla"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I am Priya from Aditya Birla Capital.",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "calling",
+        "regarding"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I understood that why are you calling regarding?",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "pre-approved",
+        "loan offer",
+        "loan",
+        "offer",
+        "approved"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "This is a pre-approved loan offer from Aditya Birla Capital that might be useful for your needs.",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "number",
+        "one",
+        "need",
+        "don",
+        "out"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "No ma'am, I ma'am I don't I don't need ma'am. Do one thing ma'am, please write out my number, please.",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "loan",
+        "personal",
+        "like",
+        "any",
+        "need"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I don't need any personal loan. Are you guys are having anything like that? You're calling on Sundays also?",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "loan",
+        "approved",
+        "pre",
+        "number",
+        "help"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I understand. Our team does make calls on Sundays to help with pre-approved loan offers. If you prefer, I can note your number to avoid future calls.",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "But but हां but",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_respond_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "number",
+        "one",
+        "right"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "yeah please do one thing right of my number.",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_offer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [
+        "number",
+        "sure",
+        "there",
+        "assist",
+        "note"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Sure, I will note your number to avoid future calls. Is there anything else I can assist you with?",
+      "entities": []
+    }
+  ]
+}

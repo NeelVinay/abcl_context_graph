@@ -1,0 +1,331 @@
+[
+  {
+    "timestamp": "2026-06-14T07:40:13",
+    "speaker": "user",
+    "content": "Hello?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:40:17",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:40:17",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं रिचर्ड अमिताभ जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:40:27",
+    "speaker": "user",
+    "content": "जी ma'am बताइए.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:40:27",
+    "speaker": "assistant",
+    "content": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है पाँच लाख रुपये का — मैं अभी इस call पर आपको इस loan को apply करने में मदद कर सकती हूँ। क्या हम शुरू करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:40:48",
+    "speaker": "user",
+    "content": "नहीं इसकी जानकारी तो चाहिए ma'am क्या rate है interest rate क्या है? कैसे है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:40:48",
+    "speaker": "assistant",
+    "content": "Interest rate ten point nine nine percent से शुरू होती है और आपके final offer पर depend करती है। जी, मैं फिर से simple तरीके से बताती हूँ।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:41:01",
+    "speaker": "user",
+    "content": "मतलब",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:41:02",
+    "speaker": "user",
+    "content": "last कितने जाती है ma'am उसका?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:41:02",
+    "speaker": "assistant",
+    "content": "Interest rate दस point नौ नौ प्रतिशत से शुरू होती है और आपका final offer तय करेगा कि rate कितना होगा। अब मैं आपको SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:41:24",
+    "speaker": "user",
+    "content": "मतलब नहीं last हमको यह बताइए ना मैं शुरू तो होता है ten point nine nine से लेकिन last तक जाता है यह?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:41:24",
+    "speaker": "assistant",
+    "content": "Interest rate की exact आखिरी limit हर case में अलग होती है और यह आपके profile और documents के आधार पर तय होती है। अब मैं आपको SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:41:40",
+    "speaker": "user",
+    "content": "नहीं मैं",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:41:48",
+    "speaker": "user",
+    "content": "ma'am मेरी बात सुनिए यह बताइए कि ten point nine nine से five lakh का मतलब limitation",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:41:50",
+    "speaker": "user",
+    "content": "high interest क्या जाएगा यह बताइए?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:41:50",
+    "speaker": "assistant",
+    "content": "जी, high interest rate आपके profile, CIBIL score, और documents के आधार पर decide होता है। Ten point nine nine percent शुरुआत है, लेकिन final rate अलग-अलग हो सकता है। अब मैं आपको SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:42:20",
+    "speaker": "assistant",
+    "content": "क्षमा करें, क्या आप अभी भी कॉल पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:42:27",
+    "speaker": "user",
+    "content": "जी ma'am बताएं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:42:27",
+    "speaker": "assistant",
+    "content": "मैं अभी आपको SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:42:48",
+    "speaker": "assistant",
+    "content": "क्षमा करें, क्या आप अभी भी कॉल पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:42:55",
+    "speaker": "assistant",
+    "content": "माफ़ करें, क्या आप फिर से कहेंगे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:43:01",
+    "speaker": "user",
+    "content": "Email. Line पर हूं मैं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:43:01",
+    "speaker": "assistant",
+    "content": "अब अपना personal email address enter करें और हो जाए तो बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:43:09",
+    "speaker": "user",
+    "content": "Link",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:43:14",
+    "speaker": "user",
+    "content": "open होने के बाद ही तो email address डालेंगे भाई.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:43:14",
+    "speaker": "assistant",
+    "content": "आपको सबसे पहले SMS में जो link आया है, उसे open करना होगा। उसके बाद ही आप अपना personal email address enter कर पाएंगे।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:43:27",
+    "speaker": "user",
+    "content": "इसमें मैं यह",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:43:30",
+    "speaker": "user",
+    "content": "apply पर click करना है?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:43:30",
+    "speaker": "assistant",
+    "content": "आप जब link खोलेंगे, तो आपको home screen पर 'Apply Now' button दिखेगा, उस पर click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:43:38",
+    "speaker": "user",
+    "content": "जी कर दिया ma'am.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:43:41",
+    "speaker": "user",
+    "content": "Mobile number डालने के लिए बोल रहे हैं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:43:41",
+    "speaker": "assistant",
+    "content": "अपना mobile number enter करें। फिर Terms and Conditions checkbox को check करें और 'Get OTP' पर click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:43:56",
+    "speaker": "assistant",
+    "content": "क्षमा करें, क्या आप अभी भी कॉल पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:44:02",
+    "speaker": "user",
+    "content": "Email.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:44:02",
+    "speaker": "assistant",
+    "content": "अब अपना personal email address enter करें और हो जाए तो बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:44:10",
+    "speaker": "user",
+    "content": "OTP मांग रहा है ma'am.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:44:10",
+    "speaker": "assistant",
+    "content": "आपके registered email पर एक OTP आएगा — उसे verify करें और हो जाए तो बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:44:20",
+    "speaker": "user",
+    "content": "Same number मांग रहा है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:44:20",
+    "speaker": "assistant",
+    "content": "यह OTP आपके registered mobile number पर आएगा। कृपया वही number enter करें और OTP verify करें। हो जाए तो बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:44:30",
+    "speaker": "user",
+    "content": "जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:44:32",
+    "speaker": "user",
+    "content": "हो गया ma'am.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:44:32",
+    "speaker": "assistant",
+    "content": "अब मैं आपकी मदद करता हूँ। यह final page है जहाँ आप अपना loan amount और offer देख सकते हैं। क्या आप अपना loan amount और final offer देख सकते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:44:52",
+    "speaker": "user",
+    "content": "जी ma'am यह five lakh तो off",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:44:52",
+    "speaker": "user",
+    "content": "दिखा रहा है लेकिन interest rate क्या रहेगा यह show नहीं हो रहा है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:44:52",
+    "speaker": "assistant",
+    "content": "हो सकता है कुछ issue हो। एक मिनट, मैं आपको Relationship Manager से connect कर देती हूँ जो help करेंगे।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:45:02",
+    "speaker": "user",
+    "content": "जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-14T07:45:02",
+    "speaker": "assistant",
+    "content": "अब मैं आपको Relationship Manager से connect कर देती हूँ जो आपकी मदद करेंगे। कृपया कुछ समय इंतज़ार करें।",
+    "feedback": null,
+    "agent_id": null
+  }
+]

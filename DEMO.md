@@ -1,22 +1,24 @@
 # Demo run-book
 
 Everything runs from one command. No API key — it uses the local Claude Code CLI.
+See `commands.md` for the full command reference; this doc is the talking-points
+version for walking someone through it live.
 
 ## The command
 
-**VS Code:** `⇧⌘P` → `Tasks: Run Task` → **Demo: full pipeline (transcripts → improved prompt)**
+**VS Code:** `⇧⌘P` → `Tasks: Run Task` → **3. Run pipeline (full run)**
 
 It is also the default build task, so `⇧⌘B` runs it directly.
 
-**Terminal:** `./scripts/demo_e2e.sh`
+**Terminal:** `./run-pipeline`
 
 | | time |
 |---|---|
 | normal run (decisions cached) | **~45 s** |
-| `DEMO_FRESH=1 ./scripts/demo_e2e.sh` (every decision a live model call) | ~8 min |
+| `./engine/reset abcl && ./run-pipeline` (forces a genuine from-scratch run) | ~8 min |
 
-The input prompt is copied before anything touches it, so the run is repeatable and
-`data/clients/abcl/autorun/input.raven` is never modified.
+Reads `INPUT/transcripts/` and `INPUT/prompt/`; neither is ever modified. Writes
+everything to `OUTPUT/`, fully rebuilt each run.
 
 ---
 
@@ -27,7 +29,7 @@ The input prompt is copied before anything touches it, so the run is repeatable 
 > "We take the client's raw call transcripts and build a context graph — what
 > customers actually say, where calls die, which intents fire."
 
-Open **`data/output/abcl_output/abcl_exec.png`** — the call flow with real volumes.
+Open **`OUTPUT/Context_Graph/Context_Graph.png`** — the call flow with real volumes.
 
 The number that carries the story — **most of the loss is at the very start**:
 
@@ -70,11 +72,11 @@ evidence pack ever mentions an off-topic theme, that self-report is the tell; ch
 
 ### Stage 3 — Before / after
 
-The script prints the diff. Full patch at `data/clients/abcl/demo/diff.patch`.
+The script prints the diff. Full patch at `OUTPUT/Changes.diff`.
 
 ### Stage 4 — The reasoning
 
-Open **`data/clients/abcl/CHANGES-demo.md`**. This is the piece worth dwelling on —
+Open **`OUTPUT/Change_Rationale.md`**. This is the piece worth dwelling on —
 every change carries its evidence. The strongest example:
 
 > **New line in `handle_security_concern()`**
@@ -89,7 +91,7 @@ every change carries its evidence. The strongest example:
 ## The two things that make it defensible
 
 **1. It refuses more than it accepts.** 32 proposals were blocked automatically —
-see *Rejected by safety checks* at the end of `CHANGES-demo.md`. Nothing there
+see *Rejected by safety checks* at the end of `OUTPUT/Change_Rationale.md`. Nothing there
 reached the prompt. The compliance guard rejects any generated line containing a
 digit, `%`, `₹`, or a rate/amount/timeline claim, because that is the
 regulated-lending boundary and it is enforced in code, not trusted to the model.
@@ -107,9 +109,10 @@ correlates weakly and non-significantly (Fisher p=0.08).
 
 **"Is a model really making these decisions, or is it rules?"**
 Both, deliberately. Mining candidates is mechanical and cheap. Judging them is the
-model. Show `data/clients/abcl/prompts_sent/` — the fully rendered prompts *and*
+model. Show `engine/data/clients/abcl/prompts_sent/` — the fully rendered prompts *and*
 responses are on disk. `llm_calls.jsonl` logs every call with token counts. If they
-want to see it live: `DEMO_FRESH=1 ./scripts/demo_e2e.sh`.
+want to see it live: `./engine/reset abcl && ./run-pipeline` forces every decision to be
+a fresh model call instead of a cache hit.
 
 **"What does it cost?"**
 11 model calls per full run, ~448K in / 52K out tokens. Re-runs are free — responses
@@ -123,15 +126,13 @@ fails, nothing is written. A timestamped `.bak` is taken first regardless.
 
 **"Does this work for other clients?"**
 The graph stage does, today — `myntra` (52 calls) and `justdial` (115) are already
-processed, and an unknown client routes through a shared broad taxonomy with nothing
-hand-built first. The improver stage needs that client's own `.raven` prompt, which
-only ABCL has so far:
-
-```
-CLIENT=myntra PROMPT=path/to/their_prompt.raven ./scripts/demo_e2e.sh
-```
-
-Without `PROMPT` the run stops at preflight rather than improving the wrong file.
+onboarded internally, and an unknown client routes through a shared broad taxonomy
+with nothing hand-built first. The improver stage needs that client's own `.raven`
+prompt, which only ABCL has so far: drop their transcripts into
+`INPUT/transcripts/` and their prompt into `INPUT/prompt/`, then `./run-pipeline` —
+the client is auto-detected from what's actually in there. This project works with
+one client's data at a time, so loading a different client's transcripts replaces
+whatever was loaded before, not adds to it.
 
 ---
 

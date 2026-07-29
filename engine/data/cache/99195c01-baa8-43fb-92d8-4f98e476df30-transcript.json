@@ -1,0 +1,112 @@
+{
+  "call_id": "99195c01-baa8-43fb-92d8-4f98e476df30-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "recording_disclosure",
+      "keywords": [
+        "name",
+        "available",
+        "see",
+        "person",
+        "calling"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Your name and reason for calling. I'll see if this person is available.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "capital",
+        "aditya",
+        "birla",
+        "name",
+        "know"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I am Priya from Aditya Birla Capital. May I know if <<devanagari_name>> is available to speak?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello",
+        "आदित्य",
+        "बिड़ला"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Thanks आदित्य बिड़ला. Hello.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello",
+        "capital",
+        "aditya",
+        "birla",
+        "name"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello! I am Priya from Aditya Birla Capital. May I know if I am speaking with <<devanagari_name>>?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "call",
+        "sorry",
+        "there",
+        "still"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Sorry, are you still there on the call?",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello",
+        "capital",
+        "aditya",
+        "birla",
+        "name"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello, I am Priya from Aditya Birla Capital. May I know if I am speaking with <<devanagari_name>>?",
+      "entities": []
+    }
+  ]
+}

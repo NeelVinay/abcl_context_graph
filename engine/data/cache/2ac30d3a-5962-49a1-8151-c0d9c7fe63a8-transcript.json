@@ -1,0 +1,81 @@
+{
+  "call_id": "2ac30d3a-5962-49a1-8151-c0d9c7fe63a8-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "बोला"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बोला",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "बोल",
+        "आदित्य"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं इंद्रजीत कुमार जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं आशीष से बात कर रही है आप.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "call",
+        "connect",
+        "sorry"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Sorry पर, इंद्रजीत कुमार जी को ही इस call पर होना होगा। हम उन्हें बाद में connect करेंगे।",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "number"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तो अभी मेरे number पर",
+      "entities": []
+    }
+  ]
+}

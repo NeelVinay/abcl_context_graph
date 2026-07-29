@@ -1,0 +1,288 @@
+{
+  "call_id": "c06308cd-34fd-44de-b2e1-7f1694b22ff1-transcript",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "एकदम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बस बस एकदम बगल में रहना है ठीक है?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "मदद",
+        "शुरू",
+        "पूरी",
+        "बिलकुल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी बिलकुल, मैं यहाँ हूँ आपकी पूरी मदद के लिए। क्या हम शुरू करें?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello",
+        "बोलिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello. हां जी ma'am बोलिए ना.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "बोल",
+        "आदित्य"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं HARDIK BIPINBHAI SHAH जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "बोलिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी ma'am आप बोलिए हां अनित रावत से बात हो रही है. आप बोलिए.",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "तरफ",
+        "आदित्य",
+        "बिरला",
+        "कैपिटल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपको आदित्य बिरला कैपिटल की तरफ",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "हमारी तोहरूम है.",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "loan",
+        "sorry",
+        "किस"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "तो sorry ma'am लेकिन यह किस चीज़ का loan था?",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "pre-approved",
+        "loan offer",
+        "loan",
+        "offer",
+        "approved"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "यह Aditya Birla Capital की तरफ से आपके लिए एक pre-approved loan offer है जो आपकी eligibility और documents के आधार पर दिया गया है। क्या हम शुरू करें?",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "शुरू",
+        "कीजिए",
+        "देखते"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok. Ok ma'am शुरू कीजिए अब देखते हैं.",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms",
+        "application",
+        "process",
+        "link",
+        "जिसमें"
+      ],
+      "sentiment": null,
+      "tool": "send_sms",
+      "text": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "what",
+        "whatsapp"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "What? WhatsApp sir?",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "loan",
+        "sms",
+        "application",
+        "process",
+        "link"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "यह SMS में जो link है, उसे click करके आप अपना loan application process complete कर सकते हैं। क्या आपने SMS देख लिया है?",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "sms",
+        "link"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपने SMS में जो link",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "thank"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok ma'am. Thank you.",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_confirm",
+      "base_intent": "agree",
+      "keywords": [
+        "application",
+        "help",
+        "any",
+        "free",
+        "need"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "You are welcome. If you need any help while filling the application, feel free to ask.",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_final_offer",
+      "base_intent": "final_offer",
+      "keywords": [
+        "thank"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Thank you ma'am.",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "You're",
+      "entities": []
+    }
+  ]
+}

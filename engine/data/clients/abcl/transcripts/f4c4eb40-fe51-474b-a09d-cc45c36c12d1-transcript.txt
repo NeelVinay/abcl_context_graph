@@ -1,0 +1,373 @@
+[
+  {
+    "timestamp": "2026-05-14T09:34:38",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:34:38",
+    "speaker": "assistant",
+    "content": "नमस्ते… क्या मैं Hardika जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:34:47",
+    "speaker": "user",
+    "content": "एक बार दुबारा बोलिए.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:34:47",
+    "speaker": "assistant",
+    "content": "Hardika जी, मैं प्रिया बोल रही हूँ Aditya Birla Capital से। क्या मैं आपसे अभी कुछ देर बात कर सकती हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:34:58",
+    "speaker": "user",
+    "content": "बोलिए.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:34:58",
+    "speaker": "assistant",
+    "content": "जी, सबसे पहले मैं आपको बता दूँ कि यह call training और quality purpose के लिए record की जा रही है। हम आपको बताना चाहते हैं कि Aditya Birla Capital की तरफ से आपके पास एक exciting pre approved loan offer है दो लाख रुपये का, जिसका rate of interest 10.99 percent है। मैं अभी इसी call पर आपको इस loan के लिए apply करने में मदद कर सकती हूँ। क्या हम शुरू करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:35:25",
+    "speaker": "user",
+    "content": "हां, ठीक है कर दीजिए.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:35:25",
+    "speaker": "assistant",
+    "content": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:35:45",
+    "speaker": "assistant",
+    "content": "क्या आपको SMS मिल गया?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:35:50",
+    "speaker": "user",
+    "content": "हां हां मिल गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:35:50",
+    "speaker": "assistant",
+    "content": "अब आप SMS में जो link है उसे click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:35:57",
+    "speaker": "user",
+    "content": "हां, कर दिया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:35:57",
+    "speaker": "assistant",
+    "content": "आप home screen पर आ गए हैं। आप नीचे एक 'Apply Now' button देख सकते हैं, उस पर click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:36:08",
+    "speaker": "user",
+    "content": "हो गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:36:08",
+    "speaker": "assistant",
+    "content": "अपना वही mobile number type करें जो पहले से registered है। फिर Terms and Conditions checkbox को check करें और 'Get OTP' पर click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:36:21",
+    "speaker": "user",
+    "content": "पहले से number register है मतलब?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:36:22",
+    "speaker": "assistant",
+    "content": "आप वही mobile number use करें जो आपने पहले loan application या Aditya Birla Capital के साथ दिया था।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:36:33",
+    "speaker": "user",
+    "content": "अच्छा.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:36:39",
+    "speaker": "user",
+    "content": "ठीक है एक minute रुको line में डाल रहा हूं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:36:39",
+    "speaker": "assistant",
+    "content": "हाँ जी, मैं इंतज़ार कर रही हूँ...",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:36:51",
+    "speaker": "assistant",
+    "content": "सॉरी, क्या आप अभी भी लाइन पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:36:56",
+    "speaker": "user",
+    "content": "हां हां मैं देख रहा हूं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:36:56",
+    "speaker": "assistant",
+    "content": "आप अपना वही mobile number type करें जो पहले से registered है। फिर Terms and Conditions checkbox को check करें और 'Get OTP' पर click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:37:12",
+    "speaker": "user",
+    "content": "ठीक है. मैंने एक madam. एक box ना",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:37:15",
+    "speaker": "user",
+    "content": "मैंने लिया",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:37:15",
+    "speaker": "assistant",
+    "content": "आपको दो Terms and Conditions checkboxes दिखेंगे — दोनों को check करें, यह data security के लिए ज़रूरी है। फिर 'Proceed' button पर click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:37:31",
+    "speaker": "user",
+    "content": "Proceed button पर click करूं? ठीक है, कर दो.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:37:31",
+    "speaker": "assistant",
+    "content": "क्या आपने दोनों checkboxes ठीक से check कर लिए हैं? अगर हाँ, तो Proceed button पर click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:37:40",
+    "speaker": "user",
+    "content": "हां कर दिया",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:37:40",
+    "speaker": "assistant",
+    "content": "अब यह Professional और Employment details का page है — आपके loan offer को fetch करने के लिए यह details ज़रूरी हैं। पहले अपना employment type select करें — Salaried या Self-Employed।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:37:56",
+    "speaker": "user",
+    "content": "salaried.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:37:56",
+    "speaker": "assistant",
+    "content": "Salaried मतलब जहाँ monthly salary account में आती है। अब कृपया अपनी monthly income fill करें — यह आपकी net take-home salary है, tax और bonus को छोड़कर। Privately type करें और हो जाए तो बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:38:12",
+    "speaker": "user",
+    "content": "हो गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:38:12",
+    "speaker": "assistant",
+    "content": "अब अपनी organization का नाम enter करें। Privately type करें और हो जाए तो बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:38:22",
+    "speaker": "user",
+    "content": "Yeah.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:38:22",
+    "speaker": "assistant",
+    "content": "अब अपनी organization का नाम enter करें। Privately type करें और हो जाए तो बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:38:31",
+    "speaker": "user",
+    "content": "हो गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:38:31",
+    "speaker": "assistant",
+    "content": "अब अपनी official email ID enter करें। Privately type करें और हो जाए तो बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:38:45",
+    "speaker": "assistant",
+    "content": "सॉरी, क्या आप अभी भी कॉल पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:38:51",
+    "speaker": "user",
+    "content": "मैं बोला हो गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:38:51",
+    "speaker": "assistant",
+    "content": "अब अपनी official email ID enter करें। Privately type करें और हो जाए तो बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:38:59",
+    "speaker": "user",
+    "content": "हो गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:38:59",
+    "speaker": "assistant",
+    "content": "अब organization का address fill करें — जैसे fields में दिखाया गया है। फिर office pincode — 6 digits। सब हो जाए तो बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:39:13",
+    "speaker": "user",
+    "content": "ठीक है डाल दिया मैंने फिर.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:39:13",
+    "speaker": "assistant",
+    "content": "अगर address और pincode fill हो गया है, तो आगे बढ़ें और 'Proceed' button पर click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:39:25",
+    "speaker": "user",
+    "content": "ठीक है, हो गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:39:25",
+    "speaker": "assistant",
+    "content": "आपके registered email पर एक OTP आएगा — उसे verify करें और हो जाए तो बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:39:36",
+    "speaker": "user",
+    "content": "हो गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:39:36",
+    "speaker": "assistant",
+    "content": "यह final page है जहाँ आप अपना loan amount और offer देख सकते हैं। क्या आप अपना loan amount और final offer देख सकते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:39:49",
+    "speaker": "user",
+    "content": "ठीक है, मैं देख लेता हूं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:39:49",
+    "speaker": "assistant",
+    "content": "क्या आप अपना loan amount और final offer देख पा रहे हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:39:57",
+    "speaker": "user",
+    "content": "देख पा रहा हूं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-05-14T09:39:57",
+    "speaker": "assistant",
+    "content": "अब मैं आपको Relationship Manager से connect कर देती हूँ जो आपका KYC process संभालेंगे। कृपया कुछ",
+    "feedback": null,
+    "agent_id": null
+  }
+]

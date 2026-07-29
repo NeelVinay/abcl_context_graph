@@ -1,0 +1,1337 @@
+{
+  "call_id": "b07fcd2f-a257-4c2b-bd1c-bd1c811126dd-transcript",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello",
+        "गाड़ी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello. अभी गाड़ी आई",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "बोल",
+        "आदित्य"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ जी, नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं परमार निरव कुमार डेनियल भा जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello? हां गया.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms",
+        "application",
+        "process",
+        "link",
+        "जिसमें"
+      ],
+      "sentiment": null,
+      "tool": "send_sms",
+      "text": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "sms",
+        "link",
+        "click"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब आप SMS में जो link है उसे click करें।",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_apply",
+      "base_intent": "click_apply",
+      "keywords": [
+        "apply now",
+        "apply",
+        "now",
+        "click",
+        "देख"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आप home screen पर आ गए हैं। आप नीचे एक 'Apply Now' button देख सकते हैं, उस पर click करें।",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_do_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "number",
+        "mobile",
+        "डालना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Mobile number डालना है.",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "click",
+        "number",
+        "check",
+        "get"
+      ],
+      "sentiment": null,
+      "tool": "send_otp",
+      "text": "अपना mobile number enter करें। फिर Terms and Conditions checkbox को check करें और 'Get OTP' पर click करें।",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
+      "keywords": [
+        "कॉल",
+        "चूंकि",
+        "समाप्त",
+        "उत्तर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "चूंकि आप उत्तर नहीं दे रहे हैं, मैं अब कॉल समाप्त कर रही",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "seven"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Seven madam.",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "click",
+        "number",
+        "check",
+        "get"
+      ],
+      "sentiment": null,
+      "tool": "send_otp",
+      "text": "क्या आप अपना mobile number enter कर सकते हैं? फिर Terms and Conditions checkbox को check करके 'Get OTP' पर click करें।",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "click",
+        "verify",
+        "screen",
+        "enter"
+      ],
+      "sentiment": null,
+      "tool": "send_otp",
+      "text": "आपको एक confirmation आएगा 'We have sent an OTP'. अगली screen पर OTP enter करें और 'Verify' पर click करें।",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "verify"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "क्या आपने OTP verify कर लिया है?",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "करवा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "करवा दिया.",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_pan",
+      "base_intent": "enter_pan",
+      "keywords": [
+        "पैन",
+        "number",
+        "बताएं",
+        "जाए",
+        "personal"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब आपको personal details भरनी होंगी। सबसे पहले अपना पैन number fill करें और हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "wait",
+        "कीजिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok, wait कीजिए.",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "इंतज़ार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ जी, मैं इंतज़ार कर रही हूँ...",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_pan",
+      "base_intent": "enter_pan",
+      "keywords": [
+        "pan",
+        "number"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां PAN number हो गया.",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_personal_details",
+      "base_intent": "personal_details",
+      "keywords": [
+        "gender",
+        "date of birth",
+        "marital",
+        "बताएं",
+        "जाए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब अपना full name जैसा पैन पर है वो enter करें, फिर gender, date of birth और marital status select करें। हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "check",
+        "pan"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok मैं अगर आप मेरे PAN पर जो नाम बना रहे हैं वह check कर लो.",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_personal_details",
+      "base_intent": "personal_details",
+      "keywords": [
+        "enter",
+        "पैन",
+        "जैसा",
+        "कार्ड",
+        "form"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपका नाम पैन कार्ड पर जैसा है, बिलकुल वैसा ही enter करें। नाम में कोई short form या initials नहीं होने चाहिए।",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "बोल",
+        "apply"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "फिर से apply करने के बोल रहे हैं.",
+      "entities": []
+    },
+    {
+      "index": 22,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_personal_details",
+      "base_intent": "personal_details",
+      "keywords": [
+        "gender",
+        "date of birth",
+        "marital",
+        "बताएं",
+        "जाए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी ज़रूर, मैं फिर से simple तरीके से बताती हूँ। अब अपना full name जैसा पैन पर है वही enter करें, gender, date of birth और marital status select करें। हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 23,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_do_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "बोला"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां sir फिर से OTP बोला फिर से.",
+      "entities": []
+    },
+    {
+      "index": 24,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "click",
+        "verify",
+        "screen",
+        "enter"
+      ],
+      "sentiment": null,
+      "tool": "send_otp",
+      "text": "आपको एक confirmation आएगा 'We have sent an OTP'. अगली screen पर OTP enter करें और 'Verify' पर click करें।",
+      "entities": []
+    },
+    {
+      "index": 25,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "wait"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok, wait हां.",
+      "entities": []
+    },
+    {
+      "index": 26,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "click",
+        "कृपया",
+        "बताएं",
+        "verify"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ जी, कृपया OTP enter करें और 'Verify' पर click करें। हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 27,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_do_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "check",
+        "wait",
+        "ज़रा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok, wait करना. मैं ज़रा OTP check कर लो.",
+      "entities": []
+    },
+    {
+      "index": 28,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "इंतज़ार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ जी, मैं इंतज़ार कर रही हूँ...",
+      "entities": []
+    },
+    {
+      "index": 29,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_email",
+      "base_intent": "enter_email",
+      "keywords": [
+        "email",
+        "बताएं",
+        "जाए",
+        "enter",
+        "personal"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब आपका personal email address enter करें और हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 30,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_pan",
+      "base_intent": "enter_pan",
+      "keywords": [
+        "pan",
+        "otp",
+        "डाल",
+        "card"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "यह मैंने OTP डाल दिया अब करना है PAN card",
+      "entities": []
+    },
+    {
+      "index": 31,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_email",
+      "base_intent": "enter_email",
+      "keywords": [
+        "email",
+        "personal"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब अपना personal email",
+      "entities": []
+    },
+    {
+      "index": 32,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_pan",
+      "base_intent": "enter_pan",
+      "keywords": [
+        "pan",
+        "card"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "PAN card मांगता है.",
+      "entities": []
+    },
+    {
+      "index": 33,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_pan",
+      "base_intent": "enter_pan",
+      "keywords": [
+        "पैन",
+        "number",
+        "बताएं",
+        "जाए",
+        "fill"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब अपना पैन number fill करें और हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 34,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "हो गया"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हो गया.",
+      "entities": []
+    },
+    {
+      "index": 35,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_personal_details",
+      "base_intent": "personal_details",
+      "keywords": [
+        "gender",
+        "date of birth",
+        "marital",
+        "बताएं",
+        "जाए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब अपना full name जैसा पैन पर है वो enter करें, फिर gender, date of birth और marital status select करें। हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 36,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_email",
+      "base_intent": "enter_email",
+      "keywords": [
+        "email",
+        "बताएं",
+        "जाए",
+        "enter",
+        "personal"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब अपना personal email address enter करें और हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 37,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_personal_details",
+      "base_intent": "personal_details",
+      "keywords": [
+        "marital",
+        "status"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अभी marital status है married.",
+      "entities": []
+    },
+    {
+      "index": 38,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_email",
+      "base_intent": "enter_email",
+      "keywords": [
+        "email",
+        "full",
+        "मांग",
+        "डालना",
+        "दिखाई"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अभी full अभी यहां तो email नहीं मांग दिखाई दे रहा. कहां email कहां डालना है?",
+      "entities": []
+    },
+    {
+      "index": 39,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_email",
+      "base_intent": "enter_email",
+      "keywords": [
+        "email",
+        "बताएं",
+        "जाए",
+        "enter",
+        "personal"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब अपना personal email address enter करें और हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 40,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "email"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Email ok.",
+      "entities": []
+    },
+    {
+      "index": 41,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_address",
+      "base_intent": "enter_address",
+      "keywords": [
+        "address",
+        "pincode",
+        "locality",
+        "building",
+        "house number"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब अपना address fill करें — flat या house number, building name, street, locality का नाम, और pincode। सब fill हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 42,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "email",
+        "डालने"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मुझे पहले email तो डालने दो नीरव कुमार.",
+      "entities": []
+    },
+    {
+      "index": 43,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_email",
+      "base_intent": "enter_email",
+      "keywords": [
+        "email",
+        "बताएं",
+        "जाए",
+        "personal",
+        "address"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, पहले personal email address fill करें और हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 44,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_address",
+      "base_intent": "enter_address",
+      "keywords": [
+        "address",
+        "डाल",
+        "mail"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Mail हो गया. अब address डाल रहा हूं.",
+      "entities": []
+    },
+    {
+      "index": 45,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_address",
+      "base_intent": "enter_address",
+      "keywords": [
+        "address",
+        "pincode",
+        "locality",
+        "building",
+        "house number"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब अपना address fill करें — flat या house number, building name, street, locality का नाम, और pincode। सब fill हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 46,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_terms_accept",
+      "base_intent": "accept_terms",
+      "keywords": [
+        "terms and condition",
+        "terms",
+        "click",
+        "check",
+        "button"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपको दो Terms and Conditions checkboxes दिखेंगे — दोनों को check करें, यह data security के लिए ज़रूरी है। फिर 'Proceed' button पर click करें।",
+      "entities": []
+    },
+    {
+      "index": 47,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "कर दिया"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां कर दिया आपको फिर.",
+      "entities": []
+    },
+    {
+      "index": 48,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_employment_type",
+      "base_intent": "employment_type",
+      "keywords": [
+        "salaried",
+        "self-employ",
+        "loan",
+        "offer",
+        "page"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "यह Professional और Employment details का page है — आपके loan offer को fetch करने के लिए यह details ज़रूरी हैं। पहले अपना employment type select करें — Salaried या Self-Employed।",
+      "entities": []
+    },
+    {
+      "index": 49,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "proceed",
+        "option",
+        "दिखाई"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Option दिखाई नहीं दे रहा. Proceed किया मैंने.",
+      "entities": []
+    },
+    {
+      "index": 50,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_employment_type",
+      "base_intent": "employment_type",
+      "keywords": [
+        "salaried",
+        "self-employ",
+        "employed",
+        "monthly",
+        "self"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Salaried मतलब जहाँ monthly salary account में आती है। Self-Employed मतलब",
+      "entities": []
+    },
+    {
+      "index": 51,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "पता"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां, वो तो मुझे पता है madam मुझे",
+      "entities": []
+    },
+    {
+      "index": 52,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "personal",
+        "professional",
+        "पता",
+        "लिखा",
+        "ऊपर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां, वह तो मुझे पता है मगर यहां मुझे mention करने के लिए कुछ तो यही ऊपर professional और personal and professional लिखा है.",
+      "entities": []
+    },
+    {
+      "index": 53,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_employment_type",
+      "base_intent": "employment_type",
+      "keywords": [
+        "salaried",
+        "self-employ",
+        "कृपया",
+        "बताएं",
+        "जाए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, समझ गई। कृपया अपने employment type को select करें — Salaried या Self-Employed। हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 54,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "बोल",
+        "मिल",
+        "पड़ेगा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मुझे ढूंढना पड़ेगा, मुझे मिल नहीं रहा. आप जो बोल रहे हैं वह, कहां mention करना है",
+      "entities": []
+    },
+    {
+      "index": 55,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "number",
+        "proceed",
+        "email",
+        "address",
+        "flat"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Email address डाल दिया, flat ना मकान का number डाल दिया, address डाल दिया. PIN code डाला, अभी proceed कर रहा हूं तो proceed हो नहीं रहा है.",
+      "entities": []
+    },
+    {
+      "index": 56,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_help_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "red",
+        "error",
+        "कृपया",
+        "check",
+        "button"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कृपया एक बार scroll करें और check करें कि कोई red error message तो नहीं आ रहा। monthly income और employment type सही से भरे हैं और सभी जरूरी fields भरें हैं। फिर से try करें proceed button दबाने का।",
+      "entities": []
+    },
+    {
+      "index": 57,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "कर दिया",
+        "proceed",
+        "name",
+        "बाकी",
+        "trade"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Trade में है name का वह कर देता हूं sir name का आ रहा है वह वहां थोड़ा बाकी था वह भी मैंने कर दिया अब वह proceed किया.",
+      "entities": []
+    },
+    {
+      "index": 58,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_org_name",
+      "base_intent": "organization_name",
+      "keywords": [
+        "organization",
+        "बताएं",
+        "जाए",
+        "enter"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब अपनी organization का नाम enter करें और हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 59,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_org_name",
+      "base_intent": "organization_name",
+      "keywords": [
+        "organization",
+        "बताएं",
+        "जाए",
+        "enter"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब अपनी organization का नाम enter करें और हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 60,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "personal",
+        "fill",
+        "दोनों",
+        "organization",
+        "दूं"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Organization का ID नहीं है मेरा personal ID चल रहा है दोनों जगह एक ही fill कर दूं?",
+      "entities": []
+    },
+    {
+      "index": 61,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "offer",
+        "enter",
+        "personal",
+        "full",
+        "official"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आप अपनी organization का full official नाम enter करें जो आपके offer letter या salary slip पर है। Personal ID अलग होता है, इसलिए organization का नाम उसी के अनुसार भरें।",
+      "entities": []
+    },
+    {
+      "index": 62,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "मतलब",
+        "organization"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मतलब organization के नाम के मैंने ID ही नहीं बनाया.",
+      "entities": []
+    },
+    {
+      "index": 63,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "enter",
+        "organization",
+        "जरूरी",
+        "दें",
+        "कंपनी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, कोई बात नहीं। आप बस अपनी कंपनी या organization का नाम enter कर दें, ID जरूरी नहीं है।",
+      "entities": []
+    },
+    {
+      "index": 64,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_org_name",
+      "base_intent": "organization_name",
+      "keywords": [
+        "organization",
+        "accept"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां मगर यह organization organization का नाम है ना वह accept नहीं कर रहा है.",
+      "entities": []
+    },
+    {
+      "index": 65,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "कृपया",
+        "enter",
+        "पूरा",
+        "जैसा",
+        "official"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अगर organization नाम accept नहीं हो रहा है, तो कृपया ध्यान से पूरा नाम enter करें जैसा आपके salary slip या official documents में है। थोड़ी spelling या spacing की गलती भी error दे सकती है।",
+      "entities": []
+    },
+    {
+      "index": 66,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "रुकिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं पढ़ रहा हूं. हां हां रुकिए.",
+      "entities": []
+    },
+    {
+      "index": 67,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "इंतज़ार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ जी, मैं इंतज़ार कर रही हूँ...",
+      "entities": []
+    },
+    {
+      "index": 68,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_email",
+      "base_intent": "enter_email",
+      "keywords": [
+        "email",
+        "बताएं",
+        "जाए",
+        "enter",
+        "official"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब अपनी official email ID enter करें और हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 69,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_email",
+      "base_intent": "enter_email",
+      "keywords": [
+        "email",
+        "बताएं",
+        "जाए",
+        "enter",
+        "official"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब अपनी official email ID enter करें और हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 70,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_email",
+      "base_intent": "enter_email",
+      "keywords": [
+        "email",
+        "बताएं",
+        "जाए",
+        "enter",
+        "official"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब अपनी official email ID enter करें और हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 71,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_business_details",
+      "base_intent": "business_details",
+      "keywords": [
+        "बताएं",
+        "जाए",
+        "address",
+        "fill",
+        "pincode"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब organization का address fill करें — जैसे fields में दिखाया गया है। फिर office pincode — 6 digits। सब हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 72,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "दूं",
+        "register"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कर दिया. नहीं है register नहीं है कर दूं?",
+      "entities": []
+    },
+    {
+      "index": 73,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "आगे",
+        "address",
+        "fill",
+        "organization",
+        "पता"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अगर आपका organization register नहीं है, तो आप जितना भी पता हो address fill कर दें। आगे बढ़ते हैं।",
+      "entities": []
+    },
+    {
+      "index": 74,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [
+        "बोल",
+        "keep"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Keep करने का बोल रहा है UGM नहीं है, UGM मेरे पास नहीं है.",
+      "entities": []
+    },
+    {
+      "index": 75,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_offer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [
+        "skip",
+        "click",
+        "number",
+        "आगे",
+        "option"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अगर आपके पास Udyam number नहीं है तो आप \"Skip\" option पर click कर सकते हैं। उसके बाद आगे बढ़ेंगे।",
+      "entities": []
+    },
+    {
+      "index": 76,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "number",
+        "बताएं",
+        "verify",
+        "जाए"
+      ],
+      "sentiment": null,
+      "tool": "send_otp",
+      "text": "अब OTP verify करें जो आपके registered mobile number पर आएगा। Verify हो जाए तो बताएं।",
+      "entities": []
+    },
+    {
+      "index": 77,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "कृपया",
+        "verify"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कृपया OTP verify करें जो आपके",
+      "entities": []
+    },
+    {
+      "index": 78,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_final_offer",
+      "base_intent": "final_offer",
+      "keywords": [
+        "loan",
+        "लाख",
+        "amount",
+        "दिखा",
+        "रुपया"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Loan amount अभी तो लाख रुपया दिखा रहा है एक लाख रुपया.",
+      "entities": []
+    },
+    {
+      "index": 79,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_transfer_to_rm",
+      "base_intent": "transfer_to_rm",
+      "keywords": [
+        "relationship manager",
+        "offer",
+        "शुरू",
+        "final",
+        "relationship"
+      ],
+      "sentiment": null,
+      "tool": "transfer_to_rm",
+      "text": "Interest rate ten point nine nine percent से शुरू होती है और आपके final offer पर depend करती है। अब मैं आपकी बात समझती हूँ। Relationship Manager आपको सही तरीके से help कर सकेंगे।",
+      "entities": []
+    }
+  ]
+}

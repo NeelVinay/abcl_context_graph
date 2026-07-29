@@ -1,0 +1,58 @@
+[
+  {
+    "timestamp": "2026-07-06T08:54:55",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:54:55",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं BEENAGONI UPENDAR जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:55:06",
+    "speaker": "user",
+    "content": "हां, yes तेलुगू.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:55:06",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिए, मैं इस call पर सिर्फ Hindi या English में ही help कर सकती हूँ।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:55:19",
+    "speaker": "user",
+    "content": "Company personal role reject कर लिया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:55:19",
+    "speaker": "assistant",
+    "content": "Sorry पर, मैं इस language में help",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:55:21",
+    "speaker": "user",
+    "content": "क्यों? Reason?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:55:21",
+    "speaker": "assistant",
+    "content": "Sorry पर, मैं इस language में help नहीं कर सकती। आपके time के लिए धन्यवाद।\n<EOC source=\"voicemail\"/>",
+    "feedback": null,
+    "agent_id": null
+  }
+]

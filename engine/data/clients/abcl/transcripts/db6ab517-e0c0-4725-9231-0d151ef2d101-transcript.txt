@@ -1,0 +1,296 @@
+[
+  {
+    "timestamp": "2026-06-10T06:55:42",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:55:43",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं आनंद कुमार जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:55:54",
+    "speaker": "user",
+    "content": "Hello. Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:55:54",
+    "speaker": "assistant",
+    "content": "क्या मैं आनंद कुमार जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:56:00",
+    "speaker": "user",
+    "content": "जी जी जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:56:00",
+    "speaker": "assistant",
+    "content": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है एक लाख रुपये का — मैं अभी इस call पर आपको इस loan को apply करने में मदद कर सकती हूँ। क्या हम शुरू करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:56:16",
+    "speaker": "user",
+    "content": "शुरू कर दीजिए ma'am.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:56:16",
+    "speaker": "assistant",
+    "content": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:56:31",
+    "speaker": "user",
+    "content": "ठीक है",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:56:31",
+    "speaker": "assistant",
+    "content": "अब आप SMS में जो link है उसे click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:56:39",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिए, क्या आप फिर से कह सकते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:56:49",
+    "speaker": "user",
+    "content": "इसने पढ़ाया कहां अभी ma'am?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:56:53",
+    "speaker": "user",
+    "content": "आ गया है",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:56:53",
+    "speaker": "assistant",
+    "content": "आप home screen पर आ गए हैं। आप नीचे एक 'Apply Now' button देख सकते हैं, उस पर click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:57:04",
+    "speaker": "user",
+    "content": "नहीं आया ma'am अभी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:57:04",
+    "speaker": "assistant",
+    "content": "Internet connection check करें और link को एक बार फिर से try करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:57:13",
+    "speaker": "user",
+    "content": "WhatsApp पर भेज दीजिए ma'am.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:57:13",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिए, मैं अभी केवल SMS लिंक ही भेज सकती हूँ। कृपया SMS में आए लिंक को चेक करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:57:24",
+    "speaker": "user",
+    "content": "एक minute ma'am इसमें जा रहे हैं ma'am.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:57:24",
+    "speaker": "assistant",
+    "content": "हाँ जी, मैं इंतज़ार कर रही हूँ...",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:57:36",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिए, क्या आप अभी भी लाइन पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:57:42",
+    "speaker": "user",
+    "content": "हां ma'am हैं.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:57:42",
+    "speaker": "assistant",
+    "content": "आप home screen पर आ गए हैं। आप नीचे एक 'Apply Now' button देख सकते हैं, उस पर click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:57:53",
+    "speaker": "user",
+    "content": "Click कर दिया अब number मांग रहा है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:57:53",
+    "speaker": "assistant",
+    "content": "अपना mobile number enter करें। फिर Terms and Conditions checkbox को check करें और 'Get OTP' पर click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:58:08",
+    "speaker": "user",
+    "content": "हो गया ma'am.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:58:08",
+    "speaker": "assistant",
+    "content": "आपको एक confirmation आएगा 'We have sent an OTP'. अगली screen पर OTP enter करें और 'Verify' पर click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:58:24",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिए, क्या आप अभी भी",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:58:26",
+    "speaker": "user",
+    "content": "हो गया.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:58:26",
+    "speaker": "assistant",
+    "content": "सब details fill हो गई हैं — अब 'Proceed' button पर click करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:58:37",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिए, आप क्या कह रहे थे? कृपया दोहराएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:58:45",
+    "speaker": "user",
+    "content": "Ma'am यह फिर",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:58:49",
+    "speaker": "user",
+    "content": "वह चल रहा है क्या नाम? Verify हो रहा है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:58:49",
+    "speaker": "assistant",
+    "content": "आपके registered email पर एक OTP आएगा — उसे verify करें और हो जाए तो बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:59:02",
+    "speaker": "user",
+    "content": "Ma'am अभी नहीं आते तो फिर interpol name मांग रहा है ना.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:59:02",
+    "speaker": "assistant",
+    "content": "कृपया कुछ seconds wait करें — OTP आ जाएगा। आ जाए तो बताएं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:59:10",
+    "speaker": "user",
+    "content": "ठीक ठीक ma'am.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:59:10",
+    "speaker": "assistant",
+    "content": "अब मैं आपका loan amount और final offer fetch कर रही हूँ। कृपया कुछ seconds इंतज़ार करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:59:19",
+    "speaker": "user",
+    "content": "जी.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:59:19",
+    "speaker": "assistant",
+    "content": "यह final page है जहाँ आप अपना loan amount और offer देख सकते हैं। क्या आप अपना loan amount और final offer देख सकते हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:59:34",
+    "speaker": "user",
+    "content": "तो आया था ma'am अभी तो पंद्रह लाख दिखा रहा है कहीं कुछ दिखा रहा है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-10T06:59:34",
+    "speaker": "assistant",
+    "content": "मैं आपकी बात समझती हूँ। Relationship Manager आपको सही तरीके से help कर सकेंगे।",
+    "feedback": null,
+    "agent_id": null
+  }
+]

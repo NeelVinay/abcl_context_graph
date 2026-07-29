@@ -1,0 +1,135 @@
+[
+  {
+    "timestamp": "2026-07-06T07:34:20",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:34:20",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं भीमराो बापू गव्हाले जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:34:31",
+    "speaker": "user",
+    "content": "Hello हां हां बोलिए madam.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:34:31",
+    "speaker": "assistant",
+    "content": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है 10 लाख रुपये तक का — मैं अभी इस call पर आपको इस loan को apply करने में मदद कर सकती हूँ। क्या हम शुरू करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:34:51",
+    "speaker": "user",
+    "content": "Ma'am actually क्या है ma'am काफ़ी आ रहा है और यह मेरा network ही नहीं आ रहा है कुछ ma'am.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:34:51",
+    "speaker": "assistant",
+    "content": "Internet connection check करें और link को एक बार",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:35:07",
+    "speaker": "user",
+    "content": "Hello ma'am. सुनो ना मैं क्या बोल रहा हूं आपको? इधर काफ़ी बारिश है मुझे तो हर दिन percent loan करना ही करना है madam मुझे. But एक आधे घंटे के बाद call करेंगे ma'am आप आधे एक घंटे के बाद",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:35:09",
+    "speaker": "user",
+    "content": "relax होकर बात करेंगे.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:35:09",
+    "speaker": "assistant",
+    "content": "ज़रूर। आप कौन सा दिन और समय prefer करेंगे? हम 10 AM से 7 PM, साथों दिन इस time available रहते हैं।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:35:21",
+    "speaker": "user",
+    "content": "Madam Ma'am यह मेरा number है या तो आप आपके personal number से मुझे call कर लो",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:35:27",
+    "speaker": "user",
+    "content": "मैं आपका call भी receive करूंगा madam. यह अभी काफ़ी बारिश हो रहा है मेरा पूरा net ही नहीं चल रहा है.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:35:27",
+    "speaker": "assistant",
+    "content": "कोई specific time बता दीजिए।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:35:35",
+    "speaker": "user",
+    "content": "है. Madam एक एक एक एक एक घंटे के बाद आप call कर लो मुझे.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:35:35",
+    "speaker": "assistant",
+    "content": "ठीक है, मैं आपको एक घंटे बाद कॉल करूँगी। कृपया थोड़ी देर में call का इंतज़ार करें।",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:35:44",
+    "speaker": "user",
+    "content": "Ok Ok ok madam, ok madam.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:35:44",
+    "speaker": "assistant",
+    "content": "Perfect! I have scheduled your call for today at 2:05 PM. Thank you!",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:35:58",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिए, कृपया फिर से कहेंगे?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:36:10",
+    "speaker": "assistant",
+    "content": "माफ़ कीजिए, क्या आप अभी भी कॉल पर हैं?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T07:36:16",
+    "speaker": "assistant",
+    "content": "चूंकि आप उत्तर नहीं दे रहे हैं, मैं अब कॉल समाप्त कर रही हूँ। धन्यवाद!",
+    "feedback": null,
+    "agent_id": null
+  }
+]

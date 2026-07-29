@@ -1,0 +1,51 @@
+[
+  {
+    "timestamp": "2026-07-06T08:52:13",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:52:14",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं रविंदर कुमार निर्मल जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:52:28",
+    "speaker": "user",
+    "content": "Yes.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:52:28",
+    "speaker": "assistant",
+    "content": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है 10 लाख रुपये तक का — मैं अभी इस call पर आपको इस loan को apply करने में मदद कर सकती हूँ। क्या हम शुरू करें?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:52:48",
+    "speaker": "user",
+    "content": "और मेरी repay capacity तो है ही नहीं. को तो retire होती. पंद्रह साल हो गए",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:52:51",
+    "speaker": "user",
+    "content": "मुझे कैसे loan मिलेगा बहत्तर साल मैंने pay करता",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T08:52:51",
+    "speaker": "assistant",
+    "content": "मैं आपकी स्थिति समझ सकती हूँ। Relationship Manager आपको सही तरीके से help कर सकेंगे। मैं अभी आपको Relationship Manager से connect कर देती हूँ जो आपकी बात विस्तार से समझेंगे और मदद करेंगे।",
+    "feedback": null,
+    "agent_id": null
+  }
+]

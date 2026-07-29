@@ -1,0 +1,590 @@
+[
+  {
+    "timestamp": "2026-06-23T13:34:49",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:34:49",
+    "speaker": "assistant",
+    "content": "<CHD/>",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:34:53",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:34:53",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं कार्तिका रामालिंगम जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:35:04",
+    "speaker": "user",
+    "content": "Please speak to english.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:35:04",
+    "speaker": "assistant",
+    "content": "Hello, I am Priya from Aditya Birla Capital. Am I speaking with Karthika Ramalingam?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:35:10",
+    "speaker": "user",
+    "content": "Ok.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:35:10",
+    "speaker": "assistant",
+    "content": "Great! You have a pre-approved loan offer of two lakh eight thousand rupees from Aditya Birla Capital. I can help you apply for this loan right now on this call.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:35:23",
+    "speaker": "user",
+    "content": "Yeah. Yeah yeah yeah.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:35:23",
+    "speaker": "assistant",
+    "content": "Shall we begin the application process now?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:35:29",
+    "speaker": "user",
+    "content": "Yeah.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:35:29",
+    "speaker": "assistant",
+    "content": "I will send you an SMS with a link to",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:35:33",
+    "speaker": "user",
+    "content": "You can do it.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:35:37",
+    "speaker": "user",
+    "content": "Ok.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:35:37",
+    "speaker": "assistant",
+    "content": "I will send you an SMS with a link to your application. Please click the link to complete your process. Keep your phone on speaker and check your SMS.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:35:53",
+    "speaker": "user",
+    "content": "Yes. Yeah, I will receive the SMS and click the link also.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:35:53",
+    "speaker": "assistant",
+    "content": "You have reached the home screen. You can see an 'Apply Now' button below; please click on it to proceed.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:36:05",
+    "speaker": "user",
+    "content": "Yeah. Yeah, I will click and get the mobile number.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:36:05",
+    "speaker": "assistant",
+    "content": "Please enter your mobile number. Then check the Terms and Conditions checkboxes and click on 'Get OTP'.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:36:20",
+    "speaker": "assistant",
+    "content": "Sorry, are you still there on the call?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:36:26",
+    "speaker": "user",
+    "content": "Yeah yeah still there of the call.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:36:30",
+    "speaker": "user",
+    "content": "My eligible score is",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:36:33",
+    "speaker": "user",
+    "content": "get it, ok. Personal details",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:36:35",
+    "speaker": "user",
+    "content": "is given",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:36:35",
+    "speaker": "assistant",
+    "content": "This is the basic details page. You will need to fill in some details. First, please enter your PAN number and let me know once done.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:36:48",
+    "speaker": "user",
+    "content": "Wait a minute. I will enter my PAN number.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:36:48",
+    "speaker": "assistant",
+    "content": "Sure, please take your time to enter your PAN number.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:36:54",
+    "speaker": "user",
+    "content": "Ok?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:36:54",
+    "speaker": "assistant",
+    "content": "Now please enter your full name exactly as printed on your PAN card, then select your gender, date of birth, and marital status. Let me know once done.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:37:09",
+    "speaker": "user",
+    "content": "Take a minute. I will clear the details.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:37:09",
+    "speaker": "assistant",
+    "content": "Sure, take your time to clear and enter the details.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:37:22",
+    "speaker": "assistant",
+    "content": "Sorry, are you still on the call?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:37:29",
+    "speaker": "user",
+    "content": "Yeah yeah, I will still on the call. I will enter the detail.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:37:29",
+    "speaker": "assistant",
+    "content": "Now please enter your personal email address and let me know once done.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:37:36",
+    "speaker": "user",
+    "content": "I will",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:37:40",
+    "speaker": "user",
+    "content": "enter my email address and I will",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:37:44",
+    "speaker": "user",
+    "content": "write down my address also.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:37:47",
+    "speaker": "user",
+    "content": "Yeah, I will complete it.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:37:47",
+    "speaker": "assistant",
+    "content": "Now please fill in your address — flat or house number, building name, street, and locality name, along with the pincode. Let me know once completed.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:37:59",
+    "speaker": "user",
+    "content": "ठीक ठीक.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:37:59",
+    "speaker": "assistant",
+    "content": "Please check two Terms and Conditions checkboxes for data security. Then click the 'Proceed' button.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:38:12",
+    "speaker": "user",
+    "content": "Ok, I will click on the button.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:38:12",
+    "speaker": "assistant",
+    "content": "This is the Professional and Employment details page. To fetch your loan offer, please select your employment type — Salaried or Self-Employed.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:38:30",
+    "speaker": "user",
+    "content": "Wait a minute.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:38:30",
+    "speaker": "assistant",
+    "content": "Sure, I am waiting. Please take your time.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:38:40",
+    "speaker": "assistant",
+    "content": "I'm sorry, could you please repeat that?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:38:50",
+    "speaker": "user",
+    "content": "Yeah yeah, writing the mail IDs and details also.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:38:50",
+    "speaker": "assistant",
+    "content": "If you are unsure which to select: Salaried means a job with regular monthly salary credit in your account; Self-Employed means your own business, freelance, or own practice. Which one applies to you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:39:07",
+    "speaker": "user",
+    "content": "क्या?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:39:07",
+    "speaker": "assistant",
+    "content": "Salaried means",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:39:14",
+    "speaker": "user",
+    "content": "I am a survey person only.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:39:14",
+    "speaker": "assistant",
+    "content": "Salaried means a job with regular monthly salary credited to your account. Self-Employed means you have your own business, freelance work, or your own practice. Which one applies to you?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:39:29",
+    "speaker": "user",
+    "content": "Yeah.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:39:29",
+    "speaker": "assistant",
+    "content": "Please share your net monthly income — this is your take-home salary after taxes, bonuses, and benefits. Let",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:39:41",
+    "speaker": "user",
+    "content": "I will move on next process.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:39:41",
+    "speaker": "assistant",
+    "content": "Now, please enter your organization's name and let me know once done.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:39:49",
+    "speaker": "user",
+    "content": "Yeah, I will complete your all the process.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:39:49",
+    "speaker": "assistant",
+    "content": "Now, please enter your organization's name as per your official documents and let me know once done.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:40:06",
+    "speaker": "user",
+    "content": "What is the?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:40:21",
+    "speaker": "assistant",
+    "content": "Sorry, are you still there on the call?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:40:28",
+    "speaker": "user",
+    "content": "Just a minute, just a minute.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:40:28",
+    "speaker": "assistant",
+    "content": "Sure. <CHD/>",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:41:26",
+    "speaker": "user",
+    "content": "Yeah please.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:41:26",
+    "speaker": "assistant",
+    "content": "Now, please enter your official email ID and let me know once done.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:41:36",
+    "speaker": "user",
+    "content": "Go",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:41:36",
+    "speaker": "assistant",
+    "content": "Now, please enter your official email ID and let me know once done.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:41:45",
+    "speaker": "user",
+    "content": "Yeah, I will update",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:41:49",
+    "speaker": "user",
+    "content": "update next classes?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:41:49",
+    "speaker": "assistant",
+    "content": "Now, please fill in your organization's address as shown in the fields, including the office pincode. Let me know once completed.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:42:02",
+    "speaker": "user",
+    "content": "Yeah, I will complete at that point.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:42:04",
+    "speaker": "user",
+    "content": "What is the next?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:42:04",
+    "speaker": "assistant",
+    "content": "Now, please fill in your organization's address as shown in the fields, including the office pincode. Let me know once completed.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:42:14",
+    "speaker": "user",
+    "content": "Yeah, I will complete it.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:42:14",
+    "speaker": "assistant",
+    "content": "Now, please fill in your organization's address as shown in the fields, including the office pincode. Let me know once completed.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:42:25",
+    "speaker": "user",
+    "content": "Yeah, completed.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:42:25",
+    "speaker": "assistant",
+    "content": "Now, please click the 'Proceed' button to continue.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:42:37",
+    "speaker": "user",
+    "content": "Yeah, I will complete it, go to the",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:42:38",
+    "speaker": "user",
+    "content": "selfie, take your selfie point.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:42:38",
+    "speaker": "assistant",
+    "content": "Please click the 'Proceed' button to continue.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:42:45",
+    "speaker": "user",
+    "content": "Yeah, continue.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:42:45",
+    "speaker": "assistant",
+    "content": "After clicking 'Proceed', you will reach the final loan offer page where you can see your loan amount and offer. Can you see your loan amount and final offer?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:43:16",
+    "speaker": "user",
+    "content": "Yeah next process",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:43:16",
+    "speaker": "assistant",
+    "content": "I will connect you to a Relationship Manager who will help with your KYC process. Please wait for a moment.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-06-23T13:43:24",
+    "speaker": "user",
+    "content": "Hello.",
+    "feedback": null,
+    "agent_id": null
+  }
+]

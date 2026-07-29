@@ -1,0 +1,135 @@
+[
+  {
+    "timestamp": "2026-07-06T05:37:00",
+    "speaker": "user",
+    "content": "Hello hello",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:37:05",
+    "speaker": "user",
+    "content": "hello",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:37:05",
+    "speaker": "assistant",
+    "content": "हाँ जी, मैं इंतज़ार कर रही हूँ... <CHD/>",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:37:14",
+    "speaker": "user",
+    "content": "hello hello",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:37:14",
+    "speaker": "assistant",
+    "content": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं कृष्णा गुम्पेना जी से बात कर रही हूँ?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:37:26",
+    "speaker": "user",
+    "content": "Regarding?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:37:26",
+    "speaker": "assistant",
+    "content": "मैं प्रिया हूँ, आदित्य बिरला कैपिटल की",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:37:28",
+    "speaker": "user",
+    "content": "Hello hello.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:37:31",
+    "speaker": "user",
+    "content": "Yeah, regarding regarding ma'am, what?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:37:31",
+    "speaker": "assistant",
+    "content": "I am Priya from Aditya Birla Capital.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:37:38",
+    "speaker": "user",
+    "content": "I understood that why are you calling regarding?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:37:39",
+    "speaker": "assistant",
+    "content": "This is a pre-approved loan offer from Aditya Birla Capital that might be useful for your needs.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:37:49",
+    "speaker": "user",
+    "content": "No ma'am, I ma'am I don't I don't need ma'am. Do one thing ma'am, please write out my number, please.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:37:56",
+    "speaker": "user",
+    "content": "I don't need any personal loan. Are you guys are having anything like",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:37:59",
+    "speaker": "user",
+    "content": "that? You're calling on Sundays also?",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:37:59",
+    "speaker": "assistant",
+    "content": "I understand. Our team does make calls on Sundays to help with pre-approved loan offers. If you prefer, I can note your number to avoid future calls.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:38:08",
+    "speaker": "user",
+    "content": "But but हां but",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:38:13",
+    "speaker": "user",
+    "content": "yeah please do one thing right of my number.",
+    "feedback": null,
+    "agent_id": null
+  },
+  {
+    "timestamp": "2026-07-06T05:38:13",
+    "speaker": "assistant",
+    "content": "Sure, I will note your number to avoid future calls. Is there anything else I can assist you with?",
+    "feedback": null,
+    "agent_id": null
+  }
+]

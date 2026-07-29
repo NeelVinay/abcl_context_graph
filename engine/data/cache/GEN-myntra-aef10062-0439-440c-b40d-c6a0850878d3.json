@@ -1,0 +1,545 @@
+{
+  "call_id": "GEN-myntra-aef10062-0439-440c-b40d-c6a0850878d3",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "assistant",
+        "welcome",
+        "मिंत्रा",
+        "service"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "shoes"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ma'am मैंने एक order किया था shoes का.",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "order",
+        "समझ",
+        "line",
+        "status",
+        "check"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मै समझ सकती हूँ कि आप अपने order के बारे में जानना चाहते हैं। मै आपके order का status check कर रही हूँ। कृपया line पर बने रहिए।",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "deliver",
+        "मदद",
+        "shipped",
+        "पहुँच"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपके SG Unisex Cricket Shoes अभी shipped हैं और आज शाम आठ बजे तक deliver हो जाने की उम्मीद है। आपका order अभी Ludhiana hub पर पहुँच चुका है। क्या मै आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ma'am ma'am ma'am hello.",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "मदद",
+        "चाहते",
+        "पूछना",
+        "यहीं"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मैं यहीं हूँ। क्या आप कुछ और पूछना चाहते हैं या मैं आपकी किसी और तरह से मदद कर सकती हूँ?",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "order",
+        "deliver",
+        "बजे",
+        "करवा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello ma'am एक ma'am एक या दो बजे तक deliver करवा दो घर पर मेरा order.",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "समझ",
+        "मदद",
+        "कोशिश",
+        "मिल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मै समझ सकती हूँ कि आपको order जल्दी चाहिए। आपका order fastest route पर है और आज शाम आठ बजे तक पहुँच जाएगा। हम अपनी तरफ से पूरी कोशिश कर रहे हैं कि यह आपको जल्द से जल्द मिल जाए। क्या मैं आपकी किसी और चीज़ में मदद कर सकती",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
+      "keywords": [
+        "बजे",
+        "ज़रूर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ma'am मेरे को चाहिए एक दो बजे तक ज़रूर.",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "समझ",
+        "urgency",
+        "double"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मैं आपकी urgency समझ रही हूँ। मैंने double",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
+      "keywords": [
+        "बजे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मेरे को मेरे को चाहिए एक दो बजे तक",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "deliver",
+        "समझ",
+        "कोशिश",
+        "मिल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मैं पूरी तरह समझ रही हूँ कि आपको order जल्दी चाहिए। आपका order priority पर है और आज शाम आठ बजे तक deliver हो जाएगा। हम पूरी कोशिश कर रहे हैं कि यह आपको जल्द से जल्द मिल जाए।",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
+      "keywords": [
+        "बजे",
+        "shoes",
+        "अरे",
+        "इंसान",
+        "real"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अरे अरे ma'am मैं आपको क्या AI हो क्या क्या आप? AI हो यह real इंसान है. मैं क्या कह रहा हूं? मैं कह रहा हूं कि एक दो बजे तक मेरे को shoes चाहिए,",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "help",
+        "deliver",
+        "delivery",
+        "कोशिश"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपका order priority पर है और fastest route से आ रहा है, इसलिए आज शाम आठ बजे तक deliver हो जाएगा। हम delivery time को और कम करने की पूरी कोशिश कर रहे हैं। क्या मैं आपकी किसी और चीज़ में help कर सकती हूँ?",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, बताइए, आप क्या",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "order",
+        "सही",
+        "बजे",
+        "request",
+        "पहुंच"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ma'am बस मेरी एक यही request है आप मेरा order दो बजे तक पहुंच जाना सही दे, मैं बता रहा हूं.",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "deliver",
+        "जल्द",
+        "पहुँच",
+        "पूरी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपकी request नोट कर ली है। जैसा कि मैने बताया आपका order priority पर है और आज शाम आठ बजे तक पहुँच जाएगा। हम इसे जल्द से जल्द deliver करवाने की पूरी",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "बजे",
+        "अरे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अरे हां आठ बजे से क्या?",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "distrust_security",
+      "keywords": [
+        "अरे",
+        "यार",
+        "इंसान",
+        "real"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अरे मैं क्या कह रहा हूं यार यही हो क्या आप? Real इंसान हो मैं से बात कर रहा हूं.",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "distrust_security",
+      "keywords": [
+        "assistant",
+        "order",
+        "deliver",
+        "मदद",
+        "कोशिश"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मैं एक virtual assistant हूँ और आपकी पूरी मदद करने की कोशिश कर रही हूँ। आपका order priority पर है और आज शाम आठ बजे तक deliver हो जाएगा।",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "अरे",
+        "human"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अरे अब human",
+      "entities": []
+    },
+    {
+      "index": 22,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "distrust_security",
+      "keywords": [
+        "agent",
+        "expert"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, क्या आप किसी expert agent",
+      "entities": []
+    },
+    {
+      "index": 23,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "distrust_security",
+      "keywords": [
+        "human"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "human हो या AI हो,",
+      "entities": []
+    },
+    {
+      "index": 24,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "distrust_security",
+      "keywords": [
+        "assistant",
+        "मदद",
+        "बेहतर",
+        "चाहते",
+        "agent"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मै एक virtual assistant हूँ। क्या आप किसी expert agent से बात करना चाहते हैं ताकि वो आपकी बेहतर मदद कर सकें?",
+      "entities": []
+    },
+    {
+      "index": 25,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_unclear",
+      "base_intent": "confused_repeat",
+      "keywords": [
+        "अरे",
+        "यार",
+        "बकवास"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अरे यार, जा यार क्या बकवास है? क्या बकवास है यार यह?",
+      "entities": []
+    },
+    {
+      "index": 26,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "distrust_security",
+      "keywords": [
+        "help",
+        "मदद",
+        "कोशिश",
+        "चाहते",
+        "agent"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "माफी चाहती हूँ कि आपको परेशानी हुई। मैं बस आपकी मदद करने की कोशिश कर रही हूँ। क्या आप चाहते हैं कि मैं आपको किसी expert agent से connect कर दूँ ताकि वो आपकी better help कर सकें?",
+      "entities": []
+    },
+    {
+      "index": 27,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "order",
+        "बजे",
+        "करोगे",
+        "इधर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां करोगे ना तो मेरे को दो बजे तक मेरा order चाहिए इधर.",
+      "entities": []
+    },
+    {
+      "index": 28,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "समझ",
+        "चाहते",
+        "agent",
+        "expert"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मैं समझ सकती हूँ कि आपको order जल्दी चाहिए। क्या आप better assistance के लिए expert agent से बात करना चाहते हैं?",
+      "entities": []
+    },
+    {
+      "index": 29,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "करवाऊंगी",
+        "अम्मी",
+        "चमचा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "फिर. अम्मी चमचा रहे हो? हां हां करवाऊंगी.",
+      "entities": []
+    },
+    {
+      "index": 30,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_confirm",
+      "base_intent": "agree",
+      "keywords": [
+        "agent",
+        "expert"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है, मै आपको expert agent",
+      "entities": []
+    },
+    {
+      "index": 31,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "चमचा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "वहां चमचा रहे हो?",
+      "entities": []
+    },
+    {
+      "index": 32,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
+      "keywords": [
+        "call",
+        "now",
+        "connect",
+        "team",
+        "immediately"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I will connect you with our specialized team. Transferring your call now, they will be with you immediately.",
+      "entities": []
+    }
+  ]
+}

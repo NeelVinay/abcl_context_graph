@@ -1,0 +1,400 @@
+{
+  "call_id": "23415309-14b9-4301-80f3-4620c46cb6fc-transcript",
+  "language": "hi-en",
+  "outcome": "incomplete",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात",
+        "बोल",
+        "आदित्य"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते, मैं प्रिया बोल रही हूँ आदित्य बिरला कैपिटल से क्या मैं संजय विश्वकर्मा जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "बोलिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां. हां जी madam बोलिए.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "pre-approved",
+        "loan offer",
+        "call",
+        "loan",
+        "offer"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपको आदित्य बिरला कैपिटल की तरफ से एक exciting pre-approved loan offer है 10 लाख रुपये तक का — मैं अभी इस call पर आपको इस loan को",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "लाख"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी. दस लाख.",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "apply",
+        "मदद",
+        "शुरू"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "apply करने में मदद कर सकती हूँ। क्या हम शुरू करें?",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "लाख",
+        "पांच"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मुझे दस लाख नहीं चाहिए madam मुझे पांच लाख चाहिए.",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "loan",
+        "process",
+        "complete",
+        "amount",
+        "मिल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी हाँ, आपको और amount का loan मिल सकता है — एक बार आप process complete करेंगे तो आपको आपकी",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "और नहीं?",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "शुरू कर",
+        "शुरू",
+        "करिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी. हां जी madam शुरू करिए.",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms",
+        "application",
+        "process",
+        "link",
+        "जिसमें"
+      ],
+      "sentiment": null,
+      "tool": "send_sms",
+      "text": "मैं अभी आपको एक SMS भेज देती हूँ जिसमें एक link होगा जो आपको आपके application पर ले जाएगा। आप link को click करके अपना process complete कर सकते हैं। आप phone को speaker पर रखें और SMS check करें।",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "sms",
+        "link",
+        "click"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अब आप SMS में जो link है उसे click करें।",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_link_opened",
+      "base_intent": "open_link",
+      "keywords": [
+        "नहीं हो रहा",
+        "नहीं हो",
+        "open"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "यह तो open ही नहीं हो रहा है madam.",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "link",
+        "check",
+        "try",
+        "internet",
+        "connection"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Internet connection check करें और link को एक बार फिर से try करें।",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_address_error",
+      "base_intent": "address_error",
+      "keywords": [
+        "internet",
+        "इधर",
+        "problem"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इधर internet problem है.",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "page",
+        "refresh",
+        "reload"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Page को एक बार refresh/reload करें।",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "issue",
+        "इधर",
+        "network"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "इधर फ़र्क क्या है madam network issue आ रहा है.",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "sms",
+        "link",
+        "open",
+        "पूरी",
+        "close"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Browser tab को पूरी तरह close करें और SMS में जो link है उसे फिर से open करें।",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "call",
+        "कृपया",
+        "line",
+        "hold",
+        "रखा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "आपकी call को hold पर रखा गया है. कृपया line पर बने रहें. Your call is on hold.",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "call",
+        "कृपया",
+        "line",
+        "hold",
+        "रखा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Please stay on line. Or callback later. आपकी call को hold पर रखा गया है. कृपया line पर बने रहें. Your call is on hold.",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "call",
+        "कृपया",
+        "line",
+        "hold",
+        "रखा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Please stay on line. Or callback later. आपकी call को hold पर रखा गया है. कृपया line पर बने रहें. Your call is on hold.",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "call",
+        "कृपया",
+        "line",
+        "hold",
+        "रखा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Please stay on line. Or callback later. आपकी call को hold पर रखा गया है. कृपया line पर बने रहें. Your call is on hold.",
+      "entities": []
+    },
+    {
+      "index": 22,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "call",
+        "कृपया",
+        "line",
+        "hold",
+        "रखा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Please stay on line. Or callback later. आपकी call को hold पर रखा गया है. कृपया line पर बने रहें. Your call is on hold.",
+      "entities": []
+    },
+    {
+      "index": 23,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "इंतज़ार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हाँ जी, मैं इंतज़ार कर रही हूँ...",
+      "entities": []
+    }
+  ]
+}

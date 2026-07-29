@@ -1,0 +1,542 @@
+{
+  "call_id": "GEN-myntra-ae82a833-a758-415f-b32c-e682edfaed12",
+  "language": "hi-en",
+  "outcome": "completed",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "assistant",
+        "welcome",
+        "मिंत्रा",
+        "service"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
+      "keywords": [
+        "order",
+        "issue",
+        "what",
+        "about",
+        "like"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Which order would you like to talk about, and what is the issue you are facing?",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
+      "keywords": [
+        "order",
+        "issue",
+        "calling",
+        "what",
+        "about"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Could you please tell me which order you are calling about and what the issue is?",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "delayed",
+        "second",
+        "august",
+        "got"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "The order will got delayed on second August.",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "order",
+        "line",
+        "status",
+        "check",
+        "delay"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I understand you are facing a delay with your order. Let me check the status for you. Please stay on the line.",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "मिंत्रा",
+        "help",
+        "delivery",
+        "shipped",
+        "agent"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Your Vastraaya Kurti has been shipped and is currently on its way. It is expected to be delivered by tomorrow. Since it is not yet out for delivery, you will be able to find the delivery agent's details in the मिंत्रा app under the My Orders page once it reaches your local area. Is there anything else I can help you with?",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "tomorrow",
+        "come",
+        "soज"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok, Soज you come tomorrow.",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "help",
+        "there",
+        "else",
+        "anything"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Yes, your order is on its way and should reach you by tomorrow. Is there anything else I can help you with?",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "देश"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "It's the तू बस का है कुछ देश.",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "confused_repeat",
+      "keywords": [
+        "what",
+        "sorry",
+        "repeat",
+        "didn",
+        "quite"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I am sorry, I didn't quite catch that. Could you please repeat what you said?",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "there",
+        "two",
+        "tomorrow",
+        "come",
+        "versa"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "There were two versa या कुछ चीज़. Both of them will come tomorrow.",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "order",
+        "line",
+        "check",
+        "there",
+        "let"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I can check that for you. Let me see if there is another Vastraaya item in your order. Please stay on the line.",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "help",
+        "shipped",
+        "delivered",
+        "there",
+        "else"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Yes, both your Vastraaya Kurtis are shipped and are expected to be delivered by tomorrow. Is there anything else I can help you with?",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "distrust_security",
+      "keywords": [
+        "delivery",
+        "app",
+        "because",
+        "sure",
+        "delayed"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok, Are you sure because it's you know, said delivery delayed on the app.",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "distrust_security",
+      "keywords": [
+        "मिंत्रा",
+        "help",
+        "status",
+        "shipped",
+        "app"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I completely understand your concern. I have re-checked the latest system status and I can confirm that both your orders are currently shipped and on track to reach you by tomorrow. You can also keep an eye on the मिंत्रा app for the most current updates. Is there anything else I can help you with?",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "right",
+        "delayed",
+        "anymore"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "It's not delayed anymore. Right?",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "help",
+        "status",
+        "orders",
+        "delivered",
+        "there"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "That is correct. According to the latest status, your orders are on track and expected to be delivered by tomorrow. Is there anything else I can help you with?",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "status",
+        "app",
+        "change"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "और Please change the status on the app.",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "help",
+        "status",
+        "app",
+        "shipping",
+        "there"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I understand you would like the app to reflect the current status. Please note that the app updates automatically based on the shipping data from our logistics partners, so you should see the updated status there very soon. Is there anything else I can help you with?",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
+      "keywords": [
+        "deliver",
+        "delivery",
+        "app",
+        "days",
+        "two"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "It says delivery delayed on the app I will be traveling in two days and won't be able to give you OTPs when we deliver the items.",
+      "entities": []
+    },
+    {
+      "index": 22,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "delivery",
+        "shipped",
+        "agent",
+        "out",
+        "orders"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I understand you're traveling soon and are concerned about the OTP. Since your orders are already shipped and expected by tomorrow, they should reach you before you leave. Once they are out for delivery, you can also coordinate with the delivery agent directly to ensure a smooth handover. Is there anything else I can assist you with?",
+      "entities": []
+    },
+    {
+      "index": 23,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "now",
+        "right",
+        "tomorrow",
+        "back",
+        "come"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok, now so it will come back tomorrow itself right?",
+      "entities": []
+    },
+    {
+      "index": 24,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "help",
+        "orders",
+        "delivered",
+        "there",
+        "else"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Yes, both your orders are on track and are expected to be delivered by tomorrow. Is there anything else I can help you with?",
+      "entities": []
+    },
+    {
+      "index": 25,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "status",
+        "helpful",
+        "app",
+        "changes"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "If the status changes on the app that will be helpful.",
+      "entities": []
+    },
+    {
+      "index": 26,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "help",
+        "status",
+        "app",
+        "there",
+        "update"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "I understand that seeing the update on the app would be more reassuring. The status updates automatically as the shipment moves through the network, so you should see it change very soon. Is there anything else I can help you with today?",
+      "entities": []
+    },
+    {
+      "index": 27,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_end",
+      "base_intent": "end_call",
+      "keywords": [
+        "thank"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "No thank you.",
+      "entities": []
+    },
+    {
+      "index": 28,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
+      "keywords": [
+        "form",
+        "feedback",
+        "helpful",
+        "receive",
+        "about"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "You will receive a feedback form via SMS about our conversation today. If you felt I was helpful, your good rating would really",
+      "entities": []
+    },
+    {
+      "index": 29,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
+      "keywords": [
+        "help",
+        "form",
+        "feedback",
+        "thank",
+        "helpful"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "You will receive a feedback form via SMS about our conversation today. If you felt I was helpful, your good rating would really mean a lot and help us improve. Thank you for calling.",
+      "entities": []
+    },
+    {
+      "index": 30,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
+      "keywords": [
+        "help",
+        "form",
+        "feedback",
+        "thank",
+        "helpful"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "You will receive a feedback form via SMS about our conversation today. If you felt I was helpful, your good rating would really mean a lot and help us improve. Thank you for calling.",
+      "entities": []
+    }
+  ]
+}

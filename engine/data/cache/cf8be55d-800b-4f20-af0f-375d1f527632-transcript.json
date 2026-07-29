@@ -1,0 +1,82 @@
+{
+  "call_id": "cf8be55d-800b-4f20-af0f-375d1f527632-transcript",
+  "language": "hi-en",
+  "outcome": "completed",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "कौन?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "बात कर रही",
+        "से बात",
+        "तरफ",
+        "आदित्य",
+        "बिरला"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं प्रिया हूँ, आदित्य बिरला कैपिटल की तरफ से। क्या मैं <<devanagari_name>> जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_respond_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ma'am, तेलुगु madam.",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_respond_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "only",
+        "तेलुगू"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello? No madam, only तेलुगू madam.",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
+      "keywords": [
+        "धन्यवाद",
+        "sorry",
+        "help",
+        "time",
+        "source"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Sorry पर, मैं इस language में help नहीं कर सकती। आपके time के लिए धन्यवाद।\n<EOC source=\"voicemail\"/>",
+      "entities": []
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "call_id": "GEN-myntra-6b038a5c-c5ba-477b-99d8-a659bc1c0334",
+  "language": "hi-en",
+  "outcome": "completed",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "assistant",
+        "welcome",
+        "मिंत्रा",
+        "service"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते! Welcome to मिंत्रा. I am मीरा, your service assistant. How may I help you?",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "कब तक",
+        "order",
+        "date",
+        "दिखा",
+        "पहुंचे"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "Ma'am वह जो order आज का date दिखा रहा है वह कब तक पहुंचे ना?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "order",
+        "समझ",
+        "line",
+        "status",
+        "check"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मै समझ सकती हूँ कि आप अपने order के बारे में जानना चाहते हैं, मै status check कर रही हूँ। कृपया line पर बने रहिए।",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "shipped",
+        "मिल",
+        "बजे",
+        "शाम",
+        "shirt"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपका Roadster Shirt अभी shipped है और आज शाम आठ बजे तक आपको मिल जाएगा।",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "बजे",
+        "शाम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "शाम में आठ बजे?",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "deliver",
+        "बजे",
+        "शाम"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपका order आज शाम आठ बजे तक deliver हो जाएगा।",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_frustration",
+      "base_intent": "irate_frustrated",
+      "keywords": [
+        "नहीं हो",
+        "उससे"
+      ],
+      "sentiment": "frustrated",
+      "tool": null,
+      "text": "उससे पहले नहीं होगा.",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "order",
+        "कोशिश",
+        "मिल",
+        "जल्द",
+        "पहुँच"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपका order fastest route पर है और आज शाम आठ बजे तक पहुँच जाएगा। हम पूरी कोशिश कर रहे हैं कि यह आपको जल्द से जल्द मिल जाए।",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "order",
+        "call",
+        "पूछना",
+        "number",
+        "regarding"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ma'am वह पूछना था कि अभी आपने किसी और number पर call किया था क्या इस regarding में order के regarding में?",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "call",
+        "delivery",
+        "agent",
+        "contact",
+        "location"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, delivery agent आपके location के पास पहुंचते ही आपको contact करेगा। अभी मेरी तरफ से किसी और number पर call नहीं किया गया है।",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "distrust_security",
+      "keywords": [
+        "order",
+        "call",
+        "number",
+        "back",
+        "दूसरे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं आप car अभी हो गया था दूसरे number पर जो जिसको order देना है उस number पर आप लग गया था तो उस पर आप call back आपका बात हुआ है क्या उधर?",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "distrust_security",
+      "keywords": [
+        "assistant",
+        "delivery",
+        "agent",
+        "contact",
+        "आपसे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, मै आपको बता दूँ कि मै सिर्फ एक digital assistant हूँ और मै calls नहीं करती हूँ। delivery agent जब आपके location के पास पहुँचेंगे, तब वो सीधे आपसे contact करेंगे।",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "धन्यवाद"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "धन्यवाद.",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
+      "keywords": [
+        "मदद"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, क्या मै आपकी किसी और चीज़ में मदद कर सकती हूँ?",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "distrust_security",
+      "keywords": [
+        "order",
+        "number",
+        "regarding",
+        "पुछ",
+        "दूसरे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ma'am मैं पुछ रही हूं कि अभी आपने दूसरे number पर किसी number पर इस order के regarding बात की है क्या?",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "distrust_security",
+      "keywords": [
+        "assistant",
+        "order",
+        "delivery",
+        "agent",
+        "contact"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, जैसा कि मैने पहले बताया, मै एक digital assistant हूँ और मै calls नहीं करती हूँ। आपके order के regarding मेरी तरफ से किसी भी number पर कोई बात नहीं हुई है। delivery agent ही आपसे contact करेंगे।",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "thanks"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक. Thanks.",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_end_call",
+      "base_intent": "end_call",
+      "keywords": [
+        "स्वागत"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपका स्वागत है। आज हमारे",
+      "entities": []
+    }
+  ]
+}
