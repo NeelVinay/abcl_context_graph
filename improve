@@ -1,0 +1,122 @@
+#!/usr/bin/env bash
+#
+# Improve a voice-agent prompt using the client's real call transcripts.
+#
+#   ./improve "~/Downloads/my prompt"      improve this file
+#   ./improve                              improve the default ABCL prompt
+#
+# Everything you need afterwards is in ONE folder: ./OUTPUT/
+# The file you give it is never modified.
+
+set -euo pipefail
+cd "$(dirname "$0")"
+
+INPUT="${1:-data/clients/abcl/autorun/input.raven}"
+# Dragging a file into the terminal wraps it in single quotes. Do that inside quotes
+# you already typed and the path arrives with literal quote characters on both ends,
+# which then "does not exist" in a way that looks like a missing file rather than a
+# quoting slip. Strip one stray wrapping pair rather than making the user spot it.
+INPUT="${INPUT#[\'\"]}"; INPUT="${INPUT%[\'\"]}"
+INPUT="${INPUT/#\~/$HOME}"          # allow a literal ~ in a quoted argument
+
+GREEN=$'\033[1;32m'; RED=$'\033[1;31m'; BOLD=$'\033[1m'; DIM=$'\033[2m'; OFF=$'\033[0m'
+die() { printf '\n%s✗ %s%s\n\n' "$RED" "$1" "$OFF" >&2; exit 1; }
+
+[ -f "$INPUT" ] || die "no such file: $INPUT"
+[ -d .venv ] && . .venv/bin/activate
+
+# Which client's calls should this prompt be mined against? Detected from the
+# prompt's own text (the same content signatures used for transcripts — an ABCL
+# prompt says "Aditya Birla" and "प्रिया"). Getting this wrong is not a small
+# error: it silently mines a different client's calls into this prompt, so an
+# undetectable prompt stops rather than guessing.
+if [ -n "${CLIENT:-}" ]; then
+  HOW="forced by CLIENT=$CLIENT"
+else
+  CLIENT=$(python3 - "$INPUT" <<'PY'
+import pathlib, sys
+from src import clients
+c = clients.detect_client_for_path(pathlib.Path(sys.argv[1]))
+print(c.key if c else "")
+PY
+)
+  HOW="auto-detected from the prompt's text"
+  [ -n "$CLIENT" ] || die "could not tell which client this prompt belongs to.
+  Re-run naming the client explicitly, e.g.:
+      CLIENT=abcl ./improve \"$INPUT\"
+  Known clients: $(ls -1 data/clients | grep -v '^_' | tr '\n' ' ')"
+fi
+
+[ -d "data/clients/$CLIENT/transcripts" ] \
+  || die "client '$CLIENT' has no transcripts yet — load some first:
+      ./add-transcripts <folder-of-transcripts>"
+
+OUT="OUTPUT"
+WORK="data/clients/$CLIENT/.work"   # internal scratch; not for humans to read
+
+printf '\n%sImproving:%s %s\n' "$BOLD" "$OFF" "$INPUT"
+printf '%sClient: %s%s%s  (%s)\n' "$DIM" "$BOLD" "$CLIENT" "$OFF$DIM" "$HOW"
+printf '%sUsing %s call transcripts. First run on a new prompt takes a few minutes;\nafter that it is instant.%s\n\n' \
+  "$DIM" "$(find "data/clients/$CLIENT/transcripts" -type f 2>/dev/null | wc -l | tr -d ' ')" "$OFF"
+
+# Fresh every run — stale files from a previous run are exactly what makes this
+# confusing to read afterwards.
+rm -rf "$WORK" "$OUT"
+mkdir -p "$WORK" "$OUT"
+
+cp "$INPUT" "$WORK/improved.raven"
+
+CALL_LOG="data/clients/$CLIENT/llm_calls.jsonl"
+OFFSET=0
+[ -f "$CALL_LOG" ] && OFFSET=$(wc -l < "$CALL_LOG" | tr -d ' ')
+
+set +e
+python run_improve.py "$WORK/improved.raven" --client "$CLIENT" --auto \
+  > "$WORK/run.log" 2>&1
+rc=$?
+set -e
+if [ $rc -ne 0 ]; then
+  tail -25 "$WORK/run.log" >&2
+  die "run failed — full log: $WORK/run.log"
+fi
+
+# --- assemble the one folder a human actually opens ---------------------------
+cp "$INPUT"                  "$OUT/1-original_prompt.raven"
+cp "$WORK/improved.raven"    "$OUT/2-IMPROVED_PROMPT.raven"
+diff -u "$OUT/1-original_prompt.raven" "$OUT/2-IMPROVED_PROMPT.raven" \
+  > "$OUT/3-what_changed.diff" || true
+CH="data/clients/$CLIENT/CHANGES-improved.md"
+[ -f "$CH" ] && cp "$CH" "$OUT/4-why_each_change.md"
+cp "$WORK/run.log" "$OUT/5-run_log.txt"
+
+ADDED=$(grep -c '^+[^+]' "$OUT/3-what_changed.diff" || true)
+VERDICT=$(grep -m1 -E '^(PASS|FAIL)' "$WORK/run.log" || echo "?")
+
+python3 - "$CALL_LOG" "$OFFSET" <<'PY'
+import json, pathlib, sys
+log, off = pathlib.Path(sys.argv[1]), int(sys.argv[2])
+rows = []
+if log.exists():
+    for ln in log.read_text().splitlines()[off:]:
+        try: rows.append(json.loads(ln))
+        except Exception: pass
+live = [r for r in rows if not r.get("cached")]
+print(f"  model calls this run: {len(live)} live, {len(rows)-len(live)} from cache")
+PY
+
+printf '  structural check:     %s\n' "$VERDICT"
+printf '  lines added:          %s\n' "${ADDED:-0}"
+
+printf '\n%s%s✓ Your improved prompt:%s\n' "$GREEN" "$BOLD" "$OFF"
+printf '    %s%s/2-IMPROVED_PROMPT.raven%s\n' "$BOLD" "$PWD/$OUT" "$OFF"
+
+if command -v pbcopy >/dev/null 2>&1; then
+  pbcopy < "$OUT/2-IMPROVED_PROMPT.raven"
+  printf '    %s(already copied to your clipboard — just paste it into NuPlay)%s\n' "$DIM" "$OFF"
+fi
+
+printf '\n  Also in %s/ :\n' "$OUT"
+printf '    1-original_prompt.raven   what you gave it, unchanged\n'
+printf '    3-what_changed.diff       line-by-line before/after\n'
+printf '    4-why_each_change.md      the evidence behind every change\n'
+printf '    5-run_log.txt             full log, if something looks off\n\n'

@@ -3,9 +3,11 @@ LLM. Everything else in the improvement pipeline stays deterministic.
 
 Design constraints, all deliberate:
 
-  * **Never silently degrades.** No API key -> raises. A heuristic fallback that
-    fakes a judgment call is worse than a hard failure, because the output looks
-    identical either way and gets written into a production prompt.
+  * **Never silently degrades.** No usable backend -> raises. A heuristic fallback
+    that fakes a judgment call is worse than a hard failure, because the output
+    looks identical either way and gets written into a production prompt. "Usable
+    backend" means an API key *or* a local Claude Code CLI (see PROVIDER_ENV); what
+    is never allowed is inventing a decision with no model in the loop.
   * **Cached on the prompt hash.** Re-running the improver costs nothing and
     produces identical decisions, which is what makes an autonomous run
     idempotent rather than a fresh roll of the dice each time.
@@ -21,6 +23,9 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import shutil
+import subprocess
+import tempfile
 import time
 from pathlib import Path
 
@@ -28,6 +33,17 @@ import config
 
 MODEL = "claude-sonnet-5"
 _MAX_RETRIES = 1
+
+# Which backend actually answers.
+#   "api"        — the Anthropic SDK, needs ANTHROPIC_API_KEY.
+#   "claude-cli" — shells out to the locally-installed Claude Code binary, which
+#                  authenticates through the user's existing session. No key needed.
+#   "auto"       — prefer the key if one is set, else the CLI. This is what lets the
+#                  pipeline run end-to-end on a machine that has never had a key,
+#                  instead of hard-failing at the first decision point.
+PROVIDER_ENV = "ABCL_LLM_PROVIDER"
+_CLI = "claude"
+_CLI_TIMEOUT_S = 300
 
 
 class LLMUnavailable(RuntimeError):
@@ -57,6 +73,87 @@ def _client():
             "heuristic: a fake judgment that looks like a real one is worse than "
             "no run at all.")
     return anthropic.Anthropic(api_key=key)
+
+
+def resolve_provider() -> str:
+    """Decide which backend answers, and fail loudly if neither is available."""
+    p = (os.environ.get(PROVIDER_ENV) or "auto").strip().lower()
+    if p not in ("auto", "api", "claude-cli"):
+        raise LLMUnavailable(
+            f"{PROVIDER_ENV}={p!r} is not a known provider "
+            f"(expected 'auto', 'api', or 'claude-cli')")
+    if p == "api":
+        return "api"
+    if p == "claude-cli":
+        if not shutil.which(_CLI):
+            raise LLMUnavailable(
+                f"{PROVIDER_ENV}=claude-cli but the `{_CLI}` binary is not on PATH")
+        return "claude-cli"
+    if os.environ.get("ANTHROPIC_API_KEY"):
+        return "api"
+    if shutil.which(_CLI):
+        return "claude-cli"
+    raise LLMUnavailable(
+        "no LLM backend available: ANTHROPIC_API_KEY is unset and the `claude` CLI "
+        "is not on PATH. Install Claude Code or set a key — this pipeline will not "
+        "fall back to a heuristic, because a fake judgment that looks like a real "
+        "one is worse than no run at all.")
+
+
+def _ask_claude_cli(prompt: str) -> tuple[str, int, int]:
+    """One-shot the local Claude Code binary in print mode. Returns (text, in, out).
+
+    Run from an empty temp directory on purpose: `claude` picks up CLAUDE.md from
+    its working directory, and this repo's own instructions have no business
+    leaking into a prompt that asks the model to judge customer speech.
+
+    Tools are denied and the turn count capped rather than the agent being told to
+    behave: this must be a completion, not an agent that can read the filesystem.
+    The cap is NOT 1 — verified that a 25KB evidence prompt legitimately reports
+    num_turns=3, so `--max-turns 1` fails every large call with error_max_turns
+    while small ones pass, which reads exactly like a flaky model instead of a
+    misconfigured flag.
+    """
+    exe = shutil.which(_CLI)
+    if not exe:
+        raise LLMUnavailable(f"the `{_CLI}` binary is not on PATH")
+    cmd = [exe, "-p", "--model", MODEL, "--output-format", "json",
+           "--max-turns", "8",
+           "--disallowed-tools", "Bash", "Edit", "Write", "Read",
+           "WebFetch", "WebSearch"]
+    with tempfile.TemporaryDirectory() as neutral_cwd:
+        try:
+            proc = subprocess.run(cmd, input=prompt, capture_output=True, text=True,
+                                  cwd=neutral_cwd, timeout=_CLI_TIMEOUT_S)
+        except subprocess.TimeoutExpired as e:
+            raise LLMBadResponse(
+                f"`{_CLI}` did not answer within {_CLI_TIMEOUT_S}s") from e
+    if proc.returncode != 0:
+        tail = (proc.stderr or proc.stdout or "").strip()[-400:]
+        # A CLI that is installed but not logged in fails here. That is an auth
+        # problem, not a bad response, so it must not be retried.
+        if "login" in tail.lower() or "authenticat" in tail.lower():
+            raise LLMAuthError(f"`{_CLI}` is not authenticated — run `{_CLI}` once "
+                               f"interactively to log in. ({tail})")
+        raise LLMUnavailable(f"`{_CLI}` exited {proc.returncode}: {tail}")
+    try:
+        payload = json.loads(proc.stdout)
+    except json.JSONDecodeError as e:
+        raise LLMBadResponse(
+            f"`{_CLI}` did not emit JSON envelope: {proc.stdout[:200]!r}") from e
+    if payload.get("is_error"):
+        raise LLMBadResponse(f"`{_CLI}` reported an error: "
+                             f"{str(payload.get('result'))[:300]}")
+    text = payload.get("result")
+    if not isinstance(text, str) or not text.strip():
+        raise LLMBadResponse(f"`{_CLI}` returned an empty result field")
+    usage = payload.get("usage") or {}
+    # Report the billed input honestly: the CLI carries its own system prompt, and
+    # most of that arrives as cache reads rather than fresh input tokens.
+    in_tok = (usage.get("input_tokens", 0)
+              + usage.get("cache_read_input_tokens", 0)
+              + usage.get("cache_creation_input_tokens", 0))
+    return text, in_tok, usage.get("output_tokens", 0)
 
 
 def _cache_path(client_key: str) -> Path:
@@ -197,29 +294,36 @@ def ask_json(prompt: str, client_key: str, purpose: str,
                               "cached": True})
             return cached
 
-    client = _client()
+    provider = resolve_provider()
+    client = _client() if provider == "api" else None
     attempt_prompt = prompt
     last_err = None
     for attempt in range(_MAX_RETRIES + 1):
-        try:
-            resp = client.messages.create(
-                model=MODEL, max_tokens=max_tokens,
-                messages=[{"role": "user", "content": attempt_prompt}],
-            )
-        except Exception as e:  # noqa: BLE001
-            name = type(e).__name__
-            if "Authentication" in name or "PermissionDenied" in name:
-                raise LLMAuthError(
-                    f"ANTHROPIC_API_KEY was rejected by the API ({e}). Check the "
-                    f"key is correct, active, and has access to {MODEL}.") from e
-            raise
-        text = "".join(b.text for b in resp.content if getattr(b, "type", "") == "text")
+        if provider == "api":
+            try:
+                resp = client.messages.create(
+                    model=MODEL, max_tokens=max_tokens,
+                    messages=[{"role": "user", "content": attempt_prompt}],
+                )
+            except Exception as e:  # noqa: BLE001
+                name = type(e).__name__
+                if "Authentication" in name or "PermissionDenied" in name:
+                    raise LLMAuthError(
+                        f"ANTHROPIC_API_KEY was rejected by the API ({e}). Check the "
+                        f"key is correct, active, and has access to {MODEL}.") from e
+                raise
+            text = "".join(b.text for b in resp.content
+                           if getattr(b, "type", "") == "text")
+            in_tok, out_tok = resp.usage.input_tokens, resp.usage.output_tokens
+        else:
+            # max_tokens has no CLI equivalent; Sonnet's default output ceiling is
+            # far above anything this pipeline asks for, so nothing is lost.
+            text, in_tok, out_tok = _ask_claude_cli(attempt_prompt)
         _save_prompt(client_key, purpose, h, attempt_prompt, text)
         _log(client_key, {
             "ts": time.time(), "purpose": purpose, "hash": h, "cached": False,
-            "attempt": attempt, "model": MODEL,
-            "in_tokens": resp.usage.input_tokens,
-            "out_tokens": resp.usage.output_tokens,
+            "attempt": attempt, "model": MODEL, "provider": provider,
+            "in_tokens": in_tok, "out_tokens": out_tok,
         })
         try:
             parsed = _extract_json(text)
@@ -267,8 +371,10 @@ def call_count(client_key: str) -> dict:
     """Real usage numbers from the log — used by the CLI to report cost."""
     p = _log_path(client_key)
     if not p.exists():
-        return {"calls": 0, "cached": 0, "in_tokens": 0, "out_tokens": 0}
+        return {"calls": 0, "cached": 0, "in_tokens": 0, "out_tokens": 0,
+                "providers": []}
     calls = cached = tin = tout = 0
+    providers: dict[str, int] = {}
     for line in p.read_text().splitlines():
         try:
             r = json.loads(line)
@@ -280,4 +386,8 @@ def call_count(client_key: str) -> dict:
             calls += 1
             tin += r.get("in_tokens", 0)
             tout += r.get("out_tokens", 0)
-    return {"calls": calls, "cached": cached, "in_tokens": tin, "out_tokens": tout}
+            # Records written before provider logging existed have no such key.
+            prov = r.get("provider", "api")
+            providers[prov] = providers.get(prov, 0) + 1
+    return {"calls": calls, "cached": cached, "in_tokens": tin, "out_tokens": tout,
+            "providers": sorted(providers.items(), key=lambda kv: -kv[1])}

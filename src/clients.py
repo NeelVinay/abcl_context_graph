@@ -57,7 +57,13 @@ def _abcl_client() -> Client:
     from src.distill import MODEL_PATH
     return Client(
         key="abcl", label="ABCL — loan application calls",
-        signature=["aditya birla", "priya"], filename_prefix=None,
+        # Devanagari spellings are NOT optional here: the agent introduces itself in
+        # Devanagari on most calls, so the Latin-only pair matched just 24 of 112 real
+        # ABCL transcripts. The other 88 fell through to "unrecognized" and, in a
+        # folder also holding Myntra calls, lost the batch vote and were filed under
+        # Myntra — whose signature did include its Devanagari names.
+        signature=["aditya birla", "priya", "आदित्य बिरला", "प्रिया"],
+        filename_prefix=None,
         model_path=MODEL_PATH, embed_model=extract.EMBED_MODEL, embed_prefix="",
         intent_library=extract.INTENT_LIBRARY, actions=extract.ACTIONS,
         intent_desc=extract.INTENT_DESC, sentiment_lexicon=extract.SENTIMENT_LEXICON,

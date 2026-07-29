@@ -21,3 +21,12 @@ data/clients/*/*.bak
 # auditability (they carry ~97 verbatim customer turns and their call IDs), and
 # gitignored for exactly that reason — same treatment as transcripts/.
 data/clients/*/prompts_sent/
+
+# ./improve's per-run output (numbered 1-5, always rebuilt fresh) and its
+# scratch working dir. Nothing here is source — see ./improve and DEMO.md.
+OUTPUT/
+data/clients/*/.work/
+
+# ./reset's archive of whatever it wiped. Local safety net, not a fixture —
+# potentially contains real transcripts, so must never be pushed.
+data/.reset-archive/

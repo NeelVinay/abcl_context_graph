@@ -1,0 +1,83 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Demo: full pipeline (transcripts → improved prompt)",
+      "detail": "End-to-end. Builds the context graph, then lets the LLM improve the .raven prompt. Uses the local Claude Code CLI — no API key needed.",
+      "type": "shell",
+      "command": "./scripts/demo_e2e.sh",
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true,
+        "focus": true
+      },
+      "problemMatcher": [],
+      "group": { "kind": "build", "isDefault": true }
+    },
+    {
+      "label": "Improve THIS prompt (the file I have open)",
+      "detail": "Runs the improver on whichever .raven / prompt file is open in the editor. Reuses the existing context graph, so it takes ~10s plus model time. Your file is copied first and never modified.",
+      "type": "shell",
+      "command": "SKIP_GRAPH=1 PROMPT='${file}' ./scripts/demo_e2e.sh",
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true,
+        "focus": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Improve a prompt (ask me for the path)",
+      "detail": "Prompts for a path to any prompt file, anywhere on disk, then improves it.",
+      "type": "shell",
+      "command": "SKIP_GRAPH=1 PROMPT='${input:promptPath}' ./scripts/demo_e2e.sh",
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true,
+        "focus": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Demo: context graph only",
+      "detail": "Stage 1 alone — transcripts to flow chart, report, per-turn capture, glossary. No LLM.",
+      "type": "shell",
+      "command": "source .venv/bin/activate 2>/dev/null; python run_client.py data/clients/abcl/transcripts --client abcl",
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Demo: improve prompt only",
+      "detail": "Stage 2 alone — assumes the context graph is already built.",
+      "type": "shell",
+      "command": "source .venv/bin/activate 2>/dev/null; cp data/clients/abcl/autorun/input.raven data/clients/abcl/demo/demo.raven && python run_improve.py data/clients/abcl/demo/demo.raven --client abcl --auto",
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "Demo: show last diff",
+      "detail": "The before/after patch from the most recent demo run.",
+      "type": "shell",
+      "command": "cat data/clients/abcl/demo/diff.patch",
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "promptPath",
+      "type": "promptString",
+      "description": "Path to the prompt file to improve",
+      "default": "data/clients/abcl/autorun/input.raven"
+    }
+  ]
+}
