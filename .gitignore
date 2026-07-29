@@ -25,6 +25,17 @@ engine/data/clients/*/prompts_sent/
 OUTPUT/
 engine/data/clients/*/.work/
 
+# INPUT/ is a staging copy, not a second source of truth. The real, tracked
+# transcript store is engine/data/clients/<client>/transcripts/ (populated and
+# kept in sync by ./load-transcripts / ./load-prompt on every run) — committing
+# INPUT/ too meant every real customer transcript was duplicated in the repo.
+# Keep the folders themselves present via .gitkeep so a fresh clone still has
+# somewhere to drop files.
+INPUT/transcripts/*
+INPUT/prompt/*
+!INPUT/transcripts/.gitkeep
+!INPUT/prompt/.gitkeep
+
 # ./engine/improve's own throwaway test output (advanced/testing tool only).
 engine/test-output/
 
