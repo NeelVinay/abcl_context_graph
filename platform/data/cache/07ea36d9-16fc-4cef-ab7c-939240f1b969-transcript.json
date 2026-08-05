@@ -1,0 +1,1179 @@
+{
+  "call_id": "07ea36d9-16fc-4cef-ab7c-939240f1b969-transcript",
+  "language": "hi-en",
+  "outcome": "transferred",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "hello"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Hello.",
+      "entities": []
+    },
+    {
+      "index": 1,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "नमस्ते",
+        "बात कर रही",
+        "से बात"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नमस्ते… क्या मैं VIDHI MAHESH जी से बात कर रही हूँ?",
+      "entities": []
+    },
+    {
+      "index": 2,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "कौन है?",
+      "entities": []
+    },
+    {
+      "index": 3,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "बोल",
+        "aditya",
+        "birla"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं प्रिया बोल रही हूँ Aditya Birla",
+      "entities": []
+    },
+    {
+      "index": 4,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "one",
+        "six",
+        "zero",
+        "double"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Six double zero one.",
+      "entities": []
+    },
+    {
+      "index": 5,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "सवाल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अच्छा सवाल",
+      "entities": []
+    },
+    {
+      "index": 6,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "एक second",
+        "second"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "एक second हां.",
+      "entities": []
+    },
+    {
+      "index": 7,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "कृपया",
+        "बताएं",
+        "इंतज़ार",
+        "हों",
+        "तैयार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, बिलकुल, मैं इंतज़ार कर रही हूँ... कृपया बताएं जब आप तैयार हों।",
+      "entities": []
+    },
+    {
+      "index": 8,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "बोलिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां जी बोलिए.",
+      "entities": []
+    },
+    {
+      "index": 9,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_greet",
+      "base_intent": "greeting",
+      "keywords": [
+        "बोल",
+        "capital",
+        "aditya",
+        "birla",
+        "धन्यवाद"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "धन्यवाद, VIDHI MAHESH जी, मैं प्रिया बोल रही हूँ Aditya Birla Capital से। क्या मैं आपसे अभी कुछ देर बात कर सकती हूँ?",
+      "entities": []
+    },
+    {
+      "index": 10,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "बोलिए"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Yeah, बोलिए.",
+      "entities": []
+    },
+    {
+      "index": 11,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_query_fee",
+      "base_intent": "processing_fee",
+      "keywords": [
+        "interest rate",
+        "interest",
+        "rate",
+        "कितना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ma'am मुझे यह बता सकते हैं कि कितना interest rate करेगा?",
+      "entities": []
+    },
+    {
+      "index": 12,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "loan",
+        "offer",
+        "approved",
+        "application",
+        "complete"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, अच्छा सवाल है... interest rate आपके final approved loan amount और profile के हिसाब से decide होता है, जो आपको आखिरी offer page पर दिखेगा। फिलहाल, क्या हम आगे बढ़कर आपकी application complete करें ताकि आप अपना offer देख सकें?",
+      "entities": []
+    },
+    {
+      "index": 13,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_agree",
+      "base_intent": "agree",
+      "keywords": [
+        "आगे बढ़",
+        "आगे",
+        "पूरा",
+        "लेंगे",
+        "procedure"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ma'am पर फिर अगर हम आगे बढ़कर पूरा हो procedure ख़त्म कर लेंगे तो",
+      "entities": []
+    },
+    {
+      "index": 14,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_express_distrust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "loan",
+        "पड़ेगा",
+        "तरफ़"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मुझे फिर आपके भी तरफ़ से pressure आ जाएगा कि loan लेना ही पड़ेगा, loan लेना ही पड़ेगा.",
+      "entities": []
+    },
+    {
+      "index": 15,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_reassure_trust",
+      "base_intent": "reassure_trust",
+      "keywords": [
+        "मदद",
+        "शुरू",
+        "sms",
+        "application",
+        "process"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं समझती हूँ आपकी बात... मैं यहाँ सिर्फ मदद के लिए हूँ, कोई pressure नहीं होगा। आप पूरी जानकारी लेकर ही decision लें, मैं बस आपकी application complete करने में support कर रही हूँ। क्या मैं आपको SMS भेजकर आगे का process शुरू करने में मदद करूँ?",
+      "entities": []
+    },
+    {
+      "index": 16,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "कीजिए",
+        "माफ़"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "माफ़ कीजिए, क्या आप फिर",
+      "entities": []
+    },
+    {
+      "index": 17,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms",
+        "application",
+        "link",
+        "जिसमें",
+        "भेज"
+      ],
+      "sentiment": null,
+      "tool": "send_sms",
+      "text": "बिल्कुल, मैं अभी आपको SMS भेज रही हूँ जिसमें एक link होगा, उस link पर क्लिक करके आप वहीं से अपने application की प्रक्रिया continue कर पाएंगे जहाँ आपने छोड़ा था। कृपया अपने फोन को speaker पर रखें और देखिए, क्या आपको SMS मिल गया है?",
+      "entities": []
+    },
+    {
+      "index": 18,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_send_sms_link",
+      "base_intent": "send_sms_link",
+      "keywords": [
+        "sms",
+        "भेज",
+        "कृपया",
+        "फोन"
+      ],
+      "sentiment": null,
+      "tool": "send_sms",
+      "text": "ठीक है, SMS भेज दिया गया है। कृपया अपने फोन को",
+      "entities": []
+    },
+    {
+      "index": 19,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_open_link",
+      "base_intent": "open_link",
+      "keywords": [
+        "खुल गया",
+        "sms",
+        "link",
+        "कृपया",
+        "बताएं"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत बढ़िया। अब कृपया SMS में आए link पर क्लिक करें और बताएं कि link खुल गया है?",
+      "entities": []
+    },
+    {
+      "index": 20,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_link_opened",
+      "base_intent": "open_link",
+      "keywords": [
+        "खुल गया",
+        "खुल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां जी खुल गया.",
+      "entities": []
+    },
+    {
+      "index": 21,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_guide_apply",
+      "base_intent": "click_apply",
+      "keywords": [
+        "apply now",
+        "apply",
+        "now",
+        "कृपया",
+        "बताएं"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अच्छा है, अब आप homepage पर पहुँच गए होंगे जहाँ नीचे \"Apply Now\" का बटन दिखेगा, कृपया उस पर क्लिक करें। जब आप क्लिक कर लें तो मुझे बताएं ताकि मैं आगे guide कर सकूँ।",
+      "entities": []
+    },
+    {
+      "index": 22,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_applied",
+      "base_intent": "click_apply",
+      "keywords": [
+        "click",
+        "login"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok. Click कर लिया login के लिए यह बता रहा है?",
+      "entities": []
+    },
+    {
+      "index": 23,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "कृपया",
+        "number",
+        "बताएं",
+        "जाए",
+        "mobile"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, बिल्कुल सही है। अब आपको अपना mobile number टाइप करना होगा ताकि आप login कर सकें। अगर आपको समझना हो तो वही नंबर डालें जो आपने पहले इस्तेमाल किया था। कृपया टाइप करें और बताएं जब हो जाए।",
+      "entities": []
+    },
+    {
+      "index": 24,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [
+        "उसी"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok. उसी की",
+      "entities": []
+    },
+    {
+      "index": 25,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_request_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "कृपया",
+        "बताएं",
+        "नीचे",
+        "verify"
+      ],
+      "sentiment": null,
+      "tool": "send_otp",
+      "text": "ठीक है, अब नीचे terms and condition का box होगा, कृपया उसे चेक कर लें क्योंकि ये जरूरी है। इसके बाद \"Get OTP\" पर क्लिक करें और OTP verification पूरी करें। OTP आने के बाद verify कर लें और मुझे बताएं ताकि हम आगे बढ़ सकें।",
+      "entities": []
+    },
+    {
+      "index": 26,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_do_otp",
+      "base_intent": "mobile_otp",
+      "keywords": [
+        "otp",
+        "verification"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "OTP हो गया verification हो गया ma'am वह.",
+      "entities": []
+    },
+    {
+      "index": 27,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_clarify",
+      "base_intent": "ask_question",
+      "keywords": [
+        "कृपया",
+        "बताएं",
+        "आगे",
+        "खुल",
+        "बढ़"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत बढ़िया, अब आप आगे बढ़ गए हैं। मैं आपकी सहायता करती हूँ कि अगला कदम क्या होगा। कृपया बताएं कि अगला पेज खुल गया है या कोई समस्या आ रही है?",
+      "entities": []
+    },
+    {
+      "index": 28,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_link_opened",
+      "base_intent": "open_link",
+      "keywords": [
+        "खुल गया",
+        "खुल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "नहीं नहीं ma'am खुल गया.",
+      "entities": []
+    },
+    {
+      "index": 29,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_pan",
+      "base_intent": "enter_pan",
+      "keywords": [
+        "पैन",
+        "कृपया",
+        "देख",
+        "बताएं",
+        "personal"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "अच्छा है, अब आप जो अगला पेज देख रहे हैं वह आपकी personal details भरने का होगा। इस पेज पर आपको सबसे पहले अपना पैन नंबर भरना होगा। कृपया पैन नंबर भरें और मुझे बताएं जब आप पूरा कर लें।",
+      "entities": []
+    },
+    {
+      "index": 30,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_pan",
+      "base_intent": "enter_pan",
+      "keywords": [
+        "pan",
+        "number",
+        "second"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है ma'am PAN number वन दिया है. एक second.",
+      "entities": []
+    },
+    {
+      "index": 31,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "कृपया",
+        "बताएं",
+        "इंतज़ार",
+        "आगे",
+        "हों"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, ठीक है, मैं इंतज़ार कर रही हूँ... कृपया बताएं जब आप आगे बढ़ने के लिए तैयार हों।",
+      "entities": []
+    },
+    {
+      "index": 32,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "फिर से कह",
+        "कृपया",
+        "कहेंगे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कृपया फिर से कहेंगे?",
+      "entities": []
+    },
+    {
+      "index": 33,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "details",
+        "fill"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Yeah. Details fill up हो गई है.",
+      "entities": []
+    },
+    {
+      "index": 34,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_personal_details",
+      "base_intent": "personal_details",
+      "keywords": [
+        "gender",
+        "date of birth",
+        "marital",
+        "कृपया",
+        "बताएं"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत अच्छा, अब कृपया अपना full name पैन के अनुसार भरें, फिर Gender, Date of Birth और Marital Status select करें। ये सभी details भरने के बाद मुझे बताएं।",
+      "entities": []
+    },
+    {
+      "index": 35,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "कृपया",
+        "कहेंगे",
+        "स्पष्ट"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "कृपया थोड़ा स्पष्ट कहेंगे?",
+      "entities": []
+    },
+    {
+      "index": 36,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "details",
+        "clear"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Yeah ma'am सभी details clear हो गई है.",
+      "entities": []
+    },
+    {
+      "index": 37,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_email",
+      "base_intent": "enter_email",
+      "keywords": [
+        "email",
+        "कृपया",
+        "बताएं",
+        "जाए",
+        "personal"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत बढ़िया, अब कृपया अपना personal email address भरें और बताएं जब पूरा हो जाए।",
+      "entities": []
+    },
+    {
+      "index": 38,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "कीजिए",
+        "माफ़"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "माफ़ कीजिए, क्या आप अभी",
+      "entities": []
+    },
+    {
+      "index": 39,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "second",
+        "just"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Just a second. हां जी ma'am.",
+      "entities": []
+    },
+    {
+      "index": 40,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_email",
+      "base_intent": "enter_email",
+      "keywords": [
+        "email",
+        "कृपया",
+        "बताएं",
+        "जाए",
+        "address"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, धन्यवाद। कृपया email address भरें और बताएं जब पूरा हो जाए।",
+      "entities": []
+    },
+    {
+      "index": 41,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_address",
+      "base_intent": "enter_address",
+      "keywords": [
+        "address",
+        "locality",
+        "building",
+        "house number",
+        "flat"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत अच्छा, अब कृपया अपना address भरें जैसे flat या house number, building name, street और locality name, और अंत में पिनकोड भी डालें। पूरा भरने के बाद मुझे बताएं।",
+      "entities": []
+    },
+    {
+      "index": 42,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_report_done",
+      "base_intent": "report_done",
+      "keywords": [
+        "हो गया",
+        "आगे",
+        "procedure"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "वह ma'am वह procedure हो गया था. अब मैं आगे बच्चों से हूं.",
+      "entities": []
+    },
+    {
+      "index": 43,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "इंतज़ार",
+        "समझ",
+        "आगे",
+        "address",
+        "ताकि"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, समझ गई। जब आप free हों तो आप अपना address भर लें। अभी मैं इंतज़ार कर रही हूँ ताकि हम आगे बढ़ सकें।",
+      "entities": []
+    },
+    {
+      "index": 44,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_provide_personal_details",
+      "base_intent": "personal_details",
+      "keywords": [
+        "details",
+        "professional"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ma'am professional details भी हो गई है.",
+      "entities": []
+    },
+    {
+      "index": 45,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "loan",
+        "offer",
+        "कृपया",
+        "बताएं",
+        "page"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत बढ़िया, अब आप professional details भी भर चुके हैं। क्या आप loan offer page तक पहुँच गए हैं या किसी तरह की कोई दिक्कत आ रही है? कृपया बताएं।",
+      "entities": []
+    },
+    {
+      "index": 46,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "मतलब",
+        "details",
+        "उसमें",
+        "आधार",
+        "भरना"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "उसमें करके कुछ रहा है मतलब मुझे मेरा आधार का details भरना पड़ेगा?",
+      "entities": []
+    },
+    {
+      "index": 47,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "udyam",
+        "details",
+        "type",
+        "employed",
+        "self"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी हाँ, अगर आप self-employed हैं तो Udyam verification के लिए आधार की details या Udyam नंबर भरना पड़ सकता है। अगर आप salaried हैं तो ये जरूरी नहीं होता। क्या आप बता सकते हैं कि आपकी employment type क्या है?",
+      "entities": []
+    },
+    {
+      "index": 48,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_state_employment_type",
+      "base_intent": "employment_type",
+      "keywords": [
+        "self employ",
+        "employed",
+        "self"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "My self employed हूं.",
+      "entities": []
+    },
+    {
+      "index": 49,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_offer_skip_udyam",
+      "base_intent": "skip_udyam",
+      "keywords": [
+        "skip",
+        "application",
+        "details",
+        "समझ",
+        "आगे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "समझ गई। तो आपको अपने बिज़नेस की details के साथ Udyam verification भी करनी होगी। अगर आपके पास Udyam नंबर नहीं है तो आप \"Skip\" option पर क्लिक कर सकते हैं, लेकिन फिर आपकी application manual review के लिए जाएगी। क्या आप आगे बढ़ना चाहेंगे?",
+      "entities": []
+    },
+    {
+      "index": 50,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "manual_review",
+      "keywords": [
+        "check",
+        "card",
+        "let",
+        "bank",
+        "याद"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Let me check ma'am मेरे पास अभी याद आ card हुआ bank में मैं ढूंढ रही हूं.",
+      "entities": []
+    },
+    {
+      "index": 51,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "मदद",
+        "देख",
+        "बताएं",
+        "आगे",
+        "ताकि"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, ठीक है, आप आराम से देख लें। जब आप तैयार हों तो मुझे बताएं ताकि मैं आपकी मदद आगे कर सकूँ।",
+      "entities": []
+    },
+    {
+      "index": 52,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "udyam",
+        "कृपया",
+        "बताएं",
+        "registered",
+        "नंबर"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है, कृपया Udyam नंबर और registered मोबाइल नंबर भरें, फिर \"Submit\" पर क्लिक करें। अगर कोई दिक्कत हो तो मुझे बताएं।",
+      "entities": []
+    },
+    {
+      "index": 53,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_udyam",
+      "base_intent": "udyam_verification",
+      "keywords": [
+        "udyam",
+        "कृपया",
+        "बताएं",
+        "आगे",
+        "चाहें"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत अच्छा, कृपया Udyam नंबर और रजिस्टर्ड मोबाइल नंबर भरकर \"Submit\" पर क्लिक करें। अगर आप Udyam नंबर नहीं डालना चाहते तो \"Skip\" का option चुन सकते हैं। बताएं जब आप आगे बढ़ना चाहें।",
+      "entities": []
+    },
+    {
+      "index": 54,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_request_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "minute"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "हां जी ma'am. मुझे दो minute दीजिए. मैं कर रही हूं.",
+      "entities": []
+    },
+    {
+      "index": 55,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "कृपया",
+        "बताएं",
+        "इंतज़ार",
+        "आगे",
+        "पूरा"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, बिल्कुल, मैं इंतज़ार कर रही हूँ... कृपया पूरा होने पर बताएं ताकि हम आगे बढ़ सकें।",
+      "entities": []
+    },
+    {
+      "index": 56,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "कृपया",
+        "बताएं",
+        "इंतज़ार",
+        "हों",
+        "तैयार"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, बिलकुल, मैं इंतज़ार कर रही हूँ... कृपया बताएं जब आप तैयार हों।",
+      "entities": []
+    },
+    {
+      "index": 57,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_ask_to_repeat",
+      "base_intent": "clarify_repeat",
+      "keywords": [
+        "कीजिए",
+        "माफ़"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "माफ़ कीजिए, क्या आप अभी भी बात कर रहे हैं?",
+      "entities": []
+    },
+    {
+      "index": 58,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_other",
+      "base_intent": "other",
+      "keywords": [
+        "details",
+        "time",
+        "start",
+        "some",
+        "all"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "This is very frustrating. This is very frustrating. I'm putting all my details. Don't start bothering me. I'm doing it Give me some time.",
+      "entities": []
+    },
+    {
+      "index": 59,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_wait",
+      "base_intent": "wait_hold",
+      "keywords": [
+        "मदद",
+        "कृपया",
+        "समय",
+        "आगे",
+        "ताकि"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "मैं समझती हूँ आपकी परेशानी, कृपया थोड़ा समय लें। मैं यहीं हूँ आपकी मदद के लिए, जब भी आप तैयार हों बताइए ताकि हम आगे बढ़ सकें।",
+      "entities": []
+    },
+    {
+      "index": 60,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_acknowledge",
+      "base_intent": "acknowledge",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "ठीक है ma'am.",
+      "entities": []
+    },
+    {
+      "index": 61,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_request_org_name",
+      "base_intent": "organization_name",
+      "keywords": [
+        "कृपया",
+        "बताएं",
+        "details",
+        "आगे",
+        "धन्यवाद"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "धन्यवाद, कृपया पूरा details भर लें और बताएं जब आप आगे बढ़ने के लिए तैयार हों।",
+      "entities": []
+    },
+    {
+      "index": 62,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_ask_question",
+      "base_intent": "ask_question",
+      "keywords": [
+        "wait",
+        "option"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ma'am wait का option आ रहा है?",
+      "entities": []
+    },
+    {
+      "index": 63,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_answer_query",
+      "base_intent": "answer_query",
+      "keywords": [
+        "मदद",
+        "शुरू",
+        "कॉल",
+        "समय",
+        "wait"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, अगर आपको कुछ समय चाहिए तो आप wait का option चुन सकते हैं। जब आप तैयार हों, कॉल फिर से शुरू कर लें। मैं यहाँ आपकी मदद के लिए हूँ।",
+      "entities": []
+    },
+    {
+      "index": 64,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_offer",
+      "base_intent": "present_offer",
+      "keywords": [],
+      "sentiment": null,
+      "tool": null,
+      "text": "Ok ma'am इसमें मुझे बताया जा रहा है कि मुझे",
+      "entities": []
+    },
+    {
+      "index": 65,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "lakh",
+        "one",
+        "thousand",
+        "fifty"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "fifty thousand to one lakh sixteen thousand का",
+      "entities": []
+    },
+    {
+      "index": 66,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "amount",
+        "समझ"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, समझ गई। ये जो amount",
+      "entities": []
+    },
+    {
+      "index": 67,
+      "speaker": "customer",
+      "type": "action",
+      "intent": "customer_react_to_offer",
+      "base_intent": "present_offer",
+      "keywords": [
+        "loan",
+        "amount",
+        "मिल"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "loan amount मिल सकता है.",
+      "entities": []
+    },
+    {
+      "index": 68,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_final_offer",
+      "base_intent": "final_offer",
+      "keywords": [
+        "loan",
+        "offer",
+        "रुपये",
+        "लाख",
+        "आगे"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "जी, आपकी profile के हिसाब से आपको ₹पचास हजार से एक लाख सोलह हजार रुपये तक का loan मिल सकता है। क्या आप आगे बढ़कर अपना offer देखना चाहेंगे?",
+      "entities": []
+    },
+    {
+      "index": 69,
+      "speaker": "agent",
+      "type": "action",
+      "intent": "agent_present_final_offer",
+      "base_intent": "final_offer",
+      "keywords": [
+        "loan",
+        "offer",
+        "देख",
+        "amount",
+        "बढ़िया"
+      ],
+      "sentiment": null,
+      "tool": null,
+      "text": "बहुत बढ़िया। अब आप अपना offer पेज देख सकते हैं। क्या आपको loan amount दिखाई दे रहा है?",
+      "entities": []
+    },
+    {
+      "index": 70,
+      "speaker": "agent",
+      "type": "tool_call",
+      "intent": "agent_transfer_to_rm",
+      "base_intent": "transfer_to_rm",
+      "keywords": [
+        "relationship manager",
+        "process",
+        "कृपया",
+        "इंतज़ार",
+        "connect"
+      ],
+      "sentiment": null,
+      "tool": "transfer_to_rm",
+      "text": "बहुत अच्छा, अब मैं आपको हमारे Relationship Manager से connect कर रही हूँ ताकि आपके KYC process को आगे बढ़ाया जा सके। कृपया थोड़ी देर इंतज़ार करें।",
+      "entities": []
+    }
+  ]
+}

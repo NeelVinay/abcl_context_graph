@@ -1,0 +1,143 @@
+#!/usr/bin/env bash
+#
+# Run everything, start to finish: load transcripts -> build the context graph
+# -> analyze it -> improve the prompt. One command, one deliverables folder.
+#
+#   ./bin/run-pipeline
+#
+# Reads from intake/transcripts/ and intake/prompt/. Writes everything to
+# deliverables/, which is fully rebuilt on every run — always reflects only the
+# latest input, never a mix of old and new. Neither intake/ file is ever modified.
+#
+# Uses the local Claude Code CLI — no API key needed. First run against a given
+# prompt+transcript combination makes live model calls (a few minutes); re-running
+# the same inputs is near-instant, since decisions are cached on their content.
+
+set -euo pipefail
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+ROOT="$(dirname "$SCRIPT_DIR")"          # this script lives in <repo root>/bin/
+cd "$ROOT"
+PLATFORM="$ROOT/platform"
+
+BOLD=$'\033[1m'; CYAN=$'\033[1;36m'; GREEN=$'\033[1;32m'
+RED=$'\033[1;31m'; DIM=$'\033[2m'; OFF=$'\033[0m'
+die() { printf '\n%s✗ %s%s\n\n' "$RED" "$1" "$OFF" >&2; exit 1; }
+step() { printf '\n%s━━━ %s ━━━%s\n' "$CYAN" "$1" "$OFF"; }
+
+NOISE='RuntimeWarning|ret = a @ b|Orthogonal edges do not currently handle|NotOpenSSLWarning|warnings\.warn|^ *$'
+
+[ -d "$ROOT/.venv" ] && . "$ROOT/.venv/bin/activate"
+
+# --------------------------------------------------------------- 0. preflight
+step "0/3  Preflight"
+
+N_T=$(find "$ROOT/intake/transcripts" -maxdepth 1 -type f \( -name '*.txt' -o -name '*.json' \) 2>/dev/null | wc -l | tr -d ' ')
+[ "$N_T" -gt 0 ] || die "intake/transcripts/ is empty — run ./bin/load-transcripts first."
+printf '   %s✓%s transcripts: %s file(s) in intake/transcripts/\n' "$GREEN" "$OFF" "$N_T"
+
+N_P=$(find "$ROOT/intake/prompt" -maxdepth 1 -type f ! -name '.*' 2>/dev/null | wc -l | tr -d ' ')
+[ "$N_P" -gt 0 ] || die "intake/prompt/ is empty — run ./bin/load-prompt first."
+[ "$N_P" -eq 1 ] || die "intake/prompt/ has $N_P files — keep exactly one."
+PROMPT=$(find "$ROOT/intake/prompt" -maxdepth 1 -type f ! -name '.*')
+printf '   %s✓%s prompt: %s\n' "$GREEN" "$OFF" "$(basename "$PROMPT")"
+
+CLIENT=$(cd "$PLATFORM" && python3 - "$PROMPT" <<'PY'
+import pathlib, sys
+from src import clients
+c = clients.detect_client_for_path(pathlib.Path(sys.argv[1]))
+print(c.key if c else "")
+PY
+)
+[ -n "$CLIENT" ] || die "could not tell which client this prompt belongs to."
+printf '   %s✓%s client: %s\n' "$GREEN" "$OFF" "$CLIENT"
+
+PROVIDER=$(cd "$PLATFORM" && python3 -c 'from src import llm; print(llm.resolve_provider())') \
+  || die "no LLM backend available — set ANTHROPIC_API_KEY, or install Claude Code."
+printf '   %s✓%s LLM backend: %s\n' "$GREEN" "$OFF" "$PROVIDER"
+
+WORK="$PLATFORM/data/clients/$CLIENT/.work"
+rm -rf "$WORK" "$ROOT/deliverables"
+mkdir -p "$WORK"
+
+# ------------------------------------------------------ 1. load + build graph
+step "1/3  Context graph  ($N_T transcripts -> $CLIENT)"
+
+(cd "$PLATFORM" && python3 - "$CLIENT" "$ROOT/intake/transcripts" <<'PY'
+import sys
+from pathlib import Path
+from run_client import sync_transcripts, _client_by_key_or_new
+client = _client_by_key_or_new(sys.argv[1])
+sync_transcripts(client, Path(sys.argv[2]), append=False)
+PY
+)
+
+set +e
+(cd "$PLATFORM" && python run_client.py "$ROOT/intake/transcripts" --client "$CLIENT") \
+  > "$WORK/1-graph.log" 2>&1
+rc=$?
+set -e
+grep -vE "$NOISE" "$WORK/1-graph.log" | sed 's/^/   /' || true
+[ $rc -eq 0 ] || die "graph build failed — see $WORK/1-graph.log"
+
+# --------------------------------------------------------- 2. improve prompt
+step "2/3  Prompt improvement"
+
+cp "$PROMPT" "$WORK/improved.raven"
+CALL_LOG="$PLATFORM/data/clients/$CLIENT/llm_calls.jsonl"
+OFFSET=0
+[ -f "$CALL_LOG" ] && OFFSET=$(wc -l < "$CALL_LOG" | tr -d ' ')
+
+set +e
+python "$PLATFORM/run_improve.py" "$WORK/improved.raven" --client "$CLIENT" --auto \
+  2>&1 | tee "$WORK/2-improve.log"
+rc=${PIPESTATUS[0]}
+set -e
+[ $rc -eq 0 ] || die "improvement failed — see $WORK/2-improve.log"
+
+# --------------------------------------------------- 3. assemble deliverables/
+step "3/3  Writing deliverables/"
+
+mkdir -p "$ROOT/deliverables/Context_Graph"
+cp "$PROMPT"                    "$ROOT/deliverables/Original_Prompt.raven"
+cp "$WORK/improved.raven"       "$ROOT/deliverables/Improved_Prompt.raven"
+diff -u "$ROOT/deliverables/Original_Prompt.raven" "$ROOT/deliverables/Improved_Prompt.raven" \
+  > "$ROOT/deliverables/Changes.diff" || true
+CH="$PLATFORM/data/clients/$CLIENT/CHANGES-improved.md"
+[ -f "$CH" ] && cp "$CH" "$ROOT/deliverables/Change_Rationale.md"
+cp "$WORK/2-improve.log"        "$ROOT/deliverables/Run_Log.txt"
+
+GDIR="$PLATFORM/data/output/${CLIENT}_output"
+[ -f "$GDIR/${CLIENT}_exec.png" ] && cp "$GDIR/${CLIENT}_exec.png" "$ROOT/deliverables/Context_Graph/Context_Graph.png"
+[ -f "$GDIR/report.md" ]          && cp "$GDIR/report.md"          "$ROOT/deliverables/Context_Graph/Report.md"
+[ -f "$GDIR/turns.md" ]           && cp "$GDIR/turns.md"           "$ROOT/deliverables/Context_Graph/Turns.md"
+[ -f "$GDIR/intents.md" ]         && cp "$GDIR/intents.md"         "$ROOT/deliverables/Context_Graph/Intent_Glossary.md"
+
+ADDED=$(grep -c '^+[^+]' "$ROOT/deliverables/Changes.diff" || true)
+python3 - "$CALL_LOG" "$OFFSET" <<'PY'
+import json, pathlib, sys
+log, offset = pathlib.Path(sys.argv[1]), int(sys.argv[2])
+rows = []
+if log.exists():
+    for line in log.read_text().splitlines()[offset:]:
+        try: rows.append(json.loads(line))
+        except Exception: pass
+live = [r for r in rows if not r.get("cached")]
+cached = len(rows) - len(live)
+tin = sum(r.get("in_tokens", 0) for r in live)
+tout = sum(r.get("out_tokens", 0) for r in live)
+print(f"   LLM this run: {len(live)} live call(s), {cached} cache hit(s)")
+if live:
+    print(f"                 {tin:,} in / {tout:,} out tokens")
+PY
+printf '   lines added:   %s\n' "${ADDED:-0}"
+
+printf '\n%s%s✓ Done.%s\n\n' "$GREEN" "$BOLD" "$OFF"
+printf '  %sdeliverables/Improved_Prompt.raven%s     <- paste this into NuPlay\n' "$BOLD" "$OFF"
+printf '  deliverables/Change_Rationale.md      what changed and why\n'
+printf '  deliverables/Changes.diff             before/after, line by line\n'
+printf '  deliverables/Context_Graph/           the call-flow chart, report, glossary\n\n'
+
+if command -v pbcopy >/dev/null 2>&1; then
+  pbcopy < "$ROOT/deliverables/Improved_Prompt.raven"
+  printf '  %s(Improved_Prompt.raven is on your clipboard)%s\n\n' "$DIM" "$OFF"
+fi

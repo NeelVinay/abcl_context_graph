@@ -3,36 +3,36 @@
   "tasks": [
     {
       "label": "1. Load transcripts (from a folder)",
-      "detail": "Pulls transcripts from a folder anywhere on disk into INPUT/transcripts/ and registers them. Does not build the graph or touch the prompt.",
+      "detail": "Pulls transcripts from a folder anywhere on disk into intake/transcripts/ and registers them. Does not build the graph or touch the prompt.",
       "type": "shell",
-      "command": "./load-transcripts '${input:transcriptsPath}'",
+      "command": "./bin/load-transcripts '${input:transcriptsPath}'",
       "options": { "cwd": "${workspaceFolder}" },
       "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
       "problemMatcher": []
     },
     {
-      "label": "1b. Re-register INPUT/transcripts/ (no pull)",
-      "detail": "Registers whatever is already sitting in INPUT/transcripts/, without pulling from anywhere else.",
+      "label": "1b. Re-register intake/transcripts/ (no pull)",
+      "detail": "Registers whatever is already sitting in intake/transcripts/, without pulling from anywhere else.",
       "type": "shell",
-      "command": "./load-transcripts",
+      "command": "./bin/load-transcripts",
       "options": { "cwd": "${workspaceFolder}" },
       "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
       "problemMatcher": []
     },
     {
       "label": "2. Load prompt (from a file)",
-      "detail": "Pulls a prompt file anywhere on disk into INPUT/prompt/, validates it, and confirms its transcripts are loaded.",
+      "detail": "Pulls a prompt file anywhere on disk into intake/prompt/, validates it, and confirms its transcripts are loaded.",
       "type": "shell",
-      "command": "./load-prompt '${input:promptPath}'",
+      "command": "./bin/load-prompt '${input:promptPath}'",
       "options": { "cwd": "${workspaceFolder}" },
       "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
       "problemMatcher": []
     },
     {
       "label": "3. Run pipeline (full run)",
-      "detail": "Context graph -> analysis -> improved prompt, start to finish. Uses the local Claude Code CLI — no API key needed. Writes OUTPUT/.",
+      "detail": "Context graph -> analysis -> improved prompt, start to finish. Uses the local Claude Code CLI — no API key needed. Writes deliverables/.",
       "type": "shell",
-      "command": "./run-pipeline",
+      "command": "./bin/run-pipeline",
       "options": { "cwd": "${workspaceFolder}" },
       "presentation": {
         "reveal": "always",
@@ -44,10 +44,10 @@
       "group": { "kind": "build", "isDefault": true }
     },
     {
-      "label": "Advanced: improve a prompt file directly (bypasses INPUT/OUTPUT)",
-      "detail": "Testing tool. Improves any prompt file without touching INPUT/ or the real OUTPUT/ — writes to engine/test-output/ instead.",
+      "label": "Advanced: improve a prompt file directly (bypasses intake/deliverables)",
+      "detail": "Testing tool. Improves any prompt file without touching intake/ or the real deliverables/ — writes to platform/test-output/ instead.",
       "type": "shell",
-      "command": "./engine/improve '${input:advancedPromptPath}'",
+      "command": "./platform/improve '${input:advancedPromptPath}'",
       "options": { "cwd": "${workspaceFolder}" },
       "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
       "problemMatcher": []
@@ -56,16 +56,16 @@
       "label": "Advanced: reset a client to zero",
       "detail": "Wipes a client's loaded transcripts/cache/output back to zero (archived, never deleted) — for proving run-pipeline regenerates everything from scratch.",
       "type": "shell",
-      "command": "./engine/reset '${input:resetClient}'",
+      "command": "./platform/reset '${input:resetClient}'",
       "options": { "cwd": "${workspaceFolder}" },
       "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
       "problemMatcher": []
     },
     {
       "label": "Show last diff",
-      "detail": "The before/after patch from the most recent ./run-pipeline run.",
+      "detail": "The before/after patch from the most recent ./bin/run-pipeline run.",
       "type": "shell",
-      "command": "cat OUTPUT/Changes.diff",
+      "command": "cat deliverables/Changes.diff",
       "options": { "cwd": "${workspaceFolder}" },
       "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
       "problemMatcher": []
@@ -75,7 +75,7 @@
     {
       "id": "transcriptsPath",
       "type": "promptString",
-      "description": "Folder of transcripts to load (leave as-is to just re-register INPUT/transcripts/)",
+      "description": "Folder of transcripts to load (leave as-is to just re-register intake/transcripts/)",
       "default": "~/Downloads"
     },
     {
@@ -88,7 +88,7 @@
       "id": "advancedPromptPath",
       "type": "promptString",
       "description": "Path to any prompt file to test-improve directly",
-      "default": "INPUT/prompt/"
+      "default": "intake/prompt/"
     },
     {
       "id": "resetClient",
